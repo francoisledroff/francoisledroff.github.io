@@ -1,0 +1,34 @@
+=  Eclipse default compliances
+Francois Le Droff
+2005-05-06
+:jbake-type: post
+:jbake-tags:  Java 
+:jbake-status: published
+:source-highlighter: prettify
+
+Don’t we all stupidly waste time, especially when we are requested to deliver quickly ? Today I imported an subcontractor java project in my elcipse IDE, and I had an hard time figuring out why it was not compiling. So may be that small 101 type article will save someone a few minutes
+
+It was all because of Eclipse default compliances. This java project was indeed using assertions.
+
+Quick reminder : +
+http://java.sun.com/developer/JDCTechTips/2002/tt0409.html[Assertions] are a new feature since J2SE version 1.4. An assertion is a program statement containing a boolean expression, that a programmer believes to be true at the time the statement is executed. Note you can catch assertion failures by using a catch AssertionError exception.
+
+....
+public class AssertDemo1 {
+        static void f() {
+            assert false;
+        }
+    
+        public static void main(String args[]) {
+            try {
+                f();
+            }
+            catch (AssertionError e) {
+                System.out.println("exception: " + e);
+            }
+        }
+    }
+....
+
+So why is not compiling ? Well It’s because by default my IDE version (3.0.2) was using jdk1.3 compliance. I found that http://courses.cs.vt.edu/~cs1706/projects/eclipseConfig.html[here]. +
+So you just need to modify your preferences: Open a project in Eclipse. Select Project -> Properties -> Java Compiler -> Compliances and Classfiles, (depress the ``Use project setting'' button to activate the other tabs). Uncheck ``use default compliances'' and select 1.4 in all 3 drop down boxes.

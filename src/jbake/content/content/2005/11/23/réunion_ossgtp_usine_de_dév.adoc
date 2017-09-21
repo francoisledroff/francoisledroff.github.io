@@ -1,0 +1,25 @@
+=  Réunion ossgtp : usine de dév
+Francois Le Droff
+2005-11-23
+:jbake-type: post
+:jbake-tags:  OpenSource, ossgtp
+:jbake-status: published
+:source-highlighter: prettify
+
+La dernière réunion http://ossgtp.xwiki.org[ossgtp] a eu lieu http://ossgtp.xwiki.com/xwiki/bin/view/Main/17Novembre2005[17 novembre 2005].
+
+C’était au tour de http://www.application-servers.com/[Didier], il nous a présenté la dernière version de sa présentation sur l’industrialisation des développements. +
+Présentation intéressante qui a suscité beaucoup de réactions, de commentaires, de questions parmi nous.
+
+Un aperçu du débat: L’industrialisation des développements ne doit pas uniquement cibler le travail du développeur, elle ne peut être accomplie que si elle s’appuie sur l’utilisation d’une méthodologie, d’une spécification, d’un socle et d’outils qui la facilitent.
+
+Nous avons donc entre autre parlé de ``socle'' : un socle ? mmmh … +
+Ici il faut entendre un ou plusieurs frameworks standards et ouverts (donc, de préférence open-source image:http://www.jroller.com/images/smileys/smile.gif[:-),title=":-)"]) amené avec une vision claire de l’architecture et de l’utilisation de ce(s) framework(s), des guides, des templates … Ce socle doit être promu (imposé) par un (et un seul!) architecte (dictateur !?). +
+Un socle devrait-il contenir du code propriétaire ? Doit-on enrichir ce(s) framework(s) ? Avec des générateurs de code, des éditeurs ou des plugins (eclipse par exemple) ? Ca, ca dépend.. nous n’étions pas tous d’accord.
+
+Didier nous a aussi fait deux belles démos :
+
+* une démo de http://www.improve-foundations.com/[improve-foundation/struts-layout] qui restait dans le cadre de sa présentation ``industrialisation des développements''
+* puis une présentation et une démo, du nouveau projet open-source porté par improve: http://rialto.application-servers.com/[Rialto]: bibliothèque de composants graphiques développée en javascript. (une http://rialto.application-servers.com/demoRialto.jsp[démo] est maintenant disponible à tous).
+
+Nous avons comme d’habitude terminé la soirée par un dîner amical, geek et cinéphile (avec notamment une discussion autour de l’impressionnant film de Lelouch tourné en 1976 http://fr.wikipedia.org/wiki/C'%C3%A9tait_un_rendez-vous[C’était une rendez-vous]).

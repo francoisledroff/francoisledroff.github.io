@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Francois Le Droff: Taking back control of my android phones, rooting, cyanogenMod and security ramblings&#8230;&#8203;</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">    
+
+    <!-- Le styles -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/asciidoctor.css" rel="stylesheet">
+    <link href="/css/base.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="favicon.ico">
+    </head>
+  <body>
+
+
+    <div id="wrap">
+	
+	<!-- Fixed navbar -->
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="container">
+	    <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Francois Le Droff 's Blog</a>
+	    </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">                
+                <li><a href="/about.html">About</a></li>
+
+                <li><a href="/archive.html">Archive</a></li>
+
+
+		            <li><a href="/conferences.html">Conferences</a></li>
+
+                <!--
+		            <li class="dropdown">
+          		      <a data-toggle="dropdown" href="#">Topics<b class="caret"></b></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="/tags/Java.html">Java</a></li>
+                    <li><a href="/tags/OpenSource.html">OpenSource</a></li>
+                    <li><a href="/tags/Misc.html">Misc</a></li>
+                  </ul>
+	              </li>
+	              -->
+
+
+                <li><a href="/feed.xml">Feed</a></li>
+
+                <!--
+                <li><a href="/projects.html">Projects</a></li>
+                -->
+
+              </ul>
+	      <ul class="nav navbar-nav navbar-right">
+	      	<li><a href="https://github.com/francoisledroff"><i class="fa fa-github"></i></a></li>
+	        <li><a href="https://twitter.com/francoisledroff"><i class="fa fa-twitter"></i></a>
+	      </ul>
+            </div>
+          </div>
+      </div>
+      <div class="container">
+	
+	<div class="page-header">
+		<h1>Taking back control of my android phones, rooting, cyanogenMod and security ramblings&#8230;&#8203;</h1>
+    <p class="credit">
+      First published on August 09 2012
+      and tagged 
+    <a href="/tags/IT.html">IT . </a>
+		</p>
+	</div>
+
+	<p><div class="paragraph">
+<p>I’ve been the happy owner of a htc nexus one for a couple of years now, but I recently broke its screen.<br>
+I had a spare htc, a desire Z, but I was reluctant to switch phone,</p>
+</div>
+<div class="paragraph">
+<p>What if I could have "<em>native theming support, Free Lossless Audio Codec (FLAC) support, a large Access Point Name list, an OpenVPN client, an enhanced reboot menu, support for Wi-Fi, Bluetooth, and USB tethering, CPU overclocking and performance enhancements, soft buttons and other ``tablet tweaks'', toggles in the notification pull-down (such as Wi-Fi, Bluetooth and GPS), app permissions management, as well as other interface enhancements and no pre-installed spyware or bloatware and finally increase performance and reliability compared with <strong class="line-through">official</strong> proprietary firmware releases</em>"</p>
+</div>
+<div class="paragraph">
+<p>Then, may be, I would ``desire'' this htc phone a bit more.</p>
+</div>
+<div class="paragraph">
+<p>So I decided to give <strong><a href="http://www.cyanogenmod.com/">CyanogenMod</a></strong> a try.</p>
+</div>
+<div class="paragraph">
+<p>Here are the steps I went through</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>I downgraded my desire Z from its Gingerbread firmware, following the instructions from :http://wiki.cyanogenmod.com/wiki/HTC_Desire_Z:_Firmware_Downgrade_%28Gingerbread)[the cyanogenmod wiki])</p>
+<div class="ulist">
+<ul>
+<li>
+<p>using the following firmware image <a href="http://omnimist.org/android/files/Vision_DZ_1.34.405.5_PC10IMG.zip">http://omnimist.org/android/files/Vision_DZ_1.34.405.5_PC10IMG.zip<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a> (disovered in <a href="http://forum.frandroid.com/topic/64258-tuto-comment-rooter-downgrader-le-build-172-ou-et-s-off/">http://forum.frandroid.com/topic/64258-tuto-comment-rooter-downgrader-le-build-172-ou-et-s-off/<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a>)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Then I went through the flawless rooting process : <a href="http://wiki.cyanogenmod.com/wiki/HTC_Desire_Z:_Rooting">http://wiki.cyanogenmod.com/wiki/HTC_Desire_Z:_Rooting<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a></p>
+<div class="ulist">
+<ul>
+<li>
+<p>using the recovery <a href="http://wiki.cyanogenmod.com/wiki/Howto:_Using_the_Recovery">http://wiki.cyanogenmod.com/wiki/Howto:_Using_the_Recovery<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a></p>
+<div class="ulist">
+<ul>
+<li>
+<p>through a simple adb command</p>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-code-java" data-lang="code-java">adb reboot recovery</code></pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Once the phone rooted installing the latest supported CyanogenMod build is pretty straightforward : <a href="http://wiki.cyanogenmod.com/wiki/HTC_Vision:_CyanogenMod">http://wiki.cyanogenmod.com/wiki/HTC_Vision:_CyanogenMod<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>I liked was I saw, and the google account restore mechanism was pretty impressive and transparent, all my nexus one contacts and photos were restored on desire Z (same with a few other applications that were designed with cloud-based transparent restore mechanism)</p>
+</div>
+<div class="paragraph">
+<p>So I decided to give a try on my Nexus one too. Again the cyanogenmod wiki made it easy, I just followed <a href="http://wiki.cyanogenmod.com/wiki/Nexus_One:_Full_Update_Guide">http://wiki.cyanogenmod.com/wiki/Nexus_One:_Full_Update_Guide<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a> (I choosed the Amon_Ra’s Recovery this time), the only difference was te adb reboot command did not seem to work, I had to click a bit more on the phone to get through the proper menu (here is nice How to video <a href="http://www.youtube.com/watch?v=Ez_qQshrZjo">http://www.youtube.com/watch?v=Ez_qQshrZjo<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a>)</p>
+</div>
+<div class="paragraph">
+<p>Unfortunately, just a few days ago, the CyanogenMod team decided to stop supporting those devices of mine. Their <a href="https://plus.google.com/117962666888533781522/posts/MRnnvs3oFUF">Google+ annoucement<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a> was a disappointment to the community but not a surprise.</p>
+</div>
+<div class="paragraph">
+<p>There are still a few non official version worth giving a try, I personally found one for my htc desire Z here : <a href="http://forum.xda-developers.com/showthread.php?t=1492461">http://forum.xda-developers.com/showthread.php?t=1492461<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a> upgrading my phone to Ice Cream Sandwich, android 4.0.4.</p>
+</div>
+<div class="paragraph">
+<p>So here are my 2 phones now, I still don’t know if I want switch my SIM card from the nexus one to the desire Z <span class="image"><img src="/images/icons/emoticons/smile.gif" alt="image" width="20" height="20"></span></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="http://www.jroller.com/francoisledroff/resource/sans%20titre-1650.jpg" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>I’m still wondering what to think of those unofficial firmware found in the deep internet sea, They certainly could contain malware/spyware/trojan, there is not much way for a non specialist like me to find out.<br>
+Would a antivirus like avast find it ?</p>
+</div>
+<div class="paragraph">
+<p>Now I have rooted my phones, the good news is I can get the full fledge anti-theft feature such as the one offered by avast antivirus app <a href="http://www.avast.com/en-us/free-mobile-security">http://www.avast.com/en-us/free-mobile-security<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a>.</p>
+</div>
+<div class="paragraph">
+<p>what about you ?</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Did you root your android phone ?</p>
+</li>
+<li>
+<p>What apps did you install now you have root ? (Droidsheep, Titanium Backup, Arpspoof, AdFree … ?)</p>
+</li>
+<li>
+<p>Did yo give cyanogenmod a try ?</p>
+</li>
+<li>
+<p>Do you update your firmware using unofficial zips found on random pages/forums ?</p>
+</li>
+<li>
+<p>Do you use an anti-virus ?</p>
+</li>
+<li>
+<p>Did you secure your phone with a anti theft app?</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Did it proove to work ?</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div></p>
+
+<hr/>
+
+
+    
+    <div id="footer">
+
+      <div class="container">
+
+        <p class="credit">
+        Published with
+        a <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/"><em>Creative Commons by-nc-sa</em> license</a>,
+          mixed with <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>,
+          baked with <a href="http://jbake.org">JBake v2.5.1</a>
+
+	      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/fr/">
+        <img alt="Creative Commons License" style="border-width:0"
+	      src="http://i.creativecommons.org/l/by-nc-sa/2.0/fr/80x15.png"/></a>
+
+         </p>
+      </div>
+    </div>
+    
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/jquery-1.9.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+
+  </body>
+</html>

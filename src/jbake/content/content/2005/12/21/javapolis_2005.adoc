@@ -1,0 +1,29 @@
+=  Javapolis 2005
+Francois Le Droff
+2005-12-21
+:jbake-type: post
+:jbake-tags:  Java, Javapolis
+:jbake-status: published
+:source-highlighter: prettify
+
+Je reviens de http://www.javapolis.com/confluence/display/JP05/Home[javapolis 2005]. C’était aussi fun, enrichissant et dense que http://jroller.com/page/francoisledroff/?anchor=javapolis_2004[l’année dernière].
+
+Voici la liste de séminaires auxquels j’ai assisté:
+
+* http://www.javapolis.com/confluence/display/JP05/Effective+Enterprise+Java[Effective Enterprise Java by Ted Neward]
+* http://www.javapolis.com/confluence/display/JP05/Using+JMX+Technology+Today+and+Tomorrow[Using JMX Technology Today and Tomorrow by Eamonn McManus]
+* http://www.javapolis.com/confluence/display/JP05/JBoss+Portal[JBoss Portal by Julien Viet]
+* http://www.javapolis.com/confluence/display/JP05/Pragmatic+Service+Oriented+Architecture[Pragmatic SOA by John Crupi]
+* http://www.javapolis.com/confluence/pages/viewpage.action?pageId=15529[Agile software development on large projects - Lessons learned by Johan Lybaert]
+* http://www.javapolis.com/confluence/display/JP05/The+new+Java+Memory+Model[The new Java Memory Model by Brian Goetz]
+* http://www.javapolis.com/confluence/display/JP05/Spring+Update[Spring Update by Rod Johnson]
+* http://www.javapolis.com/confluence/display/JP05/Extreme+Swing[Extreme Swing by Romain Guy]
+* http://www.javapolis.com/confluence/display/JP05/Technical+overview+of+GlassFish%2C+an+Open+Source+Java+EE+5+Application+Sever[GlassFish: An Open Source Java Application Server for the Java EE 5 Platform by Inderjeet Singh]
+* http://www.javapolis.com/confluence/display/JP05/Architectural+Challenges+in+the+Design+of+an+Application+Server[Architectural Challenges in the Design of an Application Server by Scott Ferguson]
+* http://www.javapolis.com/confluence/display/JP05/Jasper+Reports+in+Action[Jasper Reports in Action by Teodor Danciu]
+* http://www.javapolis.com/confluence/display/JP05/Web+Services+Architectures[Web Services Architectures by Dennis Sosnoski]
+* http://www.javapolis.com/confluence/display/JP05/Agile+Model+Driven+Development[Agile Model Driven Development by Scott W. Ambler]
+* http://www.javapolis.com/confluence/display/JP05/Database+Refactoring[Database Refactoring by Scott W. Ambler]
+* http://www.javapolis.com/confluence/display/JP05/Distributed+Caching%2C+Essential+Lessons[Distributed Caching, Essential Lessons by Cameron Purdy]
+
+j’éditerai rapidement ici un compte rendu un plus détaillé En attendant voici un pointeur vers un autre rapport assez synthétique et intéressant: http://jroller.com/page/jdelfosse?entry=full_javapolis_report[http://jroller.com/page/jdelfosse]

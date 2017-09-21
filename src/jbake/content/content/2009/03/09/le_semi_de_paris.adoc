@@ -1,0 +1,17 @@
+=  Le Semi de Paris
+Francois Le Droff
+2009-03-09
+:jbake-type: post
+:jbake-tags:  General 
+:jbake-status: published
+:source-highlighter: prettify
+
+C’était peut-être pas une si bonne idée d’y aller en vélo au http://www.semideparis.com/[semi-marathon de Paris], hier : faire 3km en courant et 10 de plus en vélo était une très douloureuse perspective quand je passais hier sous le panneau du 18ème kilomètre (à l’heure ou http://trail.motionbased.com/trail/activity/4559068[il y a 2 ans je passais le 20ème]) Il est vrai que cette fois ci je manquais d’entrainement, contrairement aux copains : http://results.semideparis.com/index.php?content=detail&id=1116&lang=FR&event=M[Arnaud (1h29)], et surtout http://results.semideparis.com/index.php?content=detail&id=91&lang=FR&event=M[Damiens (1h16)] ! Bravo les gars !
+
+Moi j’ai franchi la ligne après http://results.semideparis.com/index.php?content=detail&id=12905&lang=FR&event=M[2h03], certains noterons tout de même que je n’ai pas trouvé d’excuses cette fois ci: je ne suis pas http://www.jroller.com/francoisledroff/entry/les_20_kms_de_paris[tombé].
+
+http://francois.le.droff.com/xwiki/bin/download/Geek/semideParis/garmin-connect.jpg[image:http://francois.le.droff.com/xwiki/bin/download/Geek/semideParis/garmin-connect.jpg[garmin-connect.jpg,title="garmin-connect.jpg"]]
+
+Voici mon parcours (version web2.0/RIA), je cours, certes, mais je reste geek (avec ma montre cardio gps) image:http://www.jroller.com/images/smileys/smile.gif[:-),title=":-)"]
+
+http://www.flickr.com/photos/francoisledroff/3131325907/in/set-72157611499718603[image:http://farm4.static.flickr.com/3121/3131325907_1c088474d7_m.jpg[image]]

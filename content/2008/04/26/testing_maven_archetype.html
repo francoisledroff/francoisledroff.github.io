@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Francois Le Droff: Testing maven archetype</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">    
+
+    <!-- Le styles -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/asciidoctor.css" rel="stylesheet">
+    <link href="/css/base.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="favicon.ico">
+    </head>
+  <body>
+
+
+    <div id="wrap">
+	
+	<!-- Fixed navbar -->
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="container">
+	    <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Francois Le Droff 's Blog</a>
+	    </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">                
+                <li><a href="/about.html">About</a></li>
+
+                <li><a href="/archive.html">Archive</a></li>
+
+
+		            <li><a href="/conferences.html">Conferences</a></li>
+
+                <!--
+		            <li class="dropdown">
+          		      <a data-toggle="dropdown" href="#">Topics<b class="caret"></b></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="/tags/Java.html">Java</a></li>
+                    <li><a href="/tags/OpenSource.html">OpenSource</a></li>
+                    <li><a href="/tags/Misc.html">Misc</a></li>
+                  </ul>
+	              </li>
+	              -->
+
+
+                <li><a href="/feed.xml">Feed</a></li>
+
+                <!--
+                <li><a href="/projects.html">Projects</a></li>
+                -->
+
+              </ul>
+	      <ul class="nav navbar-nav navbar-right">
+	      	<li><a href="https://github.com/francoisledroff"><i class="fa fa-github"></i></a></li>
+	        <li><a href="https://twitter.com/francoisledroff"><i class="fa fa-twitter"></i></a>
+	      </ul>
+            </div>
+          </div>
+      </div>
+      <div class="container">
+	
+	<div class="page-header">
+		<h1>Testing maven archetype</h1>
+    <p class="credit">
+      First published on April 26 2008
+      and tagged 
+    <a href="/tags/Java.html">Java . </a>
+		</p>
+	</div>
+
+	<p><div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Here is short entry to tell you how to use maven to quickly and nicely set up a open source (standard de facto) web application samples (ready for development, deploying, debugging and unit testing) : using</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>maven archetype plugins</p>
+</li>
+<li>
+<p>jetty</p>
+</li>
+<li>
+<p>eclipse</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>See my previous post for the prerequisites:</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="download-the-latest-version-of-maven-archetype-plugin"><a id="Hdownloadthelatestversionofmavenarchetypeplugin"></a>download the latest version of maven-archetype-plugin</h4>
+<div class="paragraph">
+<p>To trick maven to update its version of maven-archetype-plugin I added this plugin dependency in one of my project. Don’t know if its the right way to do it. Maven can be so scriptic sometimes.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>    org.apache.maven.plugins
+    maven-archetype-plugin
+    2.0-alpha-2</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>I’m pretty sure this is nicer way to do it; please, let me know.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="create-your-project-from-a-appfuse-basic-spring-maven-archetype"><a id="HCreateyourprojectfromaappfusebasicspringmavenarchetype"></a>Create your project from a appfuse-basic-spring maven archetype</h4>
+<div class="literalblock">
+<div class="content">
+<pre>mvn archetype:create -DarchetypeGroupId=org.appfuse.archetypes -DarchetypeArtifactId=appfuse-basic-spring -DremoteRepositories=http://static.appfuse.org/releases -DarchetypeVersion=2.0.1 -DgroupId=com.adobe.consulting.fr -DartifactId=ac-fr-archetype</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This plugin was to complex for me as a start :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>the source code is hard to crawl in and dive in see <a href="https://appfuse.dev.java.net/svn/appfuse/trunk/" class="bare">https://appfuse.dev.java.net/svn/appfuse/trunk/</a></p>
+</li>
+<li>
+<p>the stuff is not working out of the box (at least for me)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>It didn’t pass the 10 minutes test. So I switched to a webtide (the jetty guys) archetype, as I was looking for something simple for me stupid.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="create-your-project-from-a-webtide-maven-archetype-spring-maven-archetype"><a id="HCreateyourprojectfromawebtidemavenarchetypeSpringmavenarchetype"></a>Create your project from a webtide maven-archetype-Spring maven archetype</h4>
+<div class="literalblock">
+<div class="content">
+<pre>mvn archetype:create -DarchetypeGroupId=com.webtide -DarchetypeArtifactId=maven-archetype-Spring -DarchetypeVersion=1.0 -DgroupId=com.adobe.consulting.fr -DartifactId=maven-archetype-Spring-test</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="create-your-wtp-eclipse-project"><a id="HCreateyourWTPeclipseproject"></a>Create your WTP eclipse project</h4>
+<div class="paragraph">
+<p>In order to</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>generate WTP project for Eclipse Europa,</p>
+</li>
+<li>
+<p>configure your newly create eclipse project to use with the M2Elipse plugin.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>use this commands:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>mvn -Dwtpversion=1.5 eclipse:eclipse
+mvn eclipse:m2eclipse -DdownloadSources=true  -DdownloadJavadocs=true</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>It’s downloading an amazing bunch of jars… Don’t know really why. Let me know. Anyway, ANT users will be have to be patient ! <span class="image"><img src="http://www.jroller.com/images/smileys/smile.gif" alt=":-)" title=":-)"></span></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="test-your-newly-create-web-application"><a id="HTestyournewlycreatewebapplication"></a>Test your newly create web application</h4>
+<div class="paragraph">
+<p>Install Jetty and deploy your web app with maven, jetty and eclipse: Let’s Debug your web app with eclipse, maven and jetty</p>
+</div>
+<div class="paragraph">
+<p>h5. Set up you jetty web app server as a runnable external tools:</p>
+</div>
+<div class="paragraph">
+<p>Go to the Run/External Tools/External Tools …" menu item on the <code>Run'' menu bar. Select </code>Program'' and click the <code>New'' button. On the </code>Main'' tab, fill in the <code>Location:'' as the full path to your </code>mvn'' executable. For the <code>Working Directory:'' select the workspace that matches your webapp. For </code>Arguments:'' add jetty:run. Move to the <code>Environment'' tab and click the </code>New'' button to add a new variable named MAVEN_OPTS with the value:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>-Xdebug -Xnoagent -Djetty.port=9999 -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,address=9998,server=y,suspend=n</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>A few remarks about this:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>If you supply suspend=y instead of suspend=n, it will suspend the web server until the debugger is launched</p>
+</li>
+<li>
+<p>I chose 9999 as the web http port number, because I’m already running jboss on port 8080</p>
+</li>
+<li>
+<p>I chose port 9998 as the debug port number cause it was already used as well, I faced a `&#8217;'ERROR: transport error 202: bind failed: Address already in use"</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>You may start jetty this way.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="deploy-and-debug-your-project-through-eclipse-launching-maven-jetty"><a id="HDeployandDebugyourprojectthrougheclipselaunchingmavenjetty"></a>Deploy and Debug your project through eclipse launching maven jetty</h4>
+<div class="paragraph">
+<p>Pull up the <code>Run/Debug/Debug …'' menu item and select </code>Remote Java Application'' and click the <code>New'' button. Fill in the dialog by selecting your webapp project for the </code>Project:'' field, and ensure you are using the same port number as you specified in the address= property above.</p>
+</div>
+<div class="paragraph">
+<p>You may now Run/Debug your project.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/xwiki/bin/download/XWiki/blog-maven-archetypes/spring-archetype-demo" alt="spring-archetype-demo" title="spring-archetype-demo"></span></p>
+</div>
+<div class="sect4">
+<h5 id="tip"><a id="HTip"></a>Tip</h5>
+<div class="paragraph">
+<p>By the way It’s quite usefull to your netstat command when you run jetty with the eclipse debugger</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>netstat -ao</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="references"><a id="HReferences3A"></a>References:</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://www.webtide.com/resources.jsp" class="bare">http://www.webtide.com/resources.jsp</a></p>
+</li>
+<li>
+<p><a href="http://appfuse.org/display/APF/AppFuse+QuickStart" class="bare">http://appfuse.org/display/APF/AppFuse+QuickStart</a></p>
+</li>
+<li>
+<p><a href="http://docs.codehaus.org/display/MAVENUSER/Archetypes+List" class="bare">http://docs.codehaus.org/display/MAVENUSER/Archetypes+List</a></p>
+</li>
+</ul>
+</div>
+</div></p>
+
+<hr/>
+
+
+    
+    <div id="footer">
+
+      <div class="container">
+
+        <p class="credit">
+        Published with
+        a <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/"><em>Creative Commons by-nc-sa</em> license</a>,
+          mixed with <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>,
+          baked with <a href="http://jbake.org">JBake v2.5.1</a>
+
+	      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/fr/">
+        <img alt="Creative Commons License" style="border-width:0"
+	      src="http://i.creativecommons.org/l/by-nc-sa/2.0/fr/80x15.png"/></a>
+
+         </p>
+      </div>
+    </div>
+    
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/jquery-1.9.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+
+  </body>
+</html>

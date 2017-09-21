@@ -1,0 +1,47 @@
+=  Symposium DNG 2005
+Francois Le Droff
+2005-10-27
+:jbake-type: post
+:jbake-tags:  IT 
+:jbake-status: published
+:source-highlighter: prettify
+
+J’ai assisté à Symposium DNG 2005 ce lundi. +
+Tout d’abord un grand bravo aux http://www.dotnetguru.org/modules.php?op=modload&name=IncludePage&file=index[organisateurs] et aux intervenants pour la qualité
+
+* http://www.dotnetguru.org/modules.php?op=modload&name=News&file=article&sid=681&mode=thread&order=0&thold=0[des présentations]
+* de l’organisation
+* des petits fours et des patisseries !
+* de l’accueil : qu’elles étaient jolies! les hôtesses !
+
+Je partage en grande partie l’ http://blogs.application-servers.com/roller/comments/apelletier?anchor=symposium_dng_2005[avis d’Aurélien]: avec ce coup d’oeil sur ``.net dans 5 ans'' (comme se plaisait à le dire http://www.dotnetguru2.org/sami/[Sami]) qu’est Symposium DNG, j’ai eu parfois l’impression de voir le java d’aujourd’hui (du moins sur certains aspects). Quoi qu’il en soit, dans l’avenir, la compétition sera rude !
+
+J’ai ainsi cru que certains intervenants ``nonottaient'' : nHibernate, nAnt, Unit, NCover, NDoc… Mais parfois on entendait aussi des mots familiers et plus doux à l’oreille comme Spring, CruiseControl, mais pour l’industrialisation ils leur manquent encore cruellement nMaven. image:http://www.jroller.com/images/smileys/smile.gif[:-),title=":-)"]
+
+Le tour des présenetations en quelques mots:
+
+* Outiller et industrialiser ses développements par Jean-Louis BENARD et Eric GROISE
++
+Présentation du concept d’usine de dev. et des outils du monde .net et java. Une belle démo sous VSTS, impressionnant ! J’ai cru comprendre que les étapes de build sont exposés en WS : intéressant !
+* ``Développer une application n-tiers transactionnelle'' par Sami Jaber:
++
+de bons rappels bien rythmés et plein de bon sens sur ce qu’est et ce que n’est pas une archi n-tiers, un aperçu d’indigo, et un bel effort pour la demo sur windows vista beta. (vista :ou la transaction est au coeur de windows gérant même les fichiers et les registres) +
+Petite note perso :http://www.castleproject.org/index.php/Main_Page[Castle] : un spring like cité par Sami.
+* Un point sur les nouvelles annonces autour de .NET:
++
+Guillaume Renaud, Thomas Gil, Sébastien Ros nous ont présenté sur un rythme effréne quelques les nouveautés annoncées lors de la récente conférence PDC à Los angeles. Surpris entre autre de voir ces nouvelles features tel que la programmation fonctionnelle (à la ML) débarquer dans C# version3.
+* DNG 2005: Le client riche de demain par Didier Girard et Julien Brunet
++
+Un vrai TwoMenShow ! De bons rappels ! De belles démos! (notamment de rialto) Des prises de positions tranchées ! Du rythme ! et quelques liens glanés au passage:
+** http://www.laszlosystems.com/[laszlo] : An Open Source Framework for Rich Internet Applications i.e. Flash
+** http://www.ajaxpatterns.org/[www.ajaxpatterns.org]
+** http://rialto.application-servers.com/[documentation de Rialto]
+** quelques belles démos ajax : http://www.backbase.com[www.backbase.com], http://www.netvibes.com/[www.netvibes.com], http://www.start.com/[www.start.com],
+* DNG 2005: Mise en oeuvre de DSL - Domain Specific Language par Jean-Marc Prieur
++
+Bravo à Jean-Marc Prieur qui a pris les riques maximum pour nous développer une application de simulation from scratch et en live et en mda like (avec dsl tools) sur une version beta de microsoft. Il nous a épaté et nous a beaucoup fait rire entre autre
+** avec ces simulations de bataille navale : ``un hélicoptère c’est comme un chien, il revient''.
+** avec les bugs de l’ihm dsl tools: ``si vous ne faites pas ça, vous êtes morts''
+* DNG 2005: table ronde avec Bill Gates
++
+Eh oui Billou ! L’homme qui vaut des milliards… Un peu déçu.. un discours un peu langue de bois, un peu marketing. Une info que j’ai retenu cependant: comme l’annoncait Sami, Windows va intégrer la transaction dans son core, Bill a précisé que tout cela allait s’appuyer sur sql serveur ! Les Perfs ? si si ! Bill nous a assurer qu’elle serait au rdv.

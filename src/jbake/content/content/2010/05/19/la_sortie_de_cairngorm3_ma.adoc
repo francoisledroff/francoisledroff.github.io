@@ -1,0 +1,21 @@
+=  La sortie de Cairngorm3, & ma sortie au TourJUG
+Francois Le Droff
+2010-05-19
+:jbake-type: post
+:jbake-tags:  OpenSource, Project, Cairngorm
+:jbake-status: published
+:source-highlighter: prettify
+
+Je suis très heureux de relayer http://blogs.adobe.com/auhlmann/archives/2010/05/cairngorm_3_rel.html[l’annonce] d’Alex! Ça y est ! Après http://jroller.com/francoisledroff/entry/cairngorm_3_is_out_for[quelques] versions http://jroller.com/francoisledroff/entry/cairngorm_3_0_2_release[alpha] publiques, et maintenant plus d’un an d’utilisation et d’``affinage'' de cairngorm3 dans plusieurs projets d’envergure menés par Adobe Technical Services et ses partenaires. http://opensource.adobe.com/wiki/display/cairngorm/Cairngorm[La ``release'' est officielle.] La version 3 de Cairngorm remplace les anciennes versions sur la page d’accueil de notre projet.
+
+Pour rappel l’objectif de Cairngorm3 est de promouvoir clarté, cohérence, testabilité et évolutivité, Cairngorm3 c’est
+
+* des http://opensource.adobe.com/wiki/display/cairngorm/CairngormGuidelines[lignes directrices / « Best practices »] qui expliquent nos motivations et la manière de les mettre en oeuvre
+* des http://opensource.adobe.com/wiki/display/cairngorm/CairngormTools[outils] qui nous aident à respecter nos lignes directrices et de rationaliser nos processus de développement
+* des http://opensource.adobe.com/wiki/display/cairngorm/Cairngorm+Libraries[bibliothèques] qui étendent les cadres d’architecture IOC et MVC et proposent des solutions aux problèmes récurrents
+
+Ces aspirations sont indépendantes de tout framework ou choix architectural. Nous avons ainsi réalisées quelques extensions pour Parsley, mais nous envisageons également de créer leurs pendants pour Swiz et SpringActionScript. Cairngorm3 est amené à beaucoup évoluer et s’enrichir dans les mois à venir. N’hésitez donc pas à nous contacter pour influer sur notre feuille de route.
+
+Ce soir Tourangeaux et Tourangelles pourront en savoir plus lors de ma présentation à la http://www.toursjug.org/xwiki/bin/view/Meetings/20100519[conférence organisée par le Tour JUG à 19h dans les locaux de SupInfo].
+
+*MAJ:* http://www.slideshare.net/francoisledroff/flex-java-tourjug[Ma présentation du TourJUG est maintenant sur slideshare]

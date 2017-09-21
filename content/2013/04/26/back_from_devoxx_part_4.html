@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Francois Le Droff: Back from Devoxx - Part 4 - Dev-QA-Ops Thoughts - About continuous delivery and deployment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">    
+
+    <!-- Le styles -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/asciidoctor.css" rel="stylesheet">
+    <link href="/css/base.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="favicon.ico">
+    </head>
+  <body>
+
+
+    <div id="wrap">
+	
+	<!-- Fixed navbar -->
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="container">
+	    <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Francois Le Droff 's Blog</a>
+	    </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">                
+                <li><a href="/about.html">About</a></li>
+
+                <li><a href="/archive.html">Archive</a></li>
+
+
+		            <li><a href="/conferences.html">Conferences</a></li>
+
+                <!--
+		            <li class="dropdown">
+          		      <a data-toggle="dropdown" href="#">Topics<b class="caret"></b></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="/tags/Java.html">Java</a></li>
+                    <li><a href="/tags/OpenSource.html">OpenSource</a></li>
+                    <li><a href="/tags/Misc.html">Misc</a></li>
+                  </ul>
+	              </li>
+	              -->
+
+
+                <li><a href="/feed.xml">Feed</a></li>
+
+                <!--
+                <li><a href="/projects.html">Projects</a></li>
+                -->
+
+              </ul>
+	      <ul class="nav navbar-nav navbar-right">
+	      	<li><a href="https://github.com/francoisledroff"><i class="fa fa-github"></i></a></li>
+	        <li><a href="https://twitter.com/francoisledroff"><i class="fa fa-twitter"></i></a>
+	      </ul>
+            </div>
+          </div>
+      </div>
+      <div class="container">
+	
+	<div class="page-header">
+		<h1>Back from Devoxx - Part 4 - Dev-QA-Ops Thoughts - About continuous delivery and deployment</h1>
+    <p class="credit">
+      First published on April 26 2013
+      and tagged 
+    <a href="/tags/Java.html">Java . </a>
+
+    <a href="/tags/Devoxx.html">Devoxx . </a>
+		</p>
+	</div>
+
+	<p><div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Here is the final part of my notes on software engineering quality, continuous delivery and dev-qa-ops practices gathered during <a href="http://www.devoxx.com/display/FR13/Accueil">devoxxfr<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a>, after <a href="http://jroller.com/francoisledroff/entry/back_from_devoxx_part_11">branching<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a> <a href="http://jroller.com/francoisledroff/entry/back_from_devoxx_part_2">buid-promotion<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a>, and <a href="http://jroller.com/francoisledroff/entry/back_from_devoxx_part_3">tests and code analysis<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a>, this last entry will be about continuous delivery, operations.</p>
+</div>
+<div class="paragraph">
+<p><a href="#BackfromDevoxx-Part4-Dev-QA-OpsThoughts-Aboutcontinuousdeliveryanddeployment-FromContinuousintegrationtoContinuousDeliveryandContinuousDeployement">From Continuous integration to Continuous Delivery and Continuous Deployement</a></p>
+</div>
+<div class="paragraph">
+<p><a href="#BackfromDevoxx-Part4-Dev-QA-OpsThoughts-Aboutcontinuousdeliveryanddeployment-Towardscontinuousdeliveryanddeployement">Towards continuous delivery and deployement</a></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#BackfromDevoxx-Part4-Dev-QA-OpsThoughts-Aboutcontinuousdeliveryanddeployment-Shipnativepackaging">Ship native packaging</a></p>
+</li>
+<li>
+<p><a href="#BackfromDevoxx-Part4-Dev-QA-OpsThoughts-Aboutcontinuousdeliveryanddeployment-Codetheoperations">Code the operations</a></p>
+</li>
+<li>
+<p><a href="#BackfromDevoxx-Part4-Dev-QA-OpsThoughts-Aboutcontinuousdeliveryanddeployment-Manageyoursecrets">Manage your secrets</a></p>
+</li>
+<li>
+<p><a href="#BackfromDevoxx-Part4-Dev-QA-OpsThoughts-Aboutcontinuousdeliveryanddeployment-Secureyourartifactrepositories">Secure your artifact repositories</a></p>
+</li>
+<li>
+<p><a href="#BackfromDevoxx-Part4-Dev-QA-OpsThoughts-Aboutcontinuousdeliveryanddeployment-SolveJenkinsfalsealarms">Solve Jenkins false alarms</a></p>
+</li>
+<li>
+<p><a href="#BackfromDevoxx-Part4-Dev-QA-OpsThoughts-Aboutcontinuousdeliveryanddeployment-Implementpropermonitoring">Implement proper monitoring</a></p>
+</li>
+<li>
+<p><a href="#BackfromDevoxx-Part4-Dev-QA-OpsThoughts-Aboutcontinuousdeliveryanddeployment-rethinkyourworkflowandprocesses">rethink your workflow and processes</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a href="#BackfromDevoxx-Part4-Dev-QA-OpsThoughts-Aboutcontinuousdeliveryanddeployment-Furtherreadingsandothervariouspointers">Further readings and other various pointers</a></p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="from-continuous-integration-to-continuous-delivery-and-continuous-deployement">link:[]From Continuous integration to Continuous Delivery and Continuous Deployement</h3>
+<div class="paragraph">
+<p>Most of us already do Continuous Integration by now. Through CI tools like jenkins we automated</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>builds</p>
+</li>
+<li>
+<p>code analysis</p>
+</li>
+<li>
+<p>dependency analysis</p>
+</li>
+<li>
+<p>unit test</p>
+</li>
+<li>
+<p>functional test</p>
+</li>
+<li>
+<p>perf test</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The next level brings us to continous Delivery: providing our product to our (internal and external) users that can then directly use it on their own systems. This means automating artifacts (the result of the builds) assembling and providing a API to fetch these artifacts (through artifact repositories such as nexus or artifactory)</p>
+</div>
+<div class="paragraph">
+<p>The final step is to bring the products running on systems, it’s continuous deployement.<br>
+there you have 3 main requesters:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Dev Teams</p>
+</li>
+<li>
+<p>QA Teams</p>
+</li>
+<li>
+<p>Ops Teams (internal or customers)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Developers usually need to test their latest trunk code, the deployement decision should be left to them and the server should be their and operated by them.</p>
+</div>
+<div class="paragraph">
+<p>QA need to test internal releases, just like for the dev team, the deployment decision should be theirs and operated on their QA servers. That’s were <a href="http://jroller.com/francoisledroff/entry/back_from_devoxx_part_2">build promotion techniques<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a> becomes very handy.</p>
+</div>
+<div class="paragraph">
+<p>Ops need to install or update product from build promoted to release by the above QA.<br>
+They need to own the deployement decision together with the final customers<br>
+They also need to inform users about planned operations, to follow their advertized SLA.<br>
+They obviously operate the servers.</p>
+</div>
+<div class="paragraph">
+<p>The challenge here is to make these 3 teams collaborate and speak the same language, the keys are to make:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>the products precisely identified and securely fetchtable via APIs from a common referential</p>
+</li>
+<li>
+<p>the operations on (fetching/installing/updating) the product automated. These ops automation should be used and common to all 3 teams.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>One way to achieve that is for all 3 teams :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>to leverage an artifact repository such as nexus or artifactory</p>
+</li>
+<li>
+<p>to leverage and co-own/commit/review a common set of operations scripts on all (dev/QA/prod) servers</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="towards-continuous-delivery-and-deployement">link:[]Towards continuous delivery and deployement</h3>
+<div class="sect3">
+<h4 id="ship-native-packaging">link:[]Ship native packaging</h4>
+<div class="paragraph">
+<p>Shipping native packaging is something that was advocated and demoed this year and last year at devoxx by the ``devops mercenaries'' team. It looks very appealing to me. Cf.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://www.slideshare.net/henri.gomez/from-ci-to-cd">http://www.slideshare.net/henri.gomez/from-ci-to-cd<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a></p>
+</li>
+<li>
+<p><a href="https://github.com/devopsmercenaries/sh3rewithme">https://github.com/devopsmercenaries/sh3rewithme<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="code-the-operations">link:[]Code the operations</h4>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>If it’s not in the code repository, it does not exist</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>Common tooling and languages facilitates communications.</p>
+</div>
+<div class="paragraph">
+<p>We all agree that each artifact should be versioned sufficiently that we can exactly reproduce the source code it was built from from our source control system. We should treat product deployement and configuration the same.</p>
+</div>
+<div class="paragraph">
+<p>Tech stack such as Chef or Puppet and MCollective can help you achieve that.<br>
+<a href="https://twitter.com/rpelisse">Romain<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a> gave a very fun and informative session about it, I encourage you to watch the replay on <a href="http://parleys.com/channel/516409b4e4b082c6506c9e3a/presentations">parleys<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a> when it becomes available</p>
+</div>
+<div class="paragraph">
+<p>Once you have your native packaging and/or deployement script ready:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Use jenkins as an operation console</p>
+</li>
+<li>
+<p>Use <a href="http://jroller.com/francoisledroff/entry/back_from_devoxx_part_2">build promotion<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a> techniques and dashboard to make everything visible and readable by all</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="manage-your-secrets">link:[]Manage your secrets</h4>
+<div class="paragraph">
+<p>Handling secrets/passwords/keys in a fully automated deployement is tricky.<br>
+It is a hard piece to streamline and automate safely.</p>
+</div>
+<div class="paragraph">
+<p>Here is an open source solution that could of interest: <a href="https://github.com/hbs/oss">https://github.com/hbs/oss<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a> to achieve the above.<br>
+It seems pretty solid, it’s in production in a major bank in France.<br>
+With this open secret server, you could `safely' commit your encrypted secrets on github <span class="image"><img src="/images/icons/emoticons/wink.gif" alt="image" width="20" height="20"></span></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="secure-your-artifact-repositories">link:[]Secure your artifact repositories</h4>
+<div class="paragraph">
+<p>Maven support artifact repositories password encryption. Maven can retrieve the Master password from the ~/.m2/settings-security.xml file and use this master password to decrypt the password stored in your ~/.m2/settings.xml file. Maven will then send the decrypted password to the server.</p>
+</div>
+<div class="paragraph">
+<p>For an extra level of security, you can store the encrypted master password on a removable storage device like a USB hard drive. To support this, your ~/.m2/settings-security.xml file would contain a reference to the location of the settings-security.xml file using the relocation element.</p>
+</div>
+<div class="paragraph">
+<p>cf.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://maven.apache.org/guides/mini/guide-encryption.html">http://maven.apache.org/guides/mini/guide-encryption.html<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a></p>
+</li>
+<li>
+<p><a href="http://www.sonatype.com/people/2009/10/maven-tips-and-tricks-encrypting-passwords/">http://www.sonatype.com/people/2009/10/maven-tips-and-tricks-encrypting-passwords/<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Artifactory goes one step further it provides a unique solution to this problem by generating encrypted passwords for users based on secret keys stored in Artifactory itself. By this, you can ensure users shared passwords are never stored or transmitted as clear text.<br>
+cf. <a href="http://wiki.jfrog.org/confluence/display/RTF/Centrally+Secure+Passwords">http://wiki.jfrog.org/confluence/display/RTF/Centrally+Secure+Passwords<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a></p>
+</div>
+<div class="paragraph">
+<p>One easy step to also ``secure'' the consistency of your artifacts repository is to prevent users from deleting or overwritting releases. cf. <a href="http://wiki.jfrog.org/confluence/display/RTF/Managing+Permissions">http://wiki.jfrog.org/confluence/display/RTF/Managing+Permissions<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="solve-jenkins-false-alarms">link:[]Solve Jenkins false alarms</h4>
+<div class="paragraph">
+<p>Jenkins build can fail for many other reasons than bad code checkins.<br>
+(JVM crash, scm/nexus/artifactory/etc.. connectivity issues, browser crash during selenium tests, jenkins/plugin crash, etc..) Vincent presented us a nice tip to prevent that using groovy script to prevent spamming developers with false alarm emails<br>
+cf. <a href="http://massol.myxwiki.org/xwiki/bin/view/Blog/JenkinsDontSendEmailForFalsePositives">http://massol.myxwiki.org/xwiki/bin/view/Blog/JenkinsDontSendEmailForFalsePositives<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a><br>
+cf. <a href="https://wiki.jenkins-ci.org/display/JENKINS/Scriptler+Plugin">https://wiki.jenkins-ci.org/display/JENKINS/Scriptler+Plugin<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="implement-proper-monitoring">link:[]Implement proper monitoring</h4>
+<div class="paragraph">
+<p>Ensure the server logs are made available to all<br>
+Logs are useful information to all 3 groups, dev QA and ops.<br>
+It should be accessible to all and a focus should be made to make sure the dev teams is producing useful and triggerable logs.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Think production monitoring, think further: think jmx, jmxtrans, nagios, graphite:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://www.slideshare.net/cyrille.leclerc/open-source-monitoring-for-java-with-graphite">http://www.slideshare.net/cyrille.leclerc/open-source-monitoring-for-java-with-graphite<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a></p>
+</li>
+<li>
+<p><a href="http://www.slideshare.net/henri.gomez/devops-retour-dexprience-alpesjug-du-20-septembre-2011">http://www.slideshare.net/henri.gomez/devops-retour-dexprience-alpesjug-du-20-septembre-2011<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Create smart dashboards and alerts</p>
+</li>
+</ul>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>If it’s not monitored i’ts not in production</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>This other famous quote below can applied to code quality but also to prod monitoring:</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>If you cannot measure it, you can not improve it</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>Won’t you feel safer doing feature toggling (cf. the <a href="http://jroller.com/francoisledroff/entry/back_from_devoxx_part_11">first part of my notes<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a> once you have a proper monitoring in place ? Won’t it be easier to manage:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>beta test (feature flippers)</p>
+</li>
+<li>
+<p>A/B testing (feature flags)</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="rethink-your-workflow-and-processes">link:[]rethink your workflow and processes</h4>
+<div class="paragraph">
+<p>Devops also requires organizational changes: here are a few ideas picked here and there during devoxx</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>cooperate from the start of the project</p>
+</li>
+<li>
+<p>eliminate the silos</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Hire a `Software factory/devops' specialist to :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>work and support the dev team</p>
+</li>
+<li>
+<p>work and support the QA team</p>
+</li>
+<li>
+<p>work and support the ops team</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>His job ensure that the continous integration, delivery and deployement is :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>always up and running</p>
+</li>
+<li>
+<p>continously improved: every manual step in operating the aps should hunted and killed</p>
+</li>
+<li>
+<p>ensure that areas of ownership and responsabilities are clearly defined between the dev qa qand ops teams</p>
+</li>
+<li>
+<p>ensure all impediments and roadblockers towards efficient continuous delivery are taking care of</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Implement a Bug fixing day: for instance in Vincent project, Xwiki, Every Thursday is bug fixing day: the Goal is to close the max number of bugs.</p>
+</div>
+<div class="paragraph">
+<p>Slowly add new quality check over time</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Everyone must be on board</p>
+</li>
+<li>
+<p>Favor Active Quality (i.e. make the build fail) over Passive checks</p>
+</li>
+<li>
+<p>Be ready to adapt/remove checks if found not useful enough</p>
+</li>
+<li>
+<p>Quality brings some risks:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Potentially less committers for your project (especially open source)</p>
+</li>
+<li>
+<p>project seen as ``less fun''</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="further-readings-and-other-various-pointers">link:[]Further readings and other various pointers</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://www.slideshare.net/dgageot/lets-make-this-test-suite-run-faster">http://www.slideshare.net/dgageot/lets-make-this-test-suite-run-faster<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a></p>
+</li>
+<li>
+<p><a href="http://www.slideshare.net/dgageot/git-tours-jug-2010">http://www.slideshare.net/dgageot/git-tours-jug-2010<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a></p>
+</li>
+<li>
+<p><a href="http://www.tikalk.com/alm/hudson-plugins-you-cant-live-without">http://www.tikalk.com/alm/hudson-plugins-you-cant-live-without<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a></p>
+</li>
+<li>
+<p><a href="http://php.jglobal.com/blog/?p=828">http://php.jglobal.com/blog/?p=828<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a></p>
+</li>
+<li>
+<p><a href="http://www.slideshare.net/claude.falguiere/deploiement-continu-agileffrance-2011">http://www.slideshare.net/claude.falguiere/deploiement-continu-agileffrance-2011<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a></p>
+</li>
+<li>
+<p><a href="http://googletesting.blogspot.fr/2011/03/how-google-tests-software-part-five.html">http://googletesting.blogspot.fr/2011/03/how-google-tests-software-part-five.html<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a></p>
+</li>
+<li>
+<p>facebook releases: <a href="https://vimeo.com/56362484">https://vimeo.com/56362484<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a></p>
+</li>
+<li>
+<p>M6 monitoring: <a href="http://www.slideshare.net/kennydee/monitoring-applicatif-pourquoi-et-comment">http://www.slideshare.net/kennydee/monitoring-applicatif-pourquoi-et-comment<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a></p>
+</li>
+</ul>
+</div>
+</div></p>
+
+<hr/>
+
+
+    
+    <div id="footer">
+
+      <div class="container">
+
+        <p class="credit">
+        Published with
+        a <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/"><em>Creative Commons by-nc-sa</em> license</a>,
+          mixed with <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>,
+          baked with <a href="http://jbake.org">JBake v2.5.1</a>
+
+	      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/fr/">
+        <img alt="Creative Commons License" style="border-width:0"
+	      src="http://i.creativecommons.org/l/by-nc-sa/2.0/fr/80x15.png"/></a>
+
+         </p>
+      </div>
+    </div>
+    
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/jquery-1.9.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+
+  </body>
+</html>

@@ -1,0 +1,29 @@
+= 
+Francois Le Droff
+2010-11-02
+:jbake-type: post
+:jbake-tags:  Adobe, Flex, Conference
+:jbake-status: published
+:source-highlighter: prettify
+
+Our MAX http://bit.ly/cqBtHx[``Flex and LCDS best practices from the trenches''] presentation has just been http://2010.max.adobe.com/online/2010/MAX263_1288201637500YXCF[published as a chaptered screen cast video]. Meanwhile I also posted the slides on slideshare :
+
+[[__ss_5642068]]
+*http://www.slideshare.net/francoisledroff/hendrix-max16pdf[Flex and LiveCycle Data Services Best Practices from the Trenches (Adobe MAX 2010)]*
+
+View more http://www.slideshare.net/[presentations] from http://www.slideshare.net/francoisledroff[François Le Droff].
+
+In this presentation we go beyond the http://tv.adobe.com/watch/max-2010-keynotes/adobe-max-2010-keynote-day-2-user-experience-the-next-generation-pimp-my-app/[Flex and LCDS pimp demo], as we share practical and pragmatic practices that come from the collective experience of the real people who design, develop, and operate the Hendrix application. Hendrix is an Adobe business critical enterprise rich Internet application (RIA) that provides Adobe’s service and sales representatives with a single, intuitive interface for addressing customer questions.
+
+Adobe recently published a http://www.adobe.com/cfusion/showcase/index.cfm?event=casestudydetail&casestudyid=1097918&loc=en_us[case study on Hendrix in their showcase portal], in which you will have a good overview of the project nature and ROI. Whereas in this presentation you will find out about Hendrix integration landscape, technical constraints and challenges, as well as Hendrix core architectural principles:
+
+* How we drove the development and build the Hendrix architecture for a better encapsulation and modularization. How we advocate a clear separation of concern.
+* How we focused on APIS definitions.
+* How we handled exceptions.
+
+We also presented the wonders of CTI integration and finally our last words were be about agility:
+
+* Agility tips for a distributed team,
+* Agility enabling tips : You will see how you can easily build a complete and efficient software factory while streamlining your flex development
+
+All of these points were showcased through a sample (and simple) multiscreen (web and android) demo application. Note that this sample application will be shortly released on adobe open source portal (on sourceforge.net) as part of the link:[Cairngorm 3 project]. I’ll keep you posted.

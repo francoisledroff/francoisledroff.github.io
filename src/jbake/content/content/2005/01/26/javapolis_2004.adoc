@@ -1,0 +1,53 @@
+=  JavaPolis 2004
+Francois Le Droff
+2005-01-26
+:jbake-type: post
+:jbake-tags:  Java, Javapolis
+:jbake-status: published
+:source-highlighter: prettify
+
+For the past 4 years I?ve been asking all my former managers/companies to sponsor me to attend JavaOne. As it never happened for budget or travel restrictions, I searched for cheaper and closer, and I found http://www.javapolis.com/confluence/display/JP04/Home[JavaPolis]: with an entry fee of 200 Euro, JavaPolis is ``the Apache of Conferences, low-cost and high quality!''. +
+ +
+image:http://www.javapolis.com/confluence/download/attachments/2/onlythebest.gif[image] +
+ +
+Yes ! I got in ! +
+ +
+So first of all, thanks to François, Alain and Patrick who had to endure my incessant e.mails and phone calls until they let it/me go ! :-) So a big thanks to my official sponsor: +
+ +
+image:http://jroller.com/resources/f/francoisledroff/ao.gif[image] +
+ +
+And a huge thanks to Stephan, http://www.javapolis.com/confluence/display/%7Emulkers[Robin]and the rest of the steering Members. They did a marvelous job, the conference set up was almost perfect ! +
+ +
+I’m really enthusiast about this event ! I came back full of energy and ideas ! +
+So what is the best that came out of it ? the best was: +
+
+* *meeting* new people, meeting bright passionate and communicative people. As I stay at the formule1 hotel near by the speakers hotel, I had the opportunity to meet with Stephan and Robin from JavaPolis steering members and then was introduced to many people, sometime quite famous, always impassioned geeks. +
+* *exchanging* ideas and concepts with people all over the world all fluent in Java, it’s such a fun exercise +
+* *leading* to endless conversation, even to new JSR and sometimes to endless night. +
+Yes indeed ! One of my conversations, first with Stephen Colebourne and then later that night with Stephan Janssen, Joshua Bloch and Neal Gafter may lead to a new JSR. (cf. my former blog entry on http://francoisledroff.blogspot.com/2004/12/javapolis-2004-part5-bof-jodatime-by.html[Stephen Colebourne BOF] and http://www.javapolis.com/confluence/display/JP04/2004/12/29/My+own+JavaPolis+2004+experience[Stephan entry] on the javapolis wiki) +
+* "**feeling** smarter for a week", as I read somewhere, on a javapolis attendee blog. +
+* *sharing* impressions, lunch and sometimes diners and beers with my http://ossgtp.xwiki.com/[OSSGTP] fellows +
+(Vincent Massol, Ludovic Dubost, Henry Story, Benjamin Mestrallet, Didier Girard) with my good old friend Jerome Lacoste and our new friend Robin. +
+* *laughing* with _``Techno Celebs''_ around a few Duvels. Unlike http://blogs.sun.com/roller/comments/alexismp/Weblog/antwerp_diners[Alexis] and thanks to http://coffeebreaks.dyndns.org/%7Ejerome/wordpress/index.php?p=175[Jerome], I have http://francoisledroff.blogspot.com/2004/12/javapolis-2004-part15javapolis-night.html[pictures]. +
+* *enjoying* geek or non-geek but always friendly moments with Didier and Jerome, in one of the finest restaurant in Anvers, http://coffeebreaks.dyndns.org/%7Ejerome/wordpress/wp-trackback.php/179[La Bourla] and with Robin at http://coffeebreaks.dyndns.org/%7Ejerome/wordpress/wp-trackback.php/168[Den Engel] +
+* and the last but not least *learning* !! Yes the content was there, with not so much marketing fluff. I edited about 24 entries for the 26 presentations I attended. The 2 remaining were too bad (or marketing content only)for me to spent another minute of my time to blog about it +
+
+ +
+Here is my unorderered top 7 list extracted http://francoisledroff.blogspot.com/2004/12/javapolis-2004-my-table-of-content.html[from all my entries]: +
+
+* http://francoisledroff.blogspot.com/2004/12/javapolis-2004-part-24-agile-offshore.html[javapolis 2004 [part 24]: Agile Offshore by Vincent Massol] +
+* http://francoisledroff.blogspot.com/2004/12/javapolis-2004-part18-j2ee-without-ejb.html[javapolis 2004 [part18] : J2EE without EJB by Rod Johnson] +
+* http://francoisledroff.blogspot.com/2004/12/javapolis-2004-part16-jsr-170.html[javapolis 2004 [part16]: JSR-170 Standardizing the Content Repository by David Nuescheler] +
+* http://francoisledroff.blogspot.com/2004/12/javapolis-2004-part13-groovy-by-dion.html[javapolis 2004 [part13]: Groovy by Dion Almaer and James Strachan] +
+* http://francoisledroff.blogspot.com/2004/12/javapolis-2004-part11-event-driven.html[javapolis 2004 [part11]: Event Driven Architecture by Gregor Hohpe] +
+* http://francoisledroff.blogspot.com/2004/12/javapolis-2004-part6-spring-in-action.html[javapolis 2004 [part6]: Spring in Action by RodJohnson and Juergen Hoeller] +
+* http://francoisledroff.blogspot.com/2004/12/javapolis-2004-part5-bof-jodatime-by.html[javapolis 2004 [part5]: BOF : JodaTime by Stephen Colebourne]
+
+For even further reading: my fellows javapolis 2004 trip reports : +
+
+* http://blogs.codehaus.org/people/vmassol/archives/000931_javapolis_2004.html[Vincent’s] +
+* http://coffeebreaks.dyndns.org/%7Ejerome/wordpress/wp-trackback.php/185[Jerome’s] +
+* http://bblfish.net/blog/page3.html#26[Henry’s] +
+* http://blogs.sun.com/roller/comments/alexismp/Weblog/javapolis_trip_report_well_kinda[Alexis’] +
+
+Almost 90% of the JavaPolis slides are now available on the http://www.javapolis.com/confluence/display/JP04/Home[wiki] and Robin’s currently working on the presentation streams.

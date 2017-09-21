@@ -1,0 +1,113 @@
+=  Back from Devoxx - Part 1 - Dev-QA-Ops Thoughts - About Branching
+Francois Le Droff
+2013-04-19
+:jbake-type: post
+:jbake-tags:  Java, Devoxx
+:jbake-status: published
+:source-highlighter: prettify
+
+I spent 3 full days at http://www.devoxx.com/display/FR13/Accueil[devoxxfr^image:/images/icons/linkext7.gif[image,width=7,height=7]^] late March. 3 full days really well spent. +
+The conference was fantastic, full of informative and entertaining presentations, live coding sessions and labs; and at every break, good old friends or friendly new faces for even more passion and sharing.
+
+A big bravo and a big thanks to Antonio, Nicolas, Zouheir, Arnaud and all the devoxx team for such a great event. I felt the same passion and energy I felt back in 2005 when I first attended Javapolis in Antwerpen.
+
+This year I particularly focused my attention on all things related to quality, devops and continous delivery.
+
+You’ll find here a bunch of notes-to-self and various pointers on that will help me and my team at Adobe to do a better at improving our software engineering quality, continuous delivery and dev-qa-ops practices.
+
+link:#BackfromDevoxx-Part1-Dev-QA-OpsThoughts-AboutBranching-Aboutbranchingstrategyandfeaturetoggling[About branching strategy and feature toggling]
+
+* link:#BackfromDevoxx-Part1-Dev-QA-OpsThoughts-AboutBranching-Featurebranching[Feature branching]
+* link:#BackfromDevoxx-Part1-Dev-QA-OpsThoughts-AboutBranching-FeatureToggling[Feature Toggling]
+* link:#BackfromDevoxx-Part1-Dev-QA-OpsThoughts-AboutBranching-Featuretogglingandtrunkbaseddevelopmentapplied[Feature toggling and trunk based development applied]
+* link:#BackfromDevoxx-Part1-Dev-QA-OpsThoughts-AboutBranching-Notconvinced%3F[Not convinced ?]
+* link:#BackfromDevoxx-Part1-Dev-QA-OpsThoughts-AboutBranching-Let%27smakethebuildunbreakable[Let’s make the build unbreakable]
+
+[[about-branching-strategy-and-feature-toggling]]
+link:[]About branching strategy and feature toggling
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+[[feature-branching]]
+link:[]Feature branching
+
+When building enterprise software we all spend quite a bit of time building/working/working-around code branching strategies and facing the consequences of choosing one strategy over another.
+
+These strategies derives from the organization’s software development processes and are shaped by the answers to questions about how a company releases its software,
+
+Git/dvcs eased the pain of feature branching and merging back into the team mainline (taken to production) +
+Obvious to say than doing local development is a feature branch in itself, impossible to avoid that. However, using branches for features or large-scale changes is seen by many http://martinfowler.com/bliki/FeatureBranch.html[as a bad idea^image:/images/icons/linkext7.gif[image,width=7,height=7]^] for several reasons, of which the most important are that it prevents both continuous delivery and refactoring
+
+___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+Feature Branching is a poor man’s modular architecture, instead of building systems with the ability to easy swap in and out features at runtime/deploytime they couple themselves to the source control providing this mechanism through manual merging. +
+– Dan Bodart
+___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+[[feature-toggling]]
+link:[]Feature Toggling
+
+The alternative (mentioned quite a bit at devoxx this year) is http://martinfowler.com/bliki/FeatureToggle.html[Feature toggling^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+
+_______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+Feature flags and flippers mean we don’t have to do merges, and that all code (no matter how far it is from being released) is integrated as soon as it is committed. Deploys become smaller and more frequent; this leads to bugs that are easier to fix, (…) the amount of changed code is minimized.
+
+This style of development isn’t all rainbows and sunshine. (…) after launching a feature, we have to go back in the code base and remove the old version (maintaining separate versions of all features on Flickr would be a nightmare). +
+– http://code.flickr.net/2009/12/02/flipping-out[Flickr^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+_______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+Feature toggling also facilitates canary releasing, A/B testing, and makes it easier to roll-back should a new feature misbehave in production.
+
+Cyrille (yet another devoxx speaker and cxf committer) summarized the many advantages of feature toggling in one of his former talk on http://www.slideshare.net/cyrille.leclerc/paris-devops-monitoring-and-feature-toggle-pattern-with-jmx[monitoring and feature toggle pattern with jmx^image:/images/icons/linkext7.gif[image,width=7,height=7]^] :
+
+* dissociate deployment and feature activation
+* progressive activation of a feature i.e. canary testing
+* measure impact of a new version i.e. A/B testing
+* differ feature activation on production
+* trunk based development
+
+Cyrille also hinted at the different coding and cleaning patterns:
+
+* smart reuse and mutualization
+* or brutal duplication allowing a cleaner and eased old version removal
+
+I did a bit of googling to find feature toggling frameworks and techniques:
+
+* feature toggling with osgi and felix support https://github.com/tacitknowledge/flip[https://github.com/tacitknowledge/flip^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+* but there are others like http://www.togglz.org/documentation/overview.html[http://www.togglz.org/documentation/overview.html^image:/images/icons/linkext7.gif[image,width=7,height=7]^] than can also be plugged and with jmx : https://gist.github.com/chkal/4292625[https://gist.github.com/chkal/4292625^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+
+[[feature-toggling-and-trunk-based-development-applied]]
+link:[]Feature toggling and trunk based development applied
+
+* Sucessfully applied, this techniques can allow several prod release per day, Facebook, stackoverflow and Flickr were mentioned for this by Axel in his http://www.slideshare.net/axelfontaine/architecting-for-continuous-delivery[architecting for continuous delivery talk^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+
+* extract from a break chats:
+** ``here at Banque X we only maintain 2 branches, a trunk where all the bugs are fixed first and a production support branch''
+** ``here at insurance broker Y, we release a few times a week, we only have trunk, and we don’t bother with maven release, we release snapshots (but everything is traceable and repoductible), and we love it''
+
+[[not-convinced]]
+link:[]Not convinced ?
+
+Feature Toggling is not a silver bullet and proper cleaning and technical debt management seems even more important in that context.
+
+One might call this feature toggling technique: merge paranoia cf.
+
+* http://arialdomartini.wordpress.com/2011/11/02/help-me-because-i-think-martin-fowler-has-a-merge-paranoia/[http://arialdomartini.wordpress.com/2011/11/02/help-me-because-i-think-martin-fowler-has-a-merge-paranoia/^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+* http://www.jillesvangurp.com/2011/07/16/using-git-and-feature-branches-effectively/[http://www.jillesvangurp.com/2011/07/16/using-git-and-feature-branches-effectively/^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+
+_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+You can’t do decentralized versioning unless you also decentralize your testing and integration. Git has value when used as a SVN replacement. Git has more value when used as a DVCS. There is no good reason why you can’t do decentralized testing and integration with git. Rather the opposite: it has been designed with exactly this in mind. The whole point of git is divide and conquer. Break the changes up: decentralize the testing and integration work and solve the vast majority of problems before change is pushed upstream. If you push your problems along with your changes you are doing it wrong. Decentralized integration is a very clever strategy that is based on the notion that the effort involved with testing and integration scales exponentially rather than linearly with the amount of change.
+_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+[[lets-make-the-build-unbreakable]]
+link:[]Let’s make the build unbreakable
+
+I’d agree with the above statement. With Git anyway, de facto, we do have a feature branch specific to each developer.
+
+Using Git and prehooks techniques you can make the main line build unbreakable cf.
+
+* https://gist.github.com/dgageot/2708610[https://gist.github.com/dgageot/2708610^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+* http://blog.javabien.net/2009/12/01/serverless-ci-with-git/[http://blog.javabien.net/2009/12/01/serverless-ci-with-git/^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+* http://www.slideshare.net/dgageot/git-tours-jug-2010?from=ss_embed[http://www.slideshare.net/dgageot/git-tours-jug-2010?from=ss_embed^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+* http://blog.xebia.fr/2013/04/09/revue-de-presse-xebia-2013-15/#RevuedePresseXebia-Unbuildincassable%3F[http://blog.xebia.fr/2013/04/09/revue-de-presse-xebia-2013-15/#RevuedePresseXebia-Unbuildincassable%3F^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+* http://www.youtube.com/watch?v=MF72e-12dxE&feature=player_embedded[http://www.youtube.com/watch?v=MF72e-12dxE&feature=player_embedded^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+
+Note that if you are stuck on Perforce: you can use the shelving feature. Have the developers create shelved changelists and get Jenkins to unshelve the changes to build and run the tests. If the tests pass, the changelist can be submitted to the central depot.

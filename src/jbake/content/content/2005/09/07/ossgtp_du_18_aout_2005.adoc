@@ -1,0 +1,22 @@
+=  ossgtp du 18 Aout 2005
+Francois Le Droff
+2005-09-07
+:jbake-type: post
+:jbake-tags:  OpenSource, ossgtp
+:jbake-status: published
+:source-highlighter: prettify
+
+Réunion ossgtp du 18 Aout 2005
+
+La dernière réunion http://ossgtp.xwiki.org[ossgtp] a eu lieu http://ossgtp.xwiki.org/xwiki/bin/view/Main/18Aout2005[18 Aout 2005].
+
+C’est toujours un plaisir de revoir , Vincent Arnaud, http://glaforge.free.fr/weblog/index.php?itemid=139[Guillaume], Vincent, Jean-François, Benoit, Charles, Dimitri, Ludo, Ben, Didier et les autres. On était particulièrement nombreux hier soir. La salle de réunion d’Octo était pleine. Quelques nouveaux nous ont rejoint dont 2 http://code.google.com/summerofcode.html[Google Summer Students]. Intéressant ce programme Google, Ludo en a fait profité XWiki, et Vincent codeHaus
+
+http://templth.blogspot.com/[Thierry Templier], ``commiteur'' sur https://springmodules.dev.java.net/[Spring modules] et http://jencks.org[Jencks] nous a présenté (en Français) http://www.springframework.org[Spring Framework]
+
+Ses prez (en Français) sont disponibles sur notre wiki :
+
+* http://ossgtp.xwiki.org/xwiki/bin/download/Main/18Aout2005/PRES+SPRING+OSSGTP.PPT[118-slides sur Spring],
+* et une plus spécifique http://ossgtp.xwiki.org/xwiki/bin/download/Main/18Aout2005/PRES+SPRING+JCA+OSSGTP.PPT[Spring et JCA].
+
+La soirée a comme d’habitude continué par un petit resto et des discussions très très animées ( sur le http://www.loebner.net/Prizef/loebner-prize.html[Loebner Prize–``The First Turing Test''], http://www.alicebot.org/[Alice Bot], les http://blogs.codehaus.org/people/vmassol/archives/000670_faq_bots.html[faq bots], les http://code.google.com/summerofcode.html[Google Summer Students] ….)

@@ -1,0 +1,22 @@
+=  A new set of flex maven archetype
+Francois Le Droff
+2008-07-31
+:jbake-type: post
+:jbake-tags:  OpenSource, Flex, Project
+:jbake-status: published
+:source-highlighter: prettify
+
+http://code.google.com/p/fna/[Fna] is building up.
+
+Fna is a French Adobe consulting open source initiative/project developed to eliminate the ramp-up time found when building new RIA applications.
+
+Fna will be a set of project skeletons, and maven archetypes.
+
+Today Fna contains a few maven archetypes, the first releases are :
+
+* a Flex BlazeDS XDoclet Spring Hibernate Archetype :
+** The newest version is based on the latest flex-mojos maven plugin (2.0-alpha3) and the latest maven archetype plugins (2.0-alpha-3, as well) which made possible a lot of enhancements.
+* a Flex cairngorm flexunit archetype (Warning: work in progress)
+* a Flex library (swc) archetype (Warning: work in progress)
+
+Enjoy and as Steven would say ``share the love'' !

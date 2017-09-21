@@ -1,0 +1,30 @@
+=  IGN versus Google
+Francois Le Droff
+2006-06-27
+:jbake-type: post
+:jbake-tags:  General 
+:jbake-status: published
+:source-highlighter: prettify
+
+Suite à la lecture du http://samdprod.typepad.com/actu/2006/06/comparatif_ign_.html[Comparatif IGN Geoportail / Google Local] de http://samdprod.typepad.com/actu/[Sam D], j’ai voulu revoir ma bretagne (ma maison de famille à côté de Brest) en haute définition IGN. Et contrairement à Sam, je ne crois pas que l’IGN est un si net avantage en province.
+
+[cols=",",]
+|============================================================================================================================================================================================================
+|image:http://jroller.com/resources/f/francoisledroff/penhoat-vue-google-maps.png[penhoat-vue-google-maps.png] |image:http://jroller.com/resources/f/francoisledroff/penhoat-vue-ign.png[penhoat-vue-ign.png]
+|============================================================================================================================================================================================================
+
+L’image IGN de _penhoat_ (à droite) est bien moins nette et moins récente de celle de son concurrent google.
+
+De plus comme le rapporte différent journaux dont http://www.lefigaro.fr/sciences/20060623.WWW000000814_la_censure_trop_visible_des_zones_strategiques.html[Le Figaro]
+
+_______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+Sur certaines zones, le géoportail français ressemble plus à un étrange gruyère qu’à une représentation aérienne d’un territoire européen. Quelques dizaines de zones protégées ? bases militaires, centres industriels stratégiques ? ont été totalement occultées par des blancs, qui paraissent découpés aux ciseaux dans la photo !
+_______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+C’est notamment le cas pour l’île longue, non loin de là, dans la rade de Brest. Avec Google on vois clairement un sous-marin nucléaire lanceur d’engins resté à quai. (si si il suffit de zoomer, c’est par http://maps.google.fr/maps?f=q&hl=fr&q=rostellec&ie=UTF8&t=h&om=1[là] Quant à l’IGN, il répond en fait à un décret caduque datant de 1973 qui interdisait la diffusion des images aériennes de certains sites sensibles, dont la liste était jusqu’alors tenue secrète.
+
+*Update*
+
+Non, non, je n’ai, moi non plus, pas réussi à me connecter au portail de l’ign, je suis, http://www.generation-nt.com/actualites/16245/geoportail-ign-excuses-serveurs-satures/[comme beaucoup], tombé sur cette belle page : http://www.geoportail.fr/excuses.htm. J’ai juste suivi le conseil de Sam D, j’ai accédé aux données IGN à travers les pages jaunes.Et pour ceux qui ont réussi à s’y connecter ``réellement'', http://geoportail.blogspot.com/[le constat] n’est malheureusement pas meilleur.
+
+Cependant, pour finir par une note positive et optimiste, je me dois également de souligner que : l’IGN pourrait surpasser google (tout au moins en France). Car il promet la mise à disposition prochaine des données topographiques complètes du territoire français, ainsi que des cartes de rando IGN, des cartes du cadastre, et même la modélisation en 3D des grandes villes de France. La http://billaut.typepad.com/jm/2006/04/connaissezvous__2.html[démo de Patrick Leboeuf] (en ligne depuis début avril sur l’excellent http://billaut.typepad.com/jm/[BillautShow]) était bluffante.

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Francois Le Droff: Quickly create, run and test a simple Java web app with eclipse, maven and jetty</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">    
+
+    <!-- Le styles -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/asciidoctor.css" rel="stylesheet">
+    <link href="/css/base.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="favicon.ico">
+    </head>
+  <body>
+
+
+    <div id="wrap">
+	
+	<!-- Fixed navbar -->
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="container">
+	    <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Francois Le Droff 's Blog</a>
+	    </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">                
+                <li><a href="/about.html">About</a></li>
+
+                <li><a href="/archive.html">Archive</a></li>
+
+
+		            <li><a href="/conferences.html">Conferences</a></li>
+
+                <!--
+		            <li class="dropdown">
+          		      <a data-toggle="dropdown" href="#">Topics<b class="caret"></b></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="/tags/Java.html">Java</a></li>
+                    <li><a href="/tags/OpenSource.html">OpenSource</a></li>
+                    <li><a href="/tags/Misc.html">Misc</a></li>
+                  </ul>
+	              </li>
+	              -->
+
+
+                <li><a href="/feed.xml">Feed</a></li>
+
+                <!--
+                <li><a href="/projects.html">Projects</a></li>
+                -->
+
+              </ul>
+	      <ul class="nav navbar-nav navbar-right">
+	      	<li><a href="https://github.com/francoisledroff"><i class="fa fa-github"></i></a></li>
+	        <li><a href="https://twitter.com/francoisledroff"><i class="fa fa-twitter"></i></a>
+	      </ul>
+            </div>
+          </div>
+      </div>
+      <div class="container">
+	
+	<div class="page-header">
+		<h1>Quickly create, run and test a simple Java web app with eclipse, maven and jetty</h1>
+    <p class="credit">
+      First published on April 25 2008
+      and tagged 
+    <a href="/tags/Java.html">Java . </a>
+		</p>
+	</div>
+
+	<p><div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Here is ``short'' entry to tell you how to use maven to quickly and nicely set up a simple and standard web application ready for development debugging and unit testing</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="prerequisites"><a id="Hprerequisites3A"></a>prerequisites:</h4>
+<div class="paragraph">
+<p>You must have installed:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Java 5</p>
+</li>
+<li>
+<p>Eclipse 3.3 with WTP installed : the Europa bundle for instance</p>
+</li>
+<li>
+<p>M2Eclipse plug-in installed (<a href="http://m2eclipse.codehaus.org/" class="bare">http://m2eclipse.codehaus.org/</a>)</p>
+</li>
+<li>
+<p>Maven</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="create-your-project-from-a-maven-archetype"><a id="HCreateyourprojectfromamavenarchetype"></a>Create your project from a maven archetype</h4>
+<div class="paragraph">
+<p>The maven archetype plugin allows the user to create a Maven 2 project from an existing template called an archetype. Here is the one I used to create my simple web app.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>mvn archetype:create -DgroupId=com.adobe.consulting.fr -DartifactId=ac_fr_samples -Dpackagename=com.adobe.consulting.fr -DarchetypeArtifactId=maven-archetype-webapp</pre>
+</div>
+</div>
+<div class="sect4">
+<h5 id="create-your-own-sources-and-unit-test-folder-structure"><a id="HCreateyourownsourcesandunittestfolderstructure"></a>Create your own sources and unit test folder structure</h5>
+<div class="paragraph">
+<p>Those are default maven folder structure, if you follow that, you won’t have anything more to configure in your build.</p>
+</div>
+<div class="paragraph">
+<p>The main java source folder structure and packages</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>mkdir src/main/java/com/adobe/consulting/fr</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The test java source folders structure and packages</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>mkdir src/test/java/com/adobe/consulting/fr
+mkdir src/test/resources</pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="lots-of-archetypes"><a id="Hlotsofarchetypes3A"></a>lots of archetypes:</h5>
+<div class="paragraph">
+<p>By the way, there are a lot of archetypes out there : here is a list <a href="http://docs.codehaus.org/display/MAVENUSER/Archetypes+List" class="bare">http://docs.codehaus.org/display/MAVENUSER/Archetypes+List</a> Those archetypes can create a lot of stuff in advance for you, like a full hibernate, spring, struts project skeleton.</p>
+</div>
+<div class="paragraph">
+<p>Wouldn’t it be great to have others for:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Adobe flex blazeDS/lcds project</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="create-your-wtp-eclipse-project"><a id="HCreateyourWTPeclipseproject"></a>Create your WTP eclipse project</h4>
+<div class="paragraph">
+<p>The Eclipse plugin supports creating configurations for Eclipse WTP (Web Tools Project). Projects with a WAR packaging can be setup as WTP dynamic web projects and runtime dependencies are configured to be used when running them using Eclipse internal servers.</p>
+</div>
+<div class="paragraph">
+<p>To generate WTP project for Eclipse Europa, use this command:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>mvn -Dwtpversion=1.5 eclipse:eclipse</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>To configure your newly create eclipse project to use with the M2Elipse plugin.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>mvn eclipse:m2eclipse -DdownloadSources=true  -DdownloadJavadocs=true</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Other neat options:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>It’s also possible to import code style cf. <a href="http://maven.apache.org/plugins/maven-eclipse-plugin/examples/load-code-styles.html" class="bare">http://maven.apache.org/plugins/maven-eclipse-plugin/examples/load-code-styles.html</a></p>
+</li>
+<li>
+<p>Artifacts with sources deployed can be attached to Eclipse libraries using downloadSources cf. <a href="http://maven.apache.org/plugins/maven-eclipse-plugin/examples/attach-library-sources.html" class="bare">http://maven.apache.org/plugins/maven-eclipse-plugin/examples/attach-library-sources.html</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Now, just import this project in Eclipse</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="install-jetty-and-deploy-your-web-app-with-maven"><a id="HInstallJettyanddeployyourwebappwithmaven3A"></a>Install Jetty and deploy your web app with maven:</h4>
+<div class="sect4">
+<h5 id="edit-your-maven-project-object-model"><a id="HEdityourmavenprojectobjectmodel"></a>Edit your maven project object model</h5>
+<div class="paragraph">
+<p>Edit your pom.xml to add the maven-jetty-plugin</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>    ac_fr_samples
+
+
+        org.mortbay.jetty
+        maven-jetty-plugin</pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="install-jetty-and-deploy-your-web-app-in-one-maven-command"><a id="HInstallJettyanddeployyourwebappinonemavencommand"></a>Install Jetty and deploy your web app in one maven command</h5>
+<div class="literalblock">
+<div class="content">
+<pre>mvn -Djetty.port=9999 jetty:run</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>I chose 9999 as the web http port number, because I’m already running jboss on port 8080</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="test-your-web-app"><a id="HTestyourwebapp"></a>Test your web app</h5>
+<div class="paragraph">
+<p>Go to <a href="http://localhost:9999/ac_fr_samples/" class="bare">http://localhost:9999/ac_fr_samples/</a></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="http://www.jroller.com/francoisledroff/resource/jetty.jpg" alt="jetty.jpg" title="jetty.jpg"></span></p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="combine-jetty-maven-and-eclipse"><a id="HCombineJetty2Cmavenandeclipse3A"></a>Combine Jetty, maven and eclipse :</h4>
+<div class="paragraph">
+<p>Let’s Debug your web app with eclipse, maven and jetty</p>
+</div>
+<div class="paragraph">
+<p>Stop the above jetty instance</p>
+</div>
+<div id="set-up-you-jetty-web-app-server-as-a-runnable-external-tools" class="paragraph">
+<p><a id="HSetupyoujettywebappserverasarunnableexternaltools3A"></a>Set up you jetty web app server as a runnable external tools:</p>
+</div>
+<div class="paragraph">
+<p>Go to the Run/External Tools/External Tools …" menu item on the <code>Run'' menu bar. Select </code>Program'' and click the <code>New'' button. On the </code>Main'' tab, fill in the <code>Location:'' as the full path to your </code>mvn'' executable. For the <code>Working Directory:'' select the workspace that matches your webapp. For </code>Arguments:'' add jetty:run. Move to the <code>Environment'' tab and click the </code>New'' button to add a new variable named MAVEN_OPTS with the value:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>-Xdebug -Xnoagent -Djetty.port=9999 -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,address=9998,server=y,suspend=n</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>A few remarks about this:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>If you supply suspend=y instead of suspend=n, it will suspend the web server until the debugger is launched</p>
+</li>
+<li>
+<p>I chose 9999 as the web http port number, because I’m already running jboss on port 8080</p>
+</li>
+<li>
+<p>I chose port 9998 as the debug port number cause it was already used as well, I faced a `&#8217;'ERROR: transport error 202: bind failed: Address already in use"</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>You may start jetty this way.</p>
+</div>
+<div id="deploy-and-debug-your-project-through-eclipse-launching-maven-jetty" class="paragraph">
+<p><a id="HDeployandDebugyourprojectthrougheclipselaunchingmavenjetty"></a>Deploy and Debug your project through eclipse launching maven jetty</p>
+</div>
+<div class="paragraph">
+<p>Pull up the <code>Run/Debug/Debug …'' menu item and select </code>Remote Java Application'' and click the <code>New'' button. Fill in the dialog by selecting your webapp project for the </code>Project:'' field, and ensure you are using the same port number as you specified in the address= property above.</p>
+</div>
+<div class="paragraph">
+<p>You may now Run/Debug your project.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="monitor-the-quality-of-your-project"><a id="HMonitorthequalityofyourproject"></a>Monitor the quality of your project</h4>
+<div class="paragraph">
+<p>Lots of plugin out there. Here is the first few that don’t cost a penny to set up and give quite a few indicators.</p>
+</div>
+<div class="paragraph">
+<p>Add this to your pom.xml:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>    org.apache.maven.plugins
+
+
+     maven-project-info-reports-plugin
+
+
+
+    maven-javadoc-plugin
+
+    2.1
+
+     true
+
+
+
+
+    org.apache.maven.plugins
+    maven-surefire-report-plugin
+
+
+
+    maven-checkstyle-plugin
+
+
+      http://svn.apache.org/repos/asf/struts/maven/trunk/build/struts_checks.xml
+
+
+
+
+
+    org.apache.maven.plugins
+    maven-jxr-plugin
+
+
+
+    maven-pmd-plugin
+
+
+
+    net.sf.dtddoc
+    dtddoc-maven-plugin
+
+
+      **/web-app*</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>To generate the associated reports and the project site, just use:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>mvn site</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>and you’ll get this for free (as in free software, and free beer <span class="image"><img src="http://www.jroller.com/images/smileys/smile.gif" alt=":-)" title=":-)"></span>)</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="http://www.jroller.com/francoisledroff/resource/site-report.jpg" alt="site-report.jpg" title="site-report.jpg"></span></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="alternatives-use-jboss-or-tomcat"><a id="HAlternatives3AuseJbossortomcat3A"></a>Alternatives : use Jboss or tomcat :</h4>
+<div class="paragraph">
+<p>What you did with the very fast and light jetty web server, you may also do it with the full J2EE beast Jboss</p>
+</div>
+<div class="paragraph">
+<p>Edit your pom.xml to add the <a href="http://mojo.codehaus.org/jboss-maven-plugin/index.html">maven-jboss-plugin</a></p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>    org.codehaus.mojo
+
+    jboss-maven-plugin
+
+     localhost
+     all
+
+     8080</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>It will allow you to deploy through maven (and jmx) your web application build by maven:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>mvn jboss:deploy</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The same goes with Tomcat: you also have a maven tomcat plugin.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="references"><a id="HReferences3A"></a>References:</h4>
+<div class="paragraph">
+<p>maven:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://www.sonatype.com/book/reference/public-book.html#" class="bare">http://www.sonatype.com/book/reference/public-book.html#</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Web application, eclipse wtp, jetty and maven :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://www.codecommit.com/blog/java/so-long-wtp-embedded-jetty-for-me" class="bare">http://www.codecommit.com/blog/java/so-long-wtp-embedded-jetty-for-me</a></p>
+</li>
+<li>
+<p><a href="http://www.devx.com/Java/Article/36785/1954" class="bare">http://www.devx.com/Java/Article/36785/1954</a></p>
+</li>
+<li>
+<p><a href="http://byteworksinc.blogspot.com/2008/01/summary-this-post-covers-setting-up.html" class="bare">http://byteworksinc.blogspot.com/2008/01/summary-this-post-covers-setting-up.html</a></p>
+</li>
+<li>
+<p><a href="http://livingash.wordpress.com/2007/08/13/back-to-the-future-when-eclispe-wtp-20-meets-maven-2/" class="bare">http://livingash.wordpress.com/2007/08/13/back-to-the-future-when-eclispe-wtp-20-meets-maven-2/</a></p>
+</li>
+<li>
+<p><a href="http://www.sonatype.com/book/reference/web.html#" class="bare">http://www.sonatype.com/book/reference/web.html#</a></p>
+</li>
+<li>
+<p><a href="http://docs.codehaus.org/display/JETTY/Maven+Jetty+Plugin" class="bare">http://docs.codehaus.org/display/JETTY/Maven+Jetty+Plugin</a></p>
+</li>
+</ul>
+</div>
+</div></p>
+
+<hr/>
+
+
+    
+    <div id="footer">
+
+      <div class="container">
+
+        <p class="credit">
+        Published with
+        a <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/"><em>Creative Commons by-nc-sa</em> license</a>,
+          mixed with <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>,
+          baked with <a href="http://jbake.org">JBake v2.5.1</a>
+
+	      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/fr/">
+        <img alt="Creative Commons License" style="border-width:0"
+	      src="http://i.creativecommons.org/l/by-nc-sa/2.0/fr/80x15.png"/></a>
+
+         </p>
+      </div>
+    </div>
+    
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/jquery-1.9.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+
+  </body>
+</html>

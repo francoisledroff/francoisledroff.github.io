@@ -1,0 +1,81 @@
+=  Back from Devoxx - Part 2 - Dev-QA-Ops Thoughts - About Build Promotion
+Francois Le Droff
+2013-04-22
+:jbake-type: post
+:jbake-tags:  Java 
+:jbake-status: published
+:source-highlighter: prettify
+
+Here are some more notes and various pointers on software engineering quality, continuous delivery and dev-qa-ops practices gathered-at or inspired-by the various chats I had at http://www.devoxx.com/display/FR13/Accueil[devoxxfr^image:/images/icons/linkext7.gif[image,width=7,height=7]^]. After http://www.jroller.com/francoisledroff/entry/back_from_devoxx_part_11[Branching^image:/images/icons/linkext7.gif[image,width=7,height=7]^] this time it’s about build promotion
+
+link:#BackfromDevoxx-Part2-Dev-QA-OpsThoughts-AboutBuildPromotion-Buildpromotion%3A[Build promotion:]
+
+* link:#BackfromDevoxx-Part2-Dev-QA-OpsThoughts-AboutBuildPromotion-Jenkinscanhelp[Jenkins can help]
+* link:#BackfromDevoxx-Part2-Dev-QA-OpsThoughts-AboutBuildPromotion-Yourartifactrepositorycanalsobeleveraged[Your artifact repository can also be leveraged]
+* link:#BackfromDevoxx-Part2-Dev-QA-OpsThoughts-AboutBuildPromotion-Isthemavenreleasepluginandprocessintheway%3F[Is the maven release plugin and process in the way?]
+
+[[build-promotion]]
+link:[]Build promotion:
+^^^^^^^^^^^^^^^^^^^^^^^
+
+Build promotion is an indication that a given build has been approved for deployment to a certain environment. +
+Just as a release may have many builds, a build may have several promotions. As the commonplace definition implies, promotions occur in a linear direction towards production (e.g. ``integration'', ``testing'', ``staging'', ``production''), and an environment-specific promotion can occur once per build.
+
+[[jenkins-can-help]]
+link:[]Jenkins can help
+
+Jenkins offers a plugin for this:
+
+* https://wiki.jenkins-ci.org/display/JENKINS/Promoted+Builds+Plugin[https://wiki.jenkins-ci.org/display/JENKINS/Promoted+Builds+Plugin^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+
+This plugin can be combined with others and provide a powerfull and yet flexible solution +
+these other useful plugins are:
+
+* https://wiki.jenkins-ci.org/display/JENKINS/Build+Pipeline+Plugin[https://wiki.jenkins-ci.org/display/JENKINS/Build+Pipeline+Plugin^image:/images/icons/linkext7.gif[image,width=7,height=7]^] : This plugin offers a very good visualization of the pipeline. By configuring a new Jenkins view and choosing which job is the first job in the pipeline you can get a visualization of the whole acceptance and build promotion pipeline.
+* https://wiki.jenkins-ci.org/display/JENKINS/Parameterized+Trigger+Plugin:[https://wiki.jenkins-ci.org/display/JENKINS/Parameterized+Trigger+Plugin:^image:/images/icons/linkext7.gif[image,width=7,height=7]^] The Parameterized Trigger Plugin is another triggering plugin but with a twist: this plugin lets you configure more aspects of the triggering logic
+* https://wiki.jenkins-ci.org/display/JENKINS/Violations[https://wiki.jenkins-ci.org/display/JENKINS/Violations^image:/images/icons/linkext7.gif[image,width=7,height=7]^] This plug-in generates reports static code violation detectors such as checkstyle, pmd, cpd, findbugs, codenarc, fxcop, stylecop and simian
+* https://wiki.jenkins-ci.org/display/JENKINS/Parameterized+Trigger+Plugin[https://wiki.jenkins-ci.org/display/JENKINS/Parameterized+Trigger+Plugin^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+* and https://wiki.jenkins-ci.org/display/JENKINS/Copy+Artifact+Plugin[https://wiki.jenkins-ci.org/display/JENKINS/Copy+Artifact+Plugin^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+* https://wiki.jenkins-ci.org/display/JENKINS/Downstream+buildview+plugin[https://wiki.jenkins-ci.org/display/JENKINS/Downstream+buildview+plugin^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+
+Here are a few articles about those:
+
+* http://blog.cloudbees.com/2012/11/another-look-at-jenkins-promoted-builds.html[http://blog.cloudbees.com/2012/11/another-look-at-jenkins-promoted-builds.html^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+* http://stackoverflow.com/questions/9418136/jenkins-build-promotion-how-do-i-get-the-build-id-of-the-build-i-want-to-promot[http://stackoverflow.com/questions/9418136/jenkins-build-promotion-how-do-i-get-the-build-id-of-the-build-i-want-to-promot^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+* http://zeroturnaround.com/labs/how-to-use-jenkins-for-job-chaining-and-visualizations/#!/[http://zeroturnaround.com/labs/how-to-use-jenkins-for-job-chaining-and-visualizations/#!/^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+
+[[your-artifact-repository-can-also-be-leveraged]]
+link:[]Your artifact repository can also be leveraged
+
+Artifactory supports build promotion to some extent in its commercial version, using REST APIs.
+
+* http://wiki.jfrog.org/confluence/display/RTF/Artifactory's+REST+API#Artifactory'sRESTAPI-BuildPromotion[http://wiki.jfrog.org/confluence/display/RTF/Artifactory’s+REST+API#Artifactory’sRESTAPI-BuildPromotion^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+
+In Nexus Pro you can set up a Staging profile, which intercepts certain artifacts and places them in a special, dynamically-created repository.
+
+Once all the required artifacts are deployed, a build administrator can make these staged artifacts available for further testing (in a UAT environment, for example).
+
+Involved users can be notified when a build is staged and promoted, so that they can go to the relevant environment and run their own tests.
+
+When the tests are finished, the artifacts in the staging repository can be promoted to their final destination (for example, a special Production Releases repository). You can also associate rules with this promotion process. These rules are highly configurable.
+
+docs and pointers:
+
+* http://www.sonatype.com/books/nexus-book/reference/staging-sect-intro.html[http://www.sonatype.com/books/nexus-book/reference/staging-sect-intro.html^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+
+[[is-the-maven-release-plugin-and-process-in-the-way]]
+link:[]Is the maven release plugin and process in the way?
+
+The maven release plugin is in the way of implemeting build promotion:
+
+* The Maven release plugin states: You build a new release when a snapshot build is good enough
+* When build promotion and Continuous Delivery states: Any build is a potential release
+
+Should we stop using snapshots versions and use alternatives like the maven versions plugin http://mojo.codehaus.org/versions-maven-plugin/[http://mojo.codehaus.org/versions-maven-plugin/^image:/images/icons/linkext7.gif[image,width=7,height=7]^] to increment the version at every build and hence make every resulting artefact a candidate to production ?
+
+Or when we are making distrubutable software, should we just deal with snapshots and don’t bother with the whole maven release process nor plugin ?
+
+cf.
+
+* http://www.insaneprogramming.be/?p=362[http://www.insaneprogramming.be/?p=362^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+* http://www.slideshare.net/wakaleo/continuous-deliverywithmaven[http://www.slideshare.net/wakaleo/continuous-deliverywithmaven^image:/images/icons/linkext7.gif[image,width=7,height=7]^]

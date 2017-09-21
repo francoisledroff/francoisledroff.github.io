@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Francois Le Droff: les URLs , les RIAs et le référencement</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">    
+
+    <!-- Le styles -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/asciidoctor.css" rel="stylesheet">
+    <link href="/css/base.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="favicon.ico">
+    </head>
+  <body>
+
+
+    <div id="wrap">
+	
+	<!-- Fixed navbar -->
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="container">
+	    <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Francois Le Droff 's Blog</a>
+	    </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">                
+                <li><a href="/about.html">About</a></li>
+
+                <li><a href="/archive.html">Archive</a></li>
+
+
+		            <li><a href="/conferences.html">Conferences</a></li>
+
+                <!--
+		            <li class="dropdown">
+          		      <a data-toggle="dropdown" href="#">Topics<b class="caret"></b></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="/tags/Java.html">Java</a></li>
+                    <li><a href="/tags/OpenSource.html">OpenSource</a></li>
+                    <li><a href="/tags/Misc.html">Misc</a></li>
+                  </ul>
+	              </li>
+	              -->
+
+
+                <li><a href="/feed.xml">Feed</a></li>
+
+                <!--
+                <li><a href="/projects.html">Projects</a></li>
+                -->
+
+              </ul>
+	      <ul class="nav navbar-nav navbar-right">
+	      	<li><a href="https://github.com/francoisledroff"><i class="fa fa-github"></i></a></li>
+	        <li><a href="https://twitter.com/francoisledroff"><i class="fa fa-twitter"></i></a>
+	      </ul>
+            </div>
+          </div>
+      </div>
+      <div class="container">
+	
+	<div class="page-header">
+		<h1>les URLs , les RIAs et le référencement</h1>
+    <p class="credit">
+      First published on May 31 2008
+      and tagged 
+    <a href="/tags/Adobe.html">Adobe . </a>
+		</p>
+	</div>
+
+	<p><div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="http://blogpro.toutantic.net/2008/05/27/firefox-3-awesome-bar-gmail/">Aurélien</a> m’apprend ce soir que</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>la nouvelle barre d’url de firefox 3 indexe les urls et les titres des pages récemment visitées.</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>Encore une nouvelle preuve de l’importance d’une bonne gestion des d’URLs dans un portail grand publique ou un site de commerce qui souhaite être finement et pertinemment référencés.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="http://francois.le.droff.com/xwiki/bin/download/Geek/De+l%27importance+des+URLs/myrurl.jpg?height=200" alt="myrurl.jpg" height="200" title="myrurl.jpg"></span></p>
+</div>
+<div class="paragraph">
+<p>Les RIA connaissent une véritable expansion, et l’un des problèmes liés à ce changement est le référencement. Dans certains cas, l’excellente ergonomie du site peut compenser l’absence de référencement dans les favoris et d’indexation par les moteurs de recherche.</p>
+</div>
+<div class="paragraph">
+<p>Mais c’est une question qui revient souvent aux connaisseurs et acteurs de ce domaine : comment obtenir un bon référencement avec des technologies RIA (Ajax, Flash, Silverlight, etc.), alors que les grands moteurs de recherche ne peuvent pas facilement indexer leur contenu ? Les robots web ont en effet du mal à repérer les liens et le texte uniquement incorporés dans l’animation Flash De la même manière, comment indexer correctement une application Ajax qui ``injecte'' du code HTML dynamiquement ?</p>
+</div>
+<div class="paragraph">
+<p>Dans le cas du Flash, certains sites web entièrement créés dans Flash utilisent une seule page web avec animation Flash incorporée. Lorsque les utilisateurs interagissent avec le site, ce dernier affiche de nouvelles vues dans l’animation Flash au lieu de charger une nouvelle page web.</p>
+</div>
+<div class="paragraph">
+<p>Il existe des solutions de rechanges, plus ou moins complexes et efficaces selon les technologies et les méthodes mises en place</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="HUnsiteHTMLmirroir">Un site HTML mirroir</h4>
+<div class="paragraph">
+<p><span class="image"><img src="http://francois.le.droff.com/xwiki/bin/download/Geek/De+l%27importance+des+URLs/miroirs.jpg?height=200" alt="miroirs.jpg" height="200" title="miroirs.jpg"></span></p>
+</div>
+<div class="paragraph">
+<p>L’idéal (mais aussi le plus couteux) dans un souci d’accessibilité et de référencement est de créer un double HTML, permettant aux moteurs de recherche d’indexer le contenu de la page : cette dernière pouvant ensuite, via un Javascript, vous rediriger automatiquement vers l’animation Flash si nécessaire.</p>
+</div>
+<div class="paragraph">
+<p>La meilleure façon d’apposer une sur-couche Flash sur un site HTML est d’utiliser JavaScript ou un système de détection de Flash comme SWObject. Cette technique permet aux utilisateurs qui ne disposent pas du lecteur Flash de naviguer sur l’ensemble du site.</p>
+</div>
+<div class="paragraph">
+<p>SWFObject est en effet un petit script Javascript utilisé pour inclure un contenu swf dans une page HTML. Le script peut détecter le plug-in Flash dans tous les principaux navigateurs (sur MAC et PC) et est conçu pour rendre l’intégration des swf aussi simple que possible. L’intégration dans la page est très propre il peut être employé dans les documents valides HTML et XHTML 1.0.*.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="HLesfichiersFlashsontrE9fE9rencE9s">Les fichiers Flash sont référencés</h4>
+<div class="paragraph">
+<p>Google (tout comme d’autres moteurs de recherche) indexe les fichiers .swf (Flash). Google sait indexer les libellés présents dans les fichiers swf, mais uniquement ceux statiques (non chargés dynamiquement). En sachant cela et en se concentrant sur des mots clés dans les applications riches créées, il est donc possible de bien indexer ces applications Flash (et donc Flex). Mais ce n’est évidemment qu’une solution de remplacement. Pour obtenir un bon référencement pour une application Flash, il est également possible d’associer des mots clés dans un swf embarqué via les flash vars, inclues dans l’appel à l’objet swf. Ces mots décrivent, à l’image des balises meta en HTML, le contenu de la page (en l’occurence de l’application). Lais il n’est pas envisageable d’effectuer un affinage des données meta sur toutes les vues de l’application Flash. Mais ce problème est aujourd’hui résolu avec la fonctionnalité appelée Deep Linking</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="HFlexetledeeplinking3AunegestionfinedesURLs">Flex et le deeplinking : une gestion fine des URLs</h4>
+<div class="paragraph">
+<p>Cette fonctionnalité permet de créer des points d’entrée dans votre application, qui deviendront accessibles de l’extérieur directement, même si ces points font partie d’une même application. Dans le cas d’une suite bureautique, on pourrait donc imaginer les points d’entrée suivants dans une seule application. En synchronisant systématiquement l’état d’une application Flex avec son URL, il est alors possible</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>à l’utilisateur de profiter de ses favoris,</p>
+</li>
+<li>
+<p>aux robots d’indexer votre site.</p>
+</li>
+<li>
+<p>aux webmaster d’analyser la fréquentation et l’utilisation de ses application flex.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>| Bien que cela semble aisé, cela demande une bonne réflexion et un peu de travail. Il est alors possible d’avoir comme dans ces exemples (rééls) des URLs descriptifs d’un état, d’un espace de l’application :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://www.picnik.com/app#/home/welcome" class="bare">http://www.picnik.com/app#/home/welcome</a></p>
+</li>
+<li>
+<p><a href="http://www.picnik.com/app#/edit" class="bare">http://www.picnik.com/app#/edit</a></p>
+</li>
+<li>
+<p><a href="http://www.picnik.com/app#/create/effects" class="bare">http://www.picnik.com/app#/create/effects</a></p>
+</li>
+<li>
+<p><a href="http://www.picnik.com/app#/in/flickrsearch" class="bare">http://www.picnik.com/app#/in/flickrsearch</a></p>
+</li>
+<li>
+<p><a href="http://www.picnik.com/app#/out/facebook" class="bare">http://www.picnik.com/app#/out/facebook</a></p>
+</li>
+<li>
+<p><a href="http://www.ge.com/imaginationtheater/#home/everyday/crossing" class="bare">http://www.ge.com/imaginationtheater/#home/everyday/crossing</a></p>
+</li>
+<li>
+<p><a href="http://www.ge.com/imaginationtheater/#home/everyday/samurai" class="bare">http://www.ge.com/imaginationtheater/#home/everyday/samurai</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="http://francois.le.droff.com/xwiki/bin/download/Geek/De+l%27importance+des+URLs/deeplinking.jpg?height=300" alt="deeplinking.jpg" height="300" title="deeplinking.jpg"></span></p>
+</div>
+<div class="paragraph">
+<p>Cette philosophie se rapproche de l’architecture REST.</p>
+</div>
+<div class="paragraph">
+<p>Remarque : Il est à noter que l’intégration de cette technique dans un portail dynamique et éventuellement aussi AJAX (et donc hors du cadre simple d’un template HTML Flex) est possible grâce à l’utilisation des composants open source SWFObject et SWFAddress.. SWFAddress facilite également l’intégration de module permettant l’analyse de fréquentation (comme Google Analytics).</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="HAutretechniqueefficace3AexposerlesdonnE9esenpremier">Autre technique efficace: exposer les données en premier</h4>
+<div class="paragraph">
+<p>Une autre technique qui se prête particulièrement au site aux données publiques est celle qui consiste à exposer les données « en premier » aux navigateurs et donc aux robots :</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="http://francois.le.droff.com/xwiki/bin/download/Geek/De+l%27importance+des+URLs/google.jpg?height=200" alt="google.jpg" height="200" title="google.jpg"></span></p>
+</div>
+<div class="paragraph">
+<p>Cette technique est démontré dans <a href="http://directory.onflex.org/">Flex Directory</a> qui est sans doute l’application Flex la plus « amicale » pour les moteurs de recherche.</p>
+</div>
+<div class="paragraph">
+<p>Cette méthode, sans cesse affinée par Ted Patrick, ingénieur chez Adobe s’appuit sur le support XSL des navigateurs, sur leur capacité à transformer le XML (et donc le XHTML). Ted présente donc aux navigateurs (et donc aux robots) une page HTML simple ne contenant que les données : aucun swf n’est déclaré, celui-ci est « injecté » par transformation XSL. Le moteur de recherche peut alors indexer l’ensemble des données utilisées par l’application Flash. Dans le cas de l’application de Ted, cette technique s’est avérée redoutable : les partenaires d’Adobe qui sont présents dans cette application annuaire Flex jouissent ainsi d’une très grande visibilité sur internet (très bien référencé).</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="HQuelquesrE9fE9rences3A">Quelques références:</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://www.fdeshayes.net/index.php?2007/10/18/160-ria-et-seo" class="bare">http://www.fdeshayes.net/index.php?2007/10/18/160-ria-et-seo</a></p>
+</li>
+<li>
+<p><a href="http://www.adobe.com/fr/devnet/flash/articles/flash_searchability.html" class="bare">http://www.adobe.com/fr/devnet/flash/articles/flash_searchability.html</a></p>
+</li>
+<li>
+<p><a href="http://www.onflex.org/ted/2007/11/url-matters.php" class="bare">http://www.onflex.org/ted/2007/11/url-matters.php</a></p>
+</li>
+<li>
+<p><a href="http://www.the-flash-files.com/#/" class="bare">http://www.the-flash-files.com/#/</a></p>
+</li>
+<li>
+<p><a href="http://www.onflex.org/ted/2007/08/flex-directory-seo-and-flex.php" class="bare">http://www.onflex.org/ted/2007/08/flex-directory-seo-and-flex.php</a></p>
+</li>
+<li>
+<p><a href="http://www.onflex.org/ted/2008/01/flex-and-seo.php" class="bare">http://www.onflex.org/ted/2008/01/flex-and-seo.php</a></p>
+</li>
+<li>
+<p><a href="http://labs.adobe.com/wiki/index.php/Flex_3:Feature_Introductions:_Deep_Linking" class="bare">http://labs.adobe.com/wiki/index.php/Flex_3:Feature_Introductions:_Deep_Linking</a></p>
+</li>
+<li>
+<p><a href="http://blog.iconara.net/2007/12/28/deep-linking-in-flex-using-swfaddress-and-browsermanager/" class="bare">http://blog.iconara.net/2007/12/28/deep-linking-in-flex-using-swfaddress-and-browsermanager/</a></p>
+</li>
+<li>
+<p><a href="http://www.asual.com/swfaddress/" class="bare">http://www.asual.com/swfaddress/</a></p>
+</li>
+<li>
+<p><a href="http://developer.iconara.net/objectlib/flex-browsermanager-swfaddress.html" class="bare">http://developer.iconara.net/objectlib/flex-browsermanager-swfaddress.html</a></p>
+</li>
+<li>
+<p><a href="http://directory.onflex.org/" class="bare">http://directory.onflex.org/</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Photos:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://flickr.com/photos/saturnino/952278498/" class="bare">http://flickr.com/photos/saturnino/952278498/</a></p>
+</li>
+<li>
+<p><a href="http://flickr.com/photos/alainbachellier/433336499/" class="bare">http://flickr.com/photos/alainbachellier/433336499/</a></p>
+</li>
+<li>
+<p><a href="http://flickr.com/photos/vasta/414838330/" class="bare">http://flickr.com/photos/vasta/414838330/</a></p>
+</li>
+<li>
+<p><a href="http://flickr.com/photos/brendare/400014857/" class="bare">http://flickr.com/photos/brendare/400014857/</a></p>
+</li>
+</ul>
+</div>
+</div></p>
+
+<hr/>
+
+
+    
+    <div id="footer">
+
+      <div class="container">
+
+        <p class="credit">
+        Published with
+        a <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/"><em>Creative Commons by-nc-sa</em> license</a>,
+          mixed with <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>,
+          baked with <a href="http://jbake.org">JBake v2.5.1</a>
+
+	      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/fr/">
+        <img alt="Creative Commons License" style="border-width:0"
+	      src="http://i.creativecommons.org/l/by-nc-sa/2.0/fr/80x15.png"/></a>
+
+         </p>
+      </div>
+    </div>
+    
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/jquery-1.9.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+
+  </body>
+</html>

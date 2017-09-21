@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Francois Le Droff: FlexPMD is born</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">    
+
+    <!-- Le styles -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/asciidoctor.css" rel="stylesheet">
+    <link href="/css/base.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="favicon.ico">
+    </head>
+  <body>
+
+
+    <div id="wrap">
+	
+	<!-- Fixed navbar -->
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="container">
+	    <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Francois Le Droff 's Blog</a>
+	    </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">                
+                <li><a href="/about.html">About</a></li>
+
+                <li><a href="/archive.html">Archive</a></li>
+
+
+		            <li><a href="/conferences.html">Conferences</a></li>
+
+                <!--
+		            <li class="dropdown">
+          		      <a data-toggle="dropdown" href="#">Topics<b class="caret"></b></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="/tags/Java.html">Java</a></li>
+                    <li><a href="/tags/OpenSource.html">OpenSource</a></li>
+                    <li><a href="/tags/Misc.html">Misc</a></li>
+                  </ul>
+	              </li>
+	              -->
+
+
+                <li><a href="/feed.xml">Feed</a></li>
+
+                <!--
+                <li><a href="/projects.html">Projects</a></li>
+                -->
+
+              </ul>
+	      <ul class="nav navbar-nav navbar-right">
+	      	<li><a href="https://github.com/francoisledroff"><i class="fa fa-github"></i></a></li>
+	        <li><a href="https://twitter.com/francoisledroff"><i class="fa fa-twitter"></i></a>
+	      </ul>
+            </div>
+          </div>
+      </div>
+      <div class="container">
+	
+	<div class="page-header">
+		<h1>FlexPMD is born</h1>
+    <p class="credit">
+      First published on September 02 2009
+      and tagged 
+    <a href="/tags/Adobe.html">Adobe . </a>
+
+    <a href="/tags/Project.html">Project . </a>
+
+    <a href="/tags/Flex.html">Flex . </a>
+
+    <a href="/tags/FlexPMD.html">FlexPMD . </a>
+		</p>
+	</div>
+
+	<p><div class="paragraph">
+<p>Voila déjà plusieurs mois que je vous parle de FlexPMD. Et bien ça y est! enfin! Mon collègue Xavier et avec lui, tous les autres <strong>contributeurs de "<em>Adobe Technical Service Organization</em>"</strong> sont enfin en mesure de vous annoncer la naissance de <a href="http://blogs.adobe.com/xagnetti/2009/09/flexpmd_release_on_opensourcea.html">FlexPMD</a>.</p>
+</div>
+<div class="paragraph">
+<p><strong>Ce projet est hébergé sur <a href="http://opensource.adobe.com/wiki/display/flexpmd/FlexPMD">opensource.adobe.com</a> sous license <a href="http://opensource.adobe.com/wiki/display/flexpmd/License">BSD</a>.</strong></p>
+</div>
+<div class="paragraph">
+<p>Comme son nom l’indique, <strong>ce projet suit la trace de <a href="http://pmd.sourceforge.net/">PMD</a> pour Java</strong>, l’idée est donc de:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>détecter des <code>pattern'' et </code>anti-pattern'' dans l’arbre syntaxique du code ActionScript et MXML</p>
+<div class="ulist">
+<ul>
+<li>
+<p>définir ces patterns et anti-pattern dans des règles FlexPMD</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>pouvoir automatiser cette détection à travers le build (ou les outils de développement)</p>
+</li>
+<li>
+<p>pouvoir créer facilement des ensembles de règles (des ``rulesets'') spécifiques aux besoins et aux contraintes de vos projets</p>
+<div class="ulist">
+<ul>
+<li>
+<p>et ensuite surveiller le respect de ces règles de façon automatique et systématique</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>FlexPMD dans cette première mouture vient avec 82 règles</strong>, ces règles vous permettront de réaliser l’audit de code Flex à la recherche de</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>code mort</p>
+</li>
+<li>
+<p>méthodes à haute complexité cyclomatique</p>
+</li>
+<li>
+<p>de mauvaise pratique architecturale</p>
+<div class="ulist">
+<ul>
+<li>
+<p>dans l’utilisation de cairngorm</p>
+</li>
+<li>
+<p>dans la gestion d’évènement</p>
+</li>
+<li>
+<p>dans le référencement de composants visuels dans les modèles</p>
+</li>
+<li>
+<p>ou de mauvaise encapsulation</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>et bien plus…</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Je vous invite donc à l’essayer et :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>à créer vous même votre sous ensemble de règle à travers le <a href="http://opensource.adobe.com/svn/opensource/flexpmd/bin/flex-pmd-ruleset-creator.html">flex-pmd-ruleset-creator</a></p>
+</li>
+<li>
+<p>à intégrer FlexPMD dans votre build ( ant ou <strong>maven</strong> )</p>
+<div class="ulist">
+<ul>
+<li>
+<p>à utiliser Hudson pour réaliser des rapports FlexPMD (grâce à son plugin PMD)</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="http://francois.le.droff.com/xwiki/bin/download/Geek/FlexPMD/white026.jpg" alt="image"></span> <strong>Nous attendons aussi vos <a href="http://opensource.adobe.com/wiki/display/flexpmd/Developer+documentation">contributions</a></strong></p>
+</div>
+<div class="paragraph">
+<p>Heureuse coïncidence, j’ai le plaisir de co-présenter avec <a href="http://88.191.25.234/wordpress/">Romain</a> (contributeur <a href="http://pmd.sourceforge.net/">PMD</a> et <a href="http://xradar.sourceforge.net/">XRadar</a>) au prochain <a href="http://www.parisjug.org">ParisJUG</a> : nous vous donnerons un petit <a href="http://www.parisjug.org/xwiki/bin/view/Meeting/20090915">tour d’horizon des outils open source de contrôle qualité</a>. <strong>J’aurai donc l’opportunité de vous en reparler mardi au ParisJUG!</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>Longue vie à FlexPMD</strong> ( et à ses grands frères PMD, XRadar, et Sonar …) !</p>
+</div></p>
+
+<hr/>
+
+
+    
+    <div id="footer">
+
+      <div class="container">
+
+        <p class="credit">
+        Published with
+        a <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/"><em>Creative Commons by-nc-sa</em> license</a>,
+          mixed with <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>,
+          baked with <a href="http://jbake.org">JBake v2.5.1</a>
+
+	      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/fr/">
+        <img alt="Creative Commons License" style="border-width:0"
+	      src="http://i.creativecommons.org/l/by-nc-sa/2.0/fr/80x15.png"/></a>
+
+         </p>
+      </div>
+    </div>
+    
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/jquery-1.9.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+
+  </body>
+</html>

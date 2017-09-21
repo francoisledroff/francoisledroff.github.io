@@ -1,0 +1,47 @@
+=  Dell, encore coupable de vente liée
+Francois Le Droff
+2007-07-04
+:jbake-type: post
+:jbake-tags:  IT 
+:jbake-status: published
+:source-highlighter: prettify
+
+Vous avez sans doute lu comme moi dans la presse que Dell avait annoncé qu’il allait enfin proposer à ses clients http://www.presence-pc.com/actualite/Dell-Ubuntu-23115/[Linux sur plusieurs gammes de ses ordinateurs] (dont certains portables). Hélas, c’était une simple annonce, Dell n’a donné d’information ni sur les caractéristiques de ces machines, ni sur les dates de disponibilité de ces machines.
+
+[cols=",",]
+|=============================================================================================================================================================================================================================================================================================================================================================================================================================================================
+|J’ai donc du me résoudre à acheter mon nouvel ordinateur portable Dell avec un ensemble de logiciels qui ne me sont d’aucune utilité mais qui me sont (évidemment) facturés : Windows Vista, Windows Works et un anti-virus MacAffee. Aucune possibilité pour moi de choisir d’autre système d’exploitation, ou mieux encore de commander un PC sans aucun logiciel installé. C’est ce qu’on appelle de la vente forcée, ou tout au moins de la vente liée. +
+Et c’est illégal ? Et Oui ! |http://flickr.com/photos/distinguish/96495069/[image:http://jroller.com/resources/f/francoisledroff/money.jpg[image]]
+|=============================================================================================================================================================================================================================================================================================================================================================================================================================================================
+
+[[la-loi]]
+La Loi
+^^^^^^
+
+[cols=",",]
+|=============================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================
+|http://flickr.com/photos/esparta/219179430/[image:http://jroller.com/resources/f/francoisledroff/menotte.jpg[image]] |Après quelques http://www.zdnet.fr/actualites/informatique/0,39040745,39124807,00.htm[indécisions de la répression des fraudes], il semblerait que la direction générale de la concurrence, de la consommation et de la répression des fraudes (DGCCRF) se soit prononcée plus http://www.pcinpact.com/actu/news/32672-vente-liee-OS.htm[précisément] et considère une telle vente comme ``une infraction à la réglementation en matière de subordination de vente''. +
+Le ministre de l’économie rappelait également en 2005 à l’Assemblée Nationale que http://questions.assemblee-nationale.fr/q12/12-53733QE.htm[``rien ne saurait exonérer les fournisseurs du respect (…) de l’obligation de commercialiser séparément, sur un même lieu de vente, des produits proposés sous forme de lot.''] +
+Certains députés, comme Richard Cazenave se sont publiquement exprimé : http://www.zdnet.fr/actualites/informatique/0,39040745,39365670,00.htm[``La vente liée des logiciels et du PC doit être sanctionnée par la justice'']
+|=============================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================
+
+[[les-actions]]
+[[HLesActions]]Les Actions
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Les actions de http://www.racketiciel.info/actualite.php[racketiciel], de ttp://www.quechoisir.org/Article.jsp;jsessionid=04754F14694BF8AC6E95E4F9E909AC07.tomcat-1?id=Ressources:Articles:9A595DF33961356BC1256FF700477891&catcss=COM000&impression=oui[l’UFC-Que Choisir et du collectif GdT Détaxe] font du http://www.zdnet.fr/actualites/informatique/0,39040745,39360238,00.htm[bruit] Mais force est de constater que malgré la position maintenant plus précise de la DGCCRF il est aujourd’hui très difficile d’acquérir un ordinateur ``sans se voir imposer un système d’exploitation, ou une cohorte de logiciels annexes non sollicités, mais bel et bien facturés''. Dell comme la majorité des constructeurs et distributeurs de PC pour le grand public reste impunément hors la loi.
+
+[[du-remboursement-de-la-jurisprudence]]
+Du remboursement, de la jurisprudence
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+On retrouve sur le web les témoignages de http://www.gcolpart.com/howto/nowin.php4[courageux] (vous avez dit http://zoonek2.free.fr/UNIX/45_portable/portable_achat.html[teigneux] ? ), et quelques http://www.aful.org/wikis/detaxe/ProcedureType/cps_wiki_pageview[procédure type]. Mais les réussites sont rares et fastidieuses :
+
+* ``Dave Mitchell décide de prendre en photo toutes les étapes du premier démarrage de sa machine ainsi que l’intégralité du CLUF, en le faisant défiler à l’écran, puis refuse d’accepter les conditions dudit contrat. Le 1er novembre, il envoie un courrier à Dell dans lequel il explique, image à l’appui, qu’il a refusé le CLUF de Windows et qu’il s’estime donc en droit d’obtenir le remboursement du logiciel. Le 7, il reçoit de Dell la somme de 55,23 livres sterling, correspondant à la valeur du système d’exploitation et aux diverses taxes appliquées en Grande Bretage sur les logiciels.'' (source http://www.clubic.com/actualite-65272-vente-liee-dell-rembourse-windows-linuxien.html[clubic] voici sa http://www.linuxworld.com/community/?q=node/241[belle lettre]).
+* http://www.aful.org/wikis/detaxe/Reussie2[cette page] du wiki de l’aful qui nous fait part ``des démarches qui ont permis d’obtenir un remboursement de 20% (274,84 Eur) du prix d’un ordinateur portable Dell et des logiciels associés (Win XP familiale SP1, Works 7.0, Norton AV - 90 jours -, Paint Shop Pro - version d’évaluation -, Image Expert - version d’évaluation - et un logiciel décodeur de DVD dont le nom ne figure pas sur la facture). On peut considérer qu’il s’agit d’une détaxe réussie même s’il ne s’agit pas à proprement parler du remboursement des logiciels - objectif du GdTDetaxe - mais d’un geste commercial. En effet, Dell n’a pas voulu reprendre les logiciels.''
+* Le 6 juillet 2006, un client gagne son procès (débuté en 2005, pour un litige datant de 2004) dans le cas d’une vente liée mais la société ASUS est condamnée avant tout pour manque de réactivité et d’information et pas explicitement pour vente liée (Plus d’info sur http://www.pcinpact.com/actu/news/30977-Victoire-dun-client-en-matiere-de-vente-liee.htm[pcinpact] , qui a mis le http://www.pcinpact.com/link.php?url=http%3A%2F%2Faramis.obspm.fr%2F%7Ecoulais%2FLogicielsLibres%2FDetaxe%2FJugementCRESP-ASUS_06.07.06.pdf[jugement en ligne).]
+
+[cols=",",]
+|============================================================================================================================================================================================================================================================================================================================================================
+|http://flickr.com/photos/steventom/87568944/[image:http://jroller.com/resources/f/francoisledroff/verrou.jpg[image]] |Une réelle jurisprudence se fait donc encore attendre, espérons que les tribunaux et la DGCCRF se montrent plus actifs et répréhensifs à l’avenir et rejoignent la position plus ferme revendiquée par les députés et le gouvernement.
+|============================================================================================================================================================================================================================================================================================================================================================

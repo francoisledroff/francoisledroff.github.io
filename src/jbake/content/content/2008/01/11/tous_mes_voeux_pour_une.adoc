@@ -1,0 +1,80 @@
+=  Tous mes voeux pour une année de
+Francois Le Droff
+2008-01-11
+:jbake-type: post
+:jbake-tags:  OpenSource, Conference
+:jbake-status: published
+:source-highlighter: prettify
+
+Bonne année à tous ! Qu’elle soit de ``qualité'' pour vous et tous vos projets (Open Source ou non).
+
+La ``Qualité'' c’est d’ailleurs le sujet de ma présentation au prochain salon solution linux : http://www.solutionslinux.fr/fr/conferences_detail.php?id_conference=95[``Construire sa vision qualité d’un projet Java à l’aide de logiciels libres'']
+
+Je ferai cette présentation avec un ancien collègue de chez AtosOrigin, http://88.191.19.81/wordpress/[Romain Pelisse] (qui est contributeur http://pmd.sourceforge.net/[PMD] et http://xradar.sourceforge.net/[XRadar]).
+
+Nous présenterons (entre autres choses) nos retours d’expérience sur la mise en place et l’utilisation de nombreux outils d’analyses statiques de code Java :
+
+* Les outils de ``bas niveau'' de type : CheckStyle, PMD, FindBugs, JDepend, CKJM, Classycle, JUnit report, Cobertura, Emma….
+* Puis les outils de ``second niveau'' outils d’agrégation, de consolidation, de synthèse et d’historisation des rapports produits par ces premiers outils
+
+Et afin d’enrichir notre présentation, j’aurai aimé avoir quelques retours de votre part à ce sujet, si vous avez quelques secondes pour répondre à ces questions, j’en serai très reconnaissant.
+
+Romain et moi avons en effet une bonne connaissance de http://xradar.sourceforge.net/[XRadar] et http://qalab.sourceforge.net/[QALab], mais nous avons assez peu de retour de http://sonar.hortis.ch/[sonar] et le nouveau http://mojo.codehaus.org/dashboard%2Dmaven%2Dplugin/[maven dashboard]. Et vous ? Utilisez vous ces outils ? Y en a-t-il d’autres que l’on aurait oublié dans ce domaine ? Nous ne connaissons pas le monde d’Ivy ….
+
+http://flickr.com/photos/pauldr/1787587305/[image:http://jroller.com/francoisledroff/resource/quality-dogs.jpg[quality-dogs.jpg,title="quality-dogs.jpg"]]
+
+Et enfin voici un petit sondage :
+
+*Verifiez-vous la qualité logiciel de vos projets* ?
+
+* systématiquement, continuellement ?
+** dans l’IDE ?
+** en intégration continue ?
+* lors de la construction ? de l’intégration ? dans les réslutats des rapports de builds ?
+** build maven ? ant ? Ivy ?
+* de temps en temps ?
+** par sondage manuel ?
+*** en cas de défauts uniquement ? sur demande du client ?
+
+ http://flickr.com/photos/kb35/349762358/[image:http://jroller.com/francoisledroff/resource/quality-ice-cream.jpg[quality-ice-cream.jpg,title="quality-ice-cream.jpg"]]
+
+*Avez-vous mis en place des règles ? Y a-t-il un niveau de qualité requis pour une recette ?*
+
+* des règles de style ?
+* des convention de codage ?
+* des chartes de développement définissant les règles de qualité logicielle ?
+* des chartes d’architecture ?
+
+*Que vérifiez vous et comment vérifiez-vous la qualité ?*
+
+* le style de code ?
+** CheckStyle, autre ?
+* les ``copié-collés'' ?
+** CPD ? Condenser ? Autres ?
+* la taille et la complexité (cyclomatique) du code ?
+** javaNCSS, autre ?
+* les régles de codage, pattern et anti pattern de code ?
+** Avez vous défini vos propres règles de codages ?
+** avec PMD ? FindBugs ? Lint4J ? Hammurapi ? autre ?
+* les dépendances (cycliques ou pas), les couplages entre package ? entre classe ? les règles d’architecture en couche ?
+** JDepend ? Classycle ? CAP ? DependencyFinder ? Clirr ? autre ?
+* la présence et la couverture des tests unitaires ?
+** TestNG ? JUnit ? Corbertura ? Emma ? autre ?
+
+ http://flickr.com/photos/el%2Dcatalejo/1474055306/[image:http://jroller.com/francoisledroff/resource/qa-ok.jpg[qa-ok.jpg,title="qa-ok.jpg"]]
+
+*Consolidez vous les rapports ? pour avoir une note, une ``synthèse'' globale ?*
+
+* sous quelle forme ?
+* Quel outil utilisez vous ? XRadar ? Sonar ? Maven Dashboard ? autre ?
+
+*Historisez-vous les résultats ?*
+
+* par release ? par build ?
+* Comment ? XRadar ? QaLab ? autre ?
+
+*Utilisez vous des outils de refactoring, intégré au outils de contrôle qualité ?*
+
+* JackPot ? Spoon ? autre ?
+
+http://flickr.com/photos/jeremybrooks/1399474069/[image:http://jroller.com/francoisledroff/resource/quality-you-can-taste.jpg[quality-you-can-taste.jpg,title="quality-you-can-taste.jpg"]]

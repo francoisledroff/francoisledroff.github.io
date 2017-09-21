@@ -1,0 +1,13 @@
+=  Demo surprise de LCDS NEXT ce soir à la réunion des tontons flexeurs
+Francois Le Droff
+2008-12-16
+:jbake-type: post
+:jbake-tags:  Adobe 
+:jbake-status: published
+:source-highlighter: prettify
+
+Ce soir les tontons flexeurs sont http://www.baao.com/Evenements/Reunion_des_Tontons_Retour_de_Max.html[``DE RETOUR DE MAX 2008'']. A cette occasion je ferai une petite démo *surprise* de ce que pourrait être la prochaine version de LCDS: la version ``Next''
+
+Je vais tenter de jouer en un temps record une partie de la présentation de Christophe Coenraets à Max Europe : http://coenraets.org/blog/2008/12/max-europe-new-session-model-driven-development-using-flex-builder-4-and-lcds-next/[``Model Driven Development using Flex Builder 4 and LCDS Next''].
+
+Dans cette démo, nous verrons quelques nouveautés intéressantes de Flex Builder 4 et LiveCycle Data Services ``Next''. En utilisant une combinaison de ces 2 produits, nous construirons une application CRUD sans écrire la moindre ligne de code côté serveur, (et très peu côté client). Toute la logique d’accès et de gestion des données sera générée d’après le modèle de données (les ``entités'') définies en base de données.

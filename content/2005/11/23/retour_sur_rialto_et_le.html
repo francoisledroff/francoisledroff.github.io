@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Francois Le Droff: Retour sur Rialto et le Web 2.0</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">    
+
+    <!-- Le styles -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/asciidoctor.css" rel="stylesheet">
+    <link href="/css/base.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="favicon.ico">
+    </head>
+  <body>
+
+
+    <div id="wrap">
+	
+	<!-- Fixed navbar -->
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="container">
+	    <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Francois Le Droff 's Blog</a>
+	    </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">                
+                <li><a href="/about.html">About</a></li>
+
+                <li><a href="/archive.html">Archive</a></li>
+
+
+		            <li><a href="/conferences.html">Conferences</a></li>
+
+                <!--
+		            <li class="dropdown">
+          		      <a data-toggle="dropdown" href="#">Topics<b class="caret"></b></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="/tags/Java.html">Java</a></li>
+                    <li><a href="/tags/OpenSource.html">OpenSource</a></li>
+                    <li><a href="/tags/Misc.html">Misc</a></li>
+                  </ul>
+	              </li>
+	              -->
+
+
+                <li><a href="/feed.xml">Feed</a></li>
+
+                <!--
+                <li><a href="/projects.html">Projects</a></li>
+                -->
+
+              </ul>
+	      <ul class="nav navbar-nav navbar-right">
+	      	<li><a href="https://github.com/francoisledroff"><i class="fa fa-github"></i></a></li>
+	        <li><a href="https://twitter.com/francoisledroff"><i class="fa fa-twitter"></i></a>
+	      </ul>
+            </div>
+          </div>
+      </div>
+      <div class="container">
+	
+	<div class="page-header">
+		<h1>Retour sur Rialto et le Web 2.0</h1>
+    <p class="credit">
+      First published on November 23 2005
+      and tagged 
+    <a href="/tags/OpenSource.html">OpenSource . </a>
+
+    <a href="/tags/ossgtp.html">ossgtp . </a>
+		</p>
+	</div>
+
+	<p><div class="paragraph">
+<p>Lors de la dernière <a href="http://ossgtp.xwiki.com/xwiki/bin/view/Main/17Novembre2005">réunion</a> <a href="http://ossgtp.xwiki.org">ossgtp</a>, <a href="http://www.application-servers.com/">Didier</a> nous a <a href="http://www.application-servers.com/stories.do?reqCode=wholeStory&amp;sid=2005-11-17-17:14:56">annoncé</a> la lancement d’un nouveau projet open-source prometteur : une bibliothèque de composants graphiques développée en javascript nommée <a href="http://rialto.application-servers.com/">Rialto</a>.</p>
+</div>
+<div class="paragraph">
+<p>Le Framework Rialto a été réalisé par le SI de l’ <a href="http://www.igr.fr/">Institut Gustave Roussy</a> (IGR) 1er centre européen de lutte contre le cancer. Il a permis de bâtir une application de consultation des dossiers patients via le Web utilisé maintenant par l’ensemble du personnel médical de l’IGR. Sous l’implusion d’ <a href="http://www.improve-technologies.com/">improve</a>, l’IGR a décidé d’open-sourcer ce framework sous licence apache.</p>
+</div>
+<div class="paragraph">
+<p>La <a href="http://rialto.application-servers.com/demoRialto.jsp">démo</a> est probante, l’ihm efficace, légère, intuitive. La techno : le core c’est du javascript, la mise en oeuvre peut passer par des taglib JSP ou par un adapteur struts mais aussi à terme par .NET ou JSF.</p>
+</div>
+<div class="paragraph">
+<p>Les réactions de certains geeks parmi nous:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>``Du javascript !! non merci ! je ne me vois pas utiliser ça ! à maintenir, à débugger c’est l’horreur ! et puis c’est jamais compatible à plus d’une version ou deux de navigateur !''</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>J’ai souvent entendu ça, j’ai souvent vu des développeurs préferrer mettre en oeuvre des incessants aller-retour web-serveur plutôt que de coder et maintenir une ligne de javascript et/ou DHTML. J’étais, moi même, peu tenté par la mise en oeuvre de javascript avant ma rencontre en 2001 avec un guru du javascript, qui avait mis en oeuvre de bien jolie chose sur un portail entreprise (pour info <a href="https://nseenergy-prod.net/adviso">netseenergy</a>). Il m’a convaincu de la pertinence et de la beauté de la techno javascript - je l’ai convaincu de basculer son appli de microsoft asp vers J2EE- .</p>
+</div>
+<div class="paragraph">
+<p>C’est ainsi qu’en 2001, en plein boom internet Web 1.0, sans le savoir, nous fesions déja dans le Web 2.0 ou dans l’AJAX :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>en intégrant de beaux widgets DHTML, javascript ``maisons''</p>
+</li>
+<li>
+<p>et d’autres glanés dans le monde open-source, notamment les excellentes solutions de <a href="http://webfx.eae.net/" class="bare">http://webfx.eae.net/</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Nos clients - jusqu’alors insatisfaits des solutions HTML (trop basique) et applet (trop lourd)- ont très bien accueilli ces solutions. Et oui, finalement pour moi non plus <a href="http://www.ludovic.org/archives/000490.html">le Web 2.0 n’est pas une révolution</a>, mais une évolution, ce qui est notable c’est <a href="http://aurel.is.free.fr/blog/index.php?2005/09/25/194-web-20-2eme-partie">l’arrivée à maturité des infrastructures, des technos et des utilisateurs</a>.</p>
+</div>
+<div class="paragraph">
+<p>Tout ça pour dire que, dès 2001, il était possible d’intégrer sans difficulté des composants javascript propre, beau, maintenable et cross-browser. Maintenant avec les nouveaux IDEs, debuggers et navigateurs, c’est encore plus facile et pérenne !.</p>
+</div>
+<div class="paragraph">
+<p>C’est pourquoi je pense que Rialto pourrait être un des acteurs de cette évolution du web. Dans le cadre d’une utilisation pertinente, ce toolkit saura à coup <a href="http://www.fredcavazza.net/index.php?2005/11/20/951-web-20-le-putsch-des-utilisateurs">séduire les utilisateurs</a>.</p>
+</div>
+<div class="paragraph">
+<p>Quoi qu’il en soit, j’espère que Rialto saura rencontrer son public, sa communauté. Moi dès qu’il est disponible en téléchargement (vendredi?), je l’essaye !</p>
+</div></p>
+
+<hr/>
+
+
+    
+    <div id="footer">
+
+      <div class="container">
+
+        <p class="credit">
+        Published with
+        a <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/"><em>Creative Commons by-nc-sa</em> license</a>,
+          mixed with <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>,
+          baked with <a href="http://jbake.org">JBake v2.5.1</a>
+
+	      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/fr/">
+        <img alt="Creative Commons License" style="border-width:0"
+	      src="http://i.creativecommons.org/l/by-nc-sa/2.0/fr/80x15.png"/></a>
+
+         </p>
+      </div>
+    </div>
+    
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/jquery-1.9.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+
+  </body>
+</html>

@@ -1,0 +1,16 @@
+=  Soirée Flex/RIA au Nantes jug
+Francois Le Droff
+2010-11-29
+:jbake-type: post
+:jbake-tags:  Adobe 
+:jbake-status: published
+:source-highlighter: prettify
+
+J’ai eu l’honneur et le plaisir de faire salle comble aux Mines de Nantes, Jeudi soir, lors de la dernière réunion du http://www.nantesjug.org/[Java User Group Nantais]. Merci d’être venu si nombreux, voici, comme promis, les slides.
+
+[[__ss_5960098]]
+*http://www.slideshare.net/francoisledroff/soire-flexria-au-nantes-jug[Soirée Flex/RIA au Nantes jug]*
+
+View more http://www.slideshare.net/[presentations] from http://www.slideshare.net/francoisledroff[François Le Droff].
+
+Pour aller plus loin, je vous conseille vivement de suivre les blogs et projets de mes collègues http://www.riagora.com/[Michael], http://www.jamesward.com/[James], http://www.bytearray.org/[Thibault] et http://coenraets.org/blog/[Christophe], ainsi que le http://sourceforge.net/adobe/cairngorm/home/[projet Cairngorm3].

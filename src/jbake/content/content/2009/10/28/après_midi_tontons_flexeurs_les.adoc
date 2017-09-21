@@ -1,0 +1,20 @@
+=  Après midi
+Francois Le Droff
+2009-10-28
+:jbake-type: post
+:jbake-tags:  Adobe 
+:jbake-status: published
+:source-highlighter: prettify
+
+Ami flexeur et/ou développeur Java, voici un évènement à ne pas manquer (à moins d’avoir une bonne raison comme moi image:http://www.jroller.com/images/smileys/sad.gif[:-(,title=":-("] ), car http://coenraets.org[Christophe Coenraets] évangéliste (Sénior et Francophone!) chez Adobe fera un petit stop chez http://groups.adobe.com/groups/193bcaff5f/summary[les Tontons Flexeurs] avant de prendre la route pour http://www.devoxx.com[Devoxx]. Christophe sera donc à Paris le 10 Novembre pour nous présenter
+
+* les nouveautés de LiveCycle Data Services 3,
+* le Model-Driven Development avec Flash Builder 4
+* et l’intégration de Flex avec Spring.
+
+image:http://www.baao.com/images/ttfx.jpg[http://www.baao.com/images/ttfx.jpg,title="http://www.baao.com/images/ttfx.jpg",width=350]
+
+Inscris-toi vite, les places sont limitées : http://coenraets-flex4.eventbrite.com/[http://coenraets-flex4.eventbrite.com]
+
+* Date : le 10 Novembre de 14h à 16h. +
+* Lieu : Adobe, 112 avenue Kléber 75016 PARIS, Métro : Trocadéro

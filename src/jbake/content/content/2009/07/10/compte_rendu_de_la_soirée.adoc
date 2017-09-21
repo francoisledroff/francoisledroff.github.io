@@ -1,0 +1,54 @@
+=  Compte rendu de la soirée RIA au ParisJUG
+Francois Le Droff
+2009-07-10
+:jbake-type: post
+:jbake-tags:  Java 
+:jbake-status: published
+:source-highlighter: prettify
+
+Voici mon compte rendu de la http://www.parisjug.org/xwiki/bin/view/Meeting/20090707[Soirée RIA au ParisJUG]
+
+J’y ai donc tenté(*) de présenter :
+
+* rapidement l’offre RIA Adobe (pour les nombreux juggers qui ne la connaissaient pas)
+* puis la mise en place des services Flex (remoting, messaging et data-management) avec http://www.springsource.org/spring-flex[Spring-Flex]
+* et enfin un rapide aperçu de http://labs.adobe.com/technologies/flashcatalyst/[FlashCatalyst]
+
+(*) l’exercice était assez difficile, j’ai du faire avec quelques petits problèmes techniques: micro, ampli et écran (pour l’écran, c’était de ma faute, j’aurai mieux fait de cloner mon écran sur le projo, c’eût été bien plus simple pour les démo…) m’enfin… image:http://www.jroller.com/images/smileys/smile.gif[:-),title=":-)"], voici les slides :
+
+[[__ss_1703887]]
+http://www.slideshare.net/francoisledroff/flex-services-and-spring-with-springflex-parisjug[Flex Services And Spring with Spring-Flex ParisJug]
+
+View more http://www.slideshare.net/[documents] from http://www.slideshare.net/francoisledroff[francoisledroff].
+
+Contrairement à ce qu’indique Le http://www.touilleur-express.fr/2009/07/09/paris-jug-retour-sur-la-soiree-ria-adobe-flex-et-javafx-partie-1/[Touilleur] dans son blog, les articles de http://fponchel.developpez.com/tutoriel/flex3/integration/blazeds-spring/[Franck] et http://www.adobe.com/devnet/flex/articles/fullstack_pt1.html[Sébastien] ne présentent pas cette technologie mais l’ancienne approche, la première intégration du Flex Remoting offerte par Jeff Vroom à travers sa SpringFactory. Ce qu’il faut retenir c’est que Spring-Flex (ce nouveau socle technique issu d’un **partenariat Adobe Spring-Source**) va beaucoup plus loin et facilite énormément la mise en place d’un front-end Flex au dessus d’un back-end (Spring) java. Il permet par exemple:
+
+* de mettre d’exposer un service Flex Remoting avec une simple annotation org.springframework.flex.remoting.RemotingDestination
+* de sécuriser les canaux de communication de façon quasi transparent avec Spring-Security
+
+Pour plus de détails, voir:
+
+* mes http://www.slideshare.net/francoisledroff/flex-services-and-spring-with-springflex-parisjug[slides]
+* Le ``test drive'' de http://coenraets.org/blog/2009/05/new-update-to-the-spring-blazeds-integration-test-drive/[Christophe Coenraets]
+* http://www.springbyexample.org/examples/simple-flex-webapp.html[Spring By Example]
+* http://static.springsource.org/spring-flex/docs/1.0.x/reference/html/index.html[La doc complète de Spring-Flex]
+* ou encore le code source (mavenisé) de ma démo http://fna-v2.googlecode.com/svn/trunk/samples/riveria_jug/spring_flex_todo/ donnée également au http://jroller.com/francoisledroff/entry/the_spring_of_flex_remoting[RiveriaJUG]
+
+J’ai terminé ma session par une démo trop rapide de ce que l’on peut faire avec http://labs.adobe.com/technologies/flashcatalyst/[FlashCatalyst], (j’aurai du faire abstraction de 75% des juggers utilisateurs de spring présents dans la salle et commencer par ça. La session aurait été bien plus fun et moins rébarbative, Le sujet spring-flex était en effet plus adapté pour un lab ou une formation…)
+
+Voici donc en bonus quelques slides présentant FlashCatalyst :
+
+[[__ss_1704149]]
+http://www.slideshare.net/francoisledroff/flash-catalyst-jug[Flash Catalyst Jug]
+
+View more http://www.slideshare.net/[documents] from http://www.slideshare.net/francoisledroff[francoisledroff].
+
+Pour la démo, je pars donc d’un design réalisé sous Illustrator, je passe par Catalyst pour en faire une DataList Flex4, et hop sous Eclipse/FlashBuider, j’incorpore le composant DataList skinné:
+
+image:http://francois.le.droff.com/xwiki/bin/download/Geek/ParisJUG-Spring-flex/white315.jpg[http://francois.le.droff.com/xwiki/bin/download/Geek/ParisJUG-Spring-flex/white315.jpg,title="http://francois.le.droff.com/xwiki/bin/download/Geek/ParisJUG-Spring-flex/white315.jpg",width=500]
+
+On notera que pour ce petit composant, le code source généré par FlashCatalyst reste propre et ne pollue en rien mon projet de départ, pour preuve, je vous ai mis à disposition le code source de la démo sur google-code : http://fna-v2.googlecode.com/svn/trunk/samples/riveria_jug/simple_fc_skinned_i18n_todo_client/.
+
+Si vous voulez essayer cette techno, allez donc faire un tour sur le blog de Thibault, il y a publié le résultat de son « évangelisation » catalyst : http://www.bytearray.org/?p=839. Vous y trouverez tout pour skinner une appli de type « adobe directory » avec Flex4 et FlashCatalyst (et en français!).
+
+Après la pause, c’était Simon Ritters qui présentait JavaFX, http://codemoiunmouton.wordpress.com/2009/07/08/quelle-strategie-pour-sun-javafx/[Michael nous en a fait un compte rendu]. Ceux qui ont aimé la http://blog.ostyn.fr/index.php?post/2009/07/09/JavaFX-%3A-une-demo-bluffante[démo wiimote de JavaFx] vont forcement adoré http://tv.adobe.com/fr/#vi+f15278v1039[les démos de Thibault] et de son http://wiiflash.bytearray.org/[wiiFlash]. (Et dire que Simon et Thibault sont payés pour faire ça !! nous sommes forcement tous jaloux !! image:http://www.jroller.com/images/smileys/smile.gif[:-),title=":-)"])

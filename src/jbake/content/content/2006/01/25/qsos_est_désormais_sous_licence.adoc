@@ -1,0 +1,19 @@
+=  QSOS est désormais sous licence GNU FDL
+Francois Le Droff
+2006-01-25
+:jbake-type: post
+:jbake-tags:  OpenSource, QSOS
+:jbake-status: published
+:source-highlighter: prettify
+
+http://jroller.com/page/francoisledroff?entry=qsos_qualification_et_de_s%C3%A9lection[QSOS: Qualification et de Sélection de logiciels Open Source] est désormais sous licence GNU FDL (toute comme les grilles fonctionnelles et les fiches produits).
+
+Un rappel sur les objectifs principaux de cette méthode :
+
+* *Analyser et évaluer objectivement* les logiciels et projets
+* *Intégrer les contraintes et quantifier les risques* spécifiques à l’open source (pérennité, risques de fork, services disponibles, licence, etc…)
+* **Tenir compte**, dans l’évaluation, *du contexte* d’utilisation par le particulier, l’entreprise ou l’administration (existant technique, cible fonctionnelle, compétences des équipes internes, usages du logiciel, criticité dans le système d’information?).
+* Produire des **résultats objectifs, étayés et personnalisés**.
+* La démarche structurée, les multiples critères d’analyse, et la métrologie définis par QSOS en font une méthode qui permet une **évaluation objective et argumentée des logiciels libres**.
+
+La méthode elle-même, comme les modèles et plusieurs fiches d’évaluation, sont disponibles sur le site http://www.qsos.org/[http://www.qsos.org]. N’hésitez y rejoindre la communauté et à contribuer à l’amélioration ou la création de nouvelles évaluations.

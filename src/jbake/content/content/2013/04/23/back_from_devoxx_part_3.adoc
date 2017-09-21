@@ -1,0 +1,157 @@
+=  Back from Devoxx - Part 3 - Dev-QA-Ops Thoughts - About Tests and Code analysis
+Francois Le Droff
+2013-04-23
+:jbake-type: post
+:jbake-tags:  Java 
+:jbake-status: published
+:source-highlighter: prettify
+
+Here are some more notes and various pointers on software engineering quality, continuous delivery and dev-qa-ops practices gathered during http://www.devoxx.com/display/FR13/Accueil[devoxxfr^image:/images/icons/linkext7.gif[image,width=7,height=7]^], after https://zerowing.corp.adobe.com/display/~ledroff/2013/04/18/Back+from+Devoxx+-+Part+1+-+Dev-QA-Ops+Thoughts+-+About+Branching[branching^image:/images/icons/linkext7.gif[image,width=7,height=7]^] and https://zerowing.corp.adobe.com/display/~ledroff/2013/04/19/Back+from+Devoxx+-+Part+2+-+Dev-QA-Ops+Thoughts+-+About+Build+Promotion[buid-promotion^image:/images/icons/linkext7.gif[image,width=7,height=7]^], this entry will be about tests and code analysis
+
+link:#BackfromDevoxx-Part3-Dev-QA-OpsThoughts-AboutTestsandCodeanalysis-IDEtools[IDE tools]
+
+link:#BackfromDevoxx-Part3-Dev-QA-OpsThoughts-AboutTestsandCodeanalysis-Unittesting[Unit testing]
+
+link:#BackfromDevoxx-Part3-Dev-QA-OpsThoughts-AboutTestsandCodeanalysis-Functionaltesting[Functional testing]
+
+link:#BackfromDevoxx-Part3-Dev-QA-OpsThoughts-AboutTestsandCodeanalysis-BDD[BDD]
+
+link:#BackfromDevoxx-Part3-Dev-QA-OpsThoughts-AboutTestsandCodeanalysis-Performancetesting[Performance testing]
+
+link:#BackfromDevoxx-Part3-Dev-QA-OpsThoughts-AboutTestsandCodeanalysis-TestCoverage[Test Coverage]
+
+link:#BackfromDevoxx-Part3-Dev-QA-OpsThoughts-AboutTestsandCodeanalysis-CodeAnalysis[Code Analysis]
+
+* link:#BackfromDevoxx-Part3-Dev-QA-OpsThoughts-AboutTestsandCodeanalysis-APIstability[API stability]
+* link:#BackfromDevoxx-Part3-Dev-QA-OpsThoughts-AboutTestsandCodeanalysis-PMD[PMD]
+* link:#BackfromDevoxx-Part3-Dev-QA-OpsThoughts-AboutTestsandCodeanalysis-dependenciesmanagement[dependencies management]
+
+link:#BackfromDevoxx-Part3-Dev-QA-OpsThoughts-AboutTestsandCodeanalysis-Qualitydashboard[Quality dashboard]
+
+[[ide-tools]]
+link:[]IDE tools
+^^^^^^^^^^^^^^^^
+
+* Here is TDD friendly plugin http://moreunit.sourceforge.net/[http://moreunit.sourceforge.net/^image:/images/icons/linkext7.gif[image,width=7,height=7]^] It’s for eclipse, but it looks like there is one for intelliJ too cf. http://rjohnshields.com/blog/?p=89[http://rjohnshields.com/blog/?p=89^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+* Once you have your tests done, you can run them continously within your IDE with http://infinitest.org[http://infinitest.org^image:/images/icons/linkext7.gif[image,width=7,height=7]^] +
+that will run all impacted tests after each code change.
+
+[[unit-testing]]
+link:[]Unit testing
+^^^^^^^^^^^^^^^^^^^
+
+* FEST-Assert is a set of libraries and fixture to make your assertions more readable: http://fest.easytesting.org/[http://fest.easytesting.org/^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+
+[[functional-testing]]
+link:[]Functional testing
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+We had refresher on link:/pages/createpage.action?spaceKey=~ledroff&title=PageObject[PageObject^image:/images/icons/plus.gif[image,width=7,height=7]^] and link:/pages/createpage.action?spaceKey=~ledroff&title=PageFactory[PageFactory^image:/images/icons/plus.gif[image,width=7,height=7]^] pattern with selenium with https://twitter.com/framiere[Florent\^image:/images/icons/linkext7.gif[image,width=7,height=7]^]. These patterns allow to dissociate the DOM from the functional testing.
+
+* A page object is an object-oriented class that serves as an interface to a page of your Application Under Test. The tests then use the methods of this page object class whenever they need to interact with that page of the UI. The benefit is that if the UI changes for the page, the tests themselves don’t need to change, only the code within the page object needs to change. Subsequently all changes to support that new UI are located in one place.
++
+
+* The page factory instantiates our page object (link:/pages/createpage.action?spaceKey=~ledroff&title=AmazonSearchResultsPage[AmazonSearchResultsPage^image:/images/icons/plus.gif[image,width=7,height=7]^]) and finds the annotated fields. The returned search results page is then a fully populated page object, ready to be used by the test as before.
+
+cf.
+
+* https://code.google.com/p/selenium/wiki/PageFactory[https://code.google.com/p/selenium/wiki/PageFactory^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+* https://weblogs.java.net/blog/johnsmart/archive/2010/08/09/selenium-2web-driver-land-where-page-objects-are-king[https://weblogs.java.net/blog/johnsmart/archive/2010/08/09/selenium-2web-driver-land-where-page-objects-are-king^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+* http://blog.activelylazy.co.uk/2011/07/09/page-objects-in-selenium-2-0/[http://blog.activelylazy.co.uk/2011/07/09/page-objects-in-selenium-2-0/^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+
+Florent also demoed and mentioned Headless Functional Testing with Selenium and link:/pages/createpage.action?spaceKey=~ledroff&title=PhantomJS[PhantomJS^image:/images/icons/plus.gif[image,width=7,height=7]^]:
+
+* http://net.tutsplus.com/tutorials/javascript-ajax/headless-functional-testing-with-selenium-and-phantomjs/[http://net.tutsplus.com/tutorials/javascript-ajax/headless-functional-testing-with-selenium-and-phantomjs/^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+* http://michael-whelan.net/using-phantomjs-with-webdriver[http://michael-whelan.net/using-phantomjs-with-webdriver^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+* https://github.com/detro/ghostdriver[https://github.com/detro/ghostdriver^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+
+Note that you can also write smart and readable assertion with link:/pages/createpage.action?spaceKey=~ledroff&title=FluentLenium[FluentLenium^image:/images/icons/plus.gif[image,width=7,height=7]^], this framework lets you use the assertion framework you like, either jUnit assertions, Hamcrest or Fest-assert.cf. https://github.com/FluentLenium/FluentLenium[https://github.com/FluentLenium/FluentLenium^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+
+[[bdd]]
+link:[]BDD
+^^^^^^^^^^
+
+If you are into BDD here is Cucumber https://github.com/cucumber/cucumber-jvm/blob/master/examples/java-helloworld/src/test/resources/cucumber/examples/java/helloworld/helloworld.feature[https://github.com/cucumber/cucumber-jvm/blob/master/examples/java-helloworld/src/test/resources/cucumber/examples/java/helloworld/helloworld.feature^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+
+[[performance-testing]]
+link:[]Performance testing
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* JMeter is getting old, but is still useful
+* I also met with https://twitter.com/slandelle[Stéphane^image:/images/icons/linkext7.gif[image,width=7,height=7]^] during the ``les mercenaires du devops'' session. +
+I had a quick demo of Gatlin. http://gatling-tool.org/[Gatlin^image:/images/icons/linkext7.gif[image,width=7,height=7]^] is definitely something I need to try out.
+
+[[test-coverage]]
+link:[]Test Coverage
+^^^^^^^^^^^^^^^^^^^^
+
+Having a good test coverage is wishfull thinking, but what about failing the build is the coverage is not meeting the team’s definition of done, again, a maven plugin is here to help:
+
+cf. http://www.eclemma.org/jacoco/trunk/doc/maven.html[http://www.eclemma.org/jacoco/trunk/doc/maven.html^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+
+Vincent gave a few tips on this in his talk cf. http://massol.myxwiki.org/xwiki/bin/view/Blog/Devoxx+France+2013[http://massol.myxwiki.org/xwiki/bin/view/Blog/Devoxx+France+2013^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+
+* Put the Jacoco check in ``Quality'' Maven Profile
+* Have a CI job to execute that profile regularly
+** Expect about 15% overhead compared to build without checks
+
+[[code-analysis]]
+link:[]Code Analysis
+^^^^^^^^^^^^^^^^^^^^
+
+[[a-namebackfromdevoxx-part3-dev-qa-opsthoughts-abouttestsandcodeanalysis-apistabilityapi-stability]]
+a name=``BackfromDevoxx-Part3-Dev-QA-OpsThoughts-AboutTestsandCodeanalysis-APIstability''>API stability
+
+Vincent also brought us back to this old but still usefull utilities: clirr. What is Clirr ? +
+
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+Basically you give it two sets of JAR files and Clirr dumps out a list of changes in the public API. Clirr Maven Plugin can be used to break the build if it detects incompatible API changes. In a continuous integration process Clirr can automatically prevent accidental introduction of binary or source compatibility problems.
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+cf. http://mojo.codehaus.org/clirr-maven-plugin/index.html[http://mojo.codehaus.org/clirr-maven-plugin/index.html^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+
+Vincent also mentioned a plugin unknown to me before: maven-duplicate-finder-plugin +
+
+_______________________________________________________________________________________________________________________________
+this will search for classes with the same name, as well as resources with the same path, in the classpaths of a maven project.
+_______________________________________________________________________________________________________________________________
+
+cf. https://github.com/ning/maven-duplicate-finder-plugin[https://github.com/ning/maven-duplicate-finder-plugin^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+
+[[pmd]]
+link:[]PMD
+
+https://twitter.com/rpelisse[Romain^image:/images/icons/linkext7.gif[image,width=7,height=7]^] gave a fun and refreshing quickie on PMD and more especially PMD for javascript. +
+If you start using it,
+
+* start small with your own small subset agreed and understood by the entire dev team. Add it to ``your definition of done''
+* enable that within the IDE through plugins cf. http://pmd.sourceforge.net/pmd-5.0.3/integrations.html[http://pmd.sourceforge.net/pmd-5.0.3/integrations.html^image:/images/icons/linkext7.gif[image,width=7,height=7]^]** http://plugins.jetbrains.com/plugin/?id=1137[http://plugins.jetbrains.com/plugin/?id=1137^image:/images/icons/linkext7.gif[image,width=7,height=7]^]** http://pmd.sourceforge.net/eclipse/[http://pmd.sourceforge.net/eclipse/^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+
+You’ll find more on this through the presentations Romain and I did a few years back see http://www.touilleur-express.fr/2009/09/18/compte-rendu-de-la-soiree-qualite-du-logiciel-au-paris-jug-le-15-septembre-2009/[http://www.touilleur-express.fr/2009/09/18/compte-rendu-de-la-soiree-qualite-du-logiciel-au-paris-jug-le-15-septembre-2009/^image:/images/icons/linkext7.gif[image,width=7,height=7]^] and http://www.jroller.com/francoisledroff/entry/tous_mes_voeux_pour_une[http://www.jroller.com/francoisledroff/entry/tous_mes_voeux_pour_une^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+
+[[dependencies-management]]
+link:[]dependencies management
+
+Another interesting maven related input: any project may face dependency version issue, through maven transitive dependencies, one way around this
+
+The above will make ensure that every (transitive) dependency is resolved to it’s specified version or higher, but there are more rules, you can also ensure that all dependencies converge to the same version cf. http://maven.apache.org/enforcer/enforcer-rules/index.html[http://maven.apache.org/enforcer/enforcer-rules/index.html^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+
+Are you also willing to visualize to better analyze your dependencies: ispace could be a tool for you:http://ispace.stribor.de/index.php?n=Ispace.Screenshots[http://ispace.stribor.de/index.php?n=Ispace.Screenshots^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+
+Sonar does provide a nice dependency matrix too:http://docs.codehaus.org/display/SONAR/Cycles+-+Dependency+Structure+Matrix[http://docs.codehaus.org/display/SONAR/Cycles+-+Dependency+Structure+Matrix^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+
+[[quality-dashboard]]
+link:[]Quality dashboard
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+Lost of devoxx speakers agreed that in sonar what counts are not really numbers but the history, the trends.
+
+Did you know you can enable code reviews within sonar ? yes we can cf.
+
+* http://www.sonarsource.org/effective-code-review-with-sonar/[http://www.sonarsource.org/effective-code-review-with-sonar/^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+* http://docs.codehaus.org/display/SONAR/Violations+and+Reviews[http://docs.codehaus.org/display/SONAR/Violations+and+Reviews^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+
+Remember the ultimate goal is not to blame individuals but to
+
+* improve the overall quality and maintainability of your projects
+* assess and manage its technical debt.

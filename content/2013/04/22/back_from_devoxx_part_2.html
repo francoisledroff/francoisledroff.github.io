@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Francois Le Droff: Back from Devoxx - Part 2 - Dev-QA-Ops Thoughts - About Build Promotion</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">    
+
+    <!-- Le styles -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/asciidoctor.css" rel="stylesheet">
+    <link href="/css/base.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="favicon.ico">
+    </head>
+  <body>
+
+
+    <div id="wrap">
+	
+	<!-- Fixed navbar -->
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="container">
+	    <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Francois Le Droff 's Blog</a>
+	    </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">                
+                <li><a href="/about.html">About</a></li>
+
+                <li><a href="/archive.html">Archive</a></li>
+
+
+		            <li><a href="/conferences.html">Conferences</a></li>
+
+                <!--
+		            <li class="dropdown">
+          		      <a data-toggle="dropdown" href="#">Topics<b class="caret"></b></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="/tags/Java.html">Java</a></li>
+                    <li><a href="/tags/OpenSource.html">OpenSource</a></li>
+                    <li><a href="/tags/Misc.html">Misc</a></li>
+                  </ul>
+	              </li>
+	              -->
+
+
+                <li><a href="/feed.xml">Feed</a></li>
+
+                <!--
+                <li><a href="/projects.html">Projects</a></li>
+                -->
+
+              </ul>
+	      <ul class="nav navbar-nav navbar-right">
+	      	<li><a href="https://github.com/francoisledroff"><i class="fa fa-github"></i></a></li>
+	        <li><a href="https://twitter.com/francoisledroff"><i class="fa fa-twitter"></i></a>
+	      </ul>
+            </div>
+          </div>
+      </div>
+      <div class="container">
+	
+	<div class="page-header">
+		<h1>Back from Devoxx - Part 2 - Dev-QA-Ops Thoughts - About Build Promotion</h1>
+    <p class="credit">
+      First published on April 22 2013
+      and tagged 
+    <a href="/tags/Java.html">Java . </a>
+		</p>
+	</div>
+
+	<p><div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Here are some more notes and various pointers on software engineering quality, continuous delivery and dev-qa-ops practices gathered-at or inspired-by the various chats I had at <a href="http://www.devoxx.com/display/FR13/Accueil">devoxxfr<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a>. After <a href="http://www.jroller.com/francoisledroff/entry/back_from_devoxx_part_11">Branching<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a> this time it’s about build promotion</p>
+</div>
+<div class="paragraph">
+<p><a href="#BackfromDevoxx-Part2-Dev-QA-OpsThoughts-AboutBuildPromotion-Buildpromotion%3A">Build promotion:</a></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#BackfromDevoxx-Part2-Dev-QA-OpsThoughts-AboutBuildPromotion-Jenkinscanhelp">Jenkins can help</a></p>
+</li>
+<li>
+<p><a href="#BackfromDevoxx-Part2-Dev-QA-OpsThoughts-AboutBuildPromotion-Yourartifactrepositorycanalsobeleveraged">Your artifact repository can also be leveraged</a></p>
+</li>
+<li>
+<p><a href="#BackfromDevoxx-Part2-Dev-QA-OpsThoughts-AboutBuildPromotion-Isthemavenreleasepluginandprocessintheway%3F">Is the maven release plugin and process in the way?</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="build-promotion">link:[]Build promotion:</h4>
+<div class="paragraph">
+<p>Build promotion is an indication that a given build has been approved for deployment to a certain environment.<br>
+Just as a release may have many builds, a build may have several promotions. As the commonplace definition implies, promotions occur in a linear direction towards production (e.g. <code>integration'', </code>testing'', <code>staging'', </code>production''), and an environment-specific promotion can occur once per build.</p>
+</div>
+<div id="jenkins-can-help" class="paragraph">
+<p>link:[]Jenkins can help</p>
+</div>
+<div class="paragraph">
+<p>Jenkins offers a plugin for this:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://wiki.jenkins-ci.org/display/JENKINS/Promoted+Builds+Plugin">https://wiki.jenkins-ci.org/display/JENKINS/Promoted+Builds+Plugin<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>This plugin can be combined with others and provide a powerfull and yet flexible solution<br>
+these other useful plugins are:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://wiki.jenkins-ci.org/display/JENKINS/Build+Pipeline+Plugin">https://wiki.jenkins-ci.org/display/JENKINS/Build+Pipeline+Plugin<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a> : This plugin offers a very good visualization of the pipeline. By configuring a new Jenkins view and choosing which job is the first job in the pipeline you can get a visualization of the whole acceptance and build promotion pipeline.</p>
+</li>
+<li>
+<p><a href="https://wiki.jenkins-ci.org/display/JENKINS/Parameterized+Trigger+Plugin:">https://wiki.jenkins-ci.org/display/JENKINS/Parameterized+Trigger+Plugin:<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a> The Parameterized Trigger Plugin is another triggering plugin but with a twist: this plugin lets you configure more aspects of the triggering logic</p>
+</li>
+<li>
+<p><a href="https://wiki.jenkins-ci.org/display/JENKINS/Violations">https://wiki.jenkins-ci.org/display/JENKINS/Violations<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a> This plug-in generates reports static code violation detectors such as checkstyle, pmd, cpd, findbugs, codenarc, fxcop, stylecop and simian</p>
+</li>
+<li>
+<p><a href="https://wiki.jenkins-ci.org/display/JENKINS/Parameterized+Trigger+Plugin">https://wiki.jenkins-ci.org/display/JENKINS/Parameterized+Trigger+Plugin<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a></p>
+</li>
+<li>
+<p>and <a href="https://wiki.jenkins-ci.org/display/JENKINS/Copy+Artifact+Plugin">https://wiki.jenkins-ci.org/display/JENKINS/Copy+Artifact+Plugin<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a></p>
+</li>
+<li>
+<p><a href="https://wiki.jenkins-ci.org/display/JENKINS/Downstream+buildview+plugin">https://wiki.jenkins-ci.org/display/JENKINS/Downstream+buildview+plugin<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Here are a few articles about those:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://blog.cloudbees.com/2012/11/another-look-at-jenkins-promoted-builds.html">http://blog.cloudbees.com/2012/11/another-look-at-jenkins-promoted-builds.html<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a></p>
+</li>
+<li>
+<p><a href="http://stackoverflow.com/questions/9418136/jenkins-build-promotion-how-do-i-get-the-build-id-of-the-build-i-want-to-promot">http://stackoverflow.com/questions/9418136/jenkins-build-promotion-how-do-i-get-the-build-id-of-the-build-i-want-to-promot<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a></p>
+</li>
+<li>
+<p><a href="http://zeroturnaround.com/labs/how-to-use-jenkins-for-job-chaining-and-visualizations/" class="bare">http://zeroturnaround.com/labs/how-to-use-jenkins-for-job-chaining-and-visualizations/</a><mark>!/[<a href="http://zeroturnaround.com/labs/how-to-use-jenkins-for-job-chaining-and-visualizations/" class="bare">http://zeroturnaround.com/labs/how-to-use-jenkins-for-job-chaining-and-visualizations/</a></mark>!/<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup>]</p>
+</li>
+</ul>
+</div>
+<div id="your-artifact-repository-can-also-be-leveraged" class="paragraph">
+<p>link:[]Your artifact repository can also be leveraged</p>
+</div>
+<div class="paragraph">
+<p>Artifactory supports build promotion to some extent in its commercial version, using REST APIs.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://wiki.jfrog.org/confluence/display/RTF/Artifactory&#8217;s+REST+API#Artifactory&#8217;sRESTAPI-BuildPromotion">http://wiki.jfrog.org/confluence/display/RTF/Artifactory’s+REST+API#Artifactory’sRESTAPI-BuildPromotion<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>In Nexus Pro you can set up a Staging profile, which intercepts certain artifacts and places them in a special, dynamically-created repository.</p>
+</div>
+<div class="paragraph">
+<p>Once all the required artifacts are deployed, a build administrator can make these staged artifacts available for further testing (in a UAT environment, for example).</p>
+</div>
+<div class="paragraph">
+<p>Involved users can be notified when a build is staged and promoted, so that they can go to the relevant environment and run their own tests.</p>
+</div>
+<div class="paragraph">
+<p>When the tests are finished, the artifacts in the staging repository can be promoted to their final destination (for example, a special Production Releases repository). You can also associate rules with this promotion process. These rules are highly configurable.</p>
+</div>
+<div class="paragraph">
+<p>docs and pointers:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://www.sonatype.com/books/nexus-book/reference/staging-sect-intro.html">http://www.sonatype.com/books/nexus-book/reference/staging-sect-intro.html<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a></p>
+</li>
+</ul>
+</div>
+<div id="is-the-maven-release-plugin-and-process-in-the-way" class="paragraph">
+<p>link:[]Is the maven release plugin and process in the way?</p>
+</div>
+<div class="paragraph">
+<p>The maven release plugin is in the way of implemeting build promotion:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The Maven release plugin states: You build a new release when a snapshot build is good enough</p>
+</li>
+<li>
+<p>When build promotion and Continuous Delivery states: Any build is a potential release</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Should we stop using snapshots versions and use alternatives like the maven versions plugin <a href="http://mojo.codehaus.org/versions-maven-plugin/">http://mojo.codehaus.org/versions-maven-plugin/<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a> to increment the version at every build and hence make every resulting artefact a candidate to production ?</p>
+</div>
+<div class="paragraph">
+<p>Or when we are making distrubutable software, should we just deal with snapshots and don’t bother with the whole maven release process nor plugin ?</p>
+</div>
+<div class="paragraph">
+<p>cf.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://www.insaneprogramming.be/?p=362">http://www.insaneprogramming.be/?p=362<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a></p>
+</li>
+<li>
+<p><a href="http://www.slideshare.net/wakaleo/continuous-deliverywithmaven">http://www.slideshare.net/wakaleo/continuous-deliverywithmaven<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a></p>
+</li>
+</ul>
+</div>
+</div></p>
+
+<hr/>
+
+
+    
+    <div id="footer">
+
+      <div class="container">
+
+        <p class="credit">
+        Published with
+        a <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/"><em>Creative Commons by-nc-sa</em> license</a>,
+          mixed with <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>,
+          baked with <a href="http://jbake.org">JBake v2.5.1</a>
+
+	      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/fr/">
+        <img alt="Creative Commons License" style="border-width:0"
+	      src="http://i.creativecommons.org/l/by-nc-sa/2.0/fr/80x15.png"/></a>
+
+         </p>
+      </div>
+    </div>
+    
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/jquery-1.9.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+
+  </body>
+</html>

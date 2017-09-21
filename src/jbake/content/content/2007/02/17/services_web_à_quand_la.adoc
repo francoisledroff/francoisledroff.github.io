@@ -1,0 +1,17 @@
+=  Services web, à quand la fin du gâchis ?
+Francois Le Droff
+2007-02-17
+:jbake-type: post
+:jbake-tags:  Java 
+:jbake-status: published
+:source-highlighter: prettify
+
+Pensez-vous, vous aussi, que http://blogpro.toutantic.net/2005/03/04/soap-is-the-ejb-of-xml/[SOAP est à l’architecture orientée service ceux que sont les EJB CMP (1.x et 2.x) à l’ORM] ? i.e. un échec un fantastique gâchis. Non !!? pas vous ? vraiment ? http://wanderingbarque.com/nonintersecting/2006/11/15/the-s-stands-for-simple/[Vous n’êtes pas développeur] alors ?
+
+image:http://www.jroller.com/resources/f/francoisledroff/troll.jpg[image]
+
+REST serait l’alternative, mais cette autre http://cafe.elharo.com/web/rest-vs-soap-a-parable/[plomberie] est-elle si efficace ? Devrons-nous attendre encore quelques années avant d’avoir des applications totalement interopérables ? A quand des standards et formats ouverts *efficaces* ? Que http://blogs.sun.com/bblfish/entry/jsr_311_a_java_api[penser] de cette http://blog.noelios.com/2007/02/14/new-jsr-to-define-a-high-level-rest-api-for-java/[nouvelle spécification REST (jsr 311)] ?
+
+*_Will WS-* at last REST in peace ?_*
+
+Mais alors ? ces (trop) nombreuses spécifications http://synergies.modernisation.gouv.fr/rubrique.php3?id_rubrique=165[et tout le reste] n’auraient servi à rien ?!! ? Non !??

@@ -1,0 +1,121 @@
+=  Testing maven archetype
+Francois Le Droff
+2008-04-26
+:jbake-type: post
+:jbake-tags:  Java 
+:jbake-status: published
+:source-highlighter: prettify
+
+Here is short entry to tell you how to use maven to quickly and nicely set up a open source (standard de facto) web application samples (ready for development, deploying, debugging and unit testing) : using
+
+* maven archetype plugins
+* jetty
+* eclipse
+
+See my previous post for the prerequisites:
+
+[[download-the-latest-version-of-maven-archetype-plugin]]
+[[Hdownloadthelatestversionofmavenarchetypeplugin]]download the latest version of maven-archetype-plugin
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+To trick maven to update its version of maven-archetype-plugin I added this plugin dependency in one of my project. Don’t know if its the right way to do it. Maven can be so scriptic sometimes.
+
+....
+
+    org.apache.maven.plugins
+    maven-archetype-plugin
+    2.0-alpha-2
+....
+
+I’m pretty sure this is nicer way to do it; please, let me know.
+
+[[create-your-project-from-a-appfuse-basic-spring-maven-archetype]]
+[[HCreateyourprojectfromaappfusebasicspringmavenarchetype]]Create your project from a appfuse-basic-spring maven archetype
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+....
+mvn archetype:create -DarchetypeGroupId=org.appfuse.archetypes -DarchetypeArtifactId=appfuse-basic-spring -DremoteRepositories=http://static.appfuse.org/releases -DarchetypeVersion=2.0.1 -DgroupId=com.adobe.consulting.fr -DartifactId=ac-fr-archetype
+....
+
+This plugin was to complex for me as a start :
+
+* the source code is hard to crawl in and dive in see https://appfuse.dev.java.net/svn/appfuse/trunk/
+* the stuff is not working out of the box (at least for me)
+
+It didn’t pass the 10 minutes test. So I switched to a webtide (the jetty guys) archetype, as I was looking for something simple for me stupid.
+
+[[create-your-project-from-a-webtide-maven-archetype-spring-maven-archetype]]
+[[HCreateyourprojectfromawebtidemavenarchetypeSpringmavenarchetype]]Create your project from a webtide maven-archetype-Spring maven archetype
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+....
+mvn archetype:create -DarchetypeGroupId=com.webtide -DarchetypeArtifactId=maven-archetype-Spring -DarchetypeVersion=1.0 -DgroupId=com.adobe.consulting.fr -DartifactId=maven-archetype-Spring-test
+....
+
+[[create-your-wtp-eclipse-project]]
+[[HCreateyourWTPeclipseproject]]Create your WTP eclipse project
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+In order to
+
+* generate WTP project for Eclipse Europa,
+* configure your newly create eclipse project to use with the M2Elipse plugin.
+
+use this commands:
+
+....
+mvn -Dwtpversion=1.5 eclipse:eclipse
+mvn eclipse:m2eclipse -DdownloadSources=true  -DdownloadJavadocs=true
+....
+
+It’s downloading an amazing bunch of jars… Don’t know really why. Let me know. Anyway, ANT users will be have to be patient ! image:http://www.jroller.com/images/smileys/smile.gif[:-),title=":-)"]
+
+[[test-your-newly-create-web-application]]
+[[HTestyournewlycreatewebapplication]]Test your newly create web application
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Install Jetty and deploy your web app with maven, jetty and eclipse: Let’s Debug your web app with eclipse, maven and jetty
+
+h5. Set up you jetty web app server as a runnable external tools:
+
+Go to the Run/External Tools/External Tools …" menu item on the ``Run'' menu bar. Select ``Program'' and click the ``New'' button. On the ``Main'' tab, fill in the ``Location:'' as the full path to your ``mvn'' executable. For the ``Working Directory:'' select the workspace that matches your webapp. For ``Arguments:'' add jetty:run. Move to the ``Environment'' tab and click the ``New'' button to add a new variable named MAVEN_OPTS with the value:
+
+....
+-Xdebug -Xnoagent -Djetty.port=9999 -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,address=9998,server=y,suspend=n
+....
+
+A few remarks about this:
+
+* If you supply suspend=y instead of suspend=n, it will suspend the web server until the debugger is launched
+* I chose 9999 as the web http port number, because I’m already running jboss on port 8080
+* I chose port 9998 as the debug port number cause it was already used as well, I faced a ``''ERROR: transport error 202: bind failed: Address already in use"
+
+You may start jetty this way.
+
+[[deploy-and-debug-your-project-through-eclipse-launching-maven-jetty]]
+[[HDeployandDebugyourprojectthrougheclipselaunchingmavenjetty]]Deploy and Debug your project through eclipse launching maven jetty
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Pull up the ``Run/Debug/Debug …'' menu item and select ``Remote Java Application'' and click the ``New'' button. Fill in the dialog by selecting your webapp project for the ``Project:'' field, and ensure you are using the same port number as you specified in the address= property above.
+
+You may now Run/Debug your project.
+
+image:/xwiki/bin/download/XWiki/blog-maven-archetypes/spring-archetype-demo[spring-archetype-demo,title="spring-archetype-demo"]
+
+[[tip]]
+[[HTip]]Tip
++++++++++++
+
+By the way It’s quite usefull to your netstat command when you run jetty with the eclipse debugger
+
+....
+netstat -ao
+....
+
+[[references]]
+[[HReferences3A]]References:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* http://www.webtide.com/resources.jsp
+* http://appfuse.org/display/APF/AppFuse+QuickStart
+* http://docs.codehaus.org/display/MAVENUSER/Archetypes+List

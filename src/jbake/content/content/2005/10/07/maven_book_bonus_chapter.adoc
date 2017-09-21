@@ -1,0 +1,9 @@
+=  Maven Book Bonus Chapter
+Francois Le Droff
+2005-10-07
+:jbake-type: post
+:jbake-tags:  Java 
+:jbake-status: published
+:source-highlighter: prettify
+
+The ``Maven: A Developer’s Notebook'' bonus chapter (I wrote about 2 days ago) is already out, at http://www.onjava.com/pub/a/onjava/2005/09/07/maven.html?CMP=OTC-FP2116136014[http://www.onjava.com] : ``In order to get you some real-life experience in building a J2EE application we’ll be exploring how to build the Java Petstore and the xPetstore J2EE applications.''

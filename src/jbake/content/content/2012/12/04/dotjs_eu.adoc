@@ -1,0 +1,33 @@
+=  dotjs.eu
+Francois Le Droff
+2012-12-04
+:jbake-type: post
+:jbake-tags:  JavaScript
+:jbake-status: published
+:source-highlighter: prettify
+
+Last Friday, I attended the http://www.dotjs.eu/[http://www.dotjs.eu/^image:/images/icons/linkext7.gif[image,width=7,height=7]^] conference in Paris. +
+Very nice venue cf. http://svay.com/photos/2012-11-30_dotjs/[http://svay.com/photos/2012-11-30_dotjs/^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+
+image:http://svay.com/photos/2012-11-30_dotjs/conference/2012-11-30_10-17-17.jpg[image]
+
+Nice set of speakers/experts too, very technical folks, among then http://brian.io/[Brian Leroux^image:/images/icons/linkext7.gif[image,width=7,height=7]^] from Adobe phonegap (Brian gave us a nice comedy/educational talk on the oddities of JavaScript, cf. http://wtfjs.com/[wtfjs^image:/images/icons/linkext7.gif[image,width=7,height=7]^]. +
+The other good stand-up comedian was Jacob Thornton @fat (co-author of Twitter Bootstrap) his creatively illustrated talk was about ``the tragedy of open source'', I liked and related to his ``cute puppy syndrome'' theory.
+
+However, overall, the conf could have been more technical, most of the speakers gave entertaining, high level talks. +
+May be due to the format, 20 mn? May be due to the hosts? did they want the event to be more inspirational than hands-on technical ? May be due the ``cute puppy syndrome'' of the speakers ?
+
+Here are a set of pointers/note-to-self/things-I-need-to-try-out
+
+* http://addyosmani.com/blog/[Addy^image:/images/icons/linkext7.gif[image,width=7,height=7]^] gave us a talk on varoius subjects among them the chrome dev tooling (live edit, auto-save, code snipset, auto-reload, editing saas file and saving them, user agent to test specific mobiles and form factors, geolocalization override, device orientation… ) about yeoman, bower and intellij webstorm
+* typescript: http://www.typescriptlang.org/[http://www.typescriptlang.org/^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+* dart: http://www.dartlang.org/[http://www.dartlang.org/^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+* testacular http://vojtajina.github.com/testacular/[http://vojtajina.github.com/testacular/^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+* angular with require http://addyosmani.github.com/todomvc/labs/dependency-examples/angularjs_require/#/[http://addyosmani.github.com/todomvc/labs/dependency-examples/angularjs_require/#/^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+* when.js (https://github.com/cujojs/when[https://github.com/cujojs/when^image:/images/icons/linkext7.gif[image,width=7,height=7]^]) and its implementation of deferred/futures/promises cf http://en.wikipedia.org/wiki/Futures_and_promises[http://en.wikipedia.org/wiki/Futures_and_promises^image:/images/icons/linkext7.gif[image,width=7,height=7]^] (In computer science, future, promise, and delay refer to constructs used for synchronizing in some concurrent programming languages. They describe an object that acts as a proxy for a result that is initially unknown, usually because the computation of its value is yet incomplete. cf http://en.wikipedia.org/wiki/Futures_and_promises[http://en.wikipedia.org/wiki/Futures_and_promises^image:/images/icons/linkext7.gif[image,width=7,height=7]^])
+* I did not know about DemoScene http://en.wikipedia.org/wiki/Demoscene, yet another field of Computer Science to discover (with js wonders such as https://github.com/mrdoob/three.js/[https://github.com/mrdoob/three.js/^image:/images/icons/linkext7.gif[image,width=7,height=7]^] and https://fr.twitter.com/mrdoob/status/274790489843179520[frame.js^image:/images/icons/linkext7.gif[image,width=7,height=7]^])
+
+a few pointers to blog entries/reports
+
+* http://www.rudebaguette.com/2012/12/03/stellar-line-up-at-dotjs-more-conferences-to-come/[http://www.rudebaguette.com/2012/12/03/stellar-line-up-at-dotjs-more-conferences-to-come/^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+* http://blog.jeroenreijn.com/2012/12/dotjs-not-so-js-conference.html[http://blog.jeroenreijn.com/2012/12/dotjs-not-so-js-conference.html^image:/images/icons/linkext7.gif[image,width=7,height=7]^]

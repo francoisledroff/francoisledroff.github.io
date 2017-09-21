@@ -1,0 +1,22 @@
+=  De retour de JavaPolis 2006
+Francois Le Droff
+2006-12-20
+:jbake-type: post
+:jbake-tags:  Java, Javapolis
+:jbake-status: published
+:source-highlighter: prettify
+
+Javapolis 2006, un grand cru, avec 30% d’inscription supplémentaire ce fut encore l’occasion de nouvelles rencontres, de nouveaux échanges. Car la qualité et la richesse de javapolis (comme de toute grande conférence internationale) ne réside pas seulement dans son programme (ses présentations, keynotes, bof, quickies ou labs), mais aussi la découverte des nouvelles tendances/modes/buzz de la communauté, et enfin, et surtout, dans le networking (le réseautage diraient nos cousins québécois).
+
+Car, c’est à la sortie des salles de conférences, autour d’un café, ou d’une bière (belge, évidemment), que les souvenirs se forgent: les discussions s’engagent, les avis divergent, convergent; l’émulation est à son comble, la créativité exacerbée; de nouveaux projets naissent; des relations de confiance se créent; des amitiés, parfois, se tissent.
+
+Stephan, Robin, merci pour Javapolis, merci pour votre invitation ! A l’année prochaine !
+
+[cols=",",options="header",]
+|============================================================================================================================================================================
+|image:http://jroller.com/resources/f/francoisledroff/MeetAndGreet1.gif[MeetAndGreet1.gif] |image:http://jroller.com/resources/f/francoisledroff/jboss-bab.jpg[jboss-bab.jpg]
+|============================================================================================================================================================================
+
+A venir… mes comptes-rendus plus.. techniques…
+
+En attendant… retrouvez les crs de http://blog.developpez.com/index.php?blog=12&cat=752[developpez.com]

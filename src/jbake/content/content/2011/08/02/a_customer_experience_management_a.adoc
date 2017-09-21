@@ -1,0 +1,13 @@
+=  Adobe Customer Experience Management: a glimpse under the hood
+Francois Le Droff
+2011-08-02
+:jbake-type: post
+:jbake-tags:  Adobe 
+:jbake-status: published
+:source-highlighter: prettify
+
+I recently published my first article on the http://www.adobe.com/devnet/flex/articles/project-hendrix.html[_``Adobe Developer Connection / Flex Developer Center''_]. http://www.adobe.com/devnet/flex/articles/project-hendrix.html[This article] provides a glimpse under the hood and a look at the architecture of a call center Customer Experience Management solution (code named Hendrix).
+
+http://www.adobe.com/devnet/flex/articles/project-hendrix.html[image://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?url=http://wwwimages.adobe.com/www.adobe.com/content/dam/Adobe/en/devnet/flex/articles/project-hendrix/fig01.jpg&container=focus&gadget=a&rewriteMime=image/*&refresh=31536000&resize_w=150[image]]
+
+In a future article, I plan to detail and demonstrate Hendrix software factory techniques, but in the meanwhile, if you feel I should provide greater details on another specific aspect of this project (for example, Java / LCDS / SAP integration, Computer Telephony Integration , security, modularity, or Flex multiscreen support) let me know.

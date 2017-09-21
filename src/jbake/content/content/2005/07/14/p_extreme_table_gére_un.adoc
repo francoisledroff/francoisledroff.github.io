@@ -1,0 +1,11 @@
+=  Extreme table
+Francois Le Droff
+2005-07-14
+:jbake-type: post
+:jbake-tags:  Java 
+:jbake-status: published
+:source-highlighter: prettify
+
+``Extreme table gére un pseudo DataProvider. Donc si vous affichez 10 enregistrements sur les 10000 de la liste, pas besoin de charger les 10000. Displaytag nécessite que vous lui passiez les 10000 même pour un affichage partiel. C’est un gros défaut de displaytag qui ne gére pas le pattern ValueList Handler. Il y a une implémentation du ValueList sur sourceforge mais uniquement compatible avec hibernate 2'' http://www.application-servers.com/comments.do?reqCode=readComments&sid=2005-07-11-18:31:34[[a19s]<]
+
+umh.. http://extremecomponents.org/extremesite/public/demo/presidents.jsp?pres_s_term=asc[Extreme table] semble une belle alternative à link:[displaytag] et à link:[struts-layout]

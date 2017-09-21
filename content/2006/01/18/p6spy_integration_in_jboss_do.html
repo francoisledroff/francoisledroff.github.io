@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Francois Le Droff: p6spy integration in jboss: Do you know what your cmps are doing ?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">    
+
+    <!-- Le styles -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/asciidoctor.css" rel="stylesheet">
+    <link href="/css/base.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="favicon.ico">
+    </head>
+  <body>
+
+
+    <div id="wrap">
+	
+	<!-- Fixed navbar -->
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="container">
+	    <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Francois Le Droff 's Blog</a>
+	    </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">                
+                <li><a href="/about.html">About</a></li>
+
+                <li><a href="/archive.html">Archive</a></li>
+
+
+		            <li><a href="/conferences.html">Conferences</a></li>
+
+                <!--
+		            <li class="dropdown">
+          		      <a data-toggle="dropdown" href="#">Topics<b class="caret"></b></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="/tags/Java.html">Java</a></li>
+                    <li><a href="/tags/OpenSource.html">OpenSource</a></li>
+                    <li><a href="/tags/Misc.html">Misc</a></li>
+                  </ul>
+	              </li>
+	              -->
+
+
+                <li><a href="/feed.xml">Feed</a></li>
+
+                <!--
+                <li><a href="/projects.html">Projects</a></li>
+                -->
+
+              </ul>
+	      <ul class="nav navbar-nav navbar-right">
+	      	<li><a href="https://github.com/francoisledroff"><i class="fa fa-github"></i></a></li>
+	        <li><a href="https://twitter.com/francoisledroff"><i class="fa fa-twitter"></i></a>
+	      </ul>
+            </div>
+          </div>
+      </div>
+      <div class="container">
+	
+	<div class="page-header">
+		<h1>p6spy integration in jboss: Do you know what your cmps are doing ?</h1>
+    <p class="credit">
+      First published on January 18 2006
+      and tagged 
+    <a href="/tags/JBoss.html">JBoss . </a>
+
+    <a href="/tags/Java.html">Java . </a>
+
+    <a href="/tags/OpenSource.html">OpenSource . </a>
+		</p>
+	</div>
+
+	<p><div class="sect3">
+<h4 id="introduction">link:[Introduction]</h4>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>P6Spy is an open source framework for applications that intercept and optionally modify database statements. P6Spy includes P6Log, an application that intercepts and logs the database statements of any application that uses JDBC. This application is particularly useful for developers to monitor the SQL statements produced by EJB servers, enabling the developer to write code that achieves maximum efficiency on the server. P6Spy installs in minutes, requires no code changes to applications, and works with any Java application that uses JDBC.</p>
+</div>
+</blockquote>
+</div>
+</div>
+<div class="sect3">
+<h4 id="jboss-3.2.6-integration">link:[JBoss-3.2.6 integration]</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Extract the p6spy-install.jar file. The p6spy-install.jar file contains p6spy.jar and spy.properties.</p>
+</li>
+<li>
+<p>Move the p6spy.jar file to the lib directory. An example of the path to your lib directory is C:\java\jboss-3.0.4\server\default\lib.</p>
+</li>
+<li>
+<p>Add spy.properties to your JBoss classpath. By default, the JBoss classpath set up by run.bat only points to tools.jar and run.jar. You may need to add a directory, via JBOSS_CLASSPATH, to this path. An example of an edited JBoss classpath follows in your run.bat</p>
+</li>
+</ul>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>set JBOSS_CLASSPATH=%JBOSS_CLASSPATH%;%JBOSS_HOME%\server\default\lib;C:\jboss-3.2.6\server\default\p6spy</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>modify your application datasource configuration</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>in the example below, I activated p6spy for one of my jdbc connection pool by replacing oracle.jdbc.driver.OracleDriver by com.p6spy.engine.spy.P6SpyDriver</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>"1.0" encoding="UTF-8"?&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+  jcoffee/jdbc/datasources/jcoffee_db_tx
+  jdbc:oracle:thin:@55.2.7.201:1521:CORSO
+      com.p6spy.engine.spy.P6SpyDriver
+
+    perf
+  perf
+  org.jboss.resource.adapter.jdbc.vendor.OracleExceptionSorter
+  20
+
+  20
+
+
+  jcoffee/jdbc/datasources/direct_jdbc
+      jdbc:oracle:thin:@55.2.7.201:1521:CORSO
+
+      oracle.jdbc.driver.OracleDriver
+    perf
+  perf
+  org.jboss.resource.adapter.jdbc.vendor.OracleExceptionSorter
+
+  20
+  20</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Modify the realdriver line in the spy.properties file to reflect the wrapped database driver. An example of a modified realdriver line follows:</p>
+</li>
+</ul>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre># oracle driver
+realdriver=oracle.jdbc.driver.OracleDriver</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You may as well force p6spy to use log4j, like I did</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>appender=com.p6spy.engine.logging.appender.Log4jLogger# P6SPY is set to be a RollingFileAppender.
+log4j.appender.STDOUT=org.apache.log4j.RollingFileAppender
+log4j.appender.STDOUT.File=c:/jboss-3.2.6/server/default/p6spy/spy.loglog4j.appender.STDOUT.MaxFileSize=10MB
+# Keep one backup file
+log4j.appender.STDOUT.MaxBackupIndex=10# P6SPY uses PatternLayout.
+log4j.appender.STDOUT.layout=org.apache.log4j.PatternLayout
+log4j.appender.STDOUT.layout.ConversionPattern=%d - %m%nlog4j.logger.p6spy=INFO,STDOUT</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Installation is complete. When you run your application, a log file (spy.log) is generated in the bin directory of the JBoss server. The log file contains a list of all of the database statements executed. You can change both the destination of spy.log and what it logs by editing the spy.properties file.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="title-the-p6spy-jsp-application-enabling-you-to-create-a-demarcation-in-the-p6spy-log-file">link:[<span class="image"><img src="http://www.jroller.com/images/smileys/blush.gif" alt=":"></span>" title=``:''&gt;" /&gt;The p6spy JSP Application : enabling you to create a demarcation in the P6Spy Log file:]</h4>
+<div class="paragraph">
+<p>P6Spy includes a JSP application. Use this application to view P6Spy configuration information and to create a demarcation in the log file. This feature is useful if you wish to associate log entries with a specific application action. For instance, if you want to see the queries generated by looking at the first page of a website, you will want to make a mark in the log before and after your browser hits the page.</p>
+</div>
+<div class="paragraph">
+<p>To use the JSP application, complete the following steps:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Copy p6spy.war into the deployment directory of your application server. In JBoss, for example, the directory might be C:\jboss-3.2.6\server\default\deploy</p>
+</li>
+<li>
+<p>Once p6spy.war is deployed, access the application by navigating to <a href="http://machine:port/p6spy" class="bare">http://machine:port/p6spy</a>. For example, if you are running the application on your own machine, and using Tomcat as the servlet engine, navigate to <a href="http://localhost:8080/p6spy" class="bare">http://localhost:8080/p6spy</a>.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="references">link:[References]</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>cf <a href="http://www.p6spy.com/" class="bare">http://www.p6spy.com/</a></p>
+</li>
+<li>
+<p>cf <a href="http://www.p6spy.com/documentation/install.htm" class="bare">http://www.p6spy.com/documentation/install.htm</a></p>
+</li>
+<li>
+<p>cf <a href="http://www.p6spy.com/documentation/other.htm" class="bare">http://www.p6spy.com/documentation/other.htm</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="alternatives">link:[Alternatives]</h4>
+<div class="paragraph">
+<p>If your goal is simpler, and you just wanna know the kind of sql you ejb cmps are launching you may just as well do that in your jboss’ log4j.xml file:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>"org.jboss.ejb.plugins.cmp.jdbc"&gt;
+
+     "DEBUG"/&gt;
+  "JDBC"/&gt;
+    "JDBC"
+class="org.jboss.logging.appender.DailyRollingFileAppender"&gt;
+
+      "org.jboss.logging.util.OnlyOnceErrorHandler"/&gt;
+      "File" value="${jboss.server.home.dir}/log/jdbc.log"/&gt;
+      "Append" value="false"/&gt;
+
+      "DatePattern" value="'.'yyyy-MM-dd"/&gt;            "org.apache.log4j.PatternLayout"&gt;
+
+
+         "ConversionPattern" value="%d %m%n"/&gt;</pre>
+</div>
+</div>
+</div></p>
+
+<hr/>
+
+
+    
+    <div id="footer">
+
+      <div class="container">
+
+        <p class="credit">
+        Published with
+        a <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/"><em>Creative Commons by-nc-sa</em> license</a>,
+          mixed with <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>,
+          baked with <a href="http://jbake.org">JBake v2.5.1</a>
+
+	      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/fr/">
+        <img alt="Creative Commons License" style="border-width:0"
+	      src="http://i.creativecommons.org/l/by-nc-sa/2.0/fr/80x15.png"/></a>
+
+         </p>
+      </div>
+    </div>
+    
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/jquery-1.9.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+
+  </body>
+</html>

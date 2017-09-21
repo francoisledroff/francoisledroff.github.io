@@ -1,0 +1,31 @@
+=  A new set of Maven archetypes for Flex/Java development
+Francois Le Droff
+2008-10-28
+:jbake-type: post
+:jbake-tags:  OpenSource, Project
+:jbake-status: published
+:source-highlighter: prettify
+
+A quick announcement to let you know that Fna’s Maven archetype repository set is getting bigger. Check out the http://fna.googlecode.com/svn/trunk/fna/site/index.html[new Fna project documentation page].
+
+Here is our current http://fna.googlecode.com/svn/trunk/fna/site/mvn_archetypes/index.html[list of archetypes]:
+
+* blazeds-autowired-spring-hibernate-archetype
+* flex-cairngorm-stubbed-crud-archetype
+* flex-cairngorm-flexunit-archetype
+
+And there are more to come
+
+* a AIR localized maven archetype
+* a Flex LCDS maven archetype
+* …
+
+Note that most of the new flex project archetypes make use of Cairngorm and FlexUnit.
+
+image:http://fna.googlecode.com/svn/trunk/fna/site/mvn_archetypes/blazeds-autowired-spring-hibernate-archetype/images/max.jpg[image]
+
+The most complex archetype is http://fna.googlecode.com/svn/trunk/fna/site/mvn_archetypes/blazeds-autowired-spring-hibernate-archetype/index.html[blazeds-autowired-spring-hibernate-archetype] that I and Eric Garza will present at MAX San Francisco : http://max.adobe.com/na/sessions/browser/#552[``Flex for Java Architects''].
+
+Blazeds-autowired-spring-hibernate-archetype helps you generate a multi-module maven project : a flex front-end application communicating with the backend through Adobe’s BlazeDS and a spring autowired service. The back-end relies on a spring hibernate architecture.
+
+PS: http://blogs.adobe.com/xagnetti[Xavier], who helped me out on Fna is also presenting at MAX : "http://max.adobe.com/na/sessions/browser/#544[How to build collaborative applications with LCDS]".

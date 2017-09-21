@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Francois Le Droff</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">    
+
+    <!-- Le styles -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/asciidoctor.css" rel="stylesheet">
+    <link href="/css/base.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="favicon.ico">
+    </head>
+  <body>
+
+
+    <div id="wrap">
+
+	<!-- Fixed navbar -->
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="container">
+	    <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Francois Le Droff 's Blog</a>
+	    </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">                
+                <li><a href="/about.html">About</a></li>
+
+                <li><a href="/archive.html">Archive</a></li>
+
+
+		            <li><a href="/conferences.html">Conferences</a></li>
+
+                <!--
+		            <li class="dropdown">
+          		      <a data-toggle="dropdown" href="#">Topics<b class="caret"></b></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="/tags/Java.html">Java</a></li>
+                    <li><a href="/tags/OpenSource.html">OpenSource</a></li>
+                    <li><a href="/tags/Misc.html">Misc</a></li>
+                  </ul>
+	              </li>
+	              -->
+
+
+                <li><a href="/feed.xml">Feed</a></li>
+
+                <!--
+                <li><a href="/projects.html">Projects</a></li>
+                -->
+
+              </ul>
+	      <ul class="nav navbar-nav navbar-right">
+	      	<li><a href="https://github.com/francoisledroff"><i class="fa fa-github"></i></a></li>
+	        <li><a href="https://twitter.com/francoisledroff"><i class="fa fa-twitter"></i></a>
+	      </ul>
+            </div>
+          </div>
+      </div>
+      <div class="container">
+
+
+
+  <div class="page-header">
+    <a href="/content/2017/09/20/moved.html"><h1>Moved</h1></a>
+    <p class="credit">
+      First published on September 20 2017
+      and tagged </em>
+      <a href="/tags/Misc.html">Misc . </a>
+    </p>
+  </div>
+
+  <p><div class="paragraph">
+<p>I just moved this blog from <a href="http://francoisledroff.github.io/blog" class="bare">http://francoisledroff.github.io/blog</a> to <a href="http://francoisledroff.github.io" class="bare">http://francoisledroff.github.io</a> .</p>
+</div></p>
+
+
+
+  <div class="page-header">
+    <a href="/content/2014/12/04/an_aem_cq_salesforce_integration.html"><h1>An AEM/CQ SalesForce integration Sample</h1></a>
+    <p class="credit">
+      First published on December 04 2014
+      and tagged </em>
+      <a href="/tags/Java.html">Java . </a>
+
+      <a href="/tags/CQ5.html">CQ5 . </a>
+
+      <a href="/tags/AEM.html">AEM . </a>
+
+      <a href="/tags/Project.html">Project . </a>
+    </p>
+  </div>
+
+  <p><div class="paragraph">
+<p>I recently published on github some code we used for an Adobe IT internal AEM/CQ based app: This could help you integrating SalesForce REST API ( and SOQL queries) into your CQ/AEM instance.</p>
+</div>
+<div class="paragraph">
+<p>For now it only supports AEM/CQ 5.5, but I welcome pull request, as well as feedback, bug fix, bug reports and comments</p>
+</div>
+<div class="paragraph">
+<p>Cf. link:[<a href="https://github.com/francoisledroff/force-cq" class="bare">https://github.com/francoisledroff/force-cq</a>]</p>
+</div></p>
+
+
+
+  <div class="page-header">
+    <a href="/content/2014/07/29/chef_metal_experimentations_aem_test.html"><h1>Chef metal experimentations: AEM test drive</h1></a>
+    <p class="credit">
+      First published on July 29 2014
+      and tagged </em>
+      <a href="/tags/OpenSource.html">OpenSource . </a>
+
+      <a href="/tags/CQ5.html">CQ5 . </a>
+
+      <a href="/tags/AEM.html">AEM . </a>
+
+      <a href="/tags/Chef.html">Chef . </a>
+    </p>
+  </div>
+
+  <p><div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>I’ve been recently playing with <a href="https://github.com/opscode/chef-metal">chef-metal</a>.</p>
+</div>
+<div class="paragraph">
+<p>Chef-metal Rocks, it allows you to treat machines/nodes like resources and provision them through <a href="https://github.com/opscode/chef-metal-vagrant">vagrant provisioner</a>, <a href="https://github.com/opscode/chef-metal-fog">EC2, Rackspace, DigitalOcean and Openstack provisioner</a> and even <a href="https://github.com/opscode/chef-metal-docker">docker provisioner</a></p>
+</div>
+<div class="paragraph">
+<p>I just <a href="https://github.com/francoisledroff/connectcon-chef-repo#aem-chef-test-drive">published my latest experimentations on github</a> today I added a chef-metal based cookbook in my connectcon chef repo, this will allow you to have an AEM (Adobe Experience Manager) infrastructure fully configured in matter of minutes using a vagrant provisionner.</p>
+</div>
+<div class="paragraph">
+<p>Even if you are new to Ruby and Chef, the test drive should take you a few minutes:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>install <a href="https://www.vagrantup.com/downloads">vagrant</a></p>
+</li>
+<li>
+<p>install ruby with <a href="https://rvm.io/">rvm</a></p>
+</li>
+<li>
+<p>install <a href="http://bundler.io/">bundler</a></p>
+</li>
+<li>
+<p>checkout this git <a href="https://github.com/francoisledroff/connectcon-chef-repo">chef-repo</a> to your disk</p>
+</li>
+<li>
+<p>edit the <a href="https://github.com/francoisledroff/connectcon-chef-repo/blob/master/environments/dev.json#L11">dev.json</a> environment file in order to have the <code>download_url</code> and <code>license_url</code> pointing to reachable aem jar and license URLs within your network</p>
+</li>
+<li>
+<p>change directory to the root of the local copy of this git repo</p>
+</li>
+<li>
+<p>launch our ./local_setup.sh</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Except for vagrant installation all the above can be boiled down to the following commmand lines:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>curl -sSL https://get.rvm.io | bash -s stable
+gem install bundler
+git clone https://github.com/francoisledroff/connectcon-chef-repo.git
+cd connectcon-chef-repo
+./local_setup.sh</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>A few minutes later you will have a centos vm running on a local IP (<a href="https://github.com/francoisledroff/connectcon-chef-repo/blob/master/cookbooks/aem_metal/recipes/author.rb#L11">set up in our aem-metal default recipe</a>) If this <a href="http://en.wikipedia.org/wiki/Private_network">private range IP</a> is in used pick another one, just change the recipe file.</p>
+</div>
+<div class="paragraph">
+<p>The vm is created by default under <code>.chef/vms</code> . From there, you can ssh in, and then double check aem service is started and eventually stop the firewall to freely access this chef automated cq author instance from your browser at <a href="http://192.168.0.20:4502" class="bare">http://192.168.0.20:4502</a></p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>$ cd .chef/vms
+$ vagrant ssh
+Last login: Tue Jul 15 16:44:19 2014 from 10.0.2.2
+Welcome to your Vagrant-built virtual machine.
+[vagrant@author ~]$ sudo service service aem-author status
+[vagrant@author ~]$ sudo service iptables stop</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="whats-next">What’s next ?</h3>
+<div class="paragraph">
+<p>If my agenda allows it, I hope I could demo here as well:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>how this vagrant provisioner could be replaced by a <a href="https://github.com/opscode/chef-metal-docker">docker provisioner</a> or a <a href="https://github.com/opscode/chef-metal-fog">EC2, Rackspace, DigitalOcean and Openstack provisioner</a></p>
+</li>
+<li>
+<p>how to secure the automation with <a href="https://github.com/Nordstrom/chef-vault">chef-vault</a></p>
+</li>
+<li>
+<p>how to set up a few typical aem infrastructures (more complex than just this author instance I have for now) as presented in <a href="http://www.slideshare.net/francoisledroff/master-chef-class-learn-how-to-quickly-cook-delightful-cqaem-infrastructures">my slides</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Any feedback will be appreciated.</p>
+</div>
+</div></p>
+
+
+
+  <div class="page-header">
+    <a href="/content/2014/07/03/back_from_basel.html"><h1>Back from Basel</h1></a>
+    <p class="credit">
+      First published on July 03 2014
+      and tagged </em>
+      <a href="/tags/Adobe.html">Adobe . </a>
+
+      <a href="/tags/AEM.html">AEM . </a>
+
+      <a href="/tags/CQ5.html">CQ5 . </a>
+
+      <a href="/tags/Conference.html">Conference . </a>
+
+      <a href="/tags/Chef.html">Chef . </a>
+    </p>
+  </div>
+
+  <p><div class="paragraph">
+<p>ConnectCon (formerly known as CQCon) took place last week in Basel. It was great to connect with the CQ/AEM developers community.</p>
+</div>
+<div class="paragraph">
+<p>I posted the slidedeck of the talk I gave with Nicolas on slideshare: <a href="http://www.slideshare.net/francoisledroff/master-chef-class-learn-how-to-quickly-cook-delightful-cqaem-infrastructures">Master Chef class: learn how to quickly cook delightful AEM infrastructures</a>.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="https://lh4.googleusercontent.com/-u313OiVvg-A/U7EmmKLG6-I/AAAAAAAAWd8/NaeZ0ZD1cQ4/w346-h615/20140625_125247-EFFECTS.jpg" alt="Basel"></span></p>
+</div>
+<div class="paragraph">
+<p>And here are a few more pointers to the connectCon talks I particularly enjoyed:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://www.slideshare.net/bdelacretaz/its-just-a-web-server-a-plea-for-simplicity">It’s just a Web server - a plea for simplicity</a></p>
+</li>
+<li>
+<p><a href="http://www.connectcon.ch/content/dam/connectWE/Presentation_Pazik_Tilburg.pdf">Adobe Managed Services: Managing and maintaining AEM in AWS</a></p>
+</li>
+<li>
+<p><a href="https://docs.google.com/presentation/d/1wvg4IwlCW0X6ZmEb3Si-RdCwtBaEe9gNgcafMc4R-6U/edit#slide=id.p">Third-Party Libraries and OSGi – a complicated relationship</a></p>
+</li>
+<li>
+<p><a href="http://www.connectcon.ch/content/dam/connectWE/Presentation_Ben_Zahler.pdf">Oak for developers: What’s new?</a></p>
+</li>
+<li>
+<p><a href="http://www.connectcon.ch/content/dam/connectWE/Presentation_Antonio_Sanso.pdf">OAuth Server functionality in AEM</a></p>
+</li>
+<li>
+<p><a href="http://www.connectcon.ch/content/dam/connectWE/Presentation_Tas_Walt.pdf">Sightly Component Development</a></p>
+</li>
+<li>
+<p><a href="http://brucelefebvre.com/slides/connectwebex-aem-apps/#/">Mobile apps: Made and managed in AEM</a></p>
+</li>
+<li>
+<p><a href="http://www.connectcon.ch/content/dam/connectWE/Presentation_Anthony_Rumsey.pdf">Delivering Managed Content to Your Native Apps</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>FYI: The next big cq/aem community event will be in San Diego this year : <a href="http://www.evolve14.com/home.html">Evolve’14</a></p>
+</div></p>
+
+
+
+  <div class="page-header">
+    <a href="/content/2014/05/13/master_chef_class_learn_how.html"><h1>Master Chef class: learn how to quickly cook delightful CQ/AEM infrastructures</h1></a>
+    <p class="credit">
+      First published on May 13 2014
+      and tagged </em>
+      <a href="/tags/OpenSource.html">OpenSource . </a>
+
+      <a href="/tags/Conference.html">Conference . </a>
+
+      <a href="/tags/CQ5.html">CQ5 . </a>
+
+      <a href="/tags/AEM.html">AEM . </a>
+
+      <a href="/tags/Chef.html">Chef . </a>
+    </p>
+  </div>
+
+  <p><div class="paragraph">
+<p>As a follow-up of my talk at Devoxx France, I plan to speak at <a href="http://www.connectcon.ch/">Connect Con</a> in Basel the 25th and 26th of June.</p>
+</div>
+<div class="paragraph">
+<p>This time I’ll do the talk with <a href="https://twitter.com/npeltier">Nicolas Peltier</a>, again it will be about my new luddite practice: Chef Automation, but this time focused on CQ/Adobe Experience Manager automation.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="https://dev.day.com/content/docs/en/cq/current/deploying/installing_cq/_jcr_content/par/procedure_1/proc_par/step_0/step_par/image.img.png/1358405103637.png" alt="aem"></span></p>
+</div>
+<div class="paragraph">
+<p>The objective we set for ourselves is the following: show you how to start from bare metal - virtual, physical or cloud - servers and turn them, in matter of minutes, into a production ready CQ6 infrastructure.</p>
+</div>
+<div class="paragraph">
+<p>Think author and publish farms of servers with optional SSL, dispatcher, and clustering with MongoDB.</p>
+</div>
+<div class="paragraph">
+<p>Meanwhile you’ll be given a comprehensive overview of Chef resources and techniques enabling you to accelerate, scale up, simplify and secure your development and release workflow.</p>
+</div>
+<div class="paragraph">
+<p>Until then if you have experience with Chef and CQ/AEM, don’t hesitate to drop me a comment/email to exchange on the subject.</p>
+</div></p>
+
+
+<hr/>
+
+
+
+    
+    <div id="footer">
+
+      <div class="container">
+
+        <p class="credit">
+        Published with
+        a <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/"><em>Creative Commons by-nc-sa</em> license</a>,
+          mixed with <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>,
+          baked with <a href="http://jbake.org">JBake v2.5.1</a>
+
+	      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/fr/">
+        <img alt="Creative Commons License" style="border-width:0"
+	      src="http://i.creativecommons.org/l/by-nc-sa/2.0/fr/80x15.png"/></a>
+
+         </p>
+      </div>
+    </div>
+    
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/jquery-1.9.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+
+  </body>
+</html>

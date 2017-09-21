@@ -1,0 +1,61 @@
+=  Flex for Java developers (at the BreizhJUG)
+Francois Le Droff
+2009-02-03
+:jbake-type: post
+:jbake-tags:  Java, Flex, Conference
+:jbake-status: published
+:source-highlighter: prettify
+
+Yesterday I had the chance to present at the http://www.breizhjug.org/[BreizhJUG] (a http://en.wikipedia.org/wiki/Breton_people[Breton] Java user group) a session named http://flex.breizhjug.org/[``Flex for Java Developers'']. A crowd of almost 100 happy Java developers and architects was willing to know more about Flex.
+
+image:http://www.jroller.com/francoisledroff/resource/Fx_DUKE-small.jpg[image]
+
+I had an an hour and half to cover :
+
+* a basic presentation of the flash and AIR platforms,
+* cool UX flash/flex/AIR demos
+* the latest great features of flash 10
+* and flex, and its ecosystem from a Java developer perspective (mvn framework, testing libraries, building and quality tools, blazeds, lcds)
+
+I ended up the session presenting http://code.google.com/p/fna/[fna] http://fna.googlecode.com/svn/trunk/fna/site/mvn_archetypes/index.html[maven archetypes]. I prepared some new fna features for this talk. Those features are still under development but are already available in SNAPSHOT releases :
+
+* I added flexbuilder support to some of my archetypes. (Taking as a start the simpler of http://fna.googlecode.com/svn/trunk/fna/site/mvn_archetypes/index.html[all the fna archetypes], the http://fna.googlecode.com/svn/trunk/fna/site/mvn_archetypes/flex-library-archetype/index.html[flex-library-archetype])
+* I also upgraded the archetypes with flexmojos 2.0 support and up to the latest Flex SDK
+
+Here is how to give the flex-library-archetype a try, (install maven-2.0.9) and use this command line
+
+....
+mvn archetype:generate  -DarchetypeVersion=1.3-SNAPSHOT
+-DarchetypeGroupId=com.adobe.ac  
+-DarchetypeArtifactId=flex-library-archetype 
+-DarchetypeRepository=http://fna.googlecode.com/svn/trunk/fna/fna_m2_repository /
+....
+
+Build the flex library, by changing directory into your newly created flex maven project, and launch the command :
+
+....
+mvn install
+....
+
+And finally import it into your eclipse/FlexBuilder by using the import command
+
+image:http://www.jroller.com/francoisledroff/resource/fb-fna.jpg[image]
+
+That’s it !
+
+What I did is generating the .actionScriptProperties and the other FB files using the maven archetype filtering capabilities. You just have to specify a M2_REPO linked resource within eclipse to make your FB project fully fonctional. Meanwhile I’m looking forward to seeing http://docs.codehaus.org/display/M2ECLIPSE/Flex+Builder+Configuration+API[FlexBuilder support within the m2Eclipse plugin]
+
+I also demonstrated
+
+* Flex CC with Hudson,
+* *FlexPMD* (which got a lot of interest from the third of the crowd who was already using http://pmd.sourceforge.net/[PMD])
+* and AS3NCSS,
+
+I posted some of the slides I used for the presentation on slideshare, for those of you who couldn’t make it, or simply don’t have the chance to live nearby the nice city of http://en.wikipedia.org/wiki/Rennes[Rennes]. Enjoy !
+
+[[__ss_983527]]
+http://www.slideshare.net/francoisledroff/flex-for-java-architects-ledroff-breizh-jug-v-blog-cc?type=powerpoint[Flex For Java Architects Ledroff Breizh Jug V Blog Cc]
+
+View more http://www.slideshare.net/[presentations] from http://www.slideshare.net/francoisledroff[francoisledroff]. (tags: http://slideshare.net/tag/maven[maven] http://slideshare.net/tag/flex[flex])
+
+PS: I just learned today (on flexmojos forum) that http://flex-mojos.info/[VELO] also published new archetypes documented there : https://docs.sonatype.org/display/FLEXMOJOS/Available+archetypes. Thanks VELO

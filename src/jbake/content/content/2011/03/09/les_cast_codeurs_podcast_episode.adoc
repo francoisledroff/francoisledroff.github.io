@@ -1,0 +1,113 @@
+=  Les Cast Codeurs Podcast – Episode 34 – Interview sur Flex avec Francois Le Droff et Michael Chaize
+Francois Le Droff
+2011-03-09
+:jbake-type: post
+:jbake-tags:  Adobe, Conference, Flex, OpenSource
+:jbake-status: published
+:source-highlighter: prettify
+
+Pour ceux qui l’avaient raté, voilà déjà plusieurs semaines, http://www.riagora.com[Michael] et moi avons eu la chance d’être les invités d’un épisode de la balladodiffusion/podcast des http://lescastcodeurs.com/2011/01/les-cast-codeurs-podcast-episode-34-interview-sur-flex-avec-francois-le-droff-et-michael-chaize-2/[castcodeurs] (un podcast que je recommande chaudement, les castcodeurs sont à Java ce que Joël Collado, Alain Gillot-Pétré et Evelyne Dheliat sont à la météo image:http://www.jroller.com/images/smileys/smile.gif[:-),title=":-)"])
+
+Voici donc, http://traffic.libsyn.com/lescastcodeurs/LesCastCodeurs-Episode-34.mp3[un peu plus d’une heure d’enregistrement] qui vous permettra de faire le http://www.adobe.com/devnet/flex/tourdeflex.html[Tour de Flex"], de son écosystème et des différentes possibilités d’intégration avec vos back-ends Java.
+
+Pour aller plus loin… voici les pointeurs que nous avions donnés à http://blog.emmanuelbernard.com/[Emmanuel] suite à cet entretien.
+
+*Flex*
+
+Le SDK http://opensource.adobe.com/wiki/display/flexsdk/Flex+SDK
+
+Les langages, CSS, MXML http://fr.wikipedia.org/wiki/MXML et ActionScript3 http://fr.wikipedia.org/wiki/ActionScript
+
+*Et Flex une fois compilé ça tourne dans*
+
+FlashPlayer : http://www.adobe.com/support/flashplayer/downloads.html
+
+AIR : http://get.adobe.com/fr/air/?promoid=BUIGQ
+
+*Pour débuter*
+
+TourDeFlex : http://www.adobe.com/devnet/flex/tourdeflex.html
+
+http://www.adobe.com/devnet/flex.html
+
+Le blog de Christophe: http://coenraets.org/blog/
+
+*Flex et son écosystème open source*
+
+Les frameworks Flex cités :
+
+FlexPMD (le PMD pour Flex) : http://sourceforge.net/adobe/flexpmd/home/
+
+Parleys (le framework « à la mode », IOC et meta framework) : http://www.spicefactory.org/parsley/download.php
+
+Cairngorm3 (un monde de bonne pratique et de librairies réutilisables faites par Adobe Consulting) : http://sourceforge.net/adobe/cairngorm/
+
+FlexUnit (le JUnit pour Flex) : http://flexunit.org/
+
+Et les projets de Open@Adobe http://sourceforge.net/adobe
+
+Et de nombreux projets sur les forges du web: chez Spring-Source, SonaType, ou GoogleCode
+
+Tamarin (Virtual machine and Just In Time (JIT) compiler implementation of ECMAScript and ActionScript) : http://opensource.adobe.com/wiki/display/site/Projects#Projects-Tamarin
+
+*Les formats ouverts*
+
+AMF: http://opensource.adobe.com/wiki/download/attachments/1114283/amf3_spec_05_05_08.pdf
+
+RTMP: http://www.adobe.com/devnet/rtmp.html
+
+FLV: http://www.adobe.com/devnet/f4v.html
+
+SWF : http://www.adobe.com/devnet/swf.html
+
+*Les applications citées*
+
+http://www.volkswagen.co.uk/
+
+iPlayer de BBC : http://www.bbc.co.uk/iplayer/radio
+
+Times Reader: http://timesreader.nytimes.com/timesreader/
+
+Parleys: http://parleys.com/
+
+TweetDeck: http://www.tweetdeck.com/
+
+http://www.adobe.com/cfusion/showcase/index.cfm?event=casestudydetail&casestudyid=1097918&loc=en_us[Le projet de François]
+
+*Flex et les back-ends*
+
+BlazeDS: http://opensource.adobe.com/wiki/display/blazeds/BlazeDS
+
+LCDS: http://www.adobe.com/products/livecycle/dataservices/
+
+Spring-Flex: http://www.springsource.org/spring-flex
+
+GraniteDS http://www.graniteds.org
+
+Zend AMF: http://framework.zend.com/download/amf
+
+weborb: http://www.themidnightcoders.com/blog/
+
+*Flex et l’usine Logicielle*
+
+Maven flex-mojos : http://flexmojos.sonatype.org/
+
+FlexPMD (le PMD pour Flex) : http://sourceforge.net/adobe/flexpmd/home/
+
+FlexUnit (le JUnit pour Flex) : http://flexunit.org/
+
+Sonar : http://docs.codehaus.org/display/SONAR/Sonar+Flex+Plugin
+
+*Les Outils de développement Flex Adobe*
+
+FlashBuilder (plugin Eclipse): http://www.adobe.com/products/flashbuilder/
+
+FlashCatalyst (pour les workflow dev – designer): http://www.adobe.com/products/flashcatalyst/
+
+*Le Futur*
+
+L’Open Screen Project: http://www.openscreenproject.org/
+
+Flex 4.5, Flex Hero: http://opensource.adobe.com/wiki/display/flexsdk/Download+Flex+Hero
+
+Collaboration temps réel, services sur le cloud: LCCS: http://www.adobe.com/devnet/flashplatform/services/collaboration.html

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Francois Le Droff: Create your maven repository from a set of provided jars: the Adobe LiveCycle SDK and Adobe blazeDS examples</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">    
+
+    <!-- Le styles -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/asciidoctor.css" rel="stylesheet">
+    <link href="/css/base.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="favicon.ico">
+    </head>
+  <body>
+
+
+    <div id="wrap">
+	
+	<!-- Fixed navbar -->
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="container">
+	    <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Francois Le Droff 's Blog</a>
+	    </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">                
+                <li><a href="/about.html">About</a></li>
+
+                <li><a href="/archive.html">Archive</a></li>
+
+
+		            <li><a href="/conferences.html">Conferences</a></li>
+
+                <!--
+		            <li class="dropdown">
+          		      <a data-toggle="dropdown" href="#">Topics<b class="caret"></b></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="/tags/Java.html">Java</a></li>
+                    <li><a href="/tags/OpenSource.html">OpenSource</a></li>
+                    <li><a href="/tags/Misc.html">Misc</a></li>
+                  </ul>
+	              </li>
+	              -->
+
+
+                <li><a href="/feed.xml">Feed</a></li>
+
+                <!--
+                <li><a href="/projects.html">Projects</a></li>
+                -->
+
+              </ul>
+	      <ul class="nav navbar-nav navbar-right">
+	      	<li><a href="https://github.com/francoisledroff"><i class="fa fa-github"></i></a></li>
+	        <li><a href="https://twitter.com/francoisledroff"><i class="fa fa-twitter"></i></a>
+	      </ul>
+            </div>
+          </div>
+      </div>
+      <div class="container">
+	
+	<div class="page-header">
+		<h1>Create your maven repository from a set of provided jars: the Adobe LiveCycle SDK and Adobe blazeDS examples</h1>
+    <p class="credit">
+      First published on April 30 2008
+      and tagged 
+    <a href="/tags/Java.html">Java . </a>
+		</p>
+	</div>
+
+	<p><div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Lost of maven repositories are available out there in the cloud. When you’re looking for artifacts <a href="http://www.mvnrepository.com/" class="bare">http://www.mvnrepository.com/</a> is a great place to start.<br>
+You may even find Adobe blazeDS jars referenced there. But they were not deployed there by Adobe, and they are not what I expected them to be.<br>
+Their version number is wrong, and to me the naming and groupId as well.<br>
+<br>
+It’s too bad Adobe (just like many other proprietary software editors) does not systematically provide maven repository.<br>
+. Lots of people are asking Adobe for maven support :<br></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>asking for an blazeDS maven repository : <a href="http://bugs.adobe.com/jira/browse/BLZ-71" class="bare">http://bugs.adobe.com/jira/browse/BLZ-71</a> and <a href="https://bugs.adobe.com/jira/browse/BLZ-9" class="bare">https://bugs.adobe.com/jira/browse/BLZ-9</a></p>
+</li>
+<li>
+<p>asking for maven blazeDS archetype : <a href="https://bugs.adobe.com/jira/browse/BLZ-44" class="bare">https://bugs.adobe.com/jira/browse/BLZ-44</a></p>
+</li>
+<li>
+<p>asking for flex maven plugin : <a href="https://bugs.adobe.com/jira/browse/SDK-12730" class="bare">https://bugs.adobe.com/jira/browse/SDK-12730</a></p>
+<div class="literalblock">
+<div class="content">
+<pre> +
+So to help you and me out. Here are a few ant scripts I developed yesterday to automatize and ease the creation of local and remote repository from a set of libraries. +</pre>
+</div>
+</div>
+</li>
+<li>
+<p>first a script of reusable ant targets to ease the construction of local and remote maven repositories : maven-repository-construction-calls.xml</p>
+</li>
+<li>
+<p>then an ant script to deploy all livecycle client sdk jars into maven repository : create-LC-ES-maven-repo.xml</p>
+</li>
+<li>
+<p>and finally another ant script that target blazeds</p>
+<div class="literalblock">
+<div class="content">
+<pre>+</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="maven-repository-construction-calls-from-an-ant-file">maven repository construction calls from an ANT file</h3>
+<div class="literalblock">
+<div class="content">
+<pre> +
+This maven-repository-construction-calls.xml ANT file of mine is the base of my maven Adobe repository creation. +
+What it does is calling ``mvn install:install-file'' and ``mvn deploy:deploy-file'' through the exec ant Task. +
+ +
+I also develop a target called ``maven-all-artifacts-in-dir'', which iterates on all the jars in a $\{jar.directory} +
+to call maven install or maven deploy on the jars that corresponds to a provided regular expression. +
+This was possible thanks to the use of the very handy http://ant-contrib.sourceforge.net/[net.sf.antcontrib ANT tasks] and . +
+ +
+Here is an extract: +</pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-jive-pre" data-lang="jive-pre">"maven-all-artifacts-in-dir"&gt;
+ for param="jar.file"&gt;
+
+   "${jar.directory}" includes="${artifactRegexp}" /&gt;
+
+
+
+
+ "yes"
+  property="artifactName" input="@{jar.file}"
+  regexp=".*\\([^\\]*)\.jar" select="\1" casesensitive="false" /&gt;
+
+   "${maven.target}"&gt;
+    "exec.dir" value="${jar.directory}" /&gt;
+    "artifactId" value="${artifactName}" /&gt;
+
+    "jarFileName" value="${artifactName}.jar" /&gt;</code></pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>+</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="create-livecycle-sdk-maven-repository">Create LiveCycle SDK maven repository</h3>
+<div class="literalblock">
+<div class="content">
+<pre> +
+This ant build file is here to help you construct your livecycle client maven repository. +
+It will deploy all the jars contained in the $\{livecycle.sdk.home}/client-libs/common in your maven repositories : +
+I chose to apply +</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>8.0.3187.1.156868.1 for my artifacts’ version (i.e. the version number I found in the jar manifest files)</p>
+</li>
+<li>
+<p>com.adobe.livecyle as the artifacts groupId</p>
+</li>
+<li>
+<p>the name of the jar file as an artifactId for all the files contained in the $\{livecycle.sdk.home}/client-libs/common folder</p>
+<div class="ulist">
+<ul>
+<li>
+<p>adobe-utilities.jar is a special case : there is one for each JEE application server supported by livecycle</p>
+</li>
+<li>
+<p>I chose to use a specific artifactId for each of those :</p>
+<div class="ulist">
+<ul>
+<li>
+<p>jboss-adobe-utilities</p>
+</li>
+<li>
+<p>weblogic-adobe-utilities</p>
+</li>
+<li>
+<p>websphere-adobe-utilities</p>
+<div class="literalblock">
+<div class="content">
+<pre> +
+Here is an extract of my build file showing how I handle the special case of adobe-utilities jars: +</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-jive-pre" data-lang="jive-pre">"maven-livecycle-adobe-utilities"&gt;
+  "groupId" value="${livecycle.groupId}" /&gt;
+  "version" value="${livecycle.version}" /&gt;
+
+  "jarFileName" value="adobe-utilities.jar" /&gt;
+  "maven.repo.url" value="${maven.adobe.repo.url}" /&gt;
+
+  "description" value="${livecycle.artifacts.description}" /&gt;
+  for list="jboss,weblogic,websphere" param="livecycle.server"&gt;
+
+
+    "maven-repository-construction-calls.xml" target="${maven-target}"&gt;
+     "exec.dir" value="${livecycle.sdk.home}/client-libs/@{livecycle.server}" /&gt;
+
+     "artifactId" value="@{livecycle.server}-adobe-utilities" /&gt;</code></pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> +
+ +
+May be one day, the adobe engineering team will come with other groupId and artifact naming convention. +
+I don’t know about that, those choices above are just personal/common sense, not Adobe’s official. +
+ +</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="create-blazeds-maven-repository">Create blazeDS maven repository</h3>
+<div class="literalblock">
+<div class="content">
+<pre> +
+This ant build file is here to help you construct your blazeds maven repository. +
+It will deploy all the adobe jars contained in blazeds-3.0.0.544/blazeds.unzipped.war/WEB-INF/lib directory into your maven local and remote repository. +
+I chose here +</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>3.0.0.544 for versioning my artifacts</p>
+</li>
+<li>
+<p>com.adobe.blazeds as the artifacts groupId</p>
+</li>
+<li>
+<p>the name of the jar file as an artifactId for all the following adobe specific jarfiles contained in blazeds-3.0.0.544/blazeds.unzipped.war/WEB-INF/lib directory:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>all the flex-something.jar files</p>
+</li>
+<li>
+<p>the cold fusion bridge : cfgatewayadapter.jar</p>
+<div class="literalblock">
+<div class="content">
+<pre>+</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-jive-pre" data-lang="jive-pre">"maven-deploy-blazeds-libs"&gt;
+
+  "maven.repo.url" value="${maven.adobe.repo.url}" /&gt;
+  "description" value="${blazeds.artifacts.description}" /&gt;
+
+  "maven-repository-construction-calls.xml" target="maven-all-artifacts-in-dir"&gt;
+   "maven.target" value="maven-deploy" /&gt;
+   "jar.directory" value="${blazeds.jar.dir}" /&gt;
+
+   "artifactRegexp" value="flex*.jar" /&gt;
+
+  "maven-repository-construction-calls.xml" target="maven-deploy"&gt;
+
+   "jarFileName" value="cfgatewayadapter.jar" /&gt;
+   "exec.dir" value="${blazeds.jar.dir}" /&gt;
+
+   "artifactId" value="cfgatewayadapter" /&gt;</code></pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> +
+ +
+This is a different naming and versioning convention than the one chosen by the person that uploaded blazeds into ibiblio see +
+http://www.mvnrepository.com/artifact/com.adobe.blazeds, but I think it’s much better my way, because it’s closer to Adobe engineering’s naming and versioning +
+ +</pre>
+</div>
+</div>
+<div class="sect3">
+<h4 id="my-adobe-maven-repository">My Adobe maven repository</h4>
+<div class="literalblock">
+<div class="content">
+<pre> +
+My Adobe maven repository is now quickly building up, and it looks like that: +
+image:http://www.jroller.com/francoisledroff/resource/adobe-repo.jpg[adobe-repo.jpg] +
+ +</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="warnings">Warnings:</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>this ant script is <a href="http://francois.le.droff.com/xwiki/bin/download/Geek/maven_flex/maven%2Drepository%2Dconstruction%2Dcalls.xml">there</a>, (LGPL V3 licensed)</p>
+</li>
+<li>
+<p>This was tested on my windows xp machine only using java-5, ant-1.7, ant-contrib-1.0b3 and maven-2.0.9</p>
+<div class="ulist">
+<ul>
+<li>
+<p>You’ll have to adapt the regular expression I used if you’re running this on a Linux/Unix machine.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div></p>
+
+<hr/>
+
+
+    
+    <div id="footer">
+
+      <div class="container">
+
+        <p class="credit">
+        Published with
+        a <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/"><em>Creative Commons by-nc-sa</em> license</a>,
+          mixed with <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>,
+          baked with <a href="http://jbake.org">JBake v2.5.1</a>
+
+	      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/fr/">
+        <img alt="Creative Commons License" style="border-width:0"
+	      src="http://i.creativecommons.org/l/by-nc-sa/2.0/fr/80x15.png"/></a>
+
+         </p>
+      </div>
+    </div>
+    
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/jquery-1.9.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+
+  </body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Francois Le Droff: Master Chef &amp; Puppet Show and other Devops pointers from Devoxx France 2014</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">    
+
+    <!-- Le styles -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/asciidoctor.css" rel="stylesheet">
+    <link href="/css/base.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="favicon.ico">
+    </head>
+  <body>
+
+
+    <div id="wrap">
+	
+	<!-- Fixed navbar -->
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="container">
+	    <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Francois Le Droff 's Blog</a>
+	    </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">                
+                <li><a href="/about.html">About</a></li>
+
+                <li><a href="/archive.html">Archive</a></li>
+
+
+		            <li><a href="/conferences.html">Conferences</a></li>
+
+                <!--
+		            <li class="dropdown">
+          		      <a data-toggle="dropdown" href="#">Topics<b class="caret"></b></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="/tags/Java.html">Java</a></li>
+                    <li><a href="/tags/OpenSource.html">OpenSource</a></li>
+                    <li><a href="/tags/Misc.html">Misc</a></li>
+                  </ul>
+	              </li>
+	              -->
+
+
+                <li><a href="/feed.xml">Feed</a></li>
+
+                <!--
+                <li><a href="/projects.html">Projects</a></li>
+                -->
+
+              </ul>
+	      <ul class="nav navbar-nav navbar-right">
+	      	<li><a href="https://github.com/francoisledroff"><i class="fa fa-github"></i></a></li>
+	        <li><a href="https://twitter.com/francoisledroff"><i class="fa fa-twitter"></i></a>
+	      </ul>
+            </div>
+          </div>
+      </div>
+      <div class="container">
+	
+	<div class="page-header">
+		<h1>Master Chef &amp; Puppet Show and other Devops pointers from Devoxx France 2014</h1>
+    <p class="credit">
+      First published on May 05 2014
+      and tagged 
+    <a href="/tags/OpenSource.html">OpenSource . </a>
+
+    <a href="/tags/Java.html">Java . </a>
+
+    <a href="/tags/Conference.html">Conference . </a>
+
+    <a href="/tags/Devoxx.html">Devoxx . </a>
+
+    <a href="/tags/Chef.html">Chef . </a>
+		</p>
+	</div>
+
+	<p><div class="paragraph">
+<p>Devoxx france 2014 was an excellent vintage. The conference was packed with 1500 passionate developers. I had the privilege to speak, hence, unlike last year, I did not see much of the show. The first 2 days I mainly spent my time rehearsing and networking.</p>
+</div>
+<div class="paragraph">
+<p>Here is the link to the 40mn presentation <a href="https://twitter.com/rpelisse">Romain</a> and I did: <a href="http://francoisledroff.github.io/chezlesbarbus/#1">Master Chef &amp; Puppet Show</a> The video will be soon available on <a href="http://parleys.com/">parleys</a></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="http://www.jroller.com/francoisledroff/resource/Devoxx-XEBIA_369.JPG" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>The talk was fun to prepare and run, the feedback we received was awesome. It was worth the effort. Romain and I agreed we should do this more often. We Immortalized this moment with a few friends at the Xebia photo booth.</p>
+</div>
+<div class="paragraph">
+<p>I spent the 3rd and last day of the conference with a cool devops gang, those guys named themself <a href="http://www.devopsmercenaries.org/">Devops Mercenaries</a></p>
+</div>
+<div class="paragraph">
+<p>Here are some of my notes (stuff I need to look at when my time and priority will allow it):</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>look at ThoughtWorks’ Continuous Delivery platform, Go <a href="http://www.thoughtworks.com/news/go-continuous-delivery-now-available-as-free-open-source">as it’s been Open Sourced</a></p>
+</li>
+<li>
+<p>Give a try to <a href="http://capistranorb.com/">capistrano</a> as a remote server automation and deployment tool (triggered by Jenkins)</p>
+</li>
+<li>
+<p>try to understand <a href="http://zookeeper.apache.org/">zookeeper</a> use case</p>
+</li>
+<li>
+<p>Generate code coverage report with <a href="https://github.com/sethvargo/chefspec#reporting">ChefSpec</a></p>
+</li>
+<li>
+<p>have a closer look at <a href="http://serverspec.org/">serverspec</a>, and eventually use it to audit (through serverspec logs) the automated servers</p>
+</li>
+<li>
+<p>segregate 3 types of jenkins servers: one for build (soft factory), one for QA (quality factory with Selenium, Gatling …), one for delivery/deployment</p>
+</li>
+<li>
+<p>use jenkins to launch chef automated vm and run automated integration test on these</p>
+</li>
+<li>
+<p>Do better measuring and monitoring (key to devops adoption and sponsors buy in), have a look at <a href="http://www.zabbix.com/">Zabbix</a>, JMX, <a href="http://collectd.org/">Collectd</a>, <a href="http://graphite.wikidot.com/">Graphite</a>, <a href="https://code.google.com/p/javamelody/">javamelody</a>, <a href="http://rashidkpc.github.io/Kibana/">kibana</a></p>
+</li>
+<li>
+<p>Measure slack time: time allocated for devops</p>
+</li>
+<li>
+<p>Do <a href="http://martinfowler.com/bliki/BlueGreenDeployment.html">Blue green deployment</a></p>
+</li>
+<li>
+<p>nosql is helping continuous deployment, sql db automation such as liquibase and flyway do it too.</p>
+</li>
+<li>
+<p>shut down the db, without shutting down the service, that’s key too: cf <a href="https://github.com/Netflix/zuul/wiki">Netfliz zuul</a> solution</p>
+</li>
+</ul>
+</div></p>
+
+<hr/>
+
+
+    
+    <div id="footer">
+
+      <div class="container">
+
+        <p class="credit">
+        Published with
+        a <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/"><em>Creative Commons by-nc-sa</em> license</a>,
+          mixed with <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>,
+          baked with <a href="http://jbake.org">JBake v2.5.1</a>
+
+	      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/fr/">
+        <img alt="Creative Commons License" style="border-width:0"
+	      src="http://i.creativecommons.org/l/by-nc-sa/2.0/fr/80x15.png"/></a>
+
+         </p>
+      </div>
+    </div>
+    
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/jquery-1.9.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+
+  </body>
+</html>

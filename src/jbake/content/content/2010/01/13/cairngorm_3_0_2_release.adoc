@@ -1,0 +1,33 @@
+=  Cairngorm 3.0.2 release
+Francois Le Droff
+2010-01-13
+:jbake-type: post
+:jbake-tags:  Adobe 
+:jbake-status: published
+:source-highlighter: prettify
+
+I’m delighted to announce the Cairngorm 3.0.2 release. As you may know by now Cairngorm 3 provides a set of optional Flex utilities libraries for navigation, validation, module loading, reduction of view behavior, task processing and popup management.
+
+The latest version we made is *Cairngorm 3.0.2* is made of the following libraries :
+
+* *Integration 0.3* : http://opensource.adobe.com/svn/opensource/cairngorm3/maven-repository/com/adobe/cairngorm/integration/0.3/integration-0.3.swc[swc] http://opensource.adobe.com/svn/opensource/cairngorm3/maven-repository/com/adobe/cairngorm/integration/0.3/integration-0.3.pom[pom]
+** *IntegrationDMS 0.3* : http://opensource.adobe.com/svn/opensource/cairngorm3/maven-repository/com/adobe/cairngorm/integrationDMS/0.3/integrationDMS-0.3.swc[swc] http://opensource.adobe.com/svn/opensource/cairngorm3/maven-repository/com/adobe/cairngorm/integrationDMS/0.3/integrationDMS-0.3.pom[pom]
+** *IntegrationRPC 0.3* : http://opensource.adobe.com/svn/opensource/cairngorm3/maven-repository/com/adobe/cairngorm/integrationRPC/0.3/integrationRPC-0.3.swc[swc] http://opensource.adobe.com/svn/opensource/cairngorm3/maven-repository/com/adobe/cairngorm/integrationRPC/0.3/integrationRPC-0.3.pom[pom]
+* *Module 0.2* : http://opensource.adobe.com/svn/opensource/cairngorm3/maven-repository/com/adobe/cairngorm/module/0.2/module-0.2.swc[swc] http://opensource.adobe.com/svn/opensource/cairngorm3/maven-repository/com/adobe/cairngorm/module/0.2/module-0.2.pom[pom]
+* *Navigation 0.2* : http://opensource.adobe.com/svn/opensource/cairngorm3/maven-repository/com/adobe/cairngorm/navigation/0.2/navigation-0.2.swc[swc] http://opensource.adobe.com/svn/opensource/cairngorm3/maven-repository/com/adobe/cairngorm/navigation/0.2/navigation-0.2.pom[pom]
+* *Observer 1.2* : http://opensource.adobe.com/svn/opensource/cairngorm3/maven-repository/com/adobe/cairngorm/observer/1.2/observer-1.2.swc[swc] http://opensource.adobe.com/svn/opensource/cairngorm3/maven-repository/com/adobe/cairngorm/observer/1.2/observer-1.2.pom[pom]
+** *ObserverParsley 1.2* : http://opensource.adobe.com/svn/opensource/cairngorm3/maven-repository/com/adobe/cairngorm/observerParsley/1.2/observerParsley-1.2.swc[swc] http://opensource.adobe.com/svn/opensource/cairngorm3/maven-repository/com/adobe/cairngorm/observerParsley/1.2/observerParsley-1.2.pom[pom]
+* *PopUp 1.1* : http://opensource.adobe.com/svn/opensource/cairngorm3/maven-repository/com/adobe/cairngorm/popup/1.1/popup-1.1.swc[swc] http://opensource.adobe.com/svn/opensource/cairngorm3/maven-repository/com/adobe/cairngorm/popup/1.1/popup-1.1.pom[pom]
+* *Task 1.1* : http://opensource.adobe.com/svn/opensource/cairngorm3/maven-repository/com/adobe/cairngorm/task/1.1/task-1.1.swc[swc] http://opensource.adobe.com/svn/opensource/cairngorm3/maven-repository/com/adobe/cairngorm/task/1.1/task-1.1.pom[pom]
+* *Validation 1.2* : http://opensource.adobe.com/svn/opensource/cairngorm3/maven-repository/com/adobe/cairngorm/validation/1.2/validation-1.2.swc[swc] http://opensource.adobe.com/svn/opensource/cairngorm3/maven-repository/com/adobe/cairngorm/validation/1.2/validation-1.2.pom[pom]
+
+Note that all of the above was uploaded in a **http://opensource.adobe.com/svn/opensource/cairngorm3/maven-repository[Cairngorm 3 maven repository]**.
+
+Please note also that :
+
+* The Observer, Task, Popup and Validation libraries have been used in production for several years, but Cairngorm 3 marks their first official open-source release.
+* The other libraries (versions 0.*) are less mature and can still considered beta release.
+* Several of the Cairngorm 3 libraries are implemented as extensions to the http://www.spicefactory.org/parsley/[Parsley Application Framework] (as you may have guessed from the above names). In order to take advantage of these libraries, you also need to use Parsley. However, other Cairngorm libraries, such as Observer, Popup, Task and Validation are independent of any third-party framework. The Cairngorm 3 Architecture can also be applied with other third-party libraries and frameworks.
+* We are also currently working at improving http://opensource.adobe.com/wiki/display/cairngorm/Cairngorm+Libraries[Cairngorm 3 wiki]
+
+You are encouraged to submit us any bug or feature request at https://bugs.adobe.com/jira/browse/cgm

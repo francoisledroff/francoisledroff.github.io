@@ -1,0 +1,19 @@
+=  QSOS: Qualification et de Sélection de logiciels Open Source
+Francois Le Droff
+2005-11-29
+:jbake-type: post
+:jbake-tags:  OpenSource, QSOS
+:jbake-status: published
+:source-highlighter: prettify
+
+Je suis heureux d’annoncer la mise en ligne officielle de http://www.qsos.org/
+
+QSOS, Qualification et de Sélection de logiciels Open Source, est une méthode conçue pour qualifier, sélectionner et comparer les logiciels open source. Elle est mise à disposition de la communauté sous licence libre http://creativecommons.org/licenses/by-nc-sa/2.0/[Creative Commons] par le département d’http://www.atosorigin.com[Atos Origin] dont je fais partie : http://www.atosorigin.com/en-us/Services/Solutions/Systems_Integration/Technologies_Expertise/Opensource/[Solutions Technologiques ``Open Source''.]
+
+http://www.qsos.org/[image:http://www.jroller.com/resources/f/francoisledroff/qsos-medium.png[image]]
+
+QSOS consiste en un processus itératif qui permet de génèrer des fiches d’identités de logiciel ainsi que des grilles de comparaison et de choix. La démarche par étape, les multiples critères d’analyse, et la métrologie définis par QSOS en font une méthode qui permet une évaluation objective et argumentée des logiciels libres – précieuse notamment dans des phases amont d’étude d’opportunité de migration vers les logiciels libres ainsi que pour choisir une solution open source optimale dans un contexte donné.
+
+On trouve déja sur le site un ensemble de fiches QSOS évaluant notamment, dans le monde j2ee: Axis 1.2, JBossWS 1.0, JBossAS 4.0, et JOnAS 4.3.
+
+A noter également: l’intiative de HP, Atos Origin et IDEALX, pour promouvoir et faciliter l’usage des logiciels libres, notamment dans les entreprises et administrations : http://www.portaildulibre.com/[www.portaildulibre.com]

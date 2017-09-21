@@ -1,0 +1,149 @@
+=  Death to JBoss transaction deadlocks
+Francois Le Droff
+2005-10-17
+:jbake-type: post
+:jbake-tags:  JBoss 
+:jbake-status: published
+:source-highlighter: prettify
+
+Today my J2ee application (running on top of jboss3.2.6) runs into this
+
+....
+org.jboss.util.deadlock.ApplicationDeadlockException: Application deadlock detected, resource=org.jboss.ejb.plugins.lock.QueuedPessimisticEJBLock@9ef863, bean=CustomerAccountBean, id=10000305, refs=2, tx=TransactionImpl:XidImpl [FormatId=257, GlobalId=AOFR00268//1853, BranchQual=], synched=Thread[http-0.0.0.0-8080-Processor23,5,jboss], timeout=5000, queue=[], holder=TransactionImpl:XidImpl [FormatId=257, GlobalId=AOFR00268//1843, BranchQual=], waitingResource=org.jboss.ejb.plugins.lock.QueuedPessimisticEJBLock@c5458b, bean=DistributionCentreBean, id=10000201, refs=2, tx=TransactionImpl:XidImpl [FormatId=257, GlobalId=AOFR00268//1843, BranchQual=], synched=null, timeout=5000, queue=[TXLOCK waitingTx=TransactionImpl:XidImpl [FormatId=257, GlobalId=AOFR00268//1853, BranchQual=] id=0 thread=Thread[http-0.0.0.0-8080-Processor25,5,jboss] queued=true], waitingResourceHolder=TransactionImpl:XidImpl [FormatId=257, GlobalId=AOFR00268//1843, BranchQual=]
+ at org.jboss.util.deadlock.DeadlockDetector.deadlockDetection(DeadlockDetector.java:48)
+ at org.jboss.ejb.plugins.lock.QueuedPessimisticEJBLock.waitForTx(QueuedPessimisticEJBLock.java:301)
+ (...)
+....
+
+I searched jboss forums and found this kind of http://jboss.org/index.html?module=bb&op=viewtopic&p=3888677[message] : ``all Deadlock messages posted here go unanswered''.
+
+[[check-the-transaction-timeout]]
+Check the transaction timeOut
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Looking a bit further (http://jira.jboss.com/jira/browse/JBAS-1248[JBAS-1248]), it could just have been a time-out issue. I just had to increase my ejb method tx timeout using the jboss.xml descriptors.
+
+So I checked at what looks like the default transaction timeout configuration in in C:\jboss-3.2.6\server\default\conf\jboss-service.xml
+
+....
+   mdesc/TransactionManagerService-xmbean.xml">
+      300
+
+      jboss:service=XidFactory
+   
+....
+
+No it was definitely a dead-end for my deadlock search (5 minutes should be big enough to run a few concurrent functional tests… I hope). Let’s look elsewhere…
+
+[[ensure-serial-equivalence]]
+Ensure serial equivalence
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+So I guess I’m facing a real dead lock here (as explained in jboss doc "http://docs.jboss.org/jbossas/jboss4guide/r4/html/ch5.chapter.html#ch5.entitylock.sect[Entity Bean Locking and Deadlock Detection"] section : +
+Thread 1 has the lock for Bean A, and Thread 2 has the lock for Bean B. At a later time, Thread 1 tries to lock Bean B and blocks because Thread 2 has it. Likewise, as Thread 2 tries to lock A it also blocks because Thread 1 has the lock. At this point both threads are deadlocked waiting for access to the resource already locked by the other thread.
+
+image:http://www.jroller.com/resources/f/francoisledroff/deadlock-definition.jpg[image]
+
+Indeed, the http://docs.jboss.com/jbossas/javadoc/3.2.7/common/org/jboss/util/deadlock/ApplicationDeadlockException.html[ApplicationDeadlockException javadoc] states that most of the time this exception is thrown when the application is access the same entity beans within 2 different transaction in a different orderRemember. It also reminds us that with PessimisticEJBLock, Entity beans are locked until the transaction commits or is rolled back.
+
+My app does have PessimisticEJBLock, the default one : http://docs.jboss.com/jbossas/javadoc/3.2.7/server/org/jboss/ejb/plugins/lock/QueuedPessimisticEJBLock.html[QueuedPessimisticEJBLock]
+
+The right way to go for me is to identify the scenario that caused the deadlock, reproduce it and then use the EntityLockMonitor MBean service which allows one to view basic locking statistics as well as printing out the state of the transaction locking table.
+
+``To enable this monitor just uncomment its configuration n the conf/jboss-service.xml''
+
+....
+....
+
+Unfortunately this is totally impractical for me. I cannot ensure that our code has serial equivalence; in other words make sure that all portions of code always access the same resources in the same order.
+
+What option am I left with ? Well quite a few. One thing is sure I can decrease the likelyhood of deadlock by tuning a few parameters:
+
+[[mark-entity-beans-as-read-only]]
+Mark Entity beans as read-only
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+When a bean is marked as read-only, it never takes part in a transaction. To mark a bean as read-only, use the read-only flag in the jboss.xml deployment descriptor:
+
+....
+    
+        
+            MyEntityBean
+            MyEntityHomeRemote
+
+            True
+        
+    
+....
+
+[[define-entity-beans-methods-as-read-only]]
+Define entity beans methods as read only
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+so that it will not lock the bean within the transaction if only these types of methods are called. we can define these read only methods within a jboss.xml deployment descriptor. Wildcards are allowed for method names. The following is an example of declaring all getter methods and the anotherReadOnlyMethod as read-only.
+
+....
+    
+        
+            nextgen.EnterpriseEntity
+            nextgen.EnterpriseEntity
+
+            
+                
+                    get*
+                    true
+                
+
+                
+                    anotherReadOnlyMethod
+                    true
+                
+            
+
+        
+    
+ 
+....
+
+[[use-the-instance-per-transaction-policy]]
+Use the Instance Per Transaction policy
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+that can prevent deadlock and throughput problems caused by JBoss’s default locking policy. Each transaction has its own copy of the bean, there is no need for transaction based locking.
+
+This option does have some drawbacks right now.
+
+* First, the transactional isolation behavior of this option is equivalent to READ_COMMITTED.
+* Second, this configuration option currently requires commit-option B or C which can be a performance drain.
+** B: the container caches the bean state between transactions but will synchronize the in-memory state at the beginning of each transaction.
+*** Note indeed that in case of commit option B, when a transaction first time accesses an instance (invokes CMP/CMR getter or setter or another business method) even if the instance is cached its data will be loaded from the database. So, the cached data is not really used. Except for one case, i.e. when the instance or some of its CMP fields marked as read-only in jbosscmp-jdbc.xml In this case, read-only fields won’t be reloaded from the database.
+** C: the container does not cache bean instances. The in-memory state must be synchronized on every transaction start.
+
+JBoss has container configurations named Instance Per Transaction CMP 2.x EntityBean defined in the standardjboss.xml that implement this locking policy. To use this configuration, we just have to reference the name of the container configuration to use with our bean in the jboss.xml deployment descriptor as show below.
+
+....
+    
+        
+            MyCMP2Bean
+            MyCMP2
+
+            
+                Instance Per Transaction CMP 2.x EntityBean
+            
+        
+....
+
+Or we may modify the Standard CMP 2.x EntityBean settings in standardjboss.xml so we don’t have to update each of our jboss.xml files:
+
+....
+
+Standard CMP 2.x EntityBean 
+(...)
+org.jboss.ejb.plugins.PerTxEntityInstanceCache 
+(...)
+org.jboss.ejb.plugins.lock.NoLock 
+(...)
+C 
+....
+
+We’re currently investigating this last solution as we are using (actually, forced to use) a commercial persistence third party framework (relying itself on CMP) and this framework provides a optimistic locking system solution (based on beans version property/column).

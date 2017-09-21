@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Francois Le Droff: Apache with mod_ssl and as as a reverse proxy - on windows -</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">    
+
+    <!-- Le styles -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/asciidoctor.css" rel="stylesheet">
+    <link href="/css/base.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="favicon.ico">
+    </head>
+  <body>
+
+
+    <div id="wrap">
+	
+	<!-- Fixed navbar -->
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="container">
+	    <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Francois Le Droff 's Blog</a>
+	    </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">                
+                <li><a href="/about.html">About</a></li>
+
+                <li><a href="/archive.html">Archive</a></li>
+
+
+		            <li><a href="/conferences.html">Conferences</a></li>
+
+                <!--
+		            <li class="dropdown">
+          		      <a data-toggle="dropdown" href="#">Topics<b class="caret"></b></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="/tags/Java.html">Java</a></li>
+                    <li><a href="/tags/OpenSource.html">OpenSource</a></li>
+                    <li><a href="/tags/Misc.html">Misc</a></li>
+                  </ul>
+	              </li>
+	              -->
+
+
+                <li><a href="/feed.xml">Feed</a></li>
+
+                <!--
+                <li><a href="/projects.html">Projects</a></li>
+                -->
+
+              </ul>
+	      <ul class="nav navbar-nav navbar-right">
+	      	<li><a href="https://github.com/francoisledroff"><i class="fa fa-github"></i></a></li>
+	        <li><a href="https://twitter.com/francoisledroff"><i class="fa fa-twitter"></i></a>
+	      </ul>
+            </div>
+          </div>
+      </div>
+      <div class="container">
+	
+	<div class="page-header">
+		<h1>Apache with mod_ssl and as as a reverse proxy - on windows -</h1>
+    <p class="credit">
+      First published on July 31 2012
+      and tagged 
+    <a href="/tags/IT.html">IT . </a>
+		</p>
+	</div>
+
+	<p><div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Here are a few notes, that might help a few out there who face difficulties to configure apache server on https and as a reverse proxy on their windows ( windows7 ) development machine.</p>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="generate-your-server-certificate">Generate your server certificate</h5>
+<div class="paragraph">
+<p>download openssl (or download apache 2 with openssl built-in, cf below) and issue the following commands:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-code-java" data-lang="code-java">openssl genrsa -des3 -rand file1:file2:file3:file4:file5 -out server.key 1024</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>pick a passphrase</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-code-java" data-lang="code-java">openssl rsa -in server.key -out server.pem</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-code-java" data-lang="code-java">openssl req -days 3650 -new -key server.key -out server.csr</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-code-java" data-lang="code-java">openssl x509 -req -in server.csr -signkey server.key -out server.crt</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The SSLPassPhraseDialog is a directive within the Apache httpd.conf or ssl.conf that is not supported by Windows<br>
+Windows user will need to remove the encryption from the RSA private key (while preserving the original file):</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Make a copy of the private key and call it ``server.key.org''</p>
+</li>
+<li>
+<p>Use the OpenSSL command to remove the passphrase such as;</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-code-java" data-lang="code-java">openssl rsa -in server.key.org -out server.key</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>server.key will be your new private key with the passphrase removed.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="install-apache-with-mod_ssl">Install apache with mod_ssl</h5>
+<div class="ulist">
+<ul>
+<li>
+<p>install apache 2 with openssl support built-in</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Note for windows user: in the non default dir (not program files) with no space or any funky character</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>update httpd.conf :</p>
+<div class="ulist">
+<ul>
+<li>
+<p>uncomment line : "LoadModule ssl_module modules/mod_ssl.so"</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>update ssl.conf :</p>
+<div class="ulist">
+<ul>
+<li>
+<p>delete the &lt;IfDefine ssl&gt; tags</p>
+</li>
+<li>
+<p>The SSLPassPhraseDialog is a directive within the Apache httpd.conf or ssl.conf that is not supported by Windows, windows users will need to comment out the line ’SSLPassPhraseDialog builtin’</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>copy the generated server.key file (see above) under conf/ssl.key/server.key</p>
+</li>
+<li>
+<p>copy the generated server.crt file (see above) under conf/ssl.crt/server.crt</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>as expected in the ssl.conf file</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-code-java" data-lang="code-java">SSLCertificateFile conf/ssl.crt/server.crt
+SSLCertificateKeyFile conf/ssl.key/server.key</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Restart you apache server/service</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="troubleshoot">troubleshoot</h5>
+<div class="paragraph">
+<p>You may face windows firewall issue, workaround run apache.exe as an administrator<br>
+Here are also some other interesting tutorials:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://blog.lifebloodnetworks.com/?p=677">http://blog.lifebloodnetworks.com/?p=677<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a></p>
+</li>
+<li>
+<p><a href="http://www.silverwareconsulting.com/index.cfm/2009/3/31/Enabling-SSL-on-Apache-on-Windows">http://www.silverwareconsulting.com/index.cfm/2009/3/31/Enabling-SSL-on-Apache-on-Windows<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a></p>
+</li>
+<li>
+<p><a href="http://yaig.blogspot.ie/2008/12/apache2-and-ssl-on-windows-with-valid.html">http://yaig.blogspot.ie/2008/12/apache2-and-ssl-on-windows-with-valid.html<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a></p>
+</li>
+<li>
+<p><a href="http://www.entrust.net/knowledge-base/technote.cfm?tn=5634">http://www.entrust.net/knowledge-base/technote.cfm?tn=5634<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>You may use openssl to diagnose issues</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-code-java" data-lang="code-java">openssl s_client -connect http://your.machine:443</code></pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="install-apache-as-a-reverse-proxy">Install apache as a reverse proxy</h5>
+<div class="paragraph">
+<p>In httpd.conf:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>uncomment</p>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-code-java" data-lang="code-java">LoadModule proxy_module modules/mod_proxy.so
+LoadModule proxy_connect_module modules/mod_proxy_connect.so
+LoadModule proxy_http_module modules/mod_proxy_http.so</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>add</p>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-code-java" data-lang="code-java">ProxyPass / http://your.proxied.server:port/
+ProxyPassReverse / http://your.proxied.server:port/
+ProxyPreserveHost On</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Restart you apache server/service</p>
+</li>
+</ul>
+</div>
+</div></p>
+
+<hr/>
+
+
+    
+    <div id="footer">
+
+      <div class="container">
+
+        <p class="credit">
+        Published with
+        a <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/"><em>Creative Commons by-nc-sa</em> license</a>,
+          mixed with <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>,
+          baked with <a href="http://jbake.org">JBake v2.5.1</a>
+
+	      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/fr/">
+        <img alt="Creative Commons License" style="border-width:0"
+	      src="http://i.creativecommons.org/l/by-nc-sa/2.0/fr/80x15.png"/></a>
+
+         </p>
+      </div>
+    </div>
+    
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/jquery-1.9.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+
+  </body>
+</html>

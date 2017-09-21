@@ -1,0 +1,16 @@
+=  Java , Flex, Cidre et Camembert au NormandieJUG
+Francois Le Droff
+2010-04-19
+:jbake-type: post
+:jbake-tags:  Java 
+:jbake-status: published
+:source-highlighter: prettify
+
+Les membres du http://www.normandyjug.org/[NormandieJUG] m’ont fait l’honneur de m’inviter pour leur 8éme réunion. http://www.normandyjug.org/2010/04/13/8eme-reunion-java-flex/[Une soirée spéciale ``Java + Flex'' dont le programme et les modalités sont détaillés sur le site du ``Java User Group'' normand.]
+
+*Update* : ma présentation est maintenant sur http://www.slideshare.net/francoisledroff/flex-java-normandiejug[SlideShare].
+
+[[__ss_3814041]]
+*http://www.slideshare.net/francoisledroff/flex-java-normandiejug[Flex & Java @ NormandieJUG]*
+
+View more http://www.slideshare.net/[presentations] from http://www.slideshare.net/francoisledroff[François Le Droff].

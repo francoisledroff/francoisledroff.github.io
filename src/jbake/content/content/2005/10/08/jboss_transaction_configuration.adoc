@@ -1,0 +1,135 @@
+=  JBoss transaction configuration
+Francois Le Droff
+2005-10-08
+:jbake-type: post
+:jbake-tags:  JBoss 
+:jbake-status: published
+:source-highlighter: prettify
+
+I had to tune transaction management for a J2EE (EJB) app running on top of JBoss AS. I didn’t know that much about it before starting up. Here are the different pointers and key information I gathered.
+
+If anything I posted here is inexact, drop me a comment
+
+[[jta-and-jbosstx]]
+JTA and JBossTX
+^^^^^^^^^^^^^^^
+
+First I went through the http://docs.jboss.com/jbossas/admindevel326/html/ch4.chapt.html[JBoss 3.2.6 Transactions doc]. It gave me an overview of the key transaction concepts and notions in the JTA and provided sufficient background reminders to introduce the JBossTX architecture discussion.
+
+This chapters contains a few reminders :
+
+* a transaction is as a unit of work containing one or more operations involving one or more shared resources having ACID properties. ACID is an acronym for atomicity, consistency, isolation and durability
+* it introduces the components of a distributed transaction :
+** Transaction Manager: javax.transaction.TransactionManager interface in JTA,
+** Transaction Context: javax.transaction.Transaction.
+** Transactional Client: either an explicit or implicit user of JTA interfaces
+** Transactional Object: A transactional object is an object whose behavior is affected by operations performed on it within a transactional context. A transactional object can also be a transactional client. Most Enterprise Java Beans are transactional objects.
+** Recoverable Resource: A recoverable resource is a transactional object whose state is saved to stable storage if the transaction is committed, and whose state can be reset to what it was at the beginning of the transaction if the transaction is rolled back. javax.transaction.xa.XAResource interface in JTA
+* the two-phase XA protocol : convenient when more than one recoverable resource is involved in the transaction, management of the commit gets more complicated
+* etc …
+
+[[jbosstx-configuration]]
+JBossTX configuration
+^^^^^^^^^^^^^^^^^^^^^
+
+But what I was really looking for is down to the fact transaction configuration informations. So I looked at my current project setup. And I found those two files:
+
+* \server\default\deploy\transaction-service.xml
+* \server\default\conf\jboss-service.xml
+
+OK, it looks like it’s what is supposed to be http://wiki.jboss.org/wiki/Wiki.jsp?page=ServicesOverview[found]. transaction-service.xml together with jboss-service.xml, sets up the JBoss transaction manager and associated services.
+
+But I was really confused by this transaction-service.xml file, and its content : ``SpecCompliant=false''. I did a quick searched and felt better when I found http://jira.jboss.com/jira/browse/JBAS-1662[out] that SpecCompliant has nothing to do with spec compliance. In fact JBoss passed the j2ee1.4 compliance suite with this flag set to false. It is actually a backwards compatibility flag for an earlier implementation of the connection pooling in JBoss-3.0.0
+
+[[jboss-transaction-scope-configuration]]
+JBoss transaction scope configuration
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+What I concluded from this, above, is that I didn’t want to modify anything there. The files I had first to play with was my ``ejb-jar.xml'' files. Here is one of them:
+
+....
+  
+   
+    MyBean
+    *
+   
+   
+    (...)
+   
+   (...)
+   Mandatory
+  
+....
+
+The trans-attribute element specifies how the container must manage the transaction boundaries when delegating a method invocation to an enterprise bean’s business method. The value of trans-attribute must be one of the following:
+
+....
+  NotSupported
+  Supports
+  Required
+  RequiresNew
+  Mandatory
+  Never
+....
+
+(more on the http://www.google.fr/search?hs=8DC&hl=fr&client=firefox-a&rls=org.mozilla%3Aen-US%3Aofficial_s&as_qdr=all&q=NotSupported+Supports+Required+RequiresNew+Mandatory+Never+tutorial+transaction+j2ee&btnG=Rechercher&meta=[web].)
+
+OK now I know how to configure the scope of the transaction. But how do I configure the transaction isolation ?
+
+[[transaction-isolation]]
+Transaction isolation
+^^^^^^^^^^^^^^^^^^^^^
+
+The isolation level describes the degree to which the data being updated is visible to other transactions. This is important when two transactions are trying to read the same row of a table. Imagine two transactions: A and B. Here three types of inconsistencies can occur:
+
+* Dirty-read: A has changed a row, but has not committed the changes. B reads the uncommitted data but his view of the data may be wrong if A rolls back his changes and updates his own changes to the database.
+* Non-repeatable read: B performs a read, but A modifies or deletes that data later. If B reads the same row again, he will get different data.
+* Phantoms: A does a query on a set of rows to perform an operation. B modifies the table such that a query of A would have given a different result. The table may be inconsistent.
+
+The different associated transaction isolation levels are:
+
+* TRANSACTION_READ_UNCOMMITTED : DIRTY READS, NON-REPEATABLE READ AND PHANTOMS CAN OCCUR.
+* TRANSACTION_READ_COMMITTED : DIRTY READS ARE PREVENTED, NON-REPEATABLE READ AND PHANTOMS CAN OCCUR.
+* TRANSACTION_REPEATABLE_READ : DIRTY READS , NON-REPEATABLE READ ARE PREVENTED AND PHANTOMS CAN OCCUR.
+* TRANSACTION_SERIALIZABLE : DIRTY READS, NON-REPEATABLE READ AND PHANTOMS ARE PREVENTED.
+
+[[jboss-transaction-isolation-configuration]]
+JBoss transaction isolation configuration
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+transaction isolation is configured in each http://wiki.jboss.org/wiki/Wiki.jsp?page=ConfigDataSources[datasources] you may use. if you don’t specify it, it means use the default provided by the database. You may find more on http://docs.jboss.com/jbossas/admindevel326/html/ch7.chapt.html#ch7.jdbc.sect[Jboss Configuring JDBC DataSources doc] My database is Oracle
+
+[[oracle-transaction-isolation]]
+Oracle transaction isolation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+I found about the Oracle isolation levels http://www.ss64.com/orasyntax/10locking.html[here]. Here is the information I was looking for:
+
+To manage the multiversion consistency model, Oracle must create a read-consistent set of data when a table is being queried (read) and simultaneously updated (written). When an UPDATE occurs, the original data values changed by the update are recorded in the database’s undo records. As long as this update remains part of an uncommitted transaction, any user that later queries the data will view the original uncommitted data. +
+ +
+Only when a transaction is committed are the changes of that transaction made visible to other users.
+
+[[statement-level-read-consistency]]
+Statement-Level Read Consistency
+++++++++++++++++++++++++++++++++
+
+Oracle *always* enforces statement-level read consistency. This guarantees that all the data returned by a single query comes from a single point in time?the time that the query began. Therefore, a query never sees `dirty' data nor any of the changes made by transactions that commit during query execution. +
+For most applications, read committed is the most appropriate isolation level. +
+SET TRANSACTION ISOLATION LEVEL READ COMMITTED +
+Read committed is the default.
+
+[[transaction-level-read-consistency]]
+Transaction-Level Read Consistency
+++++++++++++++++++++++++++++++++++
+
+Oracle also offers the *option* of enforcing transaction-level read consistency. When a transaction executes in serializable mode, all all queries within the same transaction reflect the state of the database as of the time the transaction began. (you do see changes made by the transaction itself.) +
+SET TRANSACTION ISOLATION LEVEL SERIALIZABLE +
+Serializable will produce repeatable reads within a transaction, updates are possible with the risk of getting ORA-8177 so this is appropriate only for very short /small transactions. e.g. inserting a single small row into a table.
+
+[[read-only-transactions]]
+Read-Only Transactions
+++++++++++++++++++++++
+
+For queries that don’t modify any data, you may prefer a read-only transaction. +
+SET TRANSACTION READ ONLY +
+You can execute multiple queries against multiple tables, knowing that the results are consistent with respect to the same point in time. This can be useful for reports where all the numbers need to tally up.

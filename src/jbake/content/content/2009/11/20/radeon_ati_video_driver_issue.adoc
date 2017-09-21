@@ -1,0 +1,58 @@
+=  radeon/ati video driver issue on kubuntu karmic
+Francois Le Droff
+2009-11-20
+:jbake-type: post
+:jbake-tags:  OpenSource, Linux
+:jbake-status: published
+:source-highlighter: prettify
+
+Last night I updated my kunbuntu from dapper to karmic using the GUI (kynaptic). At restart kde was not starting, I ended up with my the terminal mode.
+
+I diagnostic-ed it by manually starting the Xserver
+
+....
+startx
+....
+
+I realized the system was complaining about the fglrx driver (I http://jroller.com/francoisledroff/entry/je_suis_enfin_libre[formerly installed] with Dapper on my laptop dell D610) If this happen to you too, you may fix it by doing this :
+
+Check first your graphic card name and chipset:
+
+....
+$ lspci -nn | grep VGA
+....
+
+First removes both -fglrx and -ati, and reinstalls the latter:
+
+....
+sudo apt-get remove --purge fglrx*
+  sudo apt-get remove --purge xserver-xorg-video-ati xserver-xorg-video-radeon 
+  sudo apt-get install xserver-xorg-video-ati
+  sudo apt-get install --reinstall libgl1-mesa-glx libgl1-mesa-dri xserver-xorg-core
+  sudo dpkg-reconfigure xserver-xorg
+....
+
+Then reboot
+
+At last edit the xorg.conf file
+
+....
+sudo vim /etc/X11/xorg.conf
+....
+
+Look for the above ``Section Device'' and change the ``Driver'' from fglrx to ati (I can’t be NOT radeon either). The ``ati'' driver is a wrapper that will load the ``radeon'' driver if possible.
+
+....
+Section "Device"
+        Identifier      "Radeon 9600"
+
+        Driver          "ati"
+        BusID           "PCI:1:0:0"
+        Option          "XAANoOffscreenPixmaps"
+EndSection
+....
+
+more here:
+
+* https://help.ubuntu.com/community/RadeonDriver#Configuring%20X.org
+* https://wiki.ubuntu.com/X/Troubleshooting/FglrxInteferesWithRadeonDriver

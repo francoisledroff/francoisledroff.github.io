@@ -1,0 +1,60 @@
+=  javapolis 2004: Eclipse in Action by Eric Gamma
+Francois Le Droff
+2004-12-13
+:jbake-type: post
+:jbake-tags:  Java, Javapolis
+:jbake-status: published
+:source-highlighter: prettify
+
+Eclipse in Action by Eric Gamma:
+
+
+This is the first talk I attended:
+Starting the conference with Eric Gamma was a great kick-off.
+Eric is a member of the gang of four, the author of best sellers like "Design Patterns"
+[ISBN: 0201633612],
+co-author (with Kent Beck) of [http://www.junit.org/],
+current employee of IBM in Zurich,
+and member of the architecture team of the Eclipse IDE.
+
+the eclipse architecture:
+
+He gave us an enlightening insight of the eclipse architecture.
+The eclipse architecture is based on a micro-kernel,
+everything in there is a plug-in,
+so it's lightweight and extendable, replaceable.
+
+the plug-in icebergs:
+
+He emphasized on the plug-ins "lazy loading" strategy:
+All the plug-ins are lazy loaded and thus accessible at start up,
+but only the top of "plug-in icebergs"
+is loaded, i.e. the plug-in user visible appearance defined
+through standardized xml declarative definition (icon + action class).
+
+It's only once the user triggers an action on a specific plug-in icon that the
+action class is lazily instantiated using reflection.
+
+
+We also attended a non "demo-effected" demo on how to develop an eclipse plug-in.
+I am convinced: developing a plug-in is pretty simple and straightforward !
+In a few seconds he built a plug-in user-friendly showing all the
+shared images contained in the eclipse package.
+
+Doing that He showed us a few tips and tricks (all of them are well documented in
+eclipse help menu "tips and tricks").
+
+Not just an IDE: a platform
+
+He went on presenting how eclipse and SWT can be used to develop rich client applications:
+
+-the first example was a "hello world" type calculator he quickly implemented,
+As the eclipse IDE is made of plug-ins, any stuff can be disabled in the UI,
+(or you may obviously use eclipse and SWT to produce stand alone applications).
+
+-the second example was a "Eclipse Trader", a set of plug-ins for the Eclipse RCP (
+Rich Client Platform) dedicated to the building of an online stock trading system
+[http://eclipsetrader.sourceforge.net/].
+
+
+

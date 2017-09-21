@@ -1,0 +1,32 @@
+=  Retour sur Rialto et le Web 2.0
+Francois Le Droff
+2005-11-23
+:jbake-type: post
+:jbake-tags:  OpenSource, ossgtp
+:jbake-status: published
+:source-highlighter: prettify
+
+Lors de la dernière http://ossgtp.xwiki.com/xwiki/bin/view/Main/17Novembre2005[réunion] http://ossgtp.xwiki.org[ossgtp], http://www.application-servers.com/[Didier] nous a http://www.application-servers.com/stories.do?reqCode=wholeStory&sid=2005-11-17-17:14:56[annoncé] la lancement d’un nouveau projet open-source prometteur : une bibliothèque de composants graphiques développée en javascript nommée http://rialto.application-servers.com/[Rialto].
+
+Le Framework Rialto a été réalisé par le SI de l’ http://www.igr.fr/[Institut Gustave Roussy] (IGR) 1er centre européen de lutte contre le cancer. Il a permis de bâtir une application de consultation des dossiers patients via le Web utilisé maintenant par l’ensemble du personnel médical de l’IGR. Sous l’implusion d’ http://www.improve-technologies.com/[improve], l’IGR a décidé d’open-sourcer ce framework sous licence apache.
+
+La http://rialto.application-servers.com/demoRialto.jsp[démo] est probante, l’ihm efficace, légère, intuitive. La techno : le core c’est du javascript, la mise en oeuvre peut passer par des taglib JSP ou par un adapteur struts mais aussi à terme par .NET ou JSF.
+
+Les réactions de certains geeks parmi nous:
+
+* ``Du javascript !! non merci ! je ne me vois pas utiliser ça ! à maintenir, à débugger c’est l’horreur ! et puis c’est jamais compatible à plus d’une version ou deux de navigateur !''
+
+J’ai souvent entendu ça, j’ai souvent vu des développeurs préferrer mettre en oeuvre des incessants aller-retour web-serveur plutôt que de coder et maintenir une ligne de javascript et/ou DHTML. J’étais, moi même, peu tenté par la mise en oeuvre de javascript avant ma rencontre en 2001 avec un guru du javascript, qui avait mis en oeuvre de bien jolie chose sur un portail entreprise (pour info https://nseenergy-prod.net/adviso[netseenergy]). Il m’a convaincu de la pertinence et de la beauté de la techno javascript - je l’ai convaincu de basculer son appli de microsoft asp vers J2EE- .
+
+C’est ainsi qu’en 2001, en plein boom internet Web 1.0, sans le savoir, nous fesions déja dans le Web 2.0 ou dans l’AJAX :
+
+* en intégrant de beaux widgets DHTML, javascript ``maisons''
+* et d’autres glanés dans le monde open-source, notamment les excellentes solutions de http://webfx.eae.net/
+
+Nos clients - jusqu’alors insatisfaits des solutions HTML (trop basique) et applet (trop lourd)- ont très bien accueilli ces solutions. Et oui, finalement pour moi non plus http://www.ludovic.org/archives/000490.html[le Web 2.0 n’est pas une révolution], mais une évolution, ce qui est notable c’est http://aurel.is.free.fr/blog/index.php?2005/09/25/194-web-20-2eme-partie[l’arrivée à maturité des infrastructures, des technos et des utilisateurs].
+
+Tout ça pour dire que, dès 2001, il était possible d’intégrer sans difficulté des composants javascript propre, beau, maintenable et cross-browser. Maintenant avec les nouveaux IDEs, debuggers et navigateurs, c’est encore plus facile et pérenne !.
+
+C’est pourquoi je pense que Rialto pourrait être un des acteurs de cette évolution du web. Dans le cadre d’une utilisation pertinente, ce toolkit saura à coup http://www.fredcavazza.net/index.php?2005/11/20/951-web-20-le-putsch-des-utilisateurs[séduire les utilisateurs].
+
+Quoi qu’il en soit, j’espère que Rialto saura rencontrer son public, sa communauté. Moi dès qu’il est disponible en téléchargement (vendredi?), je l’essaye !

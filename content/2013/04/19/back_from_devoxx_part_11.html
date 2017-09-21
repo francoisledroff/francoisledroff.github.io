@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Francois Le Droff: Back from Devoxx - Part 1 - Dev-QA-Ops Thoughts - About Branching</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">    
+
+    <!-- Le styles -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/asciidoctor.css" rel="stylesheet">
+    <link href="/css/base.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="favicon.ico">
+    </head>
+  <body>
+
+
+    <div id="wrap">
+	
+	<!-- Fixed navbar -->
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="container">
+	    <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Francois Le Droff 's Blog</a>
+	    </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">                
+                <li><a href="/about.html">About</a></li>
+
+                <li><a href="/archive.html">Archive</a></li>
+
+
+		            <li><a href="/conferences.html">Conferences</a></li>
+
+                <!--
+		            <li class="dropdown">
+          		      <a data-toggle="dropdown" href="#">Topics<b class="caret"></b></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="/tags/Java.html">Java</a></li>
+                    <li><a href="/tags/OpenSource.html">OpenSource</a></li>
+                    <li><a href="/tags/Misc.html">Misc</a></li>
+                  </ul>
+	              </li>
+	              -->
+
+
+                <li><a href="/feed.xml">Feed</a></li>
+
+                <!--
+                <li><a href="/projects.html">Projects</a></li>
+                -->
+
+              </ul>
+	      <ul class="nav navbar-nav navbar-right">
+	      	<li><a href="https://github.com/francoisledroff"><i class="fa fa-github"></i></a></li>
+	        <li><a href="https://twitter.com/francoisledroff"><i class="fa fa-twitter"></i></a>
+	      </ul>
+            </div>
+          </div>
+      </div>
+      <div class="container">
+	
+	<div class="page-header">
+		<h1>Back from Devoxx - Part 1 - Dev-QA-Ops Thoughts - About Branching</h1>
+    <p class="credit">
+      First published on April 19 2013
+      and tagged 
+    <a href="/tags/Java.html">Java . </a>
+
+    <a href="/tags/Devoxx.html">Devoxx . </a>
+		</p>
+	</div>
+
+	<p><div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>I spent 3 full days at <a href="http://www.devoxx.com/display/FR13/Accueil">devoxxfr<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a> late March. 3 full days really well spent.<br>
+The conference was fantastic, full of informative and entertaining presentations, live coding sessions and labs; and at every break, good old friends or friendly new faces for even more passion and sharing.</p>
+</div>
+<div class="paragraph">
+<p>A big bravo and a big thanks to Antonio, Nicolas, Zouheir, Arnaud and all the devoxx team for such a great event. I felt the same passion and energy I felt back in 2005 when I first attended Javapolis in Antwerpen.</p>
+</div>
+<div class="paragraph">
+<p>This year I particularly focused my attention on all things related to quality, devops and continous delivery.</p>
+</div>
+<div class="paragraph">
+<p>You’ll find here a bunch of notes-to-self and various pointers on that will help me and my team at Adobe to do a better at improving our software engineering quality, continuous delivery and dev-qa-ops practices.</p>
+</div>
+<div class="paragraph">
+<p><a href="#BackfromDevoxx-Part1-Dev-QA-OpsThoughts-AboutBranching-Aboutbranchingstrategyandfeaturetoggling">About branching strategy and feature toggling</a></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#BackfromDevoxx-Part1-Dev-QA-OpsThoughts-AboutBranching-Featurebranching">Feature branching</a></p>
+</li>
+<li>
+<p><a href="#BackfromDevoxx-Part1-Dev-QA-OpsThoughts-AboutBranching-FeatureToggling">Feature Toggling</a></p>
+</li>
+<li>
+<p><a href="#BackfromDevoxx-Part1-Dev-QA-OpsThoughts-AboutBranching-Featuretogglingandtrunkbaseddevelopmentapplied">Feature toggling and trunk based development applied</a></p>
+</li>
+<li>
+<p><a href="#BackfromDevoxx-Part1-Dev-QA-OpsThoughts-AboutBranching-Notconvinced%3F">Not convinced ?</a></p>
+</li>
+<li>
+<p><a href="#BackfromDevoxx-Part1-Dev-QA-OpsThoughts-AboutBranching-Let%27smakethebuildunbreakable">Let’s make the build unbreakable</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="about-branching-strategy-and-feature-toggling">link:[]About branching strategy and feature toggling</h4>
+<div id="feature-branching" class="paragraph">
+<p>link:[]Feature branching</p>
+</div>
+<div class="paragraph">
+<p>When building enterprise software we all spend quite a bit of time building/working/working-around code branching strategies and facing the consequences of choosing one strategy over another.</p>
+</div>
+<div class="paragraph">
+<p>These strategies derives from the organization’s software development processes and are shaped by the answers to questions about how a company releases its software,</p>
+</div>
+<div class="paragraph">
+<p>Git/dvcs eased the pain of feature branching and merging back into the team mainline (taken to production)<br>
+Obvious to say than doing local development is a feature branch in itself, impossible to avoid that. However, using branches for features or large-scale changes is seen by many <a href="http://martinfowler.com/bliki/FeatureBranch.html">as a bad idea<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a> for several reasons, of which the most important are that it prevents both continuous delivery and refactoring</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Feature Branching is a poor man’s modular architecture, instead of building systems with the ability to easy swap in and out features at runtime/deploytime they couple themselves to the source control providing this mechanism through manual merging.<br>
+– Dan Bodart</p>
+</div>
+</blockquote>
+</div>
+<div id="feature-toggling" class="paragraph">
+<p>link:[]Feature Toggling</p>
+</div>
+<div class="paragraph">
+<p>The alternative (mentioned quite a bit at devoxx this year) is <a href="http://martinfowler.com/bliki/FeatureToggle.html">Feature toggling<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a></p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Feature flags and flippers mean we don’t have to do merges, and that all code (no matter how far it is from being released) is integrated as soon as it is committed. Deploys become smaller and more frequent; this leads to bugs that are easier to fix, (…) the amount of changed code is minimized.</p>
+</div>
+<div class="paragraph">
+<p>This style of development isn’t all rainbows and sunshine. (…) after launching a feature, we have to go back in the code base and remove the old version (maintaining separate versions of all features on Flickr would be a nightmare).<br>
+– <a href="http://code.flickr.net/2009/12/02/flipping-out">Flickr<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a></p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>Feature toggling also facilitates canary releasing, A/B testing, and makes it easier to roll-back should a new feature misbehave in production.</p>
+</div>
+<div class="paragraph">
+<p>Cyrille (yet another devoxx speaker and cxf committer) summarized the many advantages of feature toggling in one of his former talk on <a href="http://www.slideshare.net/cyrille.leclerc/paris-devops-monitoring-and-feature-toggle-pattern-with-jmx">monitoring and feature toggle pattern with jmx<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a> :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>dissociate deployment and feature activation</p>
+</li>
+<li>
+<p>progressive activation of a feature i.e. canary testing</p>
+</li>
+<li>
+<p>measure impact of a new version i.e. A/B testing</p>
+</li>
+<li>
+<p>differ feature activation on production</p>
+</li>
+<li>
+<p>trunk based development</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Cyrille also hinted at the different coding and cleaning patterns:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>smart reuse and mutualization</p>
+</li>
+<li>
+<p>or brutal duplication allowing a cleaner and eased old version removal</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>I did a bit of googling to find feature toggling frameworks and techniques:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>feature toggling with osgi and felix support <a href="https://github.com/tacitknowledge/flip">https://github.com/tacitknowledge/flip<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a></p>
+</li>
+<li>
+<p>but there are others like <a href="http://www.togglz.org/documentation/overview.html">http://www.togglz.org/documentation/overview.html<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a> than can also be plugged and with jmx : <a href="https://gist.github.com/chkal/4292625">https://gist.github.com/chkal/4292625<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a></p>
+</li>
+</ul>
+</div>
+<div id="feature-toggling-and-trunk-based-development-applied" class="paragraph">
+<p>link:[]Feature toggling and trunk based development applied</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Sucessfully applied, this techniques can allow several prod release per day, Facebook, stackoverflow and Flickr were mentioned for this by Axel in his <a href="http://www.slideshare.net/axelfontaine/architecting-for-continuous-delivery">architecting for continuous delivery talk<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a></p>
+</li>
+<li>
+<p>extract from a break chats:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>``here at Banque X we only maintain 2 branches, a trunk where all the bugs are fixed first and a production support branch''</p>
+</li>
+<li>
+<p>``here at insurance broker Y, we release a few times a week, we only have trunk, and we don’t bother with maven release, we release snapshots (but everything is traceable and repoductible), and we love it''</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div id="not-convinced" class="paragraph">
+<p>link:[]Not convinced ?</p>
+</div>
+<div class="paragraph">
+<p>Feature Toggling is not a silver bullet and proper cleaning and technical debt management seems even more important in that context.</p>
+</div>
+<div class="paragraph">
+<p>One might call this feature toggling technique: merge paranoia cf.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://arialdomartini.wordpress.com/2011/11/02/help-me-because-i-think-martin-fowler-has-a-merge-paranoia/">http://arialdomartini.wordpress.com/2011/11/02/help-me-because-i-think-martin-fowler-has-a-merge-paranoia/<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a></p>
+</li>
+<li>
+<p><a href="http://www.jillesvangurp.com/2011/07/16/using-git-and-feature-branches-effectively/">http://www.jillesvangurp.com/2011/07/16/using-git-and-feature-branches-effectively/<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a></p>
+</li>
+</ul>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>You can’t do decentralized versioning unless you also decentralize your testing and integration. Git has value when used as a SVN replacement. Git has more value when used as a DVCS. There is no good reason why you can’t do decentralized testing and integration with git. Rather the opposite: it has been designed with exactly this in mind. The whole point of git is divide and conquer. Break the changes up: decentralize the testing and integration work and solve the vast majority of problems before change is pushed upstream. If you push your problems along with your changes you are doing it wrong. Decentralized integration is a very clever strategy that is based on the notion that the effort involved with testing and integration scales exponentially rather than linearly with the amount of change.</p>
+</div>
+</blockquote>
+</div>
+<div id="lets-make-the-build-unbreakable" class="paragraph">
+<p>link:[]Let’s make the build unbreakable</p>
+</div>
+<div class="paragraph">
+<p>I’d agree with the above statement. With Git anyway, de facto, we do have a feature branch specific to each developer.</p>
+</div>
+<div class="paragraph">
+<p>Using Git and prehooks techniques you can make the main line build unbreakable cf.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://gist.github.com/dgageot/2708610">https://gist.github.com/dgageot/2708610<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a></p>
+</li>
+<li>
+<p><a href="http://blog.javabien.net/2009/12/01/serverless-ci-with-git/">http://blog.javabien.net/2009/12/01/serverless-ci-with-git/<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a></p>
+</li>
+<li>
+<p><a href="http://www.slideshare.net/dgageot/git-tours-jug-2010?from=ss_embed">http://www.slideshare.net/dgageot/git-tours-jug-2010?from=ss_embed<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a></p>
+</li>
+<li>
+<p><a href="http://blog.xebia.fr/2013/04/09/revue-de-presse-xebia-2013-15/#RevuedePresseXebia-Unbuildincassable%3F">http://blog.xebia.fr/2013/04/09/revue-de-presse-xebia-2013-15/#RevuedePresseXebia-Unbuildincassable%3F<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a></p>
+</li>
+<li>
+<p><a href="http://www.youtube.com/watch?v=MF72e-12dxE&amp;feature=player_embedded">http://www.youtube.com/watch?v=MF72e-12dxE&amp;feature=player_embedded<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Note that if you are stuck on Perforce: you can use the shelving feature. Have the developers create shelved changelists and get Jenkins to unshelve the changes to build and run the tests. If the tests pass, the changelist can be submitted to the central depot.</p>
+</div>
+</div></p>
+
+<hr/>
+
+
+    
+    <div id="footer">
+
+      <div class="container">
+
+        <p class="credit">
+        Published with
+        a <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/"><em>Creative Commons by-nc-sa</em> license</a>,
+          mixed with <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>,
+          baked with <a href="http://jbake.org">JBake v2.5.1</a>
+
+	      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/fr/">
+        <img alt="Creative Commons License" style="border-width:0"
+	      src="http://i.creativecommons.org/l/by-nc-sa/2.0/fr/80x15.png"/></a>
+
+         </p>
+      </div>
+    </div>
+    
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/jquery-1.9.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+
+  </body>
+</html>

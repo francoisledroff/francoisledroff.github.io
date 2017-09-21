@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Francois Le Droff: javapolis 2004: Eclipse in Action by Eric Gamma</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">    
+
+    <!-- Le styles -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/asciidoctor.css" rel="stylesheet">
+    <link href="/css/base.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="favicon.ico">
+    </head>
+  <body>
+
+
+    <div id="wrap">
+	
+	<!-- Fixed navbar -->
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="container">
+	    <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Francois Le Droff 's Blog</a>
+	    </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">                
+                <li><a href="/about.html">About</a></li>
+
+                <li><a href="/archive.html">Archive</a></li>
+
+
+		            <li><a href="/conferences.html">Conferences</a></li>
+
+                <!--
+		            <li class="dropdown">
+          		      <a data-toggle="dropdown" href="#">Topics<b class="caret"></b></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="/tags/Java.html">Java</a></li>
+                    <li><a href="/tags/OpenSource.html">OpenSource</a></li>
+                    <li><a href="/tags/Misc.html">Misc</a></li>
+                  </ul>
+	              </li>
+	              -->
+
+
+                <li><a href="/feed.xml">Feed</a></li>
+
+                <!--
+                <li><a href="/projects.html">Projects</a></li>
+                -->
+
+              </ul>
+	      <ul class="nav navbar-nav navbar-right">
+	      	<li><a href="https://github.com/francoisledroff"><i class="fa fa-github"></i></a></li>
+	        <li><a href="https://twitter.com/francoisledroff"><i class="fa fa-twitter"></i></a>
+	      </ul>
+            </div>
+          </div>
+      </div>
+      <div class="container">
+	
+	<div class="page-header">
+		<h1>javapolis 2004: Eclipse in Action by Eric Gamma</h1>
+    <p class="credit">
+      First published on December 13 2004
+      and tagged 
+    <a href="/tags/Java.html">Java . </a>
+
+    <a href="/tags/Javapolis.html">Javapolis . </a>
+		</p>
+	</div>
+
+	<p><div class="paragraph">
+<p>Eclipse in Action by Eric Gamma:</p>
+</div>
+<div class="paragraph">
+<p>This is the first talk I attended:
+Starting the conference with Eric Gamma was a great kick-off.
+Eric is a member of the gang of four, the author of best sellers like "Design Patterns"
+[ISBN: 0201633612],
+co-author (with Kent Beck) of [<a href="http://www.junit.org/" class="bare">http://www.junit.org/</a>],
+current employee of IBM in Zurich,
+and member of the architecture team of the Eclipse IDE.</p>
+</div>
+<div class="paragraph">
+<p>the eclipse architecture:</p>
+</div>
+<div class="paragraph">
+<p>He gave us an enlightening insight of the eclipse architecture.
+The eclipse architecture is based on a micro-kernel,
+everything in there is a plug-in,
+so it&#8217;s lightweight and extendable, replaceable.</p>
+</div>
+<div class="paragraph">
+<p>the plug-in icebergs:</p>
+</div>
+<div class="paragraph">
+<p>He emphasized on the plug-ins "lazy loading" strategy:
+All the plug-ins are lazy loaded and thus accessible at start up,
+but only the top of "plug-in icebergs"
+is loaded, i.e. the plug-in user visible appearance defined
+through standardized xml declarative definition (icon + action class).</p>
+</div>
+<div class="paragraph">
+<p>It&#8217;s only once the user triggers an action on a specific plug-in icon that the
+action class is lazily instantiated using reflection.</p>
+</div>
+<div class="paragraph">
+<p>We also attended a non "demo-effected" demo on how to develop an eclipse plug-in.
+I am convinced: developing a plug-in is pretty simple and straightforward !
+In a few seconds he built a plug-in user-friendly showing all the
+shared images contained in the eclipse package.</p>
+</div>
+<div class="paragraph">
+<p>Doing that He showed us a few tips and tricks (all of them are well documented in
+eclipse help menu "tips and tricks").</p>
+</div>
+<div class="paragraph">
+<p>Not just an IDE: a platform</p>
+</div>
+<div class="paragraph">
+<p>He went on presenting how eclipse and SWT can be used to develop rich client applications:</p>
+</div>
+<div class="paragraph">
+<p>-the first example was a "hello world" type calculator he quickly implemented,
+As the eclipse IDE is made of plug-ins, any stuff can be disabled in the UI,
+(or you may obviously use eclipse and SWT to produce stand alone applications).</p>
+</div>
+<div class="paragraph">
+<p>-the second example was a "Eclipse Trader", a set of plug-ins for the Eclipse RCP (
+Rich Client Platform) dedicated to the building of an online stock trading system
+[<a href="http://eclipsetrader.sourceforge.net/" class="bare">http://eclipsetrader.sourceforge.net/</a>].</p>
+</div></p>
+
+<hr/>
+
+
+    
+    <div id="footer">
+
+      <div class="container">
+
+        <p class="credit">
+        Published with
+        a <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/"><em>Creative Commons by-nc-sa</em> license</a>,
+          mixed with <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>,
+          baked with <a href="http://jbake.org">JBake v2.5.1</a>
+
+	      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/fr/">
+        <img alt="Creative Commons License" style="border-width:0"
+	      src="http://i.creativecommons.org/l/by-nc-sa/2.0/fr/80x15.png"/></a>
+
+         </p>
+      </div>
+    </div>
+    
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/jquery-1.9.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+
+  </body>
+</html>

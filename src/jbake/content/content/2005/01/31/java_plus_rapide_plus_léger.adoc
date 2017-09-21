@@ -1,0 +1,34 @@
+=  Java plus rapide, plus léger
+Francois Le Droff
+2005-01-31
+:jbake-type: post
+:jbake-tags:  Java 
+:jbake-status: published
+:source-highlighter: prettify
+
+C’est la première fois depuis des années que j’achète un ouvrage informatique en français. Depuis maintenant un an, je travaille dans un environnement complètement et uniquement francophone et je voulais pouvoir passer ce livre à quelques membres de mon équipe.
+
+Je n’ai pas été déçu. La traduction est bonne et j’ai bien conscience que ce n’est pas un exercice aisé.
+
+http://www.oreilly.fr/catalogue/2841773124.html[image:http://www.oreilly.fr/images/2-84177-312-4.gif[image]]
+
+Voici les liens vers les quelques chapitres disponibles gratuitement sur le net :
+
+* http://www.oreilly.com/catalog/bfljava/chapter/ch00.pdf[Sample Excerpt: Preface] (PDF)
+* http://www.oreilly.com/catalog/bfljava/chapter/ch03.pdf[Chapter 3: Do One Thing, and Do It Well] (PDF)
+* http://www.oreilly.com/catalog/bfljava/chapter/ch10.pdf[Chapter 10: Extending jPetStore] (PDF)
+* http://www.onjava.com/pub/a/onjava/excerpt/BFLJava_chap8/index1.html[Chapter 8: Spring] (html) excerpts from ONJava.com
+
+Un article O’Reilly :
+
+* http://www.oreillynet.com/pub/a/onjava/2004/07/14/BFLJava.html[Better, Faster, Lighter Programming in .NET and Java]
+
+J’avais déjà lu ces quelques chapitres et articles disponibles, j’avais également téléchargé et joué avec jPetStore. Ce livre m’a tout de même apporté de bonnes informations. Les auteurs prennent quelques positions tranchées et non politiquement correctes, même si je ne suis pas toujours d’accord avec eux (non ant n’est pas la seule solution pour un build optimal, maven l’est tout au tant, sinon plus), j’aime ça !
+
+Beaucoup d’idées me sont venues à la suite de la lecture de ce livre:
+
+* grâce aux toujours utiles piqûres de rappel de bon sens comme ``ne faites qu’une seule chose à la fois et faites la bien !''
+* de plus ces grands principes introduits au début de l’ouvrage sont très bien mis en ?uvre dans quelques exemples finaux,
+* et enfin il faut souligner que dans ces mêmes exemples, quelques projets open source sont utilisés de manière peu orthodoxe mais fort judicieuse !
+
+Un grand point noir cependant, les codes sources complets des exemples abordés dans ce livre ne sont pas disponibles ni sur CD, ni sur le net.

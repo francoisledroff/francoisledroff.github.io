@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Francois Le Droff: pragmatic profiling - find out quickly why your java app is hanging</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">    
+
+    <!-- Le styles -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/asciidoctor.css" rel="stylesheet">
+    <link href="/css/base.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="favicon.ico">
+    </head>
+  <body>
+
+
+    <div id="wrap">
+	
+	<!-- Fixed navbar -->
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="container">
+	    <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Francois Le Droff 's Blog</a>
+	    </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">                
+                <li><a href="/about.html">About</a></li>
+
+                <li><a href="/archive.html">Archive</a></li>
+
+
+		            <li><a href="/conferences.html">Conferences</a></li>
+
+                <!--
+		            <li class="dropdown">
+          		      <a data-toggle="dropdown" href="#">Topics<b class="caret"></b></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="/tags/Java.html">Java</a></li>
+                    <li><a href="/tags/OpenSource.html">OpenSource</a></li>
+                    <li><a href="/tags/Misc.html">Misc</a></li>
+                  </ul>
+	              </li>
+	              -->
+
+
+                <li><a href="/feed.xml">Feed</a></li>
+
+                <!--
+                <li><a href="/projects.html">Projects</a></li>
+                -->
+
+              </ul>
+	      <ul class="nav navbar-nav navbar-right">
+	      	<li><a href="https://github.com/francoisledroff"><i class="fa fa-github"></i></a></li>
+	        <li><a href="https://twitter.com/francoisledroff"><i class="fa fa-twitter"></i></a>
+	      </ul>
+            </div>
+          </div>
+      </div>
+      <div class="container">
+	
+	<div class="page-header">
+		<h1>pragmatic profiling - find out quickly why your java app is hanging</h1>
+    <p class="credit">
+      First published on March 02 2006
+      and tagged 
+    <a href="/tags/Java.html">Java . </a>
+		</p>
+	</div>
+
+	<p><div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Hunting for thread locks by creating and studying thread dumps<br>
+<br></p>
+</div>
+<div class="paragraph">
+<p>Lately, our latest nightly built JBoss application was hanging and eating up to 100% CPU. No deadlock per se was detected. But we definitely had some profiling to do.</p>
+</div>
+<div class="paragraph">
+<p>There are quite a few usefull links on jboss wiki regarding <a href="http://wiki.jboss.org/wiki/Wiki.jsp?page=MonitoringManagementAndProfilingTools">Monitoring, Management, and Profiling Tools for JBoss Software</a></p>
+</div>
+<div class="paragraph">
+<p>The first options use a profiler, we first tried JProbe. It fails the 10 minutes test.</p>
+</div>
+<div class="paragraph">
+<p>But we finally succeeded in debugging our application in a much simpler and yet efficient manner : by creating and studying thread dumps.</p>
+</div>
+<div class="paragraph">
+<p>Here is the story:</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="jprobe-10-minutes-test-on-linux-redhat">link:[JProbe 10 minutes test on Linux RedHat]</h4>
+<div class="paragraph">
+<p>we <a href="http://www.quest.com/jprobe/profiler_freeware.asp">downloaded the JProbe community edition</a>. we had a few issues to make it run on top of our Linux RedHat (ES version 3) OS to profile our JBoss-3.2.6 j2ee application. The first was known and fixed by Quest, we applied a <a href="http://qlist1.quest.com/read/messages?id=12025">patch for jboss profiling</a>. But then the JVM crashed, I tried one or two <a href="http://java.quest.com/dist/downloads/jprobe600/doc/Readme-JProbe60.html">workarounds found in the jprobe doc</a>, but it didn’t help.</p>
+</div>
+<div class="paragraph">
+<p>No need to say this took me more than 10 minutes. May be, we should have tried <a href="http://labs.jboss.com/portal/index.html?ctrl:id=page.default.info&amp;project=jbossprofiler">JBossProfiler</a>, did you ?</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="thread-dumps-were-helpful-enough-and-so-much-quicker">link:[thread dumps were helpful enough and so much quicker]</h4>
+<div class="paragraph">
+<p>Then we found very helpfull tips on <a href="http://developers.sun.com/learning/javaoneonline/2004/newcooltech/TS-1646.pdf">javaone 2004 talk : View from the Trenches: Thread Dumps</a></p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>When the plane crashes, what do you do?</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>You retrieve the Black Box</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>When the application server freezes in mid-flight, what do you do?</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>You retrieve the Thread Dumps</p>
+</li>
+</ul>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>A Java thread dump is a log containing threads and monitors diagnostics. Depending on how complex your application is, your stack trace can range from a few lines to thousands.</p>
+</div>
+<div class="paragraph">
+<p>On our version Jboss, we unfortunately don’t have the nice <a href="http://wiki.jboss.org/wiki/Wiki.jsp?page=GenerateAThreadDumpWithTheJMXConsole">JMX Console thread dump generation feature</a> starting from JBoss v3.2.8/4.0.2.</p>
+</div>
+<div class="paragraph">
+<p>But thanks to the nice and cool <a href="http://yusuke.homeip.net/samurai/?english#content_1_8">Samurai 2.0.0</a> tool we did even better without. We forced the thread dump (kill -3 on Linux, Ctrl+Break on Dos), piped this dump into a text file and import it into Samurai. We found out in just a few seconds that many of our threads were endlessly waiting for JMS resources, this information lead us to the debugging path.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="http://www.jroller.com/resources/f/francoisledroff/samurai-1.gif" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>Note also that by just adding ``-verbose:gc'' option when launching jboss, you also get this kind of graphic for free:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="http://www.jroller.com/resources/f/francoisledroff/samurai-2.gif" alt="image"></span></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="references">link:[references]</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://wiki.jboss.org/wiki/Wiki.jsp?page=StackTrace">How to generate and capture Java stack traces with JBoss</a></p>
+</li>
+<li>
+<p><a href="http://wiki.jboss.org/wiki/Wiki.jsp?page=GenerateAThreadDumpWithTheJMXConsole">Generate a thread dump with the JMX Console of Jboss</a></p>
+</li>
+<li>
+<p><a href="http://java.sun.com/developer/technicalArticles/Programming/Stacktrace/">An Introduction to Java Stack Traces</a></p>
+</li>
+<li>
+<p><a href="http://yusuke.homeip.net/samurai/?english#content_1_8">Samurai 2.0.0</a></p>
+</li>
+<li>
+<p><a href="http://developers.sun.com/learning/javaoneonline/2004/newcooltech/TS-1646.pdf">javaone 2004 talk : View from the Trenches: Thread Dumps</a></p>
+</li>
+</ul>
+</div>
+</div></p>
+
+<hr/>
+
+
+    
+    <div id="footer">
+
+      <div class="container">
+
+        <p class="credit">
+        Published with
+        a <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/"><em>Creative Commons by-nc-sa</em> license</a>,
+          mixed with <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>,
+          baked with <a href="http://jbake.org">JBake v2.5.1</a>
+
+	      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/fr/">
+        <img alt="Creative Commons License" style="border-width:0"
+	      src="http://i.creativecommons.org/l/by-nc-sa/2.0/fr/80x15.png"/></a>
+
+         </p>
+      </div>
+    </div>
+    
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/jquery-1.9.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+
+  </body>
+</html>

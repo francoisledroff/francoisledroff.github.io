@@ -1,0 +1,66 @@
+=  pragmatic profiling - find out quickly why your java app is hanging
+Francois Le Droff
+2006-03-02
+:jbake-type: post
+:jbake-tags:  Java 
+:jbake-status: published
+:source-highlighter: prettify
+
+Hunting for thread locks by creating and studying thread dumps +
+ +
+
+Lately, our latest nightly built JBoss application was hanging and eating up to 100% CPU. No deadlock per se was detected. But we definitely had some profiling to do.
+
+There are quite a few usefull links on jboss wiki regarding http://wiki.jboss.org/wiki/Wiki.jsp?page=MonitoringManagementAndProfilingTools[Monitoring, Management, and Profiling Tools for JBoss Software]
+
+The first options use a profiler, we first tried JProbe. It fails the 10 minutes test.
+
+But we finally succeeded in debugging our application in a much simpler and yet efficient manner : by creating and studying thread dumps.
+
+Here is the story:
+
+[[jprobe-10-minutes-test-on-linux-redhat]]
+link:[JProbe 10 minutes test on Linux RedHat]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+we http://www.quest.com/jprobe/profiler_freeware.asp[downloaded the JProbe community edition]. we had a few issues to make it run on top of our Linux RedHat (ES version 3) OS to profile our JBoss-3.2.6 j2ee application. The first was known and fixed by Quest, we applied a http://qlist1.quest.com/read/messages?id=12025[patch for jboss profiling]. But then the JVM crashed, I tried one or two http://java.quest.com/dist/downloads/jprobe600/doc/Readme-JProbe60.html[workarounds found in the jprobe doc], but it didn’t help.
+
+No need to say this took me more than 10 minutes. May be, we should have tried http://labs.jboss.com/portal/index.html?ctrl:id=page.default.info&project=jbossprofiler[JBossProfiler], did you ?
+
+[[thread-dumps-were-helpful-enough-and-so-much-quicker]]
+link:[thread dumps were helpful enough and so much quicker]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Then we found very helpfull tips on http://developers.sun.com/learning/javaoneonline/2004/newcooltech/TS-1646.pdf[javaone 2004 talk : View from the Trenches: Thread Dumps]
+
+__________________________________________________________________
+When the plane crashes, what do you do?
+
+* You retrieve the Black Box
+
+When the application server freezes in mid-flight, what do you do?
+
+* You retrieve the Thread Dumps
+__________________________________________________________________
+
+A Java thread dump is a log containing threads and monitors diagnostics. Depending on how complex your application is, your stack trace can range from a few lines to thousands.
+
+On our version Jboss, we unfortunately don’t have the nice http://wiki.jboss.org/wiki/Wiki.jsp?page=GenerateAThreadDumpWithTheJMXConsole[JMX Console thread dump generation feature] starting from JBoss v3.2.8/4.0.2.
+
+But thanks to the nice and cool http://yusuke.homeip.net/samurai/?english#content_1_8[Samurai 2.0.0] tool we did even better without. We forced the thread dump (kill -3 on Linux, Ctrl+Break on Dos), piped this dump into a text file and import it into Samurai. We found out in just a few seconds that many of our threads were endlessly waiting for JMS resources, this information lead us to the debugging path.
+
+image:http://www.jroller.com/resources/f/francoisledroff/samurai-1.gif[image]
+
+Note also that by just adding ``-verbose:gc'' option when launching jboss, you also get this kind of graphic for free:
+
+image:http://www.jroller.com/resources/f/francoisledroff/samurai-2.gif[image]
+
+[[references]]
+link:[references]
+^^^^^^^^^^^^^^^^^
+
+* http://wiki.jboss.org/wiki/Wiki.jsp?page=StackTrace[How to generate and capture Java stack traces with JBoss]
+* http://wiki.jboss.org/wiki/Wiki.jsp?page=GenerateAThreadDumpWithTheJMXConsole[Generate a thread dump with the JMX Console of Jboss]
+* http://java.sun.com/developer/technicalArticles/Programming/Stacktrace/[An Introduction to Java Stack Traces]
+* http://yusuke.homeip.net/samurai/?english#content_1_8[Samurai 2.0.0]
+* http://developers.sun.com/learning/javaoneonline/2004/newcooltech/TS-1646.pdf[javaone 2004 talk : View from the Trenches: Thread Dumps]

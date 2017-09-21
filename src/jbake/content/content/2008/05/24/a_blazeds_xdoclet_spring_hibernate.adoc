@@ -1,0 +1,24 @@
+=  A blazeDS Xdoclet Spring Hibernate Maven Archetype
+Francois Le Droff
+2008-05-24
+:jbake-type: post
+:jbake-tags:  Adobe 
+:jbake-status: published
+:source-highlighter: prettify
+
+I started working on a personal project during the week-ends lately. +
+ +
+Here is the result I’m happy to share with the world : +
+A great new blazeDS Xdoclet Spring Hibernate Maven Archetype: +
+
+* http://blogs.adobe.com/francoisledroff/2008/05/my_blazeds_xdoclet_spring_hibe.html[see my new Adobe blog]
+
+ +
+
+Try it out ! Add my maven repository to your repositories list in your maven configuration file, *in 3 maven command lines, you’ll have a build a full professional multi-module flex blazeds spring hibernate CRUD application running on jetty* (thanks to maven and xdoclet).
+
+This CRUD application was ``inspired'' from http://sebastien-arbogast.com/2008/04/20/flex-spring-and-blazeds-the-full-stack-epilogue/[a great article made by Sébastien Arbogast] +
+Thanks Sebastien !
+
+The flex stuff is compiled and packaged through http://blog.flex-mojos.info/[Flex Mojos]. +
+Thanks Velo !

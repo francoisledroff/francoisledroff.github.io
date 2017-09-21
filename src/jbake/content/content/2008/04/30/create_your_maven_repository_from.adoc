@@ -1,0 +1,180 @@
+=  Create your maven repository from a set of provided jars: the Adobe LiveCycle SDK and Adobe blazeDS examples
+Francois Le Droff
+2008-04-30
+:jbake-type: post
+:jbake-tags:  Java 
+:jbake-status: published
+:source-highlighter: prettify
+
+Lost of maven repositories are available out there in the cloud. When you’re looking for artifacts http://www.mvnrepository.com/ is a great place to start. +
+You may even find Adobe blazeDS jars referenced there. But they were not deployed there by Adobe, and they are not what I expected them to be. +
+Their version number is wrong, and to me the naming and groupId as well. +
+ +
+It’s too bad Adobe (just like many other proprietary software editors) does not systematically provide maven repository. +
+. Lots of people are asking Adobe for maven support : +
+
+* asking for an blazeDS maven repository : http://bugs.adobe.com/jira/browse/BLZ-71 and https://bugs.adobe.com/jira/browse/BLZ-9
+* asking for maven blazeDS archetype : https://bugs.adobe.com/jira/browse/BLZ-44
+* asking for flex maven plugin : https://bugs.adobe.com/jira/browse/SDK-12730
+
+ +
+So to help you and me out. Here are a few ant scripts I developed yesterday to automatize and ease the creation of local and remote repository from a set of libraries. +
+
+* first a script of reusable ant targets to ease the construction of local and remote maven repositories : maven-repository-construction-calls.xml
+* then an ant script to deploy all livecycle client sdk jars into maven repository : create-LC-ES-maven-repo.xml
+* and finally another ant script that target blazeds
+
+ +
+
+[[maven-repository-construction-calls-from-an-ant-file]]
+maven repository construction calls from an ANT file
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ +
+This maven-repository-construction-calls.xml ANT file of mine is the base of my maven Adobe repository creation. +
+What it does is calling ``mvn install:install-file'' and ``mvn deploy:deploy-file'' through the exec ant Task. +
+ +
+I also develop a target called ``maven-all-artifacts-in-dir'', which iterates on all the jars in a $\{jar.directory} +
+to call maven install or maven deploy on the jars that corresponds to a provided regular expression. +
+This was possible thanks to the use of the very handy http://ant-contrib.sourceforge.net/[net.sf.antcontrib ANT tasks] and . +
+ +
+Here is an extract: +
+
+[source,jive-pre]
+----
+"maven-all-artifacts-in-dir">
+ for param="jar.file">
+  
+   "${jar.directory}" includes="${artifactRegexp}" />
+
+  
+ 
+ 
+ "yes" 
+  property="artifactName" input="@{jar.file}" 
+  regexp=".*\\([^\\]*)\.jar" select="\1" casesensitive="false" />
+
+   "${maven.target}">
+    "exec.dir" value="${jar.directory}" />
+    "artifactId" value="${artifactName}" />
+
+    "jarFileName" value="${artifactName}.jar" />
+   
+ 
+ 
+
+----
+
+ +
+
+[[create-livecycle-sdk-maven-repository]]
+Create LiveCycle SDK maven repository
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ +
+This ant build file is here to help you construct your livecycle client maven repository. +
+It will deploy all the jars contained in the $\{livecycle.sdk.home}/client-libs/common in your maven repositories : +
+I chose to apply +
+
+* 8.0.3187.1.156868.1 for my artifacts’ version (i.e. the version number I found in the jar manifest files)
+* com.adobe.livecyle as the artifacts groupId
+* the name of the jar file as an artifactId for all the files contained in the $\{livecycle.sdk.home}/client-libs/common folder
+** adobe-utilities.jar is a special case : there is one for each JEE application server supported by livecycle
+** I chose to use a specific artifactId for each of those :
+*** jboss-adobe-utilities
+*** weblogic-adobe-utilities
+*** websphere-adobe-utilities
+
+ +
+Here is an extract of my build file showing how I handle the special case of adobe-utilities jars: +
+
+[source,jive-pre]
+----
+"maven-livecycle-adobe-utilities">
+  "groupId" value="${livecycle.groupId}" />
+  "version" value="${livecycle.version}" />
+
+  "jarFileName" value="adobe-utilities.jar" />
+  "maven.repo.url" value="${maven.adobe.repo.url}" />
+
+  "description" value="${livecycle.artifacts.description}" />
+  for list="jboss,weblogic,websphere" param="livecycle.server">
+
+   
+    "maven-repository-construction-calls.xml" target="${maven-target}">
+     "exec.dir" value="${livecycle.sdk.home}/client-libs/@{livecycle.server}" />
+
+     "artifactId" value="@{livecycle.server}-adobe-utilities" />
+    
+   
+  
+
+----
+
+ +
+ +
+May be one day, the adobe engineering team will come with other groupId and artifact naming convention. +
+I don’t know about that, those choices above are just personal/common sense, not Adobe’s official. +
+ +
+
+[[create-blazeds-maven-repository]]
+Create blazeDS maven repository
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ +
+This ant build file is here to help you construct your blazeds maven repository. +
+It will deploy all the adobe jars contained in blazeds-3.0.0.544/blazeds.unzipped.war/WEB-INF/lib directory into your maven local and remote repository. +
+I chose here +
+
+* 3.0.0.544 for versioning my artifacts
+* com.adobe.blazeds as the artifacts groupId
+* the name of the jar file as an artifactId for all the following adobe specific jarfiles contained in blazeds-3.0.0.544/blazeds.unzipped.war/WEB-INF/lib directory:
+** all the flex-something.jar files
+** the cold fusion bridge : cfgatewayadapter.jar
+
+ +
+
+[source,jive-pre]
+----
+"maven-deploy-blazeds-libs">
+
+  "maven.repo.url" value="${maven.adobe.repo.url}" />
+  "description" value="${blazeds.artifacts.description}" />
+
+  "maven-repository-construction-calls.xml" target="maven-all-artifacts-in-dir">
+   "maven.target" value="maven-deploy" />
+   "jar.directory" value="${blazeds.jar.dir}" />
+
+   "artifactRegexp" value="flex*.jar" />
+  
+  "maven-repository-construction-calls.xml" target="maven-deploy">
+
+   "jarFileName" value="cfgatewayadapter.jar" />
+   "exec.dir" value="${blazeds.jar.dir}" />
+
+   "artifactId" value="cfgatewayadapter" />
+  
+----
+
+ +
+ +
+This is a different naming and versioning convention than the one chosen by the person that uploaded blazeds into ibiblio see +
+http://www.mvnrepository.com/artifact/com.adobe.blazeds, but I think it’s much better my way, because it’s closer to Adobe engineering’s naming and versioning +
+ +
+
+[[my-adobe-maven-repository]]
+My Adobe maven repository
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+ +
+My Adobe maven repository is now quickly building up, and it looks like that: +
+image:http://www.jroller.com/francoisledroff/resource/adobe-repo.jpg[adobe-repo.jpg] +
+ +
+
+[[warnings]]
+Warnings:
+^^^^^^^^^
+
+* this ant script is http://francois.le.droff.com/xwiki/bin/download/Geek/maven_flex/maven%2Drepository%2Dconstruction%2Dcalls.xml[there], (LGPL V3 licensed)
+* This was tested on my windows xp machine only using java-5, ant-1.7, ant-contrib-1.0b3 and maven-2.0.9
+** You’ll have to adapt the regular expression I used if you’re running this on a Linux/Unix machine.

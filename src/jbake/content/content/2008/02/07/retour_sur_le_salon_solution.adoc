@@ -1,0 +1,30 @@
+=  Retour sur le Salon Solution Linux 2008
+Francois Le Droff
+2008-02-07
+:jbake-type: post
+:jbake-tags:  OpenSource
+:jbake-status: published
+:source-highlighter: prettify
+
+image:http://www.jroller.com/francoisledroff/resource/salonlinux.gif[image]
+
+Déjà plus d’une semaine que le salon solution linux est terminé, voici enfin mes quelques notes. Tout d’abord merci à tout ceux qui ont répondu à mon petit sondage. Il faut que je trouve le temps de compiler les réponses et vous en faire un vrai petit article.
+
+Car la qualité ne sera-t-elle pas toujours un sujet d’actualité ? Hier encore, Olivier de chez Octo nous livrait ses réflexions et lectures sur http://blog.octo.com/index.php/2008/02/06/75-une-approche-de-la-qualite-logicielle[l’approche de la qualité logicielle]
+
+En attendant, sachez que le support de notre présentation ``Construire sa vision qualité Java avec des logiciels libre'' sera bientôt disponible sur le site du salon, et est déjà http://88.191.19.81/wordpress/SolutionsLinux2008-ConstruireSaVisionQualite.pdf[en ligne et en pdf sur le blog de Romain] et en flash ci-dessous. Cette présentation est sous license creative commons.
+
+[[__ss_257503]]
+http://www.slideshare.net/?src=embed[image:http://static.slideshare.net/swf/logo_embd.png[SlideShare]] | http://www.slideshare.net/francois.le.droff/solutions-linux2008-construire-sa-vision-qualite?src=embed[View] | http://www.slideshare.net/upload?src=embed[Upload your own]
+
+Mais revenons au salon; voici ce qu’ont retenu du salon:
+
+* http://representz.blogspot.com/2008/02/salon-solutions-linux-2008.html[Noel] (il nous livre ses retours sur le BPM)
+* http://standblog.org/blog/post/2008/02/01/Compte-rendu-de-Solutions-Linux-2008[Tristan] (nous fait un compte rendu)
+* http://88.191.19.81/wordpress/?p=64[Romain] (mon co-conférencier nous livre ses notes en anglais! allez savoir pourquoi?)
+* http://codemoiunmouton.wordpress.com/2008/01/31/flex-au-salon-linux-open-source-2008/[Michael] (mon collégue de chez Adobe, également conférencier web 2.0 nous livre ses impressions et ses slides sur les solutions open source de développements Flex)
+* http://blogs.sun.com/alexismp/entry/pr%C3%A9sentations_solutions_linux[et Alexis].
+
+Quant à moi, conférencier un peu occupé, je regrette de n’avoir pas pu passer plus de temps dans la cohue et le village des associations… Je retiendrai les présentations de Raphael Faudou sur topCased UML et http://pprados.blogspot.com/2008/02/prsentations-solution-linux.html[Philippe Prados sur la gestion de conf et AJAX]. Je vous recommande d’ailleurs chaudement la lecture de http://www.prados.fr/Langage/Java/index.html[ses articles].
+
+Et enfin pour avoir vous aussi une idée de l’esprit et de l’ambiance du salon, vous trouverez http://tf1.lci.fr/infos/podcast/pleinecran/0,,3702154,00-plein-ecran-fevrier-2008-salon-solutions-linux-paris-.html[une vidéo grand public intéressante sur le site de LCI.].

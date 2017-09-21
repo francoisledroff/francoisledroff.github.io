@@ -1,0 +1,13 @@
+=  there's far less OA than there is SOA
+Francois Le Droff
+2005-07-14
+:jbake-type: post
+:jbake-tags:  IT 
+:jbake-status: published
+:source-highlighter: prettify
+
+I’ve been working as an architect/senior developer/build manager on a big j2ee soa project, and Martin Fowler phrased the bad feeling I have about SOA.
+
+As Martin Folwer said: " I think SOA has turned into a semantics-free concept that can join `components' and `architecture'. It’s beyond saving - so the concrete ideas that do have some substance need to get an independent life. "
+
+That’s why I’m helping the team to focus and stick to Object orientation, good common sense and openness, because http://martinfowler.com/bliki/ServiceOrientedAmbiguity.html[there’s far less Object Ambiguity than the there is Service Oriented Ambiguity].

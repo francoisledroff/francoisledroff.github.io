@@ -1,0 +1,8 @@
+= My conferences
+Francois Le Droff
+2016-01-16
+:jbake-type: page
+:jbake-tags: Conference
+:jbake-status: published
+
+I do speak at IT conferences now and then, I did blog about a link:tags/Conference.html[few of them].

@@ -1,0 +1,15 @@
+=  Adobe Designer Developer Experience (Conférence Flex4 et Catalyst)
+Francois Le Droff
+2009-05-19
+:jbake-type: post
+:jbake-tags:  Adobe 
+:jbake-status: published
+:source-highlighter: prettify
+
+Adobe organise des *Rencontres Designers et Développeurs* Mercredi 3 juin 2009 à partir de 16 heures à http://maps.google.com/maps?f=q&source=s_q&hl=fr&geocode=&q=Atelier+Richelieu,+60,+rue+de+Richelieu+75002+Paris&sll=37.0625,-95.677068&sspn=48.555061,79.101563&ie=UTF8&ll=48.868427,2.338328&spn=0.009923,0.019312&t=h&z=16&iwloc=A[l’Atelier Richelieu, 60, rue de Richelieu dans le 2ème arrondissement à Paris (Métros Bourse/Palais Royal/Pyramides - Stations Vélib Bourse ou Bibliothèque Nationale)]
+
+Venez y découvrir les nouveautés d’Adobe Flash Platform, au travers des dernières évolutions du framework Flex, du Flash/Flex Builder et du nouvel outil professionnel de création de contenu interactif, **Flash Catalyst**. +
+Cet après-midi de rencontre sera l’occasion d’illustrer l’impact de ces solutions sur les workflows designer/developer. La présentation d’ensemble de la plate-forme Flash et de workflows inédits sera suivie d’ateliers de découverte par métier :
+
+* Session pour les développeurs Flex : évolutions des solutions Flex (**nouveautés de Flex4 et de Flex/Flash Builder**) et interactions avec Flash Catalyst : http://events.adobe.co.uk/cgi-bin/register.cgi?country=fr&eventid=8236&venueid=8552[Inscription ici].
+* Session pour les designers interactifs, designers web ou designers d’application : flux de production de contenu interactif avec Flash Catalyst : http://events.adobe.co.uk/cgi-bin/register.cgi?country=fr&eventid=8236&venueid=8553[Inscription ici].

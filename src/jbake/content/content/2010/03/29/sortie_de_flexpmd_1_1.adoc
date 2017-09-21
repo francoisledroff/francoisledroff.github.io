@@ -1,0 +1,11 @@
+=  Sortie de FlexPMD 1.1 / FlexCPD 1.1 / FlexMetrics 1.1
+Francois Le Droff
+2010-03-29
+:jbake-type: post
+:jbake-tags:  Adobe 
+:jbake-status: published
+:source-highlighter: prettify
+
+Une http://blogs.adobe.com/xagnetti/2010/03/flexpmd_11_flexcpd_11_flexmetr.html[nouvelle release de FlexPMD 1.1] a eu lieu ce week-end. Plusieurs bugs ont été corrigés et environ 10 nouvelles règles ajoutées, mais le plus enthousiasmant dans cette release, c’est aucun doute le début de notre collaboration avec http://www.sonarsource.com/[SonarSource] afin de développer http://docs.codehaus.org/display/SONAR/Sonar+Flex+Plugin[un plugin Flex pour Sonar].
+
+Bravo et merci à http://blogs.adobe.com/xagnetti/[Xavier], http://blogs.adobe.com/tomsugden/[Tom], et http://www.rialvalue.com/blog/[Xabi] pour cette release et à http://sonar.codehaus.org/author/oliviergaudin/[Olivier] pour le plugin Flex Sonar à venir.

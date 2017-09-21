@@ -1,0 +1,112 @@
+=  Maven on Flex/LiveCycle ES/Adobe projects : How to
+Francois Le Droff
+2009-03-03
+:jbake-type: post
+:jbake-tags:  Adobe, OpenSource, Flex, Maven
+:jbake-status: published
+:source-highlighter: prettify
+
+Working with maven on pure Java (and thus LiveCycle ES project) is fairly easy, the main challenge is to build/agree/find your livecycle ES jar repositories. Managing Flex project with maven on the opposite can be more challenging.
+
+[[HDoingFlex]]
+Doing Flex
+^^^^^^^^^^
+
+[[HFlexMojos]]
+FlexMojos
++++++++++
+
+After 127 votes on jira requesting maven support cf. http://bugs.adobe.com/jira/browse/SDK-12730[SDK-12730], the flex team finally announced their pick is flexmojos (*)
+
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+At the Flex Community Feedback Forum we once again heard a strong demand for Flex integration with Maven. We, unfortunately, do not have the resources to work on this feature, but given the high demand, we have changed this feature request’s milestone to ``SDK Community Fix Candidates''
+
+* we believe this is a good project for the community to work on.
+
+If you’re interested in this feature we hope you’ll contribute to the Flex-Mojos project (http://code.google.com/p/flex-mojos/) that has been working on a Maven plugin for Flex. In particular, they are looking for help to provide better AIR support. For further discussion, please post to the forums (http://www.adobeforums.com/webx/.59b7e646).
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+Good for me/us, our pick(*) (for http://code.google.com/p/fna[fna]) is flexmojos as well, the other good news are
+
+* version 3 of this maven plugin is now being sponsored by sonatype (VELO the author of flexmojos has been hired by sonatype a few months ago)
+* on top of that, m2eclipse support for FB is coming . cf. http://jira.codehaus.org/browse/MNGECLIPSE-598
+
+[[HOtherchallenges3A]]
+Other challenges:
++++++++++++++++++
+
+* provide a maven archetype for quickstarting BlazeDS projects cf. http://bugs.adobe.com/jira/browse/BLZ-44[BLZ-44]
+** http://code.google.com/p/fna[fna] provides it now , but the lcds archetype is yet to come
+* Put BlazeDS WAR and libraries in a public Maven repository cf. http://bugs.adobe.com/jira/browse/BLZ-71[BLZ-71]
+** same for lcds, but now at least internally the nexus tsi server is providing that
+* Apps in non-main source folders are not yet supported, that sucks for maven projects cf. http://bugs.adobe.com/jira/browse/FB-8757[FB-8757]
+* this other compilers bug can be annoying as well http://bugs.adobe.com/jira/browse/SDK-15406[SDK-15406],
+** the compilers tells you have Error: Invalid Embed directive in stylesheet when you are just missing a dependency or a class.
+
+[[HMaven2CEclipseandFlexBuilder]]
+Maven, Eclipse and FlexBuilder
+++++++++++++++++++++++++++++++
+
+Maven has now fairly good maven support thanks to M2Eclipse (**)
+
+* its Remote update site is : http://m2eclipse.sonatype.org/update/
+
+m2eclipse support for FB is not there yet cf. http://jira.codehaus.org/browse/MNGECLIPSE-598 But it’s nevertheless perfectly feasible to work with FB and a maven build.
+
+One of them is to add a M2_REPO linked resource that will be use in the FB build classpath.
+
+[[HFlexandMaven2Cfurtherreading]]
+Flex and Maven, further reading
++++++++++++++++++++++++++++++++
+
+I gathered quite a few links and tutorials at
+
+* on my http://www.droff.com[blog] and on http://code.google.com/p/fna[fna]
+* on http://delicious.com/francoisledroff/maven+flex[my delicious]
+
+[[HFindingyourartefacts2Cbuildingyourrepositories]]
+Finding your artefacts, building your repositories
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The next challenge when you are building project on top of Adobe products is that, none of them are released on maven central repositories. You have to find (and often create) your archetypes elsewhere.
+
+[[HNonofficialMavenAdoberepositories]]
+Non official Maven Adobe repositories
++++++++++++++++++++++++++++++++++++++
+
+Here is the list I came up with, so far:
+
+* FlexMojos (the flex plugin for maven) hosts some open source Adobe artefacts as well
+** http://svn.sonatype.org/flexmojos/repository/
+* Fna : I’ve been also creating an open source repository on our fna project
+** http://fna.googlecode.com/svn/trunk/fna/fna_m2_repository
+
+Do you know any others ?
+
+What I do is that I proxy and aggregate those repositories with other Adobe proprietary LiveCycle ES and lcds artefacts through a http://nexus.sonatype.org/[Nexus Maven Repository Manager] for my enterprise projects.
+
+What about you ?
+
+[[HNextChallenges3AgroupIds2CartifactIdsanddependenciesstandardisation]]
+Next Challenges : groupIds, artifactIds and dependencies standardisation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+What groupId for livecyle ? lcds ? blazeds ? flexunit ? cairngorm ? What are their dependencies ? I should not be the one to say, though I did (within the fna repositories at least for flexunit, cairngorm, blazeds and a few other open source flex libraries and on my http://acspace.can.adobe.com/docs/DOC-5251[blog] )
+
+But that should be done by the product team. Today it’s not. It’s a shame and it’s error prone.
+
+So go and vote for those bugs :
+
+* http://bugs.adobe.com/jira/browse/FXU-27
+* http://bugs.adobe.com/jira/browse/SDK-14725
+* http://bugs.adobe.com/jira/browse/SDK-12730
+* http://bugs.adobe.com/jira/browse/SDK-15406
+* http://bugs.adobe.com/jira/browse/FB-8757
+* http://bugs.adobe.com/jira/browse/BLZ-9
+* http://bugs.adobe.com/jira/browse/BLZ-44
+* http://bugs.adobe.com/jira/browse/BLZ-71
+
+ +
+ +
+
+(*) : Though, alternatives exist : http://www.servebox.org/maven-flex-plugin/ looks also good to me, have you tried it ? (**) : Though, alternatives exists, have you tried it q4e ?

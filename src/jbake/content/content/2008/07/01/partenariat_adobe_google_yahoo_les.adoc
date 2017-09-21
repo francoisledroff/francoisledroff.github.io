@@ -1,0 +1,46 @@
+=   Partenariat Adobe/Google/Yahoo : Les contenus flash maintenant indexés
+Francois Le Droff
+2008-07-01
+:jbake-type: post
+:jbake-tags:  Adobe 
+:jbake-status: published
+:source-highlighter: prettify
+
+ADOBE a http://www.adobe.com/aboutadobe/pressroom/pressreleases/200806/070108AdobeRichMediaSearch.html[annoncé] aujourd’hui son partenariat avec Yahoo et Google afin d’optimiser l’indexation des contenus flash. Cette annonce rend http://jroller.com/page/francoisledroff/?anchor=l_url_clef_de_voute[mon dernier billet] en partie obsolète. Les moteurs de recherche de Google et bientôt de Yahoo seront en effet capables d’interagir (cliquer sur les boutons, les menus, …) avec vos applications flashs et ainsi d’indexer leur contenu
+
+image:http://francois.le.droff.com//xwiki/bin/download/Geek/adobe_google_yahoo/search.jpg[search.jpg,title="search.jpg"]
+
+Vous n’avez rien à faire… Enfin rien à faire pour que le contenu de votre site/flash soit indexé. Mais attention toutefois:
+
+* car pour le moment :
+** les images ne sont pas indexées,
+** les fichiers swf, html, xml dynamiquement chargés par l’application flash principale seront indéxés séparemment,
+** quelques problèmes subsistent pour les textes hébreux et arabes,
+** les problèmes inérants au javascript ne disparaissent pas: si votre flash est chargé par du code javascript non exécutable par google/yahoo…
+
+Mais surtout, cette avancée technologique ne vous soulage pas du travail que vous aurez toujours à faire dans la gestion des URLs pour garantir une bonne navigabilité dans votre RIA. Si l’utilisateur final ne peut pas ``bookmarké'' les écrans de votre application, les moteurs de recherche ne le pourront pas plus. Ainsi, si un utilisateur arrive sur votre RIA à la suite d’une recherche fine et pointue sur une sujet précis et qu’il arrive sur la page d’accueil de votre site et qu’il doivent fouiller, cliquer 30 boutons et autant de sous menus avant d’arriver à l’``écran'' indexé par Google, cet écran, ce contenu qu’il recherchait. C’est presque contre productif : c’est une mauvaise expérience utilisateur.
+
+*La gestion des URLs et du deeplinking reste dont primordiale* (cf. http://jroller.com/page/francoisledroff/?anchor=l_url_clef_de_voute[mon dernier billet]).
+
+Par contre aujourd’hui a priori plus besoin de faire de site html mirroir ou d’exposer les données en premier. Cette dernière technique reste cependant très au point grâce notamment au travail de Ted Patrick et à des initiatives comme celle de space150 et leur approche http://blog.space150.com/2007/1/11/faust-flash-augmenting-standards[Faust: Flash Augmenting Standards]
+
+image:http://francois.le.droff.com//xwiki/bin/download/Geek/adobe_google_yahoo/faust%2Dlayers%2Ddiagram.jpg[faust-layers-diagram.jpg,title="faust-layers-diagram.jpg"]
+
+Ces techniques garantissent une meilleure accessibilité et une indexation de TOUS les moteurs de recherche (exalead par exemple pour citer un petit français)
+
+Références:
+
+* les blogs google à ce sujet :
+** http://googlewebmastercentral.blogspot.com/2008/06/improved-flash-indexing.html
+** http://googleblog.blogspot.com/2008/06/google-learns-to-crawl-flash.html
+* SWF searchability FAQ d’Adobe: http://www.adobe.com/devnet/flashplayer/articles/swf_searchability.html
+* les blogs Adobiens :
+** http://www.forta.com/blog/index.cfm?mode=entry&entry=DDCA031E-3048-80A9-EF627FE3A0F0D232
+** http://www.onflex.org/ted/2008/06/searchable-swf.php
+** http://casario.blogs.com/mmworld/2008/07/new-algorithm-f.html
+* Faust : http://blog.space150.com/2007/1/11/faust-flash-augmenting-standards
+
+Images:
+
+* http://flickr.com/photos/mushon/215270738/
+* http://blog.space150.com/assets/faust/1.0/faust-layers-diagram.jpg

@@ -1,0 +1,57 @@
+=  Chef metal experimentations: AEM test drive
+Francois Le Droff
+2014-07-29
+:jbake-type: post
+:jbake-tags: OpenSource, CQ5, AEM, Chef
+:jbake-status: published
+
+I’ve been recently playing with https://github.com/opscode/chef-metal[chef-metal].
+
+Chef-metal Rocks, it allows you to treat machines/nodes like resources and provision them through https://github.com/opscode/chef-metal-vagrant[vagrant provisioner], https://github.com/opscode/chef-metal-fog[EC2, Rackspace, DigitalOcean and Openstack provisioner] and even https://github.com/opscode/chef-metal-docker[docker provisioner]
+
+I just https://github.com/francoisledroff/connectcon-chef-repo#aem-chef-test-drive[published my latest experimentations on github] today I added a chef-metal based cookbook in my connectcon chef repo, this will allow you to have an AEM (Adobe Experience Manager) infrastructure fully configured in matter of minutes using a vagrant provisionner.
+
+Even if you are new to Ruby and Chef, the test drive should take you a few minutes:
+
+* install https://www.vagrantup.com/downloads[vagrant]
+* install ruby with https://rvm.io/[rvm]
+* install http://bundler.io/[bundler]
+* checkout this git https://github.com/francoisledroff/connectcon-chef-repo[chef-repo] to your disk
+* edit the https://github.com/francoisledroff/connectcon-chef-repo/blob/master/environments/dev.json#L11[dev.json] environment file in order to have the `download_url` and `license_url` pointing to reachable aem jar and license URLs within your network
+* change directory to the root of the local copy of this git repo
+* launch our ./local_setup.sh
+
+Except for vagrant installation all the above can be boiled down to the following commmand lines:
+
+....
+curl -sSL https://get.rvm.io | bash -s stable
+gem install bundler
+git clone https://github.com/francoisledroff/connectcon-chef-repo.git
+cd connectcon-chef-repo
+./local_setup.sh
+....
+
+A few minutes later you will have a centos vm running on a local IP (https://github.com/francoisledroff/connectcon-chef-repo/blob/master/cookbooks/aem_metal/recipes/author.rb#L11[set up in our aem-metal default recipe]) If this http://en.wikipedia.org/wiki/Private_network[private range IP] is in used pick another one, just change the recipe file.
+
+The vm is created by default under `.chef/vms` . From there, you can ssh in, and then double check aem service is started and eventually stop the firewall to freely access this chef automated cq author instance from your browser at http://192.168.0.20:4502
+
+....
+$ cd .chef/vms  
+$ vagrant ssh
+Last login: Tue Jul 15 16:44:19 2014 from 10.0.2.2
+Welcome to your Vagrant-built virtual machine.
+[vagrant@author ~]$ sudo service service aem-author status 
+[vagrant@author ~]$ sudo service iptables stop
+....
+
+[[whats-next]]
+What’s next ?
+~~~~~~~~~~~~~
+
+If my agenda allows it, I hope I could demo here as well:
+
+* how this vagrant provisioner could be replaced by a https://github.com/opscode/chef-metal-docker[docker provisioner] or a https://github.com/opscode/chef-metal-fog[EC2, Rackspace, DigitalOcean and Openstack provisioner]
+* how to secure the automation with https://github.com/Nordstrom/chef-vault[chef-vault]
+* how to set up a few typical aem infrastructures (more complex than just this author instance I have for now) as presented in http://www.slideshare.net/francoisledroff/master-chef-class-learn-how-to-quickly-cook-delightful-cqaem-infrastructures[my slides]
+
+Any feedback will be appreciated.

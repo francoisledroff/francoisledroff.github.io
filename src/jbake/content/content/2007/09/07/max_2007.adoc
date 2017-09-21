@@ -1,0 +1,13 @@
+=  MAX 2007
+Francois Le Droff
+2007-09-07
+:jbake-type: post
+:jbake-tags:  Adobe 
+:jbake-status: published
+:source-highlighter: prettify
+
+http://www.adobe.com/[Adobe] organise bientôt sa grande messe européenne, http://www.adobemax2007.com/europe/[MAX 2007], elle se déroulera du 15 au 17 Octobre à Barcelone. Adobe y présentera ses dernières innovations technologiques, on y retrouvera plus de 200 ateliers, sessions de formations pratiques, et présentations réalisées par des experts de l’Industrie, ainsi que des expositions de partenaires, des manifestations informelles et …
+
+image:http://www.jroller.com/francoisledroff/resource/flex-t-shirt.jpg[image] … sans doute, plein de t-shirts flex, comme ici lors de http://www.jroller.com/francoisledroff/entry/de_retour_de_javapolis_2006[JavaPolis] image:http://www.jroller.com/images/smileys/smile.gif[:-),title=":-)"]
+
+La plupart d’entre vous le savent déjà, je viens de rejoindre les équipes consulting d’Adobe en tant que architecte technique; malheureusement, je n’ai pas de place à offrir, mais je vous invite par contre à participer à l’opération : http://www.monticketpourmax.com/[mon ticket pour MAX], qui vous permettra peut-être de gagner un ticket (incluant un aller/retour Paris Barcelone + 3 nuits d’hôtel) pour assister à l’évènement. Tentez-donc votre chance !

@@ -1,0 +1,104 @@
+=  les URLs , les RIAs et le référencement
+Francois Le Droff
+2008-05-31
+:jbake-type: post
+:jbake-tags:  Adobe 
+:jbake-status: published
+:source-highlighter: prettify
+
+http://blogpro.toutantic.net/2008/05/27/firefox-3-awesome-bar-gmail/[Aurélien] m’apprend ce soir que
+
+________________________________________________________________________________________________
+la nouvelle barre d’url de firefox 3 indexe les urls et les titres des pages récemment visitées.
+________________________________________________________________________________________________
+
+Encore une nouvelle preuve de l’importance d’une bonne gestion des d’URLs dans un portail grand publique ou un site de commerce qui souhaite être finement et pertinemment référencés.
+
+image:http://francois.le.droff.com/xwiki/bin/download/Geek/De+l%27importance+des+URLs/myrurl.jpg?height=200[myrurl.jpg,title="myrurl.jpg",height=200]
+
+Les RIA connaissent une véritable expansion, et l’un des problèmes liés à ce changement est le référencement. Dans certains cas, l’excellente ergonomie du site peut compenser l’absence de référencement dans les favoris et d’indexation par les moteurs de recherche.
+
+Mais c’est une question qui revient souvent aux connaisseurs et acteurs de ce domaine : comment obtenir un bon référencement avec des technologies RIA (Ajax, Flash, Silverlight, etc.), alors que les grands moteurs de recherche ne peuvent pas facilement indexer leur contenu ? Les robots web ont en effet du mal à repérer les liens et le texte uniquement incorporés dans l’animation Flash De la même manière, comment indexer correctement une application Ajax qui ``injecte'' du code HTML dynamiquement ?
+
+Dans le cas du Flash, certains sites web entièrement créés dans Flash utilisent une seule page web avec animation Flash incorporée. Lorsque les utilisateurs interagissent avec le site, ce dernier affiche de nouvelles vues dans l’animation Flash au lieu de charger une nouvelle page web.
+
+Il existe des solutions de rechanges, plus ou moins complexes et efficaces selon les technologies et les méthodes mises en place
+
+[[HUnsiteHTMLmirroir]]
+Un site HTML mirroir
+^^^^^^^^^^^^^^^^^^^^
+
+image:http://francois.le.droff.com/xwiki/bin/download/Geek/De+l%27importance+des+URLs/miroirs.jpg?height=200[miroirs.jpg,title="miroirs.jpg",height=200]
+
+L’idéal (mais aussi le plus couteux) dans un souci d’accessibilité et de référencement est de créer un double HTML, permettant aux moteurs de recherche d’indexer le contenu de la page : cette dernière pouvant ensuite, via un Javascript, vous rediriger automatiquement vers l’animation Flash si nécessaire.
+
+La meilleure façon d’apposer une sur-couche Flash sur un site HTML est d’utiliser JavaScript ou un système de détection de Flash comme SWObject. Cette technique permet aux utilisateurs qui ne disposent pas du lecteur Flash de naviguer sur l’ensemble du site.
+
+SWFObject est en effet un petit script Javascript utilisé pour inclure un contenu swf dans une page HTML. Le script peut détecter le plug-in Flash dans tous les principaux navigateurs (sur MAC et PC) et est conçu pour rendre l’intégration des swf aussi simple que possible. L’intégration dans la page est très propre il peut être employé dans les documents valides HTML et XHTML 1.0.*.
+
+[[HLesfichiersFlashsontrE9fE9rencE9s]]
+Les fichiers Flash sont référencés
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Google (tout comme d’autres moteurs de recherche) indexe les fichiers .swf (Flash). Google sait indexer les libellés présents dans les fichiers swf, mais uniquement ceux statiques (non chargés dynamiquement). En sachant cela et en se concentrant sur des mots clés dans les applications riches créées, il est donc possible de bien indexer ces applications Flash (et donc Flex). Mais ce n’est évidemment qu’une solution de remplacement. Pour obtenir un bon référencement pour une application Flash, il est également possible d’associer des mots clés dans un swf embarqué via les flash vars, inclues dans l’appel à l’objet swf. Ces mots décrivent, à l’image des balises meta en HTML, le contenu de la page (en l’occurence de l’application). Lais il n’est pas envisageable d’effectuer un affinage des données meta sur toutes les vues de l’application Flash. Mais ce problème est aujourd’hui résolu avec la fonctionnalité appelée Deep Linking
+
+[[HFlexetledeeplinking3AunegestionfinedesURLs]]
+Flex et le deeplinking : une gestion fine des URLs
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Cette fonctionnalité permet de créer des points d’entrée dans votre application, qui deviendront accessibles de l’extérieur directement, même si ces points font partie d’une même application. Dans le cas d’une suite bureautique, on pourrait donc imaginer les points d’entrée suivants dans une seule application. En synchronisant systématiquement l’état d’une application Flex avec son URL, il est alors possible
+
+* à l’utilisateur de profiter de ses favoris,
+* aux robots d’indexer votre site.
+* aux webmaster d’analyser la fréquentation et l’utilisation de ses application flex.
+
+| Bien que cela semble aisé, cela demande une bonne réflexion et un peu de travail. Il est alors possible d’avoir comme dans ces exemples (rééls) des URLs descriptifs d’un état, d’un espace de l’application :
+
+* http://www.picnik.com/app#/home/welcome
+* http://www.picnik.com/app#/edit
+* http://www.picnik.com/app#/create/effects
+* http://www.picnik.com/app#/in/flickrsearch
+* http://www.picnik.com/app#/out/facebook
+* http://www.ge.com/imaginationtheater/#home/everyday/crossing
+* http://www.ge.com/imaginationtheater/#home/everyday/samurai
+
+image:http://francois.le.droff.com/xwiki/bin/download/Geek/De+l%27importance+des+URLs/deeplinking.jpg?height=300[deeplinking.jpg,title="deeplinking.jpg",height=300]
+
+Cette philosophie se rapproche de l’architecture REST.
+
+Remarque : Il est à noter que l’intégration de cette technique dans un portail dynamique et éventuellement aussi AJAX (et donc hors du cadre simple d’un template HTML Flex) est possible grâce à l’utilisation des composants open source SWFObject et SWFAddress.. SWFAddress facilite également l’intégration de module permettant l’analyse de fréquentation (comme Google Analytics).
+
+[[HAutretechniqueefficace3AexposerlesdonnE9esenpremier]]
+Autre technique efficace: exposer les données en premier
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Une autre technique qui se prête particulièrement au site aux données publiques est celle qui consiste à exposer les données « en premier » aux navigateurs et donc aux robots :
+
+image:http://francois.le.droff.com/xwiki/bin/download/Geek/De+l%27importance+des+URLs/google.jpg?height=200[google.jpg,title="google.jpg",height=200]
+
+Cette technique est démontré dans http://directory.onflex.org/[Flex Directory] qui est sans doute l’application Flex la plus « amicale » pour les moteurs de recherche.
+
+Cette méthode, sans cesse affinée par Ted Patrick, ingénieur chez Adobe s’appuit sur le support XSL des navigateurs, sur leur capacité à transformer le XML (et donc le XHTML). Ted présente donc aux navigateurs (et donc aux robots) une page HTML simple ne contenant que les données : aucun swf n’est déclaré, celui-ci est « injecté » par transformation XSL. Le moteur de recherche peut alors indexer l’ensemble des données utilisées par l’application Flash. Dans le cas de l’application de Ted, cette technique s’est avérée redoutable : les partenaires d’Adobe qui sont présents dans cette application annuaire Flex jouissent ainsi d’une très grande visibilité sur internet (très bien référencé).
+
+[[HQuelquesrE9fE9rences3A]]
+Quelques références:
+^^^^^^^^^^^^^^^^^^^^
+
+* http://www.fdeshayes.net/index.php?2007/10/18/160-ria-et-seo
+* http://www.adobe.com/fr/devnet/flash/articles/flash_searchability.html
+* http://www.onflex.org/ted/2007/11/url-matters.php
+* http://www.the-flash-files.com/#/
+* http://www.onflex.org/ted/2007/08/flex-directory-seo-and-flex.php
+* http://www.onflex.org/ted/2008/01/flex-and-seo.php
+* http://labs.adobe.com/wiki/index.php/Flex_3:Feature_Introductions:_Deep_Linking
+* http://blog.iconara.net/2007/12/28/deep-linking-in-flex-using-swfaddress-and-browsermanager/
+* http://www.asual.com/swfaddress/
+* http://developer.iconara.net/objectlib/flex-browsermanager-swfaddress.html
+* http://directory.onflex.org/
+
+Photos:
+
+* http://flickr.com/photos/saturnino/952278498/
+* http://flickr.com/photos/alainbachellier/433336499/
+* http://flickr.com/photos/vasta/414838330/
+* http://flickr.com/photos/brendare/400014857/

@@ -1,0 +1,37 @@
+=  Salon Solution Linux
+Francois Le Droff
+2007-01-30
+:jbake-type: post
+:jbake-tags:  OpenSource, Java, Conference
+:jbake-status: published
+:source-highlighter: prettify
+
+Je serai demain au Salon solution linux, je partagerai le micro avec Noël Rocher de chez JBoss pour une présentation intitulée
+
+* _http://www.solutionslinux.fr/fr/conferences_detail.php?id_conference=101[``Comment choisir(*) un moteur open source pour implémenter des Services Web java : conformité à la spécification, performances et interopérabilité'']_
+
+Au programme : Axis 1.4 versus Axis2 1.1 versus Xfire 1.2.2 versus JBoss WS 1.0.4 et surtout :
+
+[cols=",,",]
+|=================================================================================================================================================================================
+|image:http://jroller.com/resources/f/francoisledroff/wsdeathstar.png[image,width=200] |versus |image:http://jroller.com/resources/f/francoisledroff/tux_jedi.png[image,width=200]
+|=================================================================================================================================================================================
+
+May the open source be with us! image:http://www.jroller.com/images/smileys/smile.gif[:-),title=":-)"]
+
+PS (*): L’étude théorique a été réalisée avec la méthodologie http://www.qsos.org[QSOS], http://www.qsos.org/?p=32[présentée] également au salon.
+
+*Update (2 février):* +
+Suite à notre conférence, http://blogs.sun.com/alexismp/[Alexis] m’a fait part de quelques liens ``amusants'' :
+
+* http://wso2.org/library/588[Axis 2 qui publie un ``benchmark'']
+* http://jroller.com/page/fate?entry=dodgy_benchmarks[réponse (fleurie) de XFire (Hani)]
+
+*Update (9 février):* +
+Nos slides sont maintenant en ligne http://www.solutionslinux.fr/fr/conferences_detail.php?id_conference=101[sur le site du salon].
+
+*Update (17 février): un vrai feuilleton !!* +
+
+* la réponse d’Alexis (Sun JAX-WS) : http://blogs.sun.com/alexismp/entry/jax_ws_2_1_la[JAX-WS 2.1, la pile Web Service qui déchire]
+* et à nouveau celle de Paul (WSO2 axis2) avec http://www.bloglines.com/blog/paulfremantle?id=68[un nouveau bench]
+* on attend celle de JBoss

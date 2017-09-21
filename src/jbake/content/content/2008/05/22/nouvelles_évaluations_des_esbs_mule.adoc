@@ -1,0 +1,15 @@
+=  Nouvelles évaluations des ESBs Mule, JBossESB et ServiceMix
+Francois Le Droff
+2008-05-22
+:jbake-type: post
+:jbake-tags:  Java, OpenSource, QSOS
+:jbake-status: published
+:source-highlighter: prettify
+
+L’équipe de http://www.qsos.org/[QSOS] vient de sortir une nouvelle série d’évaluations qui adresse la grande problématique du moment: **Choisir son ESB**.
+
+Voici le radar produit par qsos (sans pondération):
+
+image:http://www.jroller.com/francoisledroff/resource/qsos-esb.jpg[image]
+
+N’hésitez pas à commenter, critiquer, améliorer non seulement la grille d’évaluation mais aussi les fiches respectives de Mule, JBossESB et ServiceMix, ou même encore proposer une nouvelle évaluation d’un projet ESB open source concurrent

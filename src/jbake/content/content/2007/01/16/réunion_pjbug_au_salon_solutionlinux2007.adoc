@@ -1,0 +1,16 @@
+=  Réunion PJBUG au Salon SolutionLinux2007
+Francois Le Droff
+2007-01-16
+:jbake-type: post
+:jbake-tags:  JBoss 
+:jbake-status: published
+:source-highlighter: prettify
+
+Le http://www.paris-jbug.org/xwiki/bin/view/Main/WebHome[Paris JBoss User Group] organise sa prochaine réunion le 31 janvier prochain à l’occasion du http://www.solutionslinux.fr/[salon Solutions Linux 2007] !
+
+Au programme :
+
+* **Sacha Labourey**, directeur technique de JBoss, une division de Red Hat, nous présentera la *roadmap de la suite JBoss* ainsi qu’**un bilan 9 mois après la rachat de JBoss Inc. par Red Hat**
+* Thierry Kauffmann, de DHL, nous fera un retour d’expérience d’utilisation de JBossAS en environnement de développement
+
+http://www.paris-jbug.org/xwiki/bin/view/Main/SalonSolutionLinux2006[Plus d’info sur le site du pbjug]

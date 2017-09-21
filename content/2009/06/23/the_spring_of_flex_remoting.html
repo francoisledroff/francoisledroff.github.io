@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Francois Le Droff: The Spring of Flex Remoting - slides &amp; demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">    
+
+    <!-- Le styles -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/asciidoctor.css" rel="stylesheet">
+    <link href="/css/base.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="favicon.ico">
+    </head>
+  <body>
+
+
+    <div id="wrap">
+	
+	<!-- Fixed navbar -->
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="container">
+	    <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Francois Le Droff 's Blog</a>
+	    </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">                
+                <li><a href="/about.html">About</a></li>
+
+                <li><a href="/archive.html">Archive</a></li>
+
+
+		            <li><a href="/conferences.html">Conferences</a></li>
+
+                <!--
+		            <li class="dropdown">
+          		      <a data-toggle="dropdown" href="#">Topics<b class="caret"></b></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="/tags/Java.html">Java</a></li>
+                    <li><a href="/tags/OpenSource.html">OpenSource</a></li>
+                    <li><a href="/tags/Misc.html">Misc</a></li>
+                  </ul>
+	              </li>
+	              -->
+
+
+                <li><a href="/feed.xml">Feed</a></li>
+
+                <!--
+                <li><a href="/projects.html">Projects</a></li>
+                -->
+
+              </ul>
+	      <ul class="nav navbar-nav navbar-right">
+	      	<li><a href="https://github.com/francoisledroff"><i class="fa fa-github"></i></a></li>
+	        <li><a href="https://twitter.com/francoisledroff"><i class="fa fa-twitter"></i></a>
+	      </ul>
+            </div>
+          </div>
+      </div>
+      <div class="container">
+	
+	<div class="page-header">
+		<h1>The Spring of Flex Remoting - slides &amp; demo</h1>
+    <p class="credit">
+      First published on June 23 2009
+      and tagged 
+    <a href="/tags/Adobe.html">Adobe . </a>
+		</p>
+	</div>
+
+	<p><div id="xwikicontent" class="paragraph">
+<p>I had the chance to present at the <a href="http://rivierajug.org">Riveria JUG</a> on Friday, I had one hour to cover a lot of materials. We discussed the Adobe Flash/Flex/AIR/RIA Enterprise Solutions, I also quickly demonstrated Flash Catalyst.</p>
+</div>
+<div class="paragraph">
+<p>I also took a few minutes to demonstrate the latest <a href="http://www.springsource.org/spring-flex">spring-flex</a> release through a simple CRUD application named spring-flex-todo. (Beware, the client side is not production ready)</p>
+</div>
+<div class="paragraph">
+<p>I published this demo source code within the <a href="http://code.google.com/p/fna-v2/">fna V2 project</a>, under a LGPL V3 license :</p>
+</div>
+<div class="paragraph">
+<p>You’ll see how elegant and easy is the Spring-Flex remoting integration; here is for example how I set up a TodoItem CRUD Flex Remoting service</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>package com.adobe.ac.samples.service.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.flex.remoting.RemotingDestination;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.adobe.ac.samples.dao.TodoItemDaoJpa;
+
+import com.adobe.ac.samples.model.TodoItem;
+import com.adobe.ac.samples.service.TodoService;
+
+@Service("todoService")
+@RemotingDestination(channels = { "channel-amf" })
+@Transactional
+public class TodoServiceImpl extends GenericManagerImplInteger&gt;
+
+    implements TodoService {
+
+    @Autowired
+    public TodoServiceImpl(TodoItemDaoJpa todoItemDao) {
+        super(todoItemDao);
+    }
+
+}</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Here are the slides associated with this demo: <strong>The Spring of Flex Remoting</strong> :</p>
+</div>
+<div id="__ss_1621759" class="paragraph">
+<p><a href="http://www.slideshare.net/francoisledroff/the-spring-of-adobe-flex-remoting?type=presentation">The Spring of Adobe Flex Remoting</a></p>
+</div>
+<div class="paragraph">
+<p>View more <a href="http://www.slideshare.net/">Microsoft Word documents</a> from <a href="http://www.slideshare.net/francoisledroff">francoisledroff</a>.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The source code is under svn at : <a href="http://fna-v2.googlecode.com/svn/trunk/samples/riveria_jug/spring_flex_todo/" class="bare">http://fna-v2.googlecode.com/svn/trunk/samples/riveria_jug/spring_flex_todo/</a></p>
+</li>
+<li>
+<p>You may import the project in your eclipse, the only prerequisites are</p>
+<div class="ulist">
+<ul>
+<li>
+<p>have m2eclipse installed (or declare a M2_REPO linked resource within your Eclipse workspace)</p>
+</li>
+<li>
+<p>create a linked resource named spring_flex_todo_root pointing to your local copy of spring-flex-todo</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>For those of you who don’t like maven and would like to give this a try, I will provide a ANT version of the build as soon as one of you sends it to me. What I except from any build is to :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>be managing Dependencies</p>
+</li>
+<li>
+<p>run the XUnit-Test</p>
+</li>
+<li>
+<p>generate documentation and quality reports</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>So if you have a such Java/Flex ANT build, please contribute to <a href="http://code.google.com/p/fna-v2/">fna V2</a>.</p>
+</div>
+<div class="paragraph">
+<p>If you live near by Nice and Sophia, lucky you, be sure to check out the next <a href="http://rivierajug.org">Riveria JUG</a> events.</p>
+</div></p>
+
+<hr/>
+
+
+    
+    <div id="footer">
+
+      <div class="container">
+
+        <p class="credit">
+        Published with
+        a <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/"><em>Creative Commons by-nc-sa</em> license</a>,
+          mixed with <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>,
+          baked with <a href="http://jbake.org">JBake v2.5.1</a>
+
+	      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/fr/">
+        <img alt="Creative Commons License" style="border-width:0"
+	      src="http://i.creativecommons.org/l/by-nc-sa/2.0/fr/80x15.png"/></a>
+
+         </p>
+      </div>
+    </div>
+    
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/jquery-1.9.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+
+  </body>
+</html>

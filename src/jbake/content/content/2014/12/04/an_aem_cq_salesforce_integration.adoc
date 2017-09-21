@@ -1,0 +1,12 @@
+=  An AEM/CQ SalesForce integration Sample
+Francois Le Droff
+2014-12-04
+:jbake-type: post
+:jbake-tags:  Java, CQ5, AEM, Project
+:jbake-status: published
+
+I recently published on github some code we used for an Adobe IT internal AEM/CQ based app: This could help you integrating SalesForce REST API ( and SOQL queries) into your CQ/AEM instance.
+
+For now it only supports AEM/CQ 5.5, but I welcome pull request, as well as feedback, bug fix, bug reports and comments
+
+Cf. link:[https://github.com/francoisledroff/force-cq]

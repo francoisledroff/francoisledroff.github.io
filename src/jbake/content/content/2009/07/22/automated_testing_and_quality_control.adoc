@@ -1,0 +1,33 @@
+=  Automated testing and quality control for
+Francois Le Droff
+2009-07-22
+:jbake-type: post
+:jbake-tags:  Adobe 
+:jbake-status: published
+:source-highlighter: prettify
+
+image:http://francois.le.droff.com/xwiki/bin/download/Geek/Quality-n-Test-at-ttfx/ttfx-logo.jpg[http://francois.le.droff.com/xwiki/bin/download/Geek/Quality-n-Test-at-ttfx/ttfx-logo.jpg,title="http://francois.le.droff.com/xwiki/bin/download/Geek/Quality-n-Test-at-ttfx/ttfx-logo.jpg"]
+
+Yesterday night, I had the chance and pleasure to present with http://blogs.adobe.com/xagnetti/[Xavier Agnetti] at the Parisian Flex User Group : http://groups.adobe.com/groups/193bcaff5f/summary[Les Tontons Flexeurs].
+
+We presented our return of experience around automated testing and quality control on enterprise Flex applications.
+
+I’ve uploaded the slides on http://www.slideshare.net/francoisledroff/tesytquality-best-practices-toolkit-for-enterprise-flex[slideshare] (they are mostly in english).
+
+[[__ss_1752105]]
+http://www.slideshare.net/francoisledroff/tesytquality-best-practices-toolkit-for-enterprise-flex[Quality Best Practices & Toolkit for Enterprise Flex]
+
+View more http://www.slideshare.net/[documents] from http://www.slideshare.net/francoisledroff[François Le droff].
+
+Part of the FlexUnit samples we presented and demoed can be found here :
+
+* http://opensource.adobe.com/wiki/display/flexunit/FlexUnit+4+feature+overview[http://opensource.adobe.com]
+* http://www.rialvalue.com/blog/[Xavi’s blog]
+* http://blogs.adobe.com/auhlmann/[Alex’s blog]
+
+We also discussed Patterns that ease unit testing, for further investigation, have a look at :
+
+* http://blogs.adobe.com/paulw/[Paul’s blog]
+* http://martinfowler.com/eaaDev/uiArchs.html[Martin Fowler’s articles]
+
+It was a very interactive and fun session. Thank you ``Les tontons flexeurs'' for inviting us !

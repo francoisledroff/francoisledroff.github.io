@@ -1,0 +1,39 @@
+=  Book Review: Maven: A Developer's Notebook
+Francois Le Droff
+2005-09-06
+:jbake-type: post
+:jbake-tags:  Java 
+:jbake-status: published
+:source-highlighter: prettify
+
+I started using Maven about a year ago. I was a big fan of ant build files by that time. My main interest for maven was at first only driven by its easy reporting functionality. I’ve been using it since. Maven is indeed not only great in project management documentation and reporting but also helps dramatically *standardizing* and simplifying the build, unit testing and continuous integration process. To sum it up it helps the development throughout its whole process.
+
+But now I read "http://mavenbook.org[Maven: A Developer’s Notebook]" I feel even more confident : last week I migrated the remaining (somehow cryptic) ant build files (of the big SOA project I’m currently involved in) to maven ! It’s a relief !
+
+One of the great aspect of this book lies in the fact that it’s more like series of lab notes, full of well phrased straigthforward and instantly usable information.
+
+What I also really appreciated is the content of projects that Vincent and Tim invented to expose maven neat features.
+
+* these projects are simple enough to ease maven’s learning curve +
+and complex enough to expose the daily issues you face in a real world project.
+* they integrate and shortly introduce other open-source frameworks/solutions of great interest. To name of few: axis, aspectJ, Rome, jetty, HtmlUnit…
+
+Vincent and Tim also provide the reader with their preferred maven plugin reports throughout the book. To name a few: cvsStat, Checkstyle, PMD, CPD, dashboard, simian, jUnit…
+
+Two other interesting points covered in the book I had to point at:
+
+* continuous integration thanks to the cruisecontrol plugin
+* writing a complex plugin example : the logifier : a plugin to apply a Logging aspect to ANY maven project.
+
+After reading Vincent and Tim lab notes, not only will you have realized why Maven is good for you, but you’ll also be ready to use it and promote it !
+
+[width="100%",cols="50%,50%",]
+|=============================================================================================================================================================================
+|image:http://jroller.com/resources/f/francoisledroff/mavenbook.jpg[image] a|
+Notes
+
+* Vincent just informed his readers that they should soon find a new chapter on mavenbook.org covering the ear plugin (just shortly introduced on the printed version)
+* Note also: that, at mavenbook.org, you’ll be able to download the book source code (as well as sample chapter), read tips about Maven 1.x and 2.x, find out Maven resources.
+* Note at last that mavenbook.org is a wiki based on Xwiki
+
+|=============================================================================================================================================================================

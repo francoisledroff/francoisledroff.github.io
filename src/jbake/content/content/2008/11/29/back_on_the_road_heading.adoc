@@ -1,0 +1,16 @@
+=  Back on the road : heading to Milan
+Francois Le Droff
+2008-11-29
+:jbake-type: post
+:jbake-tags:  Adobe, Conference, Flex
+:jbake-status: published
+:source-highlighter: prettify
+
+I’m back from SF, participating and speaking at MAX US 2008 was really exciting. Our project (http://code.google.com/p/fna/[fna]) caught the attention of quite a few Java architects and developers, who gave us feedbacks, ideas, enhancements, bug reports, who blogged about it, who contributed some code. Thanks a lot guys! It gave us the will to keep on building up this open source project.
+
+I’ll blog more about it and the rest of session I went to, when I’m back from MAX Europe, I’ll indeed be speaking again in Milan:
+
+* I’ll replay the ``Flex for Java Architects Lab'' and this time, exclusively using open source tools and frameworks : Flex, FlexUnit, Flex Annotations, BlazeDS, Flex-Spring-Contrib, Spring, Hibernate JPA, DBUnit, JUnit (all build, package and deploy with maven through the use of flex-mojos and the fna archetypes)
+* I’ll also do a session on ``Agile Testing of Enterprise RIAs with Flex and LiveCycle ES'': I’ll be giving advice, tips, trips, and techniques on how to apply Agile (i.e. efficient and pragmatic) strategy to (unit) test your Flex and your LiveCycle ES projects.
+
+Chances are, I’ll also present http://code.google.com/p/fna/[fna] at the local http://www.jugmilano.it/vqwiki/jsp/Wiki?WelcomePage[Java User Group in Milan] on Tuesday night (as http://magomarcelo.blogspot.com/[Marcello] invited me to).

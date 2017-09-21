@@ -1,0 +1,137 @@
+=  p6spy integration in jboss: Do you know what your cmps are doing ?
+Francois Le Droff
+2006-01-18
+:jbake-type: post
+:jbake-tags:  JBoss, Java, OpenSource
+:jbake-status: published
+:source-highlighter: prettify
+
+[[introduction]]
+link:[Introduction]
+^^^^^^^^^^^^^^^^^^^
+
+_________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+P6Spy is an open source framework for applications that intercept and optionally modify database statements. P6Spy includes P6Log, an application that intercepts and logs the database statements of any application that uses JDBC. This application is particularly useful for developers to monitor the SQL statements produced by EJB servers, enabling the developer to write code that achieves maximum efficiency on the server. P6Spy installs in minutes, requires no code changes to applications, and works with any Java application that uses JDBC.
+_________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+[[jboss-3.2.6-integration]]
+link:[JBoss-3.2.6 integration]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Extract the p6spy-install.jar file. The p6spy-install.jar file contains p6spy.jar and spy.properties.
+* Move the p6spy.jar file to the lib directory. An example of the path to your lib directory is C:\java\jboss-3.0.4\server\default\lib.
+* Add spy.properties to your JBoss classpath. By default, the JBoss classpath set up by run.bat only points to tools.jar and run.jar. You may need to add a directory, via JBOSS_CLASSPATH, to this path. An example of an edited JBoss classpath follows in your run.bat
+
+....
+set JBOSS_CLASSPATH=%JBOSS_CLASSPATH%;%JBOSS_HOME%\server\default\lib;C:\jboss-3.2.6\server\default\p6spy
+....
+
+* modify your application datasource configuration
+
+in the example below, I activated p6spy for one of my jdbc connection pool by replacing oracle.jdbc.driver.OracleDriver by com.p6spy.engine.spy.P6SpyDriver
+
+....
+"1.0" encoding="UTF-8"?>
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+  jcoffee/jdbc/datasources/jcoffee_db_tx
+  jdbc:oracle:thin:@55.2.7.201:1521:CORSO
+      com.p6spy.engine.spy.P6SpyDriver
+
+    perf
+  perf
+  org.jboss.resource.adapter.jdbc.vendor.OracleExceptionSorter
+  20
+
+  20
+ 
+ 
+  jcoffee/jdbc/datasources/direct_jdbc
+      jdbc:oracle:thin:@55.2.7.201:1521:CORSO
+
+      oracle.jdbc.driver.OracleDriver
+    perf
+  perf
+  org.jboss.resource.adapter.jdbc.vendor.OracleExceptionSorter
+
+  20
+  20
+ 
+....
+
+* Modify the realdriver line in the spy.properties file to reflect the wrapped database driver. An example of a modified realdriver line follows:
+
+....
+# oracle driver
+realdriver=oracle.jdbc.driver.OracleDriver
+....
+
+You may as well force p6spy to use log4j, like I did
+
+....
+appender=com.p6spy.engine.logging.appender.Log4jLogger# P6SPY is set to be a RollingFileAppender.
+log4j.appender.STDOUT=org.apache.log4j.RollingFileAppender
+log4j.appender.STDOUT.File=c:/jboss-3.2.6/server/default/p6spy/spy.loglog4j.appender.STDOUT.MaxFileSize=10MB
+# Keep one backup file
+log4j.appender.STDOUT.MaxBackupIndex=10# P6SPY uses PatternLayout.
+log4j.appender.STDOUT.layout=org.apache.log4j.PatternLayout
+log4j.appender.STDOUT.layout.ConversionPattern=%d - %m%nlog4j.logger.p6spy=INFO,STDOUT
+....
+
+Installation is complete. When you run your application, a log file (spy.log) is generated in the bin directory of the JBoss server. The log file contains a list of all of the database statements executed. You can change both the destination of spy.log and what it logs by editing the spy.properties file.
+
+[[title-the-p6spy-jsp-application-enabling-you-to-create-a-demarcation-in-the-p6spy-log-file]]
+link:[image:http://www.jroller.com/images/smileys/blush.gif[:]" title=``:''>" />The p6spy JSP Application : enabling you to create a demarcation in the P6Spy Log file:]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+P6Spy includes a JSP application. Use this application to view P6Spy configuration information and to create a demarcation in the log file. This feature is useful if you wish to associate log entries with a specific application action. For instance, if you want to see the queries generated by looking at the first page of a website, you will want to make a mark in the log before and after your browser hits the page.
+
+To use the JSP application, complete the following steps:
+
+* Copy p6spy.war into the deployment directory of your application server. In JBoss, for example, the directory might be C:\jboss-3.2.6\server\default\deploy
+* Once p6spy.war is deployed, access the application by navigating to http://machine:port/p6spy. For example, if you are running the application on your own machine, and using Tomcat as the servlet engine, navigate to http://localhost:8080/p6spy.
+
+[[references]]
+link:[References]
+^^^^^^^^^^^^^^^^^
+
+* cf http://www.p6spy.com/
+* cf http://www.p6spy.com/documentation/install.htm
+* cf http://www.p6spy.com/documentation/other.htm
+
+[[alternatives]]
+link:[Alternatives]
+^^^^^^^^^^^^^^^^^^^
+
+If your goal is simpler, and you just wanna know the kind of sql you ejb cmps are launching you may just as well do that in your jboss’ log4j.xml file:
+
+....
+"org.jboss.ejb.plugins.cmp.jdbc">
+
+     "DEBUG"/>
+  "JDBC"/>
+    "JDBC"
+class="org.jboss.logging.appender.DailyRollingFileAppender">
+
+      "org.jboss.logging.util.OnlyOnceErrorHandler"/>
+      "File" value="${jboss.server.home.dir}/log/jdbc.log"/>
+      "Append" value="false"/>      
+
+      "DatePattern" value="'.'yyyy-MM-dd"/>            "org.apache.log4j.PatternLayout">
+
+         
+         "ConversionPattern" value="%d %m%n"/>         
+      
+   
+....

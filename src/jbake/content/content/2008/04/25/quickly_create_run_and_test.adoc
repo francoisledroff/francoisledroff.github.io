@@ -1,0 +1,276 @@
+=  Quickly create, run and test a simple Java web app with eclipse, maven and jetty
+Francois Le Droff
+2008-04-25
+:jbake-type: post
+:jbake-tags:  Java 
+:jbake-status: published
+:source-highlighter: prettify
+
+Here is ``short'' entry to tell you how to use maven to quickly and nicely set up a simple and standard web application ready for development debugging and unit testing
+
+[[prerequisites]]
+[[Hprerequisites3A]]prerequisites:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+You must have installed:
+
+* Java 5
+* Eclipse 3.3 with WTP installed : the Europa bundle for instance
+* M2Eclipse plug-in installed (http://m2eclipse.codehaus.org/)
+* Maven
+
+[[create-your-project-from-a-maven-archetype]]
+[[HCreateyourprojectfromamavenarchetype]]Create your project from a maven archetype
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The maven archetype plugin allows the user to create a Maven 2 project from an existing template called an archetype. Here is the one I used to create my simple web app.
+
+....
+mvn archetype:create -DgroupId=com.adobe.consulting.fr -DartifactId=ac_fr_samples -Dpackagename=com.adobe.consulting.fr -DarchetypeArtifactId=maven-archetype-webapp
+....
+
+[[create-your-own-sources-and-unit-test-folder-structure]]
+[[HCreateyourownsourcesandunittestfolderstructure]]Create your own sources and unit test folder structure
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Those are default maven folder structure, if you follow that, you won’t have anything more to configure in your build.
+
+The main java source folder structure and packages
+
+....
+mkdir src/main/java/com/adobe/consulting/fr
+....
+
+The test java source folders structure and packages
+
+....
+mkdir src/test/java/com/adobe/consulting/fr
+mkdir src/test/resources
+....
+
+[[lots-of-archetypes]]
+[[Hlotsofarchetypes3A]]lots of archetypes:
+++++++++++++++++++++++++++++++++++++++++++
+
+By the way, there are a lot of archetypes out there : here is a list http://docs.codehaus.org/display/MAVENUSER/Archetypes+List Those archetypes can create a lot of stuff in advance for you, like a full hibernate, spring, struts project skeleton.
+
+Wouldn’t it be great to have others for:
+
+* Adobe flex blazeDS/lcds project
+
+[[create-your-wtp-eclipse-project]]
+[[HCreateyourWTPeclipseproject]]Create your WTP eclipse project
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The Eclipse plugin supports creating configurations for Eclipse WTP (Web Tools Project). Projects with a WAR packaging can be setup as WTP dynamic web projects and runtime dependencies are configured to be used when running them using Eclipse internal servers.
+
+To generate WTP project for Eclipse Europa, use this command:
+
+....
+mvn -Dwtpversion=1.5 eclipse:eclipse
+....
+
+To configure your newly create eclipse project to use with the M2Elipse plugin.
+
+....
+mvn eclipse:m2eclipse -DdownloadSources=true  -DdownloadJavadocs=true
+....
+
+Other neat options:
+
+* It’s also possible to import code style cf. http://maven.apache.org/plugins/maven-eclipse-plugin/examples/load-code-styles.html
+* Artifacts with sources deployed can be attached to Eclipse libraries using downloadSources cf. http://maven.apache.org/plugins/maven-eclipse-plugin/examples/attach-library-sources.html
+
+Now, just import this project in Eclipse
+
+[[install-jetty-and-deploy-your-web-app-with-maven]]
+[[HInstallJettyanddeployyourwebappwithmaven3A]]Install Jetty and deploy your web app with maven:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+[[edit-your-maven-project-object-model]]
+[[HEdityourmavenprojectobjectmodel]]Edit your maven project object model
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Edit your pom.xml to add the maven-jetty-plugin
+
+....
+
+    ac_fr_samples
+    
+      
+        org.mortbay.jetty
+        maven-jetty-plugin
+
+      
+    
+  
+....
+
+[[install-jetty-and-deploy-your-web-app-in-one-maven-command]]
+[[HInstallJettyanddeployyourwebappinonemavencommand]]Install Jetty and deploy your web app in one maven command
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+....
+mvn -Djetty.port=9999 jetty:run
+....
+
+I chose 9999 as the web http port number, because I’m already running jboss on port 8080
+
+[[test-your-web-app]]
+[[HTestyourwebapp]]Test your web app
+++++++++++++++++++++++++++++++++++++
+
+Go to http://localhost:9999/ac_fr_samples/
+
+image:http://www.jroller.com/francoisledroff/resource/jetty.jpg[jetty.jpg,title="jetty.jpg"]
+
+[[combine-jetty-maven-and-eclipse]]
+[[HCombineJetty2Cmavenandeclipse3A]]Combine Jetty, maven and eclipse :
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Let’s Debug your web app with eclipse, maven and jetty
+
+Stop the above jetty instance
+
+[[set-up-you-jetty-web-app-server-as-a-runnable-external-tools]]
+[[HSetupyoujettywebappserverasarunnableexternaltools3A]]Set up you jetty web app server as a runnable external tools:
+
+Go to the Run/External Tools/External Tools …" menu item on the ``Run'' menu bar. Select ``Program'' and click the ``New'' button. On the ``Main'' tab, fill in the ``Location:'' as the full path to your ``mvn'' executable. For the ``Working Directory:'' select the workspace that matches your webapp. For ``Arguments:'' add jetty:run. Move to the ``Environment'' tab and click the ``New'' button to add a new variable named MAVEN_OPTS with the value:
+
+....
+-Xdebug -Xnoagent -Djetty.port=9999 -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,address=9998,server=y,suspend=n
+....
+
+A few remarks about this:
+
+* If you supply suspend=y instead of suspend=n, it will suspend the web server until the debugger is launched
+* I chose 9999 as the web http port number, because I’m already running jboss on port 8080
+* I chose port 9998 as the debug port number cause it was already used as well, I faced a ``''ERROR: transport error 202: bind failed: Address already in use"
+
+You may start jetty this way.
+
+[[deploy-and-debug-your-project-through-eclipse-launching-maven-jetty]]
+[[HDeployandDebugyourprojectthrougheclipselaunchingmavenjetty]]Deploy and Debug your project through eclipse launching maven jetty
+
+Pull up the ``Run/Debug/Debug …'' menu item and select ``Remote Java Application'' and click the ``New'' button. Fill in the dialog by selecting your webapp project for the ``Project:'' field, and ensure you are using the same port number as you specified in the address= property above.
+
+You may now Run/Debug your project.
+
+[[monitor-the-quality-of-your-project]]
+[[HMonitorthequalityofyourproject]]Monitor the quality of your project
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Lots of plugin out there. Here is the first few that don’t cost a penny to set up and give quite a few indicators.
+
+Add this to your pom.xml:
+
+....
+  
+   
+    org.apache.maven.plugins
+
+    
+     maven-project-info-reports-plugin
+    
+   
+   
+    maven-javadoc-plugin
+
+    2.1
+    
+     true
+    
+   
+
+   
+    org.apache.maven.plugins
+    maven-surefire-report-plugin
+   
+   
+
+    maven-checkstyle-plugin
+    
+     
+      http://svn.apache.org/repos/asf/struts/maven/trunk/build/struts_checks.xml
+     
+
+    
+   
+   
+    org.apache.maven.plugins
+    maven-jxr-plugin
+
+   
+   
+    maven-pmd-plugin
+   
+   
+
+    net.sf.dtddoc
+    dtddoc-maven-plugin
+    
+     
+      **/web-app*
+
+     
+    
+   
+  
+ 
+....
+
+To generate the associated reports and the project site, just use:
+
+....
+mvn site
+....
+
+and you’ll get this for free (as in free software, and free beer image:http://www.jroller.com/images/smileys/smile.gif[:-),title=":-)"])
+
+image:http://www.jroller.com/francoisledroff/resource/site-report.jpg[site-report.jpg,title="site-report.jpg"]
+
+[[alternatives-use-jboss-or-tomcat]]
+[[HAlternatives3AuseJbossortomcat3A]]Alternatives : use Jboss or tomcat :
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+What you did with the very fast and light jetty web server, you may also do it with the full J2EE beast Jboss
+
+Edit your pom.xml to add the http://mojo.codehaus.org/jboss-maven-plugin/index.html[maven-jboss-plugin]
+
+....
+    org.codehaus.mojo
+
+    jboss-maven-plugin
+    
+     localhost
+     all
+
+     8080
+    
+ 
+....
+
+It will allow you to deploy through maven (and jmx) your web application build by maven:
+
+....
+mvn jboss:deploy
+....
+
+The same goes with Tomcat: you also have a maven tomcat plugin.
+
+[[references]]
+[[HReferences3A]]References:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+maven:
+
+* http://www.sonatype.com/book/reference/public-book.html#
+
+Web application, eclipse wtp, jetty and maven :
+
+* http://www.codecommit.com/blog/java/so-long-wtp-embedded-jetty-for-me
+* http://www.devx.com/Java/Article/36785/1954
+* http://byteworksinc.blogspot.com/2008/01/summary-this-post-covers-setting-up.html
+* http://livingash.wordpress.com/2007/08/13/back-to-the-future-when-eclispe-wtp-20-meets-maven-2/
+* http://www.sonatype.com/book/reference/web.html#
+* http://docs.codehaus.org/display/JETTY/Maven+Jetty+Plugin

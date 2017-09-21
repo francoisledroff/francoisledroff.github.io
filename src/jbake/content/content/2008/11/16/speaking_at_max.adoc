@@ -1,0 +1,15 @@
+=  Speaking at MAX
+Francois Le Droff
+2008-11-16
+:jbake-type: post
+:jbake-tags:  General, Conference, Flex
+:jbake-status: published
+:source-highlighter: prettify
+
+So here am I, in San Francisco. The weather is so much better than in Paris ! It’s awesome !
+
+I’ll be speaking (tomorrow and tuesday) presenting http://max.adobe.com/na/sessions/browser/#552[``Flex For Java Architects''].
+
+image:http://www.jroller.com/francoisledroff/resource/max2008.jpg[image]
+
+I’m looking forward to it ! I’m pretty excited ! So if you attend my talk, please don’t hesitate, send me feedback !

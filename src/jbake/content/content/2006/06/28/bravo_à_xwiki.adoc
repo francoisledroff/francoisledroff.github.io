@@ -1,0 +1,13 @@
+=  Bravo à XWiki
+Francois Le Droff
+2006-06-28
+:jbake-type: post
+:jbake-tags:  OpenSource, XWiki
+:jbake-status: published
+:source-highlighter: prettify
+
+http://www.xwiki.com[XWiki] vient en effet de recevoir un Lutece d’Or lors de la soirée http://www.paris-libre.org/[Paris Capitale du Libre]. Bravo à http://www.ludovic.org/xwiki/bin/view/Main/LuteceDOrPourXWiki[Ludo] et http://www.jeremi.info/[Jéremi] et tous les contributeurs et acteurs ce beau projet open-source : http://www.xwiki.org[xwiki: le wiki de 2eme génération] (et J2EE fully flavoured !! image:http://www.jroller.com/images/smileys/smile.gif[:-),title=":-)"])
+
+Bravo également à http://standblog.org/blog/2006/06/27/93114839-compte-rendu-de-paris-capital-du-libre-2006[Tristan] et à http://www.eucd.info/[eucd.info] !
+
+A noter également: le grand prix du jury accordé à la http://solutions.journaldunet.com/0407/040713_copernic.shtml[Direction Générale des Impôts] (ou je suis en mission actuellement dans le cadre d’un http://www.silicon.fr/articles/5713/La-DGI-choisit-l-open-source-JBoss-avec-Atos-Origin.html[support JBoss] & http://www.infogiciel.info/article0096.html[AtosOrigin Open Source Center]).

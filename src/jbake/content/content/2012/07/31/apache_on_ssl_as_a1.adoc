@@ -1,0 +1,118 @@
+=  Apache with mod_ssl and as as a reverse proxy - on windows -
+Francois Le Droff
+2012-07-31
+:jbake-type: post
+:jbake-tags:  IT 
+:jbake-status: published
+:source-highlighter: prettify
+
+Here are a few notes, that might help a few out there who face difficulties to configure apache server on https and as a reverse proxy on their windows ( windows7 ) development machine.
+
+[[generate-your-server-certificate]]
+Generate your server certificate
+++++++++++++++++++++++++++++++++
+
+download openssl (or download apache 2 with openssl built-in, cf below) and issue the following commands:
+
+[source,code-java]
+----
+openssl genrsa -des3 -rand file1:file2:file3:file4:file5 -out server.key 1024
+----
+
+pick a passphrase
+
+[source,code-java]
+----
+openssl rsa -in server.key -out server.pem
+----
+
+[source,code-java]
+----
+openssl req -days 3650 -new -key server.key -out server.csr
+----
+
+[source,code-java]
+----
+openssl x509 -req -in server.csr -signkey server.key -out server.crt
+----
+
+The SSLPassPhraseDialog is a directive within the Apache httpd.conf or ssl.conf that is not supported by Windows +
+Windows user will need to remove the encryption from the RSA private key (while preserving the original file):
+
+* Make a copy of the private key and call it ``server.key.org''
+* Use the OpenSSL command to remove the passphrase such as;
+
+[source,code-java]
+----
+openssl rsa -in server.key.org -out server.key
+----
+
+server.key will be your new private key with the passphrase removed.
+
+[[install-apache-with-mod_ssl]]
+Install apache with mod_ssl
++++++++++++++++++++++++++++
+
+* install apache 2 with openssl support built-in
+** Note for windows user: in the non default dir (not program files) with no space or any funky character
+* update httpd.conf :
+** uncomment line : "LoadModule ssl_module modules/mod_ssl.so"
+* update ssl.conf :
+** delete the <IfDefine ssl> tags
+** The SSLPassPhraseDialog is a directive within the Apache httpd.conf or ssl.conf that is not supported by Windows, windows users will need to comment out the line ’SSLPassPhraseDialog builtin’
+* copy the generated server.key file (see above) under conf/ssl.key/server.key
+* copy the generated server.crt file (see above) under conf/ssl.crt/server.crt
+
+as expected in the ssl.conf file
+
+[source,code-java]
+----
+SSLCertificateFile conf/ssl.crt/server.crt
+SSLCertificateKeyFile conf/ssl.key/server.key
+----
+
+* Restart you apache server/service
+
+[[troubleshoot]]
+troubleshoot
+++++++++++++
+
+You may face windows firewall issue, workaround run apache.exe as an administrator +
+Here are also some other interesting tutorials:
+
+* http://blog.lifebloodnetworks.com/?p=677[http://blog.lifebloodnetworks.com/?p=677^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+* http://www.silverwareconsulting.com/index.cfm/2009/3/31/Enabling-SSL-on-Apache-on-Windows[http://www.silverwareconsulting.com/index.cfm/2009/3/31/Enabling-SSL-on-Apache-on-Windows^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+* http://yaig.blogspot.ie/2008/12/apache2-and-ssl-on-windows-with-valid.html[http://yaig.blogspot.ie/2008/12/apache2-and-ssl-on-windows-with-valid.html^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+* http://www.entrust.net/knowledge-base/technote.cfm?tn=5634[http://www.entrust.net/knowledge-base/technote.cfm?tn=5634^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+
+You may use openssl to diagnose issues
+
+[source,code-java]
+----
+openssl s_client -connect http://your.machine:443
+----
+
+[[install-apache-as-a-reverse-proxy]]
+Install apache as a reverse proxy
++++++++++++++++++++++++++++++++++
+
+In httpd.conf:
+
+* uncomment
++
+[source,code-java]
+----
+LoadModule proxy_module modules/mod_proxy.so
+LoadModule proxy_connect_module modules/mod_proxy_connect.so
+LoadModule proxy_http_module modules/mod_proxy_http.so
+----
+* add
++
+[source,code-java]
+----
+ProxyPass / http://your.proxied.server:port/
+ProxyPassReverse / http://your.proxied.server:port/
+ProxyPreserveHost On
+----
+
+* Restart you apache server/service

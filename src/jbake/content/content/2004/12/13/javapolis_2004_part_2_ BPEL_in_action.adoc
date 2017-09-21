@@ -1,0 +1,81 @@
+=  javapolis 2004: BPEL in action by Edwin Khodabakchian
+Francois Le Droff
+2004-12-13
+:jbake-type: post
+:jbake-tags:  Java, Javapolis
+:jbake-status: published
+:source-highlighter: prettify
+
+BPEL in action by Edwin Khodabakchian
+
+Edwin Khodabakchian
+
+
+Edwin is the founder and former CEO of Collaxa, a pure-play BPM startup whose BPM orchestration
+product has supported BPEL for more than a year.
+Collaxa was acquired by Oracle in June 2004, and its BPEL Server product is now marketed
+as Oracle BPEL Process Manager. Edwin is now Vice President of software development with Oracle
+
+
+No application is an island
+
+Edwin started his talk with good to remind common sense facts:
+No application is an island
+They all interact with other systems.
+
+Java + jms + jca + eai + web services = "not enough",
+
+You need orchestration, you need Service Oriented Architectures (SOAs), there to help increase enterprise flexibility and asset reuse. They enable the orchestration of services into end-to-end business processes. But many traditional Business Process Management (BPM) tools are proprietary. That’s where the emerging specification called Business Process Execution Language (BPEL) comes in.
+
+BPEL is to flow what SQL is to persistence
+
+BPEL is indeed there to bind/integrate services, coordinate process flow
+(through a very user friendly interface, in Oracle BPEL designer)
+, and expose the resulting end-to-end process flow as a web service.
+
+cf. http://www.oasis-open.org/committees/tc_home.php?wg_abbrev=wsbpel
+
+Oasis states WS-BPEL is there for Enabling users to describe business process activities as Web services
+and define how they can be connected to accomplish specific tasks
+
+cf. http://otn.oracle.com/bpel
+Oracle BPEL contains over 100 samples, Edwin showed us a few among those.
+
+Another demo Edwin and his colleague gave us was quite interesting, they used Oracle JDeveloper to
+build and orchestrate a simple file system monitoring and file extracting engine [application built in a few clicks]
+
+
+WSIF
+
+Among Web Services Standards, Edwin really insisted on inviting us to look at apache wsif framework:
+
+http://ws.apache.org/wsif/
+
+The Web Services Invocation Framework (WSIF) is a simple Java API for invoking Web services,
+no matter how or where the services are provided.
+WSIF enables developers to interact with abstract representations of Web services through
+their WSDL descriptions instead of working directly with the Simple Object Access Protocol
+(SOAP) APIs, which is the usual programming model. With WSIF, developers can work with the same
+programming model regardless of how the Web service is implemented and accessed.
+
+BPEL Process manager provides a extensible binding framework
+based on wsif and JSR 208: JavaTM Business Integration (JBI):
+it help you defining custom wsdl bindings, and implementing wsif providers.
+
+BAM: Business Activity Monitoring:
+
+BAM is implemented into Oracle BPEL servers with sensors, sensors added in way close to AOP.
+We can then query the system to know what route of the business flow is taken more than the others.
+The results can be viewed on a portal dashboard
+
+
+PS:
+
+Oracle is currently working on a compact xml binary format who should prevent us from using blog, this
+will allow use to save xml/dom binary instead, and still be able to used xquery.
+Edwin told us that Oracle and a few vendors already have quite a good optimization on xml
+as on proprietary binary format.
+
+BPEL was initially proposed by MS and IBM.
+
+Oracle BPEL designer UI reminded me of a internship I did in 1996 in the industry, I was programming automates with GRAFCET (Sequential Functional Chart).[ http://www.lurpa.ens-cachan.fr/grafcet.html].

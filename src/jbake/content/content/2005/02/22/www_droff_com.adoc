@@ -1,0 +1,11 @@
+=  www.droff.com
+Francois Le Droff
+2005-02-22
+:jbake-type: post
+:jbake-tags:  General 
+:jbake-status: published
+:source-highlighter: prettify
+
+I finally bought it : http://www.droff.com[droff.com] is mine. I bought it through this small parisian company: gandy. The ultimate goal is still to have my own server running somewhere and hosting stuff like: francois.le.droff.com or le.droff.com.
+
+would be great to have the e.mail addresses as well: francois@le.droff.com. well…I’ve got 2 years !! … we’ll see

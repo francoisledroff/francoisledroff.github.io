@@ -1,0 +1,27 @@
+=  Cairngorm 3 is out for MAX
+Francois Le Droff
+2009-10-06
+:jbake-type: post
+:jbake-tags:  OpenSource, Project, Cairngorm
+:jbake-status: published
+:source-highlighter: prettify
+
+Je suis heureux de vous annoncer la sortie de Cairngorm 3 sur http://opensource.adobe.com/wiki/display/cairngorm/Cairngorm+3[opensource.adobe.com]
+
+Le périmètre de cette nouvelle version de Cairngorm est bien plus important que celui des précédentes.
+
+En effet, au lieu de fournir seulement une implémentation spécifique d’une architecture MVC, l’ équipe « Adobe Technical Services Organization » a pris du recul ; recueilli, agrégé, et synthétisé dans « Cairngorm3 » les meilleures pratiques, les patrons de conception, les utilitaires, les outils qui l’ont aidé à livrer des applications Flex « Entreprise » d’envergure.
+
+L’objectif de Cairngorm3 est de promouvoir clarté, cohérence, testabilité et évolutivité.
+
+Ces aspirations sont indépendantes de tout framework ou choix architectural. Le framework MVC Cairngorm 2 reste tel quel et n’est pas pour autant obsolète. Il a été en usage depuis bientôt une décennie et sa simplicité et sa nature continueront sans doute à séduire les développeurs. Toutefois tout comme dans le monde Java/J2EE, les frameworks Flex/ActionScript d’inversion de contrôle ont le vent en poupe (parsley, springactionscript, Swiz, Flicc), Caingorm3 embrasse donc naturellement ce changement mais ne vient pas se positionner comme un nième framework IoC. Il s’appuit sur ces concepts, tout en offrant une image plus complète de ce que nous trouvons essentiel pour garantir la réussite d’applications Flex à grande échelle.
+
+Cairngorm3 peut ainsi se décomposer en trois parties:
+
+* des lignes directrices/ « Best prartices » qui expliquent nos motivations et la manière de les mettre en oeuvre;
+* des outils qui nous aident à respecter nos lignes directrices et de rationaliser nos processus de développement. (C’est là ou vous trouverez la plupart des contributions de votre serviteur : - ));
+* des bibliothèques qui étendent les cadres d’architecture IOC et MVC et proposent des solutions aux problèmes récurrents.
+
+Ces connaissances recueillies montrent comment aujourd’hui, le développement d’entreprise à grande échelle d’application peut être réalisé avec la plate-forme Flash.
+
+PS: The same news in English is on http://blogs.adobe.com/auhlmann/archives/2009/10/cairngorm_3_bet.html[Alex’s blog].

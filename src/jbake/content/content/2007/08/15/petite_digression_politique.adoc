@@ -1,0 +1,21 @@
+=  Petite digression politique
+Francois Le Droff
+2007-08-15
+:jbake-type: post
+:jbake-tags:  OpenSource
+:jbake-status: published
+:source-highlighter: prettify
+
+[cols=",",]
+|============================================================================================================================================================================================================================================================================================================================================================================================================================
+|Saviez que Monsieur Cazenave (cité dans mon précédent billet, comme un des opposants à la vente liée PC-OS) est député UMP ? Il est d’ailleurs également un des acteurs de la décision d’équiper les http://www.richardcazenave.com/?2006/09/13/190-logiciels-libres-a-l-assemblee-nationale[députés en PC sous Linux]. +
+Quoi? *le logiciel libre ne serait ni http://framablog.org/index.php/post/2007/02/20/logiciel-libre-communiste[communiste], ni même de gauche ?* +
+Apparemment non, http://standblog.org/blog/post/2004/03/04/93113368-le-libre-de-droite-ou-de-gauche[Tristan nous assure] que : ``de même que la gauche n’a pas''le monopole du coeur``, elle n’a pas non plus le monopole de l’intelligence, du droit d’expression publique ni d’Internet.'' |http://flickr.com/photos/mortalcoil/8621368/[image:http://jroller.com/resources/f/francoisledroff/soviet_propaganda.png[image]]
+|============================================================================================================================================================================================================================================================================================================================================================================================================================
+
+[cols=",",]
+|=============================================================================================================================================================================================================================================================================================================================================================================================================================
+|http://eucd.info/index.php[image:http://jroller.com/resources/f/francoisledroff/pancarte_eucd.png[image]] |Mais bon, tout de même ! http://blog.toutantic.net/index.php?2007/06/05/416-legislative-la-liste-noire[le vote DADVSI restera dans les mémoires]. Ce vote a montré l’ignorance l’irresponsabilité et l’incohérence dont a fait preuve l’UMP dans la défense de nos droits numériques (et celle du logiciel libre).
+|=============================================================================================================================================================================================================================================================================================================================================================================================================================
+
+Incohérence ? Oui, en effet, car les députés, ainsi équipés de Linux et donc utilisateurs et promoteurs de lecteur multimédia libre (http://www.videolan.org/eucd.html[videolan] par exemple), ne sont-ils pas passibles de 3 ans de prison et 300 000 euros d’amende d’après la loi DADVSI ? Et le Président l’a bien répété, pendant sa campagne, http://www.lemondeinformatique.fr/actualites/lire-nicolas-sarkozy-a-candidatsfr-je-ne-reviendrai-pas-sur-la-dadvsi-22698.html[il ne reviendra pas dessus]. Il le rappelait encore début aout dans sa http://blog.toutantic.net/index.php?2007/08/02/424-lettre-de-mission-du-president-a-madame-la-ministre-de-la-culture[lettre de mission adressée à Mme Christine Albanel, Ministre de la Culture et de la communication.]

@@ -1,0 +1,17 @@
+= 
+Francois Le Droff
+2010-10-08
+:jbake-type: post
+:jbake-tags:  Adobe, Conference, Flex
+:jbake-status: published
+:source-highlighter: prettify
+
+I’ll have the pleasure to present at MAX again this year. http://bit.ly/90swvA[Come and join] me, http://blogs.adobe.com/yderidder[Yaniv] and http://blogs.adobe.com/swebster[Steven] in L.A. Wednesday October 27th, (11:00 am - 12:00 pm) :
+
+_We will share several of the key best practices we have learned over time while building Hendrix, a large business-critical Adobe enterprise application built with Flex and Adobe LiveCycle Data Services. Hendrix was built to leverage many existing systems within Adobe IT (such as our SAP content relationship management system and computer telephony integration system). Some of these best practices may be familiar to you, and some may not. All come from the collective experience of the people who design, develop, and operate the Hendrix application._
+
+http://max.adobe.com/?sdid=ERZUY[image:http://jroller.org/francoisledroff/resource/MAX10_Color_125x125_Speaker.jpg[image,width=125,height=125]]
+
+We’ll cover may subjects ranging from our agile offshore process, our software factory, our SAP and CTI LCDS integration plumbing, our modularization and encapsulation technique, our multi-screen application making leveraging Cairngorm3. Many things that could help you (as it helped us) being successful at delivering large and complex Flex based RIA. One hour won’t be enough to cover it all in details, you’ll be going home with a lot of pointers, reading to do, ideas to share and spread.
+
+More to come on this blog soon as we plan to publish whitepapers and code samples.

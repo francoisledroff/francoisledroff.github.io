@@ -1,0 +1,66 @@
+=  The Spring of Flex Remoting - slides & demo
+Francois Le Droff
+2009-06-23
+:jbake-type: post
+:jbake-tags:  Adobe 
+:jbake-status: published
+:source-highlighter: prettify
+
+[[xwikicontent]]
+I had the chance to present at the http://rivierajug.org[Riveria JUG] on Friday, I had one hour to cover a lot of materials. We discussed the Adobe Flash/Flex/AIR/RIA Enterprise Solutions, I also quickly demonstrated Flash Catalyst.
+
+I also took a few minutes to demonstrate the latest http://www.springsource.org/spring-flex[spring-flex] release through a simple CRUD application named spring-flex-todo. (Beware, the client side is not production ready)
+
+I published this demo source code within the http://code.google.com/p/fna-v2/[fna V2 project], under a LGPL V3 license :
+
+You’ll see how elegant and easy is the Spring-Flex remoting integration; here is for example how I set up a TodoItem CRUD Flex Remoting service
+
+....
+package com.adobe.ac.samples.service.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.flex.remoting.RemotingDestination;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.adobe.ac.samples.dao.TodoItemDaoJpa;
+
+import com.adobe.ac.samples.model.TodoItem;
+import com.adobe.ac.samples.service.TodoService;
+
+@Service("todoService")
+@RemotingDestination(channels = { "channel-amf" })
+@Transactional
+public class TodoServiceImpl extends GenericManagerImplInteger>
+
+    implements TodoService {
+
+    @Autowired
+    public TodoServiceImpl(TodoItemDaoJpa todoItemDao) {
+        super(todoItemDao);
+    }
+
+}
+....
+
+Here are the slides associated with this demo: *The Spring of Flex Remoting* :
+
+[[__ss_1621759]]
+http://www.slideshare.net/francoisledroff/the-spring-of-adobe-flex-remoting?type=presentation[The Spring of Adobe Flex Remoting]
+
+View more http://www.slideshare.net/[Microsoft Word documents] from http://www.slideshare.net/francoisledroff[francoisledroff].
+
+* The source code is under svn at : http://fna-v2.googlecode.com/svn/trunk/samples/riveria_jug/spring_flex_todo/
+* You may import the project in your eclipse, the only prerequisites are
+** have m2eclipse installed (or declare a M2_REPO linked resource within your Eclipse workspace)
+** create a linked resource named spring_flex_todo_root pointing to your local copy of spring-flex-todo
+
+For those of you who don’t like maven and would like to give this a try, I will provide a ANT version of the build as soon as one of you sends it to me. What I except from any build is to :
+
+* be managing Dependencies
+* run the XUnit-Test
+* generate documentation and quality reports
+
+So if you have a such Java/Flex ANT build, please contribute to http://code.google.com/p/fna-v2/[fna V2].
+
+If you live near by Nice and Sophia, lucky you, be sure to check out the next http://rivierajug.org[Riveria JUG] events.

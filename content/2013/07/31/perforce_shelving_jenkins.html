@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Francois Le Droff: Test your perforce change-list in a jenkins job - using perforce shelving - before submitting it</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">    
+
+    <!-- Le styles -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/asciidoctor.css" rel="stylesheet">
+    <link href="/css/base.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="favicon.ico">
+    </head>
+  <body>
+
+
+    <div id="wrap">
+	
+	<!-- Fixed navbar -->
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="container">
+	    <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Francois Le Droff 's Blog</a>
+	    </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">                
+                <li><a href="/about.html">About</a></li>
+
+                <li><a href="/archive.html">Archive</a></li>
+
+
+		            <li><a href="/conferences.html">Conferences</a></li>
+
+                <!--
+		            <li class="dropdown">
+          		      <a data-toggle="dropdown" href="#">Topics<b class="caret"></b></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="/tags/Java.html">Java</a></li>
+                    <li><a href="/tags/OpenSource.html">OpenSource</a></li>
+                    <li><a href="/tags/Misc.html">Misc</a></li>
+                  </ul>
+	              </li>
+	              -->
+
+
+                <li><a href="/feed.xml">Feed</a></li>
+
+                <!--
+                <li><a href="/projects.html">Projects</a></li>
+                -->
+
+              </ul>
+	      <ul class="nav navbar-nav navbar-right">
+	      	<li><a href="https://github.com/francoisledroff"><i class="fa fa-github"></i></a></li>
+	        <li><a href="https://twitter.com/francoisledroff"><i class="fa fa-twitter"></i></a>
+	      </ul>
+            </div>
+          </div>
+      </div>
+      <div class="container">
+	
+	<div class="page-header">
+		<h1>Test your perforce change-list in a jenkins job - using perforce shelving - before submitting it</h1>
+    <p class="credit">
+      First published on July 31 2013
+      and tagged 
+    <a href="/tags/Perforce.html">Perforce . </a>
+
+    <a href="/tags/Jenkins.html">Jenkins . </a>
+		</p>
+	</div>
+
+	<p><div class="paragraph">
+<p>I played with perforce shelving today<br>
+It’s a very interesting feature of perforce</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Perforce supports ``shelving''. That is, you can cache your modified files on the server, without having to check them in as a versioned change. For teams, shelving makes code reviews and code handoffs possible. Individuals can use shelving for multi-tasking, code shunting, incremental snapshots, and safety nets.</p>
+</div>
+<div class="paragraph">
+<p>Shelved files in Perforce are visible to users who have access to the underlying files, so shelving is a perfect way of exposing the files you are working on to your team. Just use the shelve command to upload your local versions. They’ll be assigned a changelist number that can be used to view and diff your shelved files. In fact, reviewers can even unshelve your files into their own workspaces if they want.</p>
+</div>
+</blockquote>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>See more at: <a href="http://www.perforce.com/blog/091209/shelving-pretty-darn-useful#sthash.kwWM17W1.dpuf">http://www.perforce.com/blog/091209/shelving-pretty-darn-useful#sthash.kwWM17W1.dpuf<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Here is a video introducing the feature : <a href="http://www.perforce.com/resources/tutorials/shelving-operations-p4v">http://www.perforce.com/resources/tutorials/shelving-operations-p4v<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a></p>
+</div>
+<div class="paragraph">
+<p>This feature is interesting as it allows me to:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>persist snapshot of work in progress</p>
+</li>
+<li>
+<p>post code for other to review and try out in their own workspace</p>
+</li>
+<li>
+<p>moving code to another workspace</p>
+</li>
+<li>
+<p>and especially for validating builds on other platform</p>
+<div class="ulist">
+<ul>
+<li>
+<p>especially in our jenkins Continuous integration server</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>However, it’s worth mentioning there are a few limitations, in shelving:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>there is no version history maintained</p>
+</li>
+<li>
+<p>a set of shelved files is always associated with one single changelist</p>
+</li>
+<li>
+<p>Perforce shelving is not currently supported by the perforce jenkins plugin, yet, cf. <a href="https://issues.jenkins-ci.org/browse/JENKINS-7436">JENKINS-7436<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>However Ross Aribi posted a nice work-around in the <a href="https://issues.jenkins-ci.org/browse/JENKINS-7436?page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel&amp;focusedCommentId=158883#comment-158883">comment<sup><span class="image"><img src="/images/icons/linkext7.gif" alt="image" width="7" height="7"></span></sup></a></p>
+</div>
+<div class="paragraph">
+<p>The trick is</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>to use a parameterized build plugin</p>
+</li>
+<li>
+<p>to inject the changelist you want to get the shelved files from in the parameter of the job</p>
+</li>
+<li>
+<p>to add a shell execution pre-build step just after the scm spec to trigger the perforce shelving:</p>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p><code># Unshelve ``if</code> <code>true</code></p>
+</div>
+<div class="paragraph">
+<p><code>if</code> <code>[ $SHELVED_CHANGELIST != <code>""</code> <code>] ; then ( echo </code>"User specified a shelved changelist, unshelving changelist ($SHELVED_CHANGELIST)"`</code>;`</p>
+</div>
+<div class="paragraph">
+<p><code>p4 unshelve -f -s $SHELVED_CHANGELIST ${sourceCodePath};</code></p>
+</div>
+<div class="paragraph">
+<p><code>)</code></p>
+</div>
+<div class="paragraph">
+<p><code>else</code> <code>(</code></p>
+</div>
+<div class="paragraph">
+<p><code>echo <code>"Not running with a shelved changelist"</code>; ); fi</code></p>
+</div>
+<div class="paragraph">
+<p><code>Now revert unshelve but KEEP the files locally</code></p>
+</div>
+<div class="paragraph">
+<p><code>p4 revert -k ${sourceCodePath}</code></p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Note that :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>I let jenkins create and manage the workspace so I don’t have to mess up with the environment variables that the p4 command leverages (P4PORT, P4CLIENT, P4USER)</p>
+</li>
+<li>
+<p>I added the following options to my perforce jenkins workspace: <code>allwrite unlocked nomodtime rmdir</code>&lt;</p>
+</li>
+<li>
+<p>The above p4 unshelve -f flag forces the clobbering of any writeable but unopened files that are being unshelved.</p>
+</li>
+<li>
+<p>The -s flag specifies the number of the pending changelist that contains the shelved files.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>With the above, I can now:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>experiment and validate my build and devops scripts in a jenkins sandbox job where I can inject the shelved files I worked on without interfering with the main delivery line</p>
+</li>
+<li>
+<p>have my dev colleagues experimenting this new scripts in their workspace as they wish</p>
+</li>
+<li>
+<p>get proper and mature, code review</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Here, with such a job, we have a way for anybody in the team to test his work, his change-list through a jenkins job, before submitting it. Nice isn’t it?</p>
+</div></p>
+
+<hr/>
+
+
+    
+    <div id="footer">
+
+      <div class="container">
+
+        <p class="credit">
+        Published with
+        a <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/"><em>Creative Commons by-nc-sa</em> license</a>,
+          mixed with <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>,
+          baked with <a href="http://jbake.org">JBake v2.5.1</a>
+
+	      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/fr/">
+        <img alt="Creative Commons License" style="border-width:0"
+	      src="http://i.creativecommons.org/l/by-nc-sa/2.0/fr/80x15.png"/></a>
+
+         </p>
+      </div>
+    </div>
+    
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/jquery-1.9.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+
+  </body>
+</html>

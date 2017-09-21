@@ -1,0 +1,26 @@
+=  Conférence RIA Flex au Riveria JUG le 19 Juin
+Francois Le Droff
+2009-06-05
+:jbake-type: post
+:jbake-tags:  Java 
+:jbake-status: published
+:source-highlighter: prettify
+
+J’aurai le plaisir de présenter la toute nouvelle version de ma présentation de *Adobe Flex pour les architectes et développeurs Java (RIAs avec Maven, Spring et Hibernate)* lors de la http://www.rivierajug.org/xwiki/bin/viewrev/Main/20090619-ria[prochaine réunion du RiveriaJUG, le 19 Juin prochain sur le site de Stonesoft à Sophia-Antipolis]
+
+J’y aborderai :
+
+* les dernières nouveauté d’intégration de http://www.springsource.org/spring-flex[spring-flex]
+* les dernières fonctionnalités de http://flexmojos.sonatype.org/[flex-mojos]
+* quelques unes des nouveautés de http://codemoiunmouton.wordpress.com/2009/06/01/le-top-10-de-flash-builder/[FlashBuilder]
+
+A moins que vous ne préfériez me voir vous montrer et démontrer:
+
+* la ``beta'' de FlashCatalyst
+* un ``sneak peak'' de la prochaine version de LCDS
+* autre chose ?
+** laissez moi vos suggestions en commentaire
+
+Lors de la même soirée Frank Wolff et William Drai de Adequate Systems viendront nous présenter Granite Data Services avec JBoss Seam.
+
+Beau programme ! non ?

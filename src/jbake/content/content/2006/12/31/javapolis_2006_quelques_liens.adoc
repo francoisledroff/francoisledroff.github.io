@@ -1,0 +1,31 @@
+=  JavaPolis 2006 : quelques liens
+Francois Le Droff
+2006-12-31
+:jbake-type: post
+:jbake-tags:  Java, Javapolis
+:jbake-status: published
+:source-highlighter: prettify
+
+Voici quelques liens vers des sites/blogs francophones traitant de javapolis 2006 :
+
+de nombreux liens et articles sur l’excellent developpez.com :
+
+* http://java.developpez.com/interview/javapolis/sjanssen/[l’interview de Stephan Janssen], président du BeJug, organisateur de javapolis
+* un ftp://ftp-developpez.com/magazine/JavaDevMagHS.pdf[hors Série du magazine]
+* http://blog.developpez.com/index.php?blog=12&cat=752[le blog (catégorie javapolis)]
+* et enfin quelques http://blog.developpez.com/index.php?blog=12&title=en_vrac_15&more=1&c=1&tb=1&pb=1[liens en vrac]
+
+De nombreux articles sur le site belge http://www.fr.datanewsjobs.be/search.asp?searchTerm=javapolis+2006&articleTypeID=any&submitButton=Chercher[datanews], avec, entre autres:
+
+* http://www.fr.datanews.be/specials/enterprise_computing/software/20061221027[une annexe spéciale consacrée à JavaPolis 2006]
+* et une news plus ``people'' : http://www.fr.datanewsjobs.be/news/20061214012[``Ils se sont dits oui à Javapolis'']
+
+Et enfin http://blog.dgirard.eu/[Didier] :
+
+http://www.lemondeinformatique.fr/entretiens/lire-didier-girard-de-retour-de-javapolis-74.html[donne ses impressions au monde informatique]
+
+et s’est entretenu avec tout le ``gratin'' de la conférence et publiera ses entretiens vidéo sur tv4it,
+
+* le premier publié est http://www.tv4it.net/permalink/2272/marc-fleury-jboss-est-la-societe-a-abattre.aspx[celui de Marc Fleury]
+
+image:http://www.jroller.com/resources/f/francoisledroff/marc.jpg[Marc Fleury.jpg]

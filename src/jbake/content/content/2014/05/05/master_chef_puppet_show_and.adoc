@@ -1,0 +1,32 @@
+=  Master Chef & Puppet Show and other Devops pointers from Devoxx France 2014
+Francois Le Droff
+2014-05-05
+:jbake-type: post
+:jbake-tags:  OpenSource, Java, Conference, Devoxx, Chef
+:jbake-status: published
+
+
+Devoxx france 2014 was an excellent vintage. The conference was packed with 1500 passionate developers. I had the privilege to speak, hence, unlike last year, I did not see much of the show. The first 2 days I mainly spent my time rehearsing and networking.
+
+Here is the link to the 40mn presentation https://twitter.com/rpelisse[Romain] and I did: http://francoisledroff.github.io/chezlesbarbus/#1[Master Chef & Puppet Show] The video will be soon available on http://parleys.com/[parleys]
+
+image:http://www.jroller.com/francoisledroff/resource/Devoxx-XEBIA_369.JPG[image]
+
+The talk was fun to prepare and run, the feedback we received was awesome. It was worth the effort. Romain and I agreed we should do this more often. We Immortalized this moment with a few friends at the Xebia photo booth.
+
+I spent the 3rd and last day of the conference with a cool devops gang, those guys named themself http://www.devopsmercenaries.org/[Devops Mercenaries]
+
+Here are some of my notes (stuff I need to look at when my time and priority will allow it):
+
+* look at ThoughtWorks’ Continuous Delivery platform, Go http://www.thoughtworks.com/news/go-continuous-delivery-now-available-as-free-open-source[as it’s been Open Sourced]
+* Give a try to http://capistranorb.com/[capistrano] as a remote server automation and deployment tool (triggered by Jenkins)
+* try to understand http://zookeeper.apache.org/[zookeeper] use case
+* Generate code coverage report with https://github.com/sethvargo/chefspec#reporting[ChefSpec]
+* have a closer look at http://serverspec.org/[serverspec], and eventually use it to audit (through serverspec logs) the automated servers
+* segregate 3 types of jenkins servers: one for build (soft factory), one for QA (quality factory with Selenium, Gatling …), one for delivery/deployment
+* use jenkins to launch chef automated vm and run automated integration test on these
+* Do better measuring and monitoring (key to devops adoption and sponsors buy in), have a look at http://www.zabbix.com/[Zabbix], JMX, http://collectd.org/[Collectd], http://graphite.wikidot.com/[Graphite], https://code.google.com/p/javamelody/[javamelody], http://rashidkpc.github.io/Kibana/[kibana]
+* Measure slack time: time allocated for devops
+* Do http://martinfowler.com/bliki/BlueGreenDeployment.html[Blue green deployment]
+* nosql is helping continuous deployment, sql db automation such as liquibase and flyway do it too.
+* shut down the db, without shutting down the service, that’s key too: cf https://github.com/Netflix/zuul/wiki[Netfliz zuul] solution

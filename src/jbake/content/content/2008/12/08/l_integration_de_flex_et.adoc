@@ -1,0 +1,13 @@
+=  L'integration de Flex et Spring encore simplifiée.
+Francois Le Droff
+2008-12-08
+:jbake-type: post
+:jbake-tags:  Java 
+:jbake-status: published
+:source-highlighter: prettify
+
+Ca y est, la nouvelle est tombée (notamment sur l’excellent blog de http://coenraets.org/blog/2008/12/adobe-collaborates-with-springsource-for-enhanced-flex-spring-integration/[Christophe]): SpringSource et Adobe travaillent ensemble pour faciliter et simplifier le développement d’application Flex s’appuyant sur un back-end spring.
+
+Le ou les projets qui vont découler de cette collaboration vont sans doute rendre notre bibliothèque http://fna.googlecode.com/svn/trunk/fna/site/flex-contrib-spring/index.html[flex-contrib-spring] et notre archetype maven http://fna.googlecode.com/svn/trunk/fna/site/mvn_archetypes/blazeds-autowired-spring-hibernate-archetype/index.html[blazeds-autowired-spring-hibernate-archetype] obsolètes.
+
+Mais c’est sans aucun doute pour le meilleur. J’ai hâte de voir les premiers résultats.

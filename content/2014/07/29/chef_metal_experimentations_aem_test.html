@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Francois Le Droff: Chef metal experimentations: AEM test drive</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">    
+
+    <!-- Le styles -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/asciidoctor.css" rel="stylesheet">
+    <link href="/css/base.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="favicon.ico">
+    </head>
+  <body>
+
+
+    <div id="wrap">
+	
+	<!-- Fixed navbar -->
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="container">
+	    <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Francois Le Droff 's Blog</a>
+	    </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">                
+                <li><a href="/about.html">About</a></li>
+
+                <li><a href="/archive.html">Archive</a></li>
+
+
+		            <li><a href="/conferences.html">Conferences</a></li>
+
+                <!--
+		            <li class="dropdown">
+          		      <a data-toggle="dropdown" href="#">Topics<b class="caret"></b></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="/tags/Java.html">Java</a></li>
+                    <li><a href="/tags/OpenSource.html">OpenSource</a></li>
+                    <li><a href="/tags/Misc.html">Misc</a></li>
+                  </ul>
+	              </li>
+	              -->
+
+
+                <li><a href="/feed.xml">Feed</a></li>
+
+                <!--
+                <li><a href="/projects.html">Projects</a></li>
+                -->
+
+              </ul>
+	      <ul class="nav navbar-nav navbar-right">
+	      	<li><a href="https://github.com/francoisledroff"><i class="fa fa-github"></i></a></li>
+	        <li><a href="https://twitter.com/francoisledroff"><i class="fa fa-twitter"></i></a>
+	      </ul>
+            </div>
+          </div>
+      </div>
+      <div class="container">
+	
+	<div class="page-header">
+		<h1>Chef metal experimentations: AEM test drive</h1>
+    <p class="credit">
+      First published on July 29 2014
+      and tagged 
+    <a href="/tags/OpenSource.html">OpenSource . </a>
+
+    <a href="/tags/CQ5.html">CQ5 . </a>
+
+    <a href="/tags/AEM.html">AEM . </a>
+
+    <a href="/tags/Chef.html">Chef . </a>
+		</p>
+	</div>
+
+	<p><div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>I’ve been recently playing with <a href="https://github.com/opscode/chef-metal">chef-metal</a>.</p>
+</div>
+<div class="paragraph">
+<p>Chef-metal Rocks, it allows you to treat machines/nodes like resources and provision them through <a href="https://github.com/opscode/chef-metal-vagrant">vagrant provisioner</a>, <a href="https://github.com/opscode/chef-metal-fog">EC2, Rackspace, DigitalOcean and Openstack provisioner</a> and even <a href="https://github.com/opscode/chef-metal-docker">docker provisioner</a></p>
+</div>
+<div class="paragraph">
+<p>I just <a href="https://github.com/francoisledroff/connectcon-chef-repo#aem-chef-test-drive">published my latest experimentations on github</a> today I added a chef-metal based cookbook in my connectcon chef repo, this will allow you to have an AEM (Adobe Experience Manager) infrastructure fully configured in matter of minutes using a vagrant provisionner.</p>
+</div>
+<div class="paragraph">
+<p>Even if you are new to Ruby and Chef, the test drive should take you a few minutes:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>install <a href="https://www.vagrantup.com/downloads">vagrant</a></p>
+</li>
+<li>
+<p>install ruby with <a href="https://rvm.io/">rvm</a></p>
+</li>
+<li>
+<p>install <a href="http://bundler.io/">bundler</a></p>
+</li>
+<li>
+<p>checkout this git <a href="https://github.com/francoisledroff/connectcon-chef-repo">chef-repo</a> to your disk</p>
+</li>
+<li>
+<p>edit the <a href="https://github.com/francoisledroff/connectcon-chef-repo/blob/master/environments/dev.json#L11">dev.json</a> environment file in order to have the <code>download_url</code> and <code>license_url</code> pointing to reachable aem jar and license URLs within your network</p>
+</li>
+<li>
+<p>change directory to the root of the local copy of this git repo</p>
+</li>
+<li>
+<p>launch our ./local_setup.sh</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Except for vagrant installation all the above can be boiled down to the following commmand lines:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>curl -sSL https://get.rvm.io | bash -s stable
+gem install bundler
+git clone https://github.com/francoisledroff/connectcon-chef-repo.git
+cd connectcon-chef-repo
+./local_setup.sh</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>A few minutes later you will have a centos vm running on a local IP (<a href="https://github.com/francoisledroff/connectcon-chef-repo/blob/master/cookbooks/aem_metal/recipes/author.rb#L11">set up in our aem-metal default recipe</a>) If this <a href="http://en.wikipedia.org/wiki/Private_network">private range IP</a> is in used pick another one, just change the recipe file.</p>
+</div>
+<div class="paragraph">
+<p>The vm is created by default under <code>.chef/vms</code> . From there, you can ssh in, and then double check aem service is started and eventually stop the firewall to freely access this chef automated cq author instance from your browser at <a href="http://192.168.0.20:4502" class="bare">http://192.168.0.20:4502</a></p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>$ cd .chef/vms
+$ vagrant ssh
+Last login: Tue Jul 15 16:44:19 2014 from 10.0.2.2
+Welcome to your Vagrant-built virtual machine.
+[vagrant@author ~]$ sudo service service aem-author status
+[vagrant@author ~]$ sudo service iptables stop</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="whats-next">What’s next ?</h3>
+<div class="paragraph">
+<p>If my agenda allows it, I hope I could demo here as well:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>how this vagrant provisioner could be replaced by a <a href="https://github.com/opscode/chef-metal-docker">docker provisioner</a> or a <a href="https://github.com/opscode/chef-metal-fog">EC2, Rackspace, DigitalOcean and Openstack provisioner</a></p>
+</li>
+<li>
+<p>how to secure the automation with <a href="https://github.com/Nordstrom/chef-vault">chef-vault</a></p>
+</li>
+<li>
+<p>how to set up a few typical aem infrastructures (more complex than just this author instance I have for now) as presented in <a href="http://www.slideshare.net/francoisledroff/master-chef-class-learn-how-to-quickly-cook-delightful-cqaem-infrastructures">my slides</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Any feedback will be appreciated.</p>
+</div>
+</div></p>
+
+<hr/>
+
+
+    
+    <div id="footer">
+
+      <div class="container">
+
+        <p class="credit">
+        Published with
+        a <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/"><em>Creative Commons by-nc-sa</em> license</a>,
+          mixed with <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>,
+          baked with <a href="http://jbake.org">JBake v2.5.1</a>
+
+	      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/fr/">
+        <img alt="Creative Commons License" style="border-width:0"
+	      src="http://i.creativecommons.org/l/by-nc-sa/2.0/fr/80x15.png"/></a>
+
+         </p>
+      </div>
+    </div>
+    
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/jquery-1.9.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+
+  </body>
+</html>

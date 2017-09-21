@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Francois Le Droff: radeon/ati video driver issue on kubuntu karmic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">    
+
+    <!-- Le styles -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/asciidoctor.css" rel="stylesheet">
+    <link href="/css/base.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="favicon.ico">
+    </head>
+  <body>
+
+
+    <div id="wrap">
+	
+	<!-- Fixed navbar -->
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="container">
+	    <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Francois Le Droff 's Blog</a>
+	    </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">                
+                <li><a href="/about.html">About</a></li>
+
+                <li><a href="/archive.html">Archive</a></li>
+
+
+		            <li><a href="/conferences.html">Conferences</a></li>
+
+                <!--
+		            <li class="dropdown">
+          		      <a data-toggle="dropdown" href="#">Topics<b class="caret"></b></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="/tags/Java.html">Java</a></li>
+                    <li><a href="/tags/OpenSource.html">OpenSource</a></li>
+                    <li><a href="/tags/Misc.html">Misc</a></li>
+                  </ul>
+	              </li>
+	              -->
+
+
+                <li><a href="/feed.xml">Feed</a></li>
+
+                <!--
+                <li><a href="/projects.html">Projects</a></li>
+                -->
+
+              </ul>
+	      <ul class="nav navbar-nav navbar-right">
+	      	<li><a href="https://github.com/francoisledroff"><i class="fa fa-github"></i></a></li>
+	        <li><a href="https://twitter.com/francoisledroff"><i class="fa fa-twitter"></i></a>
+	      </ul>
+            </div>
+          </div>
+      </div>
+      <div class="container">
+	
+	<div class="page-header">
+		<h1>radeon/ati video driver issue on kubuntu karmic</h1>
+    <p class="credit">
+      First published on November 20 2009
+      and tagged 
+    <a href="/tags/OpenSource.html">OpenSource . </a>
+
+    <a href="/tags/Linux.html">Linux . </a>
+		</p>
+	</div>
+
+	<p><div class="paragraph">
+<p>Last night I updated my kunbuntu from dapper to karmic using the GUI (kynaptic). At restart kde was not starting, I ended up with my the terminal mode.</p>
+</div>
+<div class="paragraph">
+<p>I diagnostic-ed it by manually starting the Xserver</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>startx</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>I realized the system was complaining about the fglrx driver (I <a href="http://jroller.com/francoisledroff/entry/je_suis_enfin_libre">formerly installed</a> with Dapper on my laptop dell D610) If this happen to you too, you may fix it by doing this :</p>
+</div>
+<div class="paragraph">
+<p>Check first your graphic card name and chipset:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>$ lspci -nn | grep VGA</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>First removes both -fglrx and -ati, and reinstalls the latter:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>sudo apt-get remove --purge fglrx*
+  sudo apt-get remove --purge xserver-xorg-video-ati xserver-xorg-video-radeon
+  sudo apt-get install xserver-xorg-video-ati
+  sudo apt-get install --reinstall libgl1-mesa-glx libgl1-mesa-dri xserver-xorg-core
+  sudo dpkg-reconfigure xserver-xorg</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Then reboot</p>
+</div>
+<div class="paragraph">
+<p>At last edit the xorg.conf file</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>sudo vim /etc/X11/xorg.conf</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Look for the above <code>Section Device'' and change the </code>Driver'' from fglrx to ati (I can’t be NOT radeon either). The <code>ati'' driver is a wrapper that will load the </code>radeon'' driver if possible.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Section "Device"
+        Identifier      "Radeon 9600"
+
+        Driver          "ati"
+        BusID           "PCI:1:0:0"
+        Option          "XAANoOffscreenPixmaps"
+EndSection</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>more here:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://help.ubuntu.com/community/RadeonDriver#Configuring%20X.org" class="bare">https://help.ubuntu.com/community/RadeonDriver#Configuring%20X.org</a></p>
+</li>
+<li>
+<p><a href="https://wiki.ubuntu.com/X/Troubleshooting/FglrxInteferesWithRadeonDriver" class="bare">https://wiki.ubuntu.com/X/Troubleshooting/FglrxInteferesWithRadeonDriver</a></p>
+</li>
+</ul>
+</div></p>
+
+<hr/>
+
+
+    
+    <div id="footer">
+
+      <div class="container">
+
+        <p class="credit">
+        Published with
+        a <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/"><em>Creative Commons by-nc-sa</em> license</a>,
+          mixed with <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>,
+          baked with <a href="http://jbake.org">JBake v2.5.1</a>
+
+	      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/fr/">
+        <img alt="Creative Commons License" style="border-width:0"
+	      src="http://i.creativecommons.org/l/by-nc-sa/2.0/fr/80x15.png"/></a>
+
+         </p>
+      </div>
+    </div>
+    
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/jquery-1.9.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+
+  </body>
+</html>

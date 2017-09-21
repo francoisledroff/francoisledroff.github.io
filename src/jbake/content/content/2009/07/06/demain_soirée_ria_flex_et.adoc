@@ -1,0 +1,17 @@
+=  Demain Soirée RIA (Flex et JavaFX) au ParisJUG
+Francois Le Droff
+2009-07-06
+:jbake-type: post
+:jbake-tags:  Java 
+:jbake-status: published
+:source-highlighter: prettify
+
+Je serai présent demain soir au http://www.parisjug.org/xwiki/bin/view/Main/[Paris JUG], le groupe d’utilisateurs du langage Java qui se retrouve mensuellement à Paris.
+
+La conf. aura lieu dans les locaux de l’http://www.parisjug.org/xwiki/bin/view/Location/ISEP[ISEP] à partir 19h30.
+
+**http://www.jugevents.org/jugevents/event/show.html?id=17909[N’oubliez pas de vous inscrire] !**
+
+Ma présentation vous donnera (je l’espère image:http://www.jroller.com/images/smileys/smile.gif[:-),title=":-)"] ) un bon aperçu des possibilités offertes par le framework Flex et son écosystème pour la création de http://fr.wikipedia.org/wiki/Rich_Internet_Application[RIA] d’entreprise dans un ``environnement'' Java/JEE, ceci notamment à travers démonstrations et découvertes des dernières nouveautés des solutions Adobe : http://www.springsource.org/spring-flex[Spring-Flex], http://labs.adobe.com/technologies/livecycle_dataservices3/[LCDS3], http://opensource.adobe.com/wiki/display/flexsdk/Flex+SDK[Flex4], http://labs.adobe.com/technologies/flashbuilder4/[FlashBuilder4] et http://labs.adobe.com/technologies/flashcatalyst/[FlashCatalyst]).
+
+A demain !

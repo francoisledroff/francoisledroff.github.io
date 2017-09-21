@@ -1,0 +1,65 @@
+=  ObjectWeb à Javapolis
+Francois Le Droff
+2006-12-31
+:jbake-type: post
+:jbake-tags:  Java, Javapolis
+:jbake-status: published
+:source-highlighter: prettify
+
+ObjectWeb peut considérer sa première participation à Javapolis, comme un franc succès, le http://www.exoplatform.com/company/faces/public/site?portal:componentId=news&portal:type=action&portal:isSecure=false&uicomponent=UIContentList&op=viewDocument&objectId=production:/site/news/eXo%20@%20JavaPolis%20with%20ObjectWeb[booth/stand] n’a pas désempli.
+
+Miguel, Benjamin et Ludo, ``project leads'' d’objectweb, représentant respectivement Bonita, exo-platform et XWiki, ont conclu leur semaine par une http://www.javapolis.com/confluence/display/JP06/ECM+open+source+by+leveraging+Portal,+Workflow,+and+Wiki+ObjectWeb+components[présentation] collégiale de leur projets. Voici mes notes:
+
+[[bonita]]
+link:[Bonita]
+^^^^^^^^^^^^^
+
+http://wiki.bonita.objectweb.org/xwiki/bin/view/Main/WebHome[Bonita] est un moteur de workflow (sous licence libre LGPL) s’appuyant sur la [line-through]*qualité de service* la plomberie fournie par les containers J2EE. Il fournit, entre autre, des fonctionnalités avancées de ``hooks'' java ou beanshells. Il supporte XPDL 1.1.
+
+Je ne connaissais pas le monde du ``workflow'', encore un univers à découvrir? c’est sans fin. Vous, qui connaissez, que diriez-vous de publier la matrice fonctionnelle des moteurs de workflow ? une comparaison Bonita versus jbpm ? (et pourquoi pas dans des fiches http://www.qsos.org/[qsos] ? :-) ) Histoire d’y voir plus clair ?
+
+image:http://www.jroller.com/resources/f/francoisledroff/miguel.jpeg[miguel.jpeg]
+
+En attendant, j’ai creusé le sujet sur le stand d’objectWeb, ou Miguel m’y a fait une démo personnalisée et a eu la patience de répondre à mes nombreuses questions de néophyte. J’ai été séduit par le produit. Son architecture m’a semblé modulaire et originale, j’ai été agréablement surpris de l’utilisation de http://fr.wikipedia.org/wiki/XForms[XForm]. XForm fait à mon avis partie de ces initiatives http://blogs.sun.com/bblfish/entry/web_n_1[``Web 1+n''], un peu trop en avance sur leur temps, qui n’ont pas eu la reconnaissance et le support qu’elles méritaient.
+
+[[xwiki]]
+link:[XWiki]
+^^^^^^^^^^^^
+
+http://www.xwiki.org/xwiki/bin/view/Main/WebHome[Xwiki], moi, j’adore ! :-) Je l’ai monté sur ma machine et quelques projets déjà, et notamment sur http://www.paris-jbug.org[pjbug.org]. Ludovic nous présentait, là, les nouvelles fonctionnalités de la version 1.0 de son wiki de deuxième génération. Le nouveau look ce cette version palie enfin au manque cruel de « sex-appeal » des versions précédentes.
+
+[[exo-platform]]
+link:[exo-platform]
+^^^^^^^^^^^^^^^^^^^
+
+image:http://www.jroller.com/resources/f/francoisledroff/benjamin.jpg[benjamin.jpg]
+
+http://www.exoplatform.com/[Exo] est surtout réputé comme étant la première implémentation de portail ayant passé la spécification JSR 168, ce n’est en fait que la partie émérgée de l’iceberg: Benjamin a présenté les fonctionnalités moins connu de son produit:
+
+la partie ECM (support de JCR et implémentation de JSR 170), gestion électronique de document (avec locks, versioning, meta-données : un environement OS dans le navigateur).
+
+SSO,
+
+ses capacités de gestion multi-portail
+
+son architecture extensible, sa modularité, son facilité d’intégration avec :
+
+http://spagobi.objectweb.org/[spagoBI] (ndr: assez peu connu en France, exo et spagoBI font entre autre partie de l’http://v2.objectweb.org/initiatives.html[initiative BI] du consortium http://www.application-servers.com/comments.do?reqCode=readComments&sid=2006-12-29-14:04:39[objectWeb V2], et remporte un franc succès dans de nombreux pays, notamment en http://www.01net.com/editorial/294440/application/spagobi-libere-le-decisionnel/[Italie])
+
+xwiki (intégration de XWiki 1.0 beta 1 et eXo ECM 1.1 annoncée durant Javapolis)
+
+bonita (intégration de eXo ECM 1.1 et Bonita 2.1 annoncée durant Javapolis)
+
+* Benjamin, et Miguel ont ainsi conclu par une démo intégrant leur deux projets dans exo: xwiki s’intégrant comme portlet et bonita comme moteur de workflow visant la validation de publication.
+
+[[les-annonces]]
+link:[Les annonces:]
+^^^^^^^^^^^^^^^^^^^^
+
+Chacun est allé de son annonce à Javapolis, la plus médiatique fut sans doute la release de Java SE 6 (et dans http://www.googlefight.com/index.php?lang=fr_FR&word1=javaSE+6+release&word2=flandre+ind%E9pendante[une moindre mesure] :-), la http://www.expressions.be/index.php?2006/12/14/203-docu-fiction-rtbf-independance-flandre[déclaration d’indépendance de la Flandre], ou encore une http://www.fr.datanewsjobs.be/news/20061214012[demande en mariage].
+
+Nos 3 compères ont également profité de cette tribune:
+
+* Ludovic nous annoncait http://www.ludovic.org/xwiki/bin/view/Main/XWiki1Point0Beta1EstLa[la release de xwiki-1.0 beta] et l’arrivée de http://blogs.codehaus.org/people/vmassol/archives/001464_joining_xwiki.html[Vincent Massol comme CTO de xwiki].
+* Miguel, la future release d’un IDE de workflow bonita (sans doute à l’occasion du salon Solution-Linux)
+* et Ben le Portal 2.0 et ECM 2.0 d’eXo : http://www.application-servers.com/comments.do?reqCode=readComments&sid=2006-12-29-14:10:14[``towards the Enterprise WebOS'']

@@ -1,0 +1,72 @@
+=  JavaDay 2006
+Francois Le Droff
+2006-07-04
+:jbake-type: post
+:jbake-tags:  Java, ossgtp
+:jbake-status: published
+:source-highlighter: prettify
+
+J’ai eu le plaisir d’assister à http://fr.sun.com/javaday2006/[javaday] jeudi dernier à Versailles.
+
+L’http://fr.sun.com/javaday2006/agenda.html[agenda] de cette conférence, organisée par Sun sur une journée, était intéressant. L’accent a d’abord été mis sur Java EE 5 en début de matinée. Le point fort de la matinée fut la présentation et la démo de James Gosling (démo assez sympathique d’une appli intégrant Java 3D réalisée dans la boîte de son frère - si j’ai bien compris) http://resource.dirtt.ca/ICEWalls.htm[IceBox de DIRTT (Doing ir right the first time)]. Le reste.. mmmhh ne m’a pas captivé…
+
+image:http://jroller.com/resources/f/francoisledroff/SouthParkJAG-small.png[SouthParkJAG-small.png]
+
+Ce que je retiendrai de cette journée ce fut ensuite :
+
+[[le-panel-open-source]]
+link:[le panel Open source]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+La table ronde qui suivi fit la part belle aux projets open source java dont le leadership est assuré par des développeurs français de l’ossgtp (http://ossgtp.org). Didier Girard a animé la discussion avec:
+
+* Emmanuel Bernard d’Hibernate
+* Vincent Massol de Cactus, Maven, Cargo,
+* Ludovic Dubost avec XWiki,
+* Guillaume Laforge leader du projet Groovy
+* et Marc-Antoinne Garrigue, JCaptcha.
+
+Vous retrouverez http://blogs.sun.com/roller/page/bblfish?entry=java_days_in_paris_open[les notes d’Henry à ce sujet].
+
+Mais au fait, http://blog.developpez.com/index.php?blog=12&title=que_se_cache_t_il_derriere_le_nom_ossgtp&more=1&c=1&tb=1&pb=1[que se cache-t-il derrière le nom ``OSSGTP'' ?] image:http://www.jroller.com/images/smileys/smile.gif[:-),title=":-)"]
+
+[[le-smashup]]
+link:[le smashup]
+^^^^^^^^^^^^^^^^^
+
+C’est la démo de Romain Guy et de son projet https://aerith.dev.java.net/[Aerith fraichement ``open-sourcé'' sous licence BSD] qui nous a vraiment tous réveillé en fin de matinée.
+
+Aerith est un Swing Mashup, un *smashup* réalisé pour les sessions sur les interfaces graphiques de JavaOne 06. Aerith utilise Java2D, OpenGL (jogl), Timing Framework, SwingX, Matisse. Il intégre Google Maps, Flickr, and Yahoo’s geocoding webservice et permet ainsi à l’utilisateur de créer, visualiser et partager photos, notes et itinéraires de voyage.
+
+Cette application démontre avec force et brillo les possibilités de Java en termes d’interfaces graphiques. C’est tout simplement beau ! La http://jroller.com/page/gfx/?anchor=javaone_presentations_with_audio_and[vidéo] parle d’elle même.
+
+J’ai suivi les conseils de James Gosling, et j’ai voulu m’intéresser à ce que je ne connaissais pas, j’ai donc suivi la session de Romain ``Creating Professional Swing UIs Using Matisse GUI Builder and SwingLabs.org'' dans l’après midi.
+
+Ce fut très instructif. Voici quelques notes et pointeurs en vrac.:
+
+* Romain et son équipe on fait un usage intensif de https://fuse.dev.java.net[fuse] : une librairie destinée à la configuration d’une application par injection et annotations. Plus d’info sur le net, et notamment en français sur http://progx.org (site d’Erik LOUISE et Romain Guy) : http://progx.org/index.php?section=replies&newsid=650[Fuse, injection de ressources pour Java]
+* http://www.jhlabs.com/ a été également sources de connaissances et librairies, notamment de filtre java photoshop.
+* Romain nous conseille de regarder du côté des jsr http://www.jcp.org/en/jsr/detail?id=295[295] ``Bean Bindings'' et http://www.jcp.org/en/jsr/detail?id=296[296] ``Swing Application Framework'' qui une fois en place facileront grandement le dev d’appli swing (avec l’apparition d’un timeline pour les animation) et leur intégration avec la base de données.
+
+[[title-pour-ceux-qui-nont-pas-pu-venir]]
+link:[image:http://www.jroller.com/images/smileys/blush.gif[:]" title=``:''>" />Pour ceux qui n’ont pas pu venir:]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+http://jroller.com/page/gfx/?anchor=javaone_presentations_with_audio_and[le blog de Romain Guy].
+
+http://blogs.sun.com/roller/page/alexismp?entry=ajax_au_javaday_de_versailles[le blog d’Alexis] et un http://blogs.sun.com/roller/resources/alexismp/JavaDayFranceAJAXsession.pdf[lien vers sa présentation ajax]
+
+http://blog.developpez.com/index.php?blog=12&title=repas_du_29_juin_avec_james_gosling&more=1&c=1&tb=1&pb=1[le blog de la rubrique Java]
+
+http://www.audaxis.com/roller/page/eric?entry=javaday_2006_versaille_java_plus[le blog d’Eric Fesler]
+
+deux entrées sur le blog d’Henry:
+
+* http://blogs.sun.com/roller/page/bblfish?entry=james_gosling_at_java_days
+* http://blogs.sun.com/roller/page/bblfish?entry=java_days_in_paris_open
+
+[[mise-à-jour-les-videos-sont-en-ligne-depuis-le-21-septembre]]
+Mise à jour : les videos sont en ligne ! (depuis le 21 Septembre)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* http://java.developpez.tv/javaday2006/

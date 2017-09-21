@@ -1,0 +1,209 @@
+=  Back from Devoxx - Part 4 - Dev-QA-Ops Thoughts - About continuous delivery and deployment
+Francois Le Droff
+2013-04-26
+:jbake-type: post
+:jbake-tags:  Java , Devoxx
+:jbake-status: published
+:source-highlighter: prettify
+
+Here is the final part of my notes on software engineering quality, continuous delivery and dev-qa-ops practices gathered during http://www.devoxx.com/display/FR13/Accueil[devoxxfr^image:/images/icons/linkext7.gif[image,width=7,height=7]^], after http://jroller.com/francoisledroff/entry/back_from_devoxx_part_11[branching^image:/images/icons/linkext7.gif[image,width=7,height=7]^] http://jroller.com/francoisledroff/entry/back_from_devoxx_part_2[buid-promotion^image:/images/icons/linkext7.gif[image,width=7,height=7]^], and http://jroller.com/francoisledroff/entry/back_from_devoxx_part_3[tests and code analysis^image:/images/icons/linkext7.gif[image,width=7,height=7]^], this last entry will be about continuous delivery, operations.
+
+link:#BackfromDevoxx-Part4-Dev-QA-OpsThoughts-Aboutcontinuousdeliveryanddeployment-FromContinuousintegrationtoContinuousDeliveryandContinuousDeployement[From Continuous integration to Continuous Delivery and Continuous Deployement]
+
+link:#BackfromDevoxx-Part4-Dev-QA-OpsThoughts-Aboutcontinuousdeliveryanddeployment-Towardscontinuousdeliveryanddeployement[Towards continuous delivery and deployement]
+
+* link:#BackfromDevoxx-Part4-Dev-QA-OpsThoughts-Aboutcontinuousdeliveryanddeployment-Shipnativepackaging[Ship native packaging]
+* link:#BackfromDevoxx-Part4-Dev-QA-OpsThoughts-Aboutcontinuousdeliveryanddeployment-Codetheoperations[Code the operations]
+* link:#BackfromDevoxx-Part4-Dev-QA-OpsThoughts-Aboutcontinuousdeliveryanddeployment-Manageyoursecrets[Manage your secrets]
+* link:#BackfromDevoxx-Part4-Dev-QA-OpsThoughts-Aboutcontinuousdeliveryanddeployment-Secureyourartifactrepositories[Secure your artifact repositories]
+* link:#BackfromDevoxx-Part4-Dev-QA-OpsThoughts-Aboutcontinuousdeliveryanddeployment-SolveJenkinsfalsealarms[Solve Jenkins false alarms]
+* link:#BackfromDevoxx-Part4-Dev-QA-OpsThoughts-Aboutcontinuousdeliveryanddeployment-Implementpropermonitoring[Implement proper monitoring]
+* link:#BackfromDevoxx-Part4-Dev-QA-OpsThoughts-Aboutcontinuousdeliveryanddeployment-rethinkyourworkflowandprocesses[rethink your workflow and processes]
+
+link:#BackfromDevoxx-Part4-Dev-QA-OpsThoughts-Aboutcontinuousdeliveryanddeployment-Furtherreadingsandothervariouspointers[Further readings and other various pointers]
+
+[[from-continuous-integration-to-continuous-delivery-and-continuous-deployement]]
+link:[]From Continuous integration to Continuous Delivery and Continuous Deployement
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Most of us already do Continuous Integration by now. Through CI tools like jenkins we automated
+
+* builds
+* code analysis
+* dependency analysis
+* unit test
+* functional test
+* perf test
+
+The next level brings us to continous Delivery: providing our product to our (internal and external) users that can then directly use it on their own systems. This means automating artifacts (the result of the builds) assembling and providing a API to fetch these artifacts (through artifact repositories such as nexus or artifactory)
+
+The final step is to bring the products running on systems, it’s continuous deployement. +
+there you have 3 main requesters:
+
+* Dev Teams
+* QA Teams
+* Ops Teams (internal or customers)
+
+Developers usually need to test their latest trunk code, the deployement decision should be left to them and the server should be their and operated by them.
+
+QA need to test internal releases, just like for the dev team, the deployment decision should be theirs and operated on their QA servers. That’s were http://jroller.com/francoisledroff/entry/back_from_devoxx_part_2[build promotion techniques^image:/images/icons/linkext7.gif[image,width=7,height=7]^] becomes very handy.
+
+Ops need to install or update product from build promoted to release by the above QA. +
+They need to own the deployement decision together with the final customers +
+They also need to inform users about planned operations, to follow their advertized SLA. +
+They obviously operate the servers.
+
+The challenge here is to make these 3 teams collaborate and speak the same language, the keys are to make:
+
+* the products precisely identified and securely fetchtable via APIs from a common referential
+* the operations on (fetching/installing/updating) the product automated. These ops automation should be used and common to all 3 teams.
+
+One way to achieve that is for all 3 teams :
+
+* to leverage an artifact repository such as nexus or artifactory
+* to leverage and co-own/commit/review a common set of operations scripts on all (dev/QA/prod) servers
+
+[[towards-continuous-delivery-and-deployement]]
+link:[]Towards continuous delivery and deployement
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[[ship-native-packaging]]
+link:[]Ship native packaging
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Shipping native packaging is something that was advocated and demoed this year and last year at devoxx by the ``devops mercenaries'' team. It looks very appealing to me. Cf.
+
+* http://www.slideshare.net/henri.gomez/from-ci-to-cd[http://www.slideshare.net/henri.gomez/from-ci-to-cd^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+* https://github.com/devopsmercenaries/sh3rewithme[https://github.com/devopsmercenaries/sh3rewithme^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+
+[[code-the-operations]]
+link:[]Code the operations
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+_____________________________________________________
+If it’s not in the code repository, it does not exist
+_____________________________________________________
+
+Common tooling and languages facilitates communications.
+
+We all agree that each artifact should be versioned sufficiently that we can exactly reproduce the source code it was built from from our source control system. We should treat product deployement and configuration the same.
+
+Tech stack such as Chef or Puppet and MCollective can help you achieve that. +
+https://twitter.com/rpelisse[Romain^image:/images/icons/linkext7.gif[image,width=7,height=7]^] gave a very fun and informative session about it, I encourage you to watch the replay on http://parleys.com/channel/516409b4e4b082c6506c9e3a/presentations[parleys^image:/images/icons/linkext7.gif[image,width=7,height=7]^] when it becomes available
+
+Once you have your native packaging and/or deployement script ready:
+
+* Use jenkins as an operation console
+* Use http://jroller.com/francoisledroff/entry/back_from_devoxx_part_2[build promotion^image:/images/icons/linkext7.gif[image,width=7,height=7]^] techniques and dashboard to make everything visible and readable by all
+
+[[manage-your-secrets]]
+link:[]Manage your secrets
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Handling secrets/passwords/keys in a fully automated deployement is tricky. +
+It is a hard piece to streamline and automate safely.
+
+Here is an open source solution that could of interest: https://github.com/hbs/oss[https://github.com/hbs/oss^image:/images/icons/linkext7.gif[image,width=7,height=7]^] to achieve the above. +
+It seems pretty solid, it’s in production in a major bank in France. +
+With this open secret server, you could `safely' commit your encrypted secrets on github image:/images/icons/emoticons/wink.gif[image,width=20,height=20]
+
+[[secure-your-artifact-repositories]]
+link:[]Secure your artifact repositories
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Maven support artifact repositories password encryption. Maven can retrieve the Master password from the ~/.m2/settings-security.xml file and use this master password to decrypt the password stored in your ~/.m2/settings.xml file. Maven will then send the decrypted password to the server.
+
+For an extra level of security, you can store the encrypted master password on a removable storage device like a USB hard drive. To support this, your ~/.m2/settings-security.xml file would contain a reference to the location of the settings-security.xml file using the relocation element.
+
+cf.
+
+* http://maven.apache.org/guides/mini/guide-encryption.html[http://maven.apache.org/guides/mini/guide-encryption.html^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+* http://www.sonatype.com/people/2009/10/maven-tips-and-tricks-encrypting-passwords/[http://www.sonatype.com/people/2009/10/maven-tips-and-tricks-encrypting-passwords/^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+
+Artifactory goes one step further it provides a unique solution to this problem by generating encrypted passwords for users based on secret keys stored in Artifactory itself. By this, you can ensure users shared passwords are never stored or transmitted as clear text. +
+cf. http://wiki.jfrog.org/confluence/display/RTF/Centrally+Secure+Passwords[http://wiki.jfrog.org/confluence/display/RTF/Centrally+Secure+Passwords^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+
+One easy step to also ``secure'' the consistency of your artifacts repository is to prevent users from deleting or overwritting releases. cf. http://wiki.jfrog.org/confluence/display/RTF/Managing+Permissions[http://wiki.jfrog.org/confluence/display/RTF/Managing+Permissions^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+
+[[solve-jenkins-false-alarms]]
+link:[]Solve Jenkins false alarms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Jenkins build can fail for many other reasons than bad code checkins. +
+(JVM crash, scm/nexus/artifactory/etc.. connectivity issues, browser crash during selenium tests, jenkins/plugin crash, etc..) Vincent presented us a nice tip to prevent that using groovy script to prevent spamming developers with false alarm emails +
+cf. http://massol.myxwiki.org/xwiki/bin/view/Blog/JenkinsDontSendEmailForFalsePositives[http://massol.myxwiki.org/xwiki/bin/view/Blog/JenkinsDontSendEmailForFalsePositives^image:/images/icons/linkext7.gif[image,width=7,height=7]^] +
+cf. https://wiki.jenkins-ci.org/display/JENKINS/Scriptler+Plugin[https://wiki.jenkins-ci.org/display/JENKINS/Scriptler+Plugin^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+
+[[implement-proper-monitoring]]
+link:[]Implement proper monitoring
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Ensure the server logs are made available to all +
+Logs are useful information to all 3 groups, dev QA and ops. +
+It should be accessible to all and a focus should be made to make sure the dev teams is producing useful and triggerable logs.
+
+* Think production monitoring, think further: think jmx, jmxtrans, nagios, graphite:
+** http://www.slideshare.net/cyrille.leclerc/open-source-monitoring-for-java-with-graphite[http://www.slideshare.net/cyrille.leclerc/open-source-monitoring-for-java-with-graphite^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+** http://www.slideshare.net/henri.gomez/devops-retour-dexprience-alpesjug-du-20-septembre-2011[http://www.slideshare.net/henri.gomez/devops-retour-dexprience-alpesjug-du-20-septembre-2011^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+* Create smart dashboards and alerts
+
+____________________________________________
+If it’s not monitored i’ts not in production
+____________________________________________
+
+This other famous quote below can applied to code quality but also to prod monitoring:
+
+________________________________________________
+If you cannot measure it, you can not improve it
+________________________________________________
+
+Won’t you feel safer doing feature toggling (cf. the http://jroller.com/francoisledroff/entry/back_from_devoxx_part_11[first part of my notes^image:/images/icons/linkext7.gif[image,width=7,height=7]^] once you have a proper monitoring in place ? Won’t it be easier to manage:
+
+* beta test (feature flippers)
+* A/B testing (feature flags)
+
+[[rethink-your-workflow-and-processes]]
+link:[]rethink your workflow and processes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Devops also requires organizational changes: here are a few ideas picked here and there during devoxx
+
+* cooperate from the start of the project
+* eliminate the silos
+
+Hire a `Software factory/devops' specialist to :
+
+* work and support the dev team
+* work and support the QA team
+* work and support the ops team
+
+His job ensure that the continous integration, delivery and deployement is :
+
+* always up and running
+* continously improved: every manual step in operating the aps should hunted and killed
+* ensure that areas of ownership and responsabilities are clearly defined between the dev qa qand ops teams
+* ensure all impediments and roadblockers towards efficient continuous delivery are taking care of
+
+Implement a Bug fixing day: for instance in Vincent project, Xwiki, Every Thursday is bug fixing day: the Goal is to close the max number of bugs.
+
+Slowly add new quality check over time
+
+* Everyone must be on board
+* Favor Active Quality (i.e. make the build fail) over Passive checks
+* Be ready to adapt/remove checks if found not useful enough
+* Quality brings some risks:
+** Potentially less committers for your project (especially open source)
+** project seen as ``less fun''
+
+[[further-readings-and-other-various-pointers]]
+link:[]Further readings and other various pointers
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* http://www.slideshare.net/dgageot/lets-make-this-test-suite-run-faster[http://www.slideshare.net/dgageot/lets-make-this-test-suite-run-faster^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+* http://www.slideshare.net/dgageot/git-tours-jug-2010[http://www.slideshare.net/dgageot/git-tours-jug-2010^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+* http://www.tikalk.com/alm/hudson-plugins-you-cant-live-without[http://www.tikalk.com/alm/hudson-plugins-you-cant-live-without^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+* http://php.jglobal.com/blog/?p=828[http://php.jglobal.com/blog/?p=828^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+* http://www.slideshare.net/claude.falguiere/deploiement-continu-agileffrance-2011[http://www.slideshare.net/claude.falguiere/deploiement-continu-agileffrance-2011^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+* http://googletesting.blogspot.fr/2011/03/how-google-tests-software-part-five.html[http://googletesting.blogspot.fr/2011/03/how-google-tests-software-part-five.html^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+* facebook releases: https://vimeo.com/56362484[https://vimeo.com/56362484^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+* M6 monitoring: http://www.slideshare.net/kennydee/monitoring-applicatif-pourquoi-et-comment[http://www.slideshare.net/kennydee/monitoring-applicatif-pourquoi-et-comment^image:/images/icons/linkext7.gif[image,width=7,height=7]^]

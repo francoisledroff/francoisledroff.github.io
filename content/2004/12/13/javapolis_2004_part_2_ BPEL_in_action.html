@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Francois Le Droff: javapolis 2004: BPEL in action by Edwin Khodabakchian</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">    
+
+    <!-- Le styles -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/asciidoctor.css" rel="stylesheet">
+    <link href="/css/base.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="favicon.ico">
+    </head>
+  <body>
+
+
+    <div id="wrap">
+	
+	<!-- Fixed navbar -->
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="container">
+	    <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Francois Le Droff 's Blog</a>
+	    </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">                
+                <li><a href="/about.html">About</a></li>
+
+                <li><a href="/archive.html">Archive</a></li>
+
+
+		            <li><a href="/conferences.html">Conferences</a></li>
+
+                <!--
+		            <li class="dropdown">
+          		      <a data-toggle="dropdown" href="#">Topics<b class="caret"></b></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="/tags/Java.html">Java</a></li>
+                    <li><a href="/tags/OpenSource.html">OpenSource</a></li>
+                    <li><a href="/tags/Misc.html">Misc</a></li>
+                  </ul>
+	              </li>
+	              -->
+
+
+                <li><a href="/feed.xml">Feed</a></li>
+
+                <!--
+                <li><a href="/projects.html">Projects</a></li>
+                -->
+
+              </ul>
+	      <ul class="nav navbar-nav navbar-right">
+	      	<li><a href="https://github.com/francoisledroff"><i class="fa fa-github"></i></a></li>
+	        <li><a href="https://twitter.com/francoisledroff"><i class="fa fa-twitter"></i></a>
+	      </ul>
+            </div>
+          </div>
+      </div>
+      <div class="container">
+	
+	<div class="page-header">
+		<h1>javapolis 2004: BPEL in action by Edwin Khodabakchian</h1>
+    <p class="credit">
+      First published on December 13 2004
+      and tagged 
+    <a href="/tags/Java.html">Java . </a>
+
+    <a href="/tags/Javapolis.html">Javapolis . </a>
+		</p>
+	</div>
+
+	<p><div class="paragraph">
+<p>BPEL in action by Edwin Khodabakchian</p>
+</div>
+<div class="paragraph">
+<p>Edwin Khodabakchian</p>
+</div>
+<div class="paragraph">
+<p>Edwin is the founder and former CEO of Collaxa, a pure-play BPM startup whose BPM orchestration
+product has supported BPEL for more than a year.
+Collaxa was acquired by Oracle in June 2004, and its BPEL Server product is now marketed
+as Oracle BPEL Process Manager. Edwin is now Vice President of software development with Oracle</p>
+</div>
+<div class="paragraph">
+<p>No application is an island</p>
+</div>
+<div class="paragraph">
+<p>Edwin started his talk with good to remind common sense facts:
+No application is an island
+They all interact with other systems.</p>
+</div>
+<div class="paragraph">
+<p>Java + jms + jca + eai + web services = "not enough",</p>
+</div>
+<div class="paragraph">
+<p>You need orchestration, you need Service Oriented Architectures (SOAs), there to help increase enterprise flexibility and asset reuse. They enable the orchestration of services into end-to-end business processes. But many traditional Business Process Management (BPM) tools are proprietary. That’s where the emerging specification called Business Process Execution Language (BPEL) comes in.</p>
+</div>
+<div class="paragraph">
+<p>BPEL is to flow what SQL is to persistence</p>
+</div>
+<div class="paragraph">
+<p>BPEL is indeed there to bind/integrate services, coordinate process flow
+(through a very user friendly interface, in Oracle BPEL designer)
+, and expose the resulting end-to-end process flow as a web service.</p>
+</div>
+<div class="paragraph">
+<p>cf. <a href="http://www.oasis-open.org/committees/tc_home.php?wg_abbrev=wsbpel" class="bare">http://www.oasis-open.org/committees/tc_home.php?wg_abbrev=wsbpel</a></p>
+</div>
+<div class="paragraph">
+<p>Oasis states WS-BPEL is there for Enabling users to describe business process activities as Web services
+and define how they can be connected to accomplish specific tasks</p>
+</div>
+<div class="paragraph">
+<p>cf. <a href="http://otn.oracle.com/bpel" class="bare">http://otn.oracle.com/bpel</a>
+Oracle BPEL contains over 100 samples, Edwin showed us a few among those.</p>
+</div>
+<div class="paragraph">
+<p>Another demo Edwin and his colleague gave us was quite interesting, they used Oracle JDeveloper to
+build and orchestrate a simple file system monitoring and file extracting engine [application built in a few clicks]</p>
+</div>
+<div class="paragraph">
+<p>WSIF</p>
+</div>
+<div class="paragraph">
+<p>Among Web Services Standards, Edwin really insisted on inviting us to look at apache wsif framework:</p>
+</div>
+<div class="paragraph">
+<p><a href="http://ws.apache.org/wsif/" class="bare">http://ws.apache.org/wsif/</a></p>
+</div>
+<div class="paragraph">
+<p>The Web Services Invocation Framework (WSIF) is a simple Java API for invoking Web services,
+no matter how or where the services are provided.
+WSIF enables developers to interact with abstract representations of Web services through
+their WSDL descriptions instead of working directly with the Simple Object Access Protocol
+(SOAP) APIs, which is the usual programming model. With WSIF, developers can work with the same
+programming model regardless of how the Web service is implemented and accessed.</p>
+</div>
+<div class="paragraph">
+<p>BPEL Process manager provides a extensible binding framework
+based on wsif and JSR 208: JavaTM Business Integration (JBI):
+it help you defining custom wsdl bindings, and implementing wsif providers.</p>
+</div>
+<div class="paragraph">
+<p>BAM: Business Activity Monitoring:</p>
+</div>
+<div class="paragraph">
+<p>BAM is implemented into Oracle BPEL servers with sensors, sensors added in way close to AOP.
+We can then query the system to know what route of the business flow is taken more than the others.
+The results can be viewed on a portal dashboard</p>
+</div>
+<div class="paragraph">
+<p>PS:</p>
+</div>
+<div class="paragraph">
+<p>Oracle is currently working on a compact xml binary format who should prevent us from using blog, this
+will allow use to save xml/dom binary instead, and still be able to used xquery.
+Edwin told us that Oracle and a few vendors already have quite a good optimization on xml
+as on proprietary binary format.</p>
+</div>
+<div class="paragraph">
+<p>BPEL was initially proposed by MS and IBM.</p>
+</div>
+<div class="paragraph">
+<p>Oracle BPEL designer UI reminded me of a internship I did in 1996 in the industry, I was programming automates with GRAFCET (Sequential Functional Chart).[ <a href="http://www.lurpa.ens-cachan.fr/grafcet.html" class="bare">http://www.lurpa.ens-cachan.fr/grafcet.html</a>].</p>
+</div></p>
+
+<hr/>
+
+
+    
+    <div id="footer">
+
+      <div class="container">
+
+        <p class="credit">
+        Published with
+        a <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/"><em>Creative Commons by-nc-sa</em> license</a>,
+          mixed with <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>,
+          baked with <a href="http://jbake.org">JBake v2.5.1</a>
+
+	      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/fr/">
+        <img alt="Creative Commons License" style="border-width:0"
+	      src="http://i.creativecommons.org/l/by-nc-sa/2.0/fr/80x15.png"/></a>
+
+         </p>
+      </div>
+    </div>
+    
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/jquery-1.9.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+
+  </body>
+</html>

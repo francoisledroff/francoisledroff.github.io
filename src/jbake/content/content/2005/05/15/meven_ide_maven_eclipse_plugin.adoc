@@ -1,0 +1,36 @@
+=  meven ide (maven eclipse-plugin) tricks and tips
+Francois Le Droff
+2005-05-15
+:jbake-type: post
+:jbake-tags:  Java 
+:jbake-status: published
+:source-highlighter: prettify
+
+Unless I specified my maven local repository in my project.properties file under my project root as such:
+
+....
+maven.repo.local = ..\\..\\tools\\my_repository\\.maven\\repository
+....
+
+My meven IDE synchronizer would not rely on the maven local repository I specified in the eclipse maven preferences Location form.
+
+So I upgraded my eclipse through eclipse update site to version 3.0.2. Just hoping it will fix the stuff by itself
+
+yet another bug or configuration issue while lauching maven on my projects, I systematically got:
+
+....
+!MESSAGE An internal error occurred during: "Launching".
+!STACK 0
+java.lang.NoSuchMethodError: org.eclipse.debug.internal.ui.DebugUIPlugin.getProcessConsoleManager()
+Lorg/eclipse/debug/internal/ui/views/console/ProcessConsoleManager;
+ at org.mevenide.ui.eclipse.launch.configuration.MavenLaunchDelegate.launch(MavenLaunchDelegate.java:143)
+....
+
+It looks like people have been there before: http://comments.gmane.org/gmane.comp.jakarta.turbine.maven.mevenide.user/18[http://comments.gmane.org/gmane.comp.jakarta.turbine.maven.mevenide.user/188]
+
+But No, as said I have installed the right plugin : using the site descriptor located at : http://mevenide.codehaus.org/release/eclipse/update/3.0/site.xml
+
+So i uninstalled it, using eclipse > Help > Software updates > manage configuration +
+and reinstalled it using this specific update site: http://mevenide.codehaus.org/release/eclipse/update/3.0/site.xml no the one introduced on their web page: http://mevenide.codehaus.org/release/eclipse/update/site.xml It worked better !!! image:http://www.jroller.com/images/smileys/smile.gif[:-),title=":-)"]
+
+I reported this issue at: http://jira.codehaus.org/browse/MEVENIDE-215

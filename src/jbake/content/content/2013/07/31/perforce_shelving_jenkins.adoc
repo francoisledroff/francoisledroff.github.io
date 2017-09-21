@@ -1,0 +1,78 @@
+=  Test your perforce change-list in a jenkins job - using perforce shelving - before submitting it
+Francois Le Droff
+2013-07-31
+:jbake-type: post
+:jbake-tags:  Perforce, Jenkins
+:jbake-status: published
+:source-highlighter: prettify
+
+I played with perforce shelving today +
+It’s a very interesting feature of perforce
+
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+Perforce supports ``shelving''. That is, you can cache your modified files on the server, without having to check them in as a versioned change. For teams, shelving makes code reviews and code handoffs possible. Individuals can use shelving for multi-tasking, code shunting, incremental snapshots, and safety nets.
+
+Shelved files in Perforce are visible to users who have access to the underlying files, so shelving is a perfect way of exposing the files you are working on to your team. Just use the shelve command to upload your local versions. They’ll be assigned a changelist number that can be used to view and diff your shelved files. In fact, reviewers can even unshelve your files into their own workspaces if they want.
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+* See more at: http://www.perforce.com/blog/091209/shelving-pretty-darn-useful#sthash.kwWM17W1.dpuf[http://www.perforce.com/blog/091209/shelving-pretty-darn-useful#sthash.kwWM17W1.dpuf^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+
+Here is a video introducing the feature : http://www.perforce.com/resources/tutorials/shelving-operations-p4v[http://www.perforce.com/resources/tutorials/shelving-operations-p4v^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+
+This feature is interesting as it allows me to:
+
+* persist snapshot of work in progress
+* post code for other to review and try out in their own workspace
+* moving code to another workspace
+* and especially for validating builds on other platform
+** especially in our jenkins Continuous integration server
+
+However, it’s worth mentioning there are a few limitations, in shelving:
+
+* there is no version history maintained
+* a set of shelved files is always associated with one single changelist
+* Perforce shelving is not currently supported by the perforce jenkins plugin, yet, cf. https://issues.jenkins-ci.org/browse/JENKINS-7436[JENKINS-7436^image:/images/icons/linkext7.gif[image,width=7,height=7]^].
+
+However Ross Aribi posted a nice work-around in the https://issues.jenkins-ci.org/browse/JENKINS-7436?page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel&focusedCommentId=158883#comment-158883[comment^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+
+The trick is
+
+* to use a parameterized build plugin
+* to inject the changelist you want to get the shelved files from in the parameter of the job
+* to add a shell execution pre-build step just after the scm spec to trigger the perforce shelving:
++
+[width="100%",cols="100%",]
+|=============================================================================================================================================
+a|
+`# Unshelve ``if` `true`
+
+`if` `[ $SHELVED_CHANGELIST != ``""` `] ; then ( echo ``"User specified a shelved changelist, unshelving changelist ($SHELVED_CHANGELIST)"``;`
+
+`p4 unshelve -f -s $SHELVED_CHANGELIST ${sourceCodePath};`
+
+`)`
+
+`else` `(`
+
+`echo ``"Not running with a shelved changelist"``; ); fi`
+
+`Now revert unshelve but KEEP the files locally`
+
+`p4 revert -k ${sourceCodePath}`
+
+|=============================================================================================================================================
+
+Note that :
+
+* I let jenkins create and manage the workspace so I don’t have to mess up with the environment variables that the p4 command leverages (P4PORT, P4CLIENT, P4USER)
+* I added the following options to my perforce jenkins workspace: `allwrite unlocked nomodtime rmdir`<
+* The above p4 unshelve -f flag forces the clobbering of any writeable but unopened files that are being unshelved.
+* The -s flag specifies the number of the pending changelist that contains the shelved files.
+
+With the above, I can now:
+
+* experiment and validate my build and devops scripts in a jenkins sandbox job where I can inject the shelved files I worked on without interfering with the main delivery line
+* have my dev colleagues experimenting this new scripts in their workspace as they wish
+* get proper and mature, code review
+
+Here, with such a job, we have a way for anybody in the team to test his work, his change-list through a jenkins job, before submitting it. Nice isn’t it?

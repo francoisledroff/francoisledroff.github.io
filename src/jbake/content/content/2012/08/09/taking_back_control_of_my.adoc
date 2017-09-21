@@ -1,0 +1,57 @@
+=  Taking back control of my android phones, rooting, cyanogenMod and security ramblings...
+Francois Le Droff
+2012-08-09
+:jbake-type: post
+:jbake-tags:  IT 
+:jbake-status: published
+:source-highlighter: prettify
+
+I’ve been the happy owner of a htc nexus one for a couple of years now, but I recently broke its screen. +
+I had a spare htc, a desire Z, but I was reluctant to switch phone,
+
+What if I could have "__native theming support, Free Lossless Audio Codec (FLAC) support, a large Access Point Name list, an OpenVPN client, an enhanced reboot menu, support for Wi-Fi, Bluetooth, and USB tethering, CPU overclocking and performance enhancements, soft buttons and other ``tablet tweaks'', toggles in the notification pull-down (such as Wi-Fi, Bluetooth and GPS), app permissions management, as well as other interface enhancements and no pre-installed spyware or bloatware and finally increase performance and reliability compared with [line-through]*official* proprietary firmware releases__"
+
+Then, may be, I would ``desire'' this htc phone a bit more.
+
+So I decided to give *http://www.cyanogenmod.com/[CyanogenMod]* a try.
+
+Here are the steps I went through
+
+* I downgraded my desire Z from its Gingerbread firmware, following the instructions from :http://wiki.cyanogenmod.com/wiki/HTC_Desire_Z:_Firmware_Downgrade_%28Gingerbread)[the cyanogenmod wiki])
+** using the following firmware image http://omnimist.org/android/files/Vision_DZ_1.34.405.5_PC10IMG.zip[http://omnimist.org/android/files/Vision_DZ_1.34.405.5_PC10IMG.zip^image:/images/icons/linkext7.gif[image,width=7,height=7]^] (disovered in http://forum.frandroid.com/topic/64258-tuto-comment-rooter-downgrader-le-build-172-ou-et-s-off/[http://forum.frandroid.com/topic/64258-tuto-comment-rooter-downgrader-le-build-172-ou-et-s-off/^image:/images/icons/linkext7.gif[image,width=7,height=7]^])
+* Then I went through the flawless rooting process : http://wiki.cyanogenmod.com/wiki/HTC_Desire_Z:_Rooting[http://wiki.cyanogenmod.com/wiki/HTC_Desire_Z:_Rooting^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+** using the recovery http://wiki.cyanogenmod.com/wiki/Howto:_Using_the_Recovery[http://wiki.cyanogenmod.com/wiki/Howto:_Using_the_Recovery^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+*** through a simple adb command
++
+[source,code-java]
+----
+adb reboot recovery
+----
+* Once the phone rooted installing the latest supported CyanogenMod build is pretty straightforward : http://wiki.cyanogenmod.com/wiki/HTC_Vision:_CyanogenMod[http://wiki.cyanogenmod.com/wiki/HTC_Vision:_CyanogenMod^image:/images/icons/linkext7.gif[image,width=7,height=7]^]
+
+I liked was I saw, and the google account restore mechanism was pretty impressive and transparent, all my nexus one contacts and photos were restored on desire Z (same with a few other applications that were designed with cloud-based transparent restore mechanism)
+
+So I decided to give a try on my Nexus one too. Again the cyanogenmod wiki made it easy, I just followed http://wiki.cyanogenmod.com/wiki/Nexus_One:_Full_Update_Guide[http://wiki.cyanogenmod.com/wiki/Nexus_One:_Full_Update_Guide^image:/images/icons/linkext7.gif[image,width=7,height=7]^] (I choosed the Amon_Ra’s Recovery this time), the only difference was te adb reboot command did not seem to work, I had to click a bit more on the phone to get through the proper menu (here is nice How to video http://www.youtube.com/watch?v=Ez_qQshrZjo[http://www.youtube.com/watch?v=Ez_qQshrZjo^image:/images/icons/linkext7.gif[image,width=7,height=7]^])
+
+Unfortunately, just a few days ago, the CyanogenMod team decided to stop supporting those devices of mine. Their https://plus.google.com/117962666888533781522/posts/MRnnvs3oFUF[Google+ annoucement^image:/images/icons/linkext7.gif[image,width=7,height=7]^] was a disappointment to the community but not a surprise.
+
+There are still a few non official version worth giving a try, I personally found one for my htc desire Z here : http://forum.xda-developers.com/showthread.php?t=1492461[http://forum.xda-developers.com/showthread.php?t=1492461^image:/images/icons/linkext7.gif[image,width=7,height=7]^] upgrading my phone to Ice Cream Sandwich, android 4.0.4.
+
+So here are my 2 phones now, I still don’t know if I want switch my SIM card from the nexus one to the desire Z image:/images/icons/emoticons/smile.gif[image,width=20,height=20]
+
+image:http://www.jroller.com/francoisledroff/resource/sans%20titre-1650.jpg[image]
+
+I’m still wondering what to think of those unofficial firmware found in the deep internet sea, They certainly could contain malware/spyware/trojan, there is not much way for a non specialist like me to find out. +
+Would a antivirus like avast find it ?
+
+Now I have rooted my phones, the good news is I can get the full fledge anti-theft feature such as the one offered by avast antivirus app http://www.avast.com/en-us/free-mobile-security[http://www.avast.com/en-us/free-mobile-security^image:/images/icons/linkext7.gif[image,width=7,height=7]^].
+
+what about you ?
+
+* Did you root your android phone ?
+* What apps did you install now you have root ? (Droidsheep, Titanium Backup, Arpspoof, AdFree … ?)
+* Did yo give cyanogenmod a try ?
+* Do you update your firmware using unofficial zips found on random pages/forums ?
+* Do you use an anti-virus ?
+* Did you secure your phone with a anti theft app?
+** Did it proove to work ?

@@ -1,0 +1,34 @@
+=  PJBUG: JBoss Clustering
+Francois Le Droff
+2006-02-03
+:jbake-type: post
+:jbake-tags:  JBoss 
+:jbake-status: published
+:source-highlighter: prettify
+
+Mercredi dernier, 1er février, avait lieu la 2ème réunion du http://www.paris-jbug.org/[Paris JBoss User Group (PJBUG)] à l’occasion du salon http://www.solutionslinux.fr/[Solutions Linux 2006 !].
+
+Le désormais http://www.lexpress.fr/reussir/dossier/recrutement/dossier.asp?ida=436741[médiatique] Raphael – http://solutions.journaldunet.com/0602/060201_choisir-produit-open-source.shtml[intervenant lui ausssi au salon linux] pour présenter http://jroller.com/page/francoisledroff/?anchor=qsos_est_d%C3%A9sormais_sous_licence[qsos] – nous a rappelé les http://parisjbug.free.fr/intro.html[objectifs] du groupe fraîchement formé, avant de laisser le micro à Luc Texier de chez JBoss.
+
+Luc nous a présenté les solutions JBoss Enterprise Middleware System (JEMS) de clustering et http://www.jboss.org/wiki/Wiki.jsp?page=JBossHA[haute-disponibilité] basé sur:
+
+* http://www.jgroups.org[JGroups]
+* http://www.jboss.org/products/jbosscache[JBossCache]
+* HAServices
+* http://wiki.jboss.org/wiki/Wiki.jsp?page=JBossHAJNDIImpl[HAJndi]
+
+image:http://www.jroller.com/resources/f/francoisledroff/jboss-cluster-overview.png[image,width=700]
+
+Le dessin ci-dessous nous montre bien la nouvelle architecture en couche de JBoss Clustering. La force de cette archi : chaque niveau de cette couche est livrée et gérée independamment. Les couches de bas niveau, JGroups et JBossCache sont annoncées comme étant particulièrement stables. Ce sont d’ailleurs de simple fichiers jars qui peuvent être utilisés dans d’autres contextes.
+
+A noter également: Farming : une solution de redéploiement à chaud, à utiliser avec toutes les précautions qu’un déploiement induisent (haute dispo, perte de session …).
+
+image:http://www.jroller.com/resources/f/francoisledroff/jboss-cluster-releases.png[image,width=700]
+
+Voici ci-dessus le roadmap que Luc nous a présenté… un peu flou, je l’ai rerouvé http://jboss.org/jbossBlog/blog/?month=9&day=6&year=2005[ici].
+
+Ce que j’en ai retenu: pour l’instant JBossCache (basé sur JGroups) gère le cache au niveau HttpSession, les EJB stateful et HA-JNDI. La replication ``fine grained'' est pour l’instant en beta avec JBossCacheAOP. Le cache du côté EJB viendra avec EJB3-Hibernate.
+
+Cette réunion était intéressante, Luc et Raphael ont bien fait les choses, tout cela dans une bonne ambiance. De nombreuses question réponses. Une question reste sans réponse cependant: quelqu’un a-t-il déja déployé Clustered JDBC : http://c-jdbc.objectweb.org/[c-jdbc]/ https://forge.continuent.org/projects/sequoia/[sequoia] en production ?
+
+Mais l’ordre du jour http://www.jaib.org/content/view/26/1/[annoncé] était un peu différent, il n’y a donc pas eu de réelle discussion sur la performance, toujours fortement lié à l’utilisation de cache et de cluster. Heureusement pour moi, j’ai retrouvé plusieurs collègues à la réunion, dont http://julien.dubois.free.fr/[Julien] qui m’a donné quelques billes sur http://jroller.com/page/julien.dubois?entry=ejb_performance_with_jboss[les configurations Cache et read-only sur en EJB 2.1 CMP]. C’est en effet http://jroller.com/page/francoisledroff/?anchor=p6spy_integration_in_jboss_do[un] http://jroller.com/page/francoisledroff/?anchor=death_to_the_jboss_transaction[sujet] chaud http://www.jboss.org/index.html?module=bb&op=viewtopic&p=3919982[pour moi] http://jroller.com/page/francoisledroff/?anchor=jboss_transaction_configuration[depuis quelques semaines]. Il va aussi me falloir me faire une petite idée sur http://www.onjava.com/pub/a/onjava/2002/07/10/jboss.html?page=1[les solutions de clustering sur cette vieille version de jboss] qui m’est imposée par le client.

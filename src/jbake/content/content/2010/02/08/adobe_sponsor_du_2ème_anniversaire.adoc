@@ -1,0 +1,13 @@
+=  Adobe sponsor du 2ème anniversaire du ParisJUG
+Francois Le Droff
+2010-02-08
+:jbake-type: post
+:jbake-tags:  General 
+:jbake-status: published
+:source-highlighter: prettify
+
+Un petit rappel, le http://www.parisjug.org/xwiki/bin/view/Meeting/20100209[2eme anniversaire du ParisJUG] c’est demain, mardi 9 février !
+
+image:http://jroller.org/francoisledroff/resource/Fx_DUKE-small.jpg[image]
+
+Et Adobe France est fier d’en être sponsor.

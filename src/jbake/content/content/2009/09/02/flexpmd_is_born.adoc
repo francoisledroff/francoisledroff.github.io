@@ -1,0 +1,42 @@
+=  FlexPMD is born
+Francois Le Droff
+2009-09-02
+:jbake-type: post
+:jbake-tags:  Adobe, Project, Flex, FlexPMD
+:jbake-status: published
+:source-highlighter: prettify
+
+Voila déjà plusieurs mois que je vous parle de FlexPMD. Et bien ça y est! enfin! Mon collègue Xavier et avec lui, tous les autres *contributeurs de "__Adobe Technical Service Organization__"* sont enfin en mesure de vous annoncer la naissance de http://blogs.adobe.com/xagnetti/2009/09/flexpmd_release_on_opensourcea.html[FlexPMD].
+
+*Ce projet est hébergé sur http://opensource.adobe.com/wiki/display/flexpmd/FlexPMD[opensource.adobe.com] sous license http://opensource.adobe.com/wiki/display/flexpmd/License[BSD].*
+
+Comme son nom l’indique, **ce projet suit la trace de http://pmd.sourceforge.net/[PMD] pour Java**, l’idée est donc de:
+
+* détecter des ``pattern'' et ``anti-pattern'' dans l’arbre syntaxique du code ActionScript et MXML
+** définir ces patterns et anti-pattern dans des règles FlexPMD
+* pouvoir automatiser cette détection à travers le build (ou les outils de développement)
+* pouvoir créer facilement des ensembles de règles (des ``rulesets'') spécifiques aux besoins et aux contraintes de vos projets
+** et ensuite surveiller le respect de ces règles de façon automatique et systématique
+
+**FlexPMD dans cette première mouture vient avec 82 règles**, ces règles vous permettront de réaliser l’audit de code Flex à la recherche de
+
+* code mort
+* méthodes à haute complexité cyclomatique
+* de mauvaise pratique architecturale
+** dans l’utilisation de cairngorm
+** dans la gestion d’évènement
+** dans le référencement de composants visuels dans les modèles
+** ou de mauvaise encapsulation
+* et bien plus…
+
+Je vous invite donc à l’essayer et :
+
+* à créer vous même votre sous ensemble de règle à travers le http://opensource.adobe.com/svn/opensource/flexpmd/bin/flex-pmd-ruleset-creator.html[flex-pmd-ruleset-creator]
+* à intégrer FlexPMD dans votre build ( ant ou *maven* )
+** à utiliser Hudson pour réaliser des rapports FlexPMD (grâce à son plugin PMD)
+
+image:http://francois.le.droff.com/xwiki/bin/download/Geek/FlexPMD/white026.jpg[image] *Nous attendons aussi vos http://opensource.adobe.com/wiki/display/flexpmd/Developer+documentation[contributions]*
+
+Heureuse coïncidence, j’ai le plaisir de co-présenter avec http://88.191.25.234/wordpress/[Romain] (contributeur http://pmd.sourceforge.net/[PMD] et http://xradar.sourceforge.net/[XRadar]) au prochain http://www.parisjug.org[ParisJUG] : nous vous donnerons un petit http://www.parisjug.org/xwiki/bin/view/Meeting/20090915[tour d’horizon des outils open source de contrôle qualité]. *J’aurai donc l’opportunité de vous en reparler mardi au ParisJUG!*
+
+*Longue vie à FlexPMD* ( et à ses grands frères PMD, XRadar, et Sonar …) !

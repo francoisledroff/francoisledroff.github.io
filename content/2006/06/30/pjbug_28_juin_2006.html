@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Francois Le Droff: PJBUG - 28 Juin 2006</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">    
+
+    <!-- Le styles -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/asciidoctor.css" rel="stylesheet">
+    <link href="/css/base.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="favicon.ico">
+    </head>
+  <body>
+
+
+    <div id="wrap">
+	
+	<!-- Fixed navbar -->
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="container">
+	    <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Francois Le Droff 's Blog</a>
+	    </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">                
+                <li><a href="/about.html">About</a></li>
+
+                <li><a href="/archive.html">Archive</a></li>
+
+
+		            <li><a href="/conferences.html">Conferences</a></li>
+
+                <!--
+		            <li class="dropdown">
+          		      <a data-toggle="dropdown" href="#">Topics<b class="caret"></b></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="/tags/Java.html">Java</a></li>
+                    <li><a href="/tags/OpenSource.html">OpenSource</a></li>
+                    <li><a href="/tags/Misc.html">Misc</a></li>
+                  </ul>
+	              </li>
+	              -->
+
+
+                <li><a href="/feed.xml">Feed</a></li>
+
+                <!--
+                <li><a href="/projects.html">Projects</a></li>
+                -->
+
+              </ul>
+	      <ul class="nav navbar-nav navbar-right">
+	      	<li><a href="https://github.com/francoisledroff"><i class="fa fa-github"></i></a></li>
+	        <li><a href="https://twitter.com/francoisledroff"><i class="fa fa-twitter"></i></a>
+	      </ul>
+            </div>
+          </div>
+      </div>
+      <div class="container">
+	
+	<div class="page-header">
+		<h1>PJBUG - 28 Juin 2006</h1>
+    <p class="credit">
+      First published on June 30 2006
+      and tagged 
+    <a href="/tags/JBoss.html">JBoss . </a>
+		</p>
+	</div>
+
+	<p><div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>La dernière réunion du Paris JBoss User Group a eu lieu, mercredi dernier. voici un <strong class="line-through">petit compte rendu rapide</strong>, mes notes en vrac:</p>
+</div>
+<div class="paragraph">
+<p>Au programme de cette 3eme session:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Jean-Marie Lapeyre (le directeur technique du programme COPERNIC de refonte du système d’information fiscal) avec un retour sur la campagne 2006 de télédéclaration des impôts qui tourne sur JBoss !</p>
+</li>
+<li>
+<p><a href="http://parisjbug.free.fr/interviews/20051223Heute.html">Thomas Heute (JBoss Inc.)</a> avec une présentation sur le framework <a href="http://www.jboss.com/products/seam">JBoss Seam</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="retour-sur-la-campagne-2006-de-télédélaration-des-impôts">link:[retour sur la campagne 2006 de télédélaration des impôts]</h4>
+<div class="paragraph">
+<p>Fort de son <a href="http://jroller.com/page/francoisledroff/?anchor=bravo_%C3%A0_xwiki">Lutéce d’or</a>, Jean-Marie Lapeyre nous a fait un retour à chaud et sans langue de bois sur la a campagne 2006 de télédéclaration des impôts qui tournait (pour la première année) sous JBoss. Voici mes notes :</p>
+</div>
+<div class="paragraph">
+<p>l’archi logicielle mise en oeuvre: architecture SOA mais sans JTA (pas de 2 Phase Commit / XA), et sans ESB.</p>
+</div>
+<div class="paragraph">
+<p>l’archi système: 200 serveurs avec 2,5 CPU en moyenne par machine. Parmi eux 150 serveurs JBoss tournant sous Linux. Parmi eux, dédié à la télédéclaration il y avait 7 unité de traitement, composée chacune de 3 serveur apache et 6 Jboss. 5 Millions d’euros de matériel dans les salles serveurs !!</p>
+</div>
+<div class="paragraph">
+<p>la charge : 5,7 millions de télédéclarations. Comme l’année dernière les français ont choisi la dernière minute pour télédéclarer leur impots. Cette année, la France était découpée en 3 zones, avec chacune une date limite différente. Le record de charge restent ainsi celui de 2005 entre 23h30 et minuit, le dernier, dernier jour.</p>
+</div>
+<div class="paragraph">
+<p>La gestion de cette charge ? un maximum de 33500 sessions simultanées était prévu, une fois ce chiffre atteint, un système de délestage et de réservation était prévu. Il n’a pas été utilisé, le nombre maximum de session constaté étant de 26000.</p>
+</div>
+<div class="paragraph">
+<p>le support JBoss : Il a été réalisé par Atos Origin Open Source Center et JBoss. Jean-Marie Lapeyre a insisté sur le fait que l’équipe de support s’est montrée particulièrement efficace. (ndr: bravo à Gilles et Laurent pour leur patch axis). La télédéclaration fut un succès (cette année).</p>
+</div>
+<div class="paragraph">
+<p>la politique open-source de la DGI:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Pourquoi l’Open Source ? Principalement pour garder indépendance et maitrise : ``je change de version quand je veux''.</p>
+</li>
+<li>
+<p>et JBoss ? Le choix vient d’un appel d’offre et d’un bench. La version de JBoss utilisée par la DGI est la version 3.2.5 patchée DGI. Ces patchs ont été reversés à la communauté. Cela fesait d’ailleurs partie des pré-requis de la prestation de support JBoss. Le SI de la DGI envisage même de reverser à la communauté OS de Java quelques contributions originales.</p>
+</li>
+<li>
+<p>et les autres OSS ? Linux entre autre! le SI de la DGI utilise plus de 170 soft open-source ! Les quelques logiciels propriétaires subsistant sont Oracle, et Rational. (Et Lotus Note et Office pour la bureautique).</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="jboss-seam">link:[JBoss Seam]</h4>
+<div class="paragraph">
+<p>JBoss a annoncé la première release 1.0 de Seam.</p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.jboss.com/products/seam">Seam</a> a été pensé pour ``éliminer la complexité tant au niveau de l’architecture que de l’interface de programmation (API)''. C’est avant tout glue/le chainon manquant/la plomberie entre EJB3 et JSF. Seam <strong class="line-through">implémente le</strong> est à l’origine du <a href="http://www.jcp.org/en/jsr/detail?id=299">JSR 299</a> Il se base sur l’utilisation de POJO et des annotations (conformément à l’évolution de Java EE 5) et d’EJB statefull (très bien défendu par Thomas: la gestion de cache inévitable en stateless est souvent bien plus coûteuse), il offre ainsi :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>réduction des fichiers XML dans une application Web.</p>
+</li>
+<li>
+<p>intégration JSF et EJB3 (<a href="http://www.jcp.org/en/jsr/detail?id=299">JSR 299</a>)</p>
+</li>
+<li>
+<p>nouveaux contextes et scopes: conversation et processus métier (annotations)</p>
+</li>
+<li>
+<p>intégration de flux de pages (pageflows)</p>
+</li>
+<li>
+<p>intégration de jBPM (business process)</p>
+</li>
+<li>
+<p>intégration d’AJAX (Facelets, JBoss Remoting)</p>
+</li>
+<li>
+<p>intégration avec Tomcat (même sans EJB3, avec hibernate)</p>
+</li>
+<li>
+<p>facilité de test (TestNG)</p>
+</li>
+</ul>
+</div>
+</div></p>
+
+<hr/>
+
+
+    
+    <div id="footer">
+
+      <div class="container">
+
+        <p class="credit">
+        Published with
+        a <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/"><em>Creative Commons by-nc-sa</em> license</a>,
+          mixed with <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>,
+          baked with <a href="http://jbake.org">JBake v2.5.1</a>
+
+	      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/fr/">
+        <img alt="Creative Commons License" style="border-width:0"
+	      src="http://i.creativecommons.org/l/by-nc-sa/2.0/fr/80x15.png"/></a>
+
+         </p>
+      </div>
+    </div>
+    
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/jquery-1.9.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+
+  </body>
+</html>

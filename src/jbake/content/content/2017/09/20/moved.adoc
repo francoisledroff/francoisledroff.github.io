@@ -1,0 +1,10 @@
+=  Moved
+Francois Le Droff
+2017-09-20
+:jbake-type: post
+:jbake-tags: Misc
+:jbake-status: published
+
+I just moved this blog from http://francoisledroff.github.io/blog to http://francoisledroff.github.io .
+
+

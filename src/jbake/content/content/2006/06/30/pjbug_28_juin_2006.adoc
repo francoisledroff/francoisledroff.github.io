@@ -1,0 +1,53 @@
+=  PJBUG - 28 Juin 2006
+Francois Le Droff
+2006-06-30
+:jbake-type: post
+:jbake-tags:  JBoss
+:jbake-status: published
+:source-highlighter: prettify
+
+La dernière réunion du Paris JBoss User Group a eu lieu, mercredi dernier. voici un [line-through]*petit compte rendu rapide*, mes notes en vrac:
+
+Au programme de cette 3eme session:
+
+* Jean-Marie Lapeyre (le directeur technique du programme COPERNIC de refonte du système d’information fiscal) avec un retour sur la campagne 2006 de télédéclaration des impôts qui tourne sur JBoss !
+* http://parisjbug.free.fr/interviews/20051223Heute.html[Thomas Heute (JBoss Inc.)] avec une présentation sur le framework http://www.jboss.com/products/seam[JBoss Seam]
+
+[[retour-sur-la-campagne-2006-de-télédélaration-des-impôts]]
+link:[retour sur la campagne 2006 de télédélaration des impôts]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Fort de son http://jroller.com/page/francoisledroff/?anchor=bravo_%C3%A0_xwiki[Lutéce d’or], Jean-Marie Lapeyre nous a fait un retour à chaud et sans langue de bois sur la a campagne 2006 de télédéclaration des impôts qui tournait (pour la première année) sous JBoss. Voici mes notes :
+
+l’archi logicielle mise en oeuvre: architecture SOA mais sans JTA (pas de 2 Phase Commit / XA), et sans ESB.
+
+l’archi système: 200 serveurs avec 2,5 CPU en moyenne par machine. Parmi eux 150 serveurs JBoss tournant sous Linux. Parmi eux, dédié à la télédéclaration il y avait 7 unité de traitement, composée chacune de 3 serveur apache et 6 Jboss. 5 Millions d’euros de matériel dans les salles serveurs !!
+
+la charge : 5,7 millions de télédéclarations. Comme l’année dernière les français ont choisi la dernière minute pour télédéclarer leur impots. Cette année, la France était découpée en 3 zones, avec chacune une date limite différente. Le record de charge restent ainsi celui de 2005 entre 23h30 et minuit, le dernier, dernier jour.
+
+La gestion de cette charge ? un maximum de 33500 sessions simultanées était prévu, une fois ce chiffre atteint, un système de délestage et de réservation était prévu. Il n’a pas été utilisé, le nombre maximum de session constaté étant de 26000.
+
+le support JBoss : Il a été réalisé par Atos Origin Open Source Center et JBoss. Jean-Marie Lapeyre a insisté sur le fait que l’équipe de support s’est montrée particulièrement efficace. (ndr: bravo à Gilles et Laurent pour leur patch axis). La télédéclaration fut un succès (cette année).
+
+la politique open-source de la DGI:
+
+* Pourquoi l’Open Source ? Principalement pour garder indépendance et maitrise : ``je change de version quand je veux''.
+* et JBoss ? Le choix vient d’un appel d’offre et d’un bench. La version de JBoss utilisée par la DGI est la version 3.2.5 patchée DGI. Ces patchs ont été reversés à la communauté. Cela fesait d’ailleurs partie des pré-requis de la prestation de support JBoss. Le SI de la DGI envisage même de reverser à la communauté OS de Java quelques contributions originales.
+* et les autres OSS ? Linux entre autre! le SI de la DGI utilise plus de 170 soft open-source ! Les quelques logiciels propriétaires subsistant sont Oracle, et Rational. (Et Lotus Note et Office pour la bureautique).
+
+[[jboss-seam]]
+link:[JBoss Seam]
+^^^^^^^^^^^^^^^^^
+
+JBoss a annoncé la première release 1.0 de Seam.
+
+http://www.jboss.com/products/seam[Seam] a été pensé pour ``éliminer la complexité tant au niveau de l’architecture que de l’interface de programmation (API)''. C’est avant tout glue/le chainon manquant/la plomberie entre EJB3 et JSF. Seam [line-through]*implémente le* est à l’origine du http://www.jcp.org/en/jsr/detail?id=299[JSR 299] Il se base sur l’utilisation de POJO et des annotations (conformément à l’évolution de Java EE 5) et d’EJB statefull (très bien défendu par Thomas: la gestion de cache inévitable en stateless est souvent bien plus coûteuse), il offre ainsi :
+
+* réduction des fichiers XML dans une application Web.
+* intégration JSF et EJB3 (http://www.jcp.org/en/jsr/detail?id=299[JSR 299])
+* nouveaux contextes et scopes: conversation et processus métier (annotations)
+* intégration de flux de pages (pageflows)
+* intégration de jBPM (business process)
+* intégration d’AJAX (Facelets, JBoss Remoting)
+* intégration avec Tomcat (même sans EJB3, avec hibernate)
+* facilité de test (TestNG)

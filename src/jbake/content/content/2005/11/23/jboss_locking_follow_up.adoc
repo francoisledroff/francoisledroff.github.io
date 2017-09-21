@@ -1,0 +1,18 @@
+=  JBoss Locking (follow-up)
+Francois Le Droff
+2005-11-23
+:jbake-type: post
+:jbake-tags:  JBoss 
+:jbake-status: published
+:source-highlighter: prettify
+
+Here is a follow up from my last article based on a e.mail exchange I had with http://jboss.org/jbossBlog/blog/jviet/[Julien].
+
+The framework we currently use (http://www.werum.com/en/il/jcoffee/index.jsp[JCoffee]) is indeed managing by itself optimistic locking - by using a compulsory version field to the CMP -. It does not rely on jboss locking features. The editor vision is indeed to be application server vendor independent. [update: nice vison, technically impossible though… cf. comments]
+
+As Julien pointed me out:
+
+* http://wiki.jboss.org/wiki/Wiki.jsp?page=CMPLocking[Jboss does manage optimistic locking]
+* Jboss also supports REPEATABLE_READ transaction isolation level for the ``Instance Per Transaction policy'', forcing the CMP engine to perform ``SELECT FOR UPDATE'' queries.
+
+But beware, according to what I just http://www.google.fr/search?q=%22select+for+update%22+REPEATABLE_READ+SELECT+DISTINCT+oracle&btnG=Rechercher&meta=[read] Oracle (and Postgres) only support using FOR UPDATE for queries that do not include SELECT DISTINCT.

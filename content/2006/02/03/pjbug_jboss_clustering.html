@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Francois Le Droff: PJBUG: JBoss Clustering</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">    
+
+    <!-- Le styles -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/asciidoctor.css" rel="stylesheet">
+    <link href="/css/base.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="favicon.ico">
+    </head>
+  <body>
+
+
+    <div id="wrap">
+	
+	<!-- Fixed navbar -->
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="container">
+	    <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Francois Le Droff 's Blog</a>
+	    </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">                
+                <li><a href="/about.html">About</a></li>
+
+                <li><a href="/archive.html">Archive</a></li>
+
+
+		            <li><a href="/conferences.html">Conferences</a></li>
+
+                <!--
+		            <li class="dropdown">
+          		      <a data-toggle="dropdown" href="#">Topics<b class="caret"></b></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="/tags/Java.html">Java</a></li>
+                    <li><a href="/tags/OpenSource.html">OpenSource</a></li>
+                    <li><a href="/tags/Misc.html">Misc</a></li>
+                  </ul>
+	              </li>
+	              -->
+
+
+                <li><a href="/feed.xml">Feed</a></li>
+
+                <!--
+                <li><a href="/projects.html">Projects</a></li>
+                -->
+
+              </ul>
+	      <ul class="nav navbar-nav navbar-right">
+	      	<li><a href="https://github.com/francoisledroff"><i class="fa fa-github"></i></a></li>
+	        <li><a href="https://twitter.com/francoisledroff"><i class="fa fa-twitter"></i></a>
+	      </ul>
+            </div>
+          </div>
+      </div>
+      <div class="container">
+	
+	<div class="page-header">
+		<h1>PJBUG: JBoss Clustering</h1>
+    <p class="credit">
+      First published on February 03 2006
+      and tagged 
+    <a href="/tags/JBoss.html">JBoss . </a>
+		</p>
+	</div>
+
+	<p><div class="paragraph">
+<p>Mercredi dernier, 1er février, avait lieu la 2ème réunion du <a href="http://www.paris-jbug.org/">Paris JBoss User Group (PJBUG)</a> à l’occasion du salon <a href="http://www.solutionslinux.fr/">Solutions Linux 2006 !</a>.</p>
+</div>
+<div class="paragraph">
+<p>Le désormais <a href="http://www.lexpress.fr/reussir/dossier/recrutement/dossier.asp?ida=436741">médiatique</a> Raphael – <a href="http://solutions.journaldunet.com/0602/060201_choisir-produit-open-source.shtml">intervenant lui ausssi au salon linux</a> pour présenter <a href="http://jroller.com/page/francoisledroff/?anchor=qsos_est_d%C3%A9sormais_sous_licence">qsos</a> – nous a rappelé les <a href="http://parisjbug.free.fr/intro.html">objectifs</a> du groupe fraîchement formé, avant de laisser le micro à Luc Texier de chez JBoss.</p>
+</div>
+<div class="paragraph">
+<p>Luc nous a présenté les solutions JBoss Enterprise Middleware System (JEMS) de clustering et <a href="http://www.jboss.org/wiki/Wiki.jsp?page=JBossHA">haute-disponibilité</a> basé sur:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://www.jgroups.org">JGroups</a></p>
+</li>
+<li>
+<p><a href="http://www.jboss.org/products/jbosscache">JBossCache</a></p>
+</li>
+<li>
+<p>HAServices</p>
+</li>
+<li>
+<p><a href="http://wiki.jboss.org/wiki/Wiki.jsp?page=JBossHAJNDIImpl">HAJndi</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="http://www.jroller.com/resources/f/francoisledroff/jboss-cluster-overview.png" alt="image" width="700"></span></p>
+</div>
+<div class="paragraph">
+<p>Le dessin ci-dessous nous montre bien la nouvelle architecture en couche de JBoss Clustering. La force de cette archi : chaque niveau de cette couche est livrée et gérée independamment. Les couches de bas niveau, JGroups et JBossCache sont annoncées comme étant particulièrement stables. Ce sont d’ailleurs de simple fichiers jars qui peuvent être utilisés dans d’autres contextes.</p>
+</div>
+<div class="paragraph">
+<p>A noter également: Farming : une solution de redéploiement à chaud, à utiliser avec toutes les précautions qu’un déploiement induisent (haute dispo, perte de session …).</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="http://www.jroller.com/resources/f/francoisledroff/jboss-cluster-releases.png" alt="image" width="700"></span></p>
+</div>
+<div class="paragraph">
+<p>Voici ci-dessus le roadmap que Luc nous a présenté… un peu flou, je l’ai rerouvé <a href="http://jboss.org/jbossBlog/blog/?month=9&amp;day=6&amp;year=2005">ici</a>.</p>
+</div>
+<div class="paragraph">
+<p>Ce que j’en ai retenu: pour l’instant JBossCache (basé sur JGroups) gère le cache au niveau HttpSession, les EJB stateful et HA-JNDI. La replication ``fine grained'' est pour l’instant en beta avec JBossCacheAOP. Le cache du côté EJB viendra avec EJB3-Hibernate.</p>
+</div>
+<div class="paragraph">
+<p>Cette réunion était intéressante, Luc et Raphael ont bien fait les choses, tout cela dans une bonne ambiance. De nombreuses question réponses. Une question reste sans réponse cependant: quelqu’un a-t-il déja déployé Clustered JDBC : <a href="http://c-jdbc.objectweb.org/">c-jdbc</a>/ <a href="https://forge.continuent.org/projects/sequoia/">sequoia</a> en production ?</p>
+</div>
+<div class="paragraph">
+<p>Mais l’ordre du jour <a href="http://www.jaib.org/content/view/26/1/">annoncé</a> était un peu différent, il n’y a donc pas eu de réelle discussion sur la performance, toujours fortement lié à l’utilisation de cache et de cluster. Heureusement pour moi, j’ai retrouvé plusieurs collègues à la réunion, dont <a href="http://julien.dubois.free.fr/">Julien</a> qui m’a donné quelques billes sur <a href="http://jroller.com/page/julien.dubois?entry=ejb_performance_with_jboss">les configurations Cache et read-only sur en EJB 2.1 CMP</a>. C’est en effet <a href="http://jroller.com/page/francoisledroff/?anchor=p6spy_integration_in_jboss_do">un</a> <a href="http://jroller.com/page/francoisledroff/?anchor=death_to_the_jboss_transaction">sujet</a> chaud <a href="http://www.jboss.org/index.html?module=bb&amp;op=viewtopic&amp;p=3919982">pour moi</a> <a href="http://jroller.com/page/francoisledroff/?anchor=jboss_transaction_configuration">depuis quelques semaines</a>. Il va aussi me falloir me faire une petite idée sur <a href="http://www.onjava.com/pub/a/onjava/2002/07/10/jboss.html?page=1">les solutions de clustering sur cette vieille version de jboss</a> qui m’est imposée par le client.</p>
+</div></p>
+
+<hr/>
+
+
+    
+    <div id="footer">
+
+      <div class="container">
+
+        <p class="credit">
+        Published with
+        a <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/"><em>Creative Commons by-nc-sa</em> license</a>,
+          mixed with <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>,
+          baked with <a href="http://jbake.org">JBake v2.5.1</a>
+
+	      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/fr/">
+        <img alt="Creative Commons License" style="border-width:0"
+	      src="http://i.creativecommons.org/l/by-nc-sa/2.0/fr/80x15.png"/></a>
+
+         </p>
+      </div>
+    </div>
+    
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/jquery-1.9.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+
+  </body>
+</html>

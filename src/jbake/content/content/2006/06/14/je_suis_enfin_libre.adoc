@@ -1,0 +1,74 @@
+=  Je suis enfin libre !
+Francois Le Droff
+2006-06-14
+:jbake-type: post
+:jbake-tags:  OpenSource, Linux
+:jbake-status: published
+:source-highlighter: prettify
+
+[width="100%",cols="50%,50%",]
+|=====================================================================================================================================================================================================================================================================================================================================================================================================
+a|
+Suite à l’acquisition d’un laptop dell D610, j’ai enfin décidé de me basculer de windows vers Linux, ceci pour différentes raisons:
+
+pour être libre (d’esprit)
+
+* pour cesser de m’inquiéter sur la santé de mon système
+* me débarrasser des intrusions, virus, malwares et autres spywares qui sont spécifiques windows
+
+pour être libre (et http://blog.toutantic.net/index.php?2006/03/16/297-amendement-vivendi-adopte[éviter la prison ?])
+
+* pour cesser d’acheter (ou de pirater) les logiciels de protection associés
+* pour être dans mon bon droit, n’avoir que des logiciels légalement installés et ainsi mieux contrôler, combattre et me protéger devant http://blog.toutantic.net/index.php?2006/05/11/333-dadvsi-adopte-au-senat[l’inquiétante montée des DRMs] : ce laptop n’est qu"un premier pas, je veux http://dascritch.net/blog.php/2006/05/30/438-desinfectez-nos-machines[désinfecter toutes mes machines].
+
+pour être libre (au sens geeko-phylo du terme)
+
+* libre au sens liberté, http://www.amazon.com/exec/obidos/ASIN/0596002874/qid=1015511178/sr=1-1/ref=sr_1_1/104-0766464-9890360[Free as in Freedom]
+* et ceci pendant que d’autre s’enferment, cf. http://www.pcinpact.com/actu/news/29352-Matignon-se-verrouille-face-a-Richard-Stallm.htm[Matignon se verrouille face à Richard Stallman]
+
+pour être libre (et savoir)
+
+* pour mourir moins bête, essayer une alternative à windows, acquérir une nouvelle compétence, apprendre, m’amuser
+* pour être enfin à niveau avec mes amis geeks et mes collègues linuxiens d’__Atos Origin Open Source Center__
+
+ |image:http://www.jroller.com/resources/f/francoisledroff/linuxOnLaptop.gif[image]
+|=====================================================================================================================================================================================================================================================================================================================================================================================================
+
+[width="100%",cols="50%,50%",]
+|================================================================================================================================================================================================================================================================================================================================================================================================================================
+|image:http://www.jroller.com/resources/f/francoisledroff/UbuntuStrapLogoSmall.png[UbuntuStrapLogoSmall.png] |Porté par ce désir de liberté, il me fallait vite choisir ma distro Linux. Elle devait à la fois convenir à un usage personnel (particulièrement pour l’édition d’image, audio et vidéo) et professionnel (pour développement java particulièrement). J’ai choisi http://www.ubuntu-fr.org/[ubuntu] (Dapper Drake).
+|================================================================================================================================================================================================================================================================================================================================================================================================================================
+
+Un récent http://www.pcinpact.com/sondages/detail/70.htm[sondage de pcinpact me montre que je suis loin d’être le seul à avoir choisi ubuntu pour un usage personnel]. J’ai également la confirmation de l’engouement mondial pour ubuntu à travers http://www.google.com/trends?q=Ubuntu%2C+RedHat%2C+Debian%2C+Suse%2C+Mandriva&ctab=0&geo=all&date=all[Google trend]. Certains remarqueront la symétrie étonnante des ``tendances'' ubuntu et red hat.
+
+image:http://www.jroller.com/resources/f/francoisledroff/linuxDistroTrends.png[linuxDistroTrends.png]
+
+Le http://www.up.univ-mrs.fr/cgi-veronis/chronologue?mot1=Ubuntu&mot2=RedHat&mot3=Debian&mot4=Suse&mot5=Mandriva&mot6=Fedora&affichage=absolu&debut=01.01.2006&Soumettre=Soumettre[Chronologue] de http://aixtal.blogspot.com/[Jean Véronis] nous donne une autre vue intéressante. Le Chronologue permet de visualiser de façon graphique l’évolution de termes sur le Web francophone au cours du temps (il ne s’agit pas du nombre de requêtes comme pour Google Trend mais du nombre d’apparitions du terme dans les pages elles-mêmes – voir explications http://aixtal.blogspot.com/2005/12/web-la-grippe-aviaire-disparu.html[ici]). On constate le belle montée en force d’unbuntu, et on remarquera l’effet buzz autour de la sortie de ubuntu dapper en Juin et peut-être (?) le mini buzz du http://blog1.lemondeinformatique.fr/ingenierie_logicielle/2006/04/jboss_a_trouv_s.html[rachat de jboss par redhat].
+
+image:http://www.jroller.com/resources/f/francoisledroff/linuxDistroChrono.png[linuxDistroChrono.png]
+
+Me voila donc conforté dans mon choix d’ubuntu pour un usage personnel, mais quid du développement Java ?
+
+* Sun vient justement d’annoncer lors de JavaOne qu’il autorise Java Platform, Standard Edition (Java SE) 5.0 à être distribué aux développeurs GNU/Linux et OpenSolaris sous une nouvelle licence: ``Distro License for Java'' (DLJ). Plus d’info sur http://linuxfr.org/2006/05/17/20827.html[linuxfr.org]
+* Du coup http://www.generation-nt.com/actualites/14947/Sun-pense-a-Ubuntu-pour-ses-futurs-serveurs[Sun pense à Ubuntu pour ses futurs serveurs], rapporte generation-nt.com :
+
+__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+La présence du fondateur d’Ubuntu, le Sud-africain Mark Shuttleworth, à la conférence annuelle JavaOne, renforce encore l’impression que Sun ne compte pas mettre tous ses oeufs dans le même panier. Le PDG de Sun, Jonathan Schwartz, n’a pas tari d’éloges au sujet d’Ubuntu, tandis que Shuttleworth chantait à son tour les louanges de Java.
+__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+* Ubuntu dapper est ainsi le premier linux à sortir un paquet sun java5
++
+image:http://www.jroller.com/resources/f/francoisledroff/java-synaptic-package.png[java-synaptic-package.png]
+* Même le papa de java (d’ailleurs en visite en france à la fin du mois pour http://fr.sun.com/javaday2006/[javaday 2006]) dit http://blogs.sun.com/roller/page/jag?entry=kudos_to_the_ubuntu_team[bravo] à l’équipe d’ubuntu.
+
+Restait alors la compatibilité hardware entre unbuntu, ses drivers et la Dell latitude D610, là encore j’étais vite rassuré, http://rdo.homelinux.org/ubuntu-linux-on-a-dell-latitude-d610[Everything works under Linux ubuntu on that machine]
+
+Et voila ! Cela fait bientôt un mois que j’expérimente ubuntu dapper, je suis très satisfait. Je posterai ici bientôt de nouveaux articles décrivant mes périgrinations sur ubuntu :
+
+* configuration de java, installation de eclipse, tomcat, mysql et xwiki
+* choix et installation de solutions pour éditer, afficher, transférer, gérer photo, video et son
+* gestion de l’ipod video
+
+Stay tuned !
+
+En attendant, je finirai par un *immense merci aux développeurs et initiateurs de Ubuntu !!*
