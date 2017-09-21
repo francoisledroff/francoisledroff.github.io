@@ -4,5 +4,5 @@ The content is rendered using [JBake](http://jbake.org/).
 
 Go to the `src` dir :
 * `jbake -b` to build it
-* `jbake -s` to preview on `localhost`
+* `jbake -s` to preview it on `localhost`
 
