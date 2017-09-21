@@ -30,6 +30,7 @@
 	              -->
 
 
+                <li><a href="/listalltags.html">Tags</a></li>
                 <li><a href="/${config.feed_file}">Feed</a></li>
 
                 <!--

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Francois Le Droff: radeon/ati video driver issue on kubuntu karmic</title>
+    <title>Francois Le Droff</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -25,7 +25,7 @@
 
 
     <div id="wrap">
-	
+
 	<!-- Fixed navbar -->
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
           <div class="container">
@@ -74,92 +74,80 @@
           </div>
       </div>
       <div class="container">
-	
-	<div class="page-header">
-		<h1>radeon/ati video driver issue on kubuntu karmic</h1>
-    <p class="credit">
-      First published on November 20 2009
-      and tagged 
-    <a href="/tags/OpenSource.html">OpenSource . </a>
 
-    <a href="/tags/Linux.html">Linux . </a>
-		</p>
+	<div class="container marketing">
+
+			<h4>Articles Tagged `About` :</h4>
+      </ul>
+
+
+
 	</div>
 
-	<p><div class="paragraph">
-<p>Last night I updated my kunbuntu from dapper to karmic using the GUI (kynaptic). At restart kde was not starting, I ended up with my the terminal mode.</p>
-</div>
-<div class="paragraph">
-<p>I diagnostic-ed it by manually starting the Xserver</p>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>startx</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>I realized the system was complaining about the fglrx driver (I <a href="http://jroller.com/francoisledroff/entry/je_suis_enfin_libre">formerly installed</a> with Dapper on my laptop dell D610) If this happen to you too, you may fix it by doing this :</p>
-</div>
-<div class="paragraph">
-<p>Check first your graphic card name and chipset:</p>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>$ lspci -nn | grep VGA</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>First removes both -fglrx and -ati, and reinstalls the latter:</p>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>sudo apt-get remove --purge fglrx*
-  sudo apt-get remove --purge xserver-xorg-video-ati xserver-xorg-video-radeon
-  sudo apt-get install xserver-xorg-video-ati
-  sudo apt-get install --reinstall libgl1-mesa-glx libgl1-mesa-dri xserver-xorg-core
-  sudo dpkg-reconfigure xserver-xorg</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Then reboot</p>
-</div>
-<div class="paragraph">
-<p>At last edit the xorg.conf file</p>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>sudo vim /etc/X11/xorg.conf</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Look for the above <code>Section Device'' and change the </code>Driver'' from fglrx to ati (I can’t be NOT radeon either). The <code>ati'' driver is a wrapper that will load the </code>radeon'' driver if possible.</p>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>Section "Device"
-        Identifier      "Radeon 9600"
+	<hr>
 
-        Driver          "ati"
-        BusID           "PCI:1:0:0"
-        Option          "XAANoOffscreenPixmaps"
-EndSection</pre>
+<div class="container">
+  <p><b>Tags list:</b></p>
+  <p>
+    <a href="/tags/ossgtp.html">ossgtp . </a>
+	
+    <a href="/tags/All.html">All . </a>
+	
+    <a href="/tags/Maven.html">Maven . </a>
+	
+    <a href="/tags/Perforce.html">Perforce . </a>
+	
+    <a href="/tags/Chef.html">Chef . </a>
+	
+    <a href="/tags/CQ5.html">CQ5 . </a>
+	
+    <a href="/tags/Devoxx.html">Devoxx . </a>
+	
+    <a href="/tags/Adobe.html">Adobe . </a>
+	
+    <a href="/tags/Conference.html">Conference . </a>
+	
+    <a href="/tags/JavaScript.html">JavaScript . </a>
+	
+    <a href="/tags/Books.html">Books . </a>
+	
+    <a href="/tags/QSOS.html">QSOS . </a>
+	
+    <a href="/tags/Java.html">Java . </a>
+	
+    <a href="/tags/JBoss.html">JBoss . </a>
+	
+    <a href="/tags/Javapolis.html">Javapolis . </a>
+	
+    <a href="/tags/FlexPMD.html">FlexPMD . </a>
+	
+    <a href="/tags/Misc.html">Misc . </a>
+	
+    <a href="/tags/XWiki.html">XWiki . </a>
+	
+    <a href="/tags/AEM.html">AEM . </a>
+	
+    <a href="/tags/IT.html">IT . </a>
+	
+    <a href="/tags/About.html">About . </a>
+	
+    <a href="/tags/Jenkins.html">Jenkins . </a>
+	
+    <a href="/tags/Project.html">Project . </a>
+	
+    <a href="/tags/Linux.html">Linux . </a>
+	
+    <a href="/tags/Music.html">Music . </a>
+	
+    <a href="/tags/OpenSource.html">OpenSource . </a>
+	
+    <a href="/tags/Flex.html">Flex . </a>
+	
+    <a href="/tags/General.html">General . </a>
+	
+    <a href="/tags/Cairngorm.html">Cairngorm . </a>
+	</p>
 </div>
-</div>
-<div class="paragraph">
-<p>more here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="https://help.ubuntu.com/community/RadeonDriver#Configuring%20X.org" class="bare">https://help.ubuntu.com/community/RadeonDriver#Configuring%20X.org</a></p>
-</li>
-<li>
-<p><a href="https://wiki.ubuntu.com/X/Troubleshooting/FglrxInteferesWithRadeonDriver" class="bare">https://wiki.ubuntu.com/X/Troubleshooting/FglrxInteferesWithRadeonDriver</a></p>
-</li>
-</ul>
-</div></p>
-
-<hr/>
 
 
     
