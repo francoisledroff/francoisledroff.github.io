@@ -1,9 +1,8 @@
-This is the source for my [blog](http://francoisledroff.github.io/blog/).
-The content is rendered using [JBake](http://jbake.org/) and output is pushed on the gh-pages branch.
+This is the source for my [blog](https://francoisledroff.github.io/).
 
+The content is rendered using [JBake](http://jbake.org/).
 
-* Generating the output: `./gradlew -i jbake`
-* Test a local preview: `groovy serve.groovy`
-* copy the generated output to gh-pages root `cp -rf build/jbake/* ./`
-  * to be replaced by `./gradlew publish` cf https://melix.github.io/blog/2014/02/hosting-jbake-github.html
+Go to the `src` dir :
+* `jbake -b` to build it
+* `jbake -s` to preview on `localhost`
 
