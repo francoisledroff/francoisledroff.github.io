@@ -7,13 +7,13 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">Francois Le Droff 's Blog</a>
+            <a class="navbar-brand" href="/">Francois Le Droff</a>
 	    </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">                
                 <li><a href="/about.html">About</a></li>
 
-                <li><a href="/archive.html">Archive</a></li>
+                <li><a href="/archive.html">Blog</a></li>
 
 
 		            <li><a href="/conferences.html">Conferences</a></li>

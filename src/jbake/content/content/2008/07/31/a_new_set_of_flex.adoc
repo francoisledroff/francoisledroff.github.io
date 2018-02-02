@@ -6,7 +6,7 @@ Francois Le Droff
 :jbake-status: published
 :source-highlighter: prettify
 
-http://code.google.com/p/fna/[Fna] is building up.
+https://code.google.com/archive/p/fna-v2/[Fna] is building up.
 
 Fna is a French Adobe consulting open source initiative/project developed to eliminate the ramp-up time found when building new RIA applications.
 

@@ -4,10 +4,7 @@
 	
 	<div class="page-header">
   <h1>${content.title}</h1>
-  <p class="credit">
-    First published on ${content.date?string("MMMM dd yyyy")}
-  </p>
-	</div>
+  </div>
 
 	<p>${content.body}</p>
 

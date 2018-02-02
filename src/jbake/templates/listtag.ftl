@@ -3,7 +3,7 @@
 <#include "menu.ftl">
 
 <div class="container">
-  <h4>Tags list:</h4>
+  <h4>Tags:</h4>
   <p><#list alltags as tag>
     <a href="/tags/${tag?trim?replace(' ','-')}.html">${tag} . </a>
 	</#list></p>

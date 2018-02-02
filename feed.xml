@@ -6,8 +6,8 @@
     <atom:link href="http://francoisledroff.github.io//feed.xml" rel="self" type="application/rss+xml" />
     <description>Francois Le Droff's Home</description>
     <language>en-gb</language>
-    <pubDate>Thu, 21 Sep 2017 14:49:38 +0200</pubDate>
-    <lastBuildDate>Thu, 21 Sep 2017 14:49:38 +0200</lastBuildDate>
+    <pubDate>Tue, 30 Jan 2018 23:46:39 +0100</pubDate>
+    <lastBuildDate>Tue, 30 Jan 2018 23:46:39 +0100</lastBuildDate>
 
     <item>
       <title>Moved</title>
@@ -3096,7 +3096,7 @@ Cet après-midi de rencontre sera l’occasion d’illustrer l’impact de ces s
 &lt;div class=&quot;ulist&quot;&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;http://fna.googlecode.com/svn/trunk/fna/fna_m2_repository&quot; class=&quot;bare&quot;&gt;http://fna.googlecode.com/svn/trunk/fna/fna_m2_repository&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/francoisledroff/fna-v2&quot; class=&quot;bare&quot;&gt;https://github.com/francoisledroff/fna-v2&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -3197,12 +3197,14 @@ Cet après-midi de rencontre sera l’occasion d’illustrer l’impact de ces s
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;I ended up the session presenting &lt;a href=&quot;http://code.google.com/p/fna/&quot;&gt;fna&lt;/a&gt; &lt;a href=&quot;http://fna.googlecode.com/svn/trunk/fna/site/mvn_archetypes/index.html&quot;&gt;maven archetypes&lt;/a&gt;. I prepared some new fna features for this talk. Those features are still under development but are already available in SNAPSHOT releases :&lt;/p&gt;
+&lt;p&gt;I ended up the session presenting &lt;a href=&quot;https://github.com/francoisledroff/fna-v2&quot;&gt;fna&lt;/a&gt; and its maven archetypes.
+I prepared some new features for this talk.
+Those features are still under development but are already available in SNAPSHOT releases :&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;ulist&quot;&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;I added flexbuilder support to some of my archetypes. (Taking as a start the simpler of &lt;a href=&quot;http://fna.googlecode.com/svn/trunk/fna/site/mvn_archetypes/index.html&quot;&gt;all the fna archetypes&lt;/a&gt;, the &lt;a href=&quot;http://fna.googlecode.com/svn/trunk/fna/site/mvn_archetypes/flex-library-archetype/index.html&quot;&gt;flex-library-archetype&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;I added flexbuilder support to some of my archetypes.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;I also upgraded the archetypes with flexmojos 2.0 support and up to the latest Flex SDK&lt;/p&gt;
@@ -3297,7 +3299,10 @@ Cet après-midi de rencontre sera l’occasion d’illustrer l’impact de ces s
 &lt;p&gt;Ca y est, la nouvelle est tombée (notamment sur l’excellent blog de &lt;a href=&quot;http://coenraets.org/blog/2008/12/adobe-collaborates-with-springsource-for-enhanced-flex-spring-integration/&quot;&gt;Christophe&lt;/a&gt;): SpringSource et Adobe travaillent ensemble pour faciliter et simplifier le développement d’application Flex s’appuyant sur un back-end spring.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Le ou les projets qui vont découler de cette collaboration vont sans doute rendre notre bibliothèque &lt;a href=&quot;http://fna.googlecode.com/svn/trunk/fna/site/flex-contrib-spring/index.html&quot;&gt;flex-contrib-spring&lt;/a&gt; et notre archetype maven &lt;a href=&quot;http://fna.googlecode.com/svn/trunk/fna/site/mvn_archetypes/blazeds-autowired-spring-hibernate-archetype/index.html&quot;&gt;blazeds-autowired-spring-hibernate-archetype&lt;/a&gt; obsolètes.&lt;/p&gt;
+&lt;p&gt;Le ou les projets qui vont découler de cette collaboration vont sans doute rendre notre bibliothèque
+&lt;a href=&quot;https://github.com/francoisledroff/fna-v2/tree/master/flex-contrib-spring&quot;&gt;flex-contrib-spring&lt;/a&gt;
+et notre archetype maven
+&lt;a href=&quot;https://github.com/francoisledroff/fna-v2/tree/master/mvn_archetypes/blazeds-autowired-spring-hibernate-archetype&quot;&gt;blazeds-autowired-spring-hibernate-archetype&lt;/a&gt; obsolètes.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;Mais c’est sans aucun doute pour le meilleur. J’ai hâte de voir les premiers résultats.&lt;/p&gt;
@@ -3358,10 +3363,10 @@ Cet après-midi de rencontre sera l’occasion d’illustrer l’impact de ces s
       <guid isPermaLink="false">content/2008/10/28/a_new_set_of_maven.html</guid>
       	<description>
 	&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;A quick announcement to let you know that Fna’s Maven archetype repository set is getting bigger. Check out the &lt;a href=&quot;http://fna.googlecode.com/svn/trunk/fna/site/index.html&quot;&gt;new Fna project documentation page&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;A quick announcement to let you know that Fna’s Maven archetype repository set is getting bigger.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Here is our current &lt;a href=&quot;http://fna.googlecode.com/svn/trunk/fna/site/mvn_archetypes/index.html&quot;&gt;list of archetypes&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;Here is our current &lt;a href=&quot;https://github.com/francoisledroff/fna-v2/tree/master/mvn_archetypes&quot;&gt;list of archetypes&lt;/a&gt;:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;ulist&quot;&gt;
 &lt;ul&gt;
@@ -3396,10 +3401,10 @@ Cet après-midi de rencontre sera l’occasion d’illustrer l’impact de ces s
 &lt;p&gt;Note that most of the new flex project archetypes make use of Cairngorm and FlexUnit.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;http://fna.googlecode.com/svn/trunk/fna/site/mvn_archetypes/blazeds-autowired-spring-hibernate-archetype/images/max.jpg&quot; alt=&quot;image&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;image:https://github.com/francoisledroff/fna-v2/blob/master/mvn_archetypes/blazeds-autowired-spring-hibernate-archetype/src/site/resources/images/max.jpg&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;The most complex archetype is &lt;a href=&quot;http://fna.googlecode.com/svn/trunk/fna/site/mvn_archetypes/blazeds-autowired-spring-hibernate-archetype/index.html&quot;&gt;blazeds-autowired-spring-hibernate-archetype&lt;/a&gt; that I and Eric Garza will present at MAX San Francisco : &lt;a href=&quot;http://max.adobe.com/na/sessions/browser/#552&quot;&gt;``Flex for Java Architects&apos;&apos;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The most complex archetype is &lt;a href=&quot;https://github.com/francoisledroff/fna-v2/tree/master/mvn_archetypes/blazeds-autowired-spring-hibernate-archetype&quot; class=&quot;bare&quot;&gt;https://github.com/francoisledroff/fna-v2/tree/master/mvn_archetypes/blazeds-autowired-spring-hibernate-archetype&lt;/a&gt; that I and Eric Garza will present at MAX San Francisco : &lt;a href=&quot;http://max.adobe.com/na/sessions/browser/#552&quot;&gt;``Flex for Java Architects&apos;&apos;&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;Blazeds-autowired-spring-hibernate-archetype helps you generate a multi-module maven project : a flex front-end application communicating with the backend through Adobe’s BlazeDS and a spring autowired service. The back-end relies on a spring hibernate architecture.&lt;/p&gt;
@@ -3416,7 +3421,7 @@ Cet après-midi de rencontre sera l’occasion d’illustrer l’impact de ces s
       <guid isPermaLink="false">content/2008/07/31/a_new_set_of_flex.html</guid>
       	<description>
 	&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&lt;a href=&quot;http://code.google.com/p/fna/&quot;&gt;Fna&lt;/a&gt; is building up.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://code.google.com/archive/p/fna-v2/&quot;&gt;Fna&lt;/a&gt; is building up.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;Fna is a French Adobe consulting open source initiative/project developed to eliminate the ramp-up time found when building new RIA applications.&lt;/p&gt;

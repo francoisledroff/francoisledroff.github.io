@@ -32,7 +32,7 @@
 	<hr>
 
 <div class="container">
-  <p><b>Tags list:</b></p>
+  <p><b>Tags</b></p>
   <p><#list alltags as tag>
     <a href="/tags/${tag?trim?replace(' ','-')}.html">${tag} . </a>
 	</#list></p>

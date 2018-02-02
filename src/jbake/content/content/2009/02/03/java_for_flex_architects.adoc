@@ -17,9 +17,11 @@ I had an an hour and half to cover :
 * the latest great features of flash 10
 * and flex, and its ecosystem from a Java developer perspective (mvn framework, testing libraries, building and quality tools, blazeds, lcds)
 
-I ended up the session presenting http://code.google.com/p/fna/[fna] http://fna.googlecode.com/svn/trunk/fna/site/mvn_archetypes/index.html[maven archetypes]. I prepared some new fna features for this talk. Those features are still under development but are already available in SNAPSHOT releases :
+I ended up the session presenting https://github.com/francoisledroff/fna-v2[fna] and its maven archetypes.
+I prepared some new features for this talk.
+Those features are still under development but are already available in SNAPSHOT releases :
 
-* I added flexbuilder support to some of my archetypes. (Taking as a start the simpler of http://fna.googlecode.com/svn/trunk/fna/site/mvn_archetypes/index.html[all the fna archetypes], the http://fna.googlecode.com/svn/trunk/fna/site/mvn_archetypes/flex-library-archetype/index.html[flex-library-archetype])
+* I added flexbuilder support to some of my archetypes.
 * I also upgraded the archetypes with flexmojos 2.0 support and up to the latest Flex SDK
 
 Here is how to give the flex-library-archetype a try, (install maven-2.0.9) and use this command line

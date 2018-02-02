@@ -1,11 +1,21 @@
 = About the author
 Francois Le Droff
 2016-01-16
-:jbake-type: page
+:jbake-type: about
 :jbake-tags: About
 :jbake-status: published
 
-I'm just one of these internet plumbers.
+image::/img/me.jpg[]
+
+Bonjour, je suis Francois.
+Depuis avril 2004, j'écris "ici" des link:/archive.html[billets],
+soit autour de mon métier de plombier de la donnée,
+soit en complément de mes des link:/conferences.html[conférences].
+
+Pour en suivre les mises à jours irrégulières,
+il vous suffit de vous abonner au link:/feed.xml[flux RSS].
+
+
 
 
 

@@ -79,7 +79,7 @@ Here is the list I came up with, so far:
 * FlexMojos (the flex plugin for maven) hosts some open source Adobe artefacts as well
 ** http://svn.sonatype.org/flexmojos/repository/
 * Fna : I’ve been also creating an open source repository on our fna project
-** http://fna.googlecode.com/svn/trunk/fna/fna_m2_repository
+** https://github.com/francoisledroff/fna-v2
 
 Do you know any others ?
 
