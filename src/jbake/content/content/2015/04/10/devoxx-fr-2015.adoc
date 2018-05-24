@@ -1,0 +1,38 @@
+=  Devoxx France 2015 - Barbus & Barbares - Java & Sécurité
+Francois Le Droff
+2015-04-010
+:jbake-type: post
+:jbake-tags:  Security, devoxx, Conference, Sécurité, Français
+:jbake-status: published
+
+`Barbus & Barbares` c’est le titre de la conférence
+que nous avons donnée avec mon ami https://developers.redhat.com/blog/2015/04/17/java-and-securite-a-devoxx-france-french/[Romain] à l’occasion
+de https://www.devoxx.fr/2015/speaker/francois_le_droff.html[Devoxx France 2015].
+
+Il s'agissait d'un dialogue décrivant, autour d'un cas pratique, des problématiques liées
+ à la mise en place de la sécurité autour d'une application « web » (SpringBoot/JHipster)
+ - aussi simple et peu critique soit elle.
+
+Nous y avons illustrés et débattus concepts & techniques tels que
+
+* le Threat Modeling
+* les Firewall et autres Reverse Proxy
+* le chiffrement
+* la gestion d'identité et d'autorisation (SAML & oAuth2)
+* la sécurisation de la chaine d'intégration continue
+* la gestion des secrets de conf
+* la sécurisation de la jvm
+
+Vous retrouverez
+
+* https://www.slideshare.net/francoisledroff/devoxx-2015barbusetbarbares[nos slides sur slideshare].
+* link:/pdf/devoxx-2015-barbus-et-barbares.pdf[ou ici en pdf]
+* https://www.youtube.com/watch?v=axpjklk-5HE[La vidéo est également en ligne]
+* et un compte rendu est disponible sur http://blog.ippon.fr/2015/05/19/devoxx-france-2015-jour-3-barbus-barbares/[le blog d'ippon]
+
+Cette conférence a également fait l'objet d'une série de 2 articles dans linux mag
+
+* http://www.gnulinuxmag.com/creez-votre-premiere-intelligence-artificielle/[Dans le GNU/Linux Magazine n°196 de Septembre 2016, p.58]
+* puis dans le numéro n°196 de Juin 2017
+
+

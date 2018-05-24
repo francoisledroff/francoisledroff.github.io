@@ -6,8 +6,8 @@
     <atom:link href="http://francoisledroff.github.io//feed.xml" rel="self" type="application/rss+xml" />
     <description>Francois Le Droff's Home</description>
     <language>en-gb</language>
-    <pubDate>Tue, 30 Jan 2018 23:46:39 +0100</pubDate>
-    <lastBuildDate>Tue, 30 Jan 2018 23:46:39 +0100</lastBuildDate>
+    <pubDate>Fri, 25 May 2018 00:18:00 +0200</pubDate>
+    <lastBuildDate>Fri, 25 May 2018 00:18:00 +0200</lastBuildDate>
 
     <item>
       <title>Moved</title>
@@ -17,6 +17,84 @@
       	<description>
 	&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;I just moved this blog from &lt;a href=&quot;http://francoisledroff.github.io/blog&quot; class=&quot;bare&quot;&gt;http://francoisledroff.github.io/blog&lt;/a&gt; to &lt;a href=&quot;http://francoisledroff.github.io&quot; class=&quot;bare&quot;&gt;http://francoisledroff.github.io&lt;/a&gt; .&lt;/p&gt;
+&lt;/div&gt;
+	</description>
+    </item>
+    <item>
+      <title>Devoxx France 2015 - Barbus &amp;amp; Barbares - Java &amp;amp; Sécurité</title>
+      <link>http://francoisledroff.github.io/content/2015/04/10/devoxx-fr-2015.html</link>
+      <pubDate>Fri, 10 Apr 2015 00:00:00 +0200</pubDate>
+      <guid isPermaLink="false">content/2015/04/10/devoxx-fr-2015.html</guid>
+      	<description>
+	&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;code&gt;Barbus &amp;amp; Barbares&lt;/code&gt; c’est le titre de la conférence
+que nous avons donnée avec mon ami &lt;a href=&quot;https://developers.redhat.com/blog/2015/04/17/java-and-securite-a-devoxx-france-french/&quot;&gt;Romain&lt;/a&gt; à l’occasion
+de &lt;a href=&quot;https://www.devoxx.fr/2015/speaker/francois_le_droff.html&quot;&gt;Devoxx France 2015&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Il s&amp;#8217;agissait d&amp;#8217;un dialogue décrivant, autour d&amp;#8217;un cas pratique, des problématiques liées
+ à la mise en place de la sécurité autour d&amp;#8217;une application « web » (SpringBoot/JHipster)
+ - aussi simple et peu critique soit elle.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Nous y avons illustrés et débattus concepts &amp;amp; techniques tels que&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;le Threat Modeling&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;les Firewall et autres Reverse Proxy&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;le chiffrement&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;la gestion d&amp;#8217;identité et d&amp;#8217;autorisation (SAML &amp;amp; oAuth2)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;la sécurisation de la chaine d&amp;#8217;intégration continue&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;la gestion des secrets de conf&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;la sécurisation de la jvm&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Vous retrouverez&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.slideshare.net/francoisledroff/devoxx-2015barbusetbarbares&quot;&gt;nos slides sur slideshare&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;/pdf/devoxx-2015-barbus-et-barbares.pdf&quot;&gt;ou ici en pdf&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=axpjklk-5HE&quot;&gt;La vidéo est également en ligne&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;et un compte rendu est disponible sur &lt;a href=&quot;http://blog.ippon.fr/2015/05/19/devoxx-france-2015-jour-3-barbus-barbares/&quot;&gt;le blog d&amp;#8217;ippon&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Cette conférence a également fait l&amp;#8217;objet d&amp;#8217;une série de 2 articles dans linux mag&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.gnulinuxmag.com/creez-votre-premiere-intelligence-artificielle/&quot;&gt;Dans le GNU/Linux Magazine n°196 de Septembre 2016, p.58&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;puis dans le numéro n°196 de Juin 2017&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/div&gt;
 	</description>
     </item>
