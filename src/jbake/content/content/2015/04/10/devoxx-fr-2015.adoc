@@ -1,6 +1,6 @@
 =  Devoxx France 2015 - Barbus & Barbares - Java & Sécurité
 Francois Le Droff
-2015-04-010
+2015-04-10
 :jbake-type: post
 :jbake-tags:  Security, devoxx, Conference, Sécurité, Français
 :jbake-status: published

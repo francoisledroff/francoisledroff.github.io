@@ -6,8 +6,8 @@
     <atom:link href="http://francoisledroff.github.io//feed.xml" rel="self" type="application/rss+xml" />
     <description>Francois Le Droff's Home</description>
     <language>en-gb</language>
-    <pubDate>Fri, 25 May 2018 00:18:00 +0200</pubDate>
-    <lastBuildDate>Fri, 25 May 2018 00:18:00 +0200</lastBuildDate>
+    <pubDate>Fri, 25 May 2018 23:52:11 +0200</pubDate>
+    <lastBuildDate>Fri, 25 May 2018 23:52:11 +0200</lastBuildDate>
 
     <item>
       <title>Moved</title>
@@ -17,6 +17,80 @@
       	<description>
 	&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;I just moved this blog from &lt;a href=&quot;http://francoisledroff.github.io/blog&quot; class=&quot;bare&quot;&gt;http://francoisledroff.github.io/blog&lt;/a&gt; to &lt;a href=&quot;http://francoisledroff.github.io&quot; class=&quot;bare&quot;&gt;http://francoisledroff.github.io&lt;/a&gt; .&lt;/p&gt;
+&lt;/div&gt;
+	</description>
+    </item>
+    <item>
+      <title>Code Motion Berlin 2015 - Hairy Security</title>
+      <link>http://francoisledroff.github.io/content/2015/11/03/code-motion-Berlin-2015.html</link>
+      <pubDate>Tue, 3 Nov 2015 00:00:00 +0100</pubDate>
+      <guid isPermaLink="false">content/2015/11/03/code-motion-Berlin-2015.html</guid>
+      	<description>
+	&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;code&gt;Hairy Security&lt;/code&gt;: this was the talk Romain and I gave at &lt;a href=&quot;http://berlin2015.codemotionworld.com/&quot;&gt;Code Motion Berlin 2015&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;For an hour we discussed many of the challenges developers face securing
+ web apps (a simple Java SpringBoot app in our use case)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The key &quot;Take away&quot;:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Security is your responsibility&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Think about it, Threat model&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You’ll never be safe&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;nor your data&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Encrypt !&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Manage your secrets&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Switch 2FA/strong authentication on&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;UX is not an excuse for a lack of security&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Security is not an excuse for a bad UX&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Don’t forget continuous integration&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Treat your servers like cattle&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Be ready to firefight&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;You&amp;#8217;ll find&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.slideshare.net/francoisledroff/hairyjava-security-codemotion-berlin-2015&quot;&gt;our slides on slideshare&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;/pdf/codemotion-berlin-2015-Hairy-Security.pdf&quot;&gt;ou ici en pdf&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;a similar talk we gave in French at &lt;a href=&quot;/2015/04/10/devoxx-fr-2015.html&quot;&gt;Devoxx France&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/div&gt;
 	</description>
     </item>

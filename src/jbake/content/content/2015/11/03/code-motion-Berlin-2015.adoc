@@ -1,0 +1,34 @@
+=  Code Motion Berlin 2015 - Hairy Security
+Francois Le Droff
+2015-11-03
+:jbake-type: post
+:jbake-tags:  Security, CodeMotion, Conference
+:jbake-status: published
+
+`Hairy Security`: this was the talk Romain and I gave at http://berlin2015.codemotionworld.com/[Code Motion Berlin 2015].
+
+For an hour we discussed many of the challenges developers face securing
+ web apps (a simple Java SpringBoot app in our use case)
+
+The key "Take away":
+
+* Security is your responsibility
+* Think about it, Threat model
+* You’ll never be safe
+  * nor your data
+  * Encrypt !
+* Manage your secrets
+* Switch 2FA/strong authentication on
+* UX is not an excuse for a lack of security
+* Security is not an excuse for a bad UX
+* Don’t forget continuous integration
+* Treat your servers like cattle
+* Be ready to firefight
+
+You'll find
+
+* https://www.slideshare.net/francoisledroff/hairyjava-security-codemotion-berlin-2015[our slides on slideshare].
+* link:/pdf/codemotion-berlin-2015-Hairy-Security.pdf[ou ici en pdf]
+* a similar talk we gave in French at link:/2015/04/10/devoxx-fr-2015.html[Devoxx France]
+
+
