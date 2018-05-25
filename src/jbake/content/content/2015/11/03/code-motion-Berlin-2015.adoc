@@ -29,6 +29,6 @@ You'll find
 
 * https://www.slideshare.net/francoisledroff/hairyjava-security-codemotion-berlin-2015[our slides on slideshare].
 * link:/pdf/codemotion-berlin-2015-Hairy-Security.pdf[ou ici en pdf]
-* a similar talk we gave in French at link:/2015/04/10/devoxx-fr-2015.html[Devoxx France]
+* a similar talk we gave in French at link:/content/2015/04/10/devoxx-fr-2015.html[Devoxx France]
 
 
