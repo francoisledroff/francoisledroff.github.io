@@ -6,8 +6,8 @@
     <atom:link href="http://francoisledroff.github.io//feed.xml" rel="self" type="application/rss+xml" />
     <description>Francois Le Droff's Home</description>
     <language>en-gb</language>
-    <pubDate>Fri, 25 May 2018 23:57:40 +0200</pubDate>
-    <lastBuildDate>Fri, 25 May 2018 23:57:40 +0200</lastBuildDate>
+    <pubDate>Sat, 26 May 2018 00:30:46 +0200</pubDate>
+    <lastBuildDate>Sat, 26 May 2018 00:30:46 +0200</lastBuildDate>
 
     <item>
       <title>Moved</title>
@@ -17,6 +17,59 @@
       	<description>
 	&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;I just moved this blog from &lt;a href=&quot;http://francoisledroff.github.io/blog&quot; class=&quot;bare&quot;&gt;http://francoisledroff.github.io/blog&lt;/a&gt; to &lt;a href=&quot;http://francoisledroff.github.io&quot; class=&quot;bare&quot;&gt;http://francoisledroff.github.io&lt;/a&gt; .&lt;/p&gt;
+&lt;/div&gt;
+	</description>
+    </item>
+    <item>
+      <title>JHipster meet up - Janvier 2016</title>
+      <link>http://francoisledroff.github.io/content/2016/01/25/Jhipster-meetup.html</link>
+      <pubDate>Mon, 25 Jan 2016 00:00:00 +0100</pubDate>
+      <guid isPermaLink="false">content/2016/01/25/Jhipster-meetup.html</guid>
+      	<description>
+	&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;J&amp;#8217;ai eu l&amp;#8217;occasion de présenter mon retour d&amp;#8217;expérience au meet-up JHipster de Janvier 2016.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;J&amp;#8217;y ai notamment abordé les ajouts/modifications que nous avons apportés en interne au stack généré par JHipster:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;l&amp;#8217;utilisation de SSL à tous les étages notamment pour la connection Mongo&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;notre ajout d&amp;#8217;un RSA Assymetric encryptor&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;d&amp;#8217;un support SAML SSO et de Okta&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Et j&amp;#8217;ai fait quelques souhaits pour JHipster, pour sa roadmap&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;l&amp;#8217;ajout d&amp;#8217;une &quot;JHipster Common libraries&quot;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;une Re-architecture supportant microservice, fournisseur d&amp;#8217;identité, et serveur oAuth2&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Vous retrouverez&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.slideshare.net/francoisledroff/jhipster-meetup-2&quot;&gt;mes slides sur slideshare&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;/pdf/JHipster-meetup-2016-01.pdf&quot;&gt;ou ici en pdf&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/div&gt;
 	</description>
     </item>

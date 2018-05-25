@@ -1,0 +1,27 @@
+=  JHipster meet up - Janvier 2016
+Francois Le Droff
+2016-01-25
+:jbake-type: post
+:jbake-tags:  JHipster, Conference, Sécurité, Architecture, Français
+:jbake-status: published
+
+J'ai eu l'occasion de présenter mon retour d'expérience au meet-up JHipster de Janvier 2016.
+
+J'y ai notamment abordé les ajouts/modifications que nous avons apportés en interne au stack généré par JHipster:
+
+* l'utilisation de SSL à tous les étages notamment pour la connection Mongo
+* notre ajout d'un RSA Assymetric encryptor
+* d'un support SAML SSO et de Okta
+
+
+Et j'ai fait quelques souhaits pour JHipster, pour sa roadmap
+
+* l'ajout d'une "JHipster Common libraries"
+* une Re-architecture supportant microservice, fournisseur d'identité, et serveur oAuth2
+
+Vous retrouverez
+
+* https://www.slideshare.net/francoisledroff/jhipster-meetup-2[mes slides sur slideshare].
+* link:/pdf/JHipster-meetup-2016-01.pdf[ou ici en pdf]
+
+
