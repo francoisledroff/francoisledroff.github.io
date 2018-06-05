@@ -8,9 +8,11 @@ Francois Le Droff
 image::/img/me.jpg[]
 
 Bonjour, je suis Francois.
+
 Depuis avril 2004, j'écris "ici" des link:/archive.html[billets],
 soit autour de mon métier de plombier de la donnée,
 soit en complément de mes des link:/conferences.html[conférences].
+Depuis peu, j'expose également link:http://photos.le.droff.com/[ici] quelques link:http://photos.le.droff.com/[photos].
 
 Pour en suivre les mises à jours irrégulières,
 il vous suffit de vous abonner au link:/feed.xml[flux RSS].

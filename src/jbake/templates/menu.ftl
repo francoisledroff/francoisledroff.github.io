@@ -12,6 +12,7 @@
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">                
                 <li><a href="/about.html">About</a></li>
+                <li><a href="http://photos.le.droff.com/">Photos</a></li>
 
                 <li><a href="/archive.html">Blog</a></li>
 
