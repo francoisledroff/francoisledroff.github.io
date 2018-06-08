@@ -2,17 +2,21 @@
 Francois Le Droff
 2014-05-05
 :jbake-type: post
-:jbake-tags:  OpenSource, Java, Conference, Devoxx, Chef
+:jbake-tags:  OpenSource, Java, Conference, Devoxx, Chef, Puppet, Devops
 :jbake-status: published
 
 
-Devoxx france 2014 was an excellent vintage. The conference was packed with 1500 passionate developers. I had the privilege to speak, hence, unlike last year, I did not see much of the show. The first 2 days I mainly spent my time rehearsing and networking.
+Devoxx france 2014 was an excellent vintage. The conference was packed with 1500 passionate developers.
+I had the privilege to speak, hence, unlike last year, I did not see much of the show.
+The first 2 days I mainly spent my time rehearsing and networking.
 
-Here is the link to the 40mn presentation https://twitter.com/rpelisse[Romain] and I did: http://francoisledroff.github.io/chezlesbarbus/#1[Master Chef & Puppet Show] The video will be soon available on http://parleys.com/[parleys]
+Here are the slides of the 40mn presentation https://twitter.com/rpelisse[Romain] and I did: https://www.slideshare.net/francoisledroff/master-chef-and-puppet-show-devoxx-france-2014[Master Chef & Puppet Show]
+The video will be soon available on http://parleys.com/[parleys]
 
 image:http://www.jroller.com/francoisledroff/resource/Devoxx-XEBIA_369.JPG[image]
 
-The talk was fun to prepare and run, the feedback we received was awesome. It was worth the effort. Romain and I agreed we should do this more often. We Immortalized this moment with a few friends at the Xebia photo booth.
+The talk was fun to prepare and run, the feedback we received was awesome. I
+t was worth the effort. Romain and I agreed we should do this more often.
 
 I spent the 3rd and last day of the conference with a cool devops gang, those guys named themself http://www.devopsmercenaries.org/[Devops Mercenaries]
 

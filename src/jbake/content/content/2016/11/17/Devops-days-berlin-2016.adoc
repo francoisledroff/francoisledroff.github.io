@@ -1,0 +1,44 @@
+=  Devops Days Berlin 2016
+Francois Le Droff
+2016-11-17
+:jbake-type: post
+:jbake-tags:  devops, devopsdays, Conference, Chef, Ansible
+:jbake-status: published
+
+`Chef vs. Ansible`: this was the talk Romain and I gave at https://www.devopsdays.org/events/2016-berlin/program/romain-pelisse/[Devops Days Berlin 2016].
+
+It consisted in a few demos and code walk through, showing the attendees how to configure a server (including some services and a webapp) using either Chef and Ansible.
+We covered the main features of each technologies, and point out both their common grounds, limitations and qualities.
+The aims was also to help "troubleshoot" their issue on the selected technologies, and therefore getting out of the session an interactive tutorial.
+
+You'll find
+
+* https://www.slideshare.net/francoisledroff/devops-days-berlin2016[our slides on slideshare].
+* link:/pdf/devopsDays-berlin-2016.pdf[or here in pdf]
+* the associated Chef demo in my https://github.com/francoisledroff/devopsdayberlin2016[devopsdayberlin2016 github repo]
+
+This `repo` was done to demo the `Chef` part (my part). Its introduces the following Chef concepts:
+
+* Chef `nodes`
+* `chef-client`
+* Chef `resource`
+* Chef `recipes`
+
+* `chef-repo`
+* Chef `cookbooks`
+* Chef `template`
+* `Ohai`
+
+* the use of a full-blown `chef-repo` holding multiple `cookbooks`
+* the user of `Berkshelf` for cookbook dependencies management
+* the use of the in memory chef server called `chef-zero`
+* the use of chef `provisionning` and treat our Vagrant vms as any other Chef resource using `chef/provisioning/vagrant_driver`
+* the use of the `package` resource: to implement the installation of nginx
+
+* the use of a **Chef custom `resource`** named `fat_jar`. `fat_jar` allows you to treat any given java fat jar (that is runnable jar, typically a `springboot` jar) as a resource,
+; it assumes the jar is made available through a maven artifact repository
+; it will donwload it
+; it will configure the associated `systemd` service to run it as a service
+* the configuration of nginx for it to reverse-proxy a `devopsdays` `fat_jar` http service
+
+This was done in 4 chapters, look into the subfolders `README.md` files

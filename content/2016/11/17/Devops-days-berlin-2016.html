@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Francois Le Droff: Devops Days Berlin 2016</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">    
+
+    <!-- Le styles -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/asciidoctor.css" rel="stylesheet">
+    <link href="/css/base.css" rel="stylesheet">
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="favicon.ico">
+    </head>
+  <body>
+
+
+    <div id="wrap">
+	
+	<!-- Fixed navbar -->
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="container">
+	    <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Francois Le Droff</a>
+	    </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">                
+                <li><a href="/about.html">About</a></li>
+                <li><a href="http://photos.le.droff.com/">Photos</a></li>
+
+                <li><a href="/archive.html">Blog</a></li>
+
+
+		            <li><a href="/conferences.html">Conferences</a></li>
+
+                <!--
+		            <li class="dropdown">
+          		      <a data-toggle="dropdown" href="#">Topics<b class="caret"></b></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="/tags/Java.html">Java</a></li>
+                    <li><a href="/tags/OpenSource.html">OpenSource</a></li>
+                    <li><a href="/tags/Misc.html">Misc</a></li>
+                  </ul>
+	              </li>
+	              -->
+
+
+                <li><a href="/listalltags.html">Tags</a></li>
+                <li><a href="/feed.xml">Feed</a></li>
+
+                <!--
+                <li><a href="/projects.html">Projects</a></li>
+                -->
+
+              </ul>
+	      <ul class="nav navbar-nav navbar-right">
+	      	<li><a href="https://github.com/francoisledroff"><i class="fa fa-github"></i></a></li>
+	        <li><a href="https://twitter.com/francoisledroff"><i class="fa fa-twitter"></i></a>
+	      </ul>
+            </div>
+          </div>
+      </div>
+      <div class="container">
+	
+	<div class="page-header">
+		<h1>Devops Days Berlin 2016</h1>
+    <p class="credit">
+      First published on November 17 2016
+      and tagged 
+    <a href="/tags/devops.html">devops . </a>
+
+    <a href="/tags/devopsdays.html">devopsdays . </a>
+
+    <a href="/tags/Conference.html">Conference . </a>
+
+    <a href="/tags/Chef.html">Chef . </a>
+
+    <a href="/tags/Ansible.html">Ansible . </a>
+		</p>
+	</div>
+
+	<p><div class="paragraph">
+<p><code>Chef vs. Ansible</code>: this was the talk Romain and I gave at <a href="https://www.devopsdays.org/events/2016-berlin/program/romain-pelisse/">Devops Days Berlin 2016</a>.</p>
+</div>
+<div class="paragraph">
+<p>It consisted in a few demos and code walk through, showing the attendees how to configure a server (including some services and a webapp) using either Chef and Ansible.
+We covered the main features of each technologies, and point out both their common grounds, limitations and qualities.
+The aims was also to help "troubleshoot" their issue on the selected technologies, and therefore getting out of the session an interactive tutorial.</p>
+</div>
+<div class="paragraph">
+<p>You&#8217;ll find</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.slideshare.net/francoisledroff/devops-days-berlin2016">our slides on slideshare</a>.</p>
+</li>
+<li>
+<p><a href="/pdf/devopsDays-berlin-2016.pdf">or here in pdf</a></p>
+</li>
+<li>
+<p>the associated Chef demo in my <a href="https://github.com/francoisledroff/devopsdayberlin2016">devopsdayberlin2016 github repo</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>This <code>repo</code> was done to demo the <code>Chef</code> part (my part). Its introduces the following Chef concepts:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Chef <code>nodes</code></p>
+</li>
+<li>
+<p><code>chef-client</code></p>
+</li>
+<li>
+<p>Chef <code>resource</code></p>
+</li>
+<li>
+<p>Chef <code>recipes</code></p>
+</li>
+<li>
+<p><code>chef-repo</code></p>
+</li>
+<li>
+<p>Chef <code>cookbooks</code></p>
+</li>
+<li>
+<p>Chef <code>template</code></p>
+</li>
+<li>
+<p><code>Ohai</code></p>
+</li>
+<li>
+<p>the use of a full-blown <code>chef-repo</code> holding multiple <code>cookbooks</code></p>
+</li>
+<li>
+<p>the user of <code>Berkshelf</code> for cookbook dependencies management</p>
+</li>
+<li>
+<p>the use of the in memory chef server called <code>chef-zero</code></p>
+</li>
+<li>
+<p>the use of chef <code>provisionning</code> and treat our Vagrant vms as any other Chef resource using <code>chef/provisioning/vagrant_driver</code></p>
+</li>
+<li>
+<p>the use of the <code>package</code> resource: to implement the installation of nginx</p>
+</li>
+<li>
+<p>the use of a <strong>Chef custom <code>resource</code></strong> named <code>fat_jar</code>. <code>fat_jar</code> allows you to treat any given java fat jar (that is runnable jar, typically a <code>springboot</code> jar) as a resource,
+; it assumes the jar is made available through a maven artifact repository
+; it will donwload it
+; it will configure the associated <code>systemd</code> service to run it as a service</p>
+</li>
+<li>
+<p>the configuration of nginx for it to reverse-proxy a <code>devopsdays</code> <code>fat_jar</code> http service</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>This was done in 4 chapters, look into the subfolders <code>README.md</code> files</p>
+</div></p>
+
+<hr/>
+
+
+    
+    <div id="footer">
+
+      <div class="container">
+
+        <p class="credit">
+        Published with
+        a <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/"><em>Creative Commons by-nc-sa</em> license</a>,
+          mixed with <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>,
+          baked with <a href="http://jbake.org">JBake v2.5.1</a>
+
+	      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/fr/">
+        <img alt="Creative Commons License" style="border-width:0"
+	      src="http://i.creativecommons.org/l/by-nc-sa/2.0/fr/80x15.png"/></a>
+
+         </p>
+      </div>
+    </div>
+    
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/jquery-1.9.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+
+  </body>
+</html>
