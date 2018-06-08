@@ -17,7 +17,7 @@ You'll find
 * link:/pdf/devopsDays-berlin-2016.pdf[or here in pdf]
 * the associated Chef demo in my https://github.com/francoisledroff/devopsdayberlin2016[devopsdayberlin2016 github repo]
 
-This `repo` was done to demo the `Chef` part (my part). Its introduces the following Chef concepts:
+This `repo` was done to demo the `Chef` part, my part. It introduces the following Chef concepts:
 
 * Chef `nodes`
 * `chef-client`
