@@ -6,9 +6,67 @@
     <atom:link href="http://francoisledroff.github.io//feed.xml" rel="self" type="application/rss+xml" />
     <description>Francois Le Droff's Home</description>
     <language>en-gb</language>
-    <pubDate>Fri, 8 Jun 2018 22:06:59 +0200</pubDate>
-    <lastBuildDate>Fri, 8 Jun 2018 22:06:59 +0200</lastBuildDate>
+    <pubDate>Mon, 11 Jun 2018 10:36:17 +0200</pubDate>
+    <lastBuildDate>Mon, 11 Jun 2018 10:36:17 +0200</lastBuildDate>
 
+    <item>
+      <title>La barbe dans le cambouis - Hands-on-lab - Devoxx France 2018</title>
+      <link>http://francoisledroff.github.io/content/2018/04/19/devoxx-2018-lab-secu.html</link>
+      <pubDate>Wed, 18 Apr 2018 00:00:00 +0200</pubDate>
+      <guid isPermaLink="false">content/2018/04/19/devoxx-2018-lab-secu.html</guid>
+      	<description>
+	&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Cette année quelques téméraires développeuses et développeurs ont passé trois heures avec Romain et moi
+à Devoxx France pour un hands-on-lab intitulé
+ &lt;code&gt;La Barbe dans le cambouis : Sécurisons une bonne vieille application Java &quot;Entreprise&quot;&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Ce Hands-on-Lab a repris les éléments évoqués
+durant notre conférence donnée à Devoxx en 2015 &lt;a href=&quot;http://droff.com/content/2015/04/10/devoxx-fr-2015.html&quot;&gt;Barbus &amp;amp; Barbares - Java &amp;amp; Sécurité&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Nous y avons proposé la sécurisation un cas d’étude simple: une bonne vieille application Java &quot;Entreprise&quot;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Y furent illustrés et débattus concepts &amp;amp; techniques tels que&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;la gestion d&amp;#8217;identité et d&amp;#8217;autorisation (avec KeyCloak, SAML &amp;amp; oAuth2),&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;la sécurisation l’analyse des flux (filtre reverse proxy),&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;le chiffrement,&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;le Security Manager de la JVM et SELinux,&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;la gestion des secrets.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Vous retrouverez&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;/pdf/la-barbe-dans-le-cambouis-devoxx-2018.pdf&quot;&gt;nos slides en pdf ici&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;notre support de &quot;cours&quot; sur &lt;a href=&quot;https://github.com/francoisledroff/la_barbe_dans_le_cambouis&quot;&gt;notre repository github&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Je me propose de détailler, ici, bientôt, dans une série de blog les différents exercices abordés dans ce lab.&lt;/p&gt;
+&lt;/div&gt;
+	</description>
+    </item>
     <item>
       <title>Moved</title>
       <link>http://francoisledroff.github.io/content/2017/09/20/moved.html</link>
@@ -21,7 +79,7 @@
 	</description>
     </item>
     <item>
-      <title>Devops Days Berlin 2016</title>
+      <title>Chef vs. Ansible - Devops Days Berlin 2016</title>
       <link>http://francoisledroff.github.io/content/2016/11/17/Devops-days-berlin-2016.html</link>
       <pubDate>Thu, 17 Nov 2016 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2016/11/17/Devops-days-berlin-2016.html</guid>
@@ -164,7 +222,7 @@ The aims was also to help &quot;troubleshoot&quot; their issue on the selected t
 	</description>
     </item>
     <item>
-      <title>Code Motion Berlin 2015 - Hairy Security</title>
+      <title>Hairy Security - Code Motion Berlin 2015</title>
       <link>http://francoisledroff.github.io/content/2015/11/03/code-motion-Berlin-2015.html</link>
       <pubDate>Tue, 3 Nov 2015 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2015/11/03/code-motion-Berlin-2015.html</guid>
@@ -238,7 +296,7 @@ The aims was also to help &quot;troubleshoot&quot; their issue on the selected t
 	</description>
     </item>
     <item>
-      <title>Devoxx France 2015 - Barbus &amp;amp; Barbares - Java &amp;amp; Sécurité</title>
+      <title>Barbus &amp;amp; Barbares - Java &amp;amp; Sécurité - Devoxx France 2015</title>
       <link>http://francoisledroff.github.io/content/2015/04/10/devoxx-fr-2015.html</link>
       <pubDate>Fri, 10 Apr 2015 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2015/04/10/devoxx-fr-2015.html</guid>
@@ -306,10 +364,10 @@ de &lt;a href=&quot;https://www.devoxx.fr/2015/speaker/francois_le_droff.html&qu
 &lt;div class=&quot;ulist&quot;&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.gnulinuxmag.com/creez-votre-premiere-intelligence-artificielle/&quot;&gt;Dans le GNU/Linux Magazine n°196 de Septembre 2016, p.58&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.gnulinuxmag.com/creez-votre-premiere-intelligence-artificielle/&quot;&gt;Dans le GNU/Linux Magazine de Septembre 2016, p.58&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;puis dans le numéro n°196 de Juin 2017&lt;/p&gt;
+&lt;p&gt;puis dans le numéro de Juin 2017&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;

@@ -1,4 +1,4 @@
-=  Devops Days Berlin 2016
+=  Chef vs. Ansible - Devops Days Berlin 2016
 Francois Le Droff
 2016-11-17
 :jbake-type: post

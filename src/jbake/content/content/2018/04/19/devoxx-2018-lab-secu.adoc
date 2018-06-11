@@ -1,0 +1,31 @@
+=  La barbe dans le cambouis - Hands-on-lab - Devoxx France 2018
+Francois Le Droff
+2018-04-18
+:jbake-type: post
+:jbake-tags:  Conference, Sécurité, Architecture, Français, devoxx, lab, keyCloak, Spring, Spring Security
+:jbake-status: published
+
+Cette année quelques téméraires développeuses et développeurs ont passé trois heures avec Romain et moi
+à Devoxx France pour un hands-on-lab intitulé
+ `La Barbe dans le cambouis : Sécurisons une bonne vieille application Java "Entreprise"`
+
+Ce Hands-on-Lab a repris les éléments évoqués
+durant notre conférence donnée à Devoxx en 2015 link:http://droff.com/content/2015/04/10/devoxx-fr-2015.html[Barbus & Barbares - Java & Sécurité]
+
+Nous y avons proposé la sécurisation un cas d’étude simple: une bonne vieille application Java "Entreprise".
+
+Y furent illustrés et débattus concepts & techniques tels que
+
+* la gestion d'identité et d'autorisation (avec KeyCloak, SAML & oAuth2),
+* la sécurisation l’analyse des flux (filtre reverse proxy),
+* le chiffrement,
+* le Security Manager de la JVM et SELinux,
+* la gestion des secrets.
+
+
+Vous retrouverez
+
+* link:/pdf/la-barbe-dans-le-cambouis-devoxx-2018.pdf[nos slides en pdf ici]
+* notre support de "cours" sur link:https://github.com/francoisledroff/la_barbe_dans_le_cambouis[notre repository github]
+
+Je me propose de détailler, ici, bientôt, dans une série de blog les différents exercices abordés dans ce lab.

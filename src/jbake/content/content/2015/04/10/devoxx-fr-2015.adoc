@@ -1,4 +1,4 @@
-=  Devoxx France 2015 - Barbus & Barbares - Java & Sécurité
+=  Barbus & Barbares - Java & Sécurité - Devoxx France 2015
 Francois Le Droff
 2015-04-10
 :jbake-type: post
@@ -32,7 +32,7 @@ Vous retrouverez
 
 Cette conférence a également fait l'objet d'une série de 2 articles dans linux mag
 
-* http://www.gnulinuxmag.com/creez-votre-premiere-intelligence-artificielle/[Dans le GNU/Linux Magazine n°196 de Septembre 2016, p.58]
-* puis dans le numéro n°196 de Juin 2017
+* http://www.gnulinuxmag.com/creez-votre-premiere-intelligence-artificielle/[Dans le GNU/Linux Magazine de Septembre 2016, p.58]
+* puis dans le numéro de Juin 2017
 
 

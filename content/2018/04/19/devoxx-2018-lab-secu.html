@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Francois Le Droff: La barbe dans le cambouis - Hands-on-lab - Devoxx France 2018</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">    
+
+    <!-- Le styles -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/asciidoctor.css" rel="stylesheet">
+    <link href="/css/base.css" rel="stylesheet">
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="favicon.ico">
+    </head>
+  <body>
+
+
+    <div id="wrap">
+	
+	<!-- Fixed navbar -->
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="container">
+	    <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Francois Le Droff</a>
+	    </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">                
+                <li><a href="/about.html">About</a></li>
+                <li><a href="http://photos.le.droff.com/">Photos</a></li>
+
+                <li><a href="/archive.html">Blog</a></li>
+
+
+		            <li><a href="/conferences.html">Conferences</a></li>
+
+                <!--
+		            <li class="dropdown">
+          		      <a data-toggle="dropdown" href="#">Topics<b class="caret"></b></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="/tags/Java.html">Java</a></li>
+                    <li><a href="/tags/OpenSource.html">OpenSource</a></li>
+                    <li><a href="/tags/Misc.html">Misc</a></li>
+                  </ul>
+	              </li>
+	              -->
+
+
+                <li><a href="/listalltags.html">Tags</a></li>
+                <li><a href="/feed.xml">Feed</a></li>
+
+                <!--
+                <li><a href="/projects.html">Projects</a></li>
+                -->
+
+              </ul>
+	      <ul class="nav navbar-nav navbar-right">
+	      	<li><a href="https://github.com/francoisledroff"><i class="fa fa-github"></i></a></li>
+	        <li><a href="https://twitter.com/francoisledroff"><i class="fa fa-twitter"></i></a>
+	      </ul>
+            </div>
+          </div>
+      </div>
+      <div class="container">
+	
+	<div class="page-header">
+		<h1>La barbe dans le cambouis - Hands-on-lab - Devoxx France 2018</h1>
+    <p class="credit">
+      First published on April 18 2018
+      and tagged 
+    <a href="/tags/Conference.html">Conference . </a>
+
+    <a href="/tags/Sécurité.html">Sécurité . </a>
+
+    <a href="/tags/Architecture.html">Architecture . </a>
+
+    <a href="/tags/Français.html">Français . </a>
+
+    <a href="/tags/devoxx.html">devoxx . </a>
+
+    <a href="/tags/lab.html">lab . </a>
+
+    <a href="/tags/keyCloak.html">keyCloak . </a>
+
+    <a href="/tags/Spring.html">Spring . </a>
+
+    <a href="/tags/Spring-Security.html">Spring Security . </a>
+		</p>
+	</div>
+
+	<p><div class="paragraph">
+<p>Cette année quelques téméraires développeuses et développeurs ont passé trois heures avec Romain et moi
+à Devoxx France pour un hands-on-lab intitulé
+ <code>La Barbe dans le cambouis : Sécurisons une bonne vieille application Java "Entreprise"</code></p>
+</div>
+<div class="paragraph">
+<p>Ce Hands-on-Lab a repris les éléments évoqués
+durant notre conférence donnée à Devoxx en 2015 <a href="http://droff.com/content/2015/04/10/devoxx-fr-2015.html">Barbus &amp; Barbares - Java &amp; Sécurité</a></p>
+</div>
+<div class="paragraph">
+<p>Nous y avons proposé la sécurisation un cas d’étude simple: une bonne vieille application Java "Entreprise".</p>
+</div>
+<div class="paragraph">
+<p>Y furent illustrés et débattus concepts &amp; techniques tels que</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>la gestion d&#8217;identité et d&#8217;autorisation (avec KeyCloak, SAML &amp; oAuth2),</p>
+</li>
+<li>
+<p>la sécurisation l’analyse des flux (filtre reverse proxy),</p>
+</li>
+<li>
+<p>le chiffrement,</p>
+</li>
+<li>
+<p>le Security Manager de la JVM et SELinux,</p>
+</li>
+<li>
+<p>la gestion des secrets.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Vous retrouverez</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="/pdf/la-barbe-dans-le-cambouis-devoxx-2018.pdf">nos slides en pdf ici</a></p>
+</li>
+<li>
+<p>notre support de "cours" sur <a href="https://github.com/francoisledroff/la_barbe_dans_le_cambouis">notre repository github</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Je me propose de détailler, ici, bientôt, dans une série de blog les différents exercices abordés dans ce lab.</p>
+</div></p>
+
+<hr/>
+
+
+    
+    <div id="footer">
+
+      <div class="container">
+
+        <p class="credit">
+        Published with
+        a <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/"><em>Creative Commons by-nc-sa</em> license</a>,
+          mixed with <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>,
+          baked with <a href="http://jbake.org">JBake v2.5.1</a>
+
+	      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/fr/">
+        <img alt="Creative Commons License" style="border-width:0"
+	      src="http://i.creativecommons.org/l/by-nc-sa/2.0/fr/80x15.png"/></a>
+
+         </p>
+      </div>
+    </div>
+    
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/jquery-1.9.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+
+  </body>
+</html>
