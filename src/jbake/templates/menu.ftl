@@ -17,7 +17,7 @@
                 <li><a href="/archive.html">Blog</a></li>
 
 
-		            <li><a href="/conferences.html">Conferences</a></li>
+		            <li><a href="/tags/Conference.html">Conferences</a></li>
 
                 <!--
 		            <li class="dropdown">
