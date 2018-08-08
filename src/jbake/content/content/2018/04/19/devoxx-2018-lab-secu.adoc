@@ -6,11 +6,11 @@ Francois Le Droff
 :jbake-status: published
 
 Cette année quelques téméraires développeuses et développeurs ont passé trois heures avec Romain et moi
-à Devoxx France pour un hands-on-lab intitulé
- `La Barbe dans le cambouis : Sécurisons une bonne vieille application Java "Entreprise"`
+pour un hands-on-lab donné dans le cadre de la conférence Devoxx France.
+Son intitulé de ce lab :  `La Barbe dans le cambouis : Sécurisons une bonne vieille application Java "Entreprise"`
 
-Ce Hands-on-Lab a repris les éléments évoqués
-durant notre conférence donnée à Devoxx en 2015 link:http://droff.com/content/2015/04/10/devoxx-fr-2015.html[Barbus & Barbares - Java & Sécurité]
+Nous y avons repris les éléments déja dévoqués
+lors d'une de nos conférences passée: link:http://droff.com/content/2015/04/10/devoxx-fr-2015.html[Barbus & Barbares - Java & Sécurité]
 
 Nous y avons proposé la sécurisation un cas d’étude simple: une bonne vieille application Java "Entreprise".
 

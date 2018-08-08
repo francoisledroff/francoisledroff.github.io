@@ -1,0 +1,21 @@
+=  A small Java utility showcasing Adobe IMS JWT Token exchange
+Francois Le Droff
+2018-08-08
+:jbake-type: post
+:jbake-tags:  Adobe, IMS, adobe.io, Security, Java, OAuth, JWT, API
+:jbake-status: published
+
+I just published on link:https://github.com/francoisledroff/adobe-ims-jwt-token-util/blob/master/README.md[github a small Java utility showcasing Adobe IMS JWT Token exchange].
+
+It might help you understanding and implementing your own integration against Adobe APIs (that requires the use of JWT token exchange)
+
+If you find a bug, or request a new feature, don't hesitate to submit a bug and/or a pull request.
+
+Here are other various related pointers:
+
+* https://www.adobe.io/authentication.html
+* https://jwt.io/
+* https://docs.adobe.com/dev/products/target/reference/authentication/CreatingaJSONwebtoken.html
+* https://developer.atlassian.com/static/connect/docs/latest/concepts/understanding-jwt.html
+* https://stormpath.com/blog/jwt-java-create-verify
+* https://github.com/jwtk/jjwt

@@ -6,9 +6,51 @@
     <atom:link href="http://francoisledroff.github.io//feed.xml" rel="self" type="application/rss+xml" />
     <description>Francois Le Droff's Home</description>
     <language>en-gb</language>
-    <pubDate>Tue, 12 Jun 2018 10:01:38 +0200</pubDate>
-    <lastBuildDate>Tue, 12 Jun 2018 10:01:38 +0200</lastBuildDate>
+    <pubDate>Wed, 8 Aug 2018 14:24:15 +0200</pubDate>
+    <lastBuildDate>Wed, 8 Aug 2018 14:24:15 +0200</lastBuildDate>
 
+    <item>
+      <title>A small Java utility showcasing Adobe IMS JWT Token exchange</title>
+      <link>http://francoisledroff.github.io/content/2018/08/08/adobe-ims-jwt-token-util.html</link>
+      <pubDate>Wed, 8 Aug 2018 00:00:00 +0200</pubDate>
+      <guid isPermaLink="false">content/2018/08/08/adobe-ims-jwt-token-util.html</guid>
+      	<description>
+	&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I just published on &lt;a href=&quot;https://github.com/francoisledroff/adobe-ims-jwt-token-util/blob/master/README.md&quot;&gt;github a small Java utility showcasing Adobe IMS JWT Token exchange&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;It might help you understanding and implementing your own integration against Adobe APIs (that requires the use of JWT token exchange)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If you find a bug, or request a new feature, don&amp;#8217;t hesitate to submit a bug and/or a pull request.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Here are other various related pointers:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.adobe.io/authentication.html&quot; class=&quot;bare&quot;&gt;https://www.adobe.io/authentication.html&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://jwt.io/&quot; class=&quot;bare&quot;&gt;https://jwt.io/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://docs.adobe.com/dev/products/target/reference/authentication/CreatingaJSONwebtoken.html&quot; class=&quot;bare&quot;&gt;https://docs.adobe.com/dev/products/target/reference/authentication/CreatingaJSONwebtoken.html&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://developer.atlassian.com/static/connect/docs/latest/concepts/understanding-jwt.html&quot; class=&quot;bare&quot;&gt;https://developer.atlassian.com/static/connect/docs/latest/concepts/understanding-jwt.html&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://stormpath.com/blog/jwt-java-create-verify&quot; class=&quot;bare&quot;&gt;https://stormpath.com/blog/jwt-java-create-verify&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/jwtk/jjwt&quot; class=&quot;bare&quot;&gt;https://github.com/jwtk/jjwt&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+	</description>
+    </item>
     <item>
       <title>La barbe dans le cambouis - Hands-on-lab - Devoxx France 2018</title>
       <link>http://francoisledroff.github.io/content/2018/04/19/devoxx-2018-lab-secu.html</link>
@@ -17,12 +59,12 @@
       	<description>
 	&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;Cette année quelques téméraires développeuses et développeurs ont passé trois heures avec Romain et moi
-à Devoxx France pour un hands-on-lab intitulé
- &lt;code&gt;La Barbe dans le cambouis : Sécurisons une bonne vieille application Java &quot;Entreprise&quot;&lt;/code&gt;&lt;/p&gt;
+pour un hands-on-lab donné dans le cadre de la conférence Devoxx France.
+Son intitulé de ce lab :  &lt;code&gt;La Barbe dans le cambouis : Sécurisons une bonne vieille application Java &quot;Entreprise&quot;&lt;/code&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Ce Hands-on-Lab a repris les éléments évoqués
-durant notre conférence donnée à Devoxx en 2015 &lt;a href=&quot;http://droff.com/content/2015/04/10/devoxx-fr-2015.html&quot;&gt;Barbus &amp;amp; Barbares - Java &amp;amp; Sécurité&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Nous y avons repris les éléments déja dévoqués
+lors d&amp;#8217;une de nos conférences passée: &lt;a href=&quot;http://droff.com/content/2015/04/10/devoxx-fr-2015.html&quot;&gt;Barbus &amp;amp; Barbares - Java &amp;amp; Sécurité&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;Nous y avons proposé la sécurisation un cas d’étude simple: une bonne vieille application Java &quot;Entreprise&quot;.&lt;/p&gt;

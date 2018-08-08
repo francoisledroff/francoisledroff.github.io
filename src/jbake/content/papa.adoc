@@ -1,0 +1,28 @@
+= About the author
+Francois Le Droff
+2016-01-16
+:jbake-type: about
+:jbake-tags: Papa
+:jbake-status: unpublished
+
+image::/img/me.jpg[]
+
+
+Ce matin de printemps 2018 nous sommes main dans la main sur le chemin de l'école.
+
+* **Papa** "la météo de prévoît pas de précipitations aujourd'hui ... "
+* **Y**  "?"
+* **Papa** "Précipitation c'est le mot scientifique pour parler de pluie"
+* **Y** "Oui c'est normal.."
+* **Papa** "?"
+* **Y** "Oui quand il pleut on se précipite"
+* **Papa** "!"
+* **Y** "Sauf si c'est du crachin ..."
+
+
+
+
+
+
+
+
