@@ -31,11 +31,5 @@
 
 	<hr>
 
-<div class="container">
-  <p><b>Tags</b></p>
-  <p><#list alltags as tag>
-    <a href="/tags/${tag?trim?replace(' ','-')}.html">${tag} . </a>
-	</#list></p>
-</div>
 
 <#include "footer.ftl">

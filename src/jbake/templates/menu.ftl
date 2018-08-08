@@ -13,12 +13,13 @@
               <ul class="nav navbar-nav">                
                 <li><a href="/about.html">About</a></li>
                 <li><a href="http://photos.le.droff.com/">Photos</a></li>
-                <li><a href="/papa.html">Papa</a></li>
+
 
                 <li><a href="/archive.html">Blog</a></li>
 
 
 		            <li><a href="/tags/Conference.html">Conferences</a></li>
+                <li><a href="/tags/Papa.html">Papa</a></li>
 
                 <!--
 		            <li class="dropdown">

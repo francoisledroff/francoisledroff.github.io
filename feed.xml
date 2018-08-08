@@ -6,8 +6,8 @@
     <atom:link href="http://francoisledroff.github.io//feed.xml" rel="self" type="application/rss+xml" />
     <description>Francois Le Droff's Home</description>
     <language>en-gb</language>
-    <pubDate>Wed, 8 Aug 2018 14:24:15 +0200</pubDate>
-    <lastBuildDate>Wed, 8 Aug 2018 14:24:15 +0200</lastBuildDate>
+    <pubDate>Wed, 8 Aug 2018 16:12:30 +0200</pubDate>
+    <lastBuildDate>Wed, 8 Aug 2018 16:12:30 +0200</lastBuildDate>
 
     <item>
       <title>A small Java utility showcasing Adobe IMS JWT Token exchange</title>
@@ -46,6 +46,45 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/jwtk/jjwt&quot; class=&quot;bare&quot;&gt;https://github.com/jwtk/jjwt&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+	</description>
+    </item>
+    <item>
+      <title>Précipitation</title>
+      <link>http://francoisledroff.github.io/content/2018/05/08/precipitation.html</link>
+      <pubDate>Tue, 8 May 2018 00:00:00 +0200</pubDate>
+      <guid isPermaLink="false">content/2018/05/08/precipitation.html</guid>
+      	<description>
+	&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Ce matin de printemps 2018 nous sommes main dans la main sur le chemin de l&amp;#8217;école.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Papa&lt;/strong&gt; &quot;la météo de prévoît pas de précipitations aujourd&amp;#8217;hui &amp;#8230;&amp;#8203; &quot;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Y&lt;/strong&gt;  &quot;?&quot;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Papa&lt;/strong&gt; &quot;Précipitation c&amp;#8217;est le mot scientifique pour parler de pluie&quot;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Y&lt;/strong&gt; &quot;Oui c&amp;#8217;est normal..&quot;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Papa&lt;/strong&gt; &quot;?&quot;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Y&lt;/strong&gt; &quot;Oui quand il pleut on se précipite&quot;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Papa&lt;/strong&gt; &quot;!&quot;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Y&lt;/strong&gt; &quot;Sauf si c&amp;#8217;est du crachin &amp;#8230;&amp;#8203;&quot;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
