@@ -6,8 +6,8 @@
     <atom:link href="http://francoisledroff.github.io//feed.xml" rel="self" type="application/rss+xml" />
     <description>Francois Le Droff's Home</description>
     <language>en-gb</language>
-    <pubDate>Wed, 8 Aug 2018 16:12:30 +0200</pubDate>
-    <lastBuildDate>Wed, 8 Aug 2018 16:12:30 +0200</lastBuildDate>
+    <pubDate>Thu, 9 Aug 2018 11:13:06 +0200</pubDate>
+    <lastBuildDate>Thu, 9 Aug 2018 11:13:06 +0200</lastBuildDate>
 
     <item>
       <title>A small Java utility showcasing Adobe IMS JWT Token exchange</title>
@@ -63,7 +63,7 @@
 &lt;div class=&quot;ulist&quot;&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Papa&lt;/strong&gt; &quot;la météo de prévoît pas de précipitations aujourd&amp;#8217;hui &amp;#8230;&amp;#8203; &quot;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Papa&lt;/strong&gt; &quot;la météo ne prévoit pas de précipitation aujourd&amp;#8217;hui &amp;#8230;&amp;#8203; &quot;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Y&lt;/strong&gt;  &quot;?&quot;&lt;/p&gt;
@@ -78,7 +78,7 @@
 &lt;p&gt;&lt;strong&gt;Papa&lt;/strong&gt; &quot;?&quot;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Y&lt;/strong&gt; &quot;Oui quand il pleut on se précipite&quot;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Y&lt;/strong&gt; &quot;Oui quand il pleut, on se précipite&quot;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Papa&lt;/strong&gt; &quot;!&quot;&lt;/p&gt;
