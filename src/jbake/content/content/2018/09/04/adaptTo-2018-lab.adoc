@@ -1,0 +1,46 @@
+=  Build event-driven integrations with AEM using Adobe I/O Events - Hands-on-lab - AdaptTo 2018
+Francois Le Droff
+2018-09-04
+:jbake-type: post
+:jbake-tags:  Conference, lab, AEM, adobe.io, Adobe
+:jbake-status: published
+
+Tired of building connectors for AEM?
+
+Join me in my link:https://adapt.to/2018/en/schedule/build-event-driven-integrations-with-aem-using-adobe-io-events.html[AdaptTo() lab]
+ where you will implement a real-time and lightweight integration with AEM with almost no code.
+
+Come and learn how you can expose any internal osgi events from AEM through Adobe I/O Events
+to build event-driven workflows across multiple systems with ease.
+See how Adobe I/O Events allows you to respond to both administrative events and customer behaviors in real-time.
+
+
+For you to come prepared (or for you to test it at home) I pushed on link:https://github.com/francoisledroff/adaptTo2018[the material of this lab on github].
+
+#### Prerequisite
+
+* an internet connection
+* a text editor
+* `git` installed so you can `clone` link:https://github.com/francoisledroff/adaptTo2018[my lab github repo] and `pull` it again during the lab
+* An `AEM 6.4.x` instance, with administrative permissions
+
+#### The Lab
+
+We only have about 30/40 minutes, it will be fast, we don't expect you to complete everything:
+
+* First step:  you will link:https://github.com/francoisledroff/adaptTo2018/blob/master/1.aem-event-setup.md[install and configure Adobe Experience Manager (AEM) for Adobe I/O Events];
+* All following steps are optional: you decide what you want to focus on, here is what we offer:
+  ** link:https://github.com/francoisledroff/adaptTo2018/blob/master/2.aem-event-webhooks.md[Create your own event receiving webhook, using your own server or going serverless],
+  ** link:https://github.com/francoisledroff/adaptTo2018/blob/master/3.aem-event-registration.md[Register webhooks] to receive AEM events,
+  ** link:https://github.com/francoisledroff/adaptTo2018/blob/master/4.aem-event-mapping.md[Understand and tune the OSGI event to Adobe I/O event mapping],
+  ** link:https://github.com/francoisledroff/adaptTo2018/blob/master/5.aem-event-emitting.md[Test the flow by emitting events from AEM to Adobe I/O],
+  ** link:https://github.com/francoisledroff/adaptTo2018/blob/master/6.aem-event-custom.md[Learn how to map and fire custom AEM/osgi event to Adobe I/O],
+  ** link:https://github.com/francoisledroff/adaptTo2018/blob/master/7.aem-event-more.md[Learn about the AEM Adobe I/O Events health checks and tuning options].
+
+#### Further Documentation
+
+* link:https://www.adobe.io/apis/cloudplatform/events/documentation.html[Adobe I/O Events Documentation]
+* link:https://medium.com/adobetech[Adobe I/O Medium Blog]
+* link:https://github.com/adobeio[Adobe I/O GitHub]
+
+

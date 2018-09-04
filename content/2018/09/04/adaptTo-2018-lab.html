@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Francois Le Droff: Automated testing and quality control for Flex</title>
+    <title>Francois Le Droff: Build event-driven integrations with AEM using Adobe I/O Events - Hands-on-lab - AdaptTo 2018</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -79,60 +79,113 @@
       <div class="container">
 	
 	<div class="page-header">
-		<h1>Automated testing and quality control for Flex</h1>
+		<h1>Build event-driven integrations with AEM using Adobe I/O Events - Hands-on-lab - AdaptTo 2018</h1>
     <p class="credit">
-      First published on July 22 2009
+      First published on September 04 2018
       and tagged 
+    <a href="/tags/Conference.html">Conference . </a>
+
+    <a href="/tags/lab.html">lab . </a>
+
+    <a href="/tags/AEM.html">AEM . </a>
+
+    <a href="/tags/adobe.io.html">adobe.io . </a>
+
     <a href="/tags/Adobe.html">Adobe . </a>
 		</p>
 	</div>
 
-	<p><div class="paragraph">
-<p>Yesterday night, I had the chance and pleasure to present with <a href="http://blogs.adobe.com/xagnetti/">Xavier Agnetti</a> at the Parisian Flex User Group : <a href="http://groups.adobe.com/groups/193bcaff5f/summary">Les Tontons Flexeurs</a>.</p>
+	<p><div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Tired of building connectors for AEM?</p>
 </div>
 <div class="paragraph">
-<p>We presented our return of experience around automated testing and quality control on enterprise Flex applications.</p>
+<p>Join me in my <a href="https://adapt.to/2018/en/schedule/build-event-driven-integrations-with-aem-using-adobe-io-events.html">AdaptTo() lab</a>
+ where you will implement a real-time and lightweight integration with AEM with almost no code.</p>
 </div>
 <div class="paragraph">
-<p>I’ve uploaded the slides on <a href="http://www.slideshare.net/francoisledroff/tesytquality-best-practices-toolkit-for-enterprise-flex">slideshare</a> (they are mostly in english).</p>
-</div>
-<div id="__ss_1752105" class="paragraph">
-<p><a href="http://www.slideshare.net/francoisledroff/tesytquality-best-practices-toolkit-for-enterprise-flex">Quality Best Practices &amp; Toolkit for Enterprise Flex</a></p>
-</div>
-<div class="paragraph">
-<p>View more <a href="http://www.slideshare.net/">documents</a> from <a href="http://www.slideshare.net/francoisledroff">François Le droff</a>.</p>
+<p>Come and learn how you can expose any internal osgi events from AEM through Adobe I/O Events
+to build event-driven workflows across multiple systems with ease.
+See how Adobe I/O Events allows you to respond to both administrative events and customer behaviors in real-time.</p>
 </div>
 <div class="paragraph">
-<p>Part of the FlexUnit samples we presented and demoed can be found here :</p>
+<p>For you to come prepared (or for you to test it at home) I pushed on <a href="https://github.com/francoisledroff/adaptTo2018">the material of this lab on github</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_prerequisite">Prerequisite</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>an internet connection</p>
+</li>
+<li>
+<p>a text editor</p>
+</li>
+<li>
+<p><code>git</code> installed so you can <code>clone</code> <a href="https://github.com/francoisledroff/adaptTo2018">my lab github repo</a> and <code>pull</code> it again during the lab</p>
+</li>
+<li>
+<p>An <code>AEM 6.4.x</code> instance, with administrative permissions</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_the_lab">The Lab</h4>
+<div class="paragraph">
+<p>We only have about 30/40 minutes, it will be fast, we don&#8217;t expect you to complete everything:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="http://opensource.adobe.com/wiki/display/flexunit/FlexUnit+4+feature+overview">http://opensource.adobe.com</a></p>
+<p>First step:  you will <a href="https://github.com/francoisledroff/adaptTo2018/blob/master/1.aem-event-setup.md">install and configure Adobe Experience Manager (AEM) for Adobe I/O Events</a>;</p>
 </li>
 <li>
-<p><a href="http://www.rialvalue.com/blog/">Xavi’s blog</a></p>
-</li>
-<li>
-<p><a href="http://blogs.adobe.com/auhlmann/">Alex’s blog</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>We also discussed Patterns that ease unit testing, for further investigation, have a look at :</p>
-</div>
+<p>All following steps are optional: you decide what you want to focus on, here is what we offer:</p>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="http://blogs.adobe.com/paulw/">Paul’s blog</a></p>
+<p><a href="https://github.com/francoisledroff/adaptTo2018/blob/master/2.aem-event-webhooks.md">Create your own event receiving webhook, using your own server or going serverless</a>,</p>
 </li>
 <li>
-<p><a href="http://martinfowler.com/eaaDev/uiArchs.html">Martin Fowler’s articles</a></p>
+<p><a href="https://github.com/francoisledroff/adaptTo2018/blob/master/3.aem-event-registration.md">Register webhooks</a> to receive AEM events,</p>
+</li>
+<li>
+<p><a href="https://github.com/francoisledroff/adaptTo2018/blob/master/4.aem-event-mapping.md">Understand and tune the OSGI event to Adobe I/O event mapping</a>,</p>
+</li>
+<li>
+<p><a href="https://github.com/francoisledroff/adaptTo2018/blob/master/5.aem-event-emitting.md">Test the flow by emitting events from AEM to Adobe I/O</a>,</p>
+</li>
+<li>
+<p><a href="https://github.com/francoisledroff/adaptTo2018/blob/master/6.aem-event-custom.md">Learn how to map and fire custom AEM/osgi event to Adobe I/O</a>,</p>
+</li>
+<li>
+<p><a href="https://github.com/francoisledroff/adaptTo2018/blob/master/7.aem-event-more.md">Learn about the AEM Adobe I/O Events health checks and tuning options</a>.</p>
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<p>It was a very interactive and fun session. Thank you ``Les tontons flexeurs'' for inviting us !</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_further_documentation">Further Documentation</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.adobe.io/apis/cloudplatform/events/documentation.html">Adobe I/O Events Documentation</a></p>
+</li>
+<li>
+<p><a href="https://medium.com/adobetech">Adobe I/O Medium Blog</a></p>
+</li>
+<li>
+<p><a href="https://github.com/adobeio">Adobe I/O GitHub</a></p>
+</li>
+</ul>
+</div>
 </div></p>
 
 <hr/>

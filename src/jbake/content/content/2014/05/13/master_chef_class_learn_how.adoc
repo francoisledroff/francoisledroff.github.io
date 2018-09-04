@@ -2,7 +2,7 @@
 Francois Le Droff
 2014-05-13
 :jbake-type: post
-:jbake-tags:  OpenSource, Conference, CQ5, AEM, Chef
+:jbake-tags:  OpenSource, Conference, CQ5, AEM, Chef, Adobe, Devops
 :jbake-status: published
 
 As a follow-up of my talk at Devoxx France, I plan to speak at http://www.connectcon.ch/[Connect Con] in Basel the 25th and 26th of June.

@@ -1,12 +1,10 @@
-=  Automated testing and quality control for
+=  Automated testing and quality control for Flex
 Francois Le Droff
 2009-07-22
 :jbake-type: post
 :jbake-tags:  Adobe 
 :jbake-status: published
 :source-highlighter: prettify
-
-image:http://francois.le.droff.com/xwiki/bin/download/Geek/Quality-n-Test-at-ttfx/ttfx-logo.jpg[http://francois.le.droff.com/xwiki/bin/download/Geek/Quality-n-Test-at-ttfx/ttfx-logo.jpg,title="http://francois.le.droff.com/xwiki/bin/download/Geek/Quality-n-Test-at-ttfx/ttfx-logo.jpg"]
 
 Yesterday night, I had the chance and pleasure to present with http://blogs.adobe.com/xagnetti/[Xavier Agnetti] at the Parisian Flex User Group : http://groups.adobe.com/groups/193bcaff5f/summary[Les Tontons Flexeurs].
 

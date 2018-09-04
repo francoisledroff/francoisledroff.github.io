@@ -6,9 +6,109 @@
     <atom:link href="http://francoisledroff.github.io//feed.xml" rel="self" type="application/rss+xml" />
     <description>Francois Le Droff's Home</description>
     <language>en-gb</language>
-    <pubDate>Tue, 21 Aug 2018 16:53:10 +0200</pubDate>
-    <lastBuildDate>Tue, 21 Aug 2018 16:53:10 +0200</lastBuildDate>
+    <pubDate>Tue, 4 Sep 2018 17:23:09 +0200</pubDate>
+    <lastBuildDate>Tue, 4 Sep 2018 17:23:09 +0200</lastBuildDate>
 
+    <item>
+      <title>Build event-driven integrations with AEM using Adobe I/O Events - Hands-on-lab - AdaptTo 2018</title>
+      <link>http://francoisledroff.github.io/content/2018/09/04/adaptTo-2018-lab.html</link>
+      <pubDate>Tue, 4 Sep 2018 00:00:00 +0200</pubDate>
+      <guid isPermaLink="false">content/2018/09/04/adaptTo-2018-lab.html</guid>
+      	<description>
+	&lt;div id=&quot;preamble&quot;&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Tired of building connectors for AEM?&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Join me in my &lt;a href=&quot;https://adapt.to/2018/en/schedule/build-event-driven-integrations-with-aem-using-adobe-io-events.html&quot;&gt;AdaptTo() lab&lt;/a&gt;
+ where you will implement a real-time and lightweight integration with AEM with almost no code.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Come and learn how you can expose any internal osgi events from AEM through Adobe I/O Events
+to build event-driven workflows across multiple systems with ease.
+See how Adobe I/O Events allows you to respond to both administrative events and customer behaviors in real-time.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;For you to come prepared (or for you to test it at home) I pushed on &lt;a href=&quot;https://github.com/francoisledroff/adaptTo2018&quot;&gt;the material of this lab on github&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect3&quot;&gt;
+&lt;h4 id=&quot;_prerequisite&quot;&gt;Prerequisite&lt;/h4&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;an internet connection&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;a text editor&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;git&lt;/code&gt; installed so you can &lt;code&gt;clone&lt;/code&gt; &lt;a href=&quot;https://github.com/francoisledroff/adaptTo2018&quot;&gt;my lab github repo&lt;/a&gt; and &lt;code&gt;pull&lt;/code&gt; it again during the lab&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;An &lt;code&gt;AEM 6.4.x&lt;/code&gt; instance, with administrative permissions&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect3&quot;&gt;
+&lt;h4 id=&quot;_the_lab&quot;&gt;The Lab&lt;/h4&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;We only have about 30/40 minutes, it will be fast, we don&amp;#8217;t expect you to complete everything:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;First step:  you will &lt;a href=&quot;https://github.com/francoisledroff/adaptTo2018/blob/master/1.aem-event-setup.md&quot;&gt;install and configure Adobe Experience Manager (AEM) for Adobe I/O Events&lt;/a&gt;;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;All following steps are optional: you decide what you want to focus on, here is what we offer:&lt;/p&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/francoisledroff/adaptTo2018/blob/master/2.aem-event-webhooks.md&quot;&gt;Create your own event receiving webhook, using your own server or going serverless&lt;/a&gt;,&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/francoisledroff/adaptTo2018/blob/master/3.aem-event-registration.md&quot;&gt;Register webhooks&lt;/a&gt; to receive AEM events,&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/francoisledroff/adaptTo2018/blob/master/4.aem-event-mapping.md&quot;&gt;Understand and tune the OSGI event to Adobe I/O event mapping&lt;/a&gt;,&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/francoisledroff/adaptTo2018/blob/master/5.aem-event-emitting.md&quot;&gt;Test the flow by emitting events from AEM to Adobe I/O&lt;/a&gt;,&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/francoisledroff/adaptTo2018/blob/master/6.aem-event-custom.md&quot;&gt;Learn how to map and fire custom AEM/osgi event to Adobe I/O&lt;/a&gt;,&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/francoisledroff/adaptTo2018/blob/master/7.aem-event-more.md&quot;&gt;Learn about the AEM Adobe I/O Events health checks and tuning options&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect3&quot;&gt;
+&lt;h4 id=&quot;_further_documentation&quot;&gt;Further Documentation&lt;/h4&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.adobe.io/apis/cloudplatform/events/documentation.html&quot;&gt;Adobe I/O Events Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://medium.com/adobetech&quot;&gt;Adobe I/O Medium Blog&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/adobeio&quot;&gt;Adobe I/O GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+	</description>
+    </item>
     <item>
       <title>A small Java utility showcasing Adobe IMS JWT Token exchange</title>
       <link>http://francoisledroff.github.io/content/2018/08/08/adobe-ims-jwt-token-util.html</link>
@@ -2998,15 +3098,12 @@ EndSection&lt;/pre&gt;
 	</description>
     </item>
     <item>
-      <title>Automated testing and quality control for</title>
+      <title>Automated testing and quality control for Flex</title>
       <link>http://francoisledroff.github.io/content/2009/07/22/automated_testing_and_quality_control.html</link>
       <pubDate>Wed, 22 Jul 2009 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2009/07/22/automated_testing_and_quality_control.html</guid>
       	<description>
 	&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;http://francois.le.droff.com/xwiki/bin/download/Geek/Quality-n-Test-at-ttfx/ttfx-logo.jpg&quot; alt=&quot;http://francois.le.droff.com/xwiki/bin/download/Geek/Quality-n-Test-at-ttfx/ttfx-logo.jpg&quot; title=&quot;http://francois.le.droff.com/xwiki/bin/download/Geek/Quality-n-Test-at-ttfx/ttfx-logo.jpg&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;Yesterday night, I had the chance and pleasure to present with &lt;a href=&quot;http://blogs.adobe.com/xagnetti/&quot;&gt;Xavier Agnetti&lt;/a&gt; at the Parisian Flex User Group : &lt;a href=&quot;http://groups.adobe.com/groups/193bcaff5f/summary&quot;&gt;Les Tontons Flexeurs&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
