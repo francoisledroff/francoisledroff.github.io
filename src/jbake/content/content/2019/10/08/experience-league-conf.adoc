@@ -9,9 +9,9 @@ Francois Le Droff
 Hier à Paris, avait lieu une conférence organisée par Adobe pour le lancement de  l'link:https://experienceleague.adobe.com[Experience League] en France.
 J'ai eu l'occasion d'y présenter le travail de mon équipe et ainsi de faire quelques démonstration de
 
-* Adobe I/O Runtime
-* Adobe I/O Events
-* ainsi que du connecteur `Adobe I/O Events` pour AEM
+* `Adobe I/O Runtime`
+* `Adobe I/O Events`
+* ainsi que du connecteur `Adobe I/O Events` pour `AEM`
 
 Vous pouvez retrouver la présentation sur link:https://www.slideshare.net/francoisledroff/implmentez-une-intgration-avec-aem-presque-sans-code[slideshare].
 Quant aux démos, vous pouvez les rejouer à la maison,

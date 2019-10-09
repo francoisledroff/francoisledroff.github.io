@@ -6,8 +6,8 @@
     <atom:link href="http://francoisledroff.github.io//feed.xml" rel="self" type="application/rss+xml" />
     <description>Francois Le Droff's Home</description>
     <language>en-gb</language>
-    <pubDate>Wed, 9 Oct 2019 15:02:15 +0200</pubDate>
-    <lastBuildDate>Wed, 9 Oct 2019 15:02:15 +0200</lastBuildDate>
+    <pubDate>Wed, 9 Oct 2019 15:05:29 +0200</pubDate>
+    <lastBuildDate>Wed, 9 Oct 2019 15:05:29 +0200</lastBuildDate>
 
     <item>
       <title>Implémentez une intégration avec AEM presque sans code - Adobe Experience League - Paris</title>
@@ -22,13 +22,13 @@ J&amp;#8217;ai eu l&amp;#8217;occasion d&amp;#8217;y présenter le travail de mo
 &lt;div class=&quot;ulist&quot;&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;Adobe I/O Runtime&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Adobe I/O Runtime&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Adobe I/O Events&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Adobe I/O Events&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;ainsi que du connecteur &lt;code&gt;Adobe I/O Events&lt;/code&gt; pour AEM&lt;/p&gt;
+&lt;p&gt;ainsi que du connecteur &lt;code&gt;Adobe I/O Events&lt;/code&gt; pour &lt;code&gt;AEM&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
