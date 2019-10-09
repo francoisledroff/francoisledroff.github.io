@@ -2,6 +2,11 @@ This is the source for my [blog](https://francoisledroff.github.io/).
 
 The content is rendered using [JBake](http://jbake.org/).
 
+make sure to use a jdk supported by jbake
+
+    export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home"
+    export PATH="$JAVA_HOME/bin:$PATH"
+
 Go to the `src/jbake` dir :
 * `jbake -b` to build it
 * `jbake -s` to preview it on `localhost`

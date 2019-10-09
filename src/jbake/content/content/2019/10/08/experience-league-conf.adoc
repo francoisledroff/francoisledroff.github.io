@@ -1,0 +1,27 @@
+=  Implémentez une intégration avec AEM presque sans code - Adobe Experience League - Paris
+Francois Le Droff
+2019-10-08
+:jbake-type: post
+:jbake-tags:  Conference, AEM, adobe.io, Adobe, Français,
+:jbake-status: published
+
+
+Hier à Paris, avait lieu une conférence organisée par Adobe pour le lancement de  l'link:https://experienceleague.adobe.com[Experience League] en France.
+J'ai eu l'occasion d'y présenter le travail de mon équipe et ainsi de faire quelques démonstration de
+
+* Adobe I/O Runtime
+* Adobe I/O Events
+* ainsi que du connecteur `Adobe I/O Events` pour AEM
+
+Vous pouvez retrouver la présentation sur link:https://www.slideshare.net/francoisledroff/implmentez-une-intgration-avec-aem-presque-sans-code[slideshare].
+Quant aux démos, vous pouvez les rejouer à la maison,
+allez faire un tour sur link:https://github.com/francoisledroff/adaptTo2018[ce projet github].
+
+
+Quelques liens pour aller plus loin:
+
+* link:https://www.adobe.io/apis/cloudplatform/events/documentation.html[Adobe I/O Events Documentation]
+* link:https://medium.com/adobetech[Adobe I/O Medium Blog]
+* link:https://github.com/adobeio[Adobe I/O GitHub]
+
+

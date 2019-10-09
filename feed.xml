@@ -6,9 +6,76 @@
     <atom:link href="http://francoisledroff.github.io//feed.xml" rel="self" type="application/rss+xml" />
     <description>Francois Le Droff's Home</description>
     <language>en-gb</language>
-    <pubDate>Tue, 4 Sep 2018 17:23:09 +0200</pubDate>
-    <lastBuildDate>Tue, 4 Sep 2018 17:23:09 +0200</lastBuildDate>
+    <pubDate>Wed, 9 Oct 2019 15:02:15 +0200</pubDate>
+    <lastBuildDate>Wed, 9 Oct 2019 15:02:15 +0200</lastBuildDate>
 
+    <item>
+      <title>Implémentez une intégration avec AEM presque sans code - Adobe Experience League - Paris</title>
+      <link>http://francoisledroff.github.io/content/2019/10/08/experience-league-conf.html</link>
+      <pubDate>Tue, 8 Oct 2019 00:00:00 +0200</pubDate>
+      <guid isPermaLink="false">content/2019/10/08/experience-league-conf.html</guid>
+      	<description>
+	&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Hier à Paris, avait lieu une conférence organisée par Adobe pour le lancement de  l&amp;#8217;&lt;a href=&quot;https://experienceleague.adobe.com&quot;&gt;Experience League&lt;/a&gt; en France.
+J&amp;#8217;ai eu l&amp;#8217;occasion d&amp;#8217;y présenter le travail de mon équipe et ainsi de faire quelques démonstration de&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Adobe I/O Runtime&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Adobe I/O Events&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ainsi que du connecteur &lt;code&gt;Adobe I/O Events&lt;/code&gt; pour AEM&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Vous pouvez retrouver la présentation sur &lt;a href=&quot;https://www.slideshare.net/francoisledroff/implmentez-une-intgration-avec-aem-presque-sans-code&quot;&gt;slideshare&lt;/a&gt;.
+Quant aux démos, vous pouvez les rejouer à la maison,
+allez faire un tour sur &lt;a href=&quot;https://github.com/francoisledroff/adaptTo2018&quot;&gt;ce projet github&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Quelques liens pour aller plus loin:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.adobe.io/apis/cloudplatform/events/documentation.html&quot;&gt;Adobe I/O Events Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://medium.com/adobetech&quot;&gt;Adobe I/O Medium Blog&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/adobeio&quot;&gt;Adobe I/O GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+	</description>
+    </item>
+    <item>
+      <title>Comme ma poche</title>
+      <link>http://francoisledroff.github.io/content/2018/11/20/comme-ma-poche.html</link>
+      <pubDate>Tue, 20 Nov 2018 00:00:00 +0100</pubDate>
+      <guid isPermaLink="false">content/2018/11/20/comme-ma-poche.html</guid>
+      	<description>
+	&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Ce matin d&amp;#8217;automne 2018 nous sommes main dans la main de retour du cours de Hip-Hop.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Papa&lt;/strong&gt; &quot;Tu es prêt pour ton spectacle, tu maîtrises la chorégraphie ?&quot;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Y&lt;/strong&gt; &quot;Je la sais comme si c&amp;#8217;était dans ma poche.&quot;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+	</description>
+    </item>
     <item>
       <title>Build event-driven integrations with AEM using Adobe I/O Events - Hands-on-lab - AdaptTo 2018</title>
       <link>http://francoisledroff.github.io/content/2018/09/04/adaptTo-2018-lab.html</link>
