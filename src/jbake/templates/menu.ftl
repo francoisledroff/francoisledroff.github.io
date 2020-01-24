@@ -20,6 +20,7 @@
 
 		            <li><a href="/tags/Conference.html">Conferences</a></li>
                 <li><a href="/tags/Papa.html">Papa</a></li>
+                <li><a href="/tags/Lectures.html">Lectures</a></li>
 
                 <!--
 		            <li class="dropdown">

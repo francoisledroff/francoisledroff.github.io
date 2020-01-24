@@ -1,0 +1,59 @@
+=  Cher pays de mon enfance
+Francois Le Droff
+2020-01-20
+:jbake-type: post
+:jbake-tags:  Lectures, Français,
+:jbake-status: published
+
+
+"Cher pays de mon enfance" (Futuropolis, 08/10/2015, ISBN : 2754810854 ) est une BD de link:https://fr.wikipedia.org/wiki/%C3%89tienne_Davodeau[Etienne Davodeau]
+ relatant l'enquête de link:https://fr.wikipedia.org/wiki/Beno%C3%AEt_Collombat[Benoît Collombat] sur link:https://fr.wikipedia.org/wiki/Service_d%27action_civique[Le SAC]
+ et plus particulièrement sur les affaires link:https://fr.wikipedia.org/wiki/Fran%C3%A7ois_Renaud[Renaud] et link:https://fr.wikipedia.org/wiki/Affaire_Robert_Boulin[Boulin]
+
+[cols="3a,3a,3a"]
+|===
+| image::/img/IMG_2332.jpg[cover,300]
+| image::/img/IMG_2330.jpg[page-i,300]
+| image::/img/IMG_2331.jpg[page-j,300]
+|===
+
+
+
+Le service d'action civique (Le SAC) a été, de 1960 à 1981, une association au service du général de Gaulle puis de ses successeurs gaullistes.
+
+[quote]
+--
+L'organisation va jusqu'à employer de dangereux criminels autorisés à exercer la violence, à tuer, et à commettre des braquages dont une part des profits est reversée secrètement au SAC.
+
+En échange de leurs services les criminels obtiennent la garantie d'un statut  d'impunité totale,
+y compris pour leurs propres crimes:
+
+tout cela est raconté dans ce livre, avec force détails, par des magistrats, des responsables des services secrets, des policiers,
+qui ont tous vécu personnellement cette expérience dramatique et ont dû assister impuissants aux détournements d'enquêtes, aux destructions de preuves,
+ orchestrés depuis les sommets des administrations auxquelles ils appartenaient.
+
+
+Ce fut le cas du magistrat François Colcombet, conseiller à la Cour de cassation, il confie aux auteurs :
+
+
+« Dès que vous arrêtez un gros truand, il vous sort une carte bleu blanc rouge du SAC ...
+Alors, on rend compte à son procureur ... qui rend compte à son procureur général. Le tri se fait en haut lieu. »
+
+Paul Roux, dirigeant des Renseignements généraux, déclare que lorsqu'il recevait de la part
+de ses employés les plus dévoués des dossiers sur des crimes impliquant le SAC
+- extorsions de fonds, menaces de mort et autres - il les conservait en sûreté dans son coffre-fort ...
+
+
+Le SAC était donc devenu un État occulte dans l'état officiel, un réseau de pouvoir étendu à l'ensemble du pays
+et traversant toutes les institutions : de la magistrature à la police, du milieu politique
+à la haute administration, des secteurs économiques aux médias.
+
+Une armée secrète d'individus qui, derrière le masque de leurs rôles exercés publiquement, dissimulaient
+leur double identité de militants secrets de l'organisation, intervenant parfois de façon chirurgicale
+sur la scène des crimes lorsqu'il falalit détourner les enquêtes pour protéger les commanditaires politiques de sales affaires.
+
+(...)
+
+Connaitre son passé est en effet indispensable si l'on veut éviter d'être condamné' a le revivre
+Comme l'écrivait Milan Kundeta, la lutte contre le pouvoir et sa dégénérescence est aussi la lutte de la mémoire contre l'oubli .
+--
