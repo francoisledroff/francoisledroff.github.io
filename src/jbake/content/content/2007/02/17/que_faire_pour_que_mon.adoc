@@ -2,7 +2,7 @@
 Francois Le Droff
 2007-02-17
 :jbake-type: post
-:jbake-tags:  Java 
+:jbake-tags: Tech,  Java
 :jbake-status: published
 :source-highlighter: prettify
 

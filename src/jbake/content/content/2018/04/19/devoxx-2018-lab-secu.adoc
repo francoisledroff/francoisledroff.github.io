@@ -2,7 +2,7 @@
 Francois Le Droff
 2018-04-18
 :jbake-type: post
-:jbake-tags:  Conference, Sécurité, Architecture, Français, devoxx, lab, keyCloak, Spring, Spring Security
+:jbake-tags: Tech,  Conference, Sécurité, Architecture, Français, devoxx, lab, keyCloak, Spring, Spring Security
 :jbake-status: published
 
 Cette année quelques téméraires développeuses et développeurs ont passé trois heures avec Romain et moi

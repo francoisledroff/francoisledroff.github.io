@@ -2,7 +2,7 @@
 Francois Le Droff
 2006-06-14
 :jbake-type: post
-:jbake-tags:  OpenSource, Linux
+:jbake-tags: Tech,  OpenSource, Linux
 :jbake-status: published
 :source-highlighter: prettify
 

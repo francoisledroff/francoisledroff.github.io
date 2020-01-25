@@ -2,7 +2,7 @@
 Francois Le Droff
 2006-06-28
 :jbake-type: post
-:jbake-tags:  OpenSource, XWiki
+:jbake-tags: Tech,  OpenSource, XWiki
 :jbake-status: published
 :source-highlighter: prettify
 

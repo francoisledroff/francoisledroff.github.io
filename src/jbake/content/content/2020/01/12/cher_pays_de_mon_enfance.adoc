@@ -2,7 +2,7 @@
 Francois Le Droff
 2020-01-20
 :jbake-type: post
-:jbake-tags:  Lectures, Français,
+:jbake-tags: Books, Lectures, Français,
 :jbake-status: published
 
 

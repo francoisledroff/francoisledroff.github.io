@@ -2,7 +2,7 @@
 Francois Le Droff
 2007-09-07
 :jbake-type: post
-:jbake-tags:  Adobe 
+:jbake-tags: Tech,  Adobe
 :jbake-status: published
 :source-highlighter: prettify
 

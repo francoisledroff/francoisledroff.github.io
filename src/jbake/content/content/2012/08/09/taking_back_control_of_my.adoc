@@ -2,7 +2,7 @@
 Francois Le Droff
 2012-08-09
 :jbake-type: post
-:jbake-tags:  IT 
+:jbake-tags: Tech,  IT
 :jbake-status: published
 :source-highlighter: prettify
 

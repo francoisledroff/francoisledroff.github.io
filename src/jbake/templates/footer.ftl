@@ -5,7 +5,8 @@
       <div class="container">
 
         <p class="credit">
-        Published with
+
+        Site Published with
         a <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/"><em>Creative Commons by-nc-sa</em> license</a>,
           mixed with <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>,
           baked with <a href="http://jbake.org">JBake ${version}</a>
@@ -15,6 +16,7 @@
 	      src="http://i.creativecommons.org/l/by-nc-sa/2.0/fr/80x15.png"/></a>
 
          </p>
+
       </div>
     </div>
     

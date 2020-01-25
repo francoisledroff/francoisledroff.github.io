@@ -1,0 +1,18 @@
+=  Les Cobayes
+Francois Le Droff
+2020-01-08
+:jbake-type: post
+:jbake-tags: Books, Lectures, Français,
+:jbake-status: published
+
+
+link:https://fr.wikipedia.org/wiki/Les_Cobayes["Les Cobayes"] (Dargaud, 17/01/2014, ISBN : 220506326X) est une BD de Tonino Benacquista (scénario), Nicolas Barral (dessin) et Philippe de la Fuente (couleurs)
+
+
+[cols="3a,5a"]
+|===
+| image::/img/les_cobayes.jpg[cover,300]
+| image::/img/IMG_2300.jpg[page-i,300]
+|===
+
+

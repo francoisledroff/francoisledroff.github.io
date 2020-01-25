@@ -1,439 +1,471 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <url>
-        <loc>http://francoisledroff.github.io/projects.html</loc>
+        <loc>http://localhost:8820projects.html</loc>
         <lastmod>2016-01-16</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/conferences.html</loc>
+        <loc>http://localhost:8820conferences.html</loc>
         <lastmod>2016-01-16</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2020/01/12/cher_pays_de_mon_enfance.html</loc>
+        <loc>http://localhost:8820content/2020/01/12/cher_pays_de_mon_enfance.html</loc>
         <lastmod>2020-01-20</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2019/10/08/experience-league-conf.html</loc>
+        <loc>http://localhost:8820content/2020/01/08/les_cobayes.html</loc>
+        <lastmod>2020-01-08</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:8820content/2019/12/21/Fais_tu_frettes.html</loc>
+        <lastmod>2019-12-21</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:8820content/2019/10/08/experience-league-conf.html</loc>
         <lastmod>2019-10-08</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2018/11/20/comme-ma-poche.html</loc>
+        <loc>http://localhost:8820content/2019/06/21/unCOVER.html</loc>
+        <lastmod>2019-06-21</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:8820content/2018/11/20/comme-ma-poche.html</loc>
         <lastmod>2018-11-20</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2018/09/04/adaptTo-2018-lab.html</loc>
+        <loc>http://localhost:8820content/2018/09/04/adaptTo-2018-lab.html</loc>
         <lastmod>2018-09-04</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2018/08/08/adobe-ims-jwt-token-util.html</loc>
+        <loc>http://localhost:8820content/2018/08/08/adobe-ims-jwt-token-util.html</loc>
         <lastmod>2018-08-08</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2018/05/08/precipitation.html</loc>
+        <loc>http://localhost:8820content/2018/06/21/Cheeky_And_Cheesy.html</loc>
+        <lastmod>2018-06-21</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:8820content/2018/05/08/precipitation.html</loc>
         <lastmod>2018-05-08</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2018/04/19/devoxx-2018-lab-secu.html</loc>
+        <loc>http://localhost:8820content/2018/04/19/devoxx-2018-lab-secu.html</loc>
         <lastmod>2018-04-18</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2017/09/20/moved.html</loc>
+        <loc>http://localhost:8820content/2017/12/21/Hammered_Hamster.html</loc>
+        <lastmod>2017-12-21</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:8820content/2017/09/20/moved.html</loc>
         <lastmod>2017-09-20</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2016/11/17/Devops-days-berlin-2016.html</loc>
+        <loc>http://localhost:8820content/2017/06/21/Hammered_Hamster.html</loc>
+        <lastmod>2017-06-21</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:8820content/2016/12/21/InstruMENTAL.html</loc>
+        <lastmod>2016-12-21</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:8820content/2016/11/17/Devops-days-berlin-2016.html</loc>
         <lastmod>2016-11-17</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2016/01/25/Jhipster-meetup.html</loc>
+        <loc>http://localhost:8820content/2016/06/21/BrestByNight.html</loc>
+        <lastmod>2016-06-21</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:8820content/2016/01/25/Jhipster-meetup.html</loc>
         <lastmod>2016-01-25</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2015/11/03/code-motion-Berlin-2015.html</loc>
+        <loc>http://localhost:8820content/2015/11/03/code-motion-Berlin-2015.html</loc>
         <lastmod>2015-11-03</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2015/04/10/devoxx-fr-2015.html</loc>
+        <loc>http://localhost:8820content/2015/04/10/devoxx-fr-2015.html</loc>
         <lastmod>2015-04-10</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2014/12/04/an_aem_cq_salesforce_integration.html</loc>
+        <loc>http://localhost:8820content/2014/12/04/an_aem_cq_salesforce_integration.html</loc>
         <lastmod>2014-12-04</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2014/07/29/chef_metal_experimentations_aem_test.html</loc>
+        <loc>http://localhost:8820content/2014/07/29/chef_metal_experimentations_aem_test.html</loc>
         <lastmod>2014-07-29</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2014/07/03/back_from_basel.html</loc>
+        <loc>http://localhost:8820content/2014/07/03/back_from_basel.html</loc>
         <lastmod>2014-07-03</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2014/05/13/master_chef_class_learn_how.html</loc>
+        <loc>http://localhost:8820content/2014/05/13/master_chef_class_learn_how.html</loc>
         <lastmod>2014-05-13</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2014/05/05/master_chef_puppet_show_and.html</loc>
+        <loc>http://localhost:8820content/2014/05/05/master_chef_puppet_show_and.html</loc>
         <lastmod>2014-05-05</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2013/07/31/perforce_shelving_jenkins.html</loc>
+        <loc>http://localhost:8820content/2013/07/31/perforce_shelving_jenkins.html</loc>
         <lastmod>2013-07-31</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2013/04/26/back_from_devoxx_part_4.html</loc>
+        <loc>http://localhost:8820content/2013/04/26/back_from_devoxx_part_4.html</loc>
         <lastmod>2013-04-26</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2013/04/23/back_from_devoxx_part_3.html</loc>
+        <loc>http://localhost:8820content/2013/04/23/back_from_devoxx_part_3.html</loc>
         <lastmod>2013-04-23</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2013/04/22/back_from_devoxx_part_2.html</loc>
+        <loc>http://localhost:8820content/2013/04/22/back_from_devoxx_part_2.html</loc>
         <lastmod>2013-04-22</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2013/04/19/back_from_devoxx_part_11.html</loc>
+        <loc>http://localhost:8820content/2013/04/19/back_from_devoxx_part_11.html</loc>
         <lastmod>2013-04-19</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2012/12/04/dotjs_eu.html</loc>
+        <loc>http://localhost:8820content/2012/12/04/dotjs_eu.html</loc>
         <lastmod>2012-12-04</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2012/08/09/taking_back_control_of_my.html</loc>
+        <loc>http://localhost:8820content/2012/08/09/taking_back_control_of_my.html</loc>
         <lastmod>2012-08-09</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2012/07/31/apache_on_ssl_as_a1.html</loc>
+        <loc>http://localhost:8820content/2012/07/31/apache_on_ssl_as_a1.html</loc>
         <lastmod>2012-07-31</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2011/08/02/a_customer_experience_management_a.html</loc>
+        <loc>http://localhost:8820content/2011/08/02/a_customer_experience_management_a.html</loc>
         <lastmod>2011-08-02</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2011/03/09/les_cast_codeurs_podcast_episode.html</loc>
+        <loc>http://localhost:8820content/2011/03/09/les_cast_codeurs_podcast_episode.html</loc>
         <lastmod>2011-03-09</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2010/11/29/soir%C3%A9e_flex_ria_au_nantes.html</loc>
+        <loc>http://localhost:8820content/2010/11/29/soir%C3%A9e_flex_ria_au_nantes.html</loc>
         <lastmod>2010-11-29</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2010/05/19/la_sortie_de_cairngorm3_ma.html</loc>
+        <loc>http://localhost:8820content/2010/05/19/la_sortie_de_cairngorm3_ma.html</loc>
         <lastmod>2010-05-19</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2010/04/19/demain_soir_java_flex_cidre.html</loc>
+        <loc>http://localhost:8820content/2010/04/19/demain_soir_java_flex_cidre.html</loc>
         <lastmod>2010-04-19</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2010/03/29/sortie_de_flexpmd_1_1.html</loc>
+        <loc>http://localhost:8820content/2010/03/29/sortie_de_flexpmd_1_1.html</loc>
         <lastmod>2010-03-29</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2010/02/08/adobe_sponsor_du_2%C3%A8me_anniversaire.html</loc>
+        <loc>http://localhost:8820content/2010/02/08/adobe_sponsor_du_2%C3%A8me_anniversaire.html</loc>
         <lastmod>2010-02-08</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2010/01/13/cairngorm_3_0_2_release.html</loc>
+        <loc>http://localhost:8820content/2010/01/13/cairngorm_3_0_2_release.html</loc>
         <lastmod>2010-01-13</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2009/11/20/radeon_ati_video_driver_issue.html</loc>
+        <loc>http://localhost:8820content/2009/11/20/radeon_ati_video_driver_issue.html</loc>
         <lastmod>2009-11-20</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2009/10/28/apr%C3%A8s_midi_tontons_flexeurs_les.html</loc>
+        <loc>http://localhost:8820content/2009/10/28/apr%C3%A8s_midi_tontons_flexeurs_les.html</loc>
         <lastmod>2009-10-28</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2009/10/06/cairngorm_3_is_out_for.html</loc>
+        <loc>http://localhost:8820content/2009/10/06/cairngorm_3_is_out_for.html</loc>
         <lastmod>2009-10-06</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2009/09/16/tour_d_horizon_des_outils.html</loc>
+        <loc>http://localhost:8820content/2009/09/16/tour_d_horizon_des_outils.html</loc>
         <lastmod>2009-09-16</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2009/09/02/flexpmd_is_born.html</loc>
+        <loc>http://localhost:8820content/2009/09/02/flexpmd_is_born.html</loc>
         <lastmod>2009-09-02</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2009/07/22/automated_testing_and_quality_control.html</loc>
+        <loc>http://localhost:8820content/2009/07/22/automated_testing_and_quality_control.html</loc>
         <lastmod>2009-07-22</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2009/07/10/compte_rendu_de_la_soir%C3%A9e.html</loc>
+        <loc>http://localhost:8820content/2009/07/10/compte_rendu_de_la_soir%C3%A9e.html</loc>
         <lastmod>2009-07-10</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2009/07/06/demain_soir%C3%A9e_ria_flex_et.html</loc>
+        <loc>http://localhost:8820content/2009/07/06/demain_soir%C3%A9e_ria_flex_et.html</loc>
         <lastmod>2009-07-06</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2009/06/23/the_spring_of_flex_remoting.html</loc>
+        <loc>http://localhost:8820content/2009/06/23/the_spring_of_flex_remoting.html</loc>
         <lastmod>2009-06-23</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2009/06/05/conf%C3%A9rence_ria_flex_au_riveria.html</loc>
+        <loc>http://localhost:8820content/2009/06/05/conf%C3%A9rence_ria_flex_au_riveria.html</loc>
         <lastmod>2009-06-05</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2009/05/19/adobe_designer_developer_experience_conf%C3%A9rence.html</loc>
+        <loc>http://localhost:8820content/2009/05/19/adobe_designer_developer_experience_conf%C3%A9rence.html</loc>
         <lastmod>2009-05-19</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2009/03/09/le_semi_de_paris.html</loc>
+        <loc>http://localhost:8820content/2009/03/09/le_semi_de_paris.html</loc>
         <lastmod>2009-03-09</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2009/03/03/maven_on_flex_livecycle_es.html</loc>
+        <loc>http://localhost:8820content/2009/03/03/maven_on_flex_livecycle_es.html</loc>
         <lastmod>2009-03-03</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2009/02/03/java_for_flex_architects.html</loc>
+        <loc>http://localhost:8820content/2009/02/03/java_for_flex_architects.html</loc>
         <lastmod>2009-02-03</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2008/12/16/demo_surprise_de_lcds_next.html</loc>
+        <loc>http://localhost:8820content/2008/12/16/demo_surprise_de_lcds_next.html</loc>
         <lastmod>2008-12-16</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2008/12/08/l_integration_de_flex_et.html</loc>
+        <loc>http://localhost:8820content/2008/12/08/l_integration_de_flex_et.html</loc>
         <lastmod>2008-12-08</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2008/11/29/back_on_the_road_heading.html</loc>
+        <loc>http://localhost:8820content/2008/11/29/back_on_the_road_heading.html</loc>
         <lastmod>2008-11-29</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2008/11/16/speaking_at_max.html</loc>
+        <loc>http://localhost:8820content/2008/11/16/speaking_at_max.html</loc>
         <lastmod>2008-11-16</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2008/10/28/a_new_set_of_maven.html</loc>
+        <loc>http://localhost:8820content/2008/10/28/a_new_set_of_maven.html</loc>
         <lastmod>2008-10-28</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2008/07/31/a_new_set_of_flex.html</loc>
+        <loc>http://localhost:8820content/2008/07/31/a_new_set_of_flex.html</loc>
         <lastmod>2008-07-31</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2008/07/01/partenariat_adobe_google_yahoo_les.html</loc>
+        <loc>http://localhost:8820content/2008/07/01/partenariat_adobe_google_yahoo_les.html</loc>
         <lastmod>2008-07-01</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2008/05/31/l_url_clef_de_voute.html</loc>
+        <loc>http://localhost:8820content/2008/05/31/l_url_clef_de_voute.html</loc>
         <lastmod>2008-05-31</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2008/05/24/a_blazeds_xdoclet_spring_hibernate.html</loc>
+        <loc>http://localhost:8820content/2008/05/24/a_blazeds_xdoclet_spring_hibernate.html</loc>
         <lastmod>2008-05-24</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2008/05/22/nouvelles_%C3%A9valuations_des_esbs_mule.html</loc>
+        <loc>http://localhost:8820content/2008/05/22/nouvelles_%C3%A9valuations_des_esbs_mule.html</loc>
         <lastmod>2008-05-22</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2008/04/30/create_your_maven_repository_from.html</loc>
+        <loc>http://localhost:8820content/2008/04/30/create_your_maven_repository_from.html</loc>
         <lastmod>2008-04-30</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2008/04/26/testing_maven_archetype.html</loc>
+        <loc>http://localhost:8820content/2008/04/26/testing_maven_archetype.html</loc>
         <lastmod>2008-04-26</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2008/04/25/quickly_create_run_and_test.html</loc>
+        <loc>http://localhost:8820content/2008/04/25/quickly_create_run_and_test.html</loc>
         <lastmod>2008-04-25</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2008/02/07/retour_sur_le_salon_solution.html</loc>
+        <loc>http://localhost:8820content/2008/02/07/retour_sur_le_salon_solution.html</loc>
         <lastmod>2008-02-07</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2008/01/11/tous_mes_voeux_pour_une.html</loc>
+        <loc>http://localhost:8820content/2008/01/11/tous_mes_voeux_pour_une.html</loc>
         <lastmod>2008-01-11</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2007/09/07/max_2007.html</loc>
+        <loc>http://localhost:8820content/2007/09/07/max_2007.html</loc>
         <lastmod>2007-09-07</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2007/08/15/petite_digression_politique.html</loc>
+        <loc>http://localhost:8820content/2007/08/15/petite_digression_politique.html</loc>
         <lastmod>2007-08-15</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2007/07/04/dell_encore_coupable_de_vente.html</loc>
+        <loc>http://localhost:8820content/2007/07/04/dell_encore_coupable_de_vente.html</loc>
         <lastmod>2007-07-04</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2007/02/17/que_faire_pour_que_mon.html</loc>
+        <loc>http://localhost:8820content/2007/02/17/que_faire_pour_que_mon.html</loc>
         <lastmod>2007-02-17</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2007/02/17/services_web_%C3%A0_quand_la.html</loc>
+        <loc>http://localhost:8820content/2007/02/17/services_web_%C3%A0_quand_la.html</loc>
         <lastmod>2007-02-17</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2007/01/30/salon_solution_linux.html</loc>
+        <loc>http://localhost:8820content/2007/01/30/salon_solution_linux.html</loc>
         <lastmod>2007-01-30</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2007/01/16/r%C3%A9union_pjbug_au_salon_solutionlinux2007.html</loc>
+        <loc>http://localhost:8820content/2007/01/16/r%C3%A9union_pjbug_au_salon_solutionlinux2007.html</loc>
         <lastmod>2007-01-16</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2006/12/31/javapolis_2006_quelques_liens.html</loc>
+        <loc>http://localhost:8820content/2006/12/31/javapolis_2006_quelques_liens.html</loc>
         <lastmod>2006-12-31</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2006/12/31/objectweb_%C3%A0_javapolis.html</loc>
+        <loc>http://localhost:8820content/2006/12/31/objectweb_%C3%A0_javapolis.html</loc>
         <lastmod>2006-12-31</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2006/12/20/de_retour_de_javapolis_2006.html</loc>
+        <loc>http://localhost:8820content/2006/12/20/de_retour_de_javapolis_2006.html</loc>
         <lastmod>2006-12-20</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2006/12/11/javapolis_2006.html</loc>
+        <loc>http://localhost:8820content/2006/12/11/javapolis_2006.html</loc>
         <lastmod>2006-12-11</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2006/10/16/les_20_kms_de_paris.html</loc>
+        <loc>http://localhost:8820content/2006/10/16/les_20_kms_de_paris.html</loc>
         <lastmod>2006-10-16</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2006/07/04/javaday_2006.html</loc>
+        <loc>http://localhost:8820content/2006/07/04/javaday_2006.html</loc>
         <lastmod>2006-07-04</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2006/06/30/pjbug_28_juin_2006.html</loc>
+        <loc>http://localhost:8820content/2006/06/30/pjbug_28_juin_2006.html</loc>
         <lastmod>2006-06-30</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2006/06/28/bravo_%C3%A0_xwiki.html</loc>
+        <loc>http://localhost:8820content/2006/06/28/bravo_%C3%A0_xwiki.html</loc>
         <lastmod>2006-06-28</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2006/06/27/ign_versus_google.html</loc>
+        <loc>http://localhost:8820content/2006/06/27/ign_versus_google.html</loc>
         <lastmod>2006-06-27</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2006/06/14/je_suis_enfin_libre.html</loc>
+        <loc>http://localhost:8820content/2006/06/14/je_suis_enfin_libre.html</loc>
         <lastmod>2006-06-14</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2006/04/07/microsoft_open_source_software_lab.html</loc>
+        <loc>http://localhost:8820content/2006/04/07/microsoft_open_source_software_lab.html</loc>
         <lastmod>2006-04-07</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2006/03/02/pragmatic_profiling_find_out_quickly.html</loc>
+        <loc>http://localhost:8820content/2006/03/02/pragmatic_profiling_find_out_quickly.html</loc>
         <lastmod>2006-03-02</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2006/02/03/pjbug_jboss_clustering.html</loc>
+        <loc>http://localhost:8820content/2006/02/03/pjbug_jboss_clustering.html</loc>
         <lastmod>2006-02-03</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2006/01/25/qsos_est_d%C3%A9sormais_sous_licence.html</loc>
+        <loc>http://localhost:8820content/2006/01/25/qsos_est_d%C3%A9sormais_sous_licence.html</loc>
         <lastmod>2006-01-25</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2006/01/21/maintenant_qu_il_fait_tout.html</loc>
+        <loc>http://localhost:8820content/2006/01/21/maintenant_qu_il_fait_tout.html</loc>
         <lastmod>2006-01-21</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2006/01/18/p6spy_integration_in_jboss_do.html</loc>
+        <loc>http://localhost:8820content/2006/01/18/p6spy_integration_in_jboss_do.html</loc>
         <lastmod>2006-01-18</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2005/12/21/javapolis_2005.html</loc>
+        <loc>http://localhost:8820content/2005/12/21/javapolis_2005.html</loc>
         <lastmod>2005-12-21</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2005/11/29/qsos_qualification_et_de_s%C3%A9lection.html</loc>
+        <loc>http://localhost:8820content/2005/11/29/qsos_qualification_et_de_s%C3%A9lection.html</loc>
         <lastmod>2005-11-29</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2005/11/23/jboss_locking_follow_up.html</loc>
+        <loc>http://localhost:8820content/2005/11/23/jboss_locking_follow_up.html</loc>
         <lastmod>2005-11-23</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2005/11/23/retour_sur_rialto_et_le.html</loc>
+        <loc>http://localhost:8820content/2005/11/23/retour_sur_rialto_et_le.html</loc>
         <lastmod>2005-11-23</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2005/11/23/r%C3%A9union_ossgtp_usine_de_d%C3%A9v.html</loc>
+        <loc>http://localhost:8820content/2005/11/23/r%C3%A9union_ossgtp_usine_de_d%C3%A9v.html</loc>
         <lastmod>2005-11-23</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2005/10/27/symposium_dng_2005.html</loc>
+        <loc>http://localhost:8820content/2005/10/27/symposium_dng_2005.html</loc>
         <lastmod>2005-10-27</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2005/10/17/death_to_the_jboss_transaction.html</loc>
+        <loc>http://localhost:8820content/2005/10/17/death_to_the_jboss_transaction.html</loc>
         <lastmod>2005-10-17</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2005/10/08/jboss_transaction_configuration.html</loc>
+        <loc>http://localhost:8820content/2005/10/08/jboss_transaction_configuration.html</loc>
         <lastmod>2005-10-08</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2005/10/07/maven_book_bonus_chapter.html</loc>
+        <loc>http://localhost:8820content/2005/10/07/maven_book_bonus_chapter.html</loc>
         <lastmod>2005-10-07</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2005/09/07/ossgtp_du_18_aout_2005.html</loc>
+        <loc>http://localhost:8820content/2005/09/07/ossgtp_du_18_aout_2005.html</loc>
         <lastmod>2005-09-07</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2005/09/06/book_review_maven_a_developer.html</loc>
+        <loc>http://localhost:8820content/2005/09/06/book_review_maven_a_developer.html</loc>
         <lastmod>2005-09-06</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2005/07/14/p_extreme_table_g%C3%A9re_un.html</loc>
+        <loc>http://localhost:8820content/2005/07/14/p_extreme_table_g%C3%A9re_un.html</loc>
         <lastmod>2005-07-14</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2005/07/14/there_s_far_less_oa.html</loc>
+        <loc>http://localhost:8820content/2005/07/14/there_s_far_less_oa.html</loc>
         <lastmod>2005-07-14</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2005/05/15/meven_ide_maven_eclipse_plugin.html</loc>
+        <loc>http://localhost:8820content/2005/05/15/meven_ide_maven_eclipse_plugin.html</loc>
         <lastmod>2005-05-15</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2005/05/15/the_room_is_on_fire.html</loc>
+        <loc>http://localhost:8820content/2005/05/15/the_room_is_on_fire.html</loc>
         <lastmod>2005-05-15</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2005/05/06/eclipse_default_compliances.html</loc>
+        <loc>http://localhost:8820content/2005/05/06/eclipse_default_compliances.html</loc>
         <lastmod>2005-05-06</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2005/04/04/paris_blogue_t_il_une.html</loc>
+        <loc>http://localhost:8820content/2005/04/04/paris_blogue_t_il_une.html</loc>
         <lastmod>2005-04-04</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2005/02/22/www_droff_com.html</loc>
+        <loc>http://localhost:8820content/2005/02/22/www_droff_com.html</loc>
         <lastmod>2005-02-22</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2005/01/31/java_plus_rapide_plus_l%C3%A9ger.html</loc>
+        <loc>http://localhost:8820content/2005/01/31/java_plus_rapide_plus_l%C3%A9ger.html</loc>
         <lastmod>2005-01-31</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2005/01/26/javapolis_2004.html</loc>
+        <loc>http://localhost:8820content/2005/01/26/javapolis_2004.html</loc>
         <lastmod>2005-01-26</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2004/12/13/javapolis_2004_part1_Eclipse_in_Action_by+_Eric_Gamma.html</loc>
+        <loc>http://localhost:8820content/2004/12/13/javapolis_2004_part1_Eclipse_in_Action_by+_Eric_Gamma.html</loc>
         <lastmod>2004-12-13</lastmod>
     </url>
     <url>
-        <loc>http://francoisledroff.github.io/content/2004/12/13/javapolis_2004_part_2_+BPEL_in_action.html</loc>
+        <loc>http://localhost:8820content/2004/12/13/javapolis_2004_part_2_+BPEL_in_action.html</loc>
         <lastmod>2004-12-13</lastmod>
     </url>
 </urlset>

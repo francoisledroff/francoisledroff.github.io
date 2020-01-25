@@ -1,0 +1,28 @@
+=  Hiver 2016 - InstruMENTAL
+Francois Le Droff
+2016-12-21
+:jbake-type: post
+:jbake-tags:  Music, Compile
+:jbake-status: published
+
+Ma compile hiver 2016.
+
+[cols="3a,5a"]
+|===
+| image::/img/couv-Instru-mental.jpg[cover,300]
+link:https://open.spotify.com/playlist/2U7FPhqBBaKxXWtBJJHKyt?si=4RInef0SR_2NehhpS_FjMA["InstruMENTAL" sur Spotify]
+|* 01 - Polar Bear - Peepers
+*  02 - Sons of Kelmet - Inner Babylon
+*  03 - Ibrahim Maalouf - True Sorry
+*  04 - Brad Mehldeau - Everything In Its Right Place
+*  05 - Guillaume Perret & the Electric Epic - Shoebox
+*  06 - Russian Circles- Enter
+*  07 - Liquid Tension Experiment- Universal Mind
+*  08 - Explosions In the Sky - Your Hand In Mine
+*  09 - Grandbrothers- Rotor
+*  10 - Robin Foster- Last Exit - Brest By Night
+*  11 - Erick Truffaz Quartet- El Tiempo de la Revolucion
+|===
+
+
+

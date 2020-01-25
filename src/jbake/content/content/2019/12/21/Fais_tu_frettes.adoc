@@ -1,0 +1,31 @@
+=  Hiver 2019 - Heilles! Fais-tu Frettes ?
+Francois Le Droff
+2019-12-21
+:jbake-type: post
+:jbake-tags:  Music, Compile
+:jbake-status: published
+
+Ma compile Hiver 2019.
+
+[cols="3a,5a"]
+|===
+| image::/img/couv-Fais_tu_frettes.jpg[cover,300]
+link:https://open.spotify.com/playlist/0CcvzBMdEKx1hnRKTmYipo?si=2xOTWqsMRzWhjYzoEGzaJQ[Heilles! Fais-tu Frettes ? sur Spotify]
+|* 01 Big Thief - Not
+* 02 Charlotte Adigery - Paténipat
+* 03 Bror Gunnar Jansson - The Church Bell's Tone
+* 04 Billie Elish- Bad quy
+* 05 The Doors - The WASP (Texas Radio and the Big Beat)
+* 06 Sébastien Tellier - La ritournelle
+* 07 Johnny Marr - Easy money
+* 08 SuperTramp -Don't Leave Me Now
+* 09 Arbouretum - The Highwayman
+* 10 Robbie Rivera- Rock The Disco (David Guetta Laptop Remix)
+* 11 Malajube - Montreal -40°C
+* 12 Bleu Jeans Bleu- Coton ouaté
+* 13 Edvard Gried - Grieg_ Peer Gynt (Death Of Aase) (Solomon Grey's Paradise Lost Rework) (Solomon Grey's Paradise Lost Rework)
+* 14 Franz Liszt -  Lieder aus Franz Schubert's Schwanengesang, S. 560_ No. 7, Ständchen
+|===
+
+
+

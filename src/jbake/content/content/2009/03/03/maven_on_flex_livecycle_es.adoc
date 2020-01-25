@@ -2,7 +2,7 @@
 Francois Le Droff
 2009-03-03
 :jbake-type: post
-:jbake-tags:  Adobe, OpenSource, Flex, Maven
+:jbake-tags: Tech,  Adobe, OpenSource, Flex, Maven
 :jbake-status: published
 :source-highlighter: prettify
 

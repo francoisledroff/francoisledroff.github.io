@@ -2,7 +2,7 @@
 Francois Le Droff
 2005-11-29
 :jbake-type: post
-:jbake-tags:  OpenSource, QSOS
+:jbake-tags: Tech,  OpenSource, QSOS
 :jbake-status: published
 :source-highlighter: prettify
 

@@ -2,7 +2,7 @@
 Francois Le Droff
 2009-02-03
 :jbake-type: post
-:jbake-tags:  Java, Flex, Conference
+:jbake-tags: Tech,  Java, Flex, Conference
 :jbake-status: published
 :source-highlighter: prettify
 

@@ -2,7 +2,7 @@
 Francois Le Droff
 2016-01-25
 :jbake-type: post
-:jbake-tags:  JHipster, Conference, Sécurité, Architecture, Français, Adobe
+:jbake-tags: Tech,  JHipster, Conference, Sécurité, Architecture, Français, Adobe
 :jbake-status: published
 
 J'ai eu l'occasion de présenter mon retour d'expérience au meet-up JHipster de Janvier 2016.

@@ -2,7 +2,7 @@
 Francois Le Droff
 2011-03-09
 :jbake-type: post
-:jbake-tags:  Adobe, Conference, Flex, OpenSource
+:jbake-tags: Tech,  Adobe, Conference, Flex, OpenSource
 :jbake-status: published
 :source-highlighter: prettify
 

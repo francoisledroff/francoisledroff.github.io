@@ -1,0 +1,31 @@
+=  Eté 2017 - Et puis ça a fait Tilt
+Francois Le Droff
+2017-06-21
+:jbake-type: post
+:jbake-tags:  Music, Compile
+:jbake-status: published
+
+Ma compile été 2017.
+
+[cols="3a,5a"]
+|===
+| image::/img/couv-et puis ca a fait tilt.jpg[cover,300]
+link:https://open.spotify.com/playlist/3EpihSe28xZXDU8gfYFdXf?si=sM27UfXjS0Gf_k88ahhnFA["Et puis ça a fait Tilt" sur Spotify]
+|* 01 - Burger & Cadiot- Totem & Tabou
+ * 02 - Marianne Faithfull- Sex With Strangers (Sly & Robbie Dub Mix)
+ * 03 - Yog Sothoth - Ponpon
+ * 04 - Beth - Sweeter
+  * 05 - Jay Jay Johanson - I Want Some Fun
+  * 06 - Fatboy Slim- Talking Bout My Baby
+   * 07 - Clipse- Young Boy
+ * 08 - Beth - Deux
+ * 09 - Telepopmusik Vs Bogue & Thomas Winter- Love Can Damage Your Health
+ * 10 - Mathieu Boogaerts - L'espace
+ *  11 - PLaxcebo - Bigmouth Strikes Again
+ * 12 - Damon Albarn & Mali Musicians - Makelekele (version instrumentale)
+ * 13 - Die Anarchistische Abendunterhaltung -Of R_D_H_D (2+2=5)
+
+|===
+
+
+

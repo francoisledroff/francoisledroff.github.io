@@ -2,7 +2,7 @@
 Francois Le Droff
 2006-07-04
 :jbake-type: post
-:jbake-tags:  Java, ossgtp
+:jbake-tags: Tech,  Java, ossgtp
 :jbake-status: published
 :source-highlighter: prettify
 

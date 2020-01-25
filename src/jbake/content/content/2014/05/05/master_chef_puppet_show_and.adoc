@@ -2,7 +2,7 @@
 Francois Le Droff
 2014-05-05
 :jbake-type: post
-:jbake-tags:  OpenSource, Java, Conference, Devoxx, Chef, Puppet, Devops
+:jbake-tags: Tech,  OpenSource, Java, Conference, Devoxx, Chef, Puppet, Devops
 :jbake-status: published
 
 

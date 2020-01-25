@@ -2,7 +2,7 @@
 Francois Le Droff
 2018-09-04
 :jbake-type: post
-:jbake-tags:  Conference, lab, AEM, adobe.io, Adobe
+:jbake-tags: Tech,  Conference, lab, AEM, adobe.io, Adobe
 :jbake-status: published
 
 Tired of building connectors for AEM?

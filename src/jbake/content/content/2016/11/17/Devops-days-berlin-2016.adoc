@@ -2,7 +2,7 @@
 Francois Le Droff
 2016-11-17
 :jbake-type: post
-:jbake-tags:  devops, devopsdays, Conference, Chef, Ansible
+:jbake-tags: Tech,  devops, devopsdays, Conference, Chef, Ansible
 :jbake-status: published
 
 `Chef vs. Ansible`: this was the talk Romain and I gave at https://www.devopsdays.org/events/2016-berlin/program/romain-pelisse/[Devops Days Berlin 2016].

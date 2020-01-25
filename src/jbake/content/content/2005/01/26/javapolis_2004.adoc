@@ -2,7 +2,7 @@
 Francois Le Droff
 2005-01-26
 :jbake-type: post
-:jbake-tags:  Java, Javapolis
+:jbake-tags: Tech,  Java, Javapolis
 :jbake-status: published
 :source-highlighter: prettify
 

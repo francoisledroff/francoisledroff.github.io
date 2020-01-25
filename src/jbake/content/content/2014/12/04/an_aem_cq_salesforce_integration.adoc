@@ -2,7 +2,7 @@
 Francois Le Droff
 2014-12-04
 :jbake-type: post
-:jbake-tags:  Java, CQ5, AEM, Project, Adobe, Devops
+:jbake-tags: Tech,  Java, CQ5, AEM, Project, Adobe, Devops
 :jbake-status: published
 
 I recently published on github some code we used for an Adobe IT internal AEM/CQ based app: This could help you integrating SalesForce REST API ( and SOQL queries) into your CQ/AEM instance.

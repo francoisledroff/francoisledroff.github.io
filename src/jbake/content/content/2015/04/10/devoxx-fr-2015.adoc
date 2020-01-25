@@ -2,7 +2,7 @@
 Francois Le Droff
 2015-04-10
 :jbake-type: post
-:jbake-tags:  Security, devoxx, Conference, Sécurité, Français
+:jbake-tags: Tech,  Security, devoxx, Conference, Sécurité, Français
 :jbake-status: published
 
 `Barbus & Barbares` c’est le titre de la conférence

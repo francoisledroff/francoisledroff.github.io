@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Francois Le Droff's blog</title>
-    <link>http://francoisledroff.github.io/</link>
-    <atom:link href="http://francoisledroff.github.io//feed.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:8820</link>
+    <atom:link href="http://localhost:8820/feed.xml" rel="self" type="application/rss+xml" />
     <description>Francois Le Droff's Home</description>
     <language>en-gb</language>
-    <pubDate>Fri, 24 Jan 2020 15:48:47 +0100</pubDate>
-    <lastBuildDate>Fri, 24 Jan 2020 15:48:47 +0100</lastBuildDate>
+    <pubDate>Sat, 25 Jan 2020 17:11:45 +0100</pubDate>
+    <lastBuildDate>Sat, 25 Jan 2020 17:11:45 +0100</lastBuildDate>
 
     <item>
       <title>Cher pays de mon enfance</title>
-      <link>http://francoisledroff.github.io/content/2020/01/12/cher_pays_de_mon_enfance.html</link>
+      <link>http://localhost:8820content/2020/01/12/cher_pays_de_mon_enfance.html</link>
       <pubDate>Mon, 20 Jan 2020 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2020/01/12/cher_pays_de_mon_enfance.html</guid>
       	<description>
@@ -97,8 +97,114 @@ Comme l&amp;#8217;écrivait Milan Kundeta, la lutte contre le pouvoir et sa dég
 	</description>
     </item>
     <item>
+      <title>Les Cobayes</title>
+      <link>http://localhost:8820content/2020/01/08/les_cobayes.html</link>
+      <pubDate>Wed, 8 Jan 2020 00:00:00 +0100</pubDate>
+      <guid isPermaLink="false">content/2020/01/08/les_cobayes.html</guid>
+      	<description>
+	&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;https://fr.wikipedia.org/wiki/Les_Cobayes&quot;&gt;&quot;Les Cobayes&quot;&lt;/a&gt; (Dargaud, 17/01/2014, ISBN : 220506326X) est une BD de Tonino Benacquista (scénario), Nicolas Barral (dessin) et Philippe de la Fuente (couleurs)&lt;/p&gt;
+&lt;/div&gt;
+&lt;table class=&quot;tableblock frame-all grid-all stretch&quot;&gt;
+&lt;colgroup&gt;
+&lt;col style=&quot;width: 37.5%;&quot;&gt;
+&lt;col style=&quot;width: 62.5%;&quot;&gt;
+&lt;/colgroup&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;div class=&quot;content&quot;&gt;&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/img/les_cobayes.jpg&quot; alt=&quot;cover&quot; width=&quot;300&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;div class=&quot;content&quot;&gt;&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/img/IMG_2300.jpg&quot; alt=&quot;page-i&quot; width=&quot;300&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+	</description>
+    </item>
+    <item>
+      <title>Hiver 2019 - Heilles! Fais-tu Frettes ?</title>
+      <link>http://localhost:8820content/2019/12/21/Fais_tu_frettes.html</link>
+      <pubDate>Sat, 21 Dec 2019 00:00:00 +0100</pubDate>
+      <guid isPermaLink="false">content/2019/12/21/Fais_tu_frettes.html</guid>
+      	<description>
+	&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Ma compile Hiver 2019.&lt;/p&gt;
+&lt;/div&gt;
+&lt;table class=&quot;tableblock frame-all grid-all stretch&quot;&gt;
+&lt;colgroup&gt;
+&lt;col style=&quot;width: 37.5%;&quot;&gt;
+&lt;col style=&quot;width: 62.5%;&quot;&gt;
+&lt;/colgroup&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;div class=&quot;content&quot;&gt;&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/img/couv-Fais_tu_frettes.jpg&quot; alt=&quot;cover&quot; width=&quot;300&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;https://open.spotify.com/playlist/0CcvzBMdEKx1hnRKTmYipo?si=2xOTWqsMRzWhjYzoEGzaJQ&quot;&gt;Heilles! Fais-tu Frettes ? sur Spotify&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;div class=&quot;content&quot;&gt;&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;01 Big Thief - Not&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;02 Charlotte Adigery - Paténipat&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;03 Bror Gunnar Jansson - The Church Bell&amp;#8217;s Tone&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;04 Billie Elish- Bad quy&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;05 The Doors - The WASP (Texas Radio and the Big Beat)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;06 Sébastien Tellier - La ritournelle&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;07 Johnny Marr - Easy money&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;08 SuperTramp -Don&amp;#8217;t Leave Me Now&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;09 Arbouretum - The Highwayman&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;10 Robbie Rivera- Rock The Disco (David Guetta Laptop Remix)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;11 Malajube - Montreal -40°C&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;12 Bleu Jeans Bleu- Coton ouaté&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;13 Edvard Gried - Grieg_ Peer Gynt (Death Of Aase) (Solomon Grey&amp;#8217;s Paradise Lost Rework) (Solomon Grey&amp;#8217;s Paradise Lost Rework)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;14 Franz Liszt -  Lieder aus Franz Schubert&amp;#8217;s Schwanengesang, S. 560_ No. 7, Ständchen&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+	</description>
+    </item>
+    <item>
       <title>Implémentez une intégration avec AEM presque sans code - Adobe Experience League - Paris</title>
-      <link>http://francoisledroff.github.io/content/2019/10/08/experience-league-conf.html</link>
+      <link>http://localhost:8820content/2019/10/08/experience-league-conf.html</link>
       <pubDate>Tue, 8 Oct 2019 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2019/10/08/experience-league-conf.html</guid>
       	<description>
@@ -143,8 +249,92 @@ allez faire un tour sur &lt;a href=&quot;https://github.com/francoisledroff/adap
 	</description>
     </item>
     <item>
+      <title>Eté 2019 -  UnCOVER</title>
+      <link>http://localhost:8820content/2019/06/21/unCOVER.html</link>
+      <pubDate>Fri, 21 Jun 2019 00:00:00 +0200</pubDate>
+      <guid isPermaLink="false">content/2019/06/21/unCOVER.html</guid>
+      	<description>
+	&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Ma compile été 2019.&lt;/p&gt;
+&lt;/div&gt;
+&lt;table class=&quot;tableblock frame-all grid-all stretch&quot;&gt;
+&lt;colgroup&gt;
+&lt;col style=&quot;width: 37.5%;&quot;&gt;
+&lt;col style=&quot;width: 62.5%;&quot;&gt;
+&lt;/colgroup&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;div class=&quot;content&quot;&gt;&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/img/couv-uncover.PNG&quot; alt=&quot;cover&quot; width=&quot;300&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;https://open.spotify.com/playlist/7td77yL3N75ShmGHeA9tkV?si=iWsZT1C0R9yEQIsE4j1U7Q&quot;&gt;UnCOVER sur Spotify&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;div class=&quot;content&quot;&gt;&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;01 - Arno - Les filles du bord de mer (Live)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;02 - Philippe Léotard - Avec le temps&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;03 - Rachid Taha - Ecoute-moi camarade&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;04 - Cake - I Will Survive&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;05 - Christine and The Queens - Paradis Perdu&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;06 - Noir Désir - Ces Gens Là&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;07 - Joe Coker - With A Little Help From My Friends [Live]&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;08 - The Killers - Romeo And Juliet&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;09 - Miossec - La Fille à qui je pense&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;10 - The Jimi Hendrix Experience - Hey Joe&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;11 - Pyeng Threadgill - Close To Me&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;12 - The National - Mansion on the Hill (Live)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;13 - Rgage against the Machine - The Ghost of Tom Joad&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;14 - Brass Against - Wake Up&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;15 - Muse - Feeling Good&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;16 - Nirvana- The Man Who Sold The World&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;17 - Weezer- Take On Me&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+	</description>
+    </item>
+    <item>
       <title>Comme ma poche</title>
-      <link>http://francoisledroff.github.io/content/2018/11/20/comme-ma-poche.html</link>
+      <link>http://localhost:8820content/2018/11/20/comme-ma-poche.html</link>
       <pubDate>Tue, 20 Nov 2018 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2018/11/20/comme-ma-poche.html</guid>
       	<description>
@@ -165,7 +355,7 @@ allez faire un tour sur &lt;a href=&quot;https://github.com/francoisledroff/adap
     </item>
     <item>
       <title>Build event-driven integrations with AEM using Adobe I/O Events - Hands-on-lab - AdaptTo 2018</title>
-      <link>http://francoisledroff.github.io/content/2018/09/04/adaptTo-2018-lab.html</link>
+      <link>http://localhost:8820content/2018/09/04/adaptTo-2018-lab.html</link>
       <pubDate>Tue, 4 Sep 2018 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2018/09/04/adaptTo-2018-lab.html</guid>
       	<description>
@@ -265,7 +455,7 @@ See how Adobe I/O Events allows you to respond to both administrative events and
     </item>
     <item>
       <title>A small Java utility showcasing Adobe IMS JWT Token exchange</title>
-      <link>http://francoisledroff.github.io/content/2018/08/08/adobe-ims-jwt-token-util.html</link>
+      <link>http://localhost:8820content/2018/08/08/adobe-ims-jwt-token-util.html</link>
       <pubDate>Wed, 8 Aug 2018 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2018/08/08/adobe-ims-jwt-token-util.html</guid>
       	<description>
@@ -306,8 +496,95 @@ See how Adobe I/O Events allows you to respond to both administrative events and
 	</description>
     </item>
     <item>
+      <title>Eté 2018 - Cheeky &amp;amp; Cheesy</title>
+      <link>http://localhost:8820content/2018/06/21/Cheeky_And_Cheesy.html</link>
+      <pubDate>Thu, 21 Jun 2018 00:00:00 +0200</pubDate>
+      <guid isPermaLink="false">content/2018/06/21/Cheeky_And_Cheesy.html</guid>
+      	<description>
+	&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Ma compile été 2018.&lt;/p&gt;
+&lt;/div&gt;
+&lt;table class=&quot;tableblock frame-all grid-all stretch&quot;&gt;
+&lt;colgroup&gt;
+&lt;col style=&quot;width: 37.5%;&quot;&gt;
+&lt;col style=&quot;width: 62.5%;&quot;&gt;
+&lt;/colgroup&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;div class=&quot;content&quot;&gt;&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/img/couv-cheeky.png&quot; alt=&quot;cover&quot; width=&quot;300&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;https://open.spotify.com/playlist/2Ix0Sx7yl9wFEBaXK5L4zi?si=ErfsizaUSFWr8zz7y27WuQ&quot;&gt;&quot;Cheeky &amp;amp; Cheesy&quot; sur Spotify&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;div class=&quot;content&quot;&gt;&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;01 - Nouvelle Vague - Too Drunk To Fuck&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;02 - Patrick Coutin - Fais-moi jouir&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;03 - Charlotte Cardin - Dirty Dirty&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;04 - L.E.J. -La dalle&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;05 - Dream Wife - Hey Heartbreaker&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;06 - Alice et Moi - Cent fois&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;07 - Chlöe Howl - Strings&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;08 - Cécile McLorin Salvant - Mad About the Boy&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;09 - Bronski Beat- Smalltown Boy (Arnaud Rebotini Remix)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;10 - Françoise Hardy - Le temps de l&amp;#8217;amour&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;11 - Marika Hackman - Wolf&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;12 - Juniore - Je fais le mort&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;13 - The Cure - Friday I&amp;#8217;m In Love&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;14 - Jesse Garon- C&amp;#8217;est lundi&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;15 - The Police - Wrapped Around Your Finger&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;16 - Madrugada - Blood Shot Adult Commitment&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;17 - Dominique A - Au revoir mon amour&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;18 - Camélia Jordana &amp;amp; Erik Truffaz - The Thrill Is Gone&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+	</description>
+    </item>
+    <item>
       <title>Précipitation</title>
-      <link>http://francoisledroff.github.io/content/2018/05/08/precipitation.html</link>
+      <link>http://localhost:8820content/2018/05/08/precipitation.html</link>
       <pubDate>Tue, 8 May 2018 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2018/05/08/precipitation.html</guid>
       	<description>
@@ -346,7 +623,7 @@ See how Adobe I/O Events allows you to respond to both administrative events and
     </item>
     <item>
       <title>La barbe dans le cambouis - Hands-on-lab - Devoxx France 2018</title>
-      <link>http://francoisledroff.github.io/content/2018/04/19/devoxx-2018-lab-secu.html</link>
+      <link>http://localhost:8820content/2018/04/19/devoxx-2018-lab-secu.html</link>
       <pubDate>Wed, 18 Apr 2018 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2018/04/19/devoxx-2018-lab-secu.html</guid>
       	<description>
@@ -403,8 +680,86 @@ lors d&amp;#8217;une de nos conférences passée: &lt;a href=&quot;http://droff.
 	</description>
     </item>
     <item>
+      <title>Hiver 2017 - Hammered Hamster</title>
+      <link>http://localhost:8820content/2017/12/21/Hammered_Hamster.html</link>
+      <pubDate>Thu, 21 Dec 2017 00:00:00 +0100</pubDate>
+      <guid isPermaLink="false">content/2017/12/21/Hammered_Hamster.html</guid>
+      	<description>
+	&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Ma compile hiver 2017.&lt;/p&gt;
+&lt;/div&gt;
+&lt;table class=&quot;tableblock frame-all grid-all stretch&quot;&gt;
+&lt;colgroup&gt;
+&lt;col style=&quot;width: 37.5%;&quot;&gt;
+&lt;col style=&quot;width: 62.5%;&quot;&gt;
+&lt;/colgroup&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;div class=&quot;content&quot;&gt;&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/img/couv-Hammered%20Hamster.jpg&quot; alt=&quot;cover&quot; width=&quot;300&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;https://open.spotify.com/playlist/0kcJlTklJm6YJBMYGUm6mm?si=VEL-ZR9RTz-gXqXHL9h5sQ&quot;&gt;&quot;Hammered Hamster&quot; sur Spotify&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;div class=&quot;content&quot;&gt;&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;01 - Igorrr - Viande&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;02 - Les Vilars - Démission (Pour Claire)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;03 - Girls in Hawaii - Guinea Pig&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;04 - Anne Sylvestre- Petit bonhomme&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;05 - Agar Agar - You&amp;#8217;re High&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;07 - Tamino - Habibi&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;08 - Etienne Daho- Week-End à Rome [feat. Lio]&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;09 - Mister Milano- Da uno a novanta&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;10 - Katerine- La banâne&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;10 - Fishbach- Mortel&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;11 - Forver Pavot -The Most Expansive Chocolate Eggs&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;12 - Curtis Harding - Till the End&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;13 - Pau Vallvé - Avui l&amp;#8217;únic Que Vull&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;14 - Tshegue- Muanapoto&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;15 - Cigarettes After Sex- K&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+	</description>
+    </item>
+    <item>
       <title>Moved</title>
-      <link>http://francoisledroff.github.io/content/2017/09/20/moved.html</link>
+      <link>http://localhost:8820content/2017/09/20/moved.html</link>
       <pubDate>Wed, 20 Sep 2017 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2017/09/20/moved.html</guid>
       	<description>
@@ -414,8 +769,146 @@ lors d&amp;#8217;une de nos conférences passée: &lt;a href=&quot;http://droff.
 	</description>
     </item>
     <item>
+      <title>Eté 2017 - Et puis ça a fait Tilt</title>
+      <link>http://localhost:8820content/2017/06/21/Hammered_Hamster.html</link>
+      <pubDate>Wed, 21 Jun 2017 00:00:00 +0200</pubDate>
+      <guid isPermaLink="false">content/2017/06/21/Hammered_Hamster.html</guid>
+      	<description>
+	&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Ma compile été 2017.&lt;/p&gt;
+&lt;/div&gt;
+&lt;table class=&quot;tableblock frame-all grid-all stretch&quot;&gt;
+&lt;colgroup&gt;
+&lt;col style=&quot;width: 37.5%;&quot;&gt;
+&lt;col style=&quot;width: 62.5%;&quot;&gt;
+&lt;/colgroup&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;div class=&quot;content&quot;&gt;&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/img/couv-et%20puis%20ca%20a%20fait%20tilt.jpg&quot; alt=&quot;cover&quot; width=&quot;300&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;https://open.spotify.com/playlist/3EpihSe28xZXDU8gfYFdXf?si=sM27UfXjS0Gf_k88ahhnFA&quot;&gt;&quot;Et puis ça a fait Tilt&quot; sur Spotify&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;div class=&quot;content&quot;&gt;&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;01 - Burger &amp;amp; Cadiot- Totem &amp;amp; Tabou&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;02 - Marianne Faithfull- Sex With Strangers (Sly &amp;amp; Robbie Dub Mix)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;03 - Yog Sothoth - Ponpon&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;04 - Beth - Sweeter&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;05 - Jay Jay Johanson - I Want Some Fun&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;06 - Fatboy Slim- Talking Bout My Baby&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;07 - Clipse- Young Boy&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;08 - Beth - Deux&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;09 - Telepopmusik Vs Bogue &amp;amp; Thomas Winter- Love Can Damage Your Health&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;10 - Mathieu Boogaerts - L&amp;#8217;espace&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;11 - PLaxcebo - Bigmouth Strikes Again&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;12 - Damon Albarn &amp;amp; Mali Musicians - Makelekele (version instrumentale)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;13 - Die Anarchistische Abendunterhaltung -Of R_D_H_D (2+2=5)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+	</description>
+    </item>
+    <item>
+      <title>Hiver 2016 - InstruMENTAL</title>
+      <link>http://localhost:8820content/2016/12/21/InstruMENTAL.html</link>
+      <pubDate>Wed, 21 Dec 2016 00:00:00 +0100</pubDate>
+      <guid isPermaLink="false">content/2016/12/21/InstruMENTAL.html</guid>
+      	<description>
+	&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Ma compile hiver 2016.&lt;/p&gt;
+&lt;/div&gt;
+&lt;table class=&quot;tableblock frame-all grid-all stretch&quot;&gt;
+&lt;colgroup&gt;
+&lt;col style=&quot;width: 37.5%;&quot;&gt;
+&lt;col style=&quot;width: 62.5%;&quot;&gt;
+&lt;/colgroup&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;div class=&quot;content&quot;&gt;&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/img/couv-Instru-mental.jpg&quot; alt=&quot;cover&quot; width=&quot;300&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;https://open.spotify.com/playlist/2U7FPhqBBaKxXWtBJJHKyt?si=4RInef0SR_2NehhpS_FjMA&quot;&gt;&quot;InstruMENTAL&quot; sur Spotify&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;div class=&quot;content&quot;&gt;&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;01 - Polar Bear - Peepers&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;02 - Sons of Kelmet - Inner Babylon&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;03 - Ibrahim Maalouf - True Sorry&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;04 - Brad Mehldeau - Everything In Its Right Place&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;05 - Guillaume Perret &amp;amp; the Electric Epic - Shoebox&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;06 - Russian Circles- Enter&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;07 - Liquid Tension Experiment- Universal Mind&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;08 - Explosions In the Sky - Your Hand In Mine&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;09 - Grandbrothers- Rotor&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;10 - Robin Foster- Last Exit - Brest By Night&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;11 - Erick Truffaz Quartet- El Tiempo de la Revolucion&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+	</description>
+    </item>
+    <item>
       <title>Chef vs. Ansible - Devops Days Berlin 2016</title>
-      <link>http://francoisledroff.github.io/content/2016/11/17/Devops-days-berlin-2016.html</link>
+      <link>http://localhost:8820content/2016/11/17/Devops-days-berlin-2016.html</link>
       <pubDate>Thu, 17 Nov 2016 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2016/11/17/Devops-days-berlin-2016.html</guid>
       	<description>
@@ -504,8 +997,120 @@ The aims was also to help &quot;troubleshoot&quot; their issue on the selected t
 	</description>
     </item>
     <item>
+      <title>Eté 2016 - Brest by night with Dom</title>
+      <link>http://localhost:8820content/2016/06/21/BrestByNight.html</link>
+      <pubDate>Tue, 21 Jun 2016 00:00:00 +0200</pubDate>
+      <guid isPermaLink="false">content/2016/06/21/BrestByNight.html</guid>
+      	<description>
+	&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Ma compile été 2016.&lt;/p&gt;
+&lt;/div&gt;
+&lt;table class=&quot;tableblock frame-all grid-all stretch&quot;&gt;
+&lt;colgroup&gt;
+&lt;col style=&quot;width: 37.5%;&quot;&gt;
+&lt;col style=&quot;width: 62.5%;&quot;&gt;
+&lt;/colgroup&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;div class=&quot;content&quot;&gt;&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/img/couv-Brest%20By%20Night%20with%20Dom.jpg&quot; alt=&quot;cover&quot; width=&quot;300&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;https://open.spotify.com/playlist/6YwTCbGYZ8n0vd1UFI9vhG?si=zpJ1ZC-MTXanzllpsSoyyw&quot;&gt;&quot;Brest by night with Dom&quot; sur Spotify&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;div class=&quot;content&quot;&gt;&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;01 - Yann Tiersen - La rade (Version Studio)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;02 - Robin Foster -  Loop&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;03 - Denez Prigent - Gortoz a Ran&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;04 - 	PJ Harvey - Sheela-Na-Gig&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;05 - Morphine -Thursday (Live)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;06 - Pixies -  Debaser&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;07 - Mano Negra - Darling Darling&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;08 - New Model Army - I Love the World&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;09 - The Sisters of Mercy - Lucretia My Reflection&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;10 - Ludwig_ Von 8 - Louison Bobet For Ever&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;11 - Sonic Youth - Drunken Butterfly&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;12 - Diabologum - La maman et la putain&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;13 - Dinosaur Jr. - Pieces&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;14 - Calvin Russell - Soldier&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;15 - DJ Shadow - Border Crossing&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;16 - The Cure - Other Voices&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;17 - The Smiths - Barbarism Begins At Home&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;18 - Placebo -  Miss Moneypenny&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;19 - Miossec - Brest&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Name	Artist	Composer	Album	Grouping	Work	Movement Number	Movement Count	Movement Name	Genre	Size	Time	Disc Number	Disc Count	Track Number	Track Count	Year	Date Modified	Date Added	Bit Rate	Sample Rate	Volume Adjustment	Kind	Equaliser	Comments	Plays	Last Played	Skips	Last Skipped	My Rating	Location
+La rade (Version Studio)	Yann Tiersen		Brest By Night with Dom						Compil Stooges	4889507	186			1	19	2016	20/12/2016 22:19	25/01/2020 15:18	195	44100		MPEG audio file		1 Yann Tiersen - La rade -  La rade (Version Studio)						Macintosh HD/Users/ledroff/Music/Music/Media/Music/Compilations/Brest By Night with Dom/01 La rade (Version Studio).mp3
+Loop	Robin Foster		Brest By Night with Dom						Compil Stooges	8908330	364			2	19	2016	20/12/2016 22:19	25/01/2020 15:18	188	44100		MPEG audio file		2  Robin Foster -Life Is Elsewhere (Special Edition) - Loop						Macintosh HD/Users/ledroff/Music/Music/Media/Music/Compilations/Brest By Night with Dom/02 Loop.mp3
+Gortoz a Ran	Denez Prigent		Brest By Night with Dom						Compil Stooges	7518920	353			3	19	2016	20/12/2016 22:19	25/01/2020 15:18	162	44100		MPEG audio file		3  Denez Prigent - Best of Denez -Gortoz a Ran						Macintosh HD/Users/ledroff/Music/Music/Media/Music/Compilations/Brest By Night with Dom/03 Gortoz a Ran.mp3
+Sheela-Na-Gig	PJ Harvey		Brest By Night with Dom						Compil Stooges	4885666	192			4	19	2016	20/12/2016 22:19	25/01/2020 15:18	189	44100		MPEG audio file		Dry						Macintosh HD/Users/ledroff/Music/Music/Media/Music/Compilations/Brest By Night with Dom/04 Sheela-Na-Gig.mp3
+Thursday (Live)	Morphine 		Brest By Night with Dom						Compil Stooges	4872556	182			5	19	2016	20/12/2016 22:19	25/01/2020 15:18	199	44100		MPEG audio file		5 Morphine - Bootleg Detroit - Thursday - Live						Macintosh HD/Users/ledroff/Music/Music/Media/Music/Compilations/Brest By Night with Dom/05 Thursday (Live).mp3
+Debaser	Pixies		Brest By Night with Dom						Compil Stooges	4474481	173			6	19	2016	20/12/2016 22:19	25/01/2020 15:18	191	44100		MPEG audio file		6 Pixies - Helmet&amp;#8217;s Playlist - Debaser						Macintosh HD/Users/ledroff/Music/Music/Media/Music/Compilations/Brest By Night with Dom/06 Debaser.mp3
+Darling Darling	Mano Negra		Brest By Night with Dom						Compil Stooges	3021962	120			7	19	2016	20/12/2016 22:19	25/01/2020 15:18	179	44100		MPEG audio file		7 Mano Negra - Best Of 24 - Darling Darling						Macintosh HD/Users/ledroff/Music/Music/Media/Music/Compilations/Brest By Night with Dom/07 Darling Darling.mp3
+I Love the World	New Model Army		Brest By Night with Dom						Compil Stooges	7736139	308			8	19	2016	20/12/2016 22:19	25/01/2020 15:18	192	44100		MPEG audio file		8 New Model Army - Thunder and Consolation - I Love the World						Macintosh HD/Users/ledroff/Music/Music/Media/Music/Compilations/Brest By Night with Dom/08 I Love the World.mp3
+Lucretia My Reflection	The Sisters of Mercy		Brest By Night with Dom						Compil Stooges	14102520	591			9	19	2016	20/12/2016 22:19	25/01/2020 15:18	186	44100		MPEG audio file		9 The Sisters of Mercy - Floodland Collection - Lucretia My Reflection						Macintosh HD/Users/ledroff/Music/Music/Media/Music/Compilations/Brest By Night with Dom/09 Lucretia My Reflection.mp3
+Louison Bobet For Ever	Ludwig_ Von 88 		Brest By Night with Dom						Compil Stooges	3061753	119			10	19	2016	20/12/2016 22:19	25/01/2020 15:18	182	44100		MPEG audio file		10 Ludwig_ Von 88 - Houlala 3 L&amp;#8217;heureux tour 32 - Louison Bobet For Ever						Macintosh HD/Users/ledroff/Music/Music/Media/Music/Compilations/Brest By Night with Dom/10 Louison Bobet For Ever.mp3
+Drunken Butterfly	Sonic Youth		Brest By Night with Dom						Compil Stooges	4908833	184			11	19	2016	20/12/2016 22:19	25/01/2020 15:18	199	44100		MPEG audio file		11 Sonic Youth - Dirty - Drunken Butterfly						Macintosh HD/Users/ledroff/Music/Music/Media/Music/Compilations/Brest By Night with Dom/11 Drunken Butterfly.mp3
+La maman et la putain	Diabologum		Brest By Night with Dom						Compil Stooges	8358029	352			12	19	2016	20/12/2016 22:19	25/01/2020 15:18	182	44100		MPEG audio file		12 Diabologum -#3 (Ce n&amp;#8217;est pas perdu pour tout le monde) - La maman et la putain						Macintosh HD/Users/ledroff/Music/Music/Media/Music/Compilations/Brest By Night with Dom/12 La maman et la putain.mp3
+Pieces	Dinosaur Jr.		Brest By Night with Dom						Compil Stooges	7568958	274			13	19	2016	20/12/2016 22:19	25/01/2020 15:18	211	44100		MPEG audio file		13 Dinosaur Jr - Farm - Pieces						Macintosh HD/Users/ledroff/Music/Music/Media/Music/Compilations/Brest By Night with Dom/13 Pieces.mp3
+Soldier	Calvin Russell		Brest By Night with Dom						Compil Stooges	8961122	352			14	19	2016	20/12/2016 22:19	25/01/2020 15:18	195	44100		MPEG audio file		14 Calvin Russell - Soldier - Soldier						Macintosh HD/Users/ledroff/Music/Music/Media/Music/Compilations/Brest By Night with Dom/14 Soldier.mp3
+Border Crossing	DJ Shadow		Brest By Night with Dom						Compil Stooges	5608970	216			15	19	2016	20/12/2016 22:19	25/01/2020 15:18	195	44100		MPEG audio file		15  DJ Shadow - The Less You Know, The Better - Border Crossing						Macintosh HD/Users/ledroff/Music/Music/Media/Music/Compilations/Brest By Night with Dom/15 Border Crossing.mp3
+Other Voices	The Cure		Brest By Night with Dom						Compil Stooges	6997495	283			16	19	2016	20/12/2016 22:19	25/01/2020 15:18	188	44100		MPEG audio file		16 The Cure - Faith - Other Voices						Macintosh HD/Users/ledroff/Music/Music/Media/Music/Compilations/Brest By Night with Dom/16 Other Voices.mp3
+Barbarism Begins At Home	The Smiths		Brest By Night with Dom						Compil Stooges	10583243	413			17	19	2016	20/12/2016 22:19	25/01/2020 15:18	198	44100		MPEG audio file		17 The Smiths - Meat Is Murder - Barbarism Begins At Home						Macintosh HD/Users/ledroff/Music/Music/Media/Music/Compilations/Brest By Night with Dom/17 Barbarism Begins At Home.mp3
+Miss Moneypenny	Placebo		Brest By Night with Dom						Compil Stooges	4424933	170			18	19	2016	20/12/2016 22:19	25/01/2020 15:18	192	44100		MPEG audio file		18 Placebo - B-Sides - Miss Moneypenny						Macintosh HD/Users/ledroff/Music/Music/Media/Music/Compilations/Brest By Night with Dom/18 Miss Moneypenny.mp3
+Brest	Miossec		Brest By Night with Dom						Compil Stooges	4490453	183			19	19	2016	20/12/2016 22:19	25/01/2020 15:18	181	44100		MPEG audio file		19 Miossec - Brest of (Tout ça pour ça - Brest						Macintosh HD/Users/ledroff/Music/Music/Media/Music/Compilations/Brest By Night with Dom/19 Brest.mp3&lt;/p&gt;
+&lt;/div&gt;
+	</description>
+    </item>
+    <item>
       <title>JHipster meet up - Janvier 2016</title>
-      <link>http://francoisledroff.github.io/content/2016/01/25/Jhipster-meetup.html</link>
+      <link>http://localhost:8820content/2016/01/25/Jhipster-meetup.html</link>
       <pubDate>Mon, 25 Jan 2016 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2016/01/25/Jhipster-meetup.html</guid>
       	<description>
@@ -558,7 +1163,7 @@ The aims was also to help &quot;troubleshoot&quot; their issue on the selected t
     </item>
     <item>
       <title>Hairy Security - Code Motion Berlin 2015</title>
-      <link>http://francoisledroff.github.io/content/2015/11/03/code-motion-Berlin-2015.html</link>
+      <link>http://localhost:8820content/2015/11/03/code-motion-Berlin-2015.html</link>
       <pubDate>Tue, 3 Nov 2015 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2015/11/03/code-motion-Berlin-2015.html</guid>
       	<description>
@@ -632,7 +1237,7 @@ The aims was also to help &quot;troubleshoot&quot; their issue on the selected t
     </item>
     <item>
       <title>Barbus &amp;amp; Barbares - Java &amp;amp; Sécurité - Devoxx France 2015</title>
-      <link>http://francoisledroff.github.io/content/2015/04/10/devoxx-fr-2015.html</link>
+      <link>http://localhost:8820content/2015/04/10/devoxx-fr-2015.html</link>
       <pubDate>Fri, 10 Apr 2015 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2015/04/10/devoxx-fr-2015.html</guid>
       	<description>
@@ -710,7 +1315,7 @@ de &lt;a href=&quot;https://www.devoxx.fr/2015/speaker/francois_le_droff.html&qu
     </item>
     <item>
       <title>An AEM/CQ SalesForce integration Sample</title>
-      <link>http://francoisledroff.github.io/content/2014/12/04/an_aem_cq_salesforce_integration.html</link>
+      <link>http://localhost:8820content/2014/12/04/an_aem_cq_salesforce_integration.html</link>
       <pubDate>Thu, 4 Dec 2014 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2014/12/04/an_aem_cq_salesforce_integration.html</guid>
       	<description>
@@ -727,7 +1332,7 @@ de &lt;a href=&quot;https://www.devoxx.fr/2015/speaker/francois_le_droff.html&qu
     </item>
     <item>
       <title>Chef metal experimentations: AEM test drive</title>
-      <link>http://francoisledroff.github.io/content/2014/07/29/chef_metal_experimentations_aem_test.html</link>
+      <link>http://localhost:8820content/2014/07/29/chef_metal_experimentations_aem_test.html</link>
       <pubDate>Tue, 29 Jul 2014 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2014/07/29/chef_metal_experimentations_aem_test.html</guid>
       	<description>
@@ -826,7 +1431,7 @@ Welcome to your Vagrant-built virtual machine.
     </item>
     <item>
       <title>Back from Basel</title>
-      <link>http://francoisledroff.github.io/content/2014/07/03/back_from_basel.html</link>
+      <link>http://localhost:8820content/2014/07/03/back_from_basel.html</link>
       <pubDate>Thu, 3 Jul 2014 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2014/07/03/back_from_basel.html</guid>
       	<description>
@@ -877,7 +1482,7 @@ Welcome to your Vagrant-built virtual machine.
     </item>
     <item>
       <title>Master Chef class: learn how to quickly cook delightful CQ/AEM infrastructures</title>
-      <link>http://francoisledroff.github.io/content/2014/05/13/master_chef_class_learn_how.html</link>
+      <link>http://localhost:8820content/2014/05/13/master_chef_class_learn_how.html</link>
       <pubDate>Tue, 13 May 2014 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2014/05/13/master_chef_class_learn_how.html</guid>
       	<description>
@@ -906,7 +1511,7 @@ Welcome to your Vagrant-built virtual machine.
     </item>
     <item>
       <title>Master Chef &amp;amp; Puppet Show and other Devops pointers from Devoxx France 2014</title>
-      <link>http://francoisledroff.github.io/content/2014/05/05/master_chef_puppet_show_and.html</link>
+      <link>http://localhost:8820content/2014/05/05/master_chef_puppet_show_and.html</link>
       <pubDate>Mon, 5 May 2014 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2014/05/05/master_chef_puppet_show_and.html</guid>
       	<description>
@@ -976,7 +1581,7 @@ t was worth the effort. Romain and I agreed we should do this more often.&lt;/p&
     </item>
     <item>
       <title>Test your perforce change-list in a jenkins job - using perforce shelving - before submitting it</title>
-      <link>http://francoisledroff.github.io/content/2013/07/31/perforce_shelving_jenkins.html</link>
+      <link>http://localhost:8820content/2013/07/31/perforce_shelving_jenkins.html</link>
       <pubDate>Wed, 31 Jul 2013 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2013/07/31/perforce_shelving_jenkins.html</guid>
       	<description>
@@ -1140,7 +1745,7 @@ It’s a very interesting feature of perforce&lt;/p&gt;
     </item>
     <item>
       <title>Back from Devoxx - Part 4 - Dev-QA-Ops Thoughts - About continuous delivery and deployment</title>
-      <link>http://francoisledroff.github.io/content/2013/04/26/back_from_devoxx_part_4.html</link>
+      <link>http://localhost:8820content/2013/04/26/back_from_devoxx_part_4.html</link>
       <pubDate>Fri, 26 Apr 2013 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2013/04/26/back_from_devoxx_part_4.html</guid>
       	<description>
@@ -1549,7 +2154,7 @@ It should be accessible to all and a focus should be made to make sure the dev t
     </item>
     <item>
       <title>Back from Devoxx - Part 3 - Dev-QA-Ops Thoughts - About Tests and Code analysis</title>
-      <link>http://francoisledroff.github.io/content/2013/04/23/back_from_devoxx_part_3.html</link>
+      <link>http://localhost:8820content/2013/04/23/back_from_devoxx_part_3.html</link>
       <pubDate>Tue, 23 Apr 2013 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2013/04/23/back_from_devoxx_part_3.html</guid>
       	<description>
@@ -1824,7 +2429,7 @@ If you start using it,&lt;/p&gt;
     </item>
     <item>
       <title>Back from Devoxx - Part 2 - Dev-QA-Ops Thoughts - About Build Promotion</title>
-      <link>http://francoisledroff.github.io/content/2013/04/22/back_from_devoxx_part_2.html</link>
+      <link>http://localhost:8820content/2013/04/22/back_from_devoxx_part_2.html</link>
       <pubDate>Mon, 22 Apr 2013 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2013/04/22/back_from_devoxx_part_2.html</guid>
       	<description>
@@ -1987,7 +2592,7 @@ these other useful plugins are:&lt;/p&gt;
     </item>
     <item>
       <title>Back from Devoxx - Part 1 - Dev-QA-Ops Thoughts - About Branching</title>
-      <link>http://francoisledroff.github.io/content/2013/04/19/back_from_devoxx_part_11.html</link>
+      <link>http://localhost:8820content/2013/04/19/back_from_devoxx_part_11.html</link>
       <pubDate>Fri, 19 Apr 2013 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2013/04/19/back_from_devoxx_part_11.html</guid>
       	<description>
@@ -2206,7 +2811,7 @@ Obvious to say than doing local development is a feature branch in itself, impos
     </item>
     <item>
       <title>dotjs.eu</title>
-      <link>http://francoisledroff.github.io/content/2012/12/04/dotjs_eu.html</link>
+      <link>http://localhost:8820content/2012/12/04/dotjs_eu.html</link>
       <pubDate>Tue, 4 Dec 2012 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2012/12/04/dotjs_eu.html</guid>
       	<description>
@@ -2270,7 +2875,7 @@ May be due to the format, 20 mn? May be due to the hosts? did they want the even
     </item>
     <item>
       <title>Taking back control of my android phones, rooting, cyanogenMod and security ramblings&amp;#8230;&amp;#8203;</title>
-      <link>http://francoisledroff.github.io/content/2012/08/09/taking_back_control_of_my.html</link>
+      <link>http://localhost:8820content/2012/08/09/taking_back_control_of_my.html</link>
       <pubDate>Thu, 9 Aug 2012 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2012/08/09/taking_back_control_of_my.html</guid>
       	<description>
@@ -2390,7 +2995,7 @@ Would a antivirus like avast find it ?&lt;/p&gt;
     </item>
     <item>
       <title>Apache with mod_ssl and as as a reverse proxy - on windows -</title>
-      <link>http://francoisledroff.github.io/content/2012/07/31/apache_on_ssl_as_a1.html</link>
+      <link>http://localhost:8820content/2012/07/31/apache_on_ssl_as_a1.html</link>
       <pubDate>Tue, 31 Jul 2012 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2012/07/31/apache_on_ssl_as_a1.html</guid>
       	<description>
@@ -2582,7 +3187,7 @@ ProxyPreserveHost On&lt;/code&gt;&lt;/pre&gt;
     </item>
     <item>
       <title>Adobe Customer Experience Management: a glimpse under the hood</title>
-      <link>http://francoisledroff.github.io/content/2011/08/02/a_customer_experience_management_a.html</link>
+      <link>http://localhost:8820content/2011/08/02/a_customer_experience_management_a.html</link>
       <pubDate>Tue, 2 Aug 2011 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2011/08/02/a_customer_experience_management_a.html</guid>
       	<description>
@@ -2599,7 +3204,7 @@ ProxyPreserveHost On&lt;/code&gt;&lt;/pre&gt;
     </item>
     <item>
       <title>Les Cast Codeurs Podcast – Episode 34 – Interview sur Flex avec Francois Le Droff et Michael Chaize</title>
-      <link>http://francoisledroff.github.io/content/2011/03/09/les_cast_codeurs_podcast_episode.html</link>
+      <link>http://localhost:8820content/2011/03/09/les_cast_codeurs_podcast_episode.html</link>
       <pubDate>Wed, 9 Mar 2011 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2011/03/09/les_cast_codeurs_podcast_episode.html</guid>
       	<description>
@@ -2766,7 +3371,7 @@ ProxyPreserveHost On&lt;/code&gt;&lt;/pre&gt;
     </item>
     <item>
       <title>Soirée Flex/RIA au Nantes jug</title>
-      <link>http://francoisledroff.github.io/content/2010/11/29/soir%C3%A9e_flex_ria_au_nantes.html</link>
+      <link>http://localhost:8820content/2010/11/29/soir%C3%A9e_flex_ria_au_nantes.html</link>
       <pubDate>Mon, 29 Nov 2010 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2010/11/29/soir%C3%A9e_flex_ria_au_nantes.html</guid>
       	<description>
@@ -2786,7 +3391,7 @@ ProxyPreserveHost On&lt;/code&gt;&lt;/pre&gt;
     </item>
     <item>
       <title>La sortie de Cairngorm3, &amp;amp; ma sortie au TourJUG</title>
-      <link>http://francoisledroff.github.io/content/2010/05/19/la_sortie_de_cairngorm3_ma.html</link>
+      <link>http://localhost:8820content/2010/05/19/la_sortie_de_cairngorm3_ma.html</link>
       <pubDate>Wed, 19 May 2010 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2010/05/19/la_sortie_de_cairngorm3_ma.html</guid>
       	<description>
@@ -2822,7 +3427,7 @@ ProxyPreserveHost On&lt;/code&gt;&lt;/pre&gt;
     </item>
     <item>
       <title>Java , Flex, Cidre et Camembert au NormandieJUG</title>
-      <link>http://francoisledroff.github.io/content/2010/04/19/demain_soir_java_flex_cidre.html</link>
+      <link>http://localhost:8820content/2010/04/19/demain_soir_java_flex_cidre.html</link>
       <pubDate>Mon, 19 Apr 2010 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2010/04/19/demain_soir_java_flex_cidre.html</guid>
       	<description>
@@ -2842,7 +3447,7 @@ ProxyPreserveHost On&lt;/code&gt;&lt;/pre&gt;
     </item>
     <item>
       <title>Sortie de FlexPMD 1.1 / FlexCPD 1.1 / FlexMetrics 1.1</title>
-      <link>http://francoisledroff.github.io/content/2010/03/29/sortie_de_flexpmd_1_1.html</link>
+      <link>http://localhost:8820content/2010/03/29/sortie_de_flexpmd_1_1.html</link>
       <pubDate>Mon, 29 Mar 2010 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2010/03/29/sortie_de_flexpmd_1_1.html</guid>
       	<description>
@@ -2856,7 +3461,7 @@ ProxyPreserveHost On&lt;/code&gt;&lt;/pre&gt;
     </item>
     <item>
       <title>Adobe sponsor du 2ème anniversaire du ParisJUG</title>
-      <link>http://francoisledroff.github.io/content/2010/02/08/adobe_sponsor_du_2%C3%A8me_anniversaire.html</link>
+      <link>http://localhost:8820content/2010/02/08/adobe_sponsor_du_2%C3%A8me_anniversaire.html</link>
       <pubDate>Mon, 8 Feb 2010 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2010/02/08/adobe_sponsor_du_2%C3%A8me_anniversaire.html</guid>
       	<description>
@@ -2873,7 +3478,7 @@ ProxyPreserveHost On&lt;/code&gt;&lt;/pre&gt;
     </item>
     <item>
       <title>Cairngorm 3.0.2 release</title>
-      <link>http://francoisledroff.github.io/content/2010/01/13/cairngorm_3_0_2_release.html</link>
+      <link>http://localhost:8820content/2010/01/13/cairngorm_3_0_2_release.html</link>
       <pubDate>Wed, 13 Jan 2010 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2010/01/13/cairngorm_3_0_2_release.html</guid>
       	<description>
@@ -2954,7 +3559,7 @@ ProxyPreserveHost On&lt;/code&gt;&lt;/pre&gt;
     </item>
     <item>
       <title>radeon/ati video driver issue on kubuntu karmic</title>
-      <link>http://francoisledroff.github.io/content/2009/11/20/radeon_ati_video_driver_issue.html</link>
+      <link>http://localhost:8820content/2009/11/20/radeon_ati_video_driver_issue.html</link>
       <pubDate>Fri, 20 Nov 2009 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2009/11/20/radeon_ati_video_driver_issue.html</guid>
       	<description>
@@ -3034,7 +3639,7 @@ EndSection&lt;/pre&gt;
     </item>
     <item>
       <title>Après midi</title>
-      <link>http://francoisledroff.github.io/content/2009/10/28/apr%C3%A8s_midi_tontons_flexeurs_les.html</link>
+      <link>http://localhost:8820content/2009/10/28/apr%C3%A8s_midi_tontons_flexeurs_les.html</link>
       <pubDate>Wed, 28 Oct 2009 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2009/10/28/apr%C3%A8s_midi_tontons_flexeurs_les.html</guid>
       	<description>
@@ -3074,7 +3679,7 @@ EndSection&lt;/pre&gt;
     </item>
     <item>
       <title>Cairngorm 3 is out for MAX</title>
-      <link>http://francoisledroff.github.io/content/2009/10/06/cairngorm_3_is_out_for.html</link>
+      <link>http://localhost:8820content/2009/10/06/cairngorm_3_is_out_for.html</link>
       <pubDate>Tue, 6 Oct 2009 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2009/10/06/cairngorm_3_is_out_for.html</guid>
       	<description>
@@ -3119,7 +3724,7 @@ EndSection&lt;/pre&gt;
     </item>
     <item>
       <title>Tour d&amp;#8217;horizon des outils open source de contrôle Qualité Java</title>
-      <link>http://francoisledroff.github.io/content/2009/09/16/tour_d_horizon_des_outils.html</link>
+      <link>http://localhost:8820content/2009/09/16/tour_d_horizon_des_outils.html</link>
       <pubDate>Wed, 16 Sep 2009 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2009/09/16/tour_d_horizon_des_outils.html</guid>
       	<description>
@@ -3145,7 +3750,7 @@ EndSection&lt;/pre&gt;
     </item>
     <item>
       <title>FlexPMD is born</title>
-      <link>http://francoisledroff.github.io/content/2009/09/02/flexpmd_is_born.html</link>
+      <link>http://localhost:8820content/2009/09/02/flexpmd_is_born.html</link>
       <pubDate>Wed, 2 Sep 2009 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2009/09/02/flexpmd_is_born.html</guid>
       	<description>
@@ -3253,7 +3858,7 @@ EndSection&lt;/pre&gt;
     </item>
     <item>
       <title>Automated testing and quality control for Flex</title>
-      <link>http://francoisledroff.github.io/content/2009/07/22/automated_testing_and_quality_control.html</link>
+      <link>http://localhost:8820content/2009/07/22/automated_testing_and_quality_control.html</link>
       <pubDate>Wed, 22 Jul 2009 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2009/07/22/automated_testing_and_quality_control.html</guid>
       	<description>
@@ -3308,7 +3913,7 @@ EndSection&lt;/pre&gt;
     </item>
     <item>
       <title>Compte rendu de la soirée RIA au ParisJUG</title>
-      <link>http://francoisledroff.github.io/content/2009/07/10/compte_rendu_de_la_soir%C3%A9e.html</link>
+      <link>http://localhost:8820content/2009/07/10/compte_rendu_de_la_soir%C3%A9e.html</link>
       <pubDate>Fri, 10 Jul 2009 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2009/07/10/compte_rendu_de_la_soir%C3%A9e.html</guid>
       	<description>
@@ -3406,7 +4011,7 @@ EndSection&lt;/pre&gt;
     </item>
     <item>
       <title>Demain Soirée RIA (Flex et JavaFX) au ParisJUG</title>
-      <link>http://francoisledroff.github.io/content/2009/07/06/demain_soir%C3%A9e_ria_flex_et.html</link>
+      <link>http://localhost:8820content/2009/07/06/demain_soir%C3%A9e_ria_flex_et.html</link>
       <pubDate>Mon, 6 Jul 2009 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2009/07/06/demain_soir%C3%A9e_ria_flex_et.html</guid>
       	<description>
@@ -3429,7 +4034,7 @@ EndSection&lt;/pre&gt;
     </item>
     <item>
       <title>The Spring of Flex Remoting - slides &amp;amp; demo</title>
-      <link>http://francoisledroff.github.io/content/2009/06/23/the_spring_of_flex_remoting.html</link>
+      <link>http://localhost:8820content/2009/06/23/the_spring_of_flex_remoting.html</link>
       <pubDate>Tue, 23 Jun 2009 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2009/06/23/the_spring_of_flex_remoting.html</guid>
       	<description>
@@ -3529,7 +4134,7 @@ public class TodoServiceImpl extends GenericManagerImplInteger&amp;gt;
     </item>
     <item>
       <title>Conférence RIA Flex au Riveria JUG le 19 Juin</title>
-      <link>http://francoisledroff.github.io/content/2009/06/05/conf%C3%A9rence_ria_flex_au_riveria.html</link>
+      <link>http://localhost:8820content/2009/06/05/conf%C3%A9rence_ria_flex_au_riveria.html</link>
       <pubDate>Fri, 5 Jun 2009 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2009/06/05/conf%C3%A9rence_ria_flex_au_riveria.html</guid>
       	<description>
@@ -3585,7 +4190,7 @@ public class TodoServiceImpl extends GenericManagerImplInteger&amp;gt;
     </item>
     <item>
       <title>Adobe Designer Developer Experience (Conférence Flex4 et Catalyst)</title>
-      <link>http://francoisledroff.github.io/content/2009/05/19/adobe_designer_developer_experience_conf%C3%A9rence.html</link>
+      <link>http://localhost:8820content/2009/05/19/adobe_designer_developer_experience_conf%C3%A9rence.html</link>
       <pubDate>Tue, 19 May 2009 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2009/05/19/adobe_designer_developer_experience_conf%C3%A9rence.html</guid>
       	<description>
@@ -3610,7 +4215,7 @@ Cet après-midi de rencontre sera l’occasion d’illustrer l’impact de ces s
     </item>
     <item>
       <title>Le Semi de Paris</title>
-      <link>http://francoisledroff.github.io/content/2009/03/09/le_semi_de_paris.html</link>
+      <link>http://localhost:8820content/2009/03/09/le_semi_de_paris.html</link>
       <pubDate>Mon, 9 Mar 2009 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2009/03/09/le_semi_de_paris.html</guid>
       	<description>
@@ -3633,7 +4238,7 @@ Cet après-midi de rencontre sera l’occasion d’illustrer l’impact de ces s
     </item>
     <item>
       <title>Maven on Flex/LiveCycle ES/Adobe projects : How to</title>
-      <link>http://francoisledroff.github.io/content/2009/03/03/maven_on_flex_livecycle_es.html</link>
+      <link>http://localhost:8820content/2009/03/03/maven_on_flex_livecycle_es.html</link>
       <pubDate>Tue, 3 Mar 2009 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2009/03/03/maven_on_flex_livecycle_es.html</guid>
       	<description>
@@ -3856,7 +4461,7 @@ Cet après-midi de rencontre sera l’occasion d’illustrer l’impact de ces s
     </item>
     <item>
       <title>Flex for Java developers (at the BreizhJUG)</title>
-      <link>http://francoisledroff.github.io/content/2009/02/03/java_for_flex_architects.html</link>
+      <link>http://localhost:8820content/2009/02/03/java_for_flex_architects.html</link>
       <pubDate>Tue, 3 Feb 2009 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2009/02/03/java_for_flex_architects.html</guid>
       	<description>
@@ -3963,7 +4568,7 @@ Those features are still under development but are already available in SNAPSHOT
     </item>
     <item>
       <title>Demo surprise de LCDS NEXT ce soir à la réunion des tontons flexeurs</title>
-      <link>http://francoisledroff.github.io/content/2008/12/16/demo_surprise_de_lcds_next.html</link>
+      <link>http://localhost:8820content/2008/12/16/demo_surprise_de_lcds_next.html</link>
       <pubDate>Tue, 16 Dec 2008 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2008/12/16/demo_surprise_de_lcds_next.html</guid>
       	<description>
@@ -3980,7 +4585,7 @@ Those features are still under development but are already available in SNAPSHOT
     </item>
     <item>
       <title>L&amp;#8217;integration de Flex et Spring encore simplifiée.</title>
-      <link>http://francoisledroff.github.io/content/2008/12/08/l_integration_de_flex_et.html</link>
+      <link>http://localhost:8820content/2008/12/08/l_integration_de_flex_et.html</link>
       <pubDate>Mon, 8 Dec 2008 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2008/12/08/l_integration_de_flex_et.html</guid>
       	<description>
@@ -4000,7 +4605,7 @@ et notre archetype maven
     </item>
     <item>
       <title>Back on the road : heading to Milan</title>
-      <link>http://francoisledroff.github.io/content/2008/11/29/back_on_the_road_heading.html</link>
+      <link>http://localhost:8820content/2008/11/29/back_on_the_road_heading.html</link>
       <pubDate>Sat, 29 Nov 2008 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2008/11/29/back_on_the_road_heading.html</guid>
       	<description>
@@ -4027,7 +4632,7 @@ et notre archetype maven
     </item>
     <item>
       <title>Speaking at MAX</title>
-      <link>http://francoisledroff.github.io/content/2008/11/16/speaking_at_max.html</link>
+      <link>http://localhost:8820content/2008/11/16/speaking_at_max.html</link>
       <pubDate>Sun, 16 Nov 2008 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2008/11/16/speaking_at_max.html</guid>
       	<description>
@@ -4047,7 +4652,7 @@ et notre archetype maven
     </item>
     <item>
       <title>A new set of Maven archetypes for Flex/Java development</title>
-      <link>http://francoisledroff.github.io/content/2008/10/28/a_new_set_of_maven.html</link>
+      <link>http://localhost:8820content/2008/10/28/a_new_set_of_maven.html</link>
       <pubDate>Tue, 28 Oct 2008 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2008/10/28/a_new_set_of_maven.html</guid>
       	<description>
@@ -4105,7 +4710,7 @@ et notre archetype maven
     </item>
     <item>
       <title>A new set of flex maven archetype</title>
-      <link>http://francoisledroff.github.io/content/2008/07/31/a_new_set_of_flex.html</link>
+      <link>http://localhost:8820content/2008/07/31/a_new_set_of_flex.html</link>
       <pubDate>Thu, 31 Jul 2008 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2008/07/31/a_new_set_of_flex.html</guid>
       	<description>
@@ -4148,7 +4753,7 @@ et notre archetype maven
     </item>
     <item>
       <title>Partenariat Adobe/Google/Yahoo : Les contenus flash maintenant indexés</title>
-      <link>http://francoisledroff.github.io/content/2008/07/01/partenariat_adobe_google_yahoo_les.html</link>
+      <link>http://localhost:8820content/2008/07/01/partenariat_adobe_google_yahoo_les.html</link>
       <pubDate>Tue, 1 Jul 2008 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2008/07/01/partenariat_adobe_google_yahoo_les.html</guid>
       	<description>
@@ -4258,7 +4863,7 @@ et notre archetype maven
     </item>
     <item>
       <title>les URLs , les RIAs et le référencement</title>
-      <link>http://francoisledroff.github.io/content/2008/05/31/l_url_clef_de_voute.html</link>
+      <link>http://localhost:8820content/2008/05/31/l_url_clef_de_voute.html</link>
       <pubDate>Sat, 31 May 2008 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2008/05/31/l_url_clef_de_voute.html</guid>
       	<description>
@@ -4449,7 +5054,7 @@ et notre archetype maven
     </item>
     <item>
       <title>A blazeDS Xdoclet Spring Hibernate Maven Archetype</title>
-      <link>http://francoisledroff.github.io/content/2008/05/24/a_blazeds_xdoclet_spring_hibernate.html</link>
+      <link>http://localhost:8820content/2008/05/24/a_blazeds_xdoclet_spring_hibernate.html</link>
       <pubDate>Sat, 24 May 2008 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2008/05/24/a_blazeds_xdoclet_spring_hibernate.html</guid>
       	<description>
@@ -4486,7 +5091,7 @@ Thanks Velo !&lt;/p&gt;
     </item>
     <item>
       <title>Nouvelles évaluations des ESBs Mule, JBossESB et ServiceMix</title>
-      <link>http://francoisledroff.github.io/content/2008/05/22/nouvelles_%C3%A9valuations_des_esbs_mule.html</link>
+      <link>http://localhost:8820content/2008/05/22/nouvelles_%C3%A9valuations_des_esbs_mule.html</link>
       <pubDate>Thu, 22 May 2008 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2008/05/22/nouvelles_%C3%A9valuations_des_esbs_mule.html</guid>
       	<description>
@@ -4506,7 +5111,7 @@ Thanks Velo !&lt;/p&gt;
     </item>
     <item>
       <title>Create your maven repository from a set of provided jars: the Adobe LiveCycle SDK and Adobe blazeDS examples</title>
-      <link>http://francoisledroff.github.io/content/2008/04/30/create_your_maven_repository_from.html</link>
+      <link>http://localhost:8820content/2008/04/30/create_your_maven_repository_from.html</link>
       <pubDate>Wed, 30 Apr 2008 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2008/04/30/create_your_maven_repository_from.html</guid>
       	<description>
@@ -4782,7 +5387,7 @@ image:http://www.jroller.com/francoisledroff/resource/adobe-repo.jpg[adobe-repo.
     </item>
     <item>
       <title>Testing maven archetype</title>
-      <link>http://francoisledroff.github.io/content/2008/04/26/testing_maven_archetype.html</link>
+      <link>http://localhost:8820content/2008/04/26/testing_maven_archetype.html</link>
       <pubDate>Sat, 26 Apr 2008 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2008/04/26/testing_maven_archetype.html</guid>
       	<description>
@@ -4964,7 +5569,7 @@ mvn eclipse:m2eclipse -DdownloadSources=true  -DdownloadJavadocs=true&lt;/pre&gt
     </item>
     <item>
       <title>Quickly create, run and test a simple Java web app with eclipse, maven and jetty</title>
-      <link>http://francoisledroff.github.io/content/2008/04/25/quickly_create_run_and_test.html</link>
+      <link>http://localhost:8820content/2008/04/25/quickly_create_run_and_test.html</link>
       <pubDate>Fri, 25 Apr 2008 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2008/04/25/quickly_create_run_and_test.html</guid>
       	<description>
@@ -5316,7 +5921,7 @@ mkdir src/test/resources&lt;/pre&gt;
     </item>
     <item>
       <title>Retour sur le Salon Solution Linux 2008</title>
-      <link>http://francoisledroff.github.io/content/2008/02/07/retour_sur_le_salon_solution.html</link>
+      <link>http://localhost:8820content/2008/02/07/retour_sur_le_salon_solution.html</link>
       <pubDate>Thu, 7 Feb 2008 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2008/02/07/retour_sur_le_salon_solution.html</guid>
       	<description>
@@ -5367,7 +5972,7 @@ mkdir src/test/resources&lt;/pre&gt;
     </item>
     <item>
       <title>Tous mes voeux pour une année de Qualité</title>
-      <link>http://francoisledroff.github.io/content/2008/01/11/tous_mes_voeux_pour_une.html</link>
+      <link>http://localhost:8820content/2008/01/11/tous_mes_voeux_pour_une.html</link>
       <pubDate>Fri, 11 Jan 2008 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2008/01/11/tous_mes_voeux_pour_une.html</guid>
       	<description>
@@ -5594,7 +6199,7 @@ mkdir src/test/resources&lt;/pre&gt;
     </item>
     <item>
       <title>MAX 2007</title>
-      <link>http://francoisledroff.github.io/content/2007/09/07/max_2007.html</link>
+      <link>http://localhost:8820content/2007/09/07/max_2007.html</link>
       <pubDate>Fri, 7 Sep 2007 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2007/09/07/max_2007.html</guid>
       	<description>
@@ -5611,7 +6216,7 @@ mkdir src/test/resources&lt;/pre&gt;
     </item>
     <item>
       <title>Petite digression politique</title>
-      <link>http://francoisledroff.github.io/content/2007/08/15/petite_digression_politique.html</link>
+      <link>http://localhost:8820content/2007/08/15/petite_digression_politique.html</link>
       <pubDate>Wed, 15 Aug 2007 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2007/08/15/petite_digression_politique.html</guid>
       	<description>
@@ -5648,7 +6253,7 @@ Apparemment non, &lt;a href=&quot;http://standblog.org/blog/post/2004/03/04/9311
     </item>
     <item>
       <title>Dell, encore coupable de vente liée</title>
-      <link>http://francoisledroff.github.io/content/2007/07/04/dell_encore_coupable_de_vente.html</link>
+      <link>http://localhost:8820content/2007/07/04/dell_encore_coupable_de_vente.html</link>
       <pubDate>Wed, 4 Jul 2007 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2007/07/04/dell_encore_coupable_de_vente.html</guid>
       	<description>
@@ -5730,7 +6335,7 @@ Certains députés, comme Richard Cazenave se sont publiquement exprimé : &lt;a
     </item>
     <item>
       <title>Que faire pour que son client soit riche ?</title>
-      <link>http://francoisledroff.github.io/content/2007/02/17/que_faire_pour_que_mon.html</link>
+      <link>http://localhost:8820content/2007/02/17/que_faire_pour_que_mon.html</link>
       <pubDate>Sat, 17 Feb 2007 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2007/02/17/que_faire_pour_que_mon.html</guid>
       	<description>
@@ -5756,7 +6361,7 @@ Certains députés, comme Richard Cazenave se sont publiquement exprimé : &lt;a
     </item>
     <item>
       <title>Services web, à quand la fin du gâchis ?</title>
-      <link>http://francoisledroff.github.io/content/2007/02/17/services_web_%C3%A0_quand_la.html</link>
+      <link>http://localhost:8820content/2007/02/17/services_web_%C3%A0_quand_la.html</link>
       <pubDate>Sat, 17 Feb 2007 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2007/02/17/services_web_%C3%A0_quand_la.html</guid>
       	<description>
@@ -5779,7 +6384,7 @@ Certains députés, comme Richard Cazenave se sont publiquement exprimé : &lt;a
     </item>
     <item>
       <title>Salon Solution Linux</title>
-      <link>http://francoisledroff.github.io/content/2007/01/30/salon_solution_linux.html</link>
+      <link>http://localhost:8820content/2007/01/30/salon_solution_linux.html</link>
       <pubDate>Tue, 30 Jan 2007 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2007/01/30/salon_solution_linux.html</guid>
       	<description>
@@ -5854,7 +6459,7 @@ Nos slides sont maintenant en ligne &lt;a href=&quot;http://www.solutionslinux.f
     </item>
     <item>
       <title>Réunion PJBUG au Salon SolutionLinux2007</title>
-      <link>http://francoisledroff.github.io/content/2007/01/16/r%C3%A9union_pjbug_au_salon_solutionlinux2007.html</link>
+      <link>http://localhost:8820content/2007/01/16/r%C3%A9union_pjbug_au_salon_solutionlinux2007.html</link>
       <pubDate>Tue, 16 Jan 2007 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2007/01/16/r%C3%A9union_pjbug_au_salon_solutionlinux2007.html</guid>
       	<description>
@@ -5881,7 +6486,7 @@ Nos slides sont maintenant en ligne &lt;a href=&quot;http://www.solutionslinux.f
     </item>
     <item>
       <title>JavaPolis 2006 : quelques liens</title>
-      <link>http://francoisledroff.github.io/content/2006/12/31/javapolis_2006_quelques_liens.html</link>
+      <link>http://localhost:8820content/2006/12/31/javapolis_2006_quelques_liens.html</link>
       <pubDate>Sun, 31 Dec 2006 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2006/12/31/javapolis_2006_quelques_liens.html</guid>
       	<description>
@@ -5943,7 +6548,7 @@ Nos slides sont maintenant en ligne &lt;a href=&quot;http://www.solutionslinux.f
     </item>
     <item>
       <title>ObjectWeb à Javapolis</title>
-      <link>http://francoisledroff.github.io/content/2006/12/31/objectweb_%C3%A0_javapolis.html</link>
+      <link>http://localhost:8820content/2006/12/31/objectweb_%C3%A0_javapolis.html</link>
       <pubDate>Sun, 31 Dec 2006 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2006/12/31/objectweb_%C3%A0_javapolis.html</guid>
       	<description>
@@ -6041,7 +6646,7 @@ Nos slides sont maintenant en ligne &lt;a href=&quot;http://www.solutionslinux.f
     </item>
     <item>
       <title>De retour de JavaPolis 2006</title>
-      <link>http://francoisledroff.github.io/content/2006/12/20/de_retour_de_javapolis_2006.html</link>
+      <link>http://localhost:8820content/2006/12/20/de_retour_de_javapolis_2006.html</link>
       <pubDate>Wed, 20 Dec 2006 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2006/12/20/de_retour_de_javapolis_2006.html</guid>
       	<description>
@@ -6076,7 +6681,7 @@ Nos slides sont maintenant en ligne &lt;a href=&quot;http://www.solutionslinux.f
     </item>
     <item>
       <title>JavaPolis 2006</title>
-      <link>http://francoisledroff.github.io/content/2006/12/11/javapolis_2006.html</link>
+      <link>http://localhost:8820content/2006/12/11/javapolis_2006.html</link>
       <pubDate>Mon, 11 Dec 2006 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2006/12/11/javapolis_2006.html</guid>
       	<description>
@@ -6099,7 +6704,7 @@ Nos slides sont maintenant en ligne &lt;a href=&quot;http://www.solutionslinux.f
     </item>
     <item>
       <title>Les 20 kms de Paris</title>
-      <link>http://francoisledroff.github.io/content/2006/10/16/les_20_kms_de_paris.html</link>
+      <link>http://localhost:8820content/2006/10/16/les_20_kms_de_paris.html</link>
       <pubDate>Mon, 16 Oct 2006 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2006/10/16/les_20_kms_de_paris.html</guid>
       	<description>
@@ -6134,7 +6739,7 @@ Nos slides sont maintenant en ligne &lt;a href=&quot;http://www.solutionslinux.f
     </item>
     <item>
       <title>JavaDay 2006</title>
-      <link>http://francoisledroff.github.io/content/2006/07/04/javaday_2006.html</link>
+      <link>http://localhost:8820content/2006/07/04/javaday_2006.html</link>
       <pubDate>Tue, 4 Jul 2006 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2006/07/04/javaday_2006.html</guid>
       	<description>
@@ -6258,7 +6863,7 @@ Nos slides sont maintenant en ligne &lt;a href=&quot;http://www.solutionslinux.f
     </item>
     <item>
       <title>PJBUG - 28 Juin 2006</title>
-      <link>http://francoisledroff.github.io/content/2006/06/30/pjbug_28_juin_2006.html</link>
+      <link>http://localhost:8820content/2006/06/30/pjbug_28_juin_2006.html</link>
       <pubDate>Fri, 30 Jun 2006 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2006/06/30/pjbug_28_juin_2006.html</guid>
       	<description>
@@ -6360,7 +6965,7 @@ Nos slides sont maintenant en ligne &lt;a href=&quot;http://www.solutionslinux.f
     </item>
     <item>
       <title>Bravo à XWiki</title>
-      <link>http://francoisledroff.github.io/content/2006/06/28/bravo_%C3%A0_xwiki.html</link>
+      <link>http://localhost:8820content/2006/06/28/bravo_%C3%A0_xwiki.html</link>
       <pubDate>Wed, 28 Jun 2006 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2006/06/28/bravo_%C3%A0_xwiki.html</guid>
       	<description>
@@ -6377,7 +6982,7 @@ Nos slides sont maintenant en ligne &lt;a href=&quot;http://www.solutionslinux.f
     </item>
     <item>
       <title>IGN versus Google</title>
-      <link>http://francoisledroff.github.io/content/2006/06/27/ign_versus_google.html</link>
+      <link>http://localhost:8820content/2006/06/27/ign_versus_google.html</link>
       <pubDate>Tue, 27 Jun 2006 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2006/06/27/ign_versus_google.html</guid>
       	<description>
@@ -6425,7 +7030,7 @@ Nos slides sont maintenant en ligne &lt;a href=&quot;http://www.solutionslinux.f
     </item>
     <item>
       <title>Je suis enfin libre !</title>
-      <link>http://francoisledroff.github.io/content/2006/06/14/je_suis_enfin_libre.html</link>
+      <link>http://localhost:8820content/2006/06/14/je_suis_enfin_libre.html</link>
       <pubDate>Wed, 14 Jun 2006 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2006/06/14/je_suis_enfin_libre.html</guid>
       	<description>
@@ -6581,7 +7186,7 @@ Nos slides sont maintenant en ligne &lt;a href=&quot;http://www.solutionslinux.f
     </item>
     <item>
       <title>Microsoft Open Source Software Lab</title>
-      <link>http://francoisledroff.github.io/content/2006/04/07/microsoft_open_source_software_lab.html</link>
+      <link>http://localhost:8820content/2006/04/07/microsoft_open_source_software_lab.html</link>
       <pubDate>Fri, 7 Apr 2006 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2006/04/07/microsoft_open_source_software_lab.html</guid>
       	<description>
@@ -6622,7 +7227,7 @@ Quelques liens pour approfondir le sujet:&lt;/p&gt;
     </item>
     <item>
       <title>pragmatic profiling - find out quickly why your java app is hanging</title>
-      <link>http://francoisledroff.github.io/content/2006/03/02/pragmatic_profiling_find_out_quickly.html</link>
+      <link>http://localhost:8820content/2006/03/02/pragmatic_profiling_find_out_quickly.html</link>
       <pubDate>Thu, 2 Mar 2006 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2006/03/02/pragmatic_profiling_find_out_quickly.html</guid>
       	<description>
@@ -6732,7 +7337,7 @@ Quelques liens pour approfondir le sujet:&lt;/p&gt;
     </item>
     <item>
       <title>PJBUG: JBoss Clustering</title>
-      <link>http://francoisledroff.github.io/content/2006/02/03/pjbug_jboss_clustering.html</link>
+      <link>http://localhost:8820content/2006/02/03/pjbug_jboss_clustering.html</link>
       <pubDate>Fri, 3 Feb 2006 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2006/02/03/pjbug_jboss_clustering.html</guid>
       	<description>
@@ -6789,7 +7394,7 @@ Quelques liens pour approfondir le sujet:&lt;/p&gt;
     </item>
     <item>
       <title>QSOS est désormais sous licence GNU FDL</title>
-      <link>http://francoisledroff.github.io/content/2006/01/25/qsos_est_d%C3%A9sormais_sous_licence.html</link>
+      <link>http://localhost:8820content/2006/01/25/qsos_est_d%C3%A9sormais_sous_licence.html</link>
       <pubDate>Wed, 25 Jan 2006 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2006/01/25/qsos_est_d%C3%A9sormais_sous_licence.html</guid>
       	<description>
@@ -6825,7 +7430,7 @@ Quelques liens pour approfondir le sujet:&lt;/p&gt;
     </item>
     <item>
       <title>Maintenant qu&amp;#8217;il fait tout le temps nuit sur toi</title>
-      <link>http://francoisledroff.github.io/content/2006/01/21/maintenant_qu_il_fait_tout.html</link>
+      <link>http://localhost:8820content/2006/01/21/maintenant_qu_il_fait_tout.html</link>
       <pubDate>Sat, 21 Jan 2006 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2006/01/21/maintenant_qu_il_fait_tout.html</guid>
       	<description>
@@ -6839,7 +7444,7 @@ Quelques liens pour approfondir le sujet:&lt;/p&gt;
     </item>
     <item>
       <title>p6spy integration in jboss: Do you know what your cmps are doing ?</title>
-      <link>http://francoisledroff.github.io/content/2006/01/18/p6spy_integration_in_jboss_do.html</link>
+      <link>http://localhost:8820content/2006/01/18/p6spy_integration_in_jboss_do.html</link>
       <pubDate>Wed, 18 Jan 2006 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2006/01/18/p6spy_integration_in_jboss_do.html</guid>
       	<description>
@@ -7018,7 +7623,7 @@ class=&quot;org.jboss.logging.appender.DailyRollingFileAppender&quot;&amp;gt;
     </item>
     <item>
       <title>Javapolis 2005</title>
-      <link>http://francoisledroff.github.io/content/2005/12/21/javapolis_2005.html</link>
+      <link>http://localhost:8820content/2005/12/21/javapolis_2005.html</link>
       <pubDate>Wed, 21 Dec 2005 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2005/12/21/javapolis_2005.html</guid>
       	<description>
@@ -7084,7 +7689,7 @@ class=&quot;org.jboss.logging.appender.DailyRollingFileAppender&quot;&amp;gt;
     </item>
     <item>
       <title>QSOS: Qualification et de Sélection de logiciels Open Source</title>
-      <link>http://francoisledroff.github.io/content/2005/11/29/qsos_qualification_et_de_s%C3%A9lection.html</link>
+      <link>http://localhost:8820content/2005/11/29/qsos_qualification_et_de_s%C3%A9lection.html</link>
       <pubDate>Tue, 29 Nov 2005 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2005/11/29/qsos_qualification_et_de_s%C3%A9lection.html</guid>
       	<description>
@@ -7110,7 +7715,7 @@ class=&quot;org.jboss.logging.appender.DailyRollingFileAppender&quot;&amp;gt;
     </item>
     <item>
       <title>JBoss Locking (follow-up)</title>
-      <link>http://francoisledroff.github.io/content/2005/11/23/jboss_locking_follow_up.html</link>
+      <link>http://localhost:8820content/2005/11/23/jboss_locking_follow_up.html</link>
       <pubDate>Wed, 23 Nov 2005 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2005/11/23/jboss_locking_follow_up.html</guid>
       	<description>
@@ -7140,7 +7745,7 @@ class=&quot;org.jboss.logging.appender.DailyRollingFileAppender&quot;&amp;gt;
     </item>
     <item>
       <title>Retour sur Rialto et le Web 2.0</title>
-      <link>http://francoisledroff.github.io/content/2005/11/23/retour_sur_rialto_et_le.html</link>
+      <link>http://localhost:8820content/2005/11/23/retour_sur_rialto_et_le.html</link>
       <pubDate>Wed, 23 Nov 2005 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2005/11/23/retour_sur_rialto_et_le.html</guid>
       	<description>
@@ -7195,7 +7800,7 @@ class=&quot;org.jboss.logging.appender.DailyRollingFileAppender&quot;&amp;gt;
     </item>
     <item>
       <title>Réunion ossgtp : usine de dév</title>
-      <link>http://francoisledroff.github.io/content/2005/11/23/r%C3%A9union_ossgtp_usine_de_d%C3%A9v.html</link>
+      <link>http://localhost:8820content/2005/11/23/r%C3%A9union_ossgtp_usine_de_d%C3%A9v.html</link>
       <pubDate>Wed, 23 Nov 2005 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2005/11/23/r%C3%A9union_ossgtp_usine_de_d%C3%A9v.html</guid>
       	<description>
@@ -7234,7 +7839,7 @@ Un socle devrait-il contenir du code propriétaire ? Doit-on enrichir ce(s) fram
     </item>
     <item>
       <title>Symposium DNG 2005</title>
-      <link>http://francoisledroff.github.io/content/2005/10/27/symposium_dng_2005.html</link>
+      <link>http://localhost:8820content/2005/10/27/symposium_dng_2005.html</link>
       <pubDate>Thu, 27 Oct 2005 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2005/10/27/symposium_dng_2005.html</guid>
       	<description>
@@ -7318,7 +7923,7 @@ Petite note perso :http://www.castleproject.org/index.php/Main_Page[Castle] : un
     </item>
     <item>
       <title>Death to JBoss transaction deadlocks</title>
-      <link>http://francoisledroff.github.io/content/2005/10/17/death_to_the_jboss_transaction.html</link>
+      <link>http://localhost:8820content/2005/10/17/death_to_the_jboss_transaction.html</link>
       <pubDate>Mon, 17 Oct 2005 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2005/10/17/death_to_the_jboss_transaction.html</guid>
       	<description>
@@ -7498,7 +8103,7 @@ C&lt;/pre&gt;
     </item>
     <item>
       <title>JBoss transaction configuration</title>
-      <link>http://francoisledroff.github.io/content/2005/10/08/jboss_transaction_configuration.html</link>
+      <link>http://localhost:8820content/2005/10/08/jboss_transaction_configuration.html</link>
       <pubDate>Sat, 8 Oct 2005 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2005/10/08/jboss_transaction_configuration.html</guid>
       	<description>
@@ -7699,7 +8304,7 @@ You can execute multiple queries against multiple tables, knowing that the resul
     </item>
     <item>
       <title>Maven Book Bonus Chapter</title>
-      <link>http://francoisledroff.github.io/content/2005/10/07/maven_book_bonus_chapter.html</link>
+      <link>http://localhost:8820content/2005/10/07/maven_book_bonus_chapter.html</link>
       <pubDate>Fri, 7 Oct 2005 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2005/10/07/maven_book_bonus_chapter.html</guid>
       	<description>
@@ -7710,7 +8315,7 @@ You can execute multiple queries against multiple tables, knowing that the resul
     </item>
     <item>
       <title>ossgtp du 18 Aout 2005</title>
-      <link>http://francoisledroff.github.io/content/2005/09/07/ossgtp_du_18_aout_2005.html</link>
+      <link>http://localhost:8820content/2005/09/07/ossgtp_du_18_aout_2005.html</link>
       <pubDate>Wed, 7 Sep 2005 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2005/09/07/ossgtp_du_18_aout_2005.html</guid>
       	<description>
@@ -7746,7 +8351,7 @@ You can execute multiple queries against multiple tables, knowing that the resul
     </item>
     <item>
       <title>Book Review: Maven: A Developer&amp;#8217;s Notebook</title>
-      <link>http://francoisledroff.github.io/content/2005/09/06/book_review_maven_a_developer.html</link>
+      <link>http://localhost:8820content/2005/09/06/book_review_maven_a_developer.html</link>
       <pubDate>Tue, 6 Sep 2005 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2005/09/06/book_review_maven_a_developer.html</guid>
       	<description>
@@ -7823,7 +8428,7 @@ and complex enough to expose the daily issues you face in a real world project.&
     </item>
     <item>
       <title>Extreme table</title>
-      <link>http://francoisledroff.github.io/content/2005/07/14/p_extreme_table_g%C3%A9re_un.html</link>
+      <link>http://localhost:8820content/2005/07/14/p_extreme_table_g%C3%A9re_un.html</link>
       <pubDate>Thu, 14 Jul 2005 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2005/07/14/p_extreme_table_g%C3%A9re_un.html</guid>
       	<description>
@@ -7837,7 +8442,7 @@ and complex enough to expose the daily issues you face in a real world project.&
     </item>
     <item>
       <title>there&amp;#8217;s far less OA than there is SOA</title>
-      <link>http://francoisledroff.github.io/content/2005/07/14/there_s_far_less_oa.html</link>
+      <link>http://localhost:8820content/2005/07/14/there_s_far_less_oa.html</link>
       <pubDate>Thu, 14 Jul 2005 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2005/07/14/there_s_far_less_oa.html</guid>
       	<description>
@@ -7854,7 +8459,7 @@ and complex enough to expose the daily issues you face in a real world project.&
     </item>
     <item>
       <title>meven ide (maven eclipse-plugin) tricks and tips</title>
-      <link>http://francoisledroff.github.io/content/2005/05/15/meven_ide_maven_eclipse_plugin.html</link>
+      <link>http://localhost:8820content/2005/05/15/meven_ide_maven_eclipse_plugin.html</link>
       <pubDate>Sun, 15 May 2005 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2005/05/15/meven_ide_maven_eclipse_plugin.html</guid>
       	<description>
@@ -7901,7 +8506,7 @@ and reinstalled it using this specific update site: &lt;a href=&quot;http://meve
     </item>
     <item>
       <title>The room is on fire</title>
-      <link>http://francoisledroff.github.io/content/2005/05/15/the_room_is_on_fire.html</link>
+      <link>http://localhost:8820content/2005/05/15/the_room_is_on_fire.html</link>
       <pubDate>Sun, 15 May 2005 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2005/05/15/the_room_is_on_fire.html</guid>
       	<description>
@@ -7922,7 +8527,7 @@ and reinstalled it using this specific update site: &lt;a href=&quot;http://meve
     </item>
     <item>
       <title>Eclipse default compliances</title>
-      <link>http://francoisledroff.github.io/content/2005/05/06/eclipse_default_compliances.html</link>
+      <link>http://localhost:8820content/2005/05/06/eclipse_default_compliances.html</link>
       <pubDate>Fri, 6 May 2005 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2005/05/06/eclipse_default_compliances.html</guid>
       	<description>
@@ -7962,7 +8567,7 @@ So you just need to modify your preferences: Open a project in Eclipse. Select P
     </item>
     <item>
       <title>Paris blogue-t-il ? Une rencontre entre blogueurs à l&amp;#8217;Entrepôt !</title>
-      <link>http://francoisledroff.github.io/content/2005/04/04/paris_blogue_t_il_une.html</link>
+      <link>http://localhost:8820content/2005/04/04/paris_blogue_t_il_une.html</link>
       <pubDate>Mon, 4 Apr 2005 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2005/04/04/paris_blogue_t_il_une.html</guid>
       	<description>
@@ -7982,7 +8587,7 @@ Pour vous inscrire à cette soirée, rendez-vous sur &lt;a href=&quot;http://www
     </item>
     <item>
       <title>www.droff.com</title>
-      <link>http://francoisledroff.github.io/content/2005/02/22/www_droff_com.html</link>
+      <link>http://localhost:8820content/2005/02/22/www_droff_com.html</link>
       <pubDate>Tue, 22 Feb 2005 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2005/02/22/www_droff_com.html</guid>
       	<description>
@@ -7996,7 +8601,7 @@ Pour vous inscrire à cette soirée, rendez-vous sur &lt;a href=&quot;http://www
     </item>
     <item>
       <title>Java plus rapide, plus léger</title>
-      <link>http://francoisledroff.github.io/content/2005/01/31/java_plus_rapide_plus_l%C3%A9ger.html</link>
+      <link>http://localhost:8820content/2005/01/31/java_plus_rapide_plus_l%C3%A9ger.html</link>
       <pubDate>Mon, 31 Jan 2005 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2005/01/31/java_plus_rapide_plus_l%C3%A9ger.html</guid>
       	<description>
@@ -8064,7 +8669,7 @@ Pour vous inscrire à cette soirée, rendez-vous sur &lt;a href=&quot;http://www
     </item>
     <item>
       <title>JavaPolis 2004</title>
-      <link>http://francoisledroff.github.io/content/2005/01/26/javapolis_2004.html</link>
+      <link>http://localhost:8820content/2005/01/26/javapolis_2004.html</link>
       <pubDate>Wed, 26 Jan 2005 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2005/01/26/javapolis_2004.html</guid>
       	<description>
@@ -8167,7 +8772,7 @@ Here is my unorderered top 7 list extracted http://francoisledroff.blogspot.com/
     </item>
     <item>
       <title>javapolis 2004: Eclipse in Action by Eric Gamma</title>
-      <link>http://francoisledroff.github.io/content/2004/12/13/javapolis_2004_part1_Eclipse_in_Action_by+_Eric_Gamma.html</link>
+      <link>http://localhost:8820content/2004/12/13/javapolis_2004_part1_Eclipse_in_Action_by+_Eric_Gamma.html</link>
       <pubDate>Mon, 13 Dec 2004 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2004/12/13/javapolis_2004_part1_Eclipse_in_Action_by+_Eric_Gamma.html</guid>
       	<description>
@@ -8236,7 +8841,7 @@ Rich Client Platform) dedicated to the building of an online stock trading syste
     </item>
     <item>
       <title>javapolis 2004: BPEL in action by Edwin Khodabakchian</title>
-      <link>http://francoisledroff.github.io/content/2004/12/13/javapolis_2004_part_2_+BPEL_in_action.html</link>
+      <link>http://localhost:8820content/2004/12/13/javapolis_2004_part_2_+BPEL_in_action.html</link>
       <pubDate>Mon, 13 Dec 2004 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2004/12/13/javapolis_2004_part_2_+BPEL_in_action.html</guid>
       	<description>

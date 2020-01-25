@@ -2,7 +2,7 @@
 Francois Le Droff
 2006-04-07
 :jbake-type: post
-:jbake-tags:  OpenSource
+:jbake-tags: Tech,  OpenSource
 :jbake-status: published
 :source-highlighter: prettify
 

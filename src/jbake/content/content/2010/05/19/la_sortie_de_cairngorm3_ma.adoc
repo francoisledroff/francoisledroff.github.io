@@ -2,7 +2,7 @@
 Francois Le Droff
 2010-05-19
 :jbake-type: post
-:jbake-tags:  OpenSource, Project, Cairngorm
+:jbake-tags: Tech,  OpenSource, Project, Cairngorm
 :jbake-status: published
 :source-highlighter: prettify
 

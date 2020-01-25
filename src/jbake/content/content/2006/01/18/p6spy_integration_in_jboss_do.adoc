@@ -2,7 +2,7 @@
 Francois Le Droff
 2006-01-18
 :jbake-type: post
-:jbake-tags:  JBoss, Java, OpenSource
+:jbake-tags: Tech,  JBoss, Java, OpenSource
 :jbake-status: published
 :source-highlighter: prettify
 

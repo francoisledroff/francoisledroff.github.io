@@ -2,7 +2,7 @@
 Francois Le Droff
 2006-06-27
 :jbake-type: post
-:jbake-tags:  General 
+:jbake-tags: Tech,  General
 :jbake-status: published
 :source-highlighter: prettify
 

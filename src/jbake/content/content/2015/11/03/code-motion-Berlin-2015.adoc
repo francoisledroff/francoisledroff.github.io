@@ -2,7 +2,7 @@
 Francois Le Droff
 2015-11-03
 :jbake-type: post
-:jbake-tags:  Security, CodeMotion, Conference
+:jbake-tags: Tech,  Security, CodeMotion, Conference
 :jbake-status: published
 
 `Hairy Security`: this was the talk Romain and I gave at http://berlin2015.codemotionworld.com/[Code Motion Berlin 2015].

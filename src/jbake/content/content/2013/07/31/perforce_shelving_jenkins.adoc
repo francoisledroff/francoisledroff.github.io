@@ -2,7 +2,7 @@
 Francois Le Droff
 2013-07-31
 :jbake-type: post
-:jbake-tags:  Perforce, Jenkins
+:jbake-tags: Tech,  Perforce, Jenkins
 :jbake-status: published
 :source-highlighter: prettify
 

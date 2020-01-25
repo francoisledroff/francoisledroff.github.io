@@ -2,7 +2,7 @@
 Francois Le Droff
 2008-11-16
 :jbake-type: post
-:jbake-tags:  General, Conference, Flex
+:jbake-tags: Tech,  General, Conference, Flex
 :jbake-status: published
 :source-highlighter: prettify
 

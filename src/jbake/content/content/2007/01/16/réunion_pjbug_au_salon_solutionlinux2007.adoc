@@ -2,7 +2,7 @@
 Francois Le Droff
 2007-01-16
 :jbake-type: post
-:jbake-tags:  JBoss 
+:jbake-tags: Tech,  JBoss
 :jbake-status: published
 :source-highlighter: prettify
 

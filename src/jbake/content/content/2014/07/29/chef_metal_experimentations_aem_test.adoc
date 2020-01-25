@@ -2,7 +2,7 @@
 Francois Le Droff
 2014-07-29
 :jbake-type: post
-:jbake-tags: OpenSource, CQ5, AEM, Chef, Adobe, Devops
+:jbake-tags: Tech, OpenSource, CQ5, AEM, Chef, Adobe, Devops
 :jbake-status: published
 
 I’ve been recently playing with https://github.com/opscode/chef-metal[chef-metal].

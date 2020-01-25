@@ -2,7 +2,7 @@
 Francois Le Droff
 2014-07-03
 :jbake-type: post
-:jbake-tags:  Adobe, AEM, CQ5, Conference, Chef, Adobe, Devops
+:jbake-tags: Tech,  Adobe, AEM, CQ5, Conference, Chef, Adobe, Devops
 :jbake-status: published
 
 

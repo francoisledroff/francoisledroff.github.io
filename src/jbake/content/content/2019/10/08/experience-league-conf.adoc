@@ -2,7 +2,7 @@
 Francois Le Droff
 2019-10-08
 :jbake-type: post
-:jbake-tags:  Conference, AEM, adobe.io, Adobe, Français,
+:jbake-tags: Tech,  Conference, AEM, adobe.io, Adobe, Français,
 :jbake-status: published
 
 

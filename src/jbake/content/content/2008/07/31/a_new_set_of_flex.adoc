@@ -2,7 +2,7 @@
 Francois Le Droff
 2008-07-31
 :jbake-type: post
-:jbake-tags:  OpenSource, Flex, Project
+:jbake-tags: Tech,  OpenSource, Flex, Project
 :jbake-status: published
 :source-highlighter: prettify
 

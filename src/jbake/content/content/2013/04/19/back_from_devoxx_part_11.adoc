@@ -2,7 +2,7 @@
 Francois Le Droff
 2013-04-19
 :jbake-type: post
-:jbake-tags:  Java, Devoxx
+:jbake-tags: Tech,  Java, Devoxx
 :jbake-status: published
 :source-highlighter: prettify
 

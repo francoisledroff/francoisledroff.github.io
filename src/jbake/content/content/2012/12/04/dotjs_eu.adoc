@@ -2,7 +2,7 @@
 Francois Le Droff
 2012-12-04
 :jbake-type: post
-:jbake-tags:  JavaScript
+:jbake-tags: Tech,  JavaScript
 :jbake-status: published
 :source-highlighter: prettify
 

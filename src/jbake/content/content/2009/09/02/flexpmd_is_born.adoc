@@ -2,7 +2,7 @@
 Francois Le Droff
 2009-09-02
 :jbake-type: post
-:jbake-tags:  Adobe, Project, Flex, FlexPMD
+:jbake-tags: Tech,  Adobe, Project, Flex, FlexPMD
 :jbake-status: published
 :source-highlighter: prettify
 

@@ -7,20 +7,20 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">Francois Le Droff</a>
+            <a class="navbar-brand" href="/">Chez François</a>
 	    </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">                
-                <li><a href="/about.html">About</a></li>
-                <li><a href="http://photos.le.droff.com/">Photos</a></li>
 
 
-                <li><a href="/archive.html">Blog</a></li>
 
+
+                <li><a href="/tags/Tech.html">Blog</a></li>
 
 		            <li><a href="/tags/Conference.html">Conferences</a></li>
                 <li><a href="/tags/Papa.html">Papa</a></li>
-                <li><a href="/tags/Lectures.html">Lectures</a></li>
+                <li><a href="/tags/Books.html">Lectures</a></li>
+                <li><a href="/tags/Music.html">Musiques</a></li>
 
                 <!--
 		            <li class="dropdown">
@@ -34,8 +34,8 @@
 	              -->
 
 
-                <li><a href="/listalltags.html">Tags</a></li>
-                <li><a href="/${config.feed_file}">Feed</a></li>
+                <!--<li><a href="/listalltags.html">Tags</a></li>-->
+                <li><a href="http://photos.le.droff.com/">Photos</a></li>
 
                 <!--
                 <li><a href="/projects.html">Projects</a></li>

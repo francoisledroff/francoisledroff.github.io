@@ -2,7 +2,7 @@
 Francois Le Droff
 2008-01-11
 :jbake-type: post
-:jbake-tags:  OpenSource, Conference
+:jbake-tags: Tech,  OpenSource, Conference
 :jbake-status: published
 :source-highlighter: prettify
 

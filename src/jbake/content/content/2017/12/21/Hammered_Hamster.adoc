@@ -1,0 +1,32 @@
+=  Hiver 2017 - Hammered Hamster
+Francois Le Droff
+2017-12-21
+:jbake-type: post
+:jbake-tags:  Music, Compile
+:jbake-status: published
+
+Ma compile hiver 2017.
+
+[cols="3a,5a"]
+|===
+| image::/img/couv-Hammered Hamster.jpg[cover,300]
+link:https://open.spotify.com/playlist/0kcJlTklJm6YJBMYGUm6mm?si=VEL-ZR9RTz-gXqXHL9h5sQ["Hammered Hamster" sur Spotify]
+|* 01 - Igorrr - Viande
+* 02 - Les Vilars - Démission (Pour Claire)
+* 03 - Girls in Hawaii - Guinea Pig
+* 04 - Anne Sylvestre- Petit bonhomme
+* 05 - Agar Agar - You're High
+* 07 - Tamino - Habibi
+* 08 - Etienne Daho- Week-End à Rome [feat. Lio]
+* 09 - Mister Milano- Da uno a novanta
+* 10 - Katerine- La banâne
+* 10 - Fishbach- Mortel
+* 11 - Forver Pavot -The Most Expansive Chocolate Eggs
+* 12 - Curtis Harding - Till the End
+* 13 - Pau Vallvé - Avui l'únic Que Vull
+* 14 - Tshegue- Muanapoto
+* 15 - Cigarettes After Sex- K
+|===
+
+
+

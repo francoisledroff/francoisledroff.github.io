@@ -2,7 +2,7 @@
 Francois Le Droff
 2018-08-08
 :jbake-type: post
-:jbake-tags:  Adobe, IMS, adobe.io, Security, Java, OAuth, JWT, API
+:jbake-tags: Tech,  Adobe, IMS, adobe.io, Security, Java, OAuth, JWT, API
 :jbake-status: published
 
 I just published on link:https://github.com/francoisledroff/adobe-ims-jwt-token-util[github a small Java utility showcasing Adobe IMS JWT Token exchange].

@@ -2,7 +2,7 @@
 Francois Le Droff
 2009-09-16
 :jbake-type: post
-:jbake-tags:  Java, Conference
+:jbake-tags: Tech,  Java, Conference
 :jbake-status: published
 :source-highlighter: prettify
 

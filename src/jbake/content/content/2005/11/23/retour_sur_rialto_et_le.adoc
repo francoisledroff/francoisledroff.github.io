@@ -2,7 +2,7 @@
 Francois Le Droff
 2005-11-23
 :jbake-type: post
-:jbake-tags:  OpenSource, ossgtp
+:jbake-tags: Tech,  OpenSource, ossgtp
 :jbake-status: published
 :source-highlighter: prettify
 

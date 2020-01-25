@@ -2,7 +2,7 @@
 Francois Le Droff
 2010-11-02
 :jbake-type: post
-:jbake-tags:  Adobe, Flex, Conference
+:jbake-tags: Tech,  Adobe, Flex, Conference
 :jbake-status: published
 :source-highlighter: prettify
 
