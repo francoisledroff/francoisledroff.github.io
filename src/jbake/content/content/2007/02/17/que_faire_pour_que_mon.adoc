@@ -3,7 +3,7 @@ Francois Le Droff
 2007-02-17
 :jbake-type: post
 :jbake-tags: Tech,  Java
-:jbake-status: published
+:jbake-status: draft
 :source-highlighter: prettify
 
 http://fr.wikipedia.org/wiki/JSF[JSF] , parfois http://icoloma.blogspot.com/2006/10/myfaces-emperor-has-no-clothes.html[critiqué] a profité dernièrement de http://www.michaelyuan.com/blog/2006/10/23/is-jsf-really-that-bad/[simplifications et d’innovations intéressantes] (avec Seam qui a fait l’objet de standardisation, de spécification la http://www.infoq.com/news/Web-Beans-JSR-299-approved-JCP[JSR 299 Web-Beans] ).

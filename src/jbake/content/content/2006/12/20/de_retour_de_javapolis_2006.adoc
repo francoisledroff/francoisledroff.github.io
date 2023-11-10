@@ -3,7 +3,7 @@ Francois Le Droff
 2006-12-20
 :jbake-type: post
 :jbake-tags: Tech,  Java, Javapolis
-:jbake-status: published
+:jbake-status: draft
 :source-highlighter: prettify
 
 Javapolis 2006, un grand cru, avec 30% d’inscription supplémentaire ce fut encore l’occasion de nouvelles rencontres, de nouveaux échanges. Car la qualité et la richesse de javapolis (comme de toute grande conférence internationale) ne réside pas seulement dans son programme (ses présentations, keynotes, bof, quickies ou labs), mais aussi la découverte des nouvelles tendances/modes/buzz de la communauté, et enfin, et surtout, dans le networking (le réseautage diraient nos cousins québécois).

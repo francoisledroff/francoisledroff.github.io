@@ -3,7 +3,7 @@ Francois Le Droff
 2006-04-07
 :jbake-type: post
 :jbake-tags: Tech,  OpenSource
-:jbake-status: published
+:jbake-status: draft
 :source-highlighter: prettify
 
 It’s not a http://jroller.com/page/francoisledroff?entry=nouveau_job[joke] anymore. I just learned that such thing as the http://port25.technet.com/[Microsoft Open Source Software Lab] exists ! His name Port25. Here is a short http://port25.technet.com/archive/2006/03/31/14.aspx[introduction]:

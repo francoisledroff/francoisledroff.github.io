@@ -3,7 +3,7 @@ Francois Le Droff
 2009-05-19
 :jbake-type: post
 :jbake-tags: Tech,  Adobe
-:jbake-status: published
+:jbake-status: draft
 :source-highlighter: prettify
 
 Adobe organise des *Rencontres Designers et Développeurs* Mercredi 3 juin 2009 à partir de 16 heures à http://maps.google.com/maps?f=q&source=s_q&hl=fr&geocode=&q=Atelier+Richelieu,+60,+rue+de+Richelieu+75002+Paris&sll=37.0625,-95.677068&sspn=48.555061,79.101563&ie=UTF8&ll=48.868427,2.338328&spn=0.009923,0.019312&t=h&z=16&iwloc=A[l’Atelier Richelieu, 60, rue de Richelieu dans le 2ème arrondissement à Paris (Métros Bourse/Palais Royal/Pyramides - Stations Vélib Bourse ou Bibliothèque Nationale)]

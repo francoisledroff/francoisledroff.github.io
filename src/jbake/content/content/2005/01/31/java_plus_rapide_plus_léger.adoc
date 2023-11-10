@@ -3,7 +3,7 @@ Francois Le Droff
 2005-01-31
 :jbake-type: post
 :jbake-tags: Tech,  Java
-:jbake-status: published
+:jbake-status: draft
 :source-highlighter: prettify
 
 C’est la première fois depuis des années que j’achète un ouvrage informatique en français. Depuis maintenant un an, je travaille dans un environnement complètement et uniquement francophone et je voulais pouvoir passer ce livre à quelques membres de mon équipe.

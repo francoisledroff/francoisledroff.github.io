@@ -3,7 +3,7 @@ Francois Le Droff
 2012-08-09
 :jbake-type: post
 :jbake-tags: Tech,  IT
-:jbake-status: published
+:jbake-status: draft
 :source-highlighter: prettify
 
 I’ve been the happy owner of a htc nexus one for a couple of years now, but I recently broke its screen. +

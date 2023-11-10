@@ -3,7 +3,7 @@ Francois Le Droff
 2007-07-04
 :jbake-type: post
 :jbake-tags: Tech,  IT
-:jbake-status: published
+:jbake-status: draft
 :source-highlighter: prettify
 
 Vous avez sans doute lu comme moi dans la presse que Dell avait annoncé qu’il allait enfin proposer à ses clients http://www.presence-pc.com/actualite/Dell-Ubuntu-23115/[Linux sur plusieurs gammes de ses ordinateurs] (dont certains portables). Hélas, c’était une simple annonce, Dell n’a donné d’information ni sur les caractéristiques de ces machines, ni sur les dates de disponibilité de ces machines.

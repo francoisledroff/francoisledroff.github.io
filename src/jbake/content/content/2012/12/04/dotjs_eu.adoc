@@ -3,7 +3,7 @@ Francois Le Droff
 2012-12-04
 :jbake-type: post
 :jbake-tags: Tech,  JavaScript
-:jbake-status: published
+:jbake-status: draft
 :source-highlighter: prettify
 
 Last Friday, I attended the http://www.dotjs.eu/[http://www.dotjs.eu/^image:/images/icons/linkext7.gif[image,width=7,height=7]^] conference in Paris. +

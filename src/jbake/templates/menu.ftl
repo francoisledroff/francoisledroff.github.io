@@ -35,7 +35,7 @@
 
 
                 <!--<li><a href="/listalltags.html">Tags</a></li>-->
-                <li><a href="http://photos.le.droff.com/">Photos</a></li>
+                <li><a href="https://photos.le.droff.com/">Photos</a></li>
 
                 <!--
                 <li><a href="/projects.html">Projects</a></li>

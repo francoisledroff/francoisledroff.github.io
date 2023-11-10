@@ -2,8 +2,8 @@
 Francois Le Droff
 2006-01-21
 :jbake-type: post
-:jbake-tags:  Books 
-:jbake-status: published
+:jbake-tags:  Music
+:jbake-status: draft
 :source-highlighter: prettify
 
 ``Maintenant qu’il fait tout le temps nuit sur toi'' est le premier roman du chanteur du groupe Dyonisos, Mathias Malzieu.

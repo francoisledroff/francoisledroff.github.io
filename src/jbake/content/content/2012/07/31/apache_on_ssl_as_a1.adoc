@@ -3,7 +3,7 @@ Francois Le Droff
 2012-07-31
 :jbake-type: post
 :jbake-tags:  IT 
-:jbake-status: published
+:jbake-status: draft
 :source-highlighter: prettify
 
 Here are a few notes, that might help a few out there who face difficulties to configure apache server on https and as a reverse proxy on their windows ( windows7 ) development machine.

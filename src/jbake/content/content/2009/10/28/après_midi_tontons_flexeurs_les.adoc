@@ -3,7 +3,7 @@ Francois Le Droff
 2009-10-28
 :jbake-type: post
 :jbake-tags: Tech,  Adobe
-:jbake-status: published
+:jbake-status: draft
 :source-highlighter: prettify
 
 Ami flexeur et/ou développeur Java, voici un évènement à ne pas manquer (à moins d’avoir une bonne raison comme moi image:http://www.jroller.com/images/smileys/sad.gif[:-(,title=":-("] ), car http://coenraets.org[Christophe Coenraets] évangéliste (Sénior et Francophone!) chez Adobe fera un petit stop chez http://groups.adobe.com/groups/193bcaff5f/summary[les Tontons Flexeurs] avant de prendre la route pour http://www.devoxx.com[Devoxx]. Christophe sera donc à Paris le 10 Novembre pour nous présenter

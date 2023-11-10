@@ -3,7 +3,7 @@ Francois Le Droff
 2010-02-08
 :jbake-type: post
 :jbake-tags: Tech,  General
-:jbake-status: published
+:jbake-status: draft
 :source-highlighter: prettify
 
 Un petit rappel, le http://www.parisjug.org/xwiki/bin/view/Meeting/20100209[2eme anniversaire du ParisJUG] c’est demain, mardi 9 février !

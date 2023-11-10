@@ -3,7 +3,7 @@ Francois Le Droff
 2006-12-11
 :jbake-type: post
 :jbake-tags: Tech,  Java, Javapolis
-:jbake-status: published
+:jbake-status: draft
 :source-highlighter: prettify
 
 image:http://jroller.com/resources/f/francoisledroff/logo-javapolis06.png[logo-javapolis06.png]

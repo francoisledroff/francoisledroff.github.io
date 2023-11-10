@@ -3,7 +3,7 @@ Francois Le Droff
 2005-05-15
 :jbake-type: post
 :jbake-tags: Tech,  Java
-:jbake-status: published
+:jbake-status: draft
 :source-highlighter: prettify
 
 Unless I specified my maven local repository in my project.properties file under my project root as such:

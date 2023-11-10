@@ -4,3 +4,7 @@
 output
 
 
+*-draft.html
+ssl/myserver.key
+ssl/server.csr
+ssl

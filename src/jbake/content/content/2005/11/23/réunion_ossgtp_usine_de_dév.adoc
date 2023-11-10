@@ -3,7 +3,7 @@ Francois Le Droff
 2005-11-23
 :jbake-type: post
 :jbake-tags: Tech,  OpenSource, ossgtp
-:jbake-status: published
+:jbake-status: draft
 :source-highlighter: prettify
 
 La dernière réunion http://ossgtp.xwiki.org[ossgtp] a eu lieu http://ossgtp.xwiki.com/xwiki/bin/view/Main/17Novembre2005[17 novembre 2005].

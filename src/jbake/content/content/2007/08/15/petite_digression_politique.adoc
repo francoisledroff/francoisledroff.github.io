@@ -3,7 +3,7 @@ Francois Le Droff
 2007-08-15
 :jbake-type: post
 :jbake-tags: Tech,  OpenSource
-:jbake-status: published
+:jbake-status: draft
 :source-highlighter: prettify
 
 [cols=",",]

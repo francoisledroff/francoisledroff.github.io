@@ -6,14 +6,14 @@
 
         <p class="credit">
 
-        Site Published with
+        Published under
         a <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/"><em>Creative Commons by-nc-sa</em> license</a>,
-          mixed with <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>,
-          baked with <a href="http://jbake.org">JBake ${version}</a>
+          mixed with <a href="https://github.com/twbs/bootstrap/">Bootstrap</a>,
+          baked with <a href="https://jbake.org">JBake ${version}</a>
 
-	      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/fr/">
+	      <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/2.0/fr/">
         <img alt="Creative Commons License" style="border-width:0"
-	      src="http://i.creativecommons.org/l/by-nc-sa/2.0/fr/80x15.png"/></a>
+	      src="https://i.creativecommons.org/l/by-nc-sa/2.0/fr/80x15.png"/></a>
 
          </p>
 

@@ -3,7 +3,7 @@ Francois Le Droff
 2006-06-27
 :jbake-type: post
 :jbake-tags: Tech,  General
-:jbake-status: published
+:jbake-status: draft
 :source-highlighter: prettify
 
 Suite à la lecture du http://samdprod.typepad.com/actu/2006/06/comparatif_ign_.html[Comparatif IGN Geoportail / Google Local] de http://samdprod.typepad.com/actu/[Sam D], j’ai voulu revoir ma bretagne (ma maison de famille à côté de Brest) en haute définition IGN. Et contrairement à Sam, je ne crois pas que l’IGN est un si net avantage en province.

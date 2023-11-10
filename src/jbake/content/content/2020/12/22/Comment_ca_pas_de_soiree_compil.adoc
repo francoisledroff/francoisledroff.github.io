@@ -1,0 +1,40 @@
+=  Comment ça? Pas de soirée compil !?
+Francois Le Droff
+2020-12-22
+:jbake-type: post
+:jbake-tags:  Music, Compile
+:jbake-status: published
+
+Ma compile Hiver 2020.
+
+[cols="3a,5a"]
+|===
+| image::/img/couv-comment_ca_pas_de_soiree_compil.jpg[cover,300]
+link:https://open.spotify.com/playlist/7uwUyYe5iK9Ny4KTnvM9BK?si=8bcd7dab6f974219&nd=1[Comment ça? Pas de soirée compil !? sur Spotify]
+|* 01 Bombino - Imhuhar
+* 02 Ricchi E Poveri - Sarà Perché Ti Amo
+* 03 Peaches - Dick in the Air
+* 04 Julien Doré - Moi Lolita
+* 05 Juniore - Ah bah d'accord
+* 06 Anne Germain - Recette pour un cake d'amour
+* 07 Grandbrothers - Bloodflow
+* 08 Leonie Perret - Rotten Tree
+* 09 Bombino - Lyat Ninhay / Jaguar
+* 10 The Who - Baba O Riley
+* 11 Kel Assouf - Fransa
+* 12 Fleuves - Dañs plinn
+* 13 Shye Ben Tzur - Allah Elohim
+* 14 Dionysos - I Follow Rivers
+* 15 Pomme - Je sais pas danser
+* 16 Rone - Brest
+* 17 Cécile McLorin Salvant - You've Got to Give Me Some
+* 18 Ryan Adams - Oh My Sweet Carolina
+* 19 Babx - Omaya, Pt. 3
+* 20 Tingvall Trio - Vägen Live
+* 21 Anouard Brahem - The Astouding Eyes of Rita
+* 22 Cowboys Junkies - Sweet Jane
+
+|===
+
+
+

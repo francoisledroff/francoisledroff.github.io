@@ -1,17 +1,116 @@
 <?xml version="1.0"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
   <channel>
     <title>Francois Le Droff's blog</title>
-    <link>http://francoisledroff.github.io/</link>
-    <atom:link href="http://francoisledroff.github.io//feed.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:8820/</link>
+    <atom:link href="http://localhost:8820//feed.xml" rel="self" type="application/rss+xml" />
     <description>Francois Le Droff's Home</description>
     <language>en-gb</language>
-    <pubDate>Mon, 15 Feb 2021 20:49:44 +0100</pubDate>
-    <lastBuildDate>Mon, 15 Feb 2021 20:49:44 +0100</lastBuildDate>
+    <pubDate>Fri, 10 Nov 2023 14:13:49 +0100</pubDate>
+    <lastBuildDate>Fri, 10 Nov 2023 14:13:49 +0100</lastBuildDate>
 
     <item>
+      <title>Comment ça? Pas de soirée compil !?</title>
+      <link>http://localhost:8820/content/2020/12/22/Comment_ca_pas_de_soiree_compil.html</link>
+      <pubDate>Tue, 22 Dec 2020 00:00:00 +0100</pubDate>
+      <guid isPermaLink="false">content/2020/12/22/Comment_ca_pas_de_soiree_compil.html</guid>
+      	<description>
+	&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Ma compile Hiver 2020.&lt;/p&gt;
+&lt;/div&gt;
+&lt;table class=&quot;tableblock frame-all grid-all stretch&quot;&gt;
+&lt;colgroup&gt;
+&lt;col style=&quot;width: 37.5%;&quot;&gt;
+&lt;col style=&quot;width: 62.5%;&quot;&gt;
+&lt;/colgroup&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;div class=&quot;content&quot;&gt;&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/img/couv-comment_ca_pas_de_soiree_compil.jpg&quot; alt=&quot;cover&quot; width=&quot;300&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;https://open.spotify.com/playlist/7uwUyYe5iK9Ny4KTnvM9BK?si=8bcd7dab6f974219&amp;amp;nd=1&quot;&gt;Comment ça? Pas de soirée compil !? sur Spotify&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;div class=&quot;content&quot;&gt;&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;01 Bombino - Imhuhar&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;02 Ricchi E Poveri - Sarà Perché Ti Amo&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;03 Peaches - Dick in the Air&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;04 Julien Doré - Moi Lolita&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;05 Juniore - Ah bah d&amp;#8217;accord&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;06 Anne Germain - Recette pour un cake d&amp;#8217;amour&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;07 Grandbrothers - Bloodflow&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;08 Leonie Perret - Rotten Tree&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;09 Bombino - Lyat Ninhay / Jaguar&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;10 The Who - Baba O Riley&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;11 Kel Assouf - Fransa&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;12 Fleuves - Dañs plinn&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;13 Shye Ben Tzur - Allah Elohim&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;14 Dionysos - I Follow Rivers&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;15 Pomme - Je sais pas danser&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;16 Rone - Brest&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;17 Cécile McLorin Salvant - You&amp;#8217;ve Got to Give Me Some&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;18 Ryan Adams - Oh My Sweet Carolina&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;19 Babx - Omaya, Pt. 3&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;20 Tingvall Trio - Vägen Live&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;21 Anouard Brahem - The Astouding Eyes of Rita&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;22 Cowboys Junkies - Sweet Jane&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+	</description>
+    </item>
+    <item>
       <title>Cher pays de mon enfance</title>
-      <link>http://francoisledroff.github.io/content/2020/01/12/cher_pays_de_mon_enfance.html</link>
+      <link>http://localhost:8820/content/2020/01/12/cher_pays_de_mon_enfance.html</link>
       <pubDate>Mon, 20 Jan 2020 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2020/01/12/cher_pays_de_mon_enfance.html</guid>
       	<description>
@@ -98,7 +197,7 @@ Comme l&amp;#8217;écrivait Milan Kundeta, la lutte contre le pouvoir et sa dég
     </item>
     <item>
       <title>Grasse Matinée</title>
-      <link>http://francoisledroff.github.io/content/2021/01/16/grasse_matinee.html</link>
+      <link>http://localhost:8820/content/2021/01/16/grasse_matinee.html</link>
       <pubDate>Thu, 16 Jan 2020 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2021/01/16/grasse_matinee.html</guid>
       	<description>
@@ -131,7 +230,7 @@ Comme l&amp;#8217;écrivait Milan Kundeta, la lutte contre le pouvoir et sa dég
     </item>
     <item>
       <title>Les Cobayes</title>
-      <link>http://francoisledroff.github.io/content/2020/01/08/les_cobayes.html</link>
+      <link>http://localhost:8820/content/2020/01/08/les_cobayes.html</link>
       <pubDate>Wed, 8 Jan 2020 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2020/01/08/les_cobayes.html</guid>
       	<description>
@@ -162,7 +261,7 @@ Comme l&amp;#8217;écrivait Milan Kundeta, la lutte contre le pouvoir et sa dég
     </item>
     <item>
       <title>Hiver 2019 - Heilles! Fais-tu Frettes ?</title>
-      <link>http://francoisledroff.github.io/content/2019/12/21/Fais_tu_frettes.html</link>
+      <link>http://localhost:8820/content/2019/12/21/Fais_tu_frettes.html</link>
       <pubDate>Sat, 21 Dec 2019 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2019/12/21/Fais_tu_frettes.html</guid>
       	<description>
@@ -237,7 +336,7 @@ Comme l&amp;#8217;écrivait Milan Kundeta, la lutte contre le pouvoir et sa dég
     </item>
     <item>
       <title>Implémentez une intégration avec AEM presque sans code - Adobe Experience League - Paris</title>
-      <link>http://francoisledroff.github.io/content/2019/10/08/experience-league-conf.html</link>
+      <link>http://localhost:8820/content/2019/10/08/experience-league-conf.html</link>
       <pubDate>Tue, 8 Oct 2019 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2019/10/08/experience-league-conf.html</guid>
       	<description>
@@ -283,7 +382,7 @@ allez faire un tour sur &lt;a href=&quot;https://github.com/francoisledroff/adap
     </item>
     <item>
       <title>Eté 2019 -  UnCOVER</title>
-      <link>http://francoisledroff.github.io/content/2019/06/21/unCOVER.html</link>
+      <link>http://localhost:8820/content/2019/06/21/unCOVER.html</link>
       <pubDate>Fri, 21 Jun 2019 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2019/06/21/unCOVER.html</guid>
       	<description>
@@ -367,7 +466,7 @@ allez faire un tour sur &lt;a href=&quot;https://github.com/francoisledroff/adap
     </item>
     <item>
       <title>Comme ma poche</title>
-      <link>http://francoisledroff.github.io/content/2018/11/20/comme-ma-poche.html</link>
+      <link>http://localhost:8820/content/2018/11/20/comme-ma-poche.html</link>
       <pubDate>Tue, 20 Nov 2018 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2018/11/20/comme-ma-poche.html</guid>
       	<description>
@@ -388,7 +487,7 @@ allez faire un tour sur &lt;a href=&quot;https://github.com/francoisledroff/adap
     </item>
     <item>
       <title>Build event-driven integrations with AEM using Adobe I/O Events - Hands-on-lab - AdaptTo 2018</title>
-      <link>http://francoisledroff.github.io/content/2018/09/04/adaptTo-2018-lab.html</link>
+      <link>http://localhost:8820/content/2018/09/04/adaptTo-2018-lab.html</link>
       <pubDate>Tue, 4 Sep 2018 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2018/09/04/adaptTo-2018-lab.html</guid>
       	<description>
@@ -488,7 +587,7 @@ See how Adobe I/O Events allows you to respond to both administrative events and
     </item>
     <item>
       <title>A small Java utility showcasing Adobe IMS JWT Token exchange</title>
-      <link>http://francoisledroff.github.io/content/2018/08/08/adobe-ims-jwt-token-util.html</link>
+      <link>http://localhost:8820/content/2018/08/08/adobe-ims-jwt-token-util.html</link>
       <pubDate>Wed, 8 Aug 2018 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2018/08/08/adobe-ims-jwt-token-util.html</guid>
       	<description>
@@ -530,7 +629,7 @@ See how Adobe I/O Events allows you to respond to both administrative events and
     </item>
     <item>
       <title>Eté 2018 - Cheeky &amp;amp; Cheesy</title>
-      <link>http://francoisledroff.github.io/content/2018/06/21/Cheeky_And_Cheesy.html</link>
+      <link>http://localhost:8820/content/2018/06/21/Cheeky_And_Cheesy.html</link>
       <pubDate>Thu, 21 Jun 2018 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2018/06/21/Cheeky_And_Cheesy.html</guid>
       	<description>
@@ -617,7 +716,7 @@ See how Adobe I/O Events allows you to respond to both administrative events and
     </item>
     <item>
       <title>Précipitation</title>
-      <link>http://francoisledroff.github.io/content/2018/05/08/precipitation.html</link>
+      <link>http://localhost:8820/content/2018/05/08/precipitation.html</link>
       <pubDate>Tue, 8 May 2018 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2018/05/08/precipitation.html</guid>
       	<description>
@@ -656,7 +755,7 @@ See how Adobe I/O Events allows you to respond to both administrative events and
     </item>
     <item>
       <title>La barbe dans le cambouis - Hands-on-lab - Devoxx France 2018</title>
-      <link>http://francoisledroff.github.io/content/2018/04/19/devoxx-2018-lab-secu.html</link>
+      <link>http://localhost:8820/content/2018/04/19/devoxx-2018-lab-secu.html</link>
       <pubDate>Wed, 18 Apr 2018 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2018/04/19/devoxx-2018-lab-secu.html</guid>
       	<description>
@@ -714,7 +813,7 @@ lors d&amp;#8217;une de nos conférences passée: &lt;a href=&quot;http://droff.
     </item>
     <item>
       <title>Hiver 2017 - Hammered Hamster</title>
-      <link>http://francoisledroff.github.io/content/2017/12/21/Hammered_Hamster.html</link>
+      <link>http://localhost:8820/content/2017/12/21/Hammered_Hamster.html</link>
       <pubDate>Thu, 21 Dec 2017 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2017/12/21/Hammered_Hamster.html</guid>
       	<description>
@@ -792,7 +891,7 @@ lors d&amp;#8217;une de nos conférences passée: &lt;a href=&quot;http://droff.
     </item>
     <item>
       <title>Moved</title>
-      <link>http://francoisledroff.github.io/content/2017/09/20/moved.html</link>
+      <link>http://localhost:8820/content/2017/09/20/moved.html</link>
       <pubDate>Wed, 20 Sep 2017 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2017/09/20/moved.html</guid>
       	<description>
@@ -803,7 +902,7 @@ lors d&amp;#8217;une de nos conférences passée: &lt;a href=&quot;http://droff.
     </item>
     <item>
       <title>Eté 2017 - Et puis ça a fait Tilt</title>
-      <link>http://francoisledroff.github.io/content/2017/06/21/Hammered_Hamster.html</link>
+      <link>http://localhost:8820/content/2017/06/21/Hammered_Hamster.html</link>
       <pubDate>Wed, 21 Jun 2017 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2017/06/21/Hammered_Hamster.html</guid>
       	<description>
@@ -875,7 +974,7 @@ lors d&amp;#8217;une de nos conférences passée: &lt;a href=&quot;http://droff.
     </item>
     <item>
       <title>Hiver 2016 - InstruMENTAL</title>
-      <link>http://francoisledroff.github.io/content/2016/12/21/InstruMENTAL.html</link>
+      <link>http://localhost:8820/content/2016/12/21/InstruMENTAL.html</link>
       <pubDate>Wed, 21 Dec 2016 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2016/12/21/InstruMENTAL.html</guid>
       	<description>
@@ -941,7 +1040,7 @@ lors d&amp;#8217;une de nos conférences passée: &lt;a href=&quot;http://droff.
     </item>
     <item>
       <title>Chef vs. Ansible - Devops Days Berlin 2016</title>
-      <link>http://francoisledroff.github.io/content/2016/11/17/Devops-days-berlin-2016.html</link>
+      <link>http://localhost:8820/content/2016/11/17/Devops-days-berlin-2016.html</link>
       <pubDate>Thu, 17 Nov 2016 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2016/11/17/Devops-days-berlin-2016.html</guid>
       	<description>
@@ -1031,7 +1130,7 @@ The aims was also to help &quot;troubleshoot&quot; their issue on the selected t
     </item>
     <item>
       <title>Eté 2016 - Brest by night with Dom</title>
-      <link>http://francoisledroff.github.io/content/2016/06/21/BrestByNight.html</link>
+      <link>http://localhost:8820/content/2016/06/21/BrestByNight.html</link>
       <pubDate>Tue, 21 Jun 2016 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2016/06/21/BrestByNight.html</guid>
       	<description>
@@ -1143,7 +1242,7 @@ Brest	Miossec		Brest By Night with Dom						Compil Stooges	4490453	183			19	19	2
     </item>
     <item>
       <title>JHipster meet up - Janvier 2016</title>
-      <link>http://francoisledroff.github.io/content/2016/01/25/Jhipster-meetup.html</link>
+      <link>http://localhost:8820/content/2016/01/25/Jhipster-meetup.html</link>
       <pubDate>Mon, 25 Jan 2016 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2016/01/25/Jhipster-meetup.html</guid>
       	<description>
@@ -1196,7 +1295,7 @@ Brest	Miossec		Brest By Night with Dom						Compil Stooges	4490453	183			19	19	2
     </item>
     <item>
       <title>Hairy Security - Code Motion Berlin 2015</title>
-      <link>http://francoisledroff.github.io/content/2015/11/03/code-motion-Berlin-2015.html</link>
+      <link>http://localhost:8820/content/2015/11/03/code-motion-Berlin-2015.html</link>
       <pubDate>Tue, 3 Nov 2015 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2015/11/03/code-motion-Berlin-2015.html</guid>
       	<description>
@@ -1270,7 +1369,7 @@ Brest	Miossec		Brest By Night with Dom						Compil Stooges	4490453	183			19	19	2
     </item>
     <item>
       <title>Barbus &amp;amp; Barbares - Java &amp;amp; Sécurité - Devoxx France 2015</title>
-      <link>http://francoisledroff.github.io/content/2015/04/10/devoxx-fr-2015.html</link>
+      <link>http://localhost:8820/content/2015/04/10/devoxx-fr-2015.html</link>
       <pubDate>Fri, 10 Apr 2015 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2015/04/10/devoxx-fr-2015.html</guid>
       	<description>
@@ -1348,7 +1447,7 @@ de &lt;a href=&quot;https://www.devoxx.fr/2015/speaker/francois_le_droff.html&qu
     </item>
     <item>
       <title>An AEM/CQ SalesForce integration Sample</title>
-      <link>http://francoisledroff.github.io/content/2014/12/04/an_aem_cq_salesforce_integration.html</link>
+      <link>http://localhost:8820/content/2014/12/04/an_aem_cq_salesforce_integration.html</link>
       <pubDate>Thu, 4 Dec 2014 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2014/12/04/an_aem_cq_salesforce_integration.html</guid>
       	<description>
@@ -1365,7 +1464,7 @@ de &lt;a href=&quot;https://www.devoxx.fr/2015/speaker/francois_le_droff.html&qu
     </item>
     <item>
       <title>Chef metal experimentations: AEM test drive</title>
-      <link>http://francoisledroff.github.io/content/2014/07/29/chef_metal_experimentations_aem_test.html</link>
+      <link>http://localhost:8820/content/2014/07/29/chef_metal_experimentations_aem_test.html</link>
       <pubDate>Tue, 29 Jul 2014 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2014/07/29/chef_metal_experimentations_aem_test.html</guid>
       	<description>
@@ -1464,7 +1563,7 @@ Welcome to your Vagrant-built virtual machine.
     </item>
     <item>
       <title>Back from Basel</title>
-      <link>http://francoisledroff.github.io/content/2014/07/03/back_from_basel.html</link>
+      <link>http://localhost:8820/content/2014/07/03/back_from_basel.html</link>
       <pubDate>Thu, 3 Jul 2014 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2014/07/03/back_from_basel.html</guid>
       	<description>
@@ -1515,7 +1614,7 @@ Welcome to your Vagrant-built virtual machine.
     </item>
     <item>
       <title>Master Chef class: learn how to quickly cook delightful CQ/AEM infrastructures</title>
-      <link>http://francoisledroff.github.io/content/2014/05/13/master_chef_class_learn_how.html</link>
+      <link>http://localhost:8820/content/2014/05/13/master_chef_class_learn_how.html</link>
       <pubDate>Tue, 13 May 2014 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2014/05/13/master_chef_class_learn_how.html</guid>
       	<description>
@@ -1544,7 +1643,7 @@ Welcome to your Vagrant-built virtual machine.
     </item>
     <item>
       <title>Master Chef &amp;amp; Puppet Show and other Devops pointers from Devoxx France 2014</title>
-      <link>http://francoisledroff.github.io/content/2014/05/05/master_chef_puppet_show_and.html</link>
+      <link>http://localhost:8820/content/2014/05/05/master_chef_puppet_show_and.html</link>
       <pubDate>Mon, 5 May 2014 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2014/05/05/master_chef_puppet_show_and.html</guid>
       	<description>
@@ -1614,7 +1713,7 @@ t was worth the effort. Romain and I agreed we should do this more often.&lt;/p&
     </item>
     <item>
       <title>Test your perforce change-list in a jenkins job - using perforce shelving - before submitting it</title>
-      <link>http://francoisledroff.github.io/content/2013/07/31/perforce_shelving_jenkins.html</link>
+      <link>http://localhost:8820/content/2013/07/31/perforce_shelving_jenkins.html</link>
       <pubDate>Wed, 31 Jul 2013 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2013/07/31/perforce_shelving_jenkins.html</guid>
       	<description>
@@ -1778,7 +1877,7 @@ It’s a very interesting feature of perforce&lt;/p&gt;
     </item>
     <item>
       <title>Back from Devoxx - Part 4 - Dev-QA-Ops Thoughts - About continuous delivery and deployment</title>
-      <link>http://francoisledroff.github.io/content/2013/04/26/back_from_devoxx_part_4.html</link>
+      <link>http://localhost:8820/content/2013/04/26/back_from_devoxx_part_4.html</link>
       <pubDate>Fri, 26 Apr 2013 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2013/04/26/back_from_devoxx_part_4.html</guid>
       	<description>
@@ -2187,7 +2286,7 @@ It should be accessible to all and a focus should be made to make sure the dev t
     </item>
     <item>
       <title>Back from Devoxx - Part 3 - Dev-QA-Ops Thoughts - About Tests and Code analysis</title>
-      <link>http://francoisledroff.github.io/content/2013/04/23/back_from_devoxx_part_3.html</link>
+      <link>http://localhost:8820/content/2013/04/23/back_from_devoxx_part_3.html</link>
       <pubDate>Tue, 23 Apr 2013 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2013/04/23/back_from_devoxx_part_3.html</guid>
       	<description>
@@ -2462,7 +2561,7 @@ If you start using it,&lt;/p&gt;
     </item>
     <item>
       <title>Back from Devoxx - Part 2 - Dev-QA-Ops Thoughts - About Build Promotion</title>
-      <link>http://francoisledroff.github.io/content/2013/04/22/back_from_devoxx_part_2.html</link>
+      <link>http://localhost:8820/content/2013/04/22/back_from_devoxx_part_2.html</link>
       <pubDate>Mon, 22 Apr 2013 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2013/04/22/back_from_devoxx_part_2.html</guid>
       	<description>
@@ -2625,7 +2724,7 @@ these other useful plugins are:&lt;/p&gt;
     </item>
     <item>
       <title>Back from Devoxx - Part 1 - Dev-QA-Ops Thoughts - About Branching</title>
-      <link>http://francoisledroff.github.io/content/2013/04/19/back_from_devoxx_part_11.html</link>
+      <link>http://localhost:8820/content/2013/04/19/back_from_devoxx_part_11.html</link>
       <pubDate>Fri, 19 Apr 2013 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2013/04/19/back_from_devoxx_part_11.html</guid>
       	<description>
@@ -2843,384 +2942,8 @@ Obvious to say than doing local development is a feature branch in itself, impos
 	</description>
     </item>
     <item>
-      <title>dotjs.eu</title>
-      <link>http://francoisledroff.github.io/content/2012/12/04/dotjs_eu.html</link>
-      <pubDate>Tue, 4 Dec 2012 00:00:00 +0100</pubDate>
-      <guid isPermaLink="false">content/2012/12/04/dotjs_eu.html</guid>
-      	<description>
-	&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Last Friday, I attended the &lt;a href=&quot;http://www.dotjs.eu/&quot;&gt;http://www.dotjs.eu/&lt;sup&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;/images/icons/linkext7.gif&quot; alt=&quot;image&quot; width=&quot;7&quot; height=&quot;7&quot;&gt;&lt;/span&gt;&lt;/sup&gt;&lt;/a&gt; conference in Paris.&lt;br&gt;
-Very nice venue cf. &lt;a href=&quot;http://svay.com/photos/2012-11-30_dotjs/&quot;&gt;http://svay.com/photos/2012-11-30_dotjs/&lt;sup&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;/images/icons/linkext7.gif&quot; alt=&quot;image&quot; width=&quot;7&quot; height=&quot;7&quot;&gt;&lt;/span&gt;&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;http://svay.com/photos/2012-11-30_dotjs/conference/2012-11-30_10-17-17.jpg&quot; alt=&quot;image&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Nice set of speakers/experts too, very technical folks, among then &lt;a href=&quot;http://brian.io/&quot;&gt;Brian Leroux&lt;sup&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;/images/icons/linkext7.gif&quot; alt=&quot;image&quot; width=&quot;7&quot; height=&quot;7&quot;&gt;&lt;/span&gt;&lt;/sup&gt;&lt;/a&gt; from Adobe phonegap (Brian gave us a nice comedy/educational talk on the oddities of JavaScript, cf. &lt;a href=&quot;http://wtfjs.com/&quot;&gt;wtfjs&lt;sup&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;/images/icons/linkext7.gif&quot; alt=&quot;image&quot; width=&quot;7&quot; height=&quot;7&quot;&gt;&lt;/span&gt;&lt;/sup&gt;&lt;/a&gt;.&lt;br&gt;
-The other good stand-up comedian was Jacob Thornton @fat (co-author of Twitter Bootstrap) his creatively illustrated talk was about &lt;code&gt;the tragedy of open source&apos;&apos;, I liked and related to his &lt;/code&gt;cute puppy syndrome&apos;&apos; theory.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;However, overall, the conf could have been more technical, most of the speakers gave entertaining, high level talks.&lt;br&gt;
-May be due to the format, 20 mn? May be due to the hosts? did they want the event to be more inspirational than hands-on technical ? May be due the ``cute puppy syndrome&apos;&apos; of the speakers ?&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Here are a set of pointers/note-to-self/things-I-need-to-try-out&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;http://addyosmani.com/blog/&quot;&gt;Addy&lt;sup&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;/images/icons/linkext7.gif&quot; alt=&quot;image&quot; width=&quot;7&quot; height=&quot;7&quot;&gt;&lt;/span&gt;&lt;/sup&gt;&lt;/a&gt; gave us a talk on varoius subjects among them the chrome dev tooling (live edit, auto-save, code snipset, auto-reload, editing saas file and saving them, user agent to test specific mobiles and form factors, geolocalization override, device orientation… ) about yeoman, bower and intellij webstorm&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;typescript: &lt;a href=&quot;http://www.typescriptlang.org/&quot;&gt;http://www.typescriptlang.org/&lt;sup&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;/images/icons/linkext7.gif&quot; alt=&quot;image&quot; width=&quot;7&quot; height=&quot;7&quot;&gt;&lt;/span&gt;&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;dart: &lt;a href=&quot;http://www.dartlang.org/&quot;&gt;http://www.dartlang.org/&lt;sup&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;/images/icons/linkext7.gif&quot; alt=&quot;image&quot; width=&quot;7&quot; height=&quot;7&quot;&gt;&lt;/span&gt;&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;testacular &lt;a href=&quot;http://vojtajina.github.com/testacular/&quot;&gt;http://vojtajina.github.com/testacular/&lt;sup&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;/images/icons/linkext7.gif&quot; alt=&quot;image&quot; width=&quot;7&quot; height=&quot;7&quot;&gt;&lt;/span&gt;&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;angular with require &lt;a href=&quot;http://addyosmani.github.com/todomvc/labs/dependency-examples/angularjs_require/&quot; class=&quot;bare&quot;&gt;http://addyosmani.github.com/todomvc/labs/dependency-examples/angularjs_require/&lt;/a&gt;&lt;mark&gt;/[&lt;a href=&quot;http://addyosmani.github.com/todomvc/labs/dependency-examples/angularjs_require/&quot; class=&quot;bare&quot;&gt;http://addyosmani.github.com/todomvc/labs/dependency-examples/angularjs_require/&lt;/a&gt;&lt;/mark&gt;/&lt;sup&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;/images/icons/linkext7.gif&quot; alt=&quot;image&quot; width=&quot;7&quot; height=&quot;7&quot;&gt;&lt;/span&gt;&lt;/sup&gt;]&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;when.js (&lt;a href=&quot;https://github.com/cujojs/when&quot;&gt;https://github.com/cujojs/when&lt;sup&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;/images/icons/linkext7.gif&quot; alt=&quot;image&quot; width=&quot;7&quot; height=&quot;7&quot;&gt;&lt;/span&gt;&lt;/sup&gt;&lt;/a&gt;) and its implementation of deferred/futures/promises cf &lt;a href=&quot;http://en.wikipedia.org/wiki/Futures_and_promises&quot;&gt;http://en.wikipedia.org/wiki/Futures_and_promises&lt;sup&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;/images/icons/linkext7.gif&quot; alt=&quot;image&quot; width=&quot;7&quot; height=&quot;7&quot;&gt;&lt;/span&gt;&lt;/sup&gt;&lt;/a&gt; (In computer science, future, promise, and delay refer to constructs used for synchronizing in some concurrent programming languages. They describe an object that acts as a proxy for a result that is initially unknown, usually because the computation of its value is yet incomplete. cf &lt;a href=&quot;http://en.wikipedia.org/wiki/Futures_and_promises&quot;&gt;http://en.wikipedia.org/wiki/Futures_and_promises&lt;sup&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;/images/icons/linkext7.gif&quot; alt=&quot;image&quot; width=&quot;7&quot; height=&quot;7&quot;&gt;&lt;/span&gt;&lt;/sup&gt;&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;I did not know about DemoScene &lt;a href=&quot;http://en.wikipedia.org/wiki/Demoscene&quot; class=&quot;bare&quot;&gt;http://en.wikipedia.org/wiki/Demoscene&lt;/a&gt;, yet another field of Computer Science to discover (with js wonders such as &lt;a href=&quot;https://github.com/mrdoob/three.js/&quot;&gt;https://github.com/mrdoob/three.js/&lt;sup&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;/images/icons/linkext7.gif&quot; alt=&quot;image&quot; width=&quot;7&quot; height=&quot;7&quot;&gt;&lt;/span&gt;&lt;/sup&gt;&lt;/a&gt; and &lt;a href=&quot;https://fr.twitter.com/mrdoob/status/274790489843179520&quot;&gt;frame.js&lt;sup&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;/images/icons/linkext7.gif&quot; alt=&quot;image&quot; width=&quot;7&quot; height=&quot;7&quot;&gt;&lt;/span&gt;&lt;/sup&gt;&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;a few pointers to blog entries/reports&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.rudebaguette.com/2012/12/03/stellar-line-up-at-dotjs-more-conferences-to-come/&quot;&gt;http://www.rudebaguette.com/2012/12/03/stellar-line-up-at-dotjs-more-conferences-to-come/&lt;sup&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;/images/icons/linkext7.gif&quot; alt=&quot;image&quot; width=&quot;7&quot; height=&quot;7&quot;&gt;&lt;/span&gt;&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;http://blog.jeroenreijn.com/2012/12/dotjs-not-so-js-conference.html&quot;&gt;http://blog.jeroenreijn.com/2012/12/dotjs-not-so-js-conference.html&lt;sup&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;/images/icons/linkext7.gif&quot; alt=&quot;image&quot; width=&quot;7&quot; height=&quot;7&quot;&gt;&lt;/span&gt;&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-	</description>
-    </item>
-    <item>
-      <title>Taking back control of my android phones, rooting, cyanogenMod and security ramblings&amp;#8230;&amp;#8203;</title>
-      <link>http://francoisledroff.github.io/content/2012/08/09/taking_back_control_of_my.html</link>
-      <pubDate>Thu, 9 Aug 2012 00:00:00 +0200</pubDate>
-      <guid isPermaLink="false">content/2012/08/09/taking_back_control_of_my.html</guid>
-      	<description>
-	&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;I’ve been the happy owner of a htc nexus one for a couple of years now, but I recently broke its screen.&lt;br&gt;
-I had a spare htc, a desire Z, but I was reluctant to switch phone,&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;What if I could have &quot;&lt;em&gt;native theming support, Free Lossless Audio Codec (FLAC) support, a large Access Point Name list, an OpenVPN client, an enhanced reboot menu, support for Wi-Fi, Bluetooth, and USB tethering, CPU overclocking and performance enhancements, soft buttons and other ``tablet tweaks&apos;&apos;, toggles in the notification pull-down (such as Wi-Fi, Bluetooth and GPS), app permissions management, as well as other interface enhancements and no pre-installed spyware or bloatware and finally increase performance and reliability compared with &lt;strong class=&quot;line-through&quot;&gt;official&lt;/strong&gt; proprietary firmware releases&lt;/em&gt;&quot;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Then, may be, I would ``desire&apos;&apos; this htc phone a bit more.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;So I decided to give &lt;strong&gt;&lt;a href=&quot;http://www.cyanogenmod.com/&quot;&gt;CyanogenMod&lt;/a&gt;&lt;/strong&gt; a try.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Here are the steps I went through&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;I downgraded my desire Z from its Gingerbread firmware, following the instructions from :http://wiki.cyanogenmod.com/wiki/HTC_Desire_Z:_Firmware_Downgrade_%28Gingerbread)[the cyanogenmod wiki])&lt;/p&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;using the following firmware image &lt;a href=&quot;http://omnimist.org/android/files/Vision_DZ_1.34.405.5_PC10IMG.zip&quot;&gt;http://omnimist.org/android/files/Vision_DZ_1.34.405.5_PC10IMG.zip&lt;sup&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;/images/icons/linkext7.gif&quot; alt=&quot;image&quot; width=&quot;7&quot; height=&quot;7&quot;&gt;&lt;/span&gt;&lt;/sup&gt;&lt;/a&gt; (disovered in &lt;a href=&quot;http://forum.frandroid.com/topic/64258-tuto-comment-rooter-downgrader-le-build-172-ou-et-s-off/&quot;&gt;http://forum.frandroid.com/topic/64258-tuto-comment-rooter-downgrader-le-build-172-ou-et-s-off/&lt;sup&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;/images/icons/linkext7.gif&quot; alt=&quot;image&quot; width=&quot;7&quot; height=&quot;7&quot;&gt;&lt;/span&gt;&lt;/sup&gt;&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Then I went through the flawless rooting process : &lt;a href=&quot;http://wiki.cyanogenmod.com/wiki/HTC_Desire_Z:_Rooting&quot;&gt;http://wiki.cyanogenmod.com/wiki/HTC_Desire_Z:_Rooting&lt;sup&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;/images/icons/linkext7.gif&quot; alt=&quot;image&quot; width=&quot;7&quot; height=&quot;7&quot;&gt;&lt;/span&gt;&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;using the recovery &lt;a href=&quot;http://wiki.cyanogenmod.com/wiki/Howto:_Using_the_Recovery&quot;&gt;http://wiki.cyanogenmod.com/wiki/Howto:_Using_the_Recovery&lt;sup&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;/images/icons/linkext7.gif&quot; alt=&quot;image&quot; width=&quot;7&quot; height=&quot;7&quot;&gt;&lt;/span&gt;&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;through a simple adb command&lt;/p&gt;
-&lt;div class=&quot;listingblock&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;pre class=&quot;prettyprint highlight&quot;&gt;&lt;code class=&quot;language-code-java&quot; data-lang=&quot;code-java&quot;&gt;adb reboot recovery&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Once the phone rooted installing the latest supported CyanogenMod build is pretty straightforward : &lt;a href=&quot;http://wiki.cyanogenmod.com/wiki/HTC_Vision:_CyanogenMod&quot;&gt;http://wiki.cyanogenmod.com/wiki/HTC_Vision:_CyanogenMod&lt;sup&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;/images/icons/linkext7.gif&quot; alt=&quot;image&quot; width=&quot;7&quot; height=&quot;7&quot;&gt;&lt;/span&gt;&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;I liked was I saw, and the google account restore mechanism was pretty impressive and transparent, all my nexus one contacts and photos were restored on desire Z (same with a few other applications that were designed with cloud-based transparent restore mechanism)&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;So I decided to give a try on my Nexus one too. Again the cyanogenmod wiki made it easy, I just followed &lt;a href=&quot;http://wiki.cyanogenmod.com/wiki/Nexus_One:_Full_Update_Guide&quot;&gt;http://wiki.cyanogenmod.com/wiki/Nexus_One:_Full_Update_Guide&lt;sup&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;/images/icons/linkext7.gif&quot; alt=&quot;image&quot; width=&quot;7&quot; height=&quot;7&quot;&gt;&lt;/span&gt;&lt;/sup&gt;&lt;/a&gt; (I choosed the Amon_Ra’s Recovery this time), the only difference was te adb reboot command did not seem to work, I had to click a bit more on the phone to get through the proper menu (here is nice How to video &lt;a href=&quot;http://www.youtube.com/watch?v=Ez_qQshrZjo&quot;&gt;http://www.youtube.com/watch?v=Ez_qQshrZjo&lt;sup&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;/images/icons/linkext7.gif&quot; alt=&quot;image&quot; width=&quot;7&quot; height=&quot;7&quot;&gt;&lt;/span&gt;&lt;/sup&gt;&lt;/a&gt;)&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Unfortunately, just a few days ago, the CyanogenMod team decided to stop supporting those devices of mine. Their &lt;a href=&quot;https://plus.google.com/117962666888533781522/posts/MRnnvs3oFUF&quot;&gt;Google+ annoucement&lt;sup&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;/images/icons/linkext7.gif&quot; alt=&quot;image&quot; width=&quot;7&quot; height=&quot;7&quot;&gt;&lt;/span&gt;&lt;/sup&gt;&lt;/a&gt; was a disappointment to the community but not a surprise.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;There are still a few non official version worth giving a try, I personally found one for my htc desire Z here : &lt;a href=&quot;http://forum.xda-developers.com/showthread.php?t=1492461&quot;&gt;http://forum.xda-developers.com/showthread.php?t=1492461&lt;sup&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;/images/icons/linkext7.gif&quot; alt=&quot;image&quot; width=&quot;7&quot; height=&quot;7&quot;&gt;&lt;/span&gt;&lt;/sup&gt;&lt;/a&gt; upgrading my phone to Ice Cream Sandwich, android 4.0.4.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;So here are my 2 phones now, I still don’t know if I want switch my SIM card from the nexus one to the desire Z &lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;/images/icons/emoticons/smile.gif&quot; alt=&quot;image&quot; width=&quot;20&quot; height=&quot;20&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;http://www.jroller.com/francoisledroff/resource/sans%20titre-1650.jpg&quot; alt=&quot;image&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;I’m still wondering what to think of those unofficial firmware found in the deep internet sea, They certainly could contain malware/spyware/trojan, there is not much way for a non specialist like me to find out.&lt;br&gt;
-Would a antivirus like avast find it ?&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Now I have rooted my phones, the good news is I can get the full fledge anti-theft feature such as the one offered by avast antivirus app &lt;a href=&quot;http://www.avast.com/en-us/free-mobile-security&quot;&gt;http://www.avast.com/en-us/free-mobile-security&lt;sup&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;/images/icons/linkext7.gif&quot; alt=&quot;image&quot; width=&quot;7&quot; height=&quot;7&quot;&gt;&lt;/span&gt;&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;what about you ?&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Did you root your android phone ?&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;What apps did you install now you have root ? (Droidsheep, Titanium Backup, Arpspoof, AdFree … ?)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Did yo give cyanogenmod a try ?&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Do you update your firmware using unofficial zips found on random pages/forums ?&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Do you use an anti-virus ?&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Did you secure your phone with a anti theft app?&lt;/p&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Did it proove to work ?&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-	</description>
-    </item>
-    <item>
-      <title>Apache with mod_ssl and as as a reverse proxy - on windows -</title>
-      <link>http://francoisledroff.github.io/content/2012/07/31/apache_on_ssl_as_a1.html</link>
-      <pubDate>Tue, 31 Jul 2012 00:00:00 +0200</pubDate>
-      <guid isPermaLink="false">content/2012/07/31/apache_on_ssl_as_a1.html</guid>
-      	<description>
-	&lt;div id=&quot;preamble&quot;&gt;
-&lt;div class=&quot;sectionbody&quot;&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Here are a few notes, that might help a few out there who face difficulties to configure apache server on https and as a reverse proxy on their windows ( windows7 ) development machine.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect4&quot;&gt;
-&lt;h5 id=&quot;generate-your-server-certificate&quot;&gt;Generate your server certificate&lt;/h5&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;download openssl (or download apache 2 with openssl built-in, cf below) and issue the following commands:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;listingblock&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;pre class=&quot;prettyprint highlight&quot;&gt;&lt;code class=&quot;language-code-java&quot; data-lang=&quot;code-java&quot;&gt;openssl genrsa -des3 -rand file1:file2:file3:file4:file5 -out server.key 1024&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;pick a passphrase&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;listingblock&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;pre class=&quot;prettyprint highlight&quot;&gt;&lt;code class=&quot;language-code-java&quot; data-lang=&quot;code-java&quot;&gt;openssl rsa -in server.key -out server.pem&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;listingblock&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;pre class=&quot;prettyprint highlight&quot;&gt;&lt;code class=&quot;language-code-java&quot; data-lang=&quot;code-java&quot;&gt;openssl req -days 3650 -new -key server.key -out server.csr&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;listingblock&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;pre class=&quot;prettyprint highlight&quot;&gt;&lt;code class=&quot;language-code-java&quot; data-lang=&quot;code-java&quot;&gt;openssl x509 -req -in server.csr -signkey server.key -out server.crt&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;The SSLPassPhraseDialog is a directive within the Apache httpd.conf or ssl.conf that is not supported by Windows&lt;br&gt;
-Windows user will need to remove the encryption from the RSA private key (while preserving the original file):&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Make a copy of the private key and call it ``server.key.org&apos;&apos;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Use the OpenSSL command to remove the passphrase such as;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&quot;listingblock&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;pre class=&quot;prettyprint highlight&quot;&gt;&lt;code class=&quot;language-code-java&quot; data-lang=&quot;code-java&quot;&gt;openssl rsa -in server.key.org -out server.key&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;server.key will be your new private key with the passphrase removed.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect4&quot;&gt;
-&lt;h5 id=&quot;install-apache-with-mod_ssl&quot;&gt;Install apache with mod_ssl&lt;/h5&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;install apache 2 with openssl support built-in&lt;/p&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Note for windows user: in the non default dir (not program files) with no space or any funky character&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;update httpd.conf :&lt;/p&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;uncomment line : &quot;LoadModule ssl_module modules/mod_ssl.so&quot;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;update ssl.conf :&lt;/p&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;delete the &amp;lt;IfDefine ssl&amp;gt; tags&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;The SSLPassPhraseDialog is a directive within the Apache httpd.conf or ssl.conf that is not supported by Windows, windows users will need to comment out the line ’SSLPassPhraseDialog builtin’&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;copy the generated server.key file (see above) under conf/ssl.key/server.key&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;copy the generated server.crt file (see above) under conf/ssl.crt/server.crt&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;as expected in the ssl.conf file&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;listingblock&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;pre class=&quot;prettyprint highlight&quot;&gt;&lt;code class=&quot;language-code-java&quot; data-lang=&quot;code-java&quot;&gt;SSLCertificateFile conf/ssl.crt/server.crt
-SSLCertificateKeyFile conf/ssl.key/server.key&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Restart you apache server/service&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect4&quot;&gt;
-&lt;h5 id=&quot;troubleshoot&quot;&gt;troubleshoot&lt;/h5&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;You may face windows firewall issue, workaround run apache.exe as an administrator&lt;br&gt;
-Here are also some other interesting tutorials:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;http://blog.lifebloodnetworks.com/?p=677&quot;&gt;http://blog.lifebloodnetworks.com/?p=677&lt;sup&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;/images/icons/linkext7.gif&quot; alt=&quot;image&quot; width=&quot;7&quot; height=&quot;7&quot;&gt;&lt;/span&gt;&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.silverwareconsulting.com/index.cfm/2009/3/31/Enabling-SSL-on-Apache-on-Windows&quot;&gt;http://www.silverwareconsulting.com/index.cfm/2009/3/31/Enabling-SSL-on-Apache-on-Windows&lt;sup&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;/images/icons/linkext7.gif&quot; alt=&quot;image&quot; width=&quot;7&quot; height=&quot;7&quot;&gt;&lt;/span&gt;&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;http://yaig.blogspot.ie/2008/12/apache2-and-ssl-on-windows-with-valid.html&quot;&gt;http://yaig.blogspot.ie/2008/12/apache2-and-ssl-on-windows-with-valid.html&lt;sup&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;/images/icons/linkext7.gif&quot; alt=&quot;image&quot; width=&quot;7&quot; height=&quot;7&quot;&gt;&lt;/span&gt;&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.entrust.net/knowledge-base/technote.cfm?tn=5634&quot;&gt;http://www.entrust.net/knowledge-base/technote.cfm?tn=5634&lt;sup&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;/images/icons/linkext7.gif&quot; alt=&quot;image&quot; width=&quot;7&quot; height=&quot;7&quot;&gt;&lt;/span&gt;&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;You may use openssl to diagnose issues&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;listingblock&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;pre class=&quot;prettyprint highlight&quot;&gt;&lt;code class=&quot;language-code-java&quot; data-lang=&quot;code-java&quot;&gt;openssl s_client -connect http://your.machine:443&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect4&quot;&gt;
-&lt;h5 id=&quot;install-apache-as-a-reverse-proxy&quot;&gt;Install apache as a reverse proxy&lt;/h5&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;In httpd.conf:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;uncomment&lt;/p&gt;
-&lt;div class=&quot;listingblock&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;pre class=&quot;prettyprint highlight&quot;&gt;&lt;code class=&quot;language-code-java&quot; data-lang=&quot;code-java&quot;&gt;LoadModule proxy_module modules/mod_proxy.so
-LoadModule proxy_connect_module modules/mod_proxy_connect.so
-LoadModule proxy_http_module modules/mod_proxy_http.so&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;add&lt;/p&gt;
-&lt;div class=&quot;listingblock&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;pre class=&quot;prettyprint highlight&quot;&gt;&lt;code class=&quot;language-code-java&quot; data-lang=&quot;code-java&quot;&gt;ProxyPass / http://your.proxied.server:port/
-ProxyPassReverse / http://your.proxied.server:port/
-ProxyPreserveHost On&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Restart you apache server/service&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-	</description>
-    </item>
-    <item>
       <title>Adobe Customer Experience Management: a glimpse under the hood</title>
-      <link>http://francoisledroff.github.io/content/2011/08/02/a_customer_experience_management_a.html</link>
+      <link>http://localhost:8820/content/2011/08/02/a_customer_experience_management_a.html</link>
       <pubDate>Tue, 2 Aug 2011 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2011/08/02/a_customer_experience_management_a.html</guid>
       	<description>
@@ -3237,7 +2960,7 @@ ProxyPreserveHost On&lt;/code&gt;&lt;/pre&gt;
     </item>
     <item>
       <title>Les Cast Codeurs Podcast – Episode 34 – Interview sur Flex avec Francois Le Droff et Michael Chaize</title>
-      <link>http://francoisledroff.github.io/content/2011/03/09/les_cast_codeurs_podcast_episode.html</link>
+      <link>http://localhost:8820/content/2011/03/09/les_cast_codeurs_podcast_episode.html</link>
       <pubDate>Wed, 9 Mar 2011 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2011/03/09/les_cast_codeurs_podcast_episode.html</guid>
       	<description>
@@ -3404,9 +3127,9 @@ ProxyPreserveHost On&lt;/code&gt;&lt;/pre&gt;
     </item>
     <item>
       <title>Soirée Flex/RIA au Nantes jug</title>
-      <link>http://francoisledroff.github.io/content/2010/11/29/soir%C3%A9e_flex_ria_au_nantes.html</link>
+      <link>http://localhost:8820/content/2010/11/29/soiree_flex_ria_au_nantes.html</link>
       <pubDate>Mon, 29 Nov 2010 00:00:00 +0100</pubDate>
-      <guid isPermaLink="false">content/2010/11/29/soir%C3%A9e_flex_ria_au_nantes.html</guid>
+      <guid isPermaLink="false">content/2010/11/29/soiree_flex_ria_au_nantes.html</guid>
       	<description>
 	&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;J’ai eu l’honneur et le plaisir de faire salle comble aux Mines de Nantes, Jeudi soir, lors de la dernière réunion du &lt;a href=&quot;http://www.nantesjug.org/&quot;&gt;Java User Group Nantais&lt;/a&gt;. Merci d’être venu si nombreux, voici, comme promis, les slides.&lt;/p&gt;
@@ -3424,7 +3147,7 @@ ProxyPreserveHost On&lt;/code&gt;&lt;/pre&gt;
     </item>
     <item>
       <title>La sortie de Cairngorm3, &amp;amp; ma sortie au TourJUG</title>
-      <link>http://francoisledroff.github.io/content/2010/05/19/la_sortie_de_cairngorm3_ma.html</link>
+      <link>http://localhost:8820/content/2010/05/19/la_sortie_de_cairngorm3_ma.html</link>
       <pubDate>Wed, 19 May 2010 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2010/05/19/la_sortie_de_cairngorm3_ma.html</guid>
       	<description>
@@ -3460,7 +3183,7 @@ ProxyPreserveHost On&lt;/code&gt;&lt;/pre&gt;
     </item>
     <item>
       <title>Java , Flex, Cidre et Camembert au NormandieJUG</title>
-      <link>http://francoisledroff.github.io/content/2010/04/19/demain_soir_java_flex_cidre.html</link>
+      <link>http://localhost:8820/content/2010/04/19/demain_soir_java_flex_cidre.html</link>
       <pubDate>Mon, 19 Apr 2010 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2010/04/19/demain_soir_java_flex_cidre.html</guid>
       	<description>
@@ -3480,7 +3203,7 @@ ProxyPreserveHost On&lt;/code&gt;&lt;/pre&gt;
     </item>
     <item>
       <title>Sortie de FlexPMD 1.1 / FlexCPD 1.1 / FlexMetrics 1.1</title>
-      <link>http://francoisledroff.github.io/content/2010/03/29/sortie_de_flexpmd_1_1.html</link>
+      <link>http://localhost:8820/content/2010/03/29/sortie_de_flexpmd_1_1.html</link>
       <pubDate>Mon, 29 Mar 2010 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2010/03/29/sortie_de_flexpmd_1_1.html</guid>
       	<description>
@@ -3493,25 +3216,8 @@ ProxyPreserveHost On&lt;/code&gt;&lt;/pre&gt;
 	</description>
     </item>
     <item>
-      <title>Adobe sponsor du 2ème anniversaire du ParisJUG</title>
-      <link>http://francoisledroff.github.io/content/2010/02/08/adobe_sponsor_du_2%C3%A8me_anniversaire.html</link>
-      <pubDate>Mon, 8 Feb 2010 00:00:00 +0100</pubDate>
-      <guid isPermaLink="false">content/2010/02/08/adobe_sponsor_du_2%C3%A8me_anniversaire.html</guid>
-      	<description>
-	&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Un petit rappel, le &lt;a href=&quot;http://www.parisjug.org/xwiki/bin/view/Meeting/20100209&quot;&gt;2eme anniversaire du ParisJUG&lt;/a&gt; c’est demain, mardi 9 février !&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;http://jroller.org/francoisledroff/resource/Fx_DUKE-small.jpg&quot; alt=&quot;image&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Et Adobe France est fier d’en être sponsor.&lt;/p&gt;
-&lt;/div&gt;
-	</description>
-    </item>
-    <item>
       <title>Cairngorm 3.0.2 release</title>
-      <link>http://francoisledroff.github.io/content/2010/01/13/cairngorm_3_0_2_release.html</link>
+      <link>http://localhost:8820/content/2010/01/13/cairngorm_3_0_2_release.html</link>
       <pubDate>Wed, 13 Jan 2010 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2010/01/13/cairngorm_3_0_2_release.html</guid>
       	<description>
@@ -3592,7 +3298,7 @@ ProxyPreserveHost On&lt;/code&gt;&lt;/pre&gt;
     </item>
     <item>
       <title>radeon/ati video driver issue on kubuntu karmic</title>
-      <link>http://francoisledroff.github.io/content/2009/11/20/radeon_ati_video_driver_issue.html</link>
+      <link>http://localhost:8820/content/2009/11/20/radeon_ati_video_driver_issue.html</link>
       <pubDate>Fri, 20 Nov 2009 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2009/11/20/radeon_ati_video_driver_issue.html</guid>
       	<description>
@@ -3671,48 +3377,8 @@ EndSection&lt;/pre&gt;
 	</description>
     </item>
     <item>
-      <title>Après midi</title>
-      <link>http://francoisledroff.github.io/content/2009/10/28/apr%C3%A8s_midi_tontons_flexeurs_les.html</link>
-      <pubDate>Wed, 28 Oct 2009 00:00:00 +0100</pubDate>
-      <guid isPermaLink="false">content/2009/10/28/apr%C3%A8s_midi_tontons_flexeurs_les.html</guid>
-      	<description>
-	&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Ami flexeur et/ou développeur Java, voici un évènement à ne pas manquer (à moins d’avoir une bonne raison comme moi &lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;http://www.jroller.com/images/smileys/sad.gif&quot; alt=&quot;:-(&quot; title=&quot;:-(&quot;&gt;&lt;/span&gt; ), car &lt;a href=&quot;http://coenraets.org&quot;&gt;Christophe Coenraets&lt;/a&gt; évangéliste (Sénior et Francophone!) chez Adobe fera un petit stop chez &lt;a href=&quot;http://groups.adobe.com/groups/193bcaff5f/summary&quot;&gt;les Tontons Flexeurs&lt;/a&gt; avant de prendre la route pour &lt;a href=&quot;http://www.devoxx.com&quot;&gt;Devoxx&lt;/a&gt;. Christophe sera donc à Paris le 10 Novembre pour nous présenter&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;les nouveautés de LiveCycle Data Services 3,&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;le Model-Driven Development avec Flash Builder 4&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;et l’intégration de Flex avec Spring.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;http://www.baao.com/images/ttfx.jpg&quot; alt=&quot;http://www.baao.com/images/ttfx.jpg&quot; width=&quot;350&quot; title=&quot;http://www.baao.com/images/ttfx.jpg&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Inscris-toi vite, les places sont limitées : &lt;a href=&quot;http://coenraets-flex4.eventbrite.com/&quot;&gt;http://coenraets-flex4.eventbrite.com&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Date : le 10 Novembre de 14h à 16h.&lt;br&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Lieu : Adobe, 112 avenue Kléber 75016 PARIS, Métro : Trocadéro&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-	</description>
-    </item>
-    <item>
       <title>Cairngorm 3 is out for MAX</title>
-      <link>http://francoisledroff.github.io/content/2009/10/06/cairngorm_3_is_out_for.html</link>
+      <link>http://localhost:8820/content/2009/10/06/cairngorm_3_is_out_for.html</link>
       <pubDate>Tue, 6 Oct 2009 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2009/10/06/cairngorm_3_is_out_for.html</guid>
       	<description>
@@ -3757,7 +3423,7 @@ EndSection&lt;/pre&gt;
     </item>
     <item>
       <title>Tour d&amp;#8217;horizon des outils open source de contrôle Qualité Java</title>
-      <link>http://francoisledroff.github.io/content/2009/09/16/tour_d_horizon_des_outils.html</link>
+      <link>http://localhost:8820/content/2009/09/16/tour_d_horizon_des_outils.html</link>
       <pubDate>Wed, 16 Sep 2009 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2009/09/16/tour_d_horizon_des_outils.html</guid>
       	<description>
@@ -3783,7 +3449,7 @@ EndSection&lt;/pre&gt;
     </item>
     <item>
       <title>FlexPMD is born</title>
-      <link>http://francoisledroff.github.io/content/2009/09/02/flexpmd_is_born.html</link>
+      <link>http://localhost:8820/content/2009/09/02/flexpmd_is_born.html</link>
       <pubDate>Wed, 2 Sep 2009 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2009/09/02/flexpmd_is_born.html</guid>
       	<description>
@@ -3891,7 +3557,7 @@ EndSection&lt;/pre&gt;
     </item>
     <item>
       <title>Automated testing and quality control for Flex</title>
-      <link>http://francoisledroff.github.io/content/2009/07/22/automated_testing_and_quality_control.html</link>
+      <link>http://localhost:8820/content/2009/07/22/automated_testing_and_quality_control.html</link>
       <pubDate>Wed, 22 Jul 2009 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2009/07/22/automated_testing_and_quality_control.html</guid>
       	<description>
@@ -3946,9 +3612,9 @@ EndSection&lt;/pre&gt;
     </item>
     <item>
       <title>Compte rendu de la soirée RIA au ParisJUG</title>
-      <link>http://francoisledroff.github.io/content/2009/07/10/compte_rendu_de_la_soir%C3%A9e.html</link>
+      <link>http://localhost:8820/content/2009/07/10/compte_rendu_de_la_soiree.html</link>
       <pubDate>Fri, 10 Jul 2009 00:00:00 +0200</pubDate>
-      <guid isPermaLink="false">content/2009/07/10/compte_rendu_de_la_soir%C3%A9e.html</guid>
+      <guid isPermaLink="false">content/2009/07/10/compte_rendu_de_la_soiree.html</guid>
       	<description>
 	&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;Voici mon compte rendu de la &lt;a href=&quot;http://www.parisjug.org/xwiki/bin/view/Meeting/20090707&quot;&gt;Soirée RIA au ParisJUG&lt;/a&gt;&lt;/p&gt;
@@ -4044,9 +3710,9 @@ EndSection&lt;/pre&gt;
     </item>
     <item>
       <title>Demain Soirée RIA (Flex et JavaFX) au ParisJUG</title>
-      <link>http://francoisledroff.github.io/content/2009/07/06/demain_soir%C3%A9e_ria_flex_et.html</link>
+      <link>http://localhost:8820/content/2009/07/06/demain_soiree_ria_flex_et.html</link>
       <pubDate>Mon, 6 Jul 2009 00:00:00 +0200</pubDate>
-      <guid isPermaLink="false">content/2009/07/06/demain_soir%C3%A9e_ria_flex_et.html</guid>
+      <guid isPermaLink="false">content/2009/07/06/demain_soiree_ria_flex_et.html</guid>
       	<description>
 	&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;Je serai présent demain soir au &lt;a href=&quot;http://www.parisjug.org/xwiki/bin/view/Main/&quot;&gt;Paris JUG&lt;/a&gt;, le groupe d’utilisateurs du langage Java qui se retrouve mensuellement à Paris.&lt;/p&gt;
@@ -4067,7 +3733,7 @@ EndSection&lt;/pre&gt;
     </item>
     <item>
       <title>The Spring of Flex Remoting - slides &amp;amp; demo</title>
-      <link>http://francoisledroff.github.io/content/2009/06/23/the_spring_of_flex_remoting.html</link>
+      <link>http://localhost:8820/content/2009/06/23/the_spring_of_flex_remoting.html</link>
       <pubDate>Tue, 23 Jun 2009 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2009/06/23/the_spring_of_flex_remoting.html</guid>
       	<description>
@@ -4167,9 +3833,9 @@ public class TodoServiceImpl extends GenericManagerImplInteger&amp;gt;
     </item>
     <item>
       <title>Conférence RIA Flex au Riveria JUG le 19 Juin</title>
-      <link>http://francoisledroff.github.io/content/2009/06/05/conf%C3%A9rence_ria_flex_au_riveria.html</link>
+      <link>http://localhost:8820/content/2009/06/05/conference_ria_flex_au_riveria.html</link>
       <pubDate>Fri, 5 Jun 2009 00:00:00 +0200</pubDate>
-      <guid isPermaLink="false">content/2009/06/05/conf%C3%A9rence_ria_flex_au_riveria.html</guid>
+      <guid isPermaLink="false">content/2009/06/05/conference_ria_flex_au_riveria.html</guid>
       	<description>
 	&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;J’aurai le plaisir de présenter la toute nouvelle version de ma présentation de &lt;strong&gt;Adobe Flex pour les architectes et développeurs Java (RIAs avec Maven, Spring et Hibernate)&lt;/strong&gt; lors de la &lt;a href=&quot;http://www.rivierajug.org/xwiki/bin/viewrev/Main/20090619-ria&quot;&gt;prochaine réunion du RiveriaJUG, le 19 Juin prochain sur le site de Stonesoft à Sophia-Antipolis&lt;/a&gt;&lt;/p&gt;
@@ -4222,33 +3888,8 @@ public class TodoServiceImpl extends GenericManagerImplInteger&amp;gt;
 	</description>
     </item>
     <item>
-      <title>Adobe Designer Developer Experience (Conférence Flex4 et Catalyst)</title>
-      <link>http://francoisledroff.github.io/content/2009/05/19/adobe_designer_developer_experience_conf%C3%A9rence.html</link>
-      <pubDate>Tue, 19 May 2009 00:00:00 +0200</pubDate>
-      <guid isPermaLink="false">content/2009/05/19/adobe_designer_developer_experience_conf%C3%A9rence.html</guid>
-      	<description>
-	&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Adobe organise des &lt;strong&gt;Rencontres Designers et Développeurs&lt;/strong&gt; Mercredi 3 juin 2009 à partir de 16 heures à &lt;a href=&quot;http://maps.google.com/maps?f=q&amp;amp;source=s_q&amp;amp;hl=fr&amp;amp;geocode=&amp;amp;q=Atelier+Richelieu,+60,+rue+de+Richelieu+75002+Paris&amp;amp;sll=37.0625,-95.677068&amp;amp;sspn=48.555061,79.101563&amp;amp;ie=UTF8&amp;amp;ll=48.868427,2.338328&amp;amp;spn=0.009923,0.019312&amp;amp;t=h&amp;amp;z=16&amp;amp;iwloc=A&quot;&gt;l’Atelier Richelieu, 60, rue de Richelieu dans le 2ème arrondissement à Paris (Métros Bourse/Palais Royal/Pyramides - Stations Vélib Bourse ou Bibliothèque Nationale)&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Venez y découvrir les nouveautés d’Adobe Flash Platform, au travers des dernières évolutions du framework Flex, du Flash/Flex Builder et du nouvel outil professionnel de création de contenu interactif, &lt;strong&gt;Flash Catalyst&lt;/strong&gt;.&lt;br&gt;
-Cet après-midi de rencontre sera l’occasion d’illustrer l’impact de ces solutions sur les workflows designer/developer. La présentation d’ensemble de la plate-forme Flash et de workflows inédits sera suivie d’ateliers de découverte par métier :&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Session pour les développeurs Flex : évolutions des solutions Flex (&lt;strong&gt;nouveautés de Flex4 et de Flex/Flash Builder&lt;/strong&gt;) et interactions avec Flash Catalyst : &lt;a href=&quot;http://events.adobe.co.uk/cgi-bin/register.cgi?country=fr&amp;amp;eventid=8236&amp;amp;venueid=8552&quot;&gt;Inscription ici&lt;/a&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Session pour les designers interactifs, designers web ou designers d’application : flux de production de contenu interactif avec Flash Catalyst : &lt;a href=&quot;http://events.adobe.co.uk/cgi-bin/register.cgi?country=fr&amp;amp;eventid=8236&amp;amp;venueid=8553&quot;&gt;Inscription ici&lt;/a&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-	</description>
-    </item>
-    <item>
       <title>Le Semi de Paris</title>
-      <link>http://francoisledroff.github.io/content/2009/03/09/le_semi_de_paris.html</link>
+      <link>http://localhost:8820/content/2009/03/09/le_semi_de_paris.html</link>
       <pubDate>Mon, 9 Mar 2009 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2009/03/09/le_semi_de_paris.html</guid>
       	<description>
@@ -4271,7 +3912,7 @@ Cet après-midi de rencontre sera l’occasion d’illustrer l’impact de ces s
     </item>
     <item>
       <title>Maven on Flex/LiveCycle ES/Adobe projects : How to</title>
-      <link>http://francoisledroff.github.io/content/2009/03/03/maven_on_flex_livecycle_es.html</link>
+      <link>http://localhost:8820/content/2009/03/03/maven_on_flex_livecycle_es.html</link>
       <pubDate>Tue, 3 Mar 2009 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2009/03/03/maven_on_flex_livecycle_es.html</guid>
       	<description>
@@ -4494,7 +4135,7 @@ Cet après-midi de rencontre sera l’occasion d’illustrer l’impact de ces s
     </item>
     <item>
       <title>Flex for Java developers (at the BreizhJUG)</title>
-      <link>http://francoisledroff.github.io/content/2009/02/03/java_for_flex_architects.html</link>
+      <link>http://localhost:8820/content/2009/02/03/java_for_flex_architects.html</link>
       <pubDate>Tue, 3 Feb 2009 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2009/02/03/java_for_flex_architects.html</guid>
       	<description>
@@ -4601,7 +4242,7 @@ Those features are still under development but are already available in SNAPSHOT
     </item>
     <item>
       <title>Demo surprise de LCDS NEXT ce soir à la réunion des tontons flexeurs</title>
-      <link>http://francoisledroff.github.io/content/2008/12/16/demo_surprise_de_lcds_next.html</link>
+      <link>http://localhost:8820/content/2008/12/16/demo_surprise_de_lcds_next.html</link>
       <pubDate>Tue, 16 Dec 2008 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2008/12/16/demo_surprise_de_lcds_next.html</guid>
       	<description>
@@ -4618,7 +4259,7 @@ Those features are still under development but are already available in SNAPSHOT
     </item>
     <item>
       <title>L&amp;#8217;integration de Flex et Spring encore simplifiée.</title>
-      <link>http://francoisledroff.github.io/content/2008/12/08/l_integration_de_flex_et.html</link>
+      <link>http://localhost:8820/content/2008/12/08/l_integration_de_flex_et.html</link>
       <pubDate>Mon, 8 Dec 2008 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2008/12/08/l_integration_de_flex_et.html</guid>
       	<description>
@@ -4638,7 +4279,7 @@ et notre archetype maven
     </item>
     <item>
       <title>Back on the road : heading to Milan</title>
-      <link>http://francoisledroff.github.io/content/2008/11/29/back_on_the_road_heading.html</link>
+      <link>http://localhost:8820/content/2008/11/29/back_on_the_road_heading.html</link>
       <pubDate>Sat, 29 Nov 2008 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2008/11/29/back_on_the_road_heading.html</guid>
       	<description>
@@ -4665,7 +4306,7 @@ et notre archetype maven
     </item>
     <item>
       <title>Speaking at MAX</title>
-      <link>http://francoisledroff.github.io/content/2008/11/16/speaking_at_max.html</link>
+      <link>http://localhost:8820/content/2008/11/16/speaking_at_max.html</link>
       <pubDate>Sun, 16 Nov 2008 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2008/11/16/speaking_at_max.html</guid>
       	<description>
@@ -4685,7 +4326,7 @@ et notre archetype maven
     </item>
     <item>
       <title>A new set of Maven archetypes for Flex/Java development</title>
-      <link>http://francoisledroff.github.io/content/2008/10/28/a_new_set_of_maven.html</link>
+      <link>http://localhost:8820/content/2008/10/28/a_new_set_of_maven.html</link>
       <pubDate>Tue, 28 Oct 2008 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2008/10/28/a_new_set_of_maven.html</guid>
       	<description>
@@ -4737,13 +4378,13 @@ et notre archetype maven
 &lt;p&gt;Blazeds-autowired-spring-hibernate-archetype helps you generate a multi-module maven project : a flex front-end application communicating with the backend through Adobe’s BlazeDS and a spring autowired service. The back-end relies on a spring hibernate architecture.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;PS: &lt;a href=&quot;http://blogs.adobe.com/xagnetti&quot;&gt;Xavier&lt;/a&gt;, who helped me out on Fna is also presenting at MAX : &quot;http://max.adobe.com/na/sessions/browser/#544[How to build collaborative applications with LCDS]&quot;.&lt;/p&gt;
+&lt;p&gt;PS: &lt;a href=&quot;http://blogs.adobe.com/xagnetti&quot;&gt;Xavier&lt;/a&gt;, who helped me out on Fna is also presenting at MAX : &quot;&lt;a href=&quot;http://max.adobe.com/na/sessions/browser/#544&quot;&gt;How to build collaborative applications with LCDS&lt;/a&gt;&quot;.&lt;/p&gt;
 &lt;/div&gt;
 	</description>
     </item>
     <item>
       <title>A new set of flex maven archetype</title>
-      <link>http://francoisledroff.github.io/content/2008/07/31/a_new_set_of_flex.html</link>
+      <link>http://localhost:8820/content/2008/07/31/a_new_set_of_flex.html</link>
       <pubDate>Thu, 31 Jul 2008 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2008/07/31/a_new_set_of_flex.html</guid>
       	<description>
@@ -4786,7 +4427,7 @@ et notre archetype maven
     </item>
     <item>
       <title>Partenariat Adobe/Google/Yahoo : Les contenus flash maintenant indexés</title>
-      <link>http://francoisledroff.github.io/content/2008/07/01/partenariat_adobe_google_yahoo_les.html</link>
+      <link>http://localhost:8820/content/2008/07/01/partenariat_adobe_google_yahoo_les.html</link>
       <pubDate>Tue, 1 Jul 2008 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2008/07/01/partenariat_adobe_google_yahoo_les.html</guid>
       	<description>
@@ -4896,7 +4537,7 @@ et notre archetype maven
     </item>
     <item>
       <title>les URLs , les RIAs et le référencement</title>
-      <link>http://francoisledroff.github.io/content/2008/05/31/l_url_clef_de_voute.html</link>
+      <link>http://localhost:8820/content/2008/05/31/l_url_clef_de_voute.html</link>
       <pubDate>Sat, 31 May 2008 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2008/05/31/l_url_clef_de_voute.html</guid>
       	<description>
@@ -5087,7 +4728,7 @@ et notre archetype maven
     </item>
     <item>
       <title>A blazeDS Xdoclet Spring Hibernate Maven Archetype</title>
-      <link>http://francoisledroff.github.io/content/2008/05/24/a_blazeds_xdoclet_spring_hibernate.html</link>
+      <link>http://localhost:8820/content/2008/05/24/a_blazeds_xdoclet_spring_hibernate.html</link>
       <pubDate>Sat, 24 May 2008 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2008/05/24/a_blazeds_xdoclet_spring_hibernate.html</guid>
       	<description>
@@ -5124,7 +4765,7 @@ Thanks Velo !&lt;/p&gt;
     </item>
     <item>
       <title>Nouvelles évaluations des ESBs Mule, JBossESB et ServiceMix</title>
-      <link>http://francoisledroff.github.io/content/2008/05/22/nouvelles_%C3%A9valuations_des_esbs_mule.html</link>
+      <link>http://localhost:8820/content/2008/05/22/nouvelles_%C3%A9valuations_des_esbs_mule.html</link>
       <pubDate>Thu, 22 May 2008 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2008/05/22/nouvelles_%C3%A9valuations_des_esbs_mule.html</guid>
       	<description>
@@ -5144,7 +4785,7 @@ Thanks Velo !&lt;/p&gt;
     </item>
     <item>
       <title>Create your maven repository from a set of provided jars: the Adobe LiveCycle SDK and Adobe blazeDS examples</title>
-      <link>http://francoisledroff.github.io/content/2008/04/30/create_your_maven_repository_from.html</link>
+      <link>http://localhost:8820/content/2008/04/30/create_your_maven_repository_from.html</link>
       <pubDate>Wed, 30 Apr 2008 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2008/04/30/create_your_maven_repository_from.html</guid>
       	<description>
@@ -5210,7 +4851,7 @@ Here is an extract: +&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class=&quot;listingblock&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;pre class=&quot;prettyprint highlight&quot;&gt;&lt;code class=&quot;language-jive-pre&quot; data-lang=&quot;jive-pre&quot;&gt;&quot;maven-all-artifacts-in-dir&quot;&amp;gt;
+&lt;pre class=&quot;prettyprint highlight&quot;&gt;&lt;code data-lang=&quot;jive-pre&quot;&gt;&quot;maven-all-artifacts-in-dir&quot;&amp;gt;
  for param=&quot;jar.file&quot;&amp;gt;
 
    &quot;${jar.directory}&quot; includes=&quot;${artifactRegexp}&quot; /&amp;gt;
@@ -5289,7 +4930,7 @@ Here is an extract of my build file showing how I handle the special case of ado
 &lt;/div&gt;
 &lt;div class=&quot;listingblock&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;pre class=&quot;prettyprint highlight&quot;&gt;&lt;code class=&quot;language-jive-pre&quot; data-lang=&quot;jive-pre&quot;&gt;&quot;maven-livecycle-adobe-utilities&quot;&amp;gt;
+&lt;pre class=&quot;prettyprint highlight&quot;&gt;&lt;code data-lang=&quot;jive-pre&quot;&gt;&quot;maven-livecycle-adobe-utilities&quot;&amp;gt;
   &quot;groupId&quot; value=&quot;${livecycle.groupId}&quot; /&amp;gt;
   &quot;version&quot; value=&quot;${livecycle.version}&quot; /&amp;gt;
 
@@ -5356,7 +4997,7 @@ I chose here +&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class=&quot;listingblock&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;pre class=&quot;prettyprint highlight&quot;&gt;&lt;code class=&quot;language-jive-pre&quot; data-lang=&quot;jive-pre&quot;&gt;&quot;maven-deploy-blazeds-libs&quot;&amp;gt;
+&lt;pre class=&quot;prettyprint highlight&quot;&gt;&lt;code data-lang=&quot;jive-pre&quot;&gt;&quot;maven-deploy-blazeds-libs&quot;&amp;gt;
 
   &quot;maven.repo.url&quot; value=&quot;${maven.adobe.repo.url}&quot; /&amp;gt;
   &quot;description&quot; value=&quot;${blazeds.artifacts.description}&quot; /&amp;gt;
@@ -5420,7 +5061,7 @@ image:http://www.jroller.com/francoisledroff/resource/adobe-repo.jpg[adobe-repo.
     </item>
     <item>
       <title>Testing maven archetype</title>
-      <link>http://francoisledroff.github.io/content/2008/04/26/testing_maven_archetype.html</link>
+      <link>http://localhost:8820/content/2008/04/26/testing_maven_archetype.html</link>
       <pubDate>Sat, 26 Apr 2008 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2008/04/26/testing_maven_archetype.html</guid>
       	<description>
@@ -5602,7 +5243,7 @@ mvn eclipse:m2eclipse -DdownloadSources=true  -DdownloadJavadocs=true&lt;/pre&gt
     </item>
     <item>
       <title>Quickly create, run and test a simple Java web app with eclipse, maven and jetty</title>
-      <link>http://francoisledroff.github.io/content/2008/04/25/quickly_create_run_and_test.html</link>
+      <link>http://localhost:8820/content/2008/04/25/quickly_create_run_and_test.html</link>
       <pubDate>Fri, 25 Apr 2008 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2008/04/25/quickly_create_run_and_test.html</guid>
       	<description>
@@ -5954,7 +5595,7 @@ mkdir src/test/resources&lt;/pre&gt;
     </item>
     <item>
       <title>Retour sur le Salon Solution Linux 2008</title>
-      <link>http://francoisledroff.github.io/content/2008/02/07/retour_sur_le_salon_solution.html</link>
+      <link>http://localhost:8820/content/2008/02/07/retour_sur_le_salon_solution.html</link>
       <pubDate>Thu, 7 Feb 2008 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2008/02/07/retour_sur_le_salon_solution.html</guid>
       	<description>
@@ -6005,7 +5646,7 @@ mkdir src/test/resources&lt;/pre&gt;
     </item>
     <item>
       <title>Tous mes voeux pour une année de Qualité</title>
-      <link>http://francoisledroff.github.io/content/2008/01/11/tous_mes_voeux_pour_une.html</link>
+      <link>http://localhost:8820/content/2008/01/11/tous_mes_voeux_pour_une.html</link>
       <pubDate>Fri, 11 Jan 2008 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2008/01/11/tous_mes_voeux_pour_une.html</guid>
       	<description>
@@ -6232,7 +5873,7 @@ mkdir src/test/resources&lt;/pre&gt;
     </item>
     <item>
       <title>MAX 2007</title>
-      <link>http://francoisledroff.github.io/content/2007/09/07/max_2007.html</link>
+      <link>http://localhost:8820/content/2007/09/07/max_2007.html</link>
       <pubDate>Fri, 7 Sep 2007 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2007/09/07/max_2007.html</guid>
       	<description>
@@ -6248,153 +5889,8 @@ mkdir src/test/resources&lt;/pre&gt;
 	</description>
     </item>
     <item>
-      <title>Petite digression politique</title>
-      <link>http://francoisledroff.github.io/content/2007/08/15/petite_digression_politique.html</link>
-      <pubDate>Wed, 15 Aug 2007 00:00:00 +0200</pubDate>
-      <guid isPermaLink="false">content/2007/08/15/petite_digression_politique.html</guid>
-      	<description>
-	&lt;table class=&quot;tableblock frame-all grid-all stretch&quot;&gt;
-&lt;colgroup&gt;
-&lt;col style=&quot;width: 50%;&quot;&gt;
-&lt;col style=&quot;width: 50%;&quot;&gt;
-&lt;/colgroup&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;Saviez que Monsieur Cazenave (cité dans mon précédent billet, comme un des opposants à la vente liée PC-OS) est député UMP ? Il est d’ailleurs également un des acteurs de la décision d’équiper les &lt;a href=&quot;http://www.richardcazenave.com/?2006/09/13/190-logiciels-libres-a-l-assemblee-nationale&quot;&gt;députés en PC sous Linux&lt;/a&gt;.&lt;br&gt;
-Quoi? &lt;strong&gt;le logiciel libre ne serait ni &lt;a href=&quot;http://framablog.org/index.php/post/2007/02/20/logiciel-libre-communiste&quot;&gt;communiste&lt;/a&gt;, ni même de gauche ?&lt;/strong&gt;&lt;br&gt;
-Apparemment non, &lt;a href=&quot;http://standblog.org/blog/post/2004/03/04/93113368-le-libre-de-droite-ou-de-gauche&quot;&gt;Tristan nous assure&lt;/a&gt; que : &lt;code&gt;de même que la gauche n’a pas&apos;&apos;le monopole du coeur&lt;/code&gt;, elle n’a pas non plus le monopole de l’intelligence, du droit d’expression publique ni d’Internet.&apos;&apos;&lt;/p&gt;&lt;/td&gt;
-&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;&lt;a href=&quot;http://flickr.com/photos/mortalcoil/8621368/&quot;&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;http://jroller.com/resources/f/francoisledroff/soviet_propaganda.png&quot; alt=&quot;image&quot;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;table class=&quot;tableblock frame-all grid-all stretch&quot;&gt;
-&lt;colgroup&gt;
-&lt;col style=&quot;width: 50%;&quot;&gt;
-&lt;col style=&quot;width: 50%;&quot;&gt;
-&lt;/colgroup&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;&lt;a href=&quot;http://eucd.info/index.php&quot;&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;http://jroller.com/resources/f/francoisledroff/pancarte_eucd.png&quot; alt=&quot;image&quot;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/td&gt;
-&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;Mais bon, tout de même ! &lt;a href=&quot;http://blog.toutantic.net/index.php?2007/06/05/416-legislative-la-liste-noire&quot;&gt;le vote DADVSI restera dans les mémoires&lt;/a&gt;. Ce vote a montré l’ignorance l’irresponsabilité et l’incohérence dont a fait preuve l’UMP dans la défense de nos droits numériques (et celle du logiciel libre).&lt;/p&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Incohérence ? Oui, en effet, car les députés, ainsi équipés de Linux et donc utilisateurs et promoteurs de lecteur multimédia libre (&lt;a href=&quot;http://www.videolan.org/eucd.html&quot;&gt;videolan&lt;/a&gt; par exemple), ne sont-ils pas passibles de 3 ans de prison et 300 000 euros d’amende d’après la loi DADVSI ? Et le Président l’a bien répété, pendant sa campagne, &lt;a href=&quot;http://www.lemondeinformatique.fr/actualites/lire-nicolas-sarkozy-a-candidatsfr-je-ne-reviendrai-pas-sur-la-dadvsi-22698.html&quot;&gt;il ne reviendra pas dessus&lt;/a&gt;. Il le rappelait encore début aout dans sa &lt;a href=&quot;http://blog.toutantic.net/index.php?2007/08/02/424-lettre-de-mission-du-president-a-madame-la-ministre-de-la-culture&quot;&gt;lettre de mission adressée à Mme Christine Albanel, Ministre de la Culture et de la communication.&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-	</description>
-    </item>
-    <item>
-      <title>Dell, encore coupable de vente liée</title>
-      <link>http://francoisledroff.github.io/content/2007/07/04/dell_encore_coupable_de_vente.html</link>
-      <pubDate>Wed, 4 Jul 2007 00:00:00 +0200</pubDate>
-      <guid isPermaLink="false">content/2007/07/04/dell_encore_coupable_de_vente.html</guid>
-      	<description>
-	&lt;div id=&quot;preamble&quot;&gt;
-&lt;div class=&quot;sectionbody&quot;&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Vous avez sans doute lu comme moi dans la presse que Dell avait annoncé qu’il allait enfin proposer à ses clients &lt;a href=&quot;http://www.presence-pc.com/actualite/Dell-Ubuntu-23115/&quot;&gt;Linux sur plusieurs gammes de ses ordinateurs&lt;/a&gt; (dont certains portables). Hélas, c’était une simple annonce, Dell n’a donné d’information ni sur les caractéristiques de ces machines, ni sur les dates de disponibilité de ces machines.&lt;/p&gt;
-&lt;/div&gt;
-&lt;table class=&quot;tableblock frame-all grid-all stretch&quot;&gt;
-&lt;colgroup&gt;
-&lt;col style=&quot;width: 50%;&quot;&gt;
-&lt;col style=&quot;width: 50%;&quot;&gt;
-&lt;/colgroup&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;J’ai donc du me résoudre à acheter mon nouvel ordinateur portable Dell avec un ensemble de logiciels qui ne me sont d’aucune utilité mais qui me sont (évidemment) facturés : Windows Vista, Windows Works et un anti-virus MacAffee. Aucune possibilité pour moi de choisir d’autre système d’exploitation, ou mieux encore de commander un PC sans aucun logiciel installé. C’est ce qu’on appelle de la vente forcée, ou tout au moins de la vente liée.&lt;br&gt;
-Et c’est illégal ? Et Oui !&lt;/p&gt;&lt;/td&gt;
-&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;&lt;a href=&quot;http://flickr.com/photos/distinguish/96495069/&quot;&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;http://jroller.com/resources/f/francoisledroff/money.jpg&quot; alt=&quot;image&quot;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect3&quot;&gt;
-&lt;h4 id=&quot;la-loi&quot;&gt;La Loi&lt;/h4&gt;
-&lt;table class=&quot;tableblock frame-all grid-all stretch&quot;&gt;
-&lt;colgroup&gt;
-&lt;col style=&quot;width: 50%;&quot;&gt;
-&lt;col style=&quot;width: 50%;&quot;&gt;
-&lt;/colgroup&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;&lt;a href=&quot;http://flickr.com/photos/esparta/219179430/&quot;&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;http://jroller.com/resources/f/francoisledroff/menotte.jpg&quot; alt=&quot;image&quot;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/td&gt;
-&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;Après quelques &lt;a href=&quot;http://www.zdnet.fr/actualites/informatique/0,39040745,39124807,00.htm&quot;&gt;indécisions de la répression des fraudes&lt;/a&gt;, il semblerait que la direction générale de la concurrence, de la consommation et de la répression des fraudes (DGCCRF) se soit prononcée plus &lt;a href=&quot;http://www.pcinpact.com/actu/news/32672-vente-liee-OS.htm&quot;&gt;précisément&lt;/a&gt; et considère une telle vente comme &lt;code&gt;une infraction à la réglementation en matière de subordination de vente&apos;&apos;.&lt;br&gt;
-Le ministre de l’économie rappelait également en 2005 à l’Assemblée Nationale que &lt;a href=&quot;http://questions.assemblee-nationale.fr/q12/12-53733QE.htm&quot;&gt;&lt;/code&gt;rien ne saurait exonérer les fournisseurs du respect (…) de l’obligation de commercialiser séparément, sur un même lieu de vente, des produits proposés sous forme de lot.&apos;&apos;&lt;/a&gt;&lt;br&gt;
-Certains députés, comme Richard Cazenave se sont publiquement exprimé : &lt;a href=&quot;http://www.zdnet.fr/actualites/informatique/0,39040745,39365670,00.htm&quot;&gt;``La vente liée des logiciels et du PC doit être sanctionnée par la justice&apos;&apos;&lt;/a&gt;&lt;/p&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect3&quot;&gt;
-&lt;h4 id=&quot;les-actions&quot;&gt;&lt;a id=&quot;HLesActions&quot;&gt;&lt;/a&gt;Les Actions&lt;/h4&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Les actions de &lt;a href=&quot;http://www.racketiciel.info/actualite.php&quot;&gt;racketiciel&lt;/a&gt;, de ttp://www.quechoisir.org/Article.jsp;jsessionid=04754F14694BF8AC6E95E4F9E909AC07.tomcat-1?id=Ressources:Articles:9A595DF33961356BC1256FF700477891&amp;amp;catcss=COM000&amp;amp;impression=oui[l’UFC-Que Choisir et du collectif GdT Détaxe] font du &lt;a href=&quot;http://www.zdnet.fr/actualites/informatique/0,39040745,39360238,00.htm&quot;&gt;bruit&lt;/a&gt; Mais force est de constater que malgré la position maintenant plus précise de la DGCCRF il est aujourd’hui très difficile d’acquérir un ordinateur ``sans se voir imposer un système d’exploitation, ou une cohorte de logiciels annexes non sollicités, mais bel et bien facturés&apos;&apos;. Dell comme la majorité des constructeurs et distributeurs de PC pour le grand public reste impunément hors la loi.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect3&quot;&gt;
-&lt;h4 id=&quot;du-remboursement-de-la-jurisprudence&quot;&gt;Du remboursement, de la jurisprudence&lt;/h4&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;On retrouve sur le web les témoignages de &lt;a href=&quot;http://www.gcolpart.com/howto/nowin.php4&quot;&gt;courageux&lt;/a&gt; (vous avez dit &lt;a href=&quot;http://zoonek2.free.fr/UNIX/45_portable/portable_achat.html&quot;&gt;teigneux&lt;/a&gt; ? ), et quelques &lt;a href=&quot;http://www.aful.org/wikis/detaxe/ProcedureType/cps_wiki_pageview&quot;&gt;procédure type&lt;/a&gt;. Mais les réussites sont rares et fastidieuses :&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;``Dave Mitchell décide de prendre en photo toutes les étapes du premier démarrage de sa machine ainsi que l’intégralité du CLUF, en le faisant défiler à l’écran, puis refuse d’accepter les conditions dudit contrat. Le 1er novembre, il envoie un courrier à Dell dans lequel il explique, image à l’appui, qu’il a refusé le CLUF de Windows et qu’il s’estime donc en droit d’obtenir le remboursement du logiciel. Le 7, il reçoit de Dell la somme de 55,23 livres sterling, correspondant à la valeur du système d’exploitation et aux diverses taxes appliquées en Grande Bretage sur les logiciels.&apos;&apos; (source &lt;a href=&quot;http://www.clubic.com/actualite-65272-vente-liee-dell-rembourse-windows-linuxien.html&quot;&gt;clubic&lt;/a&gt; voici sa &lt;a href=&quot;http://www.linuxworld.com/community/?q=node/241&quot;&gt;belle lettre&lt;/a&gt;).&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.aful.org/wikis/detaxe/Reussie2&quot;&gt;cette page&lt;/a&gt; du wiki de l’aful qui nous fait part ``des démarches qui ont permis d’obtenir un remboursement de 20% (274,84 Eur) du prix d’un ordinateur portable Dell et des logiciels associés (Win XP familiale SP1, Works 7.0, Norton AV - 90 jours -, Paint Shop Pro - version d’évaluation -, Image Expert - version d’évaluation - et un logiciel décodeur de DVD dont le nom ne figure pas sur la facture). On peut considérer qu’il s’agit d’une détaxe réussie même s’il ne s’agit pas à proprement parler du remboursement des logiciels - objectif du GdTDetaxe - mais d’un geste commercial. En effet, Dell n’a pas voulu reprendre les logiciels.&apos;&apos;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Le 6 juillet 2006, un client gagne son procès (débuté en 2005, pour un litige datant de 2004) dans le cas d’une vente liée mais la société ASUS est condamnée avant tout pour manque de réactivité et d’information et pas explicitement pour vente liée (Plus d’info sur &lt;a href=&quot;http://www.pcinpact.com/actu/news/30977-Victoire-dun-client-en-matiere-de-vente-liee.htm&quot;&gt;pcinpact&lt;/a&gt; , qui a mis le &lt;a href=&quot;http://www.pcinpact.com/link.php?url=http%3A%2F%2Faramis.obspm.fr%2F%7Ecoulais%2FLogicielsLibres%2FDetaxe%2FJugementCRESP-ASUS_06.07.06.pdf&quot;&gt;jugement en ligne).&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;table class=&quot;tableblock frame-all grid-all stretch&quot;&gt;
-&lt;colgroup&gt;
-&lt;col style=&quot;width: 50%;&quot;&gt;
-&lt;col style=&quot;width: 50%;&quot;&gt;
-&lt;/colgroup&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;&lt;a href=&quot;http://flickr.com/photos/steventom/87568944/&quot;&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;http://jroller.com/resources/f/francoisledroff/verrou.jpg&quot; alt=&quot;image&quot;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/td&gt;
-&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;Une réelle jurisprudence se fait donc encore attendre, espérons que les tribunaux et la DGCCRF se montrent plus actifs et répréhensifs à l’avenir et rejoignent la position plus ferme revendiquée par les députés et le gouvernement.&lt;/p&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;/div&gt;
-	</description>
-    </item>
-    <item>
-      <title>Que faire pour que son client soit riche ?</title>
-      <link>http://francoisledroff.github.io/content/2007/02/17/que_faire_pour_que_mon.html</link>
-      <pubDate>Sat, 17 Feb 2007 00:00:00 +0100</pubDate>
-      <guid isPermaLink="false">content/2007/02/17/que_faire_pour_que_mon.html</guid>
-      	<description>
-	&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&lt;a href=&quot;http://fr.wikipedia.org/wiki/JSF&quot;&gt;JSF&lt;/a&gt; , parfois &lt;a href=&quot;http://icoloma.blogspot.com/2006/10/myfaces-emperor-has-no-clothes.html&quot;&gt;critiqué&lt;/a&gt; a profité dernièrement de &lt;a href=&quot;http://www.michaelyuan.com/blog/2006/10/23/is-jsf-really-that-bad/&quot;&gt;simplifications et d’innovations intéressantes&lt;/a&gt; (avec Seam qui a fait l’objet de standardisation, de spécification la &lt;a href=&quot;http://www.infoq.com/news/Web-Beans-JSR-299-approved-JCP&quot;&gt;JSR 299 Web-Beans&lt;/a&gt; ).&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Mais depuis peu, suite à &lt;a href=&quot;http://linuxfr.org/2006/12/13/21767.html&quot;&gt;la « libération » de son code source&lt;/a&gt; , tout le monde regarde du côté de &lt;a href=&quot;http://code.google.com/webtoolkit/&quot;&gt;GWT&lt;/a&gt;. Ainsi comme souvent, fi de la standardisation ! C’est la maturité, &lt;a href=&quot;http://www.scub.net/blogs/straumat/?postid=4&quot;&gt;l’ efficacité&lt;/a&gt; de la solution, et les gains de productivité qu’elle apporte qui comptent. GWT va même pour certain jusqu’à &lt;a href=&quot;http://crazybob.org/2006/05/javaone-google-web-toolkit-vs-jsf.html&quot;&gt;invalider JSF&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Bref si ce n’est déja fait, il est donc grand temps de surveiller cette techno et de s’abonner au flux RSS de &lt;a href=&quot;http://www.ongwt.com/&quot;&gt;ONGWT&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;http://www.jroller.com/resources/f/francoisledroff/money.png&quot; alt=&quot;image&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;La &lt;a href=&quot;http://www.infoq.com/interviews/romain-guy&quot;&gt;nouvelle génération&lt;/a&gt; préférera toutefois oublier tout cette &lt;a href=&quot;http://fr.wikipedia.org/wiki/Asynchronous_JavaScript_and_XML&quot;&gt;crème à récurer&lt;/a&gt; et écrire des &lt;a href=&quot;http://www.google.fr/search?q=filthy%20rich%20client&quot;&gt;clients dégoulinants de richesse.&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&lt;strong&gt;PS&lt;/strong&gt;: si en informatique les clients sont de plus en plus riches, les patrons &lt;a href=&quot;http://solutions.journaldunet.com/0701/070125-salaires-patrons-informatique-francais.shtml&quot;&gt;aussi&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-	</description>
-    </item>
-    <item>
       <title>Services web, à quand la fin du gâchis ?</title>
-      <link>http://francoisledroff.github.io/content/2007/02/17/services_web_%C3%A0_quand_la.html</link>
+      <link>http://localhost:8820/content/2007/02/17/services_web_%C3%A0_quand_la.html</link>
       <pubDate>Sat, 17 Feb 2007 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2007/02/17/services_web_%C3%A0_quand_la.html</guid>
       	<description>
@@ -6417,7 +5913,7 @@ Certains députés, comme Richard Cazenave se sont publiquement exprimé : &lt;a
     </item>
     <item>
       <title>Salon Solution Linux</title>
-      <link>http://francoisledroff.github.io/content/2007/01/30/salon_solution_linux.html</link>
+      <link>http://localhost:8820/content/2007/01/30/salon_solution_linux.html</link>
       <pubDate>Tue, 30 Jan 2007 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2007/01/30/salon_solution_linux.html</guid>
       	<description>
@@ -6491,97 +5987,8 @@ Nos slides sont maintenant en ligne &lt;a href=&quot;http://www.solutionslinux.f
 	</description>
     </item>
     <item>
-      <title>Réunion PJBUG au Salon SolutionLinux2007</title>
-      <link>http://francoisledroff.github.io/content/2007/01/16/r%C3%A9union_pjbug_au_salon_solutionlinux2007.html</link>
-      <pubDate>Tue, 16 Jan 2007 00:00:00 +0100</pubDate>
-      <guid isPermaLink="false">content/2007/01/16/r%C3%A9union_pjbug_au_salon_solutionlinux2007.html</guid>
-      	<description>
-	&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Le &lt;a href=&quot;http://www.paris-jbug.org/xwiki/bin/view/Main/WebHome&quot;&gt;Paris JBoss User Group&lt;/a&gt; organise sa prochaine réunion le 31 janvier prochain à l’occasion du &lt;a href=&quot;http://www.solutionslinux.fr/&quot;&gt;salon Solutions Linux 2007&lt;/a&gt; !&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Au programme :&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Sacha Labourey&lt;/strong&gt;, directeur technique de JBoss, une division de Red Hat, nous présentera la &lt;strong&gt;roadmap de la suite JBoss&lt;/strong&gt; ainsi qu’&lt;strong&gt;un bilan 9 mois après la rachat de JBoss Inc. par Red Hat&lt;/strong&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Thierry Kauffmann, de DHL, nous fera un retour d’expérience d’utilisation de JBossAS en environnement de développement&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.paris-jbug.org/xwiki/bin/view/Main/SalonSolutionLinux2006&quot;&gt;Plus d’info sur le site du pbjug&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-	</description>
-    </item>
-    <item>
-      <title>JavaPolis 2006 : quelques liens</title>
-      <link>http://francoisledroff.github.io/content/2006/12/31/javapolis_2006_quelques_liens.html</link>
-      <pubDate>Sun, 31 Dec 2006 00:00:00 +0100</pubDate>
-      <guid isPermaLink="false">content/2006/12/31/javapolis_2006_quelques_liens.html</guid>
-      	<description>
-	&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Voici quelques liens vers des sites/blogs francophones traitant de javapolis 2006 :&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;de nombreux liens et articles sur l’excellent developpez.com :&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;http://java.developpez.com/interview/javapolis/sjanssen/&quot;&gt;l’interview de Stephan Janssen&lt;/a&gt;, président du BeJug, organisateur de javapolis&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;un &lt;a href=&quot;ftp://ftp-developpez.com/magazine/JavaDevMagHS.pdf&quot;&gt;hors Série du magazine&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;http://blog.developpez.com/index.php?blog=12&amp;amp;cat=752&quot;&gt;le blog (catégorie javapolis)&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;et enfin quelques &lt;a href=&quot;http://blog.developpez.com/index.php?blog=12&amp;amp;title=en_vrac_15&amp;amp;more=1&amp;amp;c=1&amp;amp;tb=1&amp;amp;pb=1&quot;&gt;liens en vrac&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;De nombreux articles sur le site belge &lt;a href=&quot;http://www.fr.datanewsjobs.be/search.asp?searchTerm=javapolis+2006&amp;amp;articleTypeID=any&amp;amp;submitButton=Chercher&quot;&gt;datanews&lt;/a&gt;, avec, entre autres:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.fr.datanews.be/specials/enterprise_computing/software/20061221027&quot;&gt;une annexe spéciale consacrée à JavaPolis 2006&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;et une news plus &lt;code&gt;people&apos;&apos; : &lt;a href=&quot;http://www.fr.datanewsjobs.be/news/20061214012&quot;&gt;&lt;/code&gt;Ils se sont dits oui à Javapolis&apos;&apos;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Et enfin &lt;a href=&quot;http://blog.dgirard.eu/&quot;&gt;Didier&lt;/a&gt; :&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.lemondeinformatique.fr/entretiens/lire-didier-girard-de-retour-de-javapolis-74.html&quot;&gt;donne ses impressions au monde informatique&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;et s’est entretenu avec tout le ``gratin&apos;&apos; de la conférence et publiera ses entretiens vidéo sur tv4it,&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;le premier publié est &lt;a href=&quot;http://www.tv4it.net/permalink/2272/marc-fleury-jboss-est-la-societe-a-abattre.aspx&quot;&gt;celui de Marc Fleury&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;http://www.jroller.com/resources/f/francoisledroff/marc.jpg&quot; alt=&quot;Marc Fleury.jpg&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;
-	</description>
-    </item>
-    <item>
       <title>ObjectWeb à Javapolis</title>
-      <link>http://francoisledroff.github.io/content/2006/12/31/objectweb_%C3%A0_javapolis.html</link>
+      <link>http://localhost:8820/content/2006/12/31/objectweb_%C3%A0_javapolis.html</link>
       <pubDate>Sun, 31 Dec 2006 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2006/12/31/objectweb_%C3%A0_javapolis.html</guid>
       	<description>
@@ -6678,66 +6085,70 @@ Nos slides sont maintenant en ligne &lt;a href=&quot;http://www.solutionslinux.f
 	</description>
     </item>
     <item>
-      <title>De retour de JavaPolis 2006</title>
-      <link>http://francoisledroff.github.io/content/2006/12/20/de_retour_de_javapolis_2006.html</link>
-      <pubDate>Wed, 20 Dec 2006 00:00:00 +0100</pubDate>
-      <guid isPermaLink="false">content/2006/12/20/de_retour_de_javapolis_2006.html</guid>
+      <title>JavaPolis 2006 : quelques liens</title>
+      <link>http://localhost:8820/content/2006/12/31/javapolis_2006_quelques_liens.html</link>
+      <pubDate>Sun, 31 Dec 2006 00:00:00 +0100</pubDate>
+      <guid isPermaLink="false">content/2006/12/31/javapolis_2006_quelques_liens.html</guid>
       	<description>
 	&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Javapolis 2006, un grand cru, avec 30% d’inscription supplémentaire ce fut encore l’occasion de nouvelles rencontres, de nouveaux échanges. Car la qualité et la richesse de javapolis (comme de toute grande conférence internationale) ne réside pas seulement dans son programme (ses présentations, keynotes, bof, quickies ou labs), mais aussi la découverte des nouvelles tendances/modes/buzz de la communauté, et enfin, et surtout, dans le networking (le réseautage diraient nos cousins québécois).&lt;/p&gt;
+&lt;p&gt;Voici quelques liens vers des sites/blogs francophones traitant de javapolis 2006 :&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Car, c’est à la sortie des salles de conférences, autour d’un café, ou d’une bière (belge, évidemment), que les souvenirs se forgent: les discussions s’engagent, les avis divergent, convergent; l’émulation est à son comble, la créativité exacerbée; de nouveaux projets naissent; des relations de confiance se créent; des amitiés, parfois, se tissent.&lt;/p&gt;
+&lt;p&gt;de nombreux liens et articles sur l’excellent developpez.com :&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://java.developpez.com/interview/javapolis/sjanssen/&quot;&gt;l’interview de Stephan Janssen&lt;/a&gt;, président du BeJug, organisateur de javapolis&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;un &lt;a href=&quot;ftp://ftp-developpez.com/magazine/JavaDevMagHS.pdf&quot;&gt;hors Série du magazine&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://blog.developpez.com/index.php?blog=12&amp;amp;cat=752&quot;&gt;le blog (catégorie javapolis)&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;et enfin quelques &lt;a href=&quot;http://blog.developpez.com/index.php?blog=12&amp;amp;title=en_vrac_15&amp;amp;more=1&amp;amp;c=1&amp;amp;tb=1&amp;amp;pb=1&quot;&gt;liens en vrac&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Stephan, Robin, merci pour Javapolis, merci pour votre invitation ! A l’année prochaine !&lt;/p&gt;
+&lt;p&gt;De nombreux articles sur le site belge &lt;a href=&quot;http://www.fr.datanewsjobs.be/search.asp?searchTerm=javapolis+2006&amp;amp;articleTypeID=any&amp;amp;submitButton=Chercher&quot;&gt;datanews&lt;/a&gt;, avec, entre autres:&lt;/p&gt;
 &lt;/div&gt;
-&lt;table class=&quot;tableblock frame-all grid-all stretch&quot;&gt;
-&lt;colgroup&gt;
-&lt;col style=&quot;width: 50%;&quot;&gt;
-&lt;col style=&quot;width: 50%;&quot;&gt;
-&lt;/colgroup&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;http://jroller.com/resources/f/francoisledroff/MeetAndGreet1.gif&quot; alt=&quot;MeetAndGreet1.gif&quot;&gt;&lt;/span&gt;&lt;/th&gt;
-&lt;th class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;http://jroller.com/resources/f/francoisledroff/jboss-bab.jpg&quot; alt=&quot;jboss-bab.jpg&quot;&gt;&lt;/span&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;/table&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;A venir… mes comptes-rendus plus.. techniques…&lt;/p&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.fr.datanews.be/specials/enterprise_computing/software/20061221027&quot;&gt;une annexe spéciale consacrée à JavaPolis 2006&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;et une news plus &lt;code&gt;people&apos;&apos; : &lt;a href=&quot;http://www.fr.datanewsjobs.be/news/20061214012&quot;&gt;&lt;/code&gt;Ils se sont dits oui à Javapolis&apos;&apos;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;En attendant… retrouvez les crs de &lt;a href=&quot;http://blog.developpez.com/index.php?blog=12&amp;amp;cat=752&quot;&gt;developpez.com&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-	</description>
-    </item>
-    <item>
-      <title>JavaPolis 2006</title>
-      <link>http://francoisledroff.github.io/content/2006/12/11/javapolis_2006.html</link>
-      <pubDate>Mon, 11 Dec 2006 00:00:00 +0100</pubDate>
-      <guid isPermaLink="false">content/2006/12/11/javapolis_2006.html</guid>
-      	<description>
-	&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;http://jroller.com/resources/f/francoisledroff/logo-javapolis06.png&quot; alt=&quot;logo-javapolis06.png&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Et enfin &lt;a href=&quot;http://blog.dgirard.eu/&quot;&gt;Didier&lt;/a&gt; :&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Je serai à JavaPolis à partir de mercredi. Je posterai sans doute quelques notes sur ce blog pour rendre compte des nouveautés, des présentations et annonces qui y seront faites. J’en ferai sans doute un peu plus que l’http://www.jroller.com/page/francoisledroff/?anchor=javapolis_2005[année dernière] (je n’avais pas eu le temps de publier mes notes) et un peu moins qu’en &lt;a href=&quot;http://www.jroller.com/page/francoisledroff/?anchor=javapolis_2004&quot;&gt;2004, avec 24 entrées sur mon blog&lt;/a&gt;. Cette année, grâce à un accès wifi gratuit, on sera sans doute assez nombreux à blogger ``live&apos;&apos;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.lemondeinformatique.fr/entretiens/lire-didier-girard-de-retour-de-javapolis-74.html&quot;&gt;donne ses impressions au monde informatique&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Je n’ai pas eu le temps d’étudier le programme en détail, mais, une chose est sûre: j’irai voir mes collègues de l’http://www.ossgtp.org/[ossgtp], &lt;a href=&quot;http://www.javapolis.com/confluence/display/JP06/Filthy+Rich+Clients&quot;&gt;Romain&lt;/a&gt;, &lt;a href=&quot;http://www.javapolis.com/confluence/display/JP06/ECM+open+source+by+leveraging+Portal%2C+Workflow%2C+and+Wiki+ObjectWeb+components&quot;&gt;Benjamin et Ludo&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;et s’est entretenu avec tout le ``gratin&apos;&apos; de la conférence et publiera ses entretiens vidéo sur tv4it,&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;le premier publié est &lt;a href=&quot;http://www.tv4it.net/permalink/2272/marc-fleury-jboss-est-la-societe-a-abattre.aspx&quot;&gt;celui de Marc Fleury&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;http://jroller.com/resources/f/francoisledroff/qsos-logo.gif&quot; alt=&quot;qsos-logo.gif&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Et vous ? Si vous y êtes aussi et que vous désirez échanger sur l’open-source en Français et en Java, sur l’open-source en général, ou enfin sur la méthode de qualification &lt;a href=&quot;http://www.qsos.org&quot;&gt;QSOS&lt;/a&gt; (projet open-source dont je suis acteur) n’hésitez pas à venir me rencontrer.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;http://www.jroller.com/resources/f/francoisledroff/marc.jpg&quot; alt=&quot;Marc Fleury.jpg&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;/div&gt;
 	</description>
     </item>
     <item>
       <title>Les 20 kms de Paris</title>
-      <link>http://francoisledroff.github.io/content/2006/10/16/les_20_kms_de_paris.html</link>
+      <link>http://localhost:8820/content/2006/10/16/les_20_kms_de_paris.html</link>
       <pubDate>Mon, 16 Oct 2006 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2006/10/16/les_20_kms_de_paris.html</guid>
       	<description>
@@ -6772,7 +6183,7 @@ Nos slides sont maintenant en ligne &lt;a href=&quot;http://www.solutionslinux.f
     </item>
     <item>
       <title>JavaDay 2006</title>
-      <link>http://francoisledroff.github.io/content/2006/07/04/javaday_2006.html</link>
+      <link>http://localhost:8820/content/2006/07/04/javaday_2006.html</link>
       <pubDate>Tue, 4 Jul 2006 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2006/07/04/javaday_2006.html</guid>
       	<description>
@@ -6896,7 +6307,7 @@ Nos slides sont maintenant en ligne &lt;a href=&quot;http://www.solutionslinux.f
     </item>
     <item>
       <title>PJBUG - 28 Juin 2006</title>
-      <link>http://francoisledroff.github.io/content/2006/06/30/pjbug_28_juin_2006.html</link>
+      <link>http://localhost:8820/content/2006/06/30/pjbug_28_juin_2006.html</link>
       <pubDate>Fri, 30 Jun 2006 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2006/06/30/pjbug_28_juin_2006.html</guid>
       	<description>
@@ -6998,9 +6409,9 @@ Nos slides sont maintenant en ligne &lt;a href=&quot;http://www.solutionslinux.f
     </item>
     <item>
       <title>Bravo à XWiki</title>
-      <link>http://francoisledroff.github.io/content/2006/06/28/bravo_%C3%A0_xwiki.html</link>
+      <link>http://localhost:8820/content/2006/06/28/bravo_a_xwiki.html</link>
       <pubDate>Wed, 28 Jun 2006 00:00:00 +0200</pubDate>
-      <guid isPermaLink="false">content/2006/06/28/bravo_%C3%A0_xwiki.html</guid>
+      <guid isPermaLink="false">content/2006/06/28/bravo_a_xwiki.html</guid>
       	<description>
 	&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;&lt;a href=&quot;http://www.xwiki.com&quot;&gt;XWiki&lt;/a&gt; vient en effet de recevoir un Lutece d’Or lors de la soirée &lt;a href=&quot;http://www.paris-libre.org/&quot;&gt;Paris Capitale du Libre&lt;/a&gt;. Bravo à &lt;a href=&quot;http://www.ludovic.org/xwiki/bin/view/Main/LuteceDOrPourXWiki&quot;&gt;Ludo&lt;/a&gt; et &lt;a href=&quot;http://www.jeremi.info/&quot;&gt;Jéremi&lt;/a&gt; et tous les contributeurs et acteurs ce beau projet open-source : &lt;a href=&quot;http://www.xwiki.org&quot;&gt;xwiki: le wiki de 2eme génération&lt;/a&gt; (et J2EE fully flavoured !! &lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;http://www.jroller.com/images/smileys/smile.gif&quot; alt=&quot;:-)&quot; title=&quot;:-)&quot;&gt;&lt;/span&gt;)&lt;/p&gt;
@@ -7014,253 +6425,8 @@ Nos slides sont maintenant en ligne &lt;a href=&quot;http://www.solutionslinux.f
 	</description>
     </item>
     <item>
-      <title>IGN versus Google</title>
-      <link>http://francoisledroff.github.io/content/2006/06/27/ign_versus_google.html</link>
-      <pubDate>Tue, 27 Jun 2006 00:00:00 +0200</pubDate>
-      <guid isPermaLink="false">content/2006/06/27/ign_versus_google.html</guid>
-      	<description>
-	&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Suite à la lecture du &lt;a href=&quot;http://samdprod.typepad.com/actu/2006/06/comparatif_ign_.html&quot;&gt;Comparatif IGN Geoportail / Google Local&lt;/a&gt; de &lt;a href=&quot;http://samdprod.typepad.com/actu/&quot;&gt;Sam D&lt;/a&gt;, j’ai voulu revoir ma bretagne (ma maison de famille à côté de Brest) en haute définition IGN. Et contrairement à Sam, je ne crois pas que l’IGN est un si net avantage en province.&lt;/p&gt;
-&lt;/div&gt;
-&lt;table class=&quot;tableblock frame-all grid-all stretch&quot;&gt;
-&lt;colgroup&gt;
-&lt;col style=&quot;width: 50%;&quot;&gt;
-&lt;col style=&quot;width: 50%;&quot;&gt;
-&lt;/colgroup&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;http://jroller.com/resources/f/francoisledroff/penhoat-vue-google-maps.png&quot; alt=&quot;penhoat-vue-google-maps.png&quot;&gt;&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
-&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;http://jroller.com/resources/f/francoisledroff/penhoat-vue-ign.png&quot; alt=&quot;penhoat-vue-ign.png&quot;&gt;&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;L’image IGN de &lt;em&gt;penhoat&lt;/em&gt; (à droite) est bien moins nette et moins récente de celle de son concurrent google.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;De plus comme le rapporte différent journaux dont &lt;a href=&quot;http://www.lefigaro.fr/sciences/20060623.WWW000000814_la_censure_trop_visible_des_zones_strategiques.html&quot;&gt;Le Figaro&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;quoteblock&quot;&gt;
-&lt;blockquote&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Sur certaines zones, le géoportail français ressemble plus à un étrange gruyère qu’à une représentation aérienne d’un territoire européen. Quelques dizaines de zones protégées ? bases militaires, centres industriels stratégiques ? ont été totalement occultées par des blancs, qui paraissent découpés aux ciseaux dans la photo !&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;C’est notamment le cas pour l’île longue, non loin de là, dans la rade de Brest. Avec Google on vois clairement un sous-marin nucléaire lanceur d’engins resté à quai. (si si il suffit de zoomer, c’est par &lt;a href=&quot;http://maps.google.fr/maps?f=q&amp;amp;hl=fr&amp;amp;q=rostellec&amp;amp;ie=UTF8&amp;amp;t=h&amp;amp;om=1&quot;&gt;là&lt;/a&gt; Quant à l’IGN, il répond en fait à un décret caduque datant de 1973 qui interdisait la diffusion des images aériennes de certains sites sensibles, dont la liste était jusqu’alors tenue secrète.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Non, non, je n’ai, moi non plus, pas réussi à me connecter au portail de l’ign, je suis, &lt;a href=&quot;http://www.generation-nt.com/actualites/16245/geoportail-ign-excuses-serveurs-satures/&quot;&gt;comme beaucoup&lt;/a&gt;, tombé sur cette belle page : &lt;a href=&quot;http://www.geoportail.fr/excuses.htm&quot; class=&quot;bare&quot;&gt;http://www.geoportail.fr/excuses.htm&lt;/a&gt;. J’ai juste suivi le conseil de Sam D, j’ai accédé aux données IGN à travers les pages jaunes.Et pour ceux qui ont réussi à s’y connecter ``réellement&apos;&apos;, &lt;a href=&quot;http://geoportail.blogspot.com/&quot;&gt;le constat&lt;/a&gt; n’est malheureusement pas meilleur.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Cependant, pour finir par une note positive et optimiste, je me dois également de souligner que : l’IGN pourrait surpasser google (tout au moins en France). Car il promet la mise à disposition prochaine des données topographiques complètes du territoire français, ainsi que des cartes de rando IGN, des cartes du cadastre, et même la modélisation en 3D des grandes villes de France. La &lt;a href=&quot;http://billaut.typepad.com/jm/2006/04/connaissezvous__2.html&quot;&gt;démo de Patrick Leboeuf&lt;/a&gt; (en ligne depuis début avril sur l’excellent &lt;a href=&quot;http://billaut.typepad.com/jm/&quot;&gt;BillautShow&lt;/a&gt;) était bluffante.&lt;/p&gt;
-&lt;/div&gt;
-	</description>
-    </item>
-    <item>
-      <title>Je suis enfin libre !</title>
-      <link>http://francoisledroff.github.io/content/2006/06/14/je_suis_enfin_libre.html</link>
-      <pubDate>Wed, 14 Jun 2006 00:00:00 +0200</pubDate>
-      <guid isPermaLink="false">content/2006/06/14/je_suis_enfin_libre.html</guid>
-      	<description>
-	&lt;table class=&quot;tableblock frame-all grid-all stretch&quot;&gt;
-&lt;colgroup&gt;
-&lt;col style=&quot;width: 50%;&quot;&gt;
-&lt;col style=&quot;width: 50%;&quot;&gt;
-&lt;/colgroup&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;div class=&quot;content&quot;&gt;&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Suite à l’acquisition d’un laptop dell D610, j’ai enfin décidé de me basculer de windows vers Linux, ceci pour différentes raisons:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;pour être libre (d’esprit)&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;pour cesser de m’inquiéter sur la santé de mon système&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;me débarrasser des intrusions, virus, malwares et autres spywares qui sont spécifiques windows&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;pour être libre (et &lt;a href=&quot;http://blog.toutantic.net/index.php?2006/03/16/297-amendement-vivendi-adopte&quot;&gt;éviter la prison ?&lt;/a&gt;)&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;pour cesser d’acheter (ou de pirater) les logiciels de protection associés&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;pour être dans mon bon droit, n’avoir que des logiciels légalement installés et ainsi mieux contrôler, combattre et me protéger devant &lt;a href=&quot;http://blog.toutantic.net/index.php?2006/05/11/333-dadvsi-adopte-au-senat&quot;&gt;l’inquiétante montée des DRMs&lt;/a&gt; : ce laptop n’est qu&quot;un premier pas, je veux &lt;a href=&quot;http://dascritch.net/blog.php/2006/05/30/438-desinfectez-nos-machines&quot;&gt;désinfecter toutes mes machines&lt;/a&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;pour être libre (au sens geeko-phylo du terme)&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;libre au sens liberté, &lt;a href=&quot;http://www.amazon.com/exec/obidos/ASIN/0596002874/qid=1015511178/sr=1-1/ref=sr_1_1/104-0766464-9890360&quot;&gt;Free as in Freedom&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;et ceci pendant que d’autre s’enferment, cf. &lt;a href=&quot;http://www.pcinpact.com/actu/news/29352-Matignon-se-verrouille-face-a-Richard-Stallm.htm&quot;&gt;Matignon se verrouille face à Richard Stallman&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;pour être libre (et savoir)&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;pour mourir moins bête, essayer une alternative à windows, acquérir une nouvelle compétence, apprendre, m’amuser&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;pour être enfin à niveau avec mes amis geeks et mes collègues linuxiens d’&lt;em&gt;Atos Origin Open Source Center&lt;/em&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;
-&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;http://www.jroller.com/resources/f/francoisledroff/linuxOnLaptop.gif&quot; alt=&quot;image&quot;&gt;&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;table class=&quot;tableblock frame-all grid-all stretch&quot;&gt;
-&lt;colgroup&gt;
-&lt;col style=&quot;width: 50%;&quot;&gt;
-&lt;col style=&quot;width: 50%;&quot;&gt;
-&lt;/colgroup&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;http://www.jroller.com/resources/f/francoisledroff/UbuntuStrapLogoSmall.png&quot; alt=&quot;UbuntuStrapLogoSmall.png&quot;&gt;&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
-&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;Porté par ce désir de liberté, il me fallait vite choisir ma distro Linux. Elle devait à la fois convenir à un usage personnel (particulièrement pour l’édition d’image, audio et vidéo) et professionnel (pour développement java particulièrement). J’ai choisi &lt;a href=&quot;http://www.ubuntu-fr.org/&quot;&gt;ubuntu&lt;/a&gt; (Dapper Drake).&lt;/p&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Un récent &lt;a href=&quot;http://www.pcinpact.com/sondages/detail/70.htm&quot;&gt;sondage de pcinpact me montre que je suis loin d’être le seul à avoir choisi ubuntu pour un usage personnel&lt;/a&gt;. J’ai également la confirmation de l’engouement mondial pour ubuntu à travers &lt;a href=&quot;http://www.google.com/trends?q=Ubuntu%2C+RedHat%2C+Debian%2C+Suse%2C+Mandriva&amp;amp;ctab=0&amp;amp;geo=all&amp;amp;date=all&quot;&gt;Google trend&lt;/a&gt;. Certains remarqueront la symétrie étonnante des ``tendances&apos;&apos; ubuntu et red hat.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;http://www.jroller.com/resources/f/francoisledroff/linuxDistroTrends.png&quot; alt=&quot;linuxDistroTrends.png&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Le &lt;a href=&quot;http://www.up.univ-mrs.fr/cgi-veronis/chronologue?mot1=Ubuntu&amp;amp;mot2=RedHat&amp;amp;mot3=Debian&amp;amp;mot4=Suse&amp;amp;mot5=Mandriva&amp;amp;mot6=Fedora&amp;amp;affichage=absolu&amp;amp;debut=01.01.2006&amp;amp;Soumettre=Soumettre&quot;&gt;Chronologue&lt;/a&gt; de &lt;a href=&quot;http://aixtal.blogspot.com/&quot;&gt;Jean Véronis&lt;/a&gt; nous donne une autre vue intéressante. Le Chronologue permet de visualiser de façon graphique l’évolution de termes sur le Web francophone au cours du temps (il ne s’agit pas du nombre de requêtes comme pour Google Trend mais du nombre d’apparitions du terme dans les pages elles-mêmes – voir explications &lt;a href=&quot;http://aixtal.blogspot.com/2005/12/web-la-grippe-aviaire-disparu.html&quot;&gt;ici&lt;/a&gt;). On constate le belle montée en force d’unbuntu, et on remarquera l’effet buzz autour de la sortie de ubuntu dapper en Juin et peut-être (?) le mini buzz du &lt;a href=&quot;http://blog1.lemondeinformatique.fr/ingenierie_logicielle/2006/04/jboss_a_trouv_s.html&quot;&gt;rachat de jboss par redhat&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;http://www.jroller.com/resources/f/francoisledroff/linuxDistroChrono.png&quot; alt=&quot;linuxDistroChrono.png&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Me voila donc conforté dans mon choix d’ubuntu pour un usage personnel, mais quid du développement Java ?&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Sun vient justement d’annoncer lors de JavaOne qu’il autorise Java Platform, Standard Edition (Java SE) 5.0 à être distribué aux développeurs GNU/Linux et OpenSolaris sous une nouvelle licence: ``Distro License for Java&apos;&apos; (DLJ). Plus d’info sur &lt;a href=&quot;http://linuxfr.org/2006/05/17/20827.html&quot;&gt;linuxfr.org&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Du coup &lt;a href=&quot;http://www.generation-nt.com/actualites/14947/Sun-pense-a-Ubuntu-pour-ses-futurs-serveurs&quot;&gt;Sun pense à Ubuntu pour ses futurs serveurs&lt;/a&gt;, rapporte generation-nt.com :&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&quot;quoteblock&quot;&gt;
-&lt;blockquote&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;La présence du fondateur d’Ubuntu, le Sud-africain Mark Shuttleworth, à la conférence annuelle JavaOne, renforce encore l’impression que Sun ne compte pas mettre tous ses oeufs dans le même panier. Le PDG de Sun, Jonathan Schwartz, n’a pas tari d’éloges au sujet d’Ubuntu, tandis que Shuttleworth chantait à son tour les louanges de Java.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Ubuntu dapper est ainsi le premier linux à sortir un paquet sun java5&lt;/p&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;http://www.jroller.com/resources/f/francoisledroff/java-synaptic-package.png&quot; alt=&quot;java-synaptic-package.png&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Même le papa de java (d’ailleurs en visite en france à la fin du mois pour &lt;a href=&quot;http://fr.sun.com/javaday2006/&quot;&gt;javaday 2006&lt;/a&gt;) dit &lt;a href=&quot;http://blogs.sun.com/roller/page/jag?entry=kudos_to_the_ubuntu_team&quot;&gt;bravo&lt;/a&gt; à l’équipe d’ubuntu.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Restait alors la compatibilité hardware entre unbuntu, ses drivers et la Dell latitude D610, là encore j’étais vite rassuré, &lt;a href=&quot;http://rdo.homelinux.org/ubuntu-linux-on-a-dell-latitude-d610&quot;&gt;Everything works under Linux ubuntu on that machine&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Et voila ! Cela fait bientôt un mois que j’expérimente ubuntu dapper, je suis très satisfait. Je posterai ici bientôt de nouveaux articles décrivant mes périgrinations sur ubuntu :&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;configuration de java, installation de eclipse, tomcat, mysql et xwiki&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;choix et installation de solutions pour éditer, afficher, transférer, gérer photo, video et son&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;gestion de l’ipod video&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Stay tuned !&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;En attendant, je finirai par un &lt;strong&gt;immense merci aux développeurs et initiateurs de Ubuntu !!&lt;/strong&gt;&lt;/p&gt;
-&lt;/div&gt;
-	</description>
-    </item>
-    <item>
-      <title>Microsoft Open Source Software Lab</title>
-      <link>http://francoisledroff.github.io/content/2006/04/07/microsoft_open_source_software_lab.html</link>
-      <pubDate>Fri, 7 Apr 2006 00:00:00 +0200</pubDate>
-      <guid isPermaLink="false">content/2006/04/07/microsoft_open_source_software_lab.html</guid>
-      	<description>
-	&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;It’s not a &lt;a href=&quot;http://jroller.com/page/francoisledroff?entry=nouveau_job&quot;&gt;joke&lt;/a&gt; anymore. I just learned that such thing as the &lt;a href=&quot;http://port25.technet.com/&quot;&gt;Microsoft Open Source Software Lab&lt;/a&gt; exists ! His name Port25. Here is a short &lt;a href=&quot;http://port25.technet.com/archive/2006/03/31/14.aspx&quot;&gt;introduction&lt;/a&gt;:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;quoteblock&quot;&gt;
-&lt;blockquote&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Microsoft?s Open Source Software Lab is an ambitious research project. Located on the company?s main campus, the lab houses more than 300 servers, which collectively run more than 15 versions of UNIX and 50 Linux distributions. It boasts a team of senior-level programmers and system administrators, some of whom were architects of popular Linux distributions or authors of well-regarded books. In short, the lab is one of a few such facilities in the world dedicated to open source research.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;In fact it looks like &lt;a href=&quot;http://www.microsoft.com/presspass/features/2005/aug05/08-10OpenSourceLab.mspx&quot;&gt;this Microsoft OS lab is not that new&lt;/a&gt;, &lt;a href=&quot;http://www.eweek.com/article2/0,1895,1947233,00.asp&quot;&gt;what is new&lt;/a&gt; is the launch of this new Web site called Port 25.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;literalblock&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;pre&gt;+&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;hr&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Ce n’est plus une &lt;a href=&quot;http://jroller.com/page/francoisledroff?entry=nouveau_job&quot;&gt;blague&lt;/a&gt;. Je viens d’apprendre que le &lt;a href=&quot;http://port25.technet.com/&quot;&gt;Microsoft Open Source Software Lab&lt;/a&gt; existe ! Son nom: Port25.&lt;br&gt;
-Quelques liens pour approfondir le sujet:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.lemondeinformatique.fr/actualites/lire-microsoft-lance-un-site-dedie-a-linux-19131.html&quot;&gt;Microsoft lance un site dédié à Linux&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.lemondeinformatique.fr/actualites/lire-virtual-server-2005-r2-desormais-gratuit-et-compatible-linux-19078.html&quot;&gt;Virtual Server 2005 R2 : désormais gratuit et compatible Linux&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-	</description>
-    </item>
-    <item>
       <title>pragmatic profiling - find out quickly why your java app is hanging</title>
-      <link>http://francoisledroff.github.io/content/2006/03/02/pragmatic_profiling_find_out_quickly.html</link>
+      <link>http://localhost:8820/content/2006/03/02/pragmatic_profiling_find_out_quickly.html</link>
       <pubDate>Thu, 2 Mar 2006 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2006/03/02/pragmatic_profiling_find_out_quickly.html</guid>
       	<description>
@@ -7370,7 +6536,7 @@ Quelques liens pour approfondir le sujet:&lt;/p&gt;
     </item>
     <item>
       <title>PJBUG: JBoss Clustering</title>
-      <link>http://francoisledroff.github.io/content/2006/02/03/pjbug_jboss_clustering.html</link>
+      <link>http://localhost:8820/content/2006/02/03/pjbug_jboss_clustering.html</link>
       <pubDate>Fri, 3 Feb 2006 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2006/02/03/pjbug_jboss_clustering.html</guid>
       	<description>
@@ -7427,9 +6593,9 @@ Quelques liens pour approfondir le sujet:&lt;/p&gt;
     </item>
     <item>
       <title>QSOS est désormais sous licence GNU FDL</title>
-      <link>http://francoisledroff.github.io/content/2006/01/25/qsos_est_d%C3%A9sormais_sous_licence.html</link>
+      <link>http://localhost:8820/content/2006/01/25/qsos_est_desormais_sous_licence.html</link>
       <pubDate>Wed, 25 Jan 2006 00:00:00 +0100</pubDate>
-      <guid isPermaLink="false">content/2006/01/25/qsos_est_d%C3%A9sormais_sous_licence.html</guid>
+      <guid isPermaLink="false">content/2006/01/25/qsos_est_desormais_sous_licence.html</guid>
       	<description>
 	&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;&lt;a href=&quot;http://jroller.com/page/francoisledroff?entry=qsos_qualification_et_de_s%C3%A9lection&quot;&gt;QSOS: Qualification et de Sélection de logiciels Open Source&lt;/a&gt; est désormais sous licence GNU FDL (toute comme les grilles fonctionnelles et les fiches produits).&lt;/p&gt;
@@ -7462,22 +6628,8 @@ Quelques liens pour approfondir le sujet:&lt;/p&gt;
 	</description>
     </item>
     <item>
-      <title>Maintenant qu&amp;#8217;il fait tout le temps nuit sur toi</title>
-      <link>http://francoisledroff.github.io/content/2006/01/21/maintenant_qu_il_fait_tout.html</link>
-      <pubDate>Sat, 21 Jan 2006 00:00:00 +0100</pubDate>
-      <guid isPermaLink="false">content/2006/01/21/maintenant_qu_il_fait_tout.html</guid>
-      	<description>
-	&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;``Maintenant qu’il fait tout le temps nuit sur toi&apos;&apos; est le premier roman du chanteur du groupe Dyonisos, Mathias Malzieu.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Déja grand amateur de la poésie, des guitare saturées, du surréalisme, du lyrisme et des prestation scéniques de Dyonisos, j’ai été transporté et véritablement enchanté par l’univers intime et poétique de ce roman. C’est ainsi que j’ai chanté avec une certaine ferveur ``giant is on my back&apos;&apos; dans la foule à l’Olympia, le 12 Décembre dernier.&lt;/p&gt;
-&lt;/div&gt;
-	</description>
-    </item>
-    <item>
       <title>p6spy integration in jboss: Do you know what your cmps are doing ?</title>
-      <link>http://francoisledroff.github.io/content/2006/01/18/p6spy_integration_in_jboss_do.html</link>
+      <link>http://localhost:8820/content/2006/01/18/p6spy_integration_in_jboss_do.html</link>
       <pubDate>Wed, 18 Jan 2006 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2006/01/18/p6spy_integration_in_jboss_do.html</guid>
       	<description>
@@ -7656,7 +6808,7 @@ class=&quot;org.jboss.logging.appender.DailyRollingFileAppender&quot;&amp;gt;
     </item>
     <item>
       <title>Javapolis 2005</title>
-      <link>http://francoisledroff.github.io/content/2005/12/21/javapolis_2005.html</link>
+      <link>http://localhost:8820/content/2005/12/21/javapolis_2005.html</link>
       <pubDate>Wed, 21 Dec 2005 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2005/12/21/javapolis_2005.html</guid>
       	<description>
@@ -7722,9 +6874,9 @@ class=&quot;org.jboss.logging.appender.DailyRollingFileAppender&quot;&amp;gt;
     </item>
     <item>
       <title>QSOS: Qualification et de Sélection de logiciels Open Source</title>
-      <link>http://francoisledroff.github.io/content/2005/11/29/qsos_qualification_et_de_s%C3%A9lection.html</link>
+      <link>http://localhost:8820/content/2005/11/29/qsos_qualification_et_de_selection.html</link>
       <pubDate>Tue, 29 Nov 2005 00:00:00 +0100</pubDate>
-      <guid isPermaLink="false">content/2005/11/29/qsos_qualification_et_de_s%C3%A9lection.html</guid>
+      <guid isPermaLink="false">content/2005/11/29/qsos_qualification_et_de_selection.html</guid>
       	<description>
 	&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;Je suis heureux d’annoncer la mise en ligne officielle de &lt;a href=&quot;http://www.qsos.org/&quot; class=&quot;bare&quot;&gt;http://www.qsos.org/&lt;/a&gt;&lt;/p&gt;
@@ -7747,38 +6899,8 @@ class=&quot;org.jboss.logging.appender.DailyRollingFileAppender&quot;&amp;gt;
 	</description>
     </item>
     <item>
-      <title>JBoss Locking (follow-up)</title>
-      <link>http://francoisledroff.github.io/content/2005/11/23/jboss_locking_follow_up.html</link>
-      <pubDate>Wed, 23 Nov 2005 00:00:00 +0100</pubDate>
-      <guid isPermaLink="false">content/2005/11/23/jboss_locking_follow_up.html</guid>
-      	<description>
-	&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Here is a follow up from my last article based on a e.mail exchange I had with &lt;a href=&quot;http://jboss.org/jbossBlog/blog/jviet/&quot;&gt;Julien&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;The framework we currently use (&lt;a href=&quot;http://www.werum.com/en/il/jcoffee/index.jsp&quot;&gt;JCoffee&lt;/a&gt;) is indeed managing by itself optimistic locking - by using a compulsory version field to the CMP -. It does not rely on jboss locking features. The editor vision is indeed to be application server vendor independent. [update: nice vison, technically impossible though… cf. comments]&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;As Julien pointed me out:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;http://wiki.jboss.org/wiki/Wiki.jsp?page=CMPLocking&quot;&gt;Jboss does manage optimistic locking&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Jboss also supports REPEATABLE_READ transaction isolation level for the &lt;code&gt;Instance Per Transaction policy&apos;&apos;, forcing the CMP engine to perform &lt;/code&gt;SELECT FOR UPDATE&apos;&apos; queries.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;But beware, according to what I just &lt;a href=&quot;http://www.google.fr/search?q=%22select+for+update%22+REPEATABLE_READ+SELECT+DISTINCT+oracle&amp;amp;btnG=Rechercher&amp;amp;meta=&quot;&gt;read&lt;/a&gt; Oracle (and Postgres) only support using FOR UPDATE for queries that do not include SELECT DISTINCT.&lt;/p&gt;
-&lt;/div&gt;
-	</description>
-    </item>
-    <item>
       <title>Retour sur Rialto et le Web 2.0</title>
-      <link>http://francoisledroff.github.io/content/2005/11/23/retour_sur_rialto_et_le.html</link>
+      <link>http://localhost:8820/content/2005/11/23/retour_sur_rialto_et_le.html</link>
       <pubDate>Wed, 23 Nov 2005 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2005/11/23/retour_sur_rialto_et_le.html</guid>
       	<description>
@@ -7832,47 +6954,38 @@ class=&quot;org.jboss.logging.appender.DailyRollingFileAppender&quot;&amp;gt;
 	</description>
     </item>
     <item>
-      <title>Réunion ossgtp : usine de dév</title>
-      <link>http://francoisledroff.github.io/content/2005/11/23/r%C3%A9union_ossgtp_usine_de_d%C3%A9v.html</link>
+      <title>JBoss Locking (follow-up)</title>
+      <link>http://localhost:8820/content/2005/11/23/jboss_locking_follow_up.html</link>
       <pubDate>Wed, 23 Nov 2005 00:00:00 +0100</pubDate>
-      <guid isPermaLink="false">content/2005/11/23/r%C3%A9union_ossgtp_usine_de_d%C3%A9v.html</guid>
+      <guid isPermaLink="false">content/2005/11/23/jboss_locking_follow_up.html</guid>
       	<description>
 	&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;La dernière réunion &lt;a href=&quot;http://ossgtp.xwiki.org&quot;&gt;ossgtp&lt;/a&gt; a eu lieu &lt;a href=&quot;http://ossgtp.xwiki.com/xwiki/bin/view/Main/17Novembre2005&quot;&gt;17 novembre 2005&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Here is a follow up from my last article based on a e.mail exchange I had with &lt;a href=&quot;http://jboss.org/jbossBlog/blog/jviet/&quot;&gt;Julien&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;C’était au tour de &lt;a href=&quot;http://www.application-servers.com/&quot;&gt;Didier&lt;/a&gt;, il nous a présenté la dernière version de sa présentation sur l’industrialisation des développements.&lt;br&gt;
-Présentation intéressante qui a suscité beaucoup de réactions, de commentaires, de questions parmi nous.&lt;/p&gt;
+&lt;p&gt;The framework we currently use (&lt;a href=&quot;http://www.werum.com/en/il/jcoffee/index.jsp&quot;&gt;JCoffee&lt;/a&gt;) is indeed managing by itself optimistic locking - by using a compulsory version field to the CMP -. It does not rely on jboss locking features. The editor vision is indeed to be application server vendor independent. [update: nice vison, technically impossible though… cf. comments]&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Un aperçu du débat: L’industrialisation des développements ne doit pas uniquement cibler le travail du développeur, elle ne peut être accomplie que si elle s’appuie sur l’utilisation d’une méthodologie, d’une spécification, d’un socle et d’outils qui la facilitent.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Nous avons donc entre autre parlé de ``socle&apos;&apos; : un socle ? mmmh …&lt;br&gt;
-Ici il faut entendre un ou plusieurs frameworks standards et ouverts (donc, de préférence open-source &lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;http://www.jroller.com/images/smileys/smile.gif&quot; alt=&quot;:-)&quot; title=&quot;:-)&quot;&gt;&lt;/span&gt;) amené avec une vision claire de l’architecture et de l’utilisation de ce(s) framework(s), des guides, des templates … Ce socle doit être promu (imposé) par un (et un seul!) architecte (dictateur !?).&lt;br&gt;
-Un socle devrait-il contenir du code propriétaire ? Doit-on enrichir ce(s) framework(s) ? Avec des générateurs de code, des éditeurs ou des plugins (eclipse par exemple) ? Ca, ca dépend.. nous n’étions pas tous d’accord.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Didier nous a aussi fait deux belles démos :&lt;/p&gt;
+&lt;p&gt;As Julien pointed me out:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;ulist&quot;&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;une démo de &lt;a href=&quot;http://www.improve-foundations.com/&quot;&gt;improve-foundation/struts-layout&lt;/a&gt; qui restait dans le cadre de sa présentation ``industrialisation des développements&apos;&apos;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://wiki.jboss.org/wiki/Wiki.jsp?page=CMPLocking&quot;&gt;Jboss does manage optimistic locking&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;puis une présentation et une démo, du nouveau projet open-source porté par improve: &lt;a href=&quot;http://rialto.application-servers.com/&quot;&gt;Rialto&lt;/a&gt;: bibliothèque de composants graphiques développée en javascript. (une &lt;a href=&quot;http://rialto.application-servers.com/demoRialto.jsp&quot;&gt;démo&lt;/a&gt; est maintenant disponible à tous).&lt;/p&gt;
+&lt;p&gt;Jboss also supports REPEATABLE_READ transaction isolation level for the &lt;code&gt;Instance Per Transaction policy&apos;&apos;, forcing the CMP engine to perform &lt;/code&gt;SELECT FOR UPDATE&apos;&apos; queries.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Nous avons comme d’habitude terminé la soirée par un dîner amical, geek et cinéphile (avec notamment une discussion autour de l’impressionnant film de Lelouch tourné en 1976 &lt;a href=&quot;http://fr.wikipedia.org/wiki/C&apos;%C3%A9tait_un_rendez-vous&quot;&gt;C’était une rendez-vous&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;But beware, according to what I just &lt;a href=&quot;http://www.google.fr/search?q=%22select+for+update%22+REPEATABLE_READ+SELECT+DISTINCT+oracle&amp;amp;btnG=Rechercher&amp;amp;meta=&quot;&gt;read&lt;/a&gt; Oracle (and Postgres) only support using FOR UPDATE for queries that do not include SELECT DISTINCT.&lt;/p&gt;
 &lt;/div&gt;
 	</description>
     </item>
     <item>
       <title>Symposium DNG 2005</title>
-      <link>http://francoisledroff.github.io/content/2005/10/27/symposium_dng_2005.html</link>
+      <link>http://localhost:8820/content/2005/10/27/symposium_dng_2005.html</link>
       <pubDate>Thu, 27 Oct 2005 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2005/10/27/symposium_dng_2005.html</guid>
       	<description>
@@ -7956,7 +7069,7 @@ Petite note perso :http://www.castleproject.org/index.php/Main_Page[Castle] : un
     </item>
     <item>
       <title>Death to JBoss transaction deadlocks</title>
-      <link>http://francoisledroff.github.io/content/2005/10/17/death_to_the_jboss_transaction.html</link>
+      <link>http://localhost:8820/content/2005/10/17/death_to_the_jboss_transaction.html</link>
       <pubDate>Mon, 17 Oct 2005 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2005/10/17/death_to_the_jboss_transaction.html</guid>
       	<description>
@@ -8001,7 +7114,7 @@ Petite note perso :http://www.castleproject.org/index.php/Main_Page[Castle] : un
 &lt;div class=&quot;sect3&quot;&gt;
 &lt;h4 id=&quot;ensure-serial-equivalence&quot;&gt;Ensure serial equivalence&lt;/h4&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;So I guess I’m facing a real dead lock here (as explained in jboss doc &quot;http://docs.jboss.org/jbossas/jboss4guide/r4/html/ch5.chapter.html#ch5.entitylock.sect[Entity Bean Locking and Deadlock Detection&quot;] section :&lt;br&gt;
+&lt;p&gt;So I guess I’m facing a real dead lock here (as explained in jboss doc &quot;&lt;a href=&quot;http://docs.jboss.org/jbossas/jboss4guide/r4/html/ch5.chapter.html#ch5.entitylock.sect&quot;&gt;Entity Bean Locking and Deadlock Detection&quot;&lt;/a&gt; section :&lt;br&gt;
 Thread 1 has the lock for Bean A, and Thread 2 has the lock for Bean B. At a later time, Thread 1 tries to lock Bean B and blocks because Thread 2 has it. Likewise, as Thread 2 tries to lock A it also blocks because Thread 1 has the lock. At this point both threads are deadlocked waiting for access to the resource already locked by the other thread.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
@@ -8136,7 +7249,7 @@ C&lt;/pre&gt;
     </item>
     <item>
       <title>JBoss transaction configuration</title>
-      <link>http://francoisledroff.github.io/content/2005/10/08/jboss_transaction_configuration.html</link>
+      <link>http://localhost:8820/content/2005/10/08/jboss_transaction_configuration.html</link>
       <pubDate>Sat, 8 Oct 2005 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2005/10/08/jboss_transaction_configuration.html</guid>
       	<description>
@@ -8336,19 +7449,8 @@ You can execute multiple queries against multiple tables, knowing that the resul
 	</description>
     </item>
     <item>
-      <title>Maven Book Bonus Chapter</title>
-      <link>http://francoisledroff.github.io/content/2005/10/07/maven_book_bonus_chapter.html</link>
-      <pubDate>Fri, 7 Oct 2005 00:00:00 +0200</pubDate>
-      <guid isPermaLink="false">content/2005/10/07/maven_book_bonus_chapter.html</guid>
-      	<description>
-	&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;The &lt;code&gt;Maven: A Developer’s Notebook&apos;&apos; bonus chapter (I wrote about 2 days ago) is already out, at &lt;a href=&quot;http://www.onjava.com/pub/a/onjava/2005/09/07/maven.html?CMP=OTC-FP2116136014&quot;&gt;http://www.onjava.com&lt;/a&gt; : &lt;/code&gt;In order to get you some real-life experience in building a J2EE application we’ll be exploring how to build the Java Petstore and the xPetstore J2EE applications.&apos;&apos;&lt;/p&gt;
-&lt;/div&gt;
-	</description>
-    </item>
-    <item>
       <title>ossgtp du 18 Aout 2005</title>
-      <link>http://francoisledroff.github.io/content/2005/09/07/ossgtp_du_18_aout_2005.html</link>
+      <link>http://localhost:8820/content/2005/09/07/ossgtp_du_18_aout_2005.html</link>
       <pubDate>Wed, 7 Sep 2005 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2005/09/07/ossgtp_du_18_aout_2005.html</guid>
       	<description>
@@ -8384,7 +7486,7 @@ You can execute multiple queries against multiple tables, knowing that the resul
     </item>
     <item>
       <title>Book Review: Maven: A Developer&amp;#8217;s Notebook</title>
-      <link>http://francoisledroff.github.io/content/2005/09/06/book_review_maven_a_developer.html</link>
+      <link>http://localhost:8820/content/2005/09/06/book_review_maven_a_developer.html</link>
       <pubDate>Tue, 6 Sep 2005 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2005/09/06/book_review_maven_a_developer.html</guid>
       	<description>
@@ -8392,7 +7494,7 @@ You can execute multiple queries against multiple tables, knowing that the resul
 &lt;p&gt;I started using Maven about a year ago. I was a big fan of ant build files by that time. My main interest for maven was at first only driven by its easy reporting functionality. I’ve been using it since. Maven is indeed not only great in project management documentation and reporting but also helps dramatically &lt;strong&gt;standardizing&lt;/strong&gt; and simplifying the build, unit testing and continuous integration process. To sum it up it helps the development throughout its whole process.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;But now I read &quot;http://mavenbook.org[Maven: A Developer’s Notebook]&quot; I feel even more confident : last week I migrated the remaining (somehow cryptic) ant build files (of the big SOA project I’m currently involved in) to maven ! It’s a relief !&lt;/p&gt;
+&lt;p&gt;But now I read &quot;&lt;a href=&quot;http://mavenbook.org&quot;&gt;Maven: A Developer’s Notebook&lt;/a&gt;&quot; I feel even more confident : last week I migrated the remaining (somehow cryptic) ant build files (of the big SOA project I’m currently involved in) to maven ! It’s a relief !&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;One of the great aspect of this book lies in the fact that it’s more like series of lab notes, full of well phrased straigthforward and instantly usable information.&lt;/p&gt;
@@ -8460,22 +7562,8 @@ and complex enough to expose the daily issues you face in a real world project.&
 	</description>
     </item>
     <item>
-      <title>Extreme table</title>
-      <link>http://francoisledroff.github.io/content/2005/07/14/p_extreme_table_g%C3%A9re_un.html</link>
-      <pubDate>Thu, 14 Jul 2005 00:00:00 +0200</pubDate>
-      <guid isPermaLink="false">content/2005/07/14/p_extreme_table_g%C3%A9re_un.html</guid>
-      	<description>
-	&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;``Extreme table gére un pseudo DataProvider. Donc si vous affichez 10 enregistrements sur les 10000 de la liste, pas besoin de charger les 10000. Displaytag nécessite que vous lui passiez les 10000 même pour un affichage partiel. C’est un gros défaut de displaytag qui ne gére pas le pattern ValueList Handler. Il y a une implémentation du ValueList sur sourceforge mais uniquement compatible avec hibernate 2&apos;&apos; &lt;a href=&quot;http://www.application-servers.com/comments.do?reqCode=readComments&amp;amp;sid=2005-07-11-18:31:34&quot;&gt;[a19s&lt;/a&gt;&amp;lt;]&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;umh.. &lt;a href=&quot;http://extremecomponents.org/extremesite/public/demo/presidents.jsp?pres_s_term=asc&quot;&gt;Extreme table&lt;/a&gt; semble une belle alternative à &lt;a href=&quot;&quot;&gt;displaytag&lt;/a&gt; et à &lt;a href=&quot;&quot;&gt;struts-layout&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-	</description>
-    </item>
-    <item>
       <title>there&amp;#8217;s far less OA than there is SOA</title>
-      <link>http://francoisledroff.github.io/content/2005/07/14/there_s_far_less_oa.html</link>
+      <link>http://localhost:8820/content/2005/07/14/there_s_far_less_oa.html</link>
       <pubDate>Thu, 14 Jul 2005 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2005/07/14/there_s_far_less_oa.html</guid>
       	<description>
@@ -8491,76 +7579,8 @@ and complex enough to expose the daily issues you face in a real world project.&
 	</description>
     </item>
     <item>
-      <title>meven ide (maven eclipse-plugin) tricks and tips</title>
-      <link>http://francoisledroff.github.io/content/2005/05/15/meven_ide_maven_eclipse_plugin.html</link>
-      <pubDate>Sun, 15 May 2005 00:00:00 +0200</pubDate>
-      <guid isPermaLink="false">content/2005/05/15/meven_ide_maven_eclipse_plugin.html</guid>
-      	<description>
-	&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Unless I specified my maven local repository in my project.properties file under my project root as such:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;literalblock&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;pre&gt;maven.repo.local = ..\\..\\tools\\my_repository\\.maven\\repository&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;My meven IDE synchronizer would not rely on the maven local repository I specified in the eclipse maven preferences Location form.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;So I upgraded my eclipse through eclipse update site to version 3.0.2. Just hoping it will fix the stuff by itself&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;yet another bug or configuration issue while lauching maven on my projects, I systematically got:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;literalblock&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;pre&gt;!MESSAGE An internal error occurred during: &quot;Launching&quot;.
-!STACK 0
-java.lang.NoSuchMethodError: org.eclipse.debug.internal.ui.DebugUIPlugin.getProcessConsoleManager()
-Lorg/eclipse/debug/internal/ui/views/console/ProcessConsoleManager;
- at org.mevenide.ui.eclipse.launch.configuration.MavenLaunchDelegate.launch(MavenLaunchDelegate.java:143)&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;It looks like people have been there before: &lt;a href=&quot;http://comments.gmane.org/gmane.comp.jakarta.turbine.maven.mevenide.user/18&quot;&gt;http://comments.gmane.org/gmane.comp.jakarta.turbine.maven.mevenide.user/188&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;But No, as said I have installed the right plugin : using the site descriptor located at : &lt;a href=&quot;http://mevenide.codehaus.org/release/eclipse/update/3.0/site.xml&quot; class=&quot;bare&quot;&gt;http://mevenide.codehaus.org/release/eclipse/update/3.0/site.xml&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;So i uninstalled it, using eclipse &amp;gt; Help &amp;gt; Software updates &amp;gt; manage configuration&lt;br&gt;
-and reinstalled it using this specific update site: &lt;a href=&quot;http://mevenide.codehaus.org/release/eclipse/update/3.0/site.xml&quot; class=&quot;bare&quot;&gt;http://mevenide.codehaus.org/release/eclipse/update/3.0/site.xml&lt;/a&gt; no the one introduced on their web page: &lt;a href=&quot;http://mevenide.codehaus.org/release/eclipse/update/site.xml&quot; class=&quot;bare&quot;&gt;http://mevenide.codehaus.org/release/eclipse/update/site.xml&lt;/a&gt; It worked better !!! &lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;http://www.jroller.com/images/smileys/smile.gif&quot; alt=&quot;:-)&quot; title=&quot;:-)&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;I reported this issue at: &lt;a href=&quot;http://jira.codehaus.org/browse/MEVENIDE-215&quot; class=&quot;bare&quot;&gt;http://jira.codehaus.org/browse/MEVENIDE-215&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-	</description>
-    </item>
-    <item>
-      <title>The room is on fire</title>
-      <link>http://francoisledroff.github.io/content/2005/05/15/the_room_is_on_fire.html</link>
-      <pubDate>Sun, 15 May 2005 00:00:00 +0200</pubDate>
-      <guid isPermaLink="false">content/2005/05/15/the_room_is_on_fire.html</guid>
-      	<description>
-	&lt;table class=&quot;tableblock frame-all grid-all stretch&quot;&gt;
-&lt;colgroup&gt;
-&lt;col style=&quot;width: 50%;&quot;&gt;
-&lt;col style=&quot;width: 50%;&quot;&gt;
-&lt;/colgroup&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;/resources/francoisledroff/roomonfire1075463856347268.gif&quot; alt=&quot;image&quot;&gt;&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
-&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;I can play and re-play this album without getting bored.&lt;br&gt;
-``Du rock efficace et énergique !&apos;&apos;&lt;br&gt;&lt;/p&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-	</description>
-    </item>
-    <item>
       <title>Eclipse default compliances</title>
-      <link>http://francoisledroff.github.io/content/2005/05/06/eclipse_default_compliances.html</link>
+      <link>http://localhost:8820/content/2005/05/06/eclipse_default_compliances.html</link>
       <pubDate>Fri, 6 May 2005 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2005/05/06/eclipse_default_compliances.html</guid>
       	<description>
@@ -8600,7 +7620,7 @@ So you just need to modify your preferences: Open a project in Eclipse. Select P
     </item>
     <item>
       <title>Paris blogue-t-il ? Une rencontre entre blogueurs à l&amp;#8217;Entrepôt !</title>
-      <link>http://francoisledroff.github.io/content/2005/04/04/paris_blogue_t_il_une.html</link>
+      <link>http://localhost:8820/content/2005/04/04/paris_blogue_t_il_une.html</link>
       <pubDate>Mon, 4 Apr 2005 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">content/2005/04/04/paris_blogue_t_il_une.html</guid>
       	<description>
@@ -8620,7 +7640,7 @@ Pour vous inscrire à cette soirée, rendez-vous sur &lt;a href=&quot;http://www
     </item>
     <item>
       <title>www.droff.com</title>
-      <link>http://francoisledroff.github.io/content/2005/02/22/www_droff_com.html</link>
+      <link>http://localhost:8820/content/2005/02/22/www_droff_com.html</link>
       <pubDate>Tue, 22 Feb 2005 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2005/02/22/www_droff_com.html</guid>
       	<description>
@@ -8633,76 +7653,8 @@ Pour vous inscrire à cette soirée, rendez-vous sur &lt;a href=&quot;http://www
 	</description>
     </item>
     <item>
-      <title>Java plus rapide, plus léger</title>
-      <link>http://francoisledroff.github.io/content/2005/01/31/java_plus_rapide_plus_l%C3%A9ger.html</link>
-      <pubDate>Mon, 31 Jan 2005 00:00:00 +0100</pubDate>
-      <guid isPermaLink="false">content/2005/01/31/java_plus_rapide_plus_l%C3%A9ger.html</guid>
-      	<description>
-	&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;C’est la première fois depuis des années que j’achète un ouvrage informatique en français. Depuis maintenant un an, je travaille dans un environnement complètement et uniquement francophone et je voulais pouvoir passer ce livre à quelques membres de mon équipe.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Je n’ai pas été déçu. La traduction est bonne et j’ai bien conscience que ce n’est pas un exercice aisé.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.oreilly.fr/catalogue/2841773124.html&quot;&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;http://www.oreilly.fr/images/2-84177-312-4.gif&quot; alt=&quot;image&quot;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Voici les liens vers les quelques chapitres disponibles gratuitement sur le net :&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.oreilly.com/catalog/bfljava/chapter/ch00.pdf&quot;&gt;Sample Excerpt: Preface&lt;/a&gt; (PDF)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.oreilly.com/catalog/bfljava/chapter/ch03.pdf&quot;&gt;Chapter 3: Do One Thing, and Do It Well&lt;/a&gt; (PDF)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.oreilly.com/catalog/bfljava/chapter/ch10.pdf&quot;&gt;Chapter 10: Extending jPetStore&lt;/a&gt; (PDF)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.onjava.com/pub/a/onjava/excerpt/BFLJava_chap8/index1.html&quot;&gt;Chapter 8: Spring&lt;/a&gt; (html) excerpts from ONJava.com&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Un article O’Reilly :&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.oreillynet.com/pub/a/onjava/2004/07/14/BFLJava.html&quot;&gt;Better, Faster, Lighter Programming in .NET and Java&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;J’avais déjà lu ces quelques chapitres et articles disponibles, j’avais également téléchargé et joué avec jPetStore. Ce livre m’a tout de même apporté de bonnes informations. Les auteurs prennent quelques positions tranchées et non politiquement correctes, même si je ne suis pas toujours d’accord avec eux (non ant n’est pas la seule solution pour un build optimal, maven l’est tout au tant, sinon plus), j’aime ça !&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Beaucoup d’idées me sont venues à la suite de la lecture de ce livre:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;grâce aux toujours utiles piqûres de rappel de bon sens comme ``ne faites qu’une seule chose à la fois et faites la bien !&apos;&apos;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;de plus ces grands principes introduits au début de l’ouvrage sont très bien mis en ?uvre dans quelques exemples finaux,&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;et enfin il faut souligner que dans ces mêmes exemples, quelques projets open source sont utilisés de manière peu orthodoxe mais fort judicieuse !&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Un grand point noir cependant, les codes sources complets des exemples abordés dans ce livre ne sont pas disponibles ni sur CD, ni sur le net.&lt;/p&gt;
-&lt;/div&gt;
-	</description>
-    </item>
-    <item>
       <title>JavaPolis 2004</title>
-      <link>http://francoisledroff.github.io/content/2005/01/26/javapolis_2004.html</link>
+      <link>http://localhost:8820/content/2005/01/26/javapolis_2004.html</link>
       <pubDate>Wed, 26 Jan 2005 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2005/01/26/javapolis_2004.html</guid>
       	<description>
@@ -8805,7 +7757,7 @@ Here is my unorderered top 7 list extracted http://francoisledroff.blogspot.com/
     </item>
     <item>
       <title>javapolis 2004: Eclipse in Action by Eric Gamma</title>
-      <link>http://francoisledroff.github.io/content/2004/12/13/javapolis_2004_part1_Eclipse_in_Action_by+_Eric_Gamma.html</link>
+      <link>http://localhost:8820/content/2004/12/13/javapolis_2004_part1_Eclipse_in_Action_by+_Eric_Gamma.html</link>
       <pubDate>Mon, 13 Dec 2004 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2004/12/13/javapolis_2004_part1_Eclipse_in_Action_by+_Eric_Gamma.html</guid>
       	<description>
@@ -8874,7 +7826,7 @@ Rich Client Platform) dedicated to the building of an online stock trading syste
     </item>
     <item>
       <title>javapolis 2004: BPEL in action by Edwin Khodabakchian</title>
-      <link>http://francoisledroff.github.io/content/2004/12/13/javapolis_2004_part_2_+BPEL_in_action.html</link>
+      <link>http://localhost:8820/content/2004/12/13/javapolis_2004_part_2_+BPEL_in_action.html</link>
       <pubDate>Mon, 13 Dec 2004 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">content/2004/12/13/javapolis_2004_part_2_+BPEL_in_action.html</guid>
       	<description>

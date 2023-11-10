@@ -3,7 +3,7 @@ Francois Le Droff
 2006-06-14
 :jbake-type: post
 :jbake-tags: Tech,  OpenSource, Linux
-:jbake-status: published
+:jbake-status: draft
 :source-highlighter: prettify
 
 [width="100%",cols="50%,50%",]

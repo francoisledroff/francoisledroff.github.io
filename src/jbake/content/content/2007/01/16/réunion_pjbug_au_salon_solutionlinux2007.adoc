@@ -3,7 +3,7 @@ Francois Le Droff
 2007-01-16
 :jbake-type: post
 :jbake-tags: Tech,  JBoss
-:jbake-status: published
+:jbake-status: draft
 :source-highlighter: prettify
 
 Le http://www.paris-jbug.org/xwiki/bin/view/Main/WebHome[Paris JBoss User Group] organise sa prochaine réunion le 31 janvier prochain à l’occasion du http://www.solutionslinux.fr/[salon Solutions Linux 2007] !
