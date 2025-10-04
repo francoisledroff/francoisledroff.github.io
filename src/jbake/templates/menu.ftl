@@ -15,9 +15,7 @@
 
 
 
-                <li><a href="/tags/Tech.html">Blog</a></li>
-
-		            <li><a href="/tags/Conference.html">Conferences</a></li>
+                <li><a href="/tags/Conference.html">Conferences</a></li>
                 <li><a href="/tags/Papa.html">Papa</a></li>
                 <li><a href="/tags/Books.html">Lectures</a></li>
                 <li><a href="/tags/Music.html">Musiques</a></li>
@@ -44,7 +42,6 @@
               </ul>
 	      <ul class="nav navbar-nav navbar-right">
 	      	<li><a href="https://github.com/francoisledroff"><i class="fa fa-github"></i></a></li>
-	        <li><a href="https://twitter.com/francoisledroff"><i class="fa fa-twitter"></i></a>
 	      </ul>
             </div>
           </div>
