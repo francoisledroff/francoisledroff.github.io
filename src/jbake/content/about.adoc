@@ -9,9 +9,7 @@ image::/img/me.jpg[]
 
 Bonjour, je suis François.
 
-Depuis avril 2004, j'écris "ici",
-parfois autour de mon link:/tags/Tech.html[métier] de plombier de la donnée,
-parfois en complément de mes link:/tags/Conference.html[conférences].
+Depuis avril 2004, j'écris parfois "ici".
 J'expose également quelques photos link:http://photos.le.droff.com/[ici] et link:https://www.flickr.com/photos/francoisledroff/[là].
 
 Pour suivre les mises à jours irrégulières de ce site,
