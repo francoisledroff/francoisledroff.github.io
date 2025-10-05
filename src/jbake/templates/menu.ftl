@@ -15,7 +15,7 @@
 
 
 
-                <li><a href="/tags/Conference.html">Conferences</a></li>
+                <li><a href="/listalltags.html">Articles</a></li>
                 <li><a href="/tags/Papa.html">Papa</a></li>
                 <li><a href="/tags/Books.html">Lectures</a></li>
                 <li><a href="/tags/Music.html">Musiques</a></li>
@@ -31,17 +31,15 @@
 	              </li>
 	              -->
 
-
                 <!--<li><a href="/listalltags.html">Tags</a></li>-->
                 <li><a href="https://photos.le.droff.com/">Photos</a></li>
-
                 <!--
                 <li><a href="/projects.html">Projects</a></li>
                 -->
 
               </ul>
 	      <ul class="nav navbar-nav navbar-right">
-	      	<li><a href="https://github.com/francoisledroff"><i class="fa fa-github"></i></a></li>
+	      	<!--<li><a href="https://github.com/francoisledroff"><i class="fa fa-github"></i></a></li>-->
 	      </ul>
             </div>
           </div>
