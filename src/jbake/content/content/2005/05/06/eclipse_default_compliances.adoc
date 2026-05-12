@@ -3,7 +3,7 @@ Francois Le Droff
 2005-05-06
 :jbake-type: post
 :jbake-tags: Tech,  Java
-:jbake-status: published
+:jbake-status: draft
 :source-highlighter: prettify
 
 Don’t we all stupidly waste time, especially when we are requested to deliver quickly ? Today I imported an subcontractor java project in my elcipse IDE, and I had an hard time figuring out why it was not compiling. So may be that small 101 type article will save someone a few minutes

@@ -13,9 +13,7 @@
               <ul class="nav navbar-nav">                
 
 
-
-
-                <li><a href="/archive.html">Archives</a></li>
+                <li><a href="/tags/Tech.html">Tech</a></li>
                 <li><a href="/tags/Papa.html">Papa</a></li>
                 <li><a href="/tags/Books.html">Lectures</a></li>
                 <li><a href="/tags/Music.html">Musiques</a></li>

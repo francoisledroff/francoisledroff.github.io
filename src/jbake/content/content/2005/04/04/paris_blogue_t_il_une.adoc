@@ -3,7 +3,7 @@ Francois Le Droff
 2005-04-04
 :jbake-type: post
 :jbake-tags:  General 
-:jbake-status: published
+:jbake-status: draft
 :source-highlighter: prettify
 
 image:http://www.paris14.info/images/medium_paris_blogue_t_il_2.jpg[medium_paris_blogue_t_il_2.jpg] +

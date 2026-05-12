@@ -3,7 +3,7 @@ Francois Le Droff
 2006-10-16
 :jbake-type: post
 :jbake-tags:  General 
-:jbake-status: published
+:jbake-status: draft
 :source-highlighter: prettify
 
 C’était les 20 kms de Paris hier, une superbe journée hier. Beau temps, belle ambiance, festive, musicale, sportive… et malheureusement une chute pour moi au kilomètre 7, suivi d’un arrêt forcé au poste des secouristes qui ne retrouvaient ni leurs compresses, ni leurs formulaires …15 minutes de perdues !!!
